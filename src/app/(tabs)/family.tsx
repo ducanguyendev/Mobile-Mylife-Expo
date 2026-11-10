@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
-import { Alert, FlatList, Pressable, RefreshControl, StyleSheet, View } from 'react-native';
+import { useCallback, useMemo, useState } from 'react';
+import { FlatList, Pressable, RefreshControl, StyleSheet, View } from 'react-native';
 import { router, useFocusEffect } from 'expo-router';
 
 import { AppScreen, LargeTitleHeader, SectionHeader } from '@/components/layout/app-screen';
@@ -7,7 +7,7 @@ import { ErrorState, LoadingState } from '@/components/feedback/states';
 import { AppIcon } from '@/design-system/components/app-icon';
 import { AppText } from '@/design-system/components/app-text';
 import { Avatar } from '@/design-system/components/avatar';
-import { IconButton, PrimaryButton } from '@/design-system/components/buttons';
+import { PrimaryButton } from '@/design-system/components/buttons';
 import { MyLifeSearchField } from '@/design-system/components/fields';
 import { ActionRow, AppCard, InfoCard } from '@/design-system/components/surfaces';
 import { spacing } from '@/design-system/tokens';
@@ -20,7 +20,12 @@ import { useAppTheme } from '@/theme/theme-provider';
 type ViewTab = 'members' | 'tree' | 'map';
 
 export default function FamilyScreen() {
-  const { isAdmin, isUser, user } = useAuth();
+  const { user } = useAuth();
+  return <FamilyScreenContent key={user?.id ?? 'anonymous'} />;
+}
+
+function FamilyScreenContent() {
+  const { isAdmin, isUser } = useAuth();
   const { colors } = useAppTheme();
   const [tab, setTab] = useState<ViewTab>('members');
   const [members, setMembers] = useState<FamilyMember[]>([]);
@@ -32,17 +37,14 @@ export default function FamilyScreen() {
   const load = useCallback(async (refresh = false) => {
     if (!isUser) return;
     setError('');
-    refresh ? setRefreshing(true) : setLoading(true);
+    if (refresh) setRefreshing(true);
+    else setLoading(true);
     try { setMembers(await familyApi.list()); }
     catch (cause) { setError(memberErrorMessage(cause)); }
     finally { setLoading(false); setRefreshing(false); }
   }, [isUser]);
 
-  useEffect(() => {
-    setMembers([]); setQuery(''); setError('');
-    if (isUser) void load();
-    else { setLoading(false); setRefreshing(false); }
-  }, [user?.id, isUser, load]);
+  // The keyed content resets on account changes; focus owns the initial load and revisits.
   useFocusEffect(useCallback(() => { if (isUser) void load(true); }, [isUser, load]));
 
   const visibleMembers = useMemo(() => {

@@ -1,0 +1,6 @@
+PASS: Native registration/login, serialized SecureStore adapter and session restoration
+REPRODUCED: Original Expo payload erases an existing explicit horizontal relation
+PASS: USER/ADMIN Backend restrictions and foreign member IDs remain authoritative
+PASS: Six expired-access calls share one refresh; rotated pair persists and old sid is rejected
+PASS: Native logout clears local storage and immediately revokes copied access/refresh tokens
+REPRODUCED: Original late refresh resurrects a usable stored session after logout

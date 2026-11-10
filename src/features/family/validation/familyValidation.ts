@@ -1,9 +1,19 @@
-import type { FamilyMemberInput } from '../types/family';
+import type { FamilyMember, FamilyMemberInput } from '../types/family';
 
 export type FormValues = Omit<FamilyMemberInput, 'generation' | 'fatherId' | 'motherId' | 'spouseId' | 'childIds' | 'horizontalRelations'> & {
   generation: string; fatherId: string; motherId: string; spouseId: string; childIds: string[];
 };
 export type FormErrors = Partial<Record<keyof FormValues | 'form', string>>;
+
+export function memberToFormValues(member: FamilyMember): FormValues {
+  return {
+    fullName: member.fullName, generation: String(member.generation), gender: member.gender ?? '', dateOfBirth: member.dateOfBirth ?? '',
+    lifeStatus: member.lifeStatus, deathDate: member.deathDate ?? '', role: member.role ?? '', address: member.address ?? '',
+    phoneNumber: member.phoneNumber ?? '', facebookUrl: member.facebookUrl ?? '', instagramUrl: member.instagramUrl ?? '',
+    biography: member.biography ?? '', fatherId: member.fatherId ? String(member.fatherId) : '', motherId: member.motherId ? String(member.motherId) : '',
+    spouseId: member.spouseId ? String(member.spouseId) : '', childIds: member.childIds.map(String),
+  };
+}
 
 export function vietnamDateString(now = new Date()): string {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Ho_Chi_Minh', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
@@ -66,7 +76,7 @@ export function toFamilyInput(values: FormValues): FamilyMemberInput {
     motherId: optionalId(values.motherId),
     spouseId: optionalId(values.spouseId),
     childIds: values.childIds.map(Number).filter(Number.isInteger),
-    horizontalRelations: [],
+    // The M1 form cannot edit horizontal relations. Do not turn omission into deletion.
   };
 }
 
@@ -94,8 +104,8 @@ export function memberErrorMessage(error: unknown): string {
   return 'Không thể hoàn tất thao tác. Vui lòng thử lại.';
 }
 
-export function backendFieldErrors(error: unknown): Partial<Record<keyof FormValues, string>> {
-  const result: Partial<Record<keyof FormValues, string>> = {};
+export function backendFieldErrors(error: unknown): FormErrors {
+  const result: FormErrors = {};
   const fieldErrors = (error as { fieldErrors?: Record<string, string[]> })?.fieldErrors;
   if (!fieldErrors) return result;
   const fields: Record<string, keyof FormValues | 'form'> = { FullName: 'fullName', Generation: 'generation', Gender: 'gender', DateOfBirth: 'dateOfBirth', DeathDate: 'deathDate', FatherId: 'fatherId', MotherId: 'motherId', SpouseId: 'spouseId', ChildIds: 'childIds', HorizontalRelations: 'form', Role: 'role', Address: 'address', PhoneNumber: 'phoneNumber', FacebookUrl: 'facebookUrl', InstagramUrl: 'instagramUrl' };

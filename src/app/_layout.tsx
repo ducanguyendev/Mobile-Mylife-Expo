@@ -14,7 +14,7 @@ import { AppThemeProvider, useAppTheme } from '@/theme/theme-provider';
 
 function AppNavigation() {
   const { resolvedMode, colors } = useAppTheme();
-  const { status } = useAuth();
+  const { status, isUser } = useAuth();
   const navigationTheme = useMemo(() => {
     const base = resolvedMode === 'dark' ? DarkTheme : DefaultTheme;
     return {
@@ -40,6 +40,9 @@ function AppNavigation() {
           <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.background } }}>
             <Stack.Protected guard={status === 'authenticated'} redirectTo="/(auth)/login">
               <Stack.Screen name="(tabs)" />
+            </Stack.Protected>
+            <Stack.Protected guard={status === 'authenticated' && isUser} redirectTo={status === 'authenticated' ? '/(tabs)/family' : '/(auth)/login'}>
+              <Stack.Screen name="family" />
             </Stack.Protected>
             <Stack.Protected guard={status !== 'authenticated'} redirectTo="/(tabs)">
               <Stack.Screen name="(auth)" />

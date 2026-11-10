@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { Alert, ScrollView, StyleSheet, View } from 'react-native';
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 
@@ -28,7 +28,6 @@ export default function FamilyMemberDetailScreen() {
     try { setMember(await familyApi.get(memberId)); } catch (cause) { setError(memberErrorMessage(cause)); }
     finally { setLoading(false); }
   }, [memberId]);
-  useEffect(() => { void load(); }, [load]);
   useFocusEffect(useCallback(() => { void load(); }, [load]));
   const remove = () => {
     if (!member || deleting) return;

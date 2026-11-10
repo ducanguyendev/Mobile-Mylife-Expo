@@ -43,7 +43,10 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "test:auth": "node --experimental-strip-types --test tests/auth-foundation.test.mjs"
+    "test:auth": "node --experimental-strip-types --test tests/auth-foundation.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:foundation": "node --experimental-strip-types --test tests/auth-foundation.test.mjs tests/foundation-safety.test.cjs tests/native-session.test.cjs",
+    "test:integration": "node scripts/run-isolated-m1.cjs"
   },
   "private": true
 }

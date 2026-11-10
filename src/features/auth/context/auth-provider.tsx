@@ -1,8 +1,8 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type PropsWithChildren } from 'react';
 
-import { apiRequest, clearSessionExpiredNotice } from '@/api/apiClient';
+import { apiRequest, clearSessionExpiredNotice, logoutNativeSession } from '@/api/apiClient';
 import { ApiError } from '@/api/apiError';
-import { getCurrentUser, loginRequest, logoutRequest, registerRequest } from '@/features/auth/api/authApi';
+import { getCurrentUser, loginRequest, registerRequest } from '@/features/auth/api/authApi';
 import { onSessionExpired } from '@/features/auth/context/authEvents';
 import { rememberedEmailStorage } from '@/features/auth/storage/rememberedEmailStorage';
 import { authTokenStorage } from '@/features/auth/storage/authTokenStorage';
@@ -126,14 +126,8 @@ export function AuthProvider({ children }: PropsWithChildren) {
   }, []);
 
   const logout = useCallback(async () => {
-    const [tokens, savedEmail] = await Promise.all([
-      authTokenStorage.read().catch(() => null),
-      rememberedEmailStorage.read(),
-    ]);
-    const serverLogout = tokens
-      ? logoutRequest(tokens.refreshToken).then(() => true).catch(() => false)
-      : Promise.resolve(true);
-    await authTokenStorage.clear().catch(() => undefined);
+    const serverLogout = logoutNativeSession().catch(() => false);
+    const savedEmail = await rememberedEmailStorage.read();
     if (!savedEmail.rememberMe) {
       await rememberedEmailStorage.clear().catch(() => undefined);
       setRememberedEmail(null);

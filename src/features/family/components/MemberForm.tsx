@@ -3,7 +3,7 @@ import { Alert, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleShee
 
 import { familyApi } from '@/features/family/api/familyApi';
 import type { FamilyMember, Generation } from '@/features/family/types/family';
-import { backendFieldErrors, memberErrorMessage, toFamilyInput, validateMember, type FormErrors, type FormValues } from '@/features/family/validation/familyValidation';
+import { backendFieldErrors, memberErrorMessage, memberToFormValues, toFamilyInput, validateMember, type FormErrors, type FormValues } from '@/features/family/validation/familyValidation';
 import { MyLifeTextArea, MyLifeTextField } from '@/design-system/components/fields';
 import { AppText } from '@/design-system/components/app-text';
 import { PrimaryButton, SecondaryButton } from '@/design-system/components/buttons';
@@ -16,7 +16,7 @@ const empty: FormValues = { fullName: '', generation: '1', gender: '', dateOfBir
 
 export function MemberForm({ member, onSaved, onCancel }: { member?: FamilyMember; onSaved: (member: FamilyMember) => void; onCancel: () => void }) {
   const { colors } = useAppTheme();
-  const [values, setValues] = useState<FormValues>(empty);
+  const [values, setValues] = useState<FormValues>(() => member ? memberToFormValues(member) : empty);
   const [members, setMembers] = useState<FamilyMember[]>([]);
   const [generations, setGenerations] = useState<Generation[]>([]);
   const [loadingRefs, setLoadingRefs] = useState(true);
@@ -25,13 +25,6 @@ export function MemberForm({ member, onSaved, onCancel }: { member?: FamilyMembe
   const [notice, setNotice] = useState('');
 
   useEffect(() => {
-    if (member) setValues({
-      fullName: member.fullName, generation: String(member.generation), gender: member.gender ?? '', dateOfBirth: member.dateOfBirth ?? '',
-      lifeStatus: member.lifeStatus, deathDate: member.deathDate ?? '', role: member.role ?? '', address: member.address ?? '',
-      phoneNumber: member.phoneNumber ?? '', facebookUrl: member.facebookUrl ?? '', instagramUrl: member.instagramUrl ?? '',
-      biography: member.biography ?? '', fatherId: member.fatherId ? String(member.fatherId) : '', motherId: member.motherId ? String(member.motherId) : '',
-      spouseId: member.spouseId ? String(member.spouseId) : '', childIds: member.childIds.map(String),
-    });
     let active = true;
     void Promise.all([familyApi.list(), familyApi.generations()]).then(([list, generationList]) => {
       if (!active) return;
@@ -69,10 +62,10 @@ export function MemberForm({ member, onSaved, onCancel }: { member?: FamilyMembe
       setNotice(memberErrorMessage(error));
     } finally { setSaving(false); }
   };
-  const relationLabel = (id: string, name: string) => id ? candidates.find((item) => String(item.id) === id)?.fullName ?? 'Chưa chọn' : 'Chưa chọn';
+  const relationLabel = (id: string) => id ? candidates.find((item) => String(item.id) === id)?.fullName ?? 'Chưa chọn' : 'Chưa chọn';
   const relationField = (label: string, key: 'fatherId' | 'motherId' | 'spouseId') => (
     <Pressable accessibilityRole="button" onPress={() => choose(label, key)} style={[styles.select, { borderColor: errors[key] ? colors.error : colors.border, backgroundColor: colors.surfaceElevated }]}>
-      <AppText variant="caption" tone="secondary">{label}</AppText><AppText>{relationLabel(values[key], label)}</AppText>
+      <AppText variant="caption" tone="secondary">{label}</AppText><AppText>{relationLabel(values[key])}</AppText>
       {errors[key] ? <AppText variant="caption" tone="error">{errors[key]}</AppText> : null}
     </Pressable>
   );

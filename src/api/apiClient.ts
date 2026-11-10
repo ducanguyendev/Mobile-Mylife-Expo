@@ -8,7 +8,15 @@ import { createSingleFlight } from './singleFlight';
 
 const timeoutMs = 15_000;
 let expiredNoticeSent = false;
-const refreshSingleFlight = createSingleFlight(performRefresh);
+let sessionVersion = 0;
+let signingOut = false;
+let activeRefresh: Promise<string | null> | null = null;
+let activeLogout: Promise<boolean> | null = null;
+const refreshSingleFlight = createSingleFlight(() => {
+  const operation = performRefresh();
+  activeRefresh = operation;
+  return operation.finally(() => { if (activeRefresh === operation) activeRefresh = null; });
+});
 
 type ApiRequestOptions = RequestInit & {
   authenticated?: boolean;
@@ -17,19 +25,26 @@ type ApiRequestOptions = RequestInit & {
 
 export async function apiRequest<T>(path: string, options: ApiRequestOptions = {}): Promise<T> {
   const { authenticated = true, retryOnUnauthorized = true, ...init } = options;
+  const version = sessionVersion;
   const sentTokens = authenticated ? await authTokenStorage.read() : null;
+  if (authenticated && (signingOut || version !== sessionVersion)) throw normalizeApiError({ status: 401 });
   const response = await sendRequest(path, init, sentTokens);
   const payload = await parseResponse(response);
+  if (authenticated && (signingOut || version !== sessionVersion)) throw normalizeApiError({ status: 401 });
 
   if (response.status === 401 && authenticated && retryOnUnauthorized && path !== '/api/refresh-token') {
     const tokens = await authTokenStorage.read();
     if (!tokens) throw apiFailure(response, payload, path, init.method);
     const latest = sentTokens?.accessToken !== tokens.accessToken ? tokens : null;
     const refreshedAccessToken = latest?.accessToken ?? await refreshSingleFlight();
-    if (!refreshedAccessToken) throw normalizeApiError({ status: 401, body: { message: 'Session has expired.' } });
+    if (!refreshedAccessToken || signingOut || version !== sessionVersion) throw normalizeApiError({ status: 401, body: { message: 'Session has expired.' } });
     const retried = await sendRequest(path, init, latest ?? { ...tokens, accessToken: refreshedAccessToken });
     const retryPayload = await parseResponse(retried);
-    if (!retried.ok) throw apiFailure(retried, retryPayload, path, init.method);
+    if (signingOut || version !== sessionVersion) throw normalizeApiError({ status: 401 });
+    if (!retried.ok) {
+      if (retried.status === 401) await invalidateSession(version);
+      throw apiFailure(retried, retryPayload, path, init.method);
+    }
     return retryPayload as T;
   }
 
@@ -38,10 +53,35 @@ export async function apiRequest<T>(path: string, options: ApiRequestOptions = {
 }
 
 export function clearSessionExpiredNotice() {
+  sessionVersion++;
+  signingOut = false;
   expiredNoticeSent = false;
 }
 
+export function logoutNativeSession(): Promise<boolean> {
+  if (activeLogout && signingOut) return activeLogout;
+  signingOut = true;
+  const version = ++sessionVersion;
+  const pending = activeRefresh;
+  const operation = (async () => {
+    const tokens = await authTokenStorage.read().catch(() => null);
+    let acknowledged = true;
+    if (version === sessionVersion) {
+      try { await authTokenStorage.clear(); } catch { acknowledged = false; }
+    }
+    try { await pending; } catch { acknowledged = false; }
+    if (tokens) {
+      try { await revokeRefreshToken(tokens.refreshToken); } catch { acknowledged = false; }
+    }
+    return acknowledged;
+  })();
+  const completion = operation.finally(() => { if (activeLogout === completion) activeLogout = null; });
+  activeLogout = completion;
+  return completion;
+}
+
 async function performRefresh(): Promise<string | null> {
+  const version = sessionVersion;
   try {
     const current = await authTokenStorage.read();
     if (!current) return null;
@@ -51,20 +91,42 @@ async function performRefresh(): Promise<string | null> {
     }, null);
     const payload = await parseResponse(response);
     if (!response.ok || !hasTokenPair(payload)) {
-      await invalidateSession();
+      await invalidateSession(version);
+      return null;
+    }
+    if (signingOut || version !== sessionVersion) {
+      // Rotation may already have succeeded on the server when the user signs out.
+      // Revoke that new session without persisting it or clearing a newer login.
+      await revokeRefreshToken(payload.refreshToken);
       return null;
     }
     await authTokenStorage.replaceRotated(payload);
+    if (signingOut || version !== sessionVersion) {
+      await revokeRefreshToken(payload.refreshToken);
+      // SecureStore itself is asynchronous; remove a write that crossed logout.
+      const stored = await authTokenStorage.read();
+      if (stored?.accessToken === payload.accessToken) await authTokenStorage.clear();
+      return null;
+    }
     expiredNoticeSent = false;
     return payload.accessToken;
-  } catch {
-    await invalidateSession();
+  } catch (error) {
+    if (signingOut || version !== sessionVersion) throw error;
+    await invalidateSession(version);
     return null;
   }
 }
 
-async function invalidateSession() {
+async function revokeRefreshToken(refreshToken: string) {
+  const response = await sendRequest('/api/logout', { method: 'POST', body: JSON.stringify({ refreshToken }) }, null);
+  await response.text();
+  if (!response.ok) throw normalizeApiError({ status: response.status });
+}
+
+async function invalidateSession(version: number) {
+  if (version !== sessionVersion || signingOut) return;
   await authTokenStorage.clear().catch(() => undefined);
+  if (version !== sessionVersion || signingOut) return;
   if (!expiredNoticeSent) {
     expiredNoticeSent = true;
     emitSessionExpired();

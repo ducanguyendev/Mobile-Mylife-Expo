@@ -1,0 +1,181 @@
+{
+  "date": "2026-11-10",
+  "timezone": "Asia/Saigon",
+  "verdict": "PARTIAL PASS",
+  "readyForM2": true,
+  "readyForM2Condition": "Review M1; native auth/storage/deep-link smoke is an early M2 gate.",
+  "readyForPublicRelease": false,
+  "commits": {
+    "expo": "7fa31245bc2bcfc6a58a28879bba9df028f13e45",
+    "web": "144fc506c0ec7957d40a137351aeda296b8937b5",
+    "backend": "c1b43b1f83e17f9546edc9bb314b8345b8d947ad"
+  },
+  "branch": "feature_minhduc",
+  "baseline": {
+    "installExitCode": 0,
+    "lint": {
+      "exitCode": 1,
+      "errors": 4,
+      "warnings": 3
+    },
+    "typecheck": {
+      "exitCode": 2,
+      "errors": 1
+    },
+    "auth": {
+      "exitCode": 0,
+      "tests": 10,
+      "pass": 10,
+      "fail": 0
+    },
+    "newFamilyGuardTests": {
+      "tests": 5,
+      "pass": 2,
+      "fail": 3
+    },
+    "realHttp": {
+      "passGroups": 4,
+      "reproducedDefects": 2
+    }
+  },
+  "final": {
+    "installExitCode": 0,
+    "lint": {
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    "typecheck": {
+      "exitCode": 0,
+      "errors": 0
+    },
+    "auth": {
+      "exitCode": 0,
+      "tests": 10,
+      "pass": 10,
+      "fail": 0
+    },
+    "foundation": {
+      "exitCode": 0,
+      "tests": 26,
+      "pass": 26,
+      "fail": 0,
+      "skipped": 0
+    },
+    "realHttp": {
+      "exitCode": 0,
+      "groups": 7,
+      "pass": 7,
+      "apiResponses": "real Kestrel/PostgreSQL; native bridge adapted in Node"
+    },
+    "androidExport": {
+      "exitCode": 0,
+      "bundle": "Hermes JS, approximately 3.1 MB",
+      "nativeApkOrDeviceTest": false
+    }
+  },
+  "fixes": [
+    "Unsupported horizontal relations omitted from unrelated edits",
+    "Logout retires late rotations and isolates old/new sessions",
+    "Authenticated USER guard covers family navigator",
+    "Form error typing and safe keyed initialization",
+    "One focus load per family screen and invalid edit ID rejection",
+    "Read-only family metadata types match W10 DTO"
+  ],
+  "limitations": [
+    "Physical Android/iOS and actual SecureStore persistence",
+    "Native deep links/back stack and screen-reader/responsive rendering",
+    "Five measured palette contrast risks scheduled for M2",
+    "Eight-candidate Alert and Android button limit scheduled for M3",
+    "Feature parity gaps and live Google/Drive/VietMap dependencies"
+  ],
+  "backendAndWebSourceUnmodified": true,
+  "flutterUnmodified": true,
+  "dependencyAndLockfileUnchanged": true,
+  "committed": false,
+  "deployed": false,
+  "modifiedFiles": [
+    "README.md",
+    "docs/review-m1/API_CONTRACT_AUDIT.md",
+    "docs/review-m1/DESIGN_SYSTEM_AUDIT.md",
+    "docs/review-m1/FEATURE_PARITY_MATRIX.md",
+    "docs/review-m1/M2_M9_BACKLOG.md",
+    "docs/review-m1/REPORT.md",
+    "docs/review-m1/TEST_RESULTS.md",
+    "docs/review-m1/test-results/baseline-auth.tap",
+    "docs/review-m1/test-results/baseline-foundation.tap",
+    "docs/review-m1/test-results/baseline-install.log",
+    "docs/review-m1/test-results/baseline-integration.json",
+    "docs/review-m1/test-results/baseline-integration.log",
+    "docs/review-m1/test-results/baseline-lifecycle.json",
+    "docs/review-m1/test-results/baseline-lint.log",
+    "docs/review-m1/test-results/baseline-typecheck.log",
+    "docs/review-m1/test-results/contrast-audit.json",
+    "docs/review-m1/test-results/final-all.tap",
+    "docs/review-m1/test-results/final-android-export.log",
+    "docs/review-m1/test-results/final-auth.tap",
+    "docs/review-m1/test-results/final-foundation.tap",
+    "docs/review-m1/test-results/final-install.log",
+    "docs/review-m1/test-results/final-integration.json",
+    "docs/review-m1/test-results/final-integration.log",
+    "docs/review-m1/test-results/final-lifecycle.json",
+    "docs/review-m1/test-results/final-lint.log",
+    "docs/review-m1/test-results/final-safety.tap",
+    "docs/review-m1/test-results/final-typecheck.log",
+    "docs/review-m1/test-results/isolated-backend-build.log",
+    "docs/review-m1/test-results/isolated-createdb.log",
+    "docs/review-m1/test-results/isolated-dropdb.log",
+    "docs/review-m1/test-results/isolated-initdb.log",
+    "docs/review-m1/test-results/isolated-kestrel.log",
+    "docs/review-m1/test-results/isolated-postgres-start.log",
+    "docs/review-m1/test-results/isolated-postgres-stop.log",
+    "docs/review-m1/test-results/logout-followup-before.tap",
+    "docs/review-m1/test-results/summary.json",
+    "package.json",
+    "scripts/run-isolated-m1.cjs",
+    "src/api/apiClient.ts",
+    "src/app/(tabs)/family.tsx",
+    "src/app/_layout.tsx",
+    "src/app/family/[id].tsx",
+    "src/app/family/[id]/edit.tsx",
+    "src/features/auth/context/auth-provider.tsx",
+    "src/features/family/components/MemberForm.tsx",
+    "src/features/family/types/family.ts",
+    "src/features/family/validation/familyValidation.ts",
+    "tests/foundation-safety.test.cjs",
+    "tests/helpers/load-foundation.cjs",
+    "tests/native-session.test.cjs",
+    "tests/real-backend.m1.cjs"
+  ],
+  "evidenceFiles": [
+    "baseline-auth.tap",
+    "baseline-foundation.tap",
+    "baseline-install.log",
+    "baseline-integration.json",
+    "baseline-integration.log",
+    "baseline-lifecycle.json",
+    "baseline-lint.log",
+    "baseline-typecheck.log",
+    "contrast-audit.json",
+    "final-all.tap",
+    "final-android-export.log",
+    "final-auth.tap",
+    "final-foundation.tap",
+    "final-install.log",
+    "final-integration.json",
+    "final-integration.log",
+    "final-lifecycle.json",
+    "final-lint.log",
+    "final-safety.tap",
+    "final-typecheck.log",
+    "isolated-backend-build.log",
+    "isolated-createdb.log",
+    "isolated-dropdb.log",
+    "isolated-initdb.log",
+    "isolated-kestrel.log",
+    "isolated-postgres-start.log",
+    "isolated-postgres-stop.log",
+    "logout-followup-before.tap",
+    "summary.json"
+  ]
+}

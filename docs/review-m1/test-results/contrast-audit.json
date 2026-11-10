@@ -1,0 +1,110 @@
+[
+  {
+    "theme": "light",
+    "pairs": [
+      {
+        "foreground": "textPrimary",
+        "background": "surface",
+        "minimum": 4.5,
+        "ratio": 14.998,
+        "pass": true
+      },
+      {
+        "foreground": "textSecondary",
+        "background": "surface",
+        "minimum": 4.5,
+        "ratio": 5.411,
+        "pass": true
+      },
+      {
+        "foreground": "textTertiary",
+        "background": "surface",
+        "minimum": 4.5,
+        "ratio": 3.223,
+        "pass": false
+      },
+      {
+        "foreground": "onAccent",
+        "background": "accentFamily",
+        "minimum": 4.5,
+        "ratio": 5.052,
+        "pass": true
+      },
+      {
+        "foreground": "onAccentMuted",
+        "background": "accentFamily",
+        "minimum": 4.5,
+        "ratio": 4.137,
+        "pass": false
+      },
+      {
+        "foreground": "error",
+        "background": "surface",
+        "minimum": 4.5,
+        "ratio": 4.747,
+        "pass": true
+      },
+      {
+        "foreground": "border",
+        "background": "surfaceElevated",
+        "minimum": 3,
+        "ratio": 1.309,
+        "pass": false
+      }
+    ]
+  },
+  {
+    "theme": "dark",
+    "pairs": [
+      {
+        "foreground": "textPrimary",
+        "background": "surface",
+        "minimum": 4.5,
+        "ratio": 13.587,
+        "pass": true
+      },
+      {
+        "foreground": "textSecondary",
+        "background": "surface",
+        "minimum": 4.5,
+        "ratio": 7.965,
+        "pass": true
+      },
+      {
+        "foreground": "textTertiary",
+        "background": "surface",
+        "minimum": 4.5,
+        "ratio": 5.145,
+        "pass": true
+      },
+      {
+        "foreground": "onAccent",
+        "background": "accentFamily",
+        "minimum": 4.5,
+        "ratio": 7.878,
+        "pass": true
+      },
+      {
+        "foreground": "onAccentMuted",
+        "background": "accentFamily",
+        "minimum": 4.5,
+        "ratio": 1.689,
+        "pass": false
+      },
+      {
+        "foreground": "error",
+        "background": "surface",
+        "minimum": 4.5,
+        "ratio": 6.868,
+        "pass": true
+      },
+      {
+        "foreground": "border",
+        "background": "surfaceElevated",
+        "minimum": 3,
+        "ratio": 1.281,
+        "pass": false
+      }
+    ]
+  }
+]
