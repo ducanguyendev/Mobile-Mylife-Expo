@@ -47,3 +47,6 @@ example
 # generated native folders
 /ios
 /android
+
+# Disposable local regression runtimes (never ship test accounts or AVD data)
+.tmp/

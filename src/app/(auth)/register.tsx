@@ -17,10 +17,10 @@ import { mapAuthApiError } from '@/features/auth/validation/authErrorMessages';
 import { formatBirthDateForApi, normalizeEmail, normalizeFullName, validateRegistration, type AuthFieldErrors } from '@/features/auth/validation/authValidation';
 
 export default function RegisterScreen() {
-  const { colors } = useAppTheme();
+  const { colors, language } = useAppTheme();
   const { register } = useAuth();
   const { showToast } = useToast();
-  const copy = getAuthStrings();
+  const copy = getAuthStrings(language);
   const [fullName, setFullName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [gender, setGender] = useState('');
@@ -82,7 +82,7 @@ export default function RegisterScreen() {
       </View>
 
       <AppCard style={styles.form}>
-        {message ? <View accessibilityRole="alert" style={[styles.errorBanner, { backgroundColor: `${colors.error}12`, borderColor: `${colors.error}45` }]}><AppText tone="error">{message}</AppText></View> : null}
+        {message ? <View accessibilityRole="alert" accessibilityLiveRegion="polite" style={[styles.errorBanner, { backgroundColor: `${colors.error}12`, borderColor: `${colors.error}45` }]}><AppText tone="error">{message}</AppText></View> : null}
         <MyLifeTextField inputRef={nameRef} label={copy.fullName} value={fullName} onChangeText={(value) => updateField('fullName', () => setFullName(value))} error={fieldErrors.fullName} placeholder={copy.namePlaceholder} autoCapitalize="words" autoCorrect={false} autoComplete="name" textContentType="name" returnKeyType="next" onSubmitEditing={() => phoneRef.current?.focus()} maxLength={50} />
         <MyLifeTextField inputRef={phoneRef} label={copy.phone} value={phoneNumber} onChangeText={(value) => updateField('phoneNumber', () => setPhoneNumber(value.replace(/\D/g, '').slice(0, 10)))} error={fieldErrors.phoneNumber} placeholder={copy.phonePlaceholder} keyboardType="phone-pad" autoComplete="tel" textContentType="telephoneNumber" returnKeyType="next" onSubmitEditing={() => dobRef.current?.focus()} maxLength={10} />
         <View style={styles.fieldGroup}>

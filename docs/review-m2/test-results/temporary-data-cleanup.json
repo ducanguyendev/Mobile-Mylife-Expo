@@ -1,0 +1,22 @@
+﻿[
+    {
+        "path":  "D:\\DUAN\\MYLIFE\\Mobile-MyLife-Expo\\.tmp\\m2-avd",
+        "removed":  true,
+        "kind":  "M2 disposable AVD"
+    },
+    {
+        "path":  "D:\\DUAN\\MYLIFE\\.tmp\\m1-integration-chGbEo",
+        "removed":  true,
+        "kind":  "M2 stopped disposable PostgreSQL cluster"
+    },
+    {
+        "path":  "D:\\DUAN\\MYLIFE\\.tmp\\m1-integration-QNk92i",
+        "removed":  true,
+        "kind":  "M2 stopped disposable PostgreSQL cluster"
+    },
+    {
+        "path":  "D:\\DUAN\\MYLIFE\\.tmp\\m1-integration-XXUwZQ",
+        "removed":  true,
+        "kind":  "M2 stopped disposable PostgreSQL cluster"
+    }
+]

@@ -1,0 +1,5 @@
+{
+  "initialAttempt": "Removing adb reverse and disabling Wi-Fi did not sever existing keep-alive TCP connections. No offline PASS claimed for those screenshots.",
+  "evidence": "network-observation.json shows real 401 -> one refresh 200 -> three retry 200, not an offline failure.",
+  "revisedMethod": "Reconnect only emulator-5580 transport to close existing API sockets, restore Metro forwarding only."
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "repo": "D:/DUAN/MYLIFE/Mobile-MyLife-Expo",
+    "branch": "feature_minhduc",
+    "head": "4cfc4c941eebbbfce8ed2b16671b136aabadd313",
+    "status": "M .gitignore\n M package.json\n M src/api/apiClient.ts\n M src/app/(auth)/login.tsx\n M src/app/(auth)/register.tsx\n M src/app/(tabs)/_layout.tsx\n M src/app/(tabs)/index.tsx\n M src/app/(tabs)/profile.tsx\n M src/app/_layout.tsx\n M src/app/family/_layout.tsx\n M src/components/feedback/states.tsx\n M src/components/feedback/toast-provider.tsx\n M src/design-system/components/app-icon.tsx\n M src/design-system/components/avatar.tsx\n M src/design-system/components/buttons.tsx\n M src/design-system/components/controls.tsx\n M src/design-system/components/fields.tsx\n M src/design-system/tokens.ts\n M src/theme/theme-provider.tsx\n?? docs/review-m2/\n?? scripts/audit-m2-contrast.cjs\n?? scripts/run-isolated-m2.cjs\n?? src/features/home/\n?? src/localization/\n?? src/preferences/\n?? tests/m2-foundation.test.cjs\n?? tests/real-backend.m2.cjs"
+  },
+  {
+    "repo": "D:/DUAN/MYLIFE/Frontend-MyLife",
+    "branch": "feature_minhduc",
+    "head": "144fc506c0ec7957d40a137351aeda296b8937b5",
+    "status": ""
+  },
+  {
+    "repo": "D:/DUAN/MYLIFE/Backend-MyLife",
+    "branch": "feature_minhduc",
+    "head": "c1b43b1f83e17f9546edc9bb314b8345b8d947ad",
+    "status": ""
+  }
+]

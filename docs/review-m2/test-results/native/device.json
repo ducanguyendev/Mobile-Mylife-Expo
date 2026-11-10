@@ -1,0 +1,33 @@
+{
+  "serial": "emulator-5580",
+  "avd": "MyLife_M2",
+  "runtime": "Expo Go 58.0.5; actual Android native modules, no JS storage bridge adapters",
+  "api": "35",
+  "android": "15",
+  "model": "sdk_gphone64_x86_64",
+  "timezone": "Asia/Bangkok",
+  "viewports": [
+    {
+      "name": "standard",
+      "pixels": "1080x2340",
+      "density": 440,
+      "fontScale": 1,
+      "dp": "approximately 393x851"
+    },
+    {
+      "name": "compact",
+      "pixels": "720x1280",
+      "density": 320,
+      "fontScale": 1.3,
+      "dp": "360x640"
+    },
+    {
+      "name": "large",
+      "pixels": "1200x1920",
+      "density": 240,
+      "fontScale": 1,
+      "dp": "800x1280"
+    }
+  ],
+  "scope": "All viewport classes simulated on ONE disposable AVD; no physical device or iOS coverage"
+}

@@ -69,7 +69,7 @@ export function LargeTitleHeader({ title, eyebrow, subtitle }: Omit<AppHeaderPro
 export function SectionHeader({ title, action }: { title: string; action?: React.ReactNode }) {
   return (
     <View style={styles.sectionHeader}>
-      <AppText variant="sectionTitle" accessibilityRole="header">{title}</AppText>
+      <AppText variant="sectionTitle" accessibilityRole="header" style={{ flex: 1 }}>{title}</AppText>
       {action}
     </View>
   );

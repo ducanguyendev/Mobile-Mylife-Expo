@@ -46,7 +46,10 @@
     "test:auth": "node --experimental-strip-types --test tests/auth-foundation.test.mjs",
     "typecheck": "tsc --noEmit",
     "test:foundation": "node --experimental-strip-types --test tests/auth-foundation.test.mjs tests/foundation-safety.test.cjs tests/native-session.test.cjs",
-    "test:integration": "node scripts/run-isolated-m1.cjs"
+    "test:integration": "node scripts/run-isolated-m1.cjs",
+    "test:m2": "node --test tests/m2-foundation.test.cjs",
+    "test:integration:m2": "node scripts/run-isolated-m2.cjs",
+    "audit:contrast:m2": "node scripts/audit-m2-contrast.cjs"
   },
   "private": true
 }

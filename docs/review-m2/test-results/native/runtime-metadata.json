@@ -1,0 +1,9 @@
+{
+  "api": "http://127.0.0.1:62070",
+  "pgPort": 62069,
+  "database": "mylife_m1_ce7f85d64728",
+  "syntheticOnly": true,
+  "accessTokenSeconds": 5,
+  "refreshTokenMinutes": 10,
+  "driveDisabled": true
+}

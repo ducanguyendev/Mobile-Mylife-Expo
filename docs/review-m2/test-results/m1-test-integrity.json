@@ -1,0 +1,32 @@
+[
+  {
+    "file": "tests/auth-foundation.test.mjs",
+    "unchanged": true,
+    "sha256": "1e92e0a7be663eae9394884e253ab843200c2189af975084412f1c4cf48a516e"
+  },
+  {
+    "file": "tests/foundation-safety.test.cjs",
+    "unchanged": true,
+    "sha256": "43086d603dbb83c45821dfd9029f442b10246f36fd9114348fed8fb5a44edf56"
+  },
+  {
+    "file": "tests/native-session.test.cjs",
+    "unchanged": true,
+    "sha256": "37dcb5b3042484a212faf52eee1e0e799215b12baac0bfb552e86481b40d6f5f"
+  },
+  {
+    "file": "tests/real-backend.m1.cjs",
+    "unchanged": true,
+    "sha256": "d0435aa5d22fc566879b831fdc84789c48ae50205423507086910f6d60b71d45"
+  },
+  {
+    "file": "tests/helpers/load-foundation.cjs",
+    "unchanged": true,
+    "sha256": "52f33d88ffbf2e95c19a36cf323b5e84a4a9118e7c5bfdbeb28dbb7b452a2193"
+  },
+  {
+    "file": "scripts/run-isolated-m1.cjs",
+    "unchanged": true,
+    "sha256": "2730930dd6298df1e044f40cefc90c486ea9f0c562408c003ed271cb29821611"
+  }
+]

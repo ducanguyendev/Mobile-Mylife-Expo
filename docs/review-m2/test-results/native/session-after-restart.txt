@@ -1,0 +1,9 @@
+ id | is_revoked |    user_agent     
+----+------------+-------------------
+ 13 | t          | okhttp/4.12.0
+ 14 | t          | MyLife-M2-Fixture
+ 15 | t          | okhttp/4.12.0
+ 16 | t          | okhttp/4.12.0
+ 17 | f          | okhttp/4.12.0
+(5 rows)
+

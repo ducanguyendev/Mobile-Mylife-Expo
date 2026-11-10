@@ -1,0 +1,7 @@
+INSERT 0 1
+ id | is_revoked |    user_agent     
+----+------------+-------------------
+ 13 | f          | okhttp/4.12.0
+ 14 | f          | MyLife-M2-Fixture
+(2 rows)
+

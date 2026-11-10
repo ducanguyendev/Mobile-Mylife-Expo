@@ -13,6 +13,7 @@ import { AppIcon } from '@/design-system/components/app-icon';
 import { AppText } from '@/design-system/components/app-text';
 import { radius, spacing } from '@/design-system/tokens';
 import { useAppTheme } from '@/theme/theme-provider';
+import { useLocalization } from '@/localization/use-localization';
 
 type FieldBaseProps = {
   label?: string;
@@ -50,7 +51,7 @@ export function MyLifeTextField({
       <View
         style={[
           styles.inputShell,
-          { backgroundColor: colors.surfaceElevated, borderColor: error ? colors.error : focused ? colors.accentFamily : colors.border },
+          { backgroundColor: colors.surfaceElevated, borderColor: error ? colors.error : focused ? colors.accentFamily : colors.controlBorder },
           disabled && { backgroundColor: colors.surfaceMuted, opacity: 0.68 },
         ]}>
         {leadingIcon}
@@ -63,21 +64,24 @@ export function MyLifeTextField({
           placeholderTextColor={colors.textTertiary}
           selectionColor={colors.accentFamily}
           accessibilityLabel={inputProps.accessibilityLabel ?? label}
+          accessibilityHint={error || helperText || inputProps.accessibilityHint}
+          accessibilityState={{ ...inputProps.accessibilityState, disabled: !editable }}
           style={[styles.input, { color: colors.textPrimary }, style]}
         />
         {trailingAction}
       </View>
-      {error ? <AppText variant="caption" tone="error">{error}</AppText> : helperText ? <AppText variant="caption" tone="secondary">{helperText}</AppText> : null}
+      {error ? <AppText accessibilityRole="alert" accessibilityLiveRegion="polite" variant="caption" tone="error">{error}</AppText> : helperText ? <AppText variant="caption" tone="secondary">{helperText}</AppText> : null}
     </View>
   );
 }
 
-export function MyLifePasswordField({ showPasswordLabel = 'Show password', hidePasswordLabel = 'Hide password', ...props }: TextFieldProps & {
+export function MyLifePasswordField({ showPasswordLabel, hidePasswordLabel, ...props }: TextFieldProps & {
   showPasswordLabel?: string;
   hidePasswordLabel?: string;
 }) {
   const { colors } = useAppTheme();
   const [visible, setVisible] = useState(false);
+  const { copy } = useLocalization();
   return (
     <MyLifeTextField
       {...props}
@@ -85,7 +89,9 @@ export function MyLifePasswordField({ showPasswordLabel = 'Show password', hideP
       trailingAction={
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel={visible ? hidePasswordLabel : showPasswordLabel}
+          accessibilityLabel={visible ? hidePasswordLabel ?? copy.hidePassword : showPasswordLabel ?? copy.showPassword}
+          accessibilityState={{ disabled: props.disabled }}
+          disabled={props.disabled}
           onPress={() => setVisible((value) => !value)}
           hitSlop={8}
           style={styles.trailingButton}>
@@ -108,18 +114,19 @@ export function MyLifeTextArea({ numberOfLines = 4, style, ...props }: TextField
   );
 }
 
-export function MyLifeSearchField({ value, onChangeText, placeholder = 'Tìm kiếm', ...props }: TextFieldProps) {
+export function MyLifeSearchField({ value, onChangeText, placeholder, ...props }: TextFieldProps) {
   const { colors } = useAppTheme();
+  const { copy } = useLocalization();
   return (
     <MyLifeTextField
       {...props}
       value={value}
       onChangeText={onChangeText}
-      placeholder={placeholder}
+      placeholder={placeholder ?? copy.search}
       returnKeyType={props.returnKeyType ?? 'search'}
       leadingIcon={<AppIcon name={{ ios: 'magnifyingglass', android: 'search', web: 'search' }} color={colors.textTertiary} size={19} />}
       trailingAction={value ? (
-        <Pressable accessibilityRole="button" accessibilityLabel="Xóa nội dung" onPress={() => onChangeText?.('')} hitSlop={8} style={styles.trailingButton}>
+        <Pressable accessibilityRole="button" accessibilityLabel={copy.clear} accessibilityState={{ disabled: props.disabled || props.readOnly }} disabled={props.disabled || props.readOnly} onPress={() => onChangeText?.('')} style={styles.trailingButton}>
           <AppIcon name={{ ios: 'xmark.circle.fill', android: 'cancel', web: 'cancel' }} color={colors.textTertiary} size={18} />
         </Pressable>
       ) : undefined}
@@ -127,12 +134,13 @@ export function MyLifeSearchField({ value, onChangeText, placeholder = 'Tìm ki�
   );
 }
 
-export function MyLifeSelectField({ label, value, placeholder = 'Chọn một mục', onPress, error, helperText, disabled }: FieldBaseProps & {
+export function MyLifeSelectField({ label, value, placeholder, onPress, error, helperText, disabled }: FieldBaseProps & {
   value?: string;
   placeholder?: string;
   onPress?: () => void;
 }) {
   const { colors } = useAppTheme();
+  const { copy } = useLocalization();
   return (
     <View style={styles.field}>
       {label ? <AppText variant="label">{label}</AppText> : null}
@@ -142,29 +150,30 @@ export function MyLifeSelectField({ label, value, placeholder = 'Chọn một m�
         accessibilityState={{ disabled, expanded: false }}
         disabled={disabled}
         onPress={onPress}
-        style={({ pressed }) => [styles.inputShell, { backgroundColor: colors.surfaceElevated, borderColor: error ? colors.error : colors.border, opacity: disabled ? 0.6 : pressed ? 0.78 : 1 }]}>
-        <AppText tone={value ? 'primary' : 'tertiary'} style={styles.value}>{value ?? placeholder}</AppText>
+        style={({ pressed }) => [styles.inputShell, { backgroundColor: colors.surfaceElevated, borderColor: error ? colors.error : colors.controlBorder, opacity: disabled ? 0.6 : pressed ? 0.78 : 1 }]}>
+        <AppText tone={value ? 'primary' : 'tertiary'} style={styles.value}>{value ?? placeholder ?? copy.select}</AppText>
         <AppIcon name={{ ios: 'chevron.down', android: 'keyboard_arrow_down', web: 'keyboard_arrow_down' }} size={18} color={colors.textSecondary} />
       </Pressable>
-      {error ? <AppText variant="caption" tone="error">{error}</AppText> : helperText ? <AppText variant="caption" tone="secondary">{helperText}</AppText> : null}
+      {error ? <AppText accessibilityRole="alert" accessibilityLiveRegion="polite" variant="caption" tone="error">{error}</AppText> : helperText ? <AppText variant="caption" tone="secondary">{helperText}</AppText> : null}
     </View>
   );
 }
 
-export function MyLifeDateField({ label, value, placeholder = 'Chọn ngày', onPress, error, disabled }: FieldBaseProps & {
+export function MyLifeDateField({ label, value, placeholder, onPress, error, disabled }: FieldBaseProps & {
   value?: string;
   placeholder?: string;
   onPress?: () => void;
 }) {
   const { colors } = useAppTheme();
+  const { copy } = useLocalization();
   return (
     <View style={styles.field}>
       {label ? <AppText variant="label">{label}</AppText> : null}
-      <Pressable accessibilityRole="button" accessibilityLabel={label} disabled={disabled} onPress={onPress} style={({ pressed }) => [styles.inputShell, { backgroundColor: colors.surfaceElevated, borderColor: error ? colors.error : colors.border, opacity: disabled ? 0.6 : pressed ? 0.78 : 1 }]}>
+      <Pressable accessibilityRole="button" accessibilityLabel={label} disabled={disabled} onPress={onPress} style={({ pressed }) => [styles.inputShell, { backgroundColor: colors.surfaceElevated, borderColor: error ? colors.error : colors.controlBorder, opacity: disabled ? 0.6 : pressed ? 0.78 : 1 }]}>
         <AppIcon name={{ ios: 'calendar', android: 'calendar_month', web: 'calendar_month' }} size={19} color={colors.textSecondary} />
-        <AppText tone={value ? 'primary' : 'tertiary'} style={styles.value}>{value ?? placeholder}</AppText>
+        <AppText tone={value ? 'primary' : 'tertiary'} style={styles.value}>{value ?? placeholder ?? copy.selectDate}</AppText>
       </Pressable>
-      {error ? <AppText variant="caption" tone="error">{error}</AppText> : null}
+      {error ? <AppText accessibilityRole="alert" accessibilityLiveRegion="polite" variant="caption" tone="error">{error}</AppText> : null}
     </View>
   );
 }
@@ -175,5 +184,5 @@ const styles = StyleSheet.create({
   input: { flex: 1, minHeight: 48, paddingVertical: spacing.sm, fontSize: 15 },
   textArea: { minHeight: 106, paddingTop: spacing.md },
   value: { flex: 1 },
-  trailingButton: { minWidth: 30, height: 40, alignItems: 'center', justifyContent: 'center' },
+  trailingButton: { minWidth: 48, minHeight: 48, alignItems: 'center', justifyContent: 'center' },
 });

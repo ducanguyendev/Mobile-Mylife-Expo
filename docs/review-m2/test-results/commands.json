@@ -1,0 +1,113 @@
+{
+  "recordedAt": "2026-11-10T07:22:44.399Z",
+  "commands": [
+    {
+      "phase": "baseline",
+      "command": "npm install --no-audit --no-fund",
+      "exitCode": 0,
+      "evidence": "baseline-install.log",
+      "passed": null
+    },
+    {
+      "phase": "baseline",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "evidence": "baseline-lint.log",
+      "passed": null
+    },
+    {
+      "phase": "baseline",
+      "command": "npx tsc --noEmit",
+      "exitCode": 0,
+      "evidence": "baseline-typecheck.log",
+      "passed": null
+    },
+    {
+      "phase": "baseline",
+      "command": "npm run test:auth",
+      "exitCode": 0,
+      "evidence": "baseline-auth.tap",
+      "passed": 10
+    },
+    {
+      "phase": "baseline",
+      "command": "npm run test:foundation",
+      "exitCode": 0,
+      "evidence": "baseline-foundation.tap",
+      "passed": 26
+    },
+    {
+      "phase": "baseline",
+      "command": "PG_BIN=... node scripts/run-isolated-m2.cjs --baseline",
+      "exitCode": 0,
+      "evidence": "baseline-backend/baseline-integration.log",
+      "passed": 7
+    },
+    {
+      "phase": "final",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "evidence": "final-lint.log",
+      "passed": null
+    },
+    {
+      "phase": "final",
+      "command": "npx tsc --noEmit",
+      "exitCode": 0,
+      "evidence": "final-typecheck.log",
+      "passed": null
+    },
+    {
+      "phase": "final",
+      "command": "npm run test:auth",
+      "exitCode": 0,
+      "evidence": "final-auth.tap",
+      "passed": 10
+    },
+    {
+      "phase": "final",
+      "command": "npm run test:foundation",
+      "exitCode": 0,
+      "evidence": "final-foundation.tap",
+      "passed": 26
+    },
+    {
+      "phase": "final",
+      "command": "npm run test:m2",
+      "exitCode": 0,
+      "evidence": "m2-unit.tap",
+      "passed": 22
+    },
+    {
+      "phase": "final",
+      "command": "PG_BIN=... node scripts/run-isolated-m2.cjs",
+      "exitCode": 0,
+      "evidence": "final-backend/final-integration.log",
+      "passed": 7
+    },
+    {
+      "phase": "final",
+      "command": "M2 Home HTTP suite invoked by isolated harness",
+      "exitCode": 0,
+      "evidence": "final-backend/m2-home-integration.log",
+      "passed": 6
+    },
+    {
+      "phase": "final",
+      "command": "npm run audit:contrast:m2",
+      "exitCode": 0,
+      "evidence": "contrast-audit.log",
+      "passed": 14
+    },
+    {
+      "phase": "final",
+      "command": "EXPO_NO_DOTENV=1 EXPO_PUBLIC_API_BASE_URL=http://127.0.0.1:7902 npx expo export --platform android --output-dir .tmp/m2-android-export",
+      "exitCode": 0,
+      "evidence": "android-export.log",
+      "passed": null
+    }
+  ],
+  "uniqueUnitAndAdapterTests": 48,
+  "nativeFunctionalScenarios": 14,
+  "scope": "Exit codes recorded from executed commands; export is bundle validation, native smoke is separate. Auth 10 tests are included in foundation 26."
+}

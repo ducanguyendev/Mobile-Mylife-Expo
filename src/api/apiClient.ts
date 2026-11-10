@@ -138,6 +138,9 @@ async function sendRequest(path: string, init: RequestInit, tokens: AuthTokens |
     throw new ApiError('API base URL is not configured.', 'unknown');
   }
   const controller = new AbortController();
+  const abort = () => controller.abort();
+  if (init.signal?.aborted) abort();
+  else init.signal?.addEventListener('abort', abort, { once: true });
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   const headers = new Headers(init.headers);
   headers.set('Accept', 'application/json');
@@ -155,6 +158,7 @@ async function sendRequest(path: string, init: RequestInit, tokens: AuthTokens |
     throw normalizeApiError({ network: true, timeout: controller.signal.aborted });
   } finally {
     clearTimeout(timer);
+    init.signal?.removeEventListener('abort', abort);
   }
 }
 

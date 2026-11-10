@@ -30,7 +30,7 @@ export function ToastProvider({ children }: PropsWithChildren) {
       {children}
       {toast ? (
         <View pointerEvents="box-none" style={styles.overlay}>
-          <Pressable accessibilityRole="alert" onPress={() => setToast(null)} style={[styles.toast, { backgroundColor: colors.surfaceElevated, borderColor: colors.border }]}>
+          <Pressable accessibilityRole="alert" accessibilityLiveRegion="polite" onPress={() => setToast(null)} style={[styles.toast, { backgroundColor: colors.surfaceElevated, borderColor: colors.border }]}>
             <View style={[styles.dot, { backgroundColor: palette[toast.kind] }]} />
             <AppText style={styles.message}>{toast.message}</AppText>
           </Pressable>

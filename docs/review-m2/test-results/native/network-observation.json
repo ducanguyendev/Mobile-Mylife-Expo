@@ -1,0 +1,72 @@
+[
+  {
+    "event": "request",
+    "path": "/api/family-tree/anniversaries",
+    "id": "80161950"
+  },
+  {
+    "event": "response",
+    "status": 401,
+    "id": "80161950"
+  },
+  {
+    "event": "request",
+    "path": "/api/family-tree",
+    "id": "252356763"
+  },
+  {
+    "event": "response",
+    "status": 401,
+    "id": "252356763"
+  },
+  {
+    "event": "response",
+    "status": 401,
+    "id": "39874380"
+  },
+  {
+    "event": "request",
+    "path": "/api/library/albums",
+    "id": "39874380"
+  },
+  {
+    "event": "request",
+    "path": "/api/refresh-token",
+    "id": "59775848"
+  },
+  {
+    "event": "response",
+    "status": 200,
+    "id": "59775848"
+  },
+  {
+    "event": "request",
+    "path": "/api/family-tree/anniversaries",
+    "id": "189044965"
+  },
+  {
+    "event": "response",
+    "status": 200,
+    "id": "189044965"
+  },
+  {
+    "event": "request",
+    "path": "/api/library/albums",
+    "id": "117992838"
+  },
+  {
+    "event": "response",
+    "status": 200,
+    "id": "117992838"
+  },
+  {
+    "event": "response",
+    "status": 200,
+    "id": "181796765"
+  },
+  {
+    "event": "request",
+    "path": "/api/family-tree",
+    "id": "181796765"
+  }
+]

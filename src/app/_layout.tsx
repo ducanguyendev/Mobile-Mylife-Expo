@@ -13,7 +13,7 @@ import { getAuthStrings } from '@/features/auth/i18n/authStrings';
 import { AppThemeProvider, useAppTheme } from '@/theme/theme-provider';
 
 function AppNavigation() {
-  const { resolvedMode, colors } = useAppTheme();
+  const { resolvedMode, colors, language, reducedMotion } = useAppTheme();
   const { status, isUser } = useAuth();
   const navigationTheme = useMemo(() => {
     const base = resolvedMode === 'dark' ? DarkTheme : DefaultTheme;
@@ -37,7 +37,7 @@ function AppNavigation() {
       <ToastProvider>
         <SessionExpiryFeedback />
         <View style={styles.navigator}>
-          <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.background } }}>
+          <Stack screenOptions={{ animation: reducedMotion ? 'none' : 'default', headerShown: false, contentStyle: { backgroundColor: colors.background } }}>
             <Stack.Protected guard={status === 'authenticated'} redirectTo="/(auth)/login">
               <Stack.Screen name="(tabs)" />
             </Stack.Protected>
@@ -48,11 +48,11 @@ function AppNavigation() {
               <Stack.Screen name="(auth)" />
             </Stack.Protected>
             <Stack.Protected guard={__DEV__}>
-              <Stack.Screen name="dev/design-system" options={{ presentation: 'modal', animation: 'slide_from_bottom' }} />
+              <Stack.Screen name="dev/design-system" options={{ presentation: 'modal', animation: reducedMotion ? 'none' : 'slide_from_bottom' }} />
             </Stack.Protected>
           </Stack>
           {status === 'checking' ? (
-            <View style={[StyleSheet.absoluteFill, styles.bootstrap]}><AppScreen padded centered><LoadingState label={getAuthStrings().welcome} /><AppText tone="tertiary">MYLIFE</AppText></AppScreen></View>
+            <View style={[StyleSheet.absoluteFill, styles.bootstrap]}><AppScreen padded centered><LoadingState label={getAuthStrings(language).welcome} /><AppText tone="tertiary">MYLIFE</AppText></AppScreen></View>
           ) : null}
         </View>
       </ToastProvider>
@@ -66,7 +66,8 @@ export default function RootLayout() {
 
 function SessionExpiryFeedback() {
   const { showToast } = useToast();
-  useEffect(() => onSessionExpired(() => { showToast(getAuthStrings().sessionExpired, 'warning'); }), [showToast]);
+  const { language } = useAppTheme();
+  useEffect(() => onSessionExpired(() => { showToast(getAuthStrings(language).sessionExpired, 'warning'); }), [showToast, language]);
   return null;
 }
 

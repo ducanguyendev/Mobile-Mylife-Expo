@@ -1,0 +1,25 @@
+UPDATE 1
+ id | is_revoked |    user_agent     
+----+------------+-------------------
+ 13 | t          | okhttp/4.12.0
+ 14 | t          | MyLife-M2-Fixture
+ 15 | t          | okhttp/4.12.0
+ 16 | t          | okhttp/4.12.0
+ 17 | t          | okhttp/4.12.0
+ 18 | t          | okhttp/4.12.0
+ 19 | t          | okhttp/4.12.0
+ 20 | t          | okhttp/4.12.0
+ 21 | t          | okhttp/4.12.0
+ 22 | t          | okhttp/4.12.0
+ 23 | t          | okhttp/4.12.0
+ 24 | t          | okhttp/4.12.0
+ 25 | t          | okhttp/4.12.0
+ 26 | t          | okhttp/4.12.0
+ 27 | t          | okhttp/4.12.0
+ 28 | t          | okhttp/4.12.0
+ 29 | t          | okhttp/4.12.0
+ 30 | t          | okhttp/4.12.0
+ 31 | t          | MyLife-M2-Fixture
+ 32 | t          | okhttp/4.12.0
+(20 rows)
+

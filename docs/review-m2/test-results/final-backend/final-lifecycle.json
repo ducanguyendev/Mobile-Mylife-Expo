@@ -1,0 +1,42 @@
+{
+  "database": "mylife_m1_ed5e36555646",
+  "host": "127.0.0.1",
+  "pgPort": 55350,
+  "cluster": ".tmp\\m1-integration-XXUwZQ",
+  "databaseDropped": true,
+  "postgresStopped": true,
+  "results": [
+    {
+      "name": "isolated-initdb",
+      "exitCode": 0
+    },
+    {
+      "name": "isolated-postgres-start",
+      "exitCode": 0
+    },
+    {
+      "name": "isolated-createdb",
+      "exitCode": 0
+    },
+    {
+      "name": "isolated-backend-build",
+      "exitCode": 0
+    },
+    {
+      "name": "final-integration",
+      "exitCode": 0
+    },
+    {
+      "name": "m2-home-integration",
+      "exitCode": 0
+    },
+    {
+      "name": "isolated-dropdb",
+      "exitCode": 0
+    },
+    {
+      "name": "isolated-postgres-stop",
+      "exitCode": 0
+    }
+  ]
+}

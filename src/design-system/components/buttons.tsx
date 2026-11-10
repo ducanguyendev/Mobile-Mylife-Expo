@@ -17,7 +17,7 @@ function AppButton({ title, icon, fullWidth, compact, loading, style, disabled, 
   const { kind, ...pressableProps } = props;
   const bg = kind === 'primary' ? colors.accentFamily : kind === 'destructive' ? colors.error : 'transparent';
   const fg = kind === 'primary' || kind === 'destructive' ? colors.onAccent : kind === 'secondary' ? colors.accentFamily : colors.textSecondary;
-  const borderColor = kind === 'secondary' ? colors.border : 'transparent';
+  const borderColor = kind === 'secondary' ? colors.controlBorder : 'transparent';
   return (
     <Pressable
       accessibilityRole="button"
@@ -32,7 +32,7 @@ function AppButton({ title, icon, fullWidth, compact, loading, style, disabled, 
       ]}
       {...pressableProps}>
       {loading ? <ActivityIndicator size="small" color={fg} /> : icon}
-      <AppText variant="button" style={{ color: fg }}>{title}</AppText>
+      <AppText variant="button" style={{ color: fg, flexGrow: 1, flexShrink: 1, textAlign: 'center' }}>{title}</AppText>
     </Pressable>
   );
 }
@@ -60,8 +60,8 @@ export function IconButton({ icon, label, onPress, disabled = false }: { icon: R
 }
 
 const styles = StyleSheet.create({
-  button: { minHeight: 48, borderWidth: 1, borderRadius: radius.input, paddingHorizontal: spacing.lg, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.xs },
-  compact: { minHeight: 40, paddingHorizontal: spacing.md },
+  button: { minHeight: 48, borderWidth: 1, borderRadius: radius.input, paddingVertical: spacing.sm, paddingHorizontal: spacing.lg, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.xs },
+  compact: { minHeight: 48, paddingHorizontal: spacing.md },
   fullWidth: { alignSelf: 'stretch' },
   iconButton: { width: 48, height: 48, borderRadius: radius.pill, alignItems: 'center', justifyContent: 'center' },
 });

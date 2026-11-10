@@ -1,0 +1,153 @@
+{
+  "verdict": "PARTIAL PASS overall; 14 requested functional native scenarios PASS within Expo Go scope",
+  "checks": [
+    {
+      "name": "cold_start",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "01-cold-login.png",
+        "05-restart-home-dark-vi.xml"
+      ]
+    },
+    {
+      "name": "registration",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "02-home-empty-en.xml",
+        "session-before-refresh.txt"
+      ]
+    },
+    {
+      "name": "login",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "02-home-empty-en.xml",
+        "18-admin-home.xml",
+        "21-second-user-empty-home.xml"
+      ]
+    },
+    {
+      "name": "restart_session",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "05-restart-home-dark-vi.xml"
+      ]
+    },
+    {
+      "name": "secure_store_behavior",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "05-restart-home-dark-vi.xml",
+        "20-logout-login.xml"
+      ]
+    },
+    {
+      "name": "logout",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "20-logout-login.xml",
+        "admin-session-after-logout.txt"
+      ]
+    },
+    {
+      "name": "access_expiry",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "network-observation.json"
+      ]
+    },
+    {
+      "name": "refresh_rotation",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "session-before-refresh.txt",
+        "session-after-refocus.txt",
+        "session-after-restart.txt",
+        "network-observation.json"
+      ]
+    },
+    {
+      "name": "session_revocation",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "session-revoked.txt",
+        "17-session-revoked-login.xml"
+      ]
+    },
+    {
+      "name": "role_restrictions",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "18-admin-home.xml",
+        "19-admin-deep-link-blocked.xml"
+      ]
+    },
+    {
+      "name": "protected_deep_links",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "14-user-deep-link.xml",
+        "19-admin-deep-link-blocked.xml",
+        "20-logout-login.xml"
+      ]
+    },
+    {
+      "name": "android_back",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "06-member-navigation.xml"
+      ]
+    },
+    {
+      "name": "background_foreground",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "16-foreground-refetch.xml"
+      ]
+    },
+    {
+      "name": "network_loss_retry",
+      "status": "PASS",
+      "level": "native Android Expo Go + real disposable Backend/PostgreSQL",
+      "evidence": [
+        "07-network-loss.xml",
+        "08-recovered-albums.xml",
+        "network-method-note.json"
+      ]
+    }
+  ],
+  "notTested": [
+    "TalkBack speech/focus traversal",
+    "Physical Android devices",
+    "Standalone development/release app",
+    "Native keystore internals and storage fault injection",
+    "Maximum OS font scale and full keyboard/safe-area/transition matrix"
+  ],
+  "blocked": [
+    {
+      "name": "iOS Simulator/VoiceOver",
+      "reason": "Windows host"
+    }
+  ],
+  "qualifications": [
+    "One AVD with three viewport overrides, not three physical devices",
+    "Expo Go host/developer handoff is not standalone cold-start proof",
+    "Offline PASS uses closed API transport sockets; initial live keep-alive requests prove refresh instead",
+    "Native restart/session behavior uses real SecureStore module; token contents never captured",
+    "Short test refresh TTL expired before final OS app-locale capture; resulting login is expected",
+    "Intermediate clipped labels fixed; final layout evidence is captures 24/25"
+  ]
+}

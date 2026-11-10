@@ -1,0 +1,7 @@
+ id | is_revoked |  user_agent   
+----+------------+---------------
+  3 | f          | node
+ 12 | f          | node
+ 33 | t          | okhttp/4.12.0
+(3 rows)
+

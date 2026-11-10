@@ -18,10 +18,10 @@ import { normalizeEmail, validateLogin, type AuthFieldErrors } from '@/features/
 export default function LoginScreen() {
   const params = useLocalSearchParams<{ registeredEmail?: string }>();
   const registeredEmail = typeof params.registeredEmail === 'string' ? params.registeredEmail : '';
-  const { colors } = useAppTheme();
+  const { colors, language } = useAppTheme();
   const { login, rememberedEmail, rememberMe, setRememberEmailPreference } = useAuth();
   const { showToast } = useToast();
-  const copy = getAuthStrings();
+  const copy = getAuthStrings(language);
   const [email, setEmail] = useState(registeredEmail || rememberedEmail || '');
   const [password, setPassword] = useState('');
   const [remember, setRemember] = useState(Boolean(registeredEmail) || rememberMe);
@@ -92,7 +92,7 @@ export default function LoginScreen() {
         />
         <View style={styles.rememberRow}>
           <Pressable accessibilityRole="checkbox" accessibilityState={{ checked: remember }} onPress={() => { const next = !remember; setRemember(next); void setRememberEmailPreference(next, email); }} style={styles.checkboxRow}>
-            <View style={[styles.checkbox, { borderColor: remember ? colors.accentFamily : colors.border, backgroundColor: remember ? colors.accentFamily : colors.surfaceElevated }]}>
+            <View style={[styles.checkbox, { borderColor: remember ? colors.accentFamily : colors.controlBorder, backgroundColor: remember ? colors.accentFamily : colors.surfaceElevated }]}>
               {remember ? <AppText variant="caption" style={{ color: colors.onAccent }}>✓</AppText> : null}
             </View>
             <AppText variant="label" tone="secondary">{copy.remember}</AppText>
@@ -111,7 +111,7 @@ export default function LoginScreen() {
 
 function FormMessage({ message }: { message: string }) {
   const { colors } = useAppTheme();
-  return <View accessibilityRole="alert" style={[styles.errorBanner, { backgroundColor: `${colors.error}12`, borderColor: `${colors.error}45` }]}><AppText tone="error">{message}</AppText></View>;
+  return <View accessibilityRole="alert" accessibilityLiveRegion="polite" style={[styles.errorBanner, { backgroundColor: `${colors.error}12`, borderColor: `${colors.error}45` }]}><AppText tone="error">{message}</AppText></View>;
 }
 
 const styles = StyleSheet.create({
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
   heading: { gap: spacing.xs, marginBottom: spacing.xs },
   form: { gap: spacing.md, padding: spacing.lg },
   rememberRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-  checkboxRow: { minHeight: 44, flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  checkboxRow: { minHeight: 48, flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   checkbox: { width: 22, height: 22, borderRadius: 7, borderWidth: 1, alignItems: 'center', justifyContent: 'center' },
   registerPrompt: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.xs, flexWrap: 'wrap' },
   errorBanner: { borderWidth: 1, borderRadius: 14, padding: spacing.md },

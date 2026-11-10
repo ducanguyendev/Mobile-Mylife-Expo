@@ -1,79 +1,80 @@
 import { router } from 'expo-router';
-import { StyleSheet, View } from 'react-native';
-
-import { Avatar } from '@/design-system/components/avatar';
-import { AppText } from '@/design-system/components/app-text';
-import { SecondaryButton } from '@/design-system/components/buttons';
-import { AppIcon } from '@/design-system/components/app-icon';
-import { AppCard, Surface } from '@/design-system/components/surfaces';
+import { RefreshControl, StyleSheet, View } from 'react-native';
 import { AppScrollScreen, LargeTitleHeader, SectionHeader } from '@/components/layout/app-screen';
-import { MemoryPreviewCard, PlaceholderPhoto } from '@/features/common/memory-preview-card';
-import { radius, spacing } from '@/design-system/tokens';
+import { EmptyState, ErrorState, LoadingState, SkeletonBlock } from '@/components/feedback/states';
+import { AppText } from '@/design-system/components/app-text';
+import { Avatar } from '@/design-system/components/avatar';
+import { PrimaryButton } from '@/design-system/components/buttons';
+import { ActionRow, AppCard } from '@/design-system/components/surfaces';
+import { spacing } from '@/design-system/tokens';
+import { useAuth } from '@/features/auth/context/auth-provider';
+import { useHome, useDeviceClock } from '@/features/home/use-home';
+import { familySummary, formatDateOnly, greetingPeriod, recentAlbums, upcomingAnniversaries } from '@/features/home/home-data';
+import type { SectionState } from '@/features/home/home-resource';
+import { useLocalization } from '@/localization/use-localization';
 import { useAppTheme } from '@/theme/theme-provider';
 
 export default function HomeScreen() {
-  const { colors } = useAppTheme();
-  return (
-    <AppScrollScreen contentContainerStyle={styles.page}>
-      <LargeTitleHeader eyebrow="THỨ HAI, 18 THÁNG 5" title="Chào buổi sáng, Minh" subtitle="Một ngày đẹp để giữ lại điều gì đó." />
-
-      <Surface style={[styles.hero, { backgroundColor: colors.accentFamily }]}>
-        <View style={styles.heroCopy}>
-          <AppText variant="caption" style={{ color: colors.onAccentMuted }}>GIA ĐÌNH LÀ NHỮNG ĐIỀU BÌNH DỊ</AppText>
-          <AppText variant="display" style={{ color: colors.onAccent, maxWidth: 280 }}>Câu chuyện của chúng ta, từng ngày một.</AppText>
-          <AppText style={{ color: colors.onAccentMuted }}>Những người thân yêu luôn ở gần đây.</AppText>
-        </View>
-        <View style={[styles.heroStamp, { backgroundColor: colors.heroStamp }]}><AppText variant="sectionTitle" style={{ color: colors.accentFamily }}>M</AppText><AppText variant="caption" style={{ color: colors.accentFamily }}>MYLIFE</AppText></View>
-        <View style={[styles.heroOrb, { borderColor: colors.accentDecoration }]} />
-      </Surface>
-
-      <SectionHeader title="Hôm nay" />
-      <AppCard style={styles.eventCard}>
-        <View style={[styles.eventDate, { backgroundColor: `${colors.accentAnniversary}20` }]}>
-          <AppText variant="caption" style={{ color: colors.accentAnniversary }}>THÁNG 5</AppText>
-          <AppText variant="sectionTitle" style={{ color: colors.accentAnniversary }}>20</AppText>
-        </View>
-        <View style={styles.eventCopy}>
-          <AppText variant="cardTitle">Ngày của Bà ngoại</AppText>
-          <AppText tone="secondary">Còn 2 ngày · Một dịp để gọi về</AppText>
-        </View>
-        <AppIcon name={{ ios: 'chevron.right', android: 'chevron_right', web: 'chevron_right' }} size={19} />
-      </AppCard>
-
-      <SectionHeader title="Gia đình mình" action={<AppText variant="label" tone="accent">12 thành viên</AppText>} />
-      <AppCard style={styles.familyCard}>
-        <View style={styles.avatarStack}>
-          <Avatar name="Mai Anh" size={42} accent={colors.surface} />
-          <Avatar name="Tuấn Minh" size={42} accent={colors.surface} />
-          <Avatar name="Bảo An" size={42} accent={colors.surface} />
-          <View style={[styles.moreAvatar, { backgroundColor: colors.surfaceMuted, borderColor: colors.surface }]}><AppText variant="caption" tone="secondary">+9</AppText></View>
-        </View>
-        <View style={styles.familyCopy}><AppText variant="cardTitle">Ba thế hệ, chung một mái nhà</AppText><AppText tone="secondary">Lần cập nhật gần nhất: hôm qua</AppText></View>
-      </AppCard>
-
-      <SectionHeader title="Mới trong album" action={<SecondaryButton title="Xem tất cả" compact onPress={() => router.push('/(tabs)/memories')} />} />
-      <MemoryPreviewCard compact />
-
-      <View style={styles.bottomNote}>
-        <PlaceholderPhoto size="small" />
-        <View style={{ flex: 1, gap: spacing.xs }}><AppText variant="caption" tone="secondary">MỘT LƯU Ý NHỎ</AppText><AppText variant="bodyMedium">Ký ức đẹp nhất thường bắt đầu từ những điều bình thường.</AppText></View>
-      </View>
-    </AppScrollScreen>
-  );
+  const { user, isUser } = useAuth();
+  const { copy, locale } = useLocalization();
+  const now = useDeviceClock();
+  const name = user?.displayName?.trim() || user?.fullName?.trim() || user?.name?.trim();
+  const title = `${copy[greetingPeriod(now)]}${name ? `, ${name}` : ''}`;
+  return <HomeContent key={`${user?.id}:${user?.role}`} accountId={isUser ? user?.id : undefined} title={title}
+    date={new Intl.DateTimeFormat(locale, { weekday: 'long', day: 'numeric', month: 'long' }).format(now)} now={now} />;
 }
-
+function HomeContent({ accountId, title, date, now }: { accountId?: number; title: string; date: string; now: Date }) {
+  const { copy } = useLocalization();
+  if (!accountId) return <AppScrollScreen><LargeTitleHeader title={title} eyebrow={date} /><EmptyState title={copy.adminHome} message={copy.adminMessage} /></AppScrollScreen>;
+  return <UserHome accountId={accountId} title={title} date={date} now={now} />;
+}
+function UserHome({ accountId, title, date, now }: { accountId: number; title: string; date: string; now: Date }) {
+  const { state, refresh, retry } = useHome(accountId);
+  const { colors } = useAppTheme();
+  const { copy, language } = useLocalization();
+  const family = familySummary(state.family.data ?? []);
+  const events = upcomingAnniversaries(state.anniversaries.data ?? [], now);
+  const albums = recentAlbums(state.albums.data ?? []);
+  const refreshing = Object.values(state).some((section) => section.status === 'loading');
+  return <AppScrollScreen refreshControl={<RefreshControl refreshing={refreshing} onRefresh={() => void refresh()} tintColor={colors.accentFamily} colors={[colors.accentFamily]} />}>
+    <LargeTitleHeader title={title} eyebrow={date} subtitle={copy.homeSubtitle} />
+    <View style={styles.page}>
+      <SectionHeader title={copy.familySummary} />
+      <DashboardSection state={state.family} retry={() => void retry('family')}>
+        {family.count === 0 ? <EmptyState title={copy.familyEmpty} message={copy.familyEmptyMessage} action={{ label: copy.viewFamily, onPress: () => router.push('/(tabs)/family') }} /> : <AppCard style={[styles.card, { backgroundColor: colors.accentFamily }]}>
+          <AppText variant="screenTitle" style={{ color: colors.onAccent }}>{copy.members(family.count)}</AppText>
+          <AppText style={{ color: colors.onAccentMuted }}>{family.generations ? copy.generations(family.generations) : copy.noGeneration}</AppText>
+          <PrimaryButton title={copy.viewFamily} onPress={() => router.push('/(tabs)/family')} style={{ borderColor: colors.onAccentMuted }} />
+        </AppCard>}
+        {family.previews.length ? <AppCard style={styles.preview}>{family.previews.map((member) => <ActionRow key={member.id} title={member.fullName?.trim() || copy.unnamed}
+          leading={<Avatar name={member.fullName || ''} />} onPress={() => router.push({ pathname: '/family/[id]', params: { id: member.id } })} />)}</AppCard> : null}
+      </DashboardSection>
+      <SectionHeader title={copy.upcoming} />
+      <DashboardSection state={state.anniversaries} retry={() => void retry('anniversaries')}>
+        {events.length ? <AppCard style={styles.card}>{events.map((event) => <View key={event.id} style={styles.entry}>
+          <AppText variant="cardTitle">{event.title?.trim() || copy.unnamed}</AppText><AppText tone="secondary">{formatDateOnly(event.nextSolarDate, language)}</AppText>
+        </View>)}</AppCard> : <EmptyState title={copy.anniversaryEmpty} message={copy.anniversaryEmptyMessage} />}
+        <AppText variant="caption" tone="tertiary">{copy.calendarNotice}</AppText>
+      </DashboardSection>
+      <SectionHeader title={copy.recentAlbums} />
+      <DashboardSection state={state.albums} retry={() => void retry('albums')}>
+        {albums.length ? <AppCard style={styles.card}>{albums.map((album) => <View key={album.id} style={styles.entry}>
+          <View style={[styles.albumPlaceholder, { backgroundColor: colors.surfaceMuted }]} accessible={false}><AppText tone="secondary">▧</AppText></View>
+          <AppText variant="cardTitle">{album.name.trim() || copy.unnamed}</AppText><AppText tone="secondary">{copy.photos(album.photoCount)}</AppText>
+        </View>)}</AppCard> : <EmptyState title={copy.libraryEmpty} message={copy.libraryEmptyMessage} />}
+        <AppText variant="caption" tone="tertiary">{copy.libraryNotice}</AppText>
+      </DashboardSection>
+    </View>
+  </AppScrollScreen>;
+}
+function DashboardSection<T>({ state, retry, children }: { state: SectionState<T>; retry: () => void; children: React.ReactNode }) {
+  const { copy } = useLocalization();
+  if (state.status === 'error') return <ErrorState title={copy.errorTitle} message={copy.errorMessage} retry={retry} />;
+  if (state.data === undefined) return <View style={styles.loading}><LoadingState /><SkeletonBlock height={48} /><SkeletonBlock width="65%" /></View>;
+  return <View style={styles.section}>{children}</View>;
+}
 const styles = StyleSheet.create({
-  page: { gap: spacing.md, paddingBottom: spacing.xxxl },
-  hero: { minHeight: 245, borderRadius: radius.hero, padding: spacing.xl, justifyContent: 'space-between', overflow: 'hidden' },
-  heroCopy: { gap: spacing.sm, zIndex: 1 },
-  heroStamp: { alignSelf: 'flex-end', alignItems: 'center', justifyContent: 'center', width: 58, height: 58, borderRadius: 29, zIndex: 1 },
-  heroOrb: { position: 'absolute', width: 260, height: 260, right: -120, top: -72, borderWidth: 1, borderRadius: 160 },
-  eventCard: { padding: spacing.md, flexDirection: 'row', alignItems: 'center', gap: spacing.md },
-  eventDate: { width: 62, height: 66, alignItems: 'center', justifyContent: 'center', borderRadius: radius.small },
-  eventCopy: { flex: 1, gap: spacing.xxs },
-  familyCard: { padding: spacing.lg, gap: spacing.md },
-  avatarStack: { flexDirection: 'row', alignItems: 'center' },
-  moreAvatar: { width: 42, height: 42, borderRadius: 24, borderWidth: 2, alignItems: 'center', justifyContent: 'center', marginLeft: -9 },
-  familyCopy: { gap: spacing.xxs },
-  bottomNote: { marginTop: spacing.sm, flexDirection: 'row', alignItems: 'center', gap: spacing.md, paddingHorizontal: spacing.xs },
+  page: { gap: spacing.sm, paddingBottom: spacing.xl }, card: { padding: spacing.lg, gap: spacing.md }, preview: { paddingHorizontal: spacing.lg },
+  section: { gap: spacing.md, marginBottom: spacing.lg }, entry: { gap: spacing.xs }, loading: { gap: spacing.sm, marginBottom: spacing.lg },
+  albumPlaceholder: { height: 48, width: 64, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
 });

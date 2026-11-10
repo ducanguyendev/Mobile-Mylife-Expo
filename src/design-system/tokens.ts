@@ -55,6 +55,7 @@ export type AppColors = {
   textSecondary: string;
   textTertiary: string;
   border: string;
+  controlBorder: string;
   divider: string;
   accentFamily: string;
   accentTimeline: string;
@@ -81,8 +82,9 @@ export const palettes: Record<'light' | 'dark', AppColors> = {
     surfaceMuted: '#EEECE5',
     textPrimary: '#242722',
     textSecondary: '#666B63',
-    textTertiary: '#8C9088',
+    textTertiary: '#686E64',
     border: '#E3E1D9',
+    controlBorder: '#808A7A',
     divider: '#ECEAE3',
     accentFamily: '#60745E',
     accentTimeline: '#3F7773',
@@ -94,7 +96,7 @@ export const palettes: Record<'light' | 'dark', AppColors> = {
     error: '#B7544C',
     info: '#4C768E',
     onAccent: '#FFFFFF',
-    onAccentMuted: '#E6EADF',
+    onAccentMuted: '#F6F7F1',
     accentDecoration: '#FFFFFF26',
     heroStamp: '#F3F0E5',
     scrim: '#00000066',
@@ -109,6 +111,7 @@ export const palettes: Record<'light' | 'dark', AppColors> = {
     textSecondary: '#B8BBB2',
     textTertiary: '#92968D',
     border: '#3B3F38',
+    controlBorder: '#879581',
     divider: '#343831',
     accentFamily: '#A7B99E',
     accentTimeline: '#89B9B2',
@@ -120,7 +123,7 @@ export const palettes: Record<'light' | 'dark', AppColors> = {
     error: '#E39A92',
     info: '#9CC3D7',
     onAccent: '#1B211A',
-    onAccentMuted: '#E4E9DF',
+    onAccentMuted: '#243020',
     accentDecoration: '#FFFFFF26',
     heroStamp: '#30372D',
     scrim: '#00000099',
