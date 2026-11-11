@@ -1,0 +1,111 @@
+{
+  "verdict": "PARTIAL PASS",
+  "date": "2026-11-10",
+  "device": "Workspace-local MyLife_M3 emulator-5582; Android35 google_apis_playstore x86_64; WHPX; Expo Go58.0.5",
+  "bundle": "SDK58 / RN0.88.1; clean Metro final bundle 1686 modules",
+  "testData": "112 synthetic members created through real API in disposable PostgreSQL; no production access",
+  "viewports": [
+    {
+      "pixels": "1080x2340",
+      "density": 440,
+      "fontScale": 1
+    },
+    {
+      "pixels": "720x1280",
+      "density": 320,
+      "fontScale": 1.3
+    },
+    {
+      "pixels": "1200x1920",
+      "density": 240,
+      "fontScale": 1
+    }
+  ],
+  "cases": [
+    {
+      "name": "directory_cards_list",
+      "status": "PASS",
+      "evidence": "112 actual API members, screenshots 01-02; 34 large layout"
+    },
+    {
+      "name": "search_filters",
+      "status": "PASS",
+      "evidence": "accent-insensitive 112th member; empty filter/clear; 03-04"
+    },
+    {
+      "name": "profile_relatives",
+      "status": "PASS",
+      "evidence": "aggregate, long child name and preserved spouse/sibling; 08,21-23"
+    },
+    {
+      "name": "crud",
+      "status": "PASS",
+      "evidence": "actual native form create/edit/delete; 17,21,24-27 and SQL/API confirmations"
+    },
+    {
+      "name": "picker_all_candidates",
+      "status": "PASS",
+      "evidence": "111 non-self candidates, search, draft select, Android Back cancels, explicit confirm; 18-20"
+    },
+    {
+      "name": "avatar",
+      "status": "PASS",
+      "evidence": "system picker, preview, SDK58 File multipart, authenticated image, viewer/Back, replacement, injected provider error/retry, removal; 09-16. Storage provider is contract adapter ONLY"
+    },
+    {
+      "name": "graph_controls",
+      "status": "PASS",
+      "evidence": "112 nodes/3 generations: pan, zoom buttons, reset, fit, tap; 05-07,29,33,35"
+    },
+    {
+      "name": "pinch_physical",
+      "status": "NOT_TESTED",
+      "evidence": "PanResponder pinch math/finger transitions automated; no injected two-finger native gesture"
+    },
+    {
+      "name": "theme_language",
+      "status": "PASS",
+      "evidence": "Light/EN, Dark/VI; persisted across force-stop and activity recreation"
+    },
+    {
+      "name": "compact_font",
+      "status": "PASS",
+      "evidence": "360dp / 130% text. Initial graph viewport issue found and corrected; final 33"
+    },
+    {
+      "name": "large_layout",
+      "status": "PASS",
+      "evidence": "800dp native viewport; 34-35"
+    },
+    {
+      "name": "offline_retry",
+      "status": "PASS",
+      "evidence": "removed only API adb reverse then reconnected transport; 36 error, 37 recovered"
+    },
+    {
+      "name": "session_expiry",
+      "status": "PASS",
+      "evidence": "only synthetic user refresh sessions revoked in disposable PG; Family reload returns localized login; 38"
+    },
+    {
+      "name": "permission_denial",
+      "status": "NOT_TESTED",
+      "evidence": "Android35 picker grants selected photos without broad permission prompt; adapter error tested"
+    },
+    {
+      "name": "talkback",
+      "status": "NOT_TESTED",
+      "evidence": "labels and list alternative implemented; no speech/focus-order certification"
+    },
+    {
+      "name": "ios",
+      "status": "NOT_TESTED",
+      "evidence": "Windows host; no iOS simulator/device"
+    },
+    {
+      "name": "physical_device",
+      "status": "NOT_TESTED",
+      "evidence": "Android emulator only"
+    }
+  ]
+}

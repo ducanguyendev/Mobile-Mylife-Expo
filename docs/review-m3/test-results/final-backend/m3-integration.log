@@ -1,0 +1,12 @@
+PASS: Expo create/list and actual aggregate profile contract, including related members
+PASS: Web cookie/origin/CSRF-compatible read/edit roundtrips into Expo with identical authoritative relationships
+PASS: Spouse and phone changes preserve explicit siblings/custom horizontal types in both directions
+PASS: Child assignment retains existing children and refetches reciprocal parent link
+PASS: Self-links, cycles, foreign parents/spouse/horizontal IDs and foreign profile/avatar operations are rejected
+PASS: Multipart upload and authenticated image bytes/private caching/ETag/304 use real Backend; provider boundary is a contract adapter
+PASS: Avatar replacement keeps provider file identity and refreshes bytes/ETag revision
+PASS: Avatar invalid MIME/empty/oversize and storage failures preserve DB metadata; retry remains possible
+PASS: Unrelated scalar edit preserves managed avatar, manual coordinates, parents/spouse/children/horizontal links
+PASS: Explicit confirmed horizontal clear removes both directions; avatar removal updates profile and image becomes 404
+PASS: Graph uses real multi-generation relationships; member deletion synchronizes list/profile and reciprocal links
+PASS: ADMIN remains excluded from member profile and USER-only Family API

@@ -1,0 +1,117 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "",
+    "label": "Back",
+    "bounds": "[44,180][176,312]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[83,219][138,274]"
+  },
+  {
+    "text": "Member profile",
+    "label": "",
+    "bounds": "[209,208][1036,283]"
+  },
+  {
+    "text": "M3 Synthetic 001",
+    "label": "",
+    "bounds": "[110,466][970,565]"
+  },
+  {
+    "text": "Generation 1",
+    "label": "",
+    "bounds": "[110,598][970,662]"
+  },
+  {
+    "text": "Living",
+    "label": "",
+    "bounds": "[143,705][232,752]"
+  },
+  {
+    "text": "Date of birth",
+    "label": "",
+    "bounds": "[110,797][970,844]"
+  },
+  {
+    "text": "January 1, 1970",
+    "label": "",
+    "bounds": "[110,855][970,919]"
+  },
+  {
+    "text": "Gender",
+    "label": "",
+    "bounds": "[110,952][970,999]"
+  },
+  {
+    "text": "Male",
+    "label": "",
+    "bounds": "[110,1010][970,1074]"
+  },
+  {
+    "text": "Avatar",
+    "label": "",
+    "bounds": "[110,1228][970,1303]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[386,1336][694,1644]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[408,1358][672,1622]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[408,1358][672,1622]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[496,1465][584,1515]"
+  },
+  {
+    "text": "JPG, PNG, WebP or GIF, up to 5 MiB.",
+    "label": "",
+    "bounds": "[110,1677][970,1741]"
+  },
+  {
+    "text": "",
+    "label": "busy",
+    "bounds": "[110,1774][970,1906]"
+  },
+  {
+    "text": "Replace photo",
+    "label": "",
+    "bounds": "[167,1812][913,1867]"
+  },
+  {
+    "text": "",
+    "label": "Remove photo",
+    "bounds": "[110,1939][970,2071]"
+  },
+  {
+    "text": "Remove photo",
+    "label": "",
+    "bounds": "[167,1977][913,2032]"
+  },
+  {
+    "text": "",
+    "label": "Edit member",
+    "bounds": "[55,2170][1025,2302]"
+  },
+  {
+    "text": "Edit member",
+    "label": "",
+    "bounds": "[112,2208][968,2263]"
+  }
+]

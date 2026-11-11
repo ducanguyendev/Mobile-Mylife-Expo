@@ -1,0 +1,92 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[1118,156][1157,195]"
+  },
+  {
+    "text": "M",
+    "label": "",
+    "bounds": "[160,596][187,637]"
+  },
+  {
+    "text": "MYLIFE · GIA ĐÌNH LÀ NHỮNG ĐIỀU BÌNH DỊ",
+    "label": "",
+    "bounds": "[135,656][1065,682]"
+  },
+  {
+    "text": "Chào mừng trở lại",
+    "label": "",
+    "bounds": "[135,682][1065,742]"
+  },
+  {
+    "text": "Tiếp tục lưu giữ những câu chuyện thân thương của gia đình.",
+    "label": "",
+    "bounds": "[135,754][1065,789]"
+  },
+  {
+    "text": "Email",
+    "label": "",
+    "bounds": "[165,831][1035,858]"
+  },
+  {
+    "text": "name@gmail.com",
+    "label": "Email",
+    "bounds": "[190,871][1009,943]"
+  },
+  {
+    "text": "Mật khẩu",
+    "label": "",
+    "bounds": "[165,969][1035,996]"
+  },
+  {
+    "text": "Nhập mật khẩu",
+    "label": "Mật khẩu",
+    "bounds": "[190,1009][919,1081]"
+  },
+  {
+    "text": "",
+    "label": "Hiện mật khẩu",
+    "bounds": "[938,1010][1010,1082]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[960,1032][989,1061]"
+  },
+  {
+    "text": "",
+    "label": "Ghi nhớ email",
+    "bounds": "[165,1107][340,1179]"
+  },
+  {
+    "text": "Ghi nhớ email",
+    "label": "",
+    "bounds": "[216,1129][340,1156]"
+  },
+  {
+    "text": "",
+    "label": "Đăng nhập",
+    "bounds": "[165,1203][1035,1275]"
+  },
+  {
+    "text": "Đăng nhập",
+    "label": "",
+    "bounds": "[196,1224][1003,1254]"
+  },
+  {
+    "text": "Chưa có tài khoản?",
+    "label": "",
+    "bounds": "[502,1305][698,1340]"
+  },
+  {
+    "text": "",
+    "label": "Đăng ký",
+    "bounds": "[135,1352][1065,1424]"
+  },
+  {
+    "text": "Đăng ký",
+    "label": "",
+    "bounds": "[160,1373][1039,1403]"
+  }
+]

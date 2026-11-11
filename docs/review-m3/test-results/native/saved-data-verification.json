@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "native phone persisted",
+    "native child assignment reciprocal",
+    "native edit retained sibling and spouse",
+    "native avatar remove authoritative"
+  ],
+  "memberId": 12,
+  "childId": 123
+}

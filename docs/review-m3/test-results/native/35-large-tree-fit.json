@@ -1,0 +1,2967 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[1118,156][1157,195]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[153,130][1047,171]"
+  },
+  {
+    "text": "",
+    "label": "Thẻ",
+    "bounds": "[159,189][450,261]"
+  },
+  {
+    "text": "Thẻ",
+    "label": "",
+    "bounds": "[287,211][322,238]"
+  },
+  {
+    "text": "",
+    "label": "Danh sách",
+    "bounds": "[455,189][746,261]"
+  },
+  {
+    "text": "Danh sách",
+    "label": "",
+    "bounds": "[553,211][647,238]"
+  },
+  {
+    "text": "",
+    "label": "Cây",
+    "bounds": "[750,189][1041,261]"
+  },
+  {
+    "text": "Cây",
+    "label": "",
+    "bounds": "[878,211][912,238]"
+  },
+  {
+    "text": "",
+    "label": "Thử lại",
+    "bounds": "[153,279][1047,351]"
+  },
+  {
+    "text": "Thử lại",
+    "label": "",
+    "bounds": "[184,300][1015,330]"
+  },
+  {
+    "text": "",
+    "label": "Thu nhỏ cây",
+    "bounds": "[153,383][225,455]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[174,404][204,434]"
+  },
+  {
+    "text": "",
+    "label": "Phóng to cây",
+    "bounds": "[231,383][303,455]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[252,404][282,434]"
+  },
+  {
+    "text": "",
+    "label": "Cỡ dễ đọc",
+    "bounds": "[309,383][501,455]"
+  },
+  {
+    "text": "Cỡ dễ đọc",
+    "label": "",
+    "bounds": "[334,404][475,434]"
+  },
+  {
+    "text": "",
+    "label": "Xem toàn cây",
+    "bounds": "[507,369][687,468]"
+  },
+  {
+    "text": "Xem toàn cây",
+    "label": "",
+    "bounds": "[532,388][661,448]"
+  },
+  {
+    "text": "",
+    "label": "Cách xem cây",
+    "bounds": "[693,383][765,455]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[714,404][744,434]"
+  },
+  {
+    "text": "6%",
+    "label": "",
+    "bounds": "[771,405][795,431]"
+  },
+  {
+    "text": "Cha/mẹ → con",
+    "label": "",
+    "bounds": "[153,486][274,512]"
+  },
+  {
+    "text": "━ Vợ/chồng",
+    "label": "",
+    "bounds": "[292,486][388,512]"
+  },
+  {
+    "text": "┄ Quan hệ ngang ghi nhận",
+    "label": "",
+    "bounds": "[406,486][618,512]"
+  },
+  {
+    "text": "Kéo để di chuyển, chụm/mở hai ngón để thu phóng. Chạm thành viên để xem hồ sơ. Dùng danh sách hoặc thẻ để đọc đầy đủ bằng trình đọc màn hình.",
+    "label": "",
+    "bounds": "[135,530][1065,594]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 001, Thế hệ 1",
+    "bounds": "[159,1142][177,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 001",
+    "bounds": "[166,1145][170,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[167,1146][169,1147]"
+  },
+  {
+    "text": "M3 Synthetic 001",
+    "label": "",
+    "bounds": "[162,1149][174,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[166,1151][170,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 042, Thế hệ 2",
+    "bounds": "[159,1166][177,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 042",
+    "bounds": "[166,1169][170,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[167,1170][169,1171]"
+  },
+  {
+    "text": "M3 Synthetic 042",
+    "label": "",
+    "bounds": "[162,1173][174,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[166,1175][170,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 002, Thế hệ 1",
+    "bounds": "[181,1142][199,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 002",
+    "bounds": "[188,1145][192,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[189,1146][191,1147]"
+  },
+  {
+    "text": "M3 Synthetic 002",
+    "label": "",
+    "bounds": "[184,1149][196,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[188,1151][192,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 043, Thế hệ 2",
+    "bounds": "[181,1166][199,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 043",
+    "bounds": "[188,1169][192,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[189,1170][191,1171]"
+  },
+  {
+    "text": "M3 Synthetic 043",
+    "label": "",
+    "bounds": "[184,1173][196,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[188,1175][192,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 003, Thế hệ 1",
+    "bounds": "[203,1142][221,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 003",
+    "bounds": "[210,1145][214,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[211,1146][213,1147]"
+  },
+  {
+    "text": "M3 Synthetic 003",
+    "label": "",
+    "bounds": "[206,1149][218,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[210,1151][214,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 044, Thế hệ 2",
+    "bounds": "[203,1166][221,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 044",
+    "bounds": "[210,1169][214,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[211,1170][213,1171]"
+  },
+  {
+    "text": "M3 Synthetic 044",
+    "label": "",
+    "bounds": "[206,1173][218,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[210,1175][214,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 004, Thế hệ 1",
+    "bounds": "[225,1142][243,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 004",
+    "bounds": "[232,1145][236,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[233,1146][235,1147]"
+  },
+  {
+    "text": "M3 Synthetic 004",
+    "label": "",
+    "bounds": "[228,1149][240,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[232,1151][236,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 045, Thế hệ 2",
+    "bounds": "[225,1166][243,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 045",
+    "bounds": "[232,1169][236,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[233,1170][235,1171]"
+  },
+  {
+    "text": "M3 Synthetic 045",
+    "label": "",
+    "bounds": "[228,1173][240,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[232,1175][236,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 005, Thế hệ 1",
+    "bounds": "[247,1142][265,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 005",
+    "bounds": "[254,1145][258,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[255,1146][257,1147]"
+  },
+  {
+    "text": "M3 Synthetic 005",
+    "label": "",
+    "bounds": "[250,1149][262,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[254,1151][258,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 046, Thế hệ 2",
+    "bounds": "[247,1166][265,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 046",
+    "bounds": "[254,1169][258,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[255,1170][257,1171]"
+  },
+  {
+    "text": "M3 Synthetic 046",
+    "label": "",
+    "bounds": "[250,1173][262,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[254,1175][258,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 082, Thế hệ 3",
+    "bounds": "[247,1190][265,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 082",
+    "bounds": "[254,1193][258,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[255,1194][257,1195]"
+  },
+  {
+    "text": "M3 Synthetic 082",
+    "label": "",
+    "bounds": "[250,1197][262,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[254,1199][258,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 006, Thế hệ 1",
+    "bounds": "[269,1142][287,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 006",
+    "bounds": "[276,1145][280,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[277,1146][279,1147]"
+  },
+  {
+    "text": "M3 Synthetic 006",
+    "label": "",
+    "bounds": "[272,1149][284,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[276,1151][280,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 047, Thế hệ 2",
+    "bounds": "[269,1166][287,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 047",
+    "bounds": "[276,1169][280,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[277,1170][279,1171]"
+  },
+  {
+    "text": "M3 Synthetic 047",
+    "label": "",
+    "bounds": "[272,1173][284,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[276,1175][280,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ, Thế hệ 3",
+    "bounds": "[269,1190][287,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "bounds": "[276,1191][280,1194]"
+  },
+  {
+    "text": "TH",
+    "label": "",
+    "bounds": "[277,1191][279,1193]"
+  },
+  {
+    "text": "Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "label": "",
+    "bounds": "[270,1195][286,1201]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[276,1202][280,1203]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 007, Thế hệ 1",
+    "bounds": "[292,1142][310,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 007",
+    "bounds": "[299,1145][303,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[300,1146][302,1147]"
+  },
+  {
+    "text": "M3 Synthetic 007",
+    "label": "",
+    "bounds": "[295,1149][307,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[299,1151][303,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 048, Thế hệ 2",
+    "bounds": "[292,1166][310,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 048",
+    "bounds": "[299,1169][303,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[300,1170][302,1171]"
+  },
+  {
+    "text": "M3 Synthetic 048",
+    "label": "",
+    "bounds": "[295,1173][307,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[299,1175][303,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 083, Thế hệ 3",
+    "bounds": "[292,1190][310,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 083",
+    "bounds": "[299,1193][303,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[300,1194][302,1195]"
+  },
+  {
+    "text": "M3 Synthetic 083",
+    "label": "",
+    "bounds": "[295,1197][307,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[299,1199][303,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 008, Thế hệ 1",
+    "bounds": "[314,1142][332,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 008",
+    "bounds": "[321,1145][325,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[322,1146][324,1147]"
+  },
+  {
+    "text": "M3 Synthetic 008",
+    "label": "",
+    "bounds": "[317,1149][329,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[321,1151][325,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 049, Thế hệ 2",
+    "bounds": "[314,1166][332,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 049",
+    "bounds": "[321,1169][325,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[322,1170][324,1171]"
+  },
+  {
+    "text": "M3 Synthetic 049",
+    "label": "",
+    "bounds": "[317,1173][329,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[321,1175][325,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 084, Thế hệ 3",
+    "bounds": "[314,1190][332,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 084",
+    "bounds": "[321,1193][325,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[322,1194][324,1195]"
+  },
+  {
+    "text": "M3 Synthetic 084",
+    "label": "",
+    "bounds": "[317,1197][329,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[321,1199][325,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 009, Thế hệ 1",
+    "bounds": "[336,1142][354,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 009",
+    "bounds": "[343,1145][347,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[344,1146][346,1147]"
+  },
+  {
+    "text": "M3 Synthetic 009",
+    "label": "",
+    "bounds": "[339,1149][351,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[343,1151][347,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 050, Thế hệ 2",
+    "bounds": "[336,1166][354,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 050",
+    "bounds": "[343,1169][347,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[344,1170][346,1171]"
+  },
+  {
+    "text": "M3 Synthetic 050",
+    "label": "",
+    "bounds": "[339,1173][351,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[343,1175][347,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 085, Thế hệ 3",
+    "bounds": "[336,1190][354,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 085",
+    "bounds": "[343,1193][347,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[344,1194][346,1195]"
+  },
+  {
+    "text": "M3 Synthetic 085",
+    "label": "",
+    "bounds": "[339,1197][351,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[343,1199][347,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 010, Thế hệ 1",
+    "bounds": "[358,1142][376,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 010",
+    "bounds": "[365,1145][369,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[366,1146][368,1147]"
+  },
+  {
+    "text": "M3 Synthetic 010",
+    "label": "",
+    "bounds": "[361,1149][373,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[365,1151][369,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 051, Thế hệ 2",
+    "bounds": "[358,1166][376,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 051",
+    "bounds": "[365,1169][369,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[366,1170][368,1171]"
+  },
+  {
+    "text": "M3 Synthetic 051",
+    "label": "",
+    "bounds": "[361,1173][373,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[365,1175][369,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 086, Thế hệ 3",
+    "bounds": "[358,1190][376,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 086",
+    "bounds": "[365,1193][369,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[366,1194][368,1195]"
+  },
+  {
+    "text": "M3 Synthetic 086",
+    "label": "",
+    "bounds": "[361,1197][373,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[365,1199][369,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 011, Thế hệ 1",
+    "bounds": "[380,1142][398,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 011",
+    "bounds": "[387,1145][391,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[388,1146][390,1147]"
+  },
+  {
+    "text": "M3 Synthetic 011",
+    "label": "",
+    "bounds": "[383,1149][395,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[387,1151][391,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 052, Thế hệ 2",
+    "bounds": "[380,1166][398,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 052",
+    "bounds": "[387,1169][391,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[388,1170][390,1171]"
+  },
+  {
+    "text": "M3 Synthetic 052",
+    "label": "",
+    "bounds": "[383,1173][395,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[387,1175][391,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 087, Thế hệ 3",
+    "bounds": "[380,1190][398,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 087",
+    "bounds": "[387,1193][391,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[388,1194][390,1195]"
+  },
+  {
+    "text": "M3 Synthetic 087",
+    "label": "",
+    "bounds": "[383,1197][395,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[387,1199][391,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 012, Thế hệ 1",
+    "bounds": "[402,1142][420,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 012",
+    "bounds": "[409,1145][413,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[410,1146][412,1147]"
+  },
+  {
+    "text": "M3 Synthetic 012",
+    "label": "",
+    "bounds": "[405,1149][417,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[409,1151][413,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 053, Thế hệ 2",
+    "bounds": "[402,1166][420,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 053",
+    "bounds": "[409,1169][413,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[410,1170][412,1171]"
+  },
+  {
+    "text": "M3 Synthetic 053",
+    "label": "",
+    "bounds": "[405,1173][417,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[409,1175][413,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 088, Thế hệ 3",
+    "bounds": "[402,1190][420,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 088",
+    "bounds": "[409,1193][413,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[410,1194][412,1195]"
+  },
+  {
+    "text": "M3 Synthetic 088",
+    "label": "",
+    "bounds": "[405,1197][417,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[409,1199][413,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 013, Thế hệ 1",
+    "bounds": "[424,1142][442,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 013",
+    "bounds": "[431,1145][435,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[432,1146][434,1147]"
+  },
+  {
+    "text": "M3 Synthetic 013",
+    "label": "",
+    "bounds": "[427,1149][439,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[431,1151][435,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 054, Thế hệ 2",
+    "bounds": "[424,1166][442,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 054",
+    "bounds": "[431,1169][435,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[432,1170][434,1171]"
+  },
+  {
+    "text": "M3 Synthetic 054",
+    "label": "",
+    "bounds": "[427,1173][439,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[431,1175][435,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 089, Thế hệ 3",
+    "bounds": "[424,1190][442,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 089",
+    "bounds": "[431,1193][435,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[432,1194][434,1195]"
+  },
+  {
+    "text": "M3 Synthetic 089",
+    "label": "",
+    "bounds": "[427,1197][439,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[431,1199][435,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 014, Thế hệ 1",
+    "bounds": "[447,1142][465,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 014",
+    "bounds": "[454,1145][458,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[455,1146][457,1147]"
+  },
+  {
+    "text": "M3 Synthetic 014",
+    "label": "",
+    "bounds": "[450,1149][462,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[454,1151][458,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 055, Thế hệ 2",
+    "bounds": "[447,1166][465,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 055",
+    "bounds": "[454,1169][458,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[455,1170][457,1171]"
+  },
+  {
+    "text": "M3 Synthetic 055",
+    "label": "",
+    "bounds": "[450,1173][462,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[454,1175][458,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 090, Thế hệ 3",
+    "bounds": "[447,1190][465,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 090",
+    "bounds": "[454,1193][458,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[455,1194][457,1195]"
+  },
+  {
+    "text": "M3 Synthetic 090",
+    "label": "",
+    "bounds": "[450,1197][462,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[454,1199][458,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 015, Thế hệ 1",
+    "bounds": "[469,1142][487,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 015",
+    "bounds": "[476,1145][480,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[477,1146][479,1147]"
+  },
+  {
+    "text": "M3 Synthetic 015",
+    "label": "",
+    "bounds": "[472,1149][484,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[476,1151][480,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 056, Thế hệ 2",
+    "bounds": "[469,1166][487,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 056",
+    "bounds": "[476,1169][480,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[477,1170][479,1171]"
+  },
+  {
+    "text": "M3 Synthetic 056",
+    "label": "",
+    "bounds": "[472,1173][484,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[476,1175][480,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 091, Thế hệ 3",
+    "bounds": "[469,1190][487,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 091",
+    "bounds": "[476,1193][480,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[477,1194][479,1195]"
+  },
+  {
+    "text": "M3 Synthetic 091",
+    "label": "",
+    "bounds": "[472,1197][484,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[476,1199][480,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 016, Thế hệ 1",
+    "bounds": "[491,1142][509,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 016",
+    "bounds": "[498,1145][502,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[499,1146][501,1147]"
+  },
+  {
+    "text": "M3 Synthetic 016",
+    "label": "",
+    "bounds": "[494,1149][506,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[498,1151][502,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 057, Thế hệ 2",
+    "bounds": "[491,1166][509,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 057",
+    "bounds": "[498,1169][502,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[499,1170][501,1171]"
+  },
+  {
+    "text": "M3 Synthetic 057",
+    "label": "",
+    "bounds": "[494,1173][506,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[498,1175][502,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 092, Thế hệ 3",
+    "bounds": "[491,1190][509,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 092",
+    "bounds": "[498,1193][502,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[499,1194][501,1195]"
+  },
+  {
+    "text": "M3 Synthetic 092",
+    "label": "",
+    "bounds": "[494,1197][506,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[498,1199][502,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 017, Thế hệ 1",
+    "bounds": "[513,1142][531,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 017",
+    "bounds": "[520,1145][524,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[521,1146][523,1147]"
+  },
+  {
+    "text": "M3 Synthetic 017",
+    "label": "",
+    "bounds": "[516,1149][528,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[520,1151][524,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 058, Thế hệ 2",
+    "bounds": "[513,1166][531,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 058",
+    "bounds": "[520,1169][524,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[521,1170][523,1171]"
+  },
+  {
+    "text": "M3 Synthetic 058",
+    "label": "",
+    "bounds": "[516,1173][528,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[520,1175][524,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 093, Thế hệ 3",
+    "bounds": "[513,1190][531,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 093",
+    "bounds": "[520,1193][524,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[521,1194][523,1195]"
+  },
+  {
+    "text": "M3 Synthetic 093",
+    "label": "",
+    "bounds": "[516,1197][528,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[520,1199][524,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 018, Thế hệ 1",
+    "bounds": "[535,1142][553,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 018",
+    "bounds": "[542,1145][546,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[543,1146][545,1147]"
+  },
+  {
+    "text": "M3 Synthetic 018",
+    "label": "",
+    "bounds": "[538,1149][550,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[542,1151][546,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 059, Thế hệ 2",
+    "bounds": "[535,1166][553,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 059",
+    "bounds": "[542,1169][546,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[543,1170][545,1171]"
+  },
+  {
+    "text": "M3 Synthetic 059",
+    "label": "",
+    "bounds": "[538,1173][550,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[542,1175][546,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 094, Thế hệ 3",
+    "bounds": "[535,1190][553,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 094",
+    "bounds": "[542,1193][546,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[543,1194][545,1195]"
+  },
+  {
+    "text": "M3 Synthetic 094",
+    "label": "",
+    "bounds": "[538,1197][550,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[542,1199][546,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 019, Thế hệ 1",
+    "bounds": "[557,1142][575,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 019",
+    "bounds": "[564,1145][568,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[565,1146][567,1147]"
+  },
+  {
+    "text": "M3 Synthetic 019",
+    "label": "",
+    "bounds": "[560,1149][572,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[564,1151][568,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 060, Thế hệ 2",
+    "bounds": "[557,1166][575,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 060",
+    "bounds": "[564,1169][568,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[565,1170][567,1171]"
+  },
+  {
+    "text": "M3 Synthetic 060",
+    "label": "",
+    "bounds": "[560,1173][572,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[564,1175][568,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 095, Thế hệ 3",
+    "bounds": "[557,1190][575,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 095",
+    "bounds": "[564,1193][568,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[565,1194][567,1195]"
+  },
+  {
+    "text": "M3 Synthetic 095",
+    "label": "",
+    "bounds": "[560,1197][572,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[564,1199][568,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 020, Thế hệ 1",
+    "bounds": "[579,1142][597,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 020",
+    "bounds": "[586,1145][590,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[587,1146][589,1147]"
+  },
+  {
+    "text": "M3 Synthetic 020",
+    "label": "",
+    "bounds": "[582,1149][594,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[586,1151][590,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 041, Thế hệ 2",
+    "bounds": "[579,1166][597,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 041",
+    "bounds": "[586,1169][590,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[587,1170][589,1171]"
+  },
+  {
+    "text": "M3 Synthetic 041",
+    "label": "",
+    "bounds": "[582,1173][594,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[586,1175][590,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 096, Thế hệ 3",
+    "bounds": "[579,1190][597,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 096",
+    "bounds": "[586,1193][590,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[587,1194][589,1195]"
+  },
+  {
+    "text": "M3 Synthetic 096",
+    "label": "",
+    "bounds": "[582,1197][594,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[586,1199][590,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 021, Thế hệ 1",
+    "bounds": "[601,1142][619,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 021",
+    "bounds": "[608,1145][612,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[609,1146][611,1147]"
+  },
+  {
+    "text": "M3 Synthetic 021",
+    "label": "",
+    "bounds": "[604,1149][616,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[608,1151][612,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 061, Thế hệ 2",
+    "bounds": "[601,1166][619,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 061",
+    "bounds": "[608,1169][612,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[609,1170][611,1171]"
+  },
+  {
+    "text": "M3 Synthetic 061",
+    "label": "",
+    "bounds": "[604,1173][616,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[608,1175][612,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 097, Thế hệ 3",
+    "bounds": "[601,1190][619,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 097",
+    "bounds": "[608,1193][612,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[609,1194][611,1195]"
+  },
+  {
+    "text": "M3 Synthetic 097",
+    "label": "",
+    "bounds": "[604,1197][616,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[608,1199][612,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 022, Thế hệ 1",
+    "bounds": "[624,1142][642,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 022",
+    "bounds": "[631,1145][635,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[632,1146][634,1147]"
+  },
+  {
+    "text": "M3 Synthetic 022",
+    "label": "",
+    "bounds": "[627,1149][639,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[631,1151][635,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 062, Thế hệ 2",
+    "bounds": "[624,1166][642,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 062",
+    "bounds": "[631,1169][635,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[632,1170][634,1171]"
+  },
+  {
+    "text": "M3 Synthetic 062",
+    "label": "",
+    "bounds": "[627,1173][639,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[631,1175][635,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 098, Thế hệ 3",
+    "bounds": "[624,1190][642,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 098",
+    "bounds": "[631,1193][635,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[632,1194][634,1195]"
+  },
+  {
+    "text": "M3 Synthetic 098",
+    "label": "",
+    "bounds": "[627,1197][639,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[631,1199][635,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 023, Thế hệ 1",
+    "bounds": "[646,1142][664,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 023",
+    "bounds": "[653,1145][657,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[654,1146][656,1147]"
+  },
+  {
+    "text": "M3 Synthetic 023",
+    "label": "",
+    "bounds": "[649,1149][661,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[653,1151][657,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 063, Thế hệ 2",
+    "bounds": "[646,1166][664,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 063",
+    "bounds": "[653,1169][657,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[654,1170][656,1171]"
+  },
+  {
+    "text": "M3 Synthetic 063",
+    "label": "",
+    "bounds": "[649,1173][661,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[653,1175][657,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 099, Thế hệ 3",
+    "bounds": "[646,1190][664,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 099",
+    "bounds": "[653,1193][657,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[654,1194][656,1195]"
+  },
+  {
+    "text": "M3 Synthetic 099",
+    "label": "",
+    "bounds": "[649,1197][661,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[653,1199][657,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 024, Thế hệ 1",
+    "bounds": "[668,1142][686,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 024",
+    "bounds": "[675,1145][679,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[676,1146][678,1147]"
+  },
+  {
+    "text": "M3 Synthetic 024",
+    "label": "",
+    "bounds": "[671,1149][683,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[675,1151][679,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 064, Thế hệ 2",
+    "bounds": "[668,1166][686,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 064",
+    "bounds": "[675,1169][679,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[676,1170][678,1171]"
+  },
+  {
+    "text": "M3 Synthetic 064",
+    "label": "",
+    "bounds": "[671,1173][683,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[675,1175][679,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 100, Thế hệ 3",
+    "bounds": "[668,1190][686,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 100",
+    "bounds": "[675,1193][679,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[676,1194][678,1195]"
+  },
+  {
+    "text": "M3 Synthetic 100",
+    "label": "",
+    "bounds": "[671,1197][683,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[675,1199][679,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 025, Thế hệ 1",
+    "bounds": "[690,1142][708,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 025",
+    "bounds": "[697,1145][701,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[698,1146][700,1147]"
+  },
+  {
+    "text": "M3 Synthetic 025",
+    "label": "",
+    "bounds": "[693,1149][705,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[697,1151][701,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 065, Thế hệ 2",
+    "bounds": "[690,1166][708,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 065",
+    "bounds": "[697,1169][701,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[698,1170][700,1171]"
+  },
+  {
+    "text": "M3 Synthetic 065",
+    "label": "",
+    "bounds": "[693,1173][705,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[697,1175][701,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 081, Thế hệ 3",
+    "bounds": "[690,1190][708,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 081",
+    "bounds": "[697,1193][701,1196]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[698,1194][700,1195]"
+  },
+  {
+    "text": "M3 Synthetic 081",
+    "label": "",
+    "bounds": "[693,1197][705,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[697,1199][701,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 026, Thế hệ 1",
+    "bounds": "[712,1142][730,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 026",
+    "bounds": "[719,1145][723,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[720,1146][722,1147]"
+  },
+  {
+    "text": "M3 Synthetic 026",
+    "label": "",
+    "bounds": "[715,1149][727,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[719,1151][723,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 066, Thế hệ 2",
+    "bounds": "[712,1166][730,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 066",
+    "bounds": "[719,1169][723,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[720,1170][722,1171]"
+  },
+  {
+    "text": "M3 Synthetic 066",
+    "label": "",
+    "bounds": "[715,1173][727,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[719,1175][723,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 101, Thế hệ 3",
+    "bounds": "[712,1190][730,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 101",
+    "bounds": "[719,1193][723,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[720,1194][722,1195]"
+  },
+  {
+    "text": "M3 Synthetic 101",
+    "label": "",
+    "bounds": "[715,1197][727,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[719,1199][723,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 027, Thế hệ 1",
+    "bounds": "[734,1142][752,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 027",
+    "bounds": "[741,1145][745,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[742,1146][744,1147]"
+  },
+  {
+    "text": "M3 Synthetic 027",
+    "label": "",
+    "bounds": "[737,1149][749,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[741,1151][745,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 067, Thế hệ 2",
+    "bounds": "[734,1166][752,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 067",
+    "bounds": "[741,1169][745,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[742,1170][744,1171]"
+  },
+  {
+    "text": "M3 Synthetic 067",
+    "label": "",
+    "bounds": "[737,1173][749,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[741,1175][745,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 102, Thế hệ 3",
+    "bounds": "[734,1190][752,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 102",
+    "bounds": "[741,1193][745,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[742,1194][744,1195]"
+  },
+  {
+    "text": "M3 Synthetic 102",
+    "label": "",
+    "bounds": "[737,1197][749,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[741,1199][745,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 028, Thế hệ 1",
+    "bounds": "[756,1142][774,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 028",
+    "bounds": "[763,1145][767,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[764,1146][766,1147]"
+  },
+  {
+    "text": "M3 Synthetic 028",
+    "label": "",
+    "bounds": "[759,1149][771,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[763,1151][767,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 068, Thế hệ 2",
+    "bounds": "[756,1166][774,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 068",
+    "bounds": "[763,1169][767,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[764,1170][766,1171]"
+  },
+  {
+    "text": "M3 Synthetic 068",
+    "label": "",
+    "bounds": "[759,1173][771,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[763,1175][767,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 103, Thế hệ 3",
+    "bounds": "[756,1190][774,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 103",
+    "bounds": "[763,1193][767,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[764,1194][766,1195]"
+  },
+  {
+    "text": "M3 Synthetic 103",
+    "label": "",
+    "bounds": "[759,1197][771,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[763,1199][767,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 029, Thế hệ 1",
+    "bounds": "[779,1142][797,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 029",
+    "bounds": "[786,1145][790,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[787,1146][789,1147]"
+  },
+  {
+    "text": "M3 Synthetic 029",
+    "label": "",
+    "bounds": "[782,1149][794,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[786,1151][790,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 069, Thế hệ 2",
+    "bounds": "[779,1166][797,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 069",
+    "bounds": "[786,1169][790,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[787,1170][789,1171]"
+  },
+  {
+    "text": "M3 Synthetic 069",
+    "label": "",
+    "bounds": "[782,1173][794,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[786,1175][790,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 104, Thế hệ 3",
+    "bounds": "[779,1190][797,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 104",
+    "bounds": "[786,1193][790,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[787,1194][789,1195]"
+  },
+  {
+    "text": "M3 Synthetic 104",
+    "label": "",
+    "bounds": "[782,1197][794,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[786,1199][790,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 030, Thế hệ 1",
+    "bounds": "[801,1142][819,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 030",
+    "bounds": "[808,1145][812,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[809,1146][811,1147]"
+  },
+  {
+    "text": "M3 Synthetic 030",
+    "label": "",
+    "bounds": "[804,1149][816,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[808,1151][812,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 070, Thế hệ 2",
+    "bounds": "[801,1166][819,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 070",
+    "bounds": "[808,1169][812,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[809,1170][811,1171]"
+  },
+  {
+    "text": "M3 Synthetic 070",
+    "label": "",
+    "bounds": "[804,1173][816,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[808,1175][812,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 105, Thế hệ 3",
+    "bounds": "[801,1190][819,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 105",
+    "bounds": "[808,1193][812,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[809,1194][811,1195]"
+  },
+  {
+    "text": "M3 Synthetic 105",
+    "label": "",
+    "bounds": "[804,1197][816,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[808,1199][812,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 031, Thế hệ 1",
+    "bounds": "[823,1142][841,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 031",
+    "bounds": "[830,1145][834,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[831,1146][833,1147]"
+  },
+  {
+    "text": "M3 Synthetic 031",
+    "label": "",
+    "bounds": "[826,1149][838,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[830,1151][834,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 071, Thế hệ 2",
+    "bounds": "[823,1166][841,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 071",
+    "bounds": "[830,1169][834,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[831,1170][833,1171]"
+  },
+  {
+    "text": "M3 Synthetic 071",
+    "label": "",
+    "bounds": "[826,1173][838,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[830,1175][834,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 106, Thế hệ 3",
+    "bounds": "[823,1190][841,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 106",
+    "bounds": "[830,1193][834,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[831,1194][833,1195]"
+  },
+  {
+    "text": "M3 Synthetic 106",
+    "label": "",
+    "bounds": "[826,1197][838,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[830,1199][834,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 032, Thế hệ 1",
+    "bounds": "[845,1142][863,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 032",
+    "bounds": "[852,1145][856,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[853,1146][855,1147]"
+  },
+  {
+    "text": "M3 Synthetic 032",
+    "label": "",
+    "bounds": "[848,1149][860,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[852,1151][856,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 072, Thế hệ 2",
+    "bounds": "[845,1166][863,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 072",
+    "bounds": "[852,1169][856,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[853,1170][855,1171]"
+  },
+  {
+    "text": "M3 Synthetic 072",
+    "label": "",
+    "bounds": "[848,1173][860,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[852,1175][856,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 107, Thế hệ 3",
+    "bounds": "[845,1190][863,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 107",
+    "bounds": "[852,1193][856,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[853,1194][855,1195]"
+  },
+  {
+    "text": "M3 Synthetic 107",
+    "label": "",
+    "bounds": "[848,1197][860,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[852,1199][856,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 033, Thế hệ 1",
+    "bounds": "[867,1142][885,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 033",
+    "bounds": "[874,1145][878,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[875,1146][877,1147]"
+  },
+  {
+    "text": "M3 Synthetic 033",
+    "label": "",
+    "bounds": "[870,1149][882,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[874,1151][878,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 073, Thế hệ 2",
+    "bounds": "[867,1166][885,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 073",
+    "bounds": "[874,1169][878,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[875,1170][877,1171]"
+  },
+  {
+    "text": "M3 Synthetic 073",
+    "label": "",
+    "bounds": "[870,1173][882,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[874,1175][878,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 108, Thế hệ 3",
+    "bounds": "[867,1190][885,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 108",
+    "bounds": "[874,1193][878,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[875,1194][877,1195]"
+  },
+  {
+    "text": "M3 Synthetic 108",
+    "label": "",
+    "bounds": "[870,1197][882,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[874,1199][878,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 034, Thế hệ 1",
+    "bounds": "[889,1142][907,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 034",
+    "bounds": "[896,1145][900,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[897,1146][899,1147]"
+  },
+  {
+    "text": "M3 Synthetic 034",
+    "label": "",
+    "bounds": "[892,1149][904,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[896,1151][900,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 074, Thế hệ 2",
+    "bounds": "[889,1166][907,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 074",
+    "bounds": "[896,1169][900,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[897,1170][899,1171]"
+  },
+  {
+    "text": "M3 Synthetic 074",
+    "label": "",
+    "bounds": "[892,1173][904,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[896,1175][900,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 109, Thế hệ 3",
+    "bounds": "[889,1190][907,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 109",
+    "bounds": "[896,1193][900,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[897,1194][899,1195]"
+  },
+  {
+    "text": "M3 Synthetic 109",
+    "label": "",
+    "bounds": "[892,1197][904,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[896,1199][900,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 035, Thế hệ 1",
+    "bounds": "[911,1142][929,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 035",
+    "bounds": "[918,1145][922,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[919,1146][921,1147]"
+  },
+  {
+    "text": "M3 Synthetic 035",
+    "label": "",
+    "bounds": "[914,1149][926,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[918,1151][922,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 075, Thế hệ 2",
+    "bounds": "[911,1166][929,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 075",
+    "bounds": "[918,1169][922,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[919,1170][921,1171]"
+  },
+  {
+    "text": "M3 Synthetic 075",
+    "label": "",
+    "bounds": "[914,1173][926,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[918,1175][922,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 110, Thế hệ 3",
+    "bounds": "[911,1190][929,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 110",
+    "bounds": "[918,1193][922,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[919,1194][921,1195]"
+  },
+  {
+    "text": "M3 Synthetic 110",
+    "label": "",
+    "bounds": "[914,1197][926,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[918,1199][922,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 036, Thế hệ 1",
+    "bounds": "[933,1142][951,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 036",
+    "bounds": "[940,1145][944,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[941,1146][943,1147]"
+  },
+  {
+    "text": "M3 Synthetic 036",
+    "label": "",
+    "bounds": "[936,1149][948,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[940,1151][944,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 076, Thế hệ 2",
+    "bounds": "[933,1166][951,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 076",
+    "bounds": "[940,1169][944,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[941,1170][943,1171]"
+  },
+  {
+    "text": "M3 Synthetic 076",
+    "label": "",
+    "bounds": "[936,1173][948,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[940,1175][944,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 111, Thế hệ 3",
+    "bounds": "[933,1190][951,1204]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 111",
+    "bounds": "[940,1193][944,1196]"
+  },
+  {
+    "text": "S1",
+    "label": "",
+    "bounds": "[941,1194][943,1195]"
+  },
+  {
+    "text": "M3 Synthetic 111",
+    "label": "",
+    "bounds": "[936,1197][948,1199]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[940,1199][944,1201]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 037, Thế hệ 1",
+    "bounds": "[956,1142][974,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 037",
+    "bounds": "[963,1145][967,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[964,1146][966,1147]"
+  },
+  {
+    "text": "M3 Synthetic 037",
+    "label": "",
+    "bounds": "[959,1149][971,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[963,1151][967,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 077, Thế hệ 2",
+    "bounds": "[956,1166][974,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 077",
+    "bounds": "[963,1169][967,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[964,1170][966,1171]"
+  },
+  {
+    "text": "M3 Synthetic 077",
+    "label": "",
+    "bounds": "[959,1173][971,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[963,1175][967,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 038, Thế hệ 1",
+    "bounds": "[978,1142][996,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 038",
+    "bounds": "[985,1145][989,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[986,1146][988,1147]"
+  },
+  {
+    "text": "M3 Synthetic 038",
+    "label": "",
+    "bounds": "[981,1149][993,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[985,1151][989,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 078, Thế hệ 2",
+    "bounds": "[978,1166][996,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 078",
+    "bounds": "[985,1169][989,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[986,1170][988,1171]"
+  },
+  {
+    "text": "M3 Synthetic 078",
+    "label": "",
+    "bounds": "[981,1173][993,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[985,1175][989,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 039, Thế hệ 1",
+    "bounds": "[1000,1142][1018,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 039",
+    "bounds": "[1007,1145][1011,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[1008,1146][1010,1147]"
+  },
+  {
+    "text": "M3 Synthetic 039",
+    "label": "",
+    "bounds": "[1003,1149][1015,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[1007,1151][1011,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 079, Thế hệ 2",
+    "bounds": "[1000,1166][1018,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 079",
+    "bounds": "[1007,1169][1011,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[1008,1170][1010,1171]"
+  },
+  {
+    "text": "M3 Synthetic 079",
+    "label": "",
+    "bounds": "[1003,1173][1015,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[1007,1175][1011,1177]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 040, Thế hệ 1",
+    "bounds": "[1022,1142][1040,1156]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 040",
+    "bounds": "[1029,1145][1033,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[1030,1146][1032,1147]"
+  },
+  {
+    "text": "M3 Synthetic 040",
+    "label": "",
+    "bounds": "[1025,1149][1037,1151]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[1029,1151][1033,1153]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 080, Thế hệ 2",
+    "bounds": "[1022,1166][1040,1180]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 080",
+    "bounds": "[1029,1169][1033,1172]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[1030,1170][1032,1171]"
+  },
+  {
+    "text": "M3 Synthetic 080",
+    "label": "",
+    "bounds": "[1025,1173][1037,1175]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[1029,1175][1033,1177]"
+  },
+  {
+    "text": "",
+    "label": "Trang chủ",
+    "bounds": "[94,1752][347,1872]"
+  },
+  {
+    "text": "Trang chủ",
+    "label": "",
+    "bounds": "[181,1824][258,1848]"
+  },
+  {
+    "text": "",
+    "label": "Gia đình",
+    "bounds": "[347,1752][600,1872]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[440,1824][505,1848]"
+  },
+  {
+    "text": "",
+    "label": "Ký ức",
+    "bounds": "[600,1752][853,1872]"
+  },
+  {
+    "text": "Ký ức",
+    "label": "",
+    "bounds": "[704,1824][747,1848]"
+  },
+  {
+    "text": "",
+    "label": "Tôi",
+    "bounds": "[853,1752][1106,1872]"
+  },
+  {
+    "text": "Tôi",
+    "label": "",
+    "bounds": "[967,1824][991,1848]"
+  }
+]

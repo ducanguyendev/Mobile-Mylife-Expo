@@ -1,0 +1,307 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[1118,156][1157,195]"
+  },
+  {
+    "text": "CÙNG MỘT GỐC RỄ",
+    "label": "",
+    "bounds": "[165,142][1035,168]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[165,174][1035,228]"
+  },
+  {
+    "text": "Những người làm nên câu chuyện của bạn.",
+    "label": "",
+    "bounds": "[165,234][1035,269]"
+  },
+  {
+    "text": "",
+    "label": "Thẻ",
+    "bounds": "[171,329][454,401]"
+  },
+  {
+    "text": "Thẻ",
+    "label": "",
+    "bounds": "[295,351][330,378]"
+  },
+  {
+    "text": "",
+    "label": "Danh sách",
+    "bounds": "[459,329][742,401]"
+  },
+  {
+    "text": "Danh sách",
+    "label": "",
+    "bounds": "[553,351][647,378]"
+  },
+  {
+    "text": "",
+    "label": "Cây",
+    "bounds": "[746,329][1029,401]"
+  },
+  {
+    "text": "Cây",
+    "label": "",
+    "bounds": "[870,351][904,378]"
+  },
+  {
+    "text": "112 thành viên · 3 thế hệ",
+    "label": "",
+    "bounds": "[165,425][1035,460]"
+  },
+  {
+    "text": "",
+    "label": "Thêm thành viên",
+    "bounds": "[165,478][1035,550]"
+  },
+  {
+    "text": "Thêm thành viên",
+    "label": "",
+    "bounds": "[196,499][1003,529]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[191,591][219,620]"
+  },
+  {
+    "text": "Tìm theo tên, không phân biệt dấu",
+    "label": "Tìm theo tên, không phân biệt dấu",
+    "bounds": "[237,569][1010,641]"
+  },
+  {
+    "text": "",
+    "label": "Bộ lọc",
+    "bounds": "[165,661][594,733]"
+  },
+  {
+    "text": "Bộ lọc",
+    "label": "",
+    "bounds": "[196,682][562,712]"
+  },
+  {
+    "text": "",
+    "label": "Xóa bộ lọc",
+    "bounds": "[606,661][1035,733]"
+  },
+  {
+    "text": "Xóa bộ lọc",
+    "label": "",
+    "bounds": "[637,682][1003,712]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 001, Thế hệ 1, Còn sống",
+    "bounds": "[165,757][1035,978]"
+  },
+  {
+    "text": "M3 Synthetic 001",
+    "label": "",
+    "bounds": "[303,787][1005,822]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 001",
+    "bounds": "[195,825][279,909]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 001",
+    "bounds": "[195,825][279,909]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[222,853][251,880]"
+  },
+  {
+    "text": "Thế hệ 1",
+    "label": "",
+    "bounds": "[303,834][1005,860]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[321,877][398,903]"
+  },
+  {
+    "text": "Ngày sinh: 1 tháng 1, 1970",
+    "label": "",
+    "bounds": "[303,921][1005,947]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 002, Thế hệ 1, Còn sống",
+    "bounds": "[165,996][1035,1216]"
+  },
+  {
+    "text": "M3 Synthetic 002",
+    "label": "",
+    "bounds": "[303,1026][1005,1061]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 002",
+    "bounds": "[195,1064][279,1148]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 002",
+    "bounds": "[195,1064][279,1148]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[222,1092][251,1119]"
+  },
+  {
+    "text": "Thế hệ 1",
+    "label": "",
+    "bounds": "[303,1073][1005,1099]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[321,1116][398,1142]"
+  },
+  {
+    "text": "Ngày sinh: 1 tháng 1, 1970",
+    "label": "",
+    "bounds": "[303,1160][1005,1186]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 003, Thế hệ 1, Còn sống",
+    "bounds": "[165,1234][1035,1455]"
+  },
+  {
+    "text": "M3 Synthetic 003",
+    "label": "",
+    "bounds": "[303,1264][1005,1299]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 003",
+    "bounds": "[195,1302][279,1386]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 003",
+    "bounds": "[195,1302][279,1386]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[222,1330][251,1357]"
+  },
+  {
+    "text": "Thế hệ 1",
+    "label": "",
+    "bounds": "[303,1311][1005,1337]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[321,1354][398,1380]"
+  },
+  {
+    "text": "Ngày sinh: 1 tháng 1, 1970",
+    "label": "",
+    "bounds": "[303,1398][1005,1424]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 004, Thế hệ 1, Còn sống",
+    "bounds": "[165,1473][1035,1693]"
+  },
+  {
+    "text": "M3 Synthetic 004",
+    "label": "",
+    "bounds": "[303,1503][1005,1538]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 004",
+    "bounds": "[195,1541][279,1625]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 004",
+    "bounds": "[195,1541][279,1625]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[222,1569][251,1596]"
+  },
+  {
+    "text": "Thế hệ 1",
+    "label": "",
+    "bounds": "[303,1550][1005,1576]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[321,1593][398,1619]"
+  },
+  {
+    "text": "Ngày sinh: 1 tháng 1, 1970",
+    "label": "",
+    "bounds": "[303,1637][1005,1663]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 005, Thế hệ 1, Còn sống",
+    "bounds": "[165,1711][1035,1752]"
+  },
+  {
+    "text": "M3 Synthetic 005",
+    "label": "",
+    "bounds": "[303,1741][1005,1752]"
+  },
+  {
+    "text": "",
+    "label": "Trang chủ",
+    "bounds": "[94,1752][347,1872]"
+  },
+  {
+    "text": "Trang chủ",
+    "label": "",
+    "bounds": "[181,1824][258,1848]"
+  },
+  {
+    "text": "",
+    "label": "Gia đình",
+    "bounds": "[347,1752][600,1872]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[440,1824][505,1848]"
+  },
+  {
+    "text": "",
+    "label": "Ký ức",
+    "bounds": "[600,1752][853,1872]"
+  },
+  {
+    "text": "Ký ức",
+    "label": "",
+    "bounds": "[704,1824][747,1848]"
+  },
+  {
+    "text": "",
+    "label": "Tôi",
+    "bounds": "[853,1752][1106,1872]"
+  },
+  {
+    "text": "Tôi",
+    "label": "",
+    "bounds": "[967,1824][991,1848]"
+  }
+]

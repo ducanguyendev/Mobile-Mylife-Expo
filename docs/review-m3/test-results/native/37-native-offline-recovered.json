@@ -1,0 +1,347 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[1118,156][1157,195]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[153,130][1047,171]"
+  },
+  {
+    "text": "",
+    "label": "Thẻ",
+    "bounds": "[159,189][450,261]"
+  },
+  {
+    "text": "Thẻ",
+    "label": "",
+    "bounds": "[287,211][322,238]"
+  },
+  {
+    "text": "",
+    "label": "Danh sách",
+    "bounds": "[455,189][746,261]"
+  },
+  {
+    "text": "Danh sách",
+    "label": "",
+    "bounds": "[553,211][647,238]"
+  },
+  {
+    "text": "",
+    "label": "Cây",
+    "bounds": "[750,189][1041,261]"
+  },
+  {
+    "text": "Cây",
+    "label": "",
+    "bounds": "[878,211][912,238]"
+  },
+  {
+    "text": "",
+    "label": "Thử lại",
+    "bounds": "[153,279][1047,351]"
+  },
+  {
+    "text": "Thử lại",
+    "label": "",
+    "bounds": "[184,300][1015,330]"
+  },
+  {
+    "text": "",
+    "label": "Thu nhỏ cây",
+    "bounds": "[153,383][225,455]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[174,404][204,434]"
+  },
+  {
+    "text": "",
+    "label": "Phóng to cây",
+    "bounds": "[231,383][303,455]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[252,404][282,434]"
+  },
+  {
+    "text": "",
+    "label": "Cỡ dễ đọc",
+    "bounds": "[309,383][501,455]"
+  },
+  {
+    "text": "Cỡ dễ đọc",
+    "label": "",
+    "bounds": "[334,404][475,434]"
+  },
+  {
+    "text": "",
+    "label": "Xem toàn cây",
+    "bounds": "[507,369][687,468]"
+  },
+  {
+    "text": "Xem toàn cây",
+    "label": "",
+    "bounds": "[532,388][661,448]"
+  },
+  {
+    "text": "",
+    "label": "Cách xem cây",
+    "bounds": "[693,383][765,455]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[714,404][744,434]"
+  },
+  {
+    "text": "90%",
+    "label": "",
+    "bounds": "[771,405][805,431]"
+  },
+  {
+    "text": "Cha/mẹ → con",
+    "label": "",
+    "bounds": "[153,486][274,512]"
+  },
+  {
+    "text": "━ Vợ/chồng",
+    "label": "",
+    "bounds": "[292,486][388,512]"
+  },
+  {
+    "text": "┄ Quan hệ ngang ghi nhận",
+    "label": "",
+    "bounds": "[406,486][618,512]"
+  },
+  {
+    "text": "Kéo để di chuyển, chụm/mở hai ngón để thu phóng. Chạm thành viên để xem hồ sơ. Dùng danh sách hoặc thẻ để đọc đầy đủ bằng trình đọc màn hình.",
+    "label": "",
+    "bounds": "[135,530][1065,594]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 001, Thế hệ 1",
+    "bounds": "[159,704][424,909]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 001",
+    "bounds": "[267,745][316,793]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 001",
+    "bounds": "[267,745][316,793]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[281,756][301,781]"
+  },
+  {
+    "text": "M3 Synthetic 001",
+    "label": "",
+    "bounds": "[199,803][383,835]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[256,845][326,869]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 002, Thế hệ 1",
+    "bounds": "[488,704][753,909]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 002",
+    "bounds": "[596,745][645,793]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 002",
+    "bounds": "[596,745][645,793]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[610,756][630,781]"
+  },
+  {
+    "text": "M3 Synthetic 002",
+    "label": "",
+    "bounds": "[528,803][712,835]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[585,845][655,869]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 003, Thế hệ 1",
+    "bounds": "[818,704][1065,909]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 003",
+    "bounds": "[926,745][975,793]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 003",
+    "bounds": "[926,745][975,793]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[940,756][960,781]"
+  },
+  {
+    "text": "M3 Synthetic 003",
+    "label": "",
+    "bounds": "[858,803][1042,835]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[915,845][985,869]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 042, Thế hệ 2",
+    "bounds": "[159,1061][424,1266]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 042",
+    "bounds": "[267,1102][316,1150]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 042",
+    "bounds": "[267,1102][316,1150]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[281,1113][301,1138]"
+  },
+  {
+    "text": "M3 Synthetic 042",
+    "label": "",
+    "bounds": "[199,1160][383,1192]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[256,1202][326,1226]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 043, Thế hệ 2",
+    "bounds": "[488,1061][753,1266]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 043",
+    "bounds": "[596,1102][645,1150]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 043",
+    "bounds": "[596,1102][645,1150]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[610,1113][630,1138]"
+  },
+  {
+    "text": "M3 Synthetic 043",
+    "label": "",
+    "bounds": "[528,1160][712,1192]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[585,1202][655,1226]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 044, Thế hệ 2",
+    "bounds": "[818,1061][1065,1266]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 044",
+    "bounds": "[926,1102][975,1150]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 044",
+    "bounds": "[926,1102][975,1150]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[940,1113][960,1138]"
+  },
+  {
+    "text": "M3 Synthetic 044",
+    "label": "",
+    "bounds": "[858,1160][1042,1192]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[915,1202][985,1226]"
+  },
+  {
+    "text": "",
+    "label": "Trang chủ",
+    "bounds": "[94,1752][347,1872]"
+  },
+  {
+    "text": "Trang chủ",
+    "label": "",
+    "bounds": "[181,1824][258,1848]"
+  },
+  {
+    "text": "",
+    "label": "Gia đình",
+    "bounds": "[347,1752][600,1872]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[440,1824][505,1848]"
+  },
+  {
+    "text": "",
+    "label": "Ký ức",
+    "bounds": "[600,1752][853,1872]"
+  },
+  {
+    "text": "Ký ức",
+    "label": "",
+    "bounds": "[704,1824][747,1848]"
+  },
+  {
+    "text": "",
+    "label": "Tôi",
+    "bounds": "[853,1752][1106,1872]"
+  },
+  {
+    "text": "Tôi",
+    "label": "",
+    "bounds": "[967,1824][991,1848]"
+  }
+]

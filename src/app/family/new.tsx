@@ -1,8 +1,11 @@
 import { router } from 'expo-router';
-import { AppScreen, AppHeader } from '@/components/layout/app-screen';
+import { AppScreen } from '@/components/layout/app-screen';
+import { useAuth } from '@/features/auth/context/auth-provider';
 import { MemberForm } from '@/features/family/components/MemberForm';
-import type { FamilyMember } from '@/features/family/types/family';
-
+import { FamilyHeader, backToFamily } from '@/features/family/components/FamilyHeader';
+import { useFamilyStrings } from '@/features/family/i18n/use-family-strings';
 export default function NewFamilyMemberScreen() {
-  return <AppScreen padded={false}><AppHeader title="Thêm thành viên" subtitle="Thông tin sẽ được lưu vào cây gia đình của bạn." /><MemberForm onCancel={() => router.back()} onSaved={(member: FamilyMember) => router.replace({ pathname: '/family/[id]', params: { id: String(member.id), notice: 'created' } })} /></AppScreen>;
+  const { user, isUser } = useAuth(); const { copy } = useFamilyStrings();
+  if (!user || !isUser) return null;
+  return <AppScreen padded={false}><FamilyHeader title={copy.add} /><MemberForm key={user.id} onCancel={backToFamily} onSaved={member => router.replace({ pathname: '/family/[id]', params: { id: String(member.id) } })} /></AppScreen>;
 }

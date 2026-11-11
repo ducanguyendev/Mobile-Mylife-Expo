@@ -1,0 +1,107 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "",
+    "label": "Back",
+    "bounds": "[44,180][176,312]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[83,219][138,274]"
+  },
+  {
+    "text": "Member profile",
+    "label": "",
+    "bounds": "[209,208][1036,283]"
+  },
+  {
+    "text": "Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "label": "",
+    "bounds": "[110,466][970,763]"
+  },
+  {
+    "text": "Generation 3",
+    "label": "",
+    "bounds": "[110,796][970,860]"
+  },
+  {
+    "text": "Living",
+    "label": "",
+    "bounds": "[143,903][232,950]"
+  },
+  {
+    "text": "Date of birth",
+    "label": "",
+    "bounds": "[110,995][970,1042]"
+  },
+  {
+    "text": "January 1, 1970",
+    "label": "",
+    "bounds": "[110,1053][970,1117]"
+  },
+  {
+    "text": "Gender",
+    "label": "",
+    "bounds": "[110,1150][970,1197]"
+  },
+  {
+    "text": "Female",
+    "label": "",
+    "bounds": "[110,1208][970,1272]"
+  },
+  {
+    "text": "Avatar",
+    "label": "",
+    "bounds": "[110,1426][970,1501]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "bounds": "[386,1534][694,1842]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "bounds": "[408,1556][672,1820]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "bounds": "[408,1556][672,1820]"
+  },
+  {
+    "text": "TH",
+    "label": "",
+    "bounds": "[491,1663][589,1713]"
+  },
+  {
+    "text": "JPG, PNG, WebP or GIF, up to 5 MiB.",
+    "label": "",
+    "bounds": "[110,1875][970,1939]"
+  },
+  {
+    "text": "",
+    "label": "Choose photo",
+    "bounds": "[110,1972][970,2104]"
+  },
+  {
+    "text": "Choose photo",
+    "label": "",
+    "bounds": "[167,2010][913,2065]"
+  },
+  {
+    "text": "",
+    "label": "Edit member",
+    "bounds": "[55,2203][1025,2335]"
+  },
+  {
+    "text": "Edit member",
+    "label": "",
+    "bounds": "[112,2241][968,2296]"
+  }
+]

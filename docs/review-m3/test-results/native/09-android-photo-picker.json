@@ -1,0 +1,57 @@
+[
+  {
+    "text": "This app can only access the photos you select",
+    "label": "",
+    "bounds": "[227,991][852,1032]"
+  },
+  {
+    "text": "Recent",
+    "label": "",
+    "bounds": "[0,1252][1080,1406]"
+  },
+  {
+    "text": "",
+    "label": "Photo taken on Nov 10, 2026, 3:54:42 PM",
+    "bounds": "[0,1406][354,1761]"
+  },
+  {
+    "text": "",
+    "label": "Photo taken on Nov 2, 2026, 2:02:54 PM",
+    "bounds": "[362,1406][717,1761]"
+  },
+  {
+    "text": "",
+    "label": "Photo taken on Nov 2, 2026, 2:02:54 PM",
+    "bounds": "[725,1406][1080,1761]"
+  },
+  {
+    "text": "",
+    "label": "Cancel",
+    "bounds": "[0,1087][154,1241]"
+  },
+  {
+    "text": "",
+    "label": "Photos",
+    "bounds": "[254,1098][540,1230]"
+  },
+  {
+    "text": "Photos",
+    "label": "",
+    "bounds": "[335,1137][458,1190]"
+  },
+  {
+    "text": "",
+    "label": "Albums",
+    "bounds": "[540,1098][826,1230]"
+  },
+  {
+    "text": "Albums",
+    "label": "",
+    "bounds": "[617,1137][749,1190]"
+  },
+  {
+    "text": "",
+    "label": "More options",
+    "bounds": "[948,1098][1080,1230]"
+  }
+]

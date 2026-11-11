@@ -1,0 +1,232 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "SHARED ROOTS",
+    "label": "",
+    "bounds": "[55,191][1025,238]"
+  },
+  {
+    "text": "Family",
+    "label": "",
+    "bounds": "[55,249][1025,348]"
+  },
+  {
+    "text": "The people behind your family story.",
+    "label": "",
+    "bounds": "[55,359][1025,423]"
+  },
+  {
+    "text": "",
+    "label": "Cards",
+    "bounds": "[66,533][377,665]"
+  },
+  {
+    "text": "Cards",
+    "label": "",
+    "bounds": "[173,574][268,624]"
+  },
+  {
+    "text": "",
+    "label": "List",
+    "bounds": "[385,533][695,665]"
+  },
+  {
+    "text": "List",
+    "label": "",
+    "bounds": "[510,574][570,624]"
+  },
+  {
+    "text": "",
+    "label": "Tree",
+    "bounds": "[704,533][1014,665]"
+  },
+  {
+    "text": "Tree",
+    "label": "",
+    "bounds": "[822,574][895,624]"
+  },
+  {
+    "text": "112 members · 3 generations",
+    "label": "",
+    "bounds": "[55,709][1025,773]"
+  },
+  {
+    "text": "",
+    "label": "Add member",
+    "bounds": "[55,806][1025,938]"
+  },
+  {
+    "text": "Add member",
+    "label": "",
+    "bounds": "[112,844][968,899]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[102,1014][154,1066]"
+  },
+  {
+    "text": "Search names, with or without accents",
+    "label": "Search names, with or without accents",
+    "bounds": "[187,973][979,1105]"
+  },
+  {
+    "text": "",
+    "label": "Filters",
+    "bounds": "[55,1142][1025,1274]"
+  },
+  {
+    "text": "Filters",
+    "label": "",
+    "bounds": "[112,1180][968,1235]"
+  },
+  {
+    "text": "",
+    "label": "Clear filters",
+    "bounds": "[1047,1142][1025,1274]"
+  },
+  {
+    "text": "",
+    "label": "Open profile for M3 Synthetic 001, Generation 1, Living",
+    "bounds": "[55,1318][1025,1583]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[88,1390][209,1511]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[88,1390][209,1511]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[128,1425][169,1475]"
+  },
+  {
+    "text": "M3 Synthetic 001",
+    "label": "",
+    "bounds": "[253,1351][992,1412]"
+  },
+  {
+    "text": "Generation 1",
+    "label": "",
+    "bounds": "[253,1434][992,1481]"
+  },
+  {
+    "text": "Living",
+    "label": "",
+    "bounds": "[253,1503][992,1550]"
+  },
+  {
+    "text": "",
+    "label": "Open profile for M3 Synthetic 002, Generation 1, Living",
+    "bounds": "[55,1616][1025,1881]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 002",
+    "bounds": "[88,1688][209,1809]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 002",
+    "bounds": "[88,1688][209,1809]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[128,1723][169,1773]"
+  },
+  {
+    "text": "M3 Synthetic 002",
+    "label": "",
+    "bounds": "[253,1649][992,1710]"
+  },
+  {
+    "text": "Generation 1",
+    "label": "",
+    "bounds": "[253,1732][992,1779]"
+  },
+  {
+    "text": "Living",
+    "label": "",
+    "bounds": "[253,1801][992,1848]"
+  },
+  {
+    "text": "",
+    "label": "Open profile for M3 Synthetic 003, Generation 1, Living",
+    "bounds": "[55,1914][1025,2054]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 003",
+    "bounds": "[88,1986][209,2054]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 003",
+    "bounds": "[88,1986][209,2054]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[128,2021][169,2054]"
+  },
+  {
+    "text": "M3 Synthetic 003",
+    "label": "",
+    "bounds": "[253,1947][992,2008]"
+  },
+  {
+    "text": "Generation 1",
+    "label": "",
+    "bounds": "[253,2030][992,2054]"
+  },
+  {
+    "text": "",
+    "label": "Home",
+    "bounds": "[0,2054][270,2274]"
+  },
+  {
+    "text": "Home",
+    "label": "",
+    "bounds": "[93,2186][177,2230]"
+  },
+  {
+    "text": "",
+    "label": "Family",
+    "bounds": "[270,2054][540,2274]"
+  },
+  {
+    "text": "Family",
+    "label": "",
+    "bounds": "[358,2186][451,2230]"
+  },
+  {
+    "text": "",
+    "label": "Memories",
+    "bounds": "[540,2054][810,2274]"
+  },
+  {
+    "text": "Memories",
+    "label": "",
+    "bounds": "[604,2186][746,2230]"
+  },
+  {
+    "text": "",
+    "label": "Me",
+    "bounds": "[810,2054][1080,2274]"
+  },
+  {
+    "text": "Me",
+    "label": "",
+    "bounds": "[923,2186][967,2230]"
+  }
+]

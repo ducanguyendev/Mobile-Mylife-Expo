@@ -1,0 +1,102 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "",
+    "label": "Back",
+    "bounds": "[44,180][176,312]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[83,219][138,274]"
+  },
+  {
+    "text": "Member profile",
+    "label": "",
+    "bounds": "[209,208][1036,283]"
+  },
+  {
+    "text": "Avatar",
+    "label": "",
+    "bounds": "[110,400][970,475]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[386,508][694,816]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[408,530][672,794]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[408,530][672,794]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[496,637][584,687]"
+  },
+  {
+    "text": "JPG, PNG, WebP or GIF, up to 5 MiB.",
+    "label": "",
+    "bounds": "[110,849][970,913]"
+  },
+  {
+    "text": "",
+    "label": "Selected photo preview",
+    "bounds": "[110,946][970,1441]"
+  },
+  {
+    "text": "",
+    "label": "busy",
+    "bounds": "[110,1474][970,1606]"
+  },
+  {
+    "text": "Upload photo",
+    "label": "",
+    "bounds": "[167,1512][913,1567]"
+  },
+  {
+    "text": "",
+    "label": "Discard selected photo",
+    "bounds": "[110,1639][970,1771]"
+  },
+  {
+    "text": "Discard selected photo",
+    "label": "",
+    "bounds": "[167,1677][913,1732]"
+  },
+  {
+    "text": "",
+    "label": "busy",
+    "bounds": "[110,1804][970,1936]"
+  },
+  {
+    "text": "Replace photo",
+    "label": "",
+    "bounds": "[167,1842][913,1897]"
+  },
+  {
+    "text": "",
+    "label": "Remove photo",
+    "bounds": "[110,1969][970,2101]"
+  },
+  {
+    "text": "Remove photo",
+    "label": "",
+    "bounds": "[167,2007][913,2062]"
+  },
+  {
+    "text": "Could not complete the photo action. Reload the profile to check and try again.",
+    "label": "",
+    "bounds": "[110,2134][970,2262]"
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[610,132][662,184]"
+  },
+  {
+    "text": "CÙNG MỘT GỐC RỄ",
+    "label": "",
+    "bounds": "[40,114][680,156]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[40,164][680,236]"
+  },
+  {
+    "text": "Những người làm nên câu chuyện của bạn.",
+    "label": "",
+    "bounds": "[40,244][680,348]"
+  },
+  {
+    "text": "",
+    "label": "Thẻ",
+    "bounds": "[48,428][252,524]"
+  },
+  {
+    "text": "Thẻ",
+    "label": "",
+    "bounds": "[120,454][180,498]"
+  },
+  {
+    "text": "",
+    "label": "Danh sách",
+    "bounds": "[258,428][462,524]"
+  },
+  {
+    "text": "Danh sách",
+    "label": "",
+    "bounds": "[278,454][442,498]"
+  },
+  {
+    "text": "",
+    "label": "Cây",
+    "bounds": "[468,428][672,524]"
+  },
+  {
+    "text": "Cây",
+    "label": "",
+    "bounds": "[540,454][599,498]"
+  },
+  {
+    "text": "112 thành viên · 3 thế hệ",
+    "label": "",
+    "bounds": "[40,556][680,608]"
+  },
+  {
+    "text": "",
+    "label": "Thêm thành viên",
+    "bounds": "[40,632][680,732]"
+  },
+  {
+    "text": "Thêm thành viên",
+    "label": "",
+    "bounds": "[82,658][638,706]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[74,790][112,828]"
+  },
+  {
+    "text": "Tìm theo tên, không phân biệt dấu",
+    "label": "Tìm theo tên, không phân biệt dấu",
+    "bounds": "[136,758][646,859]"
+  },
+  {
+    "text": "",
+    "label": "Bộ lọc",
+    "bounds": "[40,885][352,985]"
+  },
+  {
+    "text": "Bộ lọc",
+    "label": "",
+    "bounds": "[82,911][310,959]"
+  },
+  {
+    "text": "",
+    "label": "Xóa bộ lọc",
+    "bounds": "[368,885][680,985]"
+  },
+  {
+    "text": "Xóa bộ lọc",
+    "label": "",
+    "bounds": "[410,911][638,959]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 001, Thế hệ 1, Còn sống",
+    "bounds": "[40,1017][680,1070]"
+  },
+  {
+    "text": "M3 Synthetic 001",
+    "label": "",
+    "bounds": "[224,1057][640,1070]"
+  },
+  {
+    "text": "",
+    "label": "Trang chủ",
+    "bounds": "[0,1070][180,1232]"
+  },
+  {
+    "text": "Trang chủ",
+    "label": "",
+    "bounds": "[24,1166][156,1200]"
+  },
+  {
+    "text": "",
+    "label": "Gia đình",
+    "bounds": "[180,1070][360,1232]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[214,1166][325,1200]"
+  },
+  {
+    "text": "",
+    "label": "Ký ức",
+    "bounds": "[360,1070][540,1232]"
+  },
+  {
+    "text": "Ký ức",
+    "label": "",
+    "bounds": "[412,1166][487,1200]"
+  },
+  {
+    "text": "",
+    "label": "Tôi",
+    "bounds": "[540,1070][720,1232]"
+  },
+  {
+    "text": "Tôi",
+    "label": "",
+    "bounds": "[609,1166][650,1200]"
+  }
+]

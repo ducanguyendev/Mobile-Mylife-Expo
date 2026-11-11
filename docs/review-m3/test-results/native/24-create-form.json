@@ -1,0 +1,122 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "",
+    "label": "Back",
+    "bounds": "[44,180][176,312]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[83,219][138,274]"
+  },
+  {
+    "text": "Add member",
+    "label": "",
+    "bounds": "[209,208][1036,283]"
+  },
+  {
+    "text": "",
+    "label": "Mother: No relationships in this section",
+    "bounds": "[55,356][1025,176]"
+  },
+  {
+    "text": "Mother",
+    "label": "",
+    "bounds": "[101,356][979,42]"
+  },
+  {
+    "text": "No relationships in this section",
+    "label": "",
+    "bounds": "[101,356][979,128]"
+  },
+  {
+    "text": "",
+    "label": "Spouse: No relationships in this section",
+    "bounds": "[55,356][1025,449]"
+  },
+  {
+    "text": "Spouse",
+    "label": "",
+    "bounds": "[101,356][979,316]"
+  },
+  {
+    "text": "No relationships in this section",
+    "label": "",
+    "bounds": "[101,356][979,402]"
+  },
+  {
+    "text": "",
+    "label": "Children: No relationships in this section",
+    "bounds": "[55,493][1025,723]"
+  },
+  {
+    "text": "Children",
+    "label": "",
+    "bounds": "[101,539][979,589]"
+  },
+  {
+    "text": "No relationships in this section",
+    "label": "",
+    "bounds": "[101,611][979,675]"
+  },
+  {
+    "text": "Selecting children assigns this member as mother when female, and father otherwise. An existing parent link may be replaced. Parent link assigned on save: Father.",
+    "label": "",
+    "bounds": "[55,766][1025,907]"
+  },
+  {
+    "text": "Recorded horizontal relationships",
+    "label": "",
+    "bounds": "[110,1007][970,1071]"
+  },
+  {
+    "text": "A recorded relationship does not establish biological parentage. Other server relationship types are always preserved.",
+    "label": "",
+    "bounds": "[110,1104][970,1245]"
+  },
+  {
+    "text": "",
+    "label": "Add relationship",
+    "bounds": "[110,1278][970,1410]"
+  },
+  {
+    "text": "Add relationship",
+    "label": "",
+    "bounds": "[167,1316][913,1371]"
+  },
+  {
+    "text": "Biography",
+    "label": "",
+    "bounds": "[55,1509][1025,1559]"
+  },
+  {
+    "text": "",
+    "label": "Biography",
+    "bounds": "[101,1583][979,1875]"
+  },
+  {
+    "text": "",
+    "label": "Save member",
+    "bounds": "[55,1922][1025,2054]"
+  },
+  {
+    "text": "Save member",
+    "label": "",
+    "bounds": "[112,1960][968,2015]"
+  },
+  {
+    "text": "",
+    "label": "Cancel",
+    "bounds": "[55,2098][1025,2230]"
+  },
+  {
+    "text": "Cancel",
+    "label": "",
+    "bounds": "[112,2136][968,2191]"
+  }
+]

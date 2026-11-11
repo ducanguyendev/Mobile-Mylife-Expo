@@ -50,3 +50,7 @@ example
 
 # Disposable local regression runtimes (never ship test accounts or AVD data)
 .tmp/
+
+# M3 test-only .NET hosting adapter intermediates
+tests/fixtures/avatar-host/bin/
+tests/fixtures/avatar-host/obj/

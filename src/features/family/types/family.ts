@@ -34,6 +34,8 @@ export type FamilyMember = {
 
 export type Generation = { id: number; name: string; title: string | null; description: string | null };
 
+export type HorizontalRelation = { memberId: number; relationType: string };
+
 export type FamilyMemberInput = {
   fullName: string;
   generation: number;
@@ -54,3 +56,5 @@ export type FamilyMemberInput = {
   // Omitted/null preserves existing relations; an explicit empty array clears them.
   horizontalRelations?: { memberId: number; relationType: string }[] | null;
 };
+
+export type FamilyMemberWriteInput = Omit<FamilyMemberInput, 'childIds'> & { childIds?: number[] | null };

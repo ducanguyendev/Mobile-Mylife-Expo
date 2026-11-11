@@ -1,0 +1,217 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "CÙNG MỘT GỐC RỄ",
+    "label": "",
+    "bounds": "[55,191][1025,238]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[55,249][1025,348]"
+  },
+  {
+    "text": "Những người làm nên câu chuyện của bạn.",
+    "label": "",
+    "bounds": "[55,359][1025,423]"
+  },
+  {
+    "text": "",
+    "label": "Thẻ",
+    "bounds": "[66,533][377,665]"
+  },
+  {
+    "text": "Thẻ",
+    "label": "",
+    "bounds": "[190,574][252,624]"
+  },
+  {
+    "text": "",
+    "label": "Danh sách",
+    "bounds": "[385,533][695,665]"
+  },
+  {
+    "text": "Danh sách",
+    "label": "",
+    "bounds": "[455,574][624,624]"
+  },
+  {
+    "text": "",
+    "label": "Cây",
+    "bounds": "[704,533][1014,665]"
+  },
+  {
+    "text": "Cây",
+    "label": "",
+    "bounds": "[828,574][889,624]"
+  },
+  {
+    "text": "112 thành viên · 3 thế hệ",
+    "label": "",
+    "bounds": "[55,709][1025,773]"
+  },
+  {
+    "text": "",
+    "label": "Thêm thành viên",
+    "bounds": "[55,806][1025,938]"
+  },
+  {
+    "text": "Thêm thành viên",
+    "label": "",
+    "bounds": "[112,844][968,899]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[102,1014][154,1066]"
+  },
+  {
+    "text": "Tìm theo tên, không phân biệt dấu",
+    "label": "Tìm theo tên, không phân biệt dấu",
+    "bounds": "[187,973][979,1105]"
+  },
+  {
+    "text": "",
+    "label": "Bộ lọc",
+    "bounds": "[55,1142][529,1274]"
+  },
+  {
+    "text": "Bộ lọc",
+    "label": "",
+    "bounds": "[112,1180][472,1235]"
+  },
+  {
+    "text": "",
+    "label": "Xóa bộ lọc",
+    "bounds": "[551,1142][1025,1274]"
+  },
+  {
+    "text": "Xóa bộ lọc",
+    "label": "",
+    "bounds": "[608,1180][968,1235]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 001, Thế hệ 1, Còn sống",
+    "bounds": "[55,1318][1025,1720]"
+  },
+  {
+    "text": "M3 Synthetic 001",
+    "label": "",
+    "bounds": "[308,1373][970,1437]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 001",
+    "bounds": "[110,1442][264,1596]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 001",
+    "bounds": "[110,1442][264,1596]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[161,1494][213,1544]"
+  },
+  {
+    "text": "Thế hệ 1",
+    "label": "",
+    "bounds": "[308,1459][970,1506]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[341,1538][481,1585]"
+  },
+  {
+    "text": "Ngày sinh: 1 tháng 1, 1970",
+    "label": "",
+    "bounds": "[308,1618][970,1665]"
+  },
+  {
+    "text": "",
+    "label": "Mở hồ sơ M3 Synthetic 002, Thế hệ 1, Còn sống",
+    "bounds": "[55,1753][1025,2054]"
+  },
+  {
+    "text": "M3 Synthetic 002",
+    "label": "",
+    "bounds": "[308,1808][970,1872]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 002",
+    "bounds": "[110,1877][264,2031]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 002",
+    "bounds": "[110,1877][264,2031]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[161,1929][213,1979]"
+  },
+  {
+    "text": "Thế hệ 1",
+    "label": "",
+    "bounds": "[308,1894][970,1941]"
+  },
+  {
+    "text": "Còn sống",
+    "label": "",
+    "bounds": "[341,1973][481,2020]"
+  },
+  {
+    "text": "Ngày sinh: 1 tháng 1, 1970",
+    "label": "",
+    "bounds": "[308,2053][970,2054]"
+  },
+  {
+    "text": "",
+    "label": "Trang chủ",
+    "bounds": "[0,2054][270,2274]"
+  },
+  {
+    "text": "Trang chủ",
+    "label": "",
+    "bounds": "[63,2186][207,2230]"
+  },
+  {
+    "text": "",
+    "label": "Gia đình",
+    "bounds": "[270,2054][540,2274]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[346,2186][464,2230]"
+  },
+  {
+    "text": "",
+    "label": "Ký ức",
+    "bounds": "[540,2054][810,2274]"
+  },
+  {
+    "text": "Ký ức",
+    "label": "",
+    "bounds": "[635,2186][715,2230]"
+  },
+  {
+    "text": "",
+    "label": "Tôi",
+    "bounds": "[810,2054][1080,2274]"
+  },
+  {
+    "text": "Tôi",
+    "label": "",
+    "bounds": "[923,2186][967,2230]"
+  }
+]

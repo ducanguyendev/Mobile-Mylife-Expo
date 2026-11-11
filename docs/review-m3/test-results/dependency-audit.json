@@ -1,0 +1,115 @@
+{
+  "exitCode": 1,
+  "metadata": {
+    "info": 0,
+    "low": 0,
+    "moderate": 13,
+    "high": 0,
+    "critical": 0,
+    "total": 13
+  },
+  "modules": [
+    {
+      "name": "@expo/cli",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": {
+        "name": "expo",
+        "version": "52.0.49",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "@expo/config",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": true
+    },
+    {
+      "name": "@expo/config-plugins",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": true
+    },
+    {
+      "name": "@expo/fingerprint",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": {
+        "name": "expo",
+        "version": "52.0.49",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "@expo/metro-config",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": {
+        "name": "expo",
+        "version": "52.0.49",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": true
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": true
+    },
+    {
+      "name": "@typescript-eslint/type-utils",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": true
+    },
+    {
+      "name": "@typescript-eslint/typescript-estree",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": true
+    },
+    {
+      "name": "@typescript-eslint/utils",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": true
+    },
+    {
+      "name": "expo",
+      "severity": "moderate",
+      "isDirect": true,
+      "fixAvailable": {
+        "name": "expo",
+        "version": "52.0.49",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "glob",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": {
+        "name": "expo",
+        "version": "52.0.49",
+        "isSemVerMajor": true
+      }
+    },
+    {
+      "name": "minimatch",
+      "severity": "moderate",
+      "isDirect": false,
+      "fixAvailable": {
+        "name": "expo",
+        "version": "52.0.49",
+        "isSemVerMajor": true
+      }
+    }
+  ]
+}

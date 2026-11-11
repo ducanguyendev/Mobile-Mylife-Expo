@@ -1,0 +1,112 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[1118,156][1157,195]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[153,130][1047,171]"
+  },
+  {
+    "text": "",
+    "label": "Thẻ",
+    "bounds": "[159,189][450,261]"
+  },
+  {
+    "text": "Thẻ",
+    "label": "",
+    "bounds": "[287,211][322,238]"
+  },
+  {
+    "text": "",
+    "label": "Danh sách",
+    "bounds": "[455,189][746,261]"
+  },
+  {
+    "text": "Danh sách",
+    "label": "",
+    "bounds": "[553,211][647,238]"
+  },
+  {
+    "text": "",
+    "label": "Cây",
+    "bounds": "[750,189][1041,261]"
+  },
+  {
+    "text": "Cây",
+    "label": "",
+    "bounds": "[878,211][912,238]"
+  },
+  {
+    "text": "",
+    "label": "Thử lại",
+    "bounds": "[153,279][1047,351]"
+  },
+  {
+    "text": "Thử lại",
+    "label": "",
+    "bounds": "[184,300][1015,330]"
+  },
+  {
+    "text": "Chưa thể tải gia đình",
+    "label": "",
+    "bounds": "[322,417][879,458]"
+  },
+  {
+    "text": "Không kết nối được máy chủ. Kiểm tra mạng và thử lại.",
+    "label": "",
+    "bounds": "[322,458][879,493]"
+  },
+  {
+    "text": "",
+    "label": "Thử lại",
+    "bounds": "[165,517][1035,589]"
+  },
+  {
+    "text": "Thử lại",
+    "label": "",
+    "bounds": "[190,538][1009,568]"
+  },
+  {
+    "text": "",
+    "label": "Trang chủ",
+    "bounds": "[94,1752][347,1872]"
+  },
+  {
+    "text": "Trang chủ",
+    "label": "",
+    "bounds": "[181,1824][258,1848]"
+  },
+  {
+    "text": "",
+    "label": "Gia đình",
+    "bounds": "[347,1752][600,1872]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[440,1824][505,1848]"
+  },
+  {
+    "text": "",
+    "label": "Ký ức",
+    "bounds": "[600,1752][853,1872]"
+  },
+  {
+    "text": "Ký ức",
+    "label": "",
+    "bounds": "[704,1824][747,1848]"
+  },
+  {
+    "text": "",
+    "label": "Tôi",
+    "bounds": "[853,1752][1106,1872]"
+  },
+  {
+    "text": "Tôi",
+    "label": "",
+    "bounds": "[967,1824][991,1848]"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Children",
+    "label": "",
+    "bounds": "[44,208][728,283]"
+  },
+  {
+    "text": "",
+    "label": "Cancel",
+    "bounds": "[761,180][1036,312]"
+  },
+  {
+    "text": "Cancel",
+    "label": "",
+    "bounds": "[807,218][990,273]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[91,399][143,451]"
+  },
+  {
+    "text": "dang thi anh",
+    "label": "Search names, with or without accents",
+    "bounds": "[176,358][825,490]"
+  },
+  {
+    "text": "",
+    "label": "Clear text",
+    "bounds": "[857,359][989,491]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[898,400][947,450]"
+  },
+  {
+    "text": "Search the entire family. Confirm to apply; Cancel keeps the original selection.",
+    "label": "",
+    "bounds": "[44,515][1036,609]"
+  },
+  {
+    "text": "Selected: 1",
+    "label": "",
+    "bounds": "[44,654][1036,704]"
+  },
+  {
+    "text": "Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "label": "",
+    "bounds": "[44,726][1036,854]"
+  },
+  {
+    "text": "",
+    "label": "Clear selection",
+    "bounds": "[44,876][1036,1008]"
+  },
+  {
+    "text": "Clear selection",
+    "label": "",
+    "bounds": "[90,914][990,969]"
+  },
+  {
+    "text": "",
+    "label": "Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ, Generation 3",
+    "bounds": "[44,1096][1036,1358]"
+  },
+  {
+    "text": "Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "label": "",
+    "bounds": "[91,1143][923,1265]"
+  },
+  {
+    "text": "✓",
+    "label": "",
+    "bounds": "[954,1195][989,1259]"
+  },
+  {
+    "text": "Generation 3",
+    "label": "",
+    "bounds": "[91,1265][923,1312]"
+  },
+  {
+    "text": "",
+    "label": "Cancel",
+    "bounds": "[44,1944][1036,2076]"
+  },
+  {
+    "text": "Cancel",
+    "label": "",
+    "bounds": "[101,1982][979,2037]"
+  },
+  {
+    "text": "",
+    "label": "Confirm",
+    "bounds": "[44,2098][1036,2230]"
+  },
+  {
+    "text": "Confirm",
+    "label": "",
+    "bounds": "[101,2136][979,2191]"
+  }
+]

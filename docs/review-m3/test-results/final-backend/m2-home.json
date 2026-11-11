@@ -1,0 +1,166 @@
+{
+  "checks": [
+    {
+      "name": "Three real Home endpoints return authentic empty state for a new USER",
+      "status": "PASS — real Backend/PostgreSQL; native bridge adapted"
+    },
+    {
+      "name": "Real family counts/generations, server next occurrence and empty album metadata renderable without Drive/photo requests",
+      "status": "PASS — real Backend/PostgreSQL; native bridge adapted"
+    },
+    {
+      "name": "Second USER receives none of the first USER family, anniversary or album records",
+      "status": "PASS — real Backend/PostgreSQL; native bridge adapted"
+    },
+    {
+      "name": "Injected connection loss remains section-local and retry recovers through real HTTP",
+      "status": "PASS — real Backend/PostgreSQL; native bridge adapted"
+    },
+    {
+      "name": "All three Home endpoints enforce USER authorization against ADMIN",
+      "status": "PASS — real Backend/PostgreSQL; native bridge adapted"
+    },
+    {
+      "name": "Logout leaves no usable Home session; copied access token is revoked by Backend",
+      "status": "PASS — real Backend/PostgreSQL; native bridge adapted"
+    }
+  ],
+  "requests": [
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/anniversaries",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/family-tree/anniversaries",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/family-tree/anniversaries",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/anniversaries",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/anniversaries",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/family-tree/anniversaries",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/logout",
+      "method": "POST",
+      "status": 200
+    }
+  ],
+  "albumFixture": "Direct SQL metadata in disposable DB only; no Drive creation/upload claimed"
+}

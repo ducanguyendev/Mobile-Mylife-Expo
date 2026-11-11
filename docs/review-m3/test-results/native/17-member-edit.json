@@ -1,0 +1,147 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "",
+    "label": "Back",
+    "bounds": "[44,180][176,312]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[83,219][138,274]"
+  },
+  {
+    "text": "Edit member",
+    "label": "",
+    "bounds": "[209,208][1036,283]"
+  },
+  {
+    "text": "Member information",
+    "label": "",
+    "bounds": "[55,411][1025,486]"
+  },
+  {
+    "text": "Full name *",
+    "label": "",
+    "bounds": "[55,530][1025,580]"
+  },
+  {
+    "text": "M3 Synthetic 001",
+    "label": "Full name *",
+    "bounds": "[101,604][979,736]"
+  },
+  {
+    "text": "Generation *",
+    "label": "",
+    "bounds": "[55,784][1025,834]"
+  },
+  {
+    "text": "1",
+    "label": "Generation *",
+    "bounds": "[101,858][979,990]"
+  },
+  {
+    "text": "Thế hệ thứ 1 · Thế hệ thứ 2 · Thế hệ thứ 3 · Thế hệ thứ 4 · Thế hệ thứ 5",
+    "label": "",
+    "bounds": "[55,1015][1025,1109]"
+  },
+  {
+    "text": "Gender",
+    "label": "",
+    "bounds": "[55,1153][1025,1203]"
+  },
+  {
+    "text": "",
+    "label": "No information yet",
+    "bounds": "[55,1247][497,1383]"
+  },
+  {
+    "text": "No information yet",
+    "label": "",
+    "bounds": "[101,1282][449,1346]"
+  },
+  {
+    "text": "",
+    "label": "Male",
+    "bounds": "[519,1247][704,1383]"
+  },
+  {
+    "text": "Male",
+    "label": "",
+    "bounds": "[565,1282][657,1346]"
+  },
+  {
+    "text": "",
+    "label": "Female",
+    "bounds": "[726,1247][958,1383]"
+  },
+  {
+    "text": "Female",
+    "label": "",
+    "bounds": "[772,1282][910,1346]"
+  },
+  {
+    "text": "",
+    "label": "Other",
+    "bounds": "[55,1405][252,1540]"
+  },
+  {
+    "text": "Other",
+    "label": "",
+    "bounds": "[101,1440][204,1504]"
+  },
+  {
+    "text": "Date of birth",
+    "label": "",
+    "bounds": "[55,1584][1025,1634]"
+  },
+  {
+    "text": "1970-01-01",
+    "label": "Date of birth",
+    "bounds": "[101,1658][979,1790]"
+  },
+  {
+    "text": "YYYY-MM-DD",
+    "label": "",
+    "bounds": "[55,1815][1025,1862]"
+  },
+  {
+    "text": "Life status",
+    "label": "",
+    "bounds": "[55,1906][1025,1956]"
+  },
+  {
+    "text": "",
+    "label": "Living",
+    "bounds": "[55,2001][260,2136]"
+  },
+  {
+    "text": "Living",
+    "label": "",
+    "bounds": "[101,2036][212,2100]"
+  },
+  {
+    "text": "",
+    "label": "Deceased",
+    "bounds": "[282,2001][560,2136]"
+  },
+  {
+    "text": "Deceased",
+    "label": "",
+    "bounds": "[328,2036][513,2100]"
+  },
+  {
+    "text": "Family role",
+    "label": "",
+    "bounds": "[55,2180][1025,2230]"
+  },
+  {
+    "text": "",
+    "label": "Family role",
+    "bounds": "[101,2254][979,2340]"
+  }
+]

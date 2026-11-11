@@ -1,0 +1,157 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "SHARED ROOTS",
+    "label": "",
+    "bounds": "[55,191][1025,238]"
+  },
+  {
+    "text": "Family",
+    "label": "",
+    "bounds": "[55,249][1025,348]"
+  },
+  {
+    "text": "The people behind your family story.",
+    "label": "",
+    "bounds": "[55,359][1025,423]"
+  },
+  {
+    "text": "",
+    "label": "Cards",
+    "bounds": "[66,533][377,665]"
+  },
+  {
+    "text": "Cards",
+    "label": "",
+    "bounds": "[173,574][268,624]"
+  },
+  {
+    "text": "",
+    "label": "List",
+    "bounds": "[385,533][695,665]"
+  },
+  {
+    "text": "List",
+    "label": "",
+    "bounds": "[510,574][570,624]"
+  },
+  {
+    "text": "",
+    "label": "Tree",
+    "bounds": "[704,533][1014,665]"
+  },
+  {
+    "text": "Tree",
+    "label": "",
+    "bounds": "[822,574][895,624]"
+  },
+  {
+    "text": "112 members · 3 generations",
+    "label": "",
+    "bounds": "[55,709][1025,773]"
+  },
+  {
+    "text": "",
+    "label": "Add member",
+    "bounds": "[55,806][1025,938]"
+  },
+  {
+    "text": "Add member",
+    "label": "",
+    "bounds": "[112,844][968,899]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[102,1014][154,1066]"
+  },
+  {
+    "text": "Search names, with or without accents",
+    "label": "Search names, with or without accents",
+    "bounds": "[187,973][979,1105]"
+  },
+  {
+    "text": "",
+    "label": "Filters",
+    "bounds": "[55,1142][1025,1274]"
+  },
+  {
+    "text": "Filters",
+    "label": "",
+    "bounds": "[112,1180][968,1235]"
+  },
+  {
+    "text": "",
+    "label": "Clear filters",
+    "bounds": "[55,1296][1025,1428]"
+  },
+  {
+    "text": "Clear filters",
+    "label": "",
+    "bounds": "[112,1334][968,1389]"
+  },
+  {
+    "text": "No matching members",
+    "label": "",
+    "bounds": "[264,1560][815,1635]"
+  },
+  {
+    "text": "Try another name or clear the filters.",
+    "label": "",
+    "bounds": "[202,1679][877,1743]"
+  },
+  {
+    "text": "",
+    "label": "Clear filters",
+    "bounds": "[110,1787][970,1919]"
+  },
+  {
+    "text": "Clear filters",
+    "label": "",
+    "bounds": "[156,1825][924,1880]"
+  },
+  {
+    "text": "",
+    "label": "Home",
+    "bounds": "[0,2054][270,2274]"
+  },
+  {
+    "text": "Home",
+    "label": "",
+    "bounds": "[93,2186][177,2230]"
+  },
+  {
+    "text": "",
+    "label": "Family",
+    "bounds": "[270,2054][540,2274]"
+  },
+  {
+    "text": "Family",
+    "label": "",
+    "bounds": "[358,2186][451,2230]"
+  },
+  {
+    "text": "",
+    "label": "Memories",
+    "bounds": "[540,2054][810,2274]"
+  },
+  {
+    "text": "Memories",
+    "label": "",
+    "bounds": "[604,2186][746,2230]"
+  },
+  {
+    "text": "",
+    "label": "Me",
+    "bounds": "[810,2054][1080,2274]"
+  },
+  {
+    "text": "Me",
+    "label": "",
+    "bounds": "[923,2186][967,2230]"
+  }
+]

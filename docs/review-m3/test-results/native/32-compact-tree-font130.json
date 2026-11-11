@@ -1,0 +1,157 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[610,132][662,184]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[24,98][696,155]"
+  },
+  {
+    "text": "",
+    "label": "Thẻ",
+    "bounds": "[32,179][247,275]"
+  },
+  {
+    "text": "Thẻ",
+    "label": "",
+    "bounds": "[109,205][169,249]"
+  },
+  {
+    "text": "",
+    "label": "Danh sách",
+    "bounds": "[253,179][467,275]"
+  },
+  {
+    "text": "Danh sách",
+    "label": "",
+    "bounds": "[278,205][442,249]"
+  },
+  {
+    "text": "",
+    "label": "Cây",
+    "bounds": "[473,179][688,275]"
+  },
+  {
+    "text": "Cây",
+    "label": "",
+    "bounds": "[550,205][609,249]"
+  },
+  {
+    "text": "",
+    "label": "Thử lại",
+    "bounds": "[24,299][696,399]"
+  },
+  {
+    "text": "Thử lại",
+    "label": "",
+    "bounds": "[66,325][654,373]"
+  },
+  {
+    "text": "",
+    "label": "Thu nhỏ cây",
+    "bounds": "[24,473][120,569]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[52,501][92,541]"
+  },
+  {
+    "text": "",
+    "label": "Phóng to cây",
+    "bounds": "[128,473][224,569]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[156,501][196,541]"
+  },
+  {
+    "text": "",
+    "label": "Cỡ dễ đọc",
+    "bounds": "[232,471][480,571]"
+  },
+  {
+    "text": "Cỡ dễ đọc",
+    "label": "",
+    "bounds": "[266,497][446,545]"
+  },
+  {
+    "text": "",
+    "label": "Xem toàn cây",
+    "bounds": "[488,423][696,619]"
+  },
+  {
+    "text": "Xem toàn cây",
+    "label": "",
+    "bounds": "[522,449][662,593]"
+  },
+  {
+    "text": "90%",
+    "label": "",
+    "bounds": "[24,627][84,669]"
+  },
+  {
+    "text": "Cha/mẹ → con",
+    "label": "",
+    "bounds": "[24,693][238,735]"
+  },
+  {
+    "text": "━ Vợ/chồng",
+    "label": "",
+    "bounds": "[262,693][433,735]"
+  },
+  {
+    "text": "┄ Quan hệ ngang ghi nhận",
+    "label": "",
+    "bounds": "[24,759][401,801]"
+  },
+  {
+    "text": "Kéo để di chuyển, chụm/mở hai ngón để thu phóng. Chạm thành viên để xem hồ sơ. Dùng danh sách hoặc thẻ để đọc đầy đủ bằng trình đọc màn hình.",
+    "label": "",
+    "bounds": "[0,825][720,1009]"
+  },
+  {
+    "text": "",
+    "label": "Trang chủ",
+    "bounds": "[0,1070][180,1232]"
+  },
+  {
+    "text": "Trang chủ",
+    "label": "",
+    "bounds": "[24,1166][156,1200]"
+  },
+  {
+    "text": "",
+    "label": "Gia đình",
+    "bounds": "[180,1070][360,1232]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[214,1166][325,1200]"
+  },
+  {
+    "text": "",
+    "label": "Ký ức",
+    "bounds": "[360,1070][540,1232]"
+  },
+  {
+    "text": "Ký ức",
+    "label": "",
+    "bounds": "[412,1166][487,1200]"
+  },
+  {
+    "text": "",
+    "label": "Tôi",
+    "bounds": "[540,1070][720,1232]"
+  },
+  {
+    "text": "Tôi",
+    "label": "",
+    "bounds": "[609,1166][650,1200]"
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[610,132][662,184]"
+  },
+  {
+    "text": "Thứ Ba, 10 tháng 11",
+    "label": "",
+    "bounds": "[44,114][676,156]"
+  },
+  {
+    "text": "Chào buổi chiều, Native Quality",
+    "label": "",
+    "bounds": "[44,164][676,308]"
+  },
+  {
+    "text": "Những kết nối thân thuộc, trong tầm tay.",
+    "label": "",
+    "bounds": "[44,316][676,420]"
+  },
+  {
+    "text": "Gia đình của bạn",
+    "label": "",
+    "bounds": "[44,468][676,525]"
+  },
+  {
+    "text": "112 thành viên",
+    "label": "",
+    "bounds": "[84,621][636,693]"
+  },
+  {
+    "text": "3 thế hệ",
+    "label": "",
+    "bounds": "[84,725][636,777]"
+  },
+  {
+    "text": "",
+    "label": "Xem gia đình",
+    "bounds": "[84,809][636,909]"
+  },
+  {
+    "text": "Xem gia đình",
+    "label": "",
+    "bounds": "[126,835][594,883]"
+  },
+  {
+    "text": "",
+    "label": "M3 Synthetic 001",
+    "bounds": "[84,981][636,1070]"
+  },
+  {
+    "text": "",
+    "label": "Ảnh đại diện M3 Synthetic 001",
+    "bounds": "[84,1005][180,1070]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[110,1031][153,1070]"
+  },
+  {
+    "text": "M3 Synthetic 001",
+    "label": "",
+    "bounds": "[212,1028][636,1070]"
+  },
+  {
+    "text": "",
+    "label": "Trang chủ",
+    "bounds": "[0,1070][180,1232]"
+  },
+  {
+    "text": "Trang chủ",
+    "label": "",
+    "bounds": "[24,1166][156,1200]"
+  },
+  {
+    "text": "",
+    "label": "Gia đình",
+    "bounds": "[180,1070][360,1232]"
+  },
+  {
+    "text": "Gia đình",
+    "label": "",
+    "bounds": "[214,1166][325,1200]"
+  },
+  {
+    "text": "",
+    "label": "Ký ức",
+    "bounds": "[360,1070][540,1232]"
+  },
+  {
+    "text": "Ký ức",
+    "label": "",
+    "bounds": "[412,1166][487,1200]"
+  },
+  {
+    "text": "",
+    "label": "Tôi",
+    "bounds": "[540,1070][720,1232]"
+  },
+  {
+    "text": "Tôi",
+    "label": "",
+    "bounds": "[609,1166][650,1200]"
+  }
+]

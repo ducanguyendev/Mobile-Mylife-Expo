@@ -1,0 +1,142 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "",
+    "label": "Back",
+    "bounds": "[44,180][176,312]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[83,219][138,274]"
+  },
+  {
+    "text": "Edit member",
+    "label": "",
+    "bounds": "[209,208][1036,283]"
+  },
+  {
+    "text": "",
+    "label": "Instagram",
+    "bounds": "[101,356][979,13]"
+  },
+  {
+    "text": "Family relationships",
+    "label": "",
+    "bounds": "[55,356][1025,135]"
+  },
+  {
+    "text": "",
+    "label": "Father: No relationships in this section",
+    "bounds": "[55,356][1025,409]"
+  },
+  {
+    "text": "Father",
+    "label": "",
+    "bounds": "[101,356][979,275]"
+  },
+  {
+    "text": "No relationships in this section",
+    "label": "",
+    "bounds": "[101,356][979,361]"
+  },
+  {
+    "text": "",
+    "label": "Mother: No relationships in this section",
+    "bounds": "[55,453][1025,683]"
+  },
+  {
+    "text": "Mother",
+    "label": "",
+    "bounds": "[101,499][979,549]"
+  },
+  {
+    "text": "No relationships in this section",
+    "label": "",
+    "bounds": "[101,571][979,635]"
+  },
+  {
+    "text": "",
+    "label": "Spouse: M3 Synthetic 002",
+    "bounds": "[55,727][1025,956]"
+  },
+  {
+    "text": "Spouse",
+    "label": "",
+    "bounds": "[101,773][979,823]"
+  },
+  {
+    "text": "M3 Synthetic 002",
+    "label": "",
+    "bounds": "[101,845][979,909]"
+  },
+  {
+    "text": "",
+    "label": "Children: Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "bounds": "[55,1000][1025,1294]"
+  },
+  {
+    "text": "Children",
+    "label": "",
+    "bounds": "[101,1046][979,1096]"
+  },
+  {
+    "text": "Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "label": "",
+    "bounds": "[101,1118][979,1246]"
+  },
+  {
+    "text": "Selecting children assigns this member as mother when female, and father otherwise. An existing parent link may be replaced. Parent link assigned on save: Father.",
+    "label": "",
+    "bounds": "[55,1337][1025,1478]"
+  },
+  {
+    "text": "Recorded horizontal relationships",
+    "label": "",
+    "bounds": "[110,1578][970,1642]"
+  },
+  {
+    "text": "A recorded relationship does not establish biological parentage. Other server relationship types are always preserved.",
+    "label": "",
+    "bounds": "[110,1675][970,1816]"
+  },
+  {
+    "text": "M3 Synthetic 003",
+    "label": "",
+    "bounds": "[110,1849][970,1910]"
+  },
+  {
+    "text": "",
+    "label": "Sibling (recorded)",
+    "bounds": "[110,1943][535,2078]"
+  },
+  {
+    "text": "Sibling (recorded)",
+    "label": "",
+    "bounds": "[156,1978][487,2042]"
+  },
+  {
+    "text": "",
+    "label": "Cousin",
+    "bounds": "[557,1943][780,2078]"
+  },
+  {
+    "text": "Cousin",
+    "label": "",
+    "bounds": "[603,1978][733,2042]"
+  },
+  {
+    "text": "Relationship type",
+    "label": "",
+    "bounds": "[110,2112][970,2162]"
+  },
+  {
+    "text": "sibling",
+    "label": "Relationship type",
+    "bounds": "[156,2186][924,2318]"
+  }
+]

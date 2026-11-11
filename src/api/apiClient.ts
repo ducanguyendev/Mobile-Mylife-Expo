@@ -145,7 +145,9 @@ async function sendRequest(path: string, init: RequestInit, tokens: AuthTokens |
   const headers = new Headers(init.headers);
   headers.set('Accept', 'application/json');
   headers.set('X-Client-Platform', 'mobile');
-  if (init.body !== undefined && !headers.has('Content-Type')) headers.set('Content-Type', 'application/json');
+  // Native fetch owns the multipart boundary; forcing JSON corrupts file uploads.
+  const multipart = typeof FormData !== 'undefined' && init.body instanceof FormData;
+  if (init.body !== undefined && !multipart && !headers.has('Content-Type')) headers.set('Content-Type', 'application/json');
   if (tokens?.accessToken) headers.set('Authorization', `Bearer ${tokens.accessToken}`);
   try {
     return await fetch(`${appEnv.apiBaseUrl}${path}`, {

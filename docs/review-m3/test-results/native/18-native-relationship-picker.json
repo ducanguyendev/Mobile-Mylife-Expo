@@ -1,0 +1,152 @@
+[
+  {
+    "text": "Children",
+    "label": "",
+    "bounds": "[44,208][728,283]"
+  },
+  {
+    "text": "",
+    "label": "Cancel",
+    "bounds": "[761,180][1036,312]"
+  },
+  {
+    "text": "Cancel",
+    "label": "",
+    "bounds": "[807,218][990,273]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[91,399][143,451]"
+  },
+  {
+    "text": "Search names, with or without accents",
+    "label": "Search names, with or without accents",
+    "bounds": "[176,358][990,490]"
+  },
+  {
+    "text": "Search the entire family. Confirm to apply; Cancel keeps the original selection.",
+    "label": "",
+    "bounds": "[44,515][1036,609]"
+  },
+  {
+    "text": "Selected: 0",
+    "label": "",
+    "bounds": "[44,654][1036,704]"
+  },
+  {
+    "text": "No relationships in this section",
+    "label": "",
+    "bounds": "[44,726][1036,790]"
+  },
+  {
+    "text": "",
+    "label": "Clear selection",
+    "bounds": "[44,812][1036,944]"
+  },
+  {
+    "text": "Clear selection",
+    "label": "",
+    "bounds": "[90,850][990,905]"
+  },
+  {
+    "text": "",
+    "label": "Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ, Generation 3",
+    "bounds": "[44,1032][1036,1294]"
+  },
+  {
+    "text": "Đặng Thị Ánh Nguyễn — hồ sơ thử nghiệm tên dài nhiều thế hệ",
+    "label": "",
+    "bounds": "[91,1079][932,1201]"
+  },
+  {
+    "text": "○",
+    "label": "",
+    "bounds": "[963,1131][989,1195]"
+  },
+  {
+    "text": "Generation 3",
+    "label": "",
+    "bounds": "[91,1201][932,1248]"
+  },
+  {
+    "text": "",
+    "label": "M3 Synthetic 002, Generation 1",
+    "bounds": "[44,1328][1036,1530]"
+  },
+  {
+    "text": "M3 Synthetic 002",
+    "label": "",
+    "bounds": "[91,1375][932,1436]"
+  },
+  {
+    "text": "Generation 1",
+    "label": "",
+    "bounds": "[91,1436][932,1483]"
+  },
+  {
+    "text": "○",
+    "label": "",
+    "bounds": "[963,1396][989,1460]"
+  },
+  {
+    "text": "",
+    "label": "M3 Synthetic 003, Generation 1",
+    "bounds": "[44,1562][1036,1763]"
+  },
+  {
+    "text": "M3 Synthetic 003",
+    "label": "",
+    "bounds": "[91,1609][932,1670]"
+  },
+  {
+    "text": "Generation 1",
+    "label": "",
+    "bounds": "[91,1670][932,1717]"
+  },
+  {
+    "text": "○",
+    "label": "",
+    "bounds": "[963,1630][989,1694]"
+  },
+  {
+    "text": "",
+    "label": "M3 Synthetic 004, Generation 1",
+    "bounds": "[44,1797][1036,1900]"
+  },
+  {
+    "text": "M3 Synthetic 004",
+    "label": "",
+    "bounds": "[91,1844][932,1900]"
+  },
+  {
+    "text": "Generation 1",
+    "label": "",
+    "bounds": "[91,1905][932,1900]"
+  },
+  {
+    "text": "○",
+    "label": "",
+    "bounds": "[963,1865][989,1900]"
+  },
+  {
+    "text": "",
+    "label": "Cancel",
+    "bounds": "[44,1944][1036,2076]"
+  },
+  {
+    "text": "Cancel",
+    "label": "",
+    "bounds": "[101,1982][979,2037]"
+  },
+  {
+    "text": "",
+    "label": "Confirm",
+    "bounds": "[44,2098][1036,2230]"
+  },
+  {
+    "text": "Confirm",
+    "label": "",
+    "bounds": "[101,2136][979,2191]"
+  }
+]

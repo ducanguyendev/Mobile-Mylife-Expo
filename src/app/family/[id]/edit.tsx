@@ -1,26 +1,26 @@
-import { useCallback, useState } from 'react';
-import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
-import { AppHeader, AppScreen } from '@/components/layout/app-screen';
+import { useCallback } from 'react';
+import { router, useLocalSearchParams } from 'expo-router';
+import { AppScreen } from '@/components/layout/app-screen';
 import { ErrorState, LoadingState } from '@/components/feedback/states';
 import { MemberForm } from '@/features/family/components/MemberForm';
-import { familyApi } from '@/features/family/api/familyApi';
-import type { FamilyMember } from '@/features/family/types/family';
-import { memberErrorMessage } from '@/features/family/validation/familyValidation';
-
+import { FamilyHeader, backToFamily } from '@/features/family/components/FamilyHeader';
+import { useAuth } from '@/features/auth/context/auth-provider';
+import { familyDataApi } from '@/features/family/api/familyDataApi';
+import { familyError } from '@/features/family/data/family-errors';
+import { useFamilyQuery } from '@/features/family/data/use-family-query';
+import { useFamilyStrings } from '@/features/family/i18n/use-family-strings';
 export default function EditFamilyMemberScreen() {
-  const { id } = useLocalSearchParams<{ id: string }>();
-  const memberId = Number(id);
-  const [member, setMember] = useState<FamilyMember | null>(null);
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(true);
-  const load = useCallback(async () => {
-    setLoading(true); setError(''); setMember(null);
-    if (!Number.isInteger(memberId) || memberId < 1) { setError('Mã thành viên không hợp lệ.'); setLoading(false); return; }
-    try { setMember(await familyApi.get(memberId)); } catch (cause) { setError(memberErrorMessage(cause)); }
-    finally { setLoading(false); }
-  }, [memberId]);
-  useFocusEffect(useCallback(() => { void load(); }, [load]));
-  if (loading) return <AppScreen padded centered><LoadingState label="Đang tải hồ sơ…" /></AppScreen>;
-  if (error || !member) return <AppScreen padded><AppHeader title="Sửa thành viên" /><ErrorState title="Không thể mở hồ sơ" message={error || 'Không tìm thấy thành viên.'} retry={() => void load()} /></AppScreen>;
-  return <AppScreen padded={false}><AppHeader title="Sửa thành viên" subtitle="Cập nhật thông tin thành viên." /><MemberForm key={member.id} member={member} onCancel={() => router.back()} onSaved={(saved) => router.replace({ pathname: '/family/[id]', params: { id: String(saved.id), notice: 'updated' } })} /></AppScreen>;
+  const { id } = useLocalSearchParams<{ id: string }>(); const memberId = Number(id);
+  const { user, isUser } = useAuth(); const { copy } = useFamilyStrings();
+  if (!user || !isUser) return null;
+  if (!Number.isSafeInteger(memberId) || memberId <= 0 || memberId > 2147483647) return <AppScreen><FamilyHeader title={copy.edit} /><ErrorState title={copy.loadError} message={copy.notFound} /></AppScreen>;
+  return <EditMember key={`${user.id}:${memberId}`} accountId={user.id} memberId={memberId} />;
+}
+function EditMember({ accountId, memberId }: { accountId: number; memberId: number }) {
+  const { copy } = useFamilyStrings(); const loader = useCallback((signal: AbortSignal) => familyDataApi.get(memberId, signal), [memberId]);
+  const query = useFamilyQuery(accountId, `edit:${memberId}`, loader, false);
+  return <AppScreen padded={false}><FamilyHeader title={copy.edit} />
+    {query.data ? <MemberForm key={`${query.data.id}:${query.data.updatedAt}`} member={query.data} onReload={() => void query.reload()} onCancel={backToFamily} onSaved={member => router.dismissTo({ pathname: '/family/[id]', params: { id: String(member.id) } })} />
+      : query.status === 'error' ? <ErrorState title={copy.loadError} message={familyError(query.error, copy)} retry={() => void query.reload()} /> : <LoadingState />}
+  </AppScreen>;
 }

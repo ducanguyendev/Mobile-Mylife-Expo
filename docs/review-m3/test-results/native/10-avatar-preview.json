@@ -1,0 +1,107 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "",
+    "label": "Back",
+    "bounds": "[44,180][176,312]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[83,219][138,274]"
+  },
+  {
+    "text": "Member profile",
+    "label": "",
+    "bounds": "[209,208][1036,283]"
+  },
+  {
+    "text": "Avatar",
+    "label": "",
+    "bounds": "[110,414][970,489]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[386,522][694,830]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[408,544][672,808]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 001",
+    "bounds": "[408,544][672,808]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[496,651][584,701]"
+  },
+  {
+    "text": "JPG, PNG, WebP or GIF, up to 5 MiB.",
+    "label": "",
+    "bounds": "[110,863][970,927]"
+  },
+  {
+    "text": "",
+    "label": "Selected photo preview",
+    "bounds": "[110,960][970,1455]"
+  },
+  {
+    "text": "",
+    "label": "Upload photo",
+    "bounds": "[110,1488][970,1620]"
+  },
+  {
+    "text": "Upload photo",
+    "label": "",
+    "bounds": "[167,1526][913,1581]"
+  },
+  {
+    "text": "",
+    "label": "Discard selected photo",
+    "bounds": "[110,1653][970,1785]"
+  },
+  {
+    "text": "Discard selected photo",
+    "label": "",
+    "bounds": "[167,1691][913,1746]"
+  },
+  {
+    "text": "",
+    "label": "busy",
+    "bounds": "[110,1818][970,1950]"
+  },
+  {
+    "text": "Choose photo",
+    "label": "",
+    "bounds": "[167,1856][913,1911]"
+  },
+  {
+    "text": "",
+    "label": "Edit member",
+    "bounds": "[55,2049][1025,2181]"
+  },
+  {
+    "text": "Edit member",
+    "label": "",
+    "bounds": "[112,2087][968,2142]"
+  },
+  {
+    "text": "",
+    "label": "Delete member",
+    "bounds": "[55,2225][1025,2340]"
+  },
+  {
+    "text": "Delete member",
+    "label": "",
+    "bounds": "[112,2263][968,2318]"
+  }
+]

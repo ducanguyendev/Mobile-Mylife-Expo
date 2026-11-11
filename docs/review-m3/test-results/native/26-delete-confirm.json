@@ -1,0 +1,22 @@
+[
+  {
+    "text": "Delete this member?",
+    "label": "",
+    "bounds": "[137,1023][943,1097]"
+  },
+  {
+    "text": "Delete Native Created Member? Related links will be removed according to server rules. This cannot be undone.",
+    "label": "",
+    "bounds": "[71,1119][1009,1282]"
+  },
+  {
+    "text": "CANCEL",
+    "label": "",
+    "bounds": "[372,1293][581,1425]"
+  },
+  {
+    "text": "DELETE MEMBER",
+    "label": "",
+    "bounds": "[581,1293][976,1425]"
+  }
+]

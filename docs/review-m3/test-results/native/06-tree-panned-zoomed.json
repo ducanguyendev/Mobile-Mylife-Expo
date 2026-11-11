@@ -1,0 +1,222 @@
+[
+  {
+    "text": "",
+    "label": "Tools",
+    "bounds": "[929,216][1001,288]"
+  },
+  {
+    "text": "Family",
+    "label": "",
+    "bounds": "[33,169][1047,244]"
+  },
+  {
+    "text": "",
+    "label": "Cards",
+    "bounds": "[44,277][369,409]"
+  },
+  {
+    "text": "Cards",
+    "label": "",
+    "bounds": "[159,318][254,368]"
+  },
+  {
+    "text": "",
+    "label": "List",
+    "bounds": "[377,277][703,409]"
+  },
+  {
+    "text": "List",
+    "label": "",
+    "bounds": "[509,318][569,368]"
+  },
+  {
+    "text": "",
+    "label": "Tree",
+    "bounds": "[711,277][1036,409]"
+  },
+  {
+    "text": "Tree",
+    "label": "",
+    "bounds": "[837,318][910,368]"
+  },
+  {
+    "text": "",
+    "label": "Try again",
+    "bounds": "[33,442][1047,574]"
+  },
+  {
+    "text": "Try again",
+    "label": "",
+    "bounds": "[90,480][990,535]"
+  },
+  {
+    "text": "",
+    "label": "Zoom out",
+    "bounds": "[33,632][165,764]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[72,671][127,726]"
+  },
+  {
+    "text": "",
+    "label": "Zoom in",
+    "bounds": "[176,632][308,764]"
+  },
+  {
+    "text": "",
+    "label": "",
+    "bounds": "[215,671][270,726]"
+  },
+  {
+    "text": "",
+    "label": "Readable size",
+    "bounds": "[319,607][659,789]"
+  },
+  {
+    "text": "Readable size",
+    "label": "",
+    "bounds": "[365,642][613,752]"
+  },
+  {
+    "text": "",
+    "label": "Fit tree",
+    "bounds": "[670,632][955,764]"
+  },
+  {
+    "text": "Fit tree",
+    "label": "",
+    "bounds": "[716,670][909,725]"
+  },
+  {
+    "text": "117%",
+    "label": "",
+    "bounds": "[966,674][1047,721]"
+  },
+  {
+    "text": "Drag to pan and pinch to zoom. Tap a member to open their profile. Use cards or list view for the complete screen-reader alternative.",
+    "label": "",
+    "bounds": "[0,901][1080,1017]"
+  },
+  {
+    "text": "Parent → child",
+    "label": "",
+    "bounds": "[33,822][251,916]"
+  },
+  {
+    "text": "━ Spouse",
+    "label": "",
+    "bounds": "[284,822][426,916]"
+  },
+  {
+    "text": "┄ Recorded horizontal relationship",
+    "label": "",
+    "bounds": "[459,822][970,916]"
+  },
+  {
+    "text": "",
+    "label": "Open profile for M3 Synthetic 001, Generation 1",
+    "bounds": "[0,1033][154,1522]"
+  },
+  {
+    "text": "M3 Synthetic 001",
+    "label": "",
+    "bounds": "[0,1271][54,1345]"
+  },
+  {
+    "text": "",
+    "label": "Open profile for M3 Synthetic 002, Generation 1",
+    "bounds": "[308,1033][939,1522]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 002",
+    "bounds": "[565,1129][681,1245]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 002",
+    "bounds": "[565,1129][681,1245]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[601,1157][646,1216]"
+  },
+  {
+    "text": "M3 Synthetic 002",
+    "label": "",
+    "bounds": "[406,1271][839,1345]"
+  },
+  {
+    "text": "Living",
+    "label": "",
+    "bounds": "[571,1371][675,1426]"
+  },
+  {
+    "text": "",
+    "label": "Open profile for M3 Synthetic 042, Generation 2",
+    "bounds": "[0,1882][154,2054]"
+  },
+  {
+    "text": "",
+    "label": "Open profile for M3 Synthetic 043, Generation 2",
+    "bounds": "[308,1882][939,2054]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 043",
+    "bounds": "[565,1978][681,2054]"
+  },
+  {
+    "text": "",
+    "label": "Avatar for M3 Synthetic 043",
+    "bounds": "[565,1978][681,2054]"
+  },
+  {
+    "text": "S0",
+    "label": "",
+    "bounds": "[601,2006][646,2054]"
+  },
+  {
+    "text": "",
+    "label": "Home",
+    "bounds": "[0,2054][270,2274]"
+  },
+  {
+    "text": "Home",
+    "label": "",
+    "bounds": "[93,2186][177,2230]"
+  },
+  {
+    "text": "",
+    "label": "Family",
+    "bounds": "[270,2054][540,2274]"
+  },
+  {
+    "text": "Family",
+    "label": "",
+    "bounds": "[358,2186][451,2230]"
+  },
+  {
+    "text": "",
+    "label": "Memories",
+    "bounds": "[540,2054][810,2274]"
+  },
+  {
+    "text": "Memories",
+    "label": "",
+    "bounds": "[604,2186][746,2230]"
+  },
+  {
+    "text": "",
+    "label": "Me",
+    "bounds": "[810,2054][1080,2274]"
+  },
+  {
+    "text": "Me",
+    "label": "",
+    "bounds": "[923,2186][967,2230]"
+  }
+]

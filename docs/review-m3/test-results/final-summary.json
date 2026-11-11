@@ -1,0 +1,140 @@
+{
+  "verdict": "PARTIAL PASS",
+  "branch": "feature_minhduc",
+  "startingHead": "8b1a0b6b0e3cd2e9562240387202e74494d01e4e",
+  "tests": {
+    "auth": {
+      "before": 10,
+      "after": 10,
+      "includedInFoundation": true
+    },
+    "foundation": {
+      "before": 26,
+      "after": 26
+    },
+    "m2": {
+      "before": 22,
+      "after": 22
+    },
+    "m3": {
+      "before": 0,
+      "after": 28
+    },
+    "contrast": {
+      "before": 14,
+      "after": 14
+    },
+    "realBackend": {
+      "m1": 7,
+      "m2": 6,
+      "m3": 12
+    }
+  },
+  "commands": {
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "androidExport": "PASS"
+  },
+  "integrationLifecycle": {
+    "database": "mylife_m1_1b9b07a3d80b",
+    "host": "127.0.0.1",
+    "pgPort": 59341,
+    "cluster": ".tmp\\m1-integration-vsAGLA",
+    "databaseDropped": true,
+    "postgresStopped": true,
+    "results": [
+      {
+        "name": "isolated-initdb",
+        "exitCode": 0
+      },
+      {
+        "name": "isolated-postgres-start",
+        "exitCode": 0
+      },
+      {
+        "name": "isolated-createdb",
+        "exitCode": 0
+      },
+      {
+        "name": "isolated-backend-build",
+        "exitCode": 0
+      },
+      {
+        "name": "avatar-contract-host-build",
+        "exitCode": 0
+      },
+      {
+        "name": "final-integration",
+        "exitCode": 0
+      },
+      {
+        "name": "m2-integration",
+        "exitCode": 0
+      },
+      {
+        "name": "m3-integration",
+        "exitCode": 0
+      },
+      {
+        "name": "isolated-dropdb",
+        "exitCode": 0
+      },
+      {
+        "name": "isolated-postgres-stop",
+        "exitCode": 0
+      }
+    ]
+  },
+  "boundaries": {
+    "realGoogleDrive": "NOT TESTED",
+    "ios": "NOT TESTED",
+    "physicalDevice": "NOT TESTED",
+    "nativeTwoFingerGesture": "NOT TESTED",
+    "fullTalkBack": "NOT TESTED"
+  },
+  "readiness": {
+    "m4Development": true,
+    "unconditionalRelease": false
+  },
+  "sourceFiles": [
+    ".gitignore",
+    "app.json",
+    "package-lock.json",
+    "package.json",
+    "scripts/run-isolated-m3.cjs",
+    "src/api/apiClient.ts",
+    "src/app/(tabs)/family.tsx",
+    "src/app/family/[id].tsx",
+    "src/app/family/[id]/edit.tsx",
+    "src/app/family/new.tsx",
+    "src/features/family/api/familyApi.ts",
+    "src/features/family/api/familyDataApi.ts",
+    "src/features/family/avatar/avatar-body.ts",
+    "src/features/family/avatar/avatar-picker.ts",
+    "src/features/family/avatar/avatar-transport.ts",
+    "src/features/family/components/AvatarManager.tsx",
+    "src/features/family/components/FamilyGraph.tsx",
+    "src/features/family/components/FamilyHeader.tsx",
+    "src/features/family/components/MemberAvatar.tsx",
+    "src/features/family/components/MemberCard.tsx",
+    "src/features/family/components/MemberForm.tsx",
+    "src/features/family/components/MemberProfile.tsx",
+    "src/features/family/components/RelationshipPicker.tsx",
+    "src/features/family/data/family-errors.ts",
+    "src/features/family/data/family-query.ts",
+    "src/features/family/data/member-edit.ts",
+    "src/features/family/data/member-search.ts",
+    "src/features/family/data/use-family-query.ts",
+    "src/features/family/graph/family-graph.ts",
+    "src/features/family/graph/graph-gestures.ts",
+    "src/features/family/i18n/familyStrings.ts",
+    "src/features/family/i18n/use-family-strings.ts",
+    "src/features/family/types/family.ts",
+    "src/features/family/types/profile.ts",
+    "tests/fixtures/avatar-host/AvatarContractHost.csproj",
+    "tests/fixtures/avatar-host/ContractProvider.cs",
+    "tests/helpers/load-m3.cjs",
+    "tests/m3-foundation.test.cjs",
+    "tests/real-backend.m3.cjs"
+  ]
+}
