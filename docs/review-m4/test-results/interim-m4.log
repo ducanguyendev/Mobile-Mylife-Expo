@@ -1,0 +1,144 @@
+
+> mobile-mylife-expo@1.0.0 test:m4
+> node --test tests/m4-map.test.cjs
+
+✖ authoritative grouped snapshot retains backend key, averages and counts (4.1253ms)
+✔ empty map is valid without synthetic pins (0.3777ms)
+✔ zero and inclusive coordinate boundaries are valid (0.2386ms)
+✔ reject nan coordinates before PUT (0.457ms)
+✔ reject infinity coordinates before PUT (0.1279ms)
+✔ reject latitude coordinates before PUT (0.0952ms)
+✔ reject longitude coordinates before PUT (0.1003ms)
+✔ reject string coordinates before PUT (0.128ms)
+✔ manual payload strips unrelated metadata and retains zero (0.6807ms)
+✔ manual display name limit (0.2897ms)
+✔ reject malformed map id 0 (0.2323ms)
+✔ reject malformed map id -1 (0.1177ms)
+✔ reject malformed map id 1.2 (0.0783ms)
+✔ reject malformed map id 1 (0.0524ms)
+✔ reject malformed map id NaN (0.047ms)
+✔ reject malformed map id 2147483648 (0.1092ms)
+✔ invalid member coordinate never becomes a pin (0.2259ms)
+✔ unknown status is not inferred from coordinates (0.1121ms)
+✔ invalid grouping, duplicate membership and summary inconsistencies fail closed (1.0901ms)
+✔ nonlocated stale numeric metadata does not create a map pin (0.7165ms)
+✔ Vietnamese name/address/group search is accent insensitive (0.3248ms)
+✔ filters distinguish location groups and unlocated people (0.1436ms)
+✔ search does not truncate 150 members (1.2604ms)
+✖ camera fit handles empty, one and multiple locations with lon/lat ordering (0.5922ms)
+✔ polling stops without pending work and is bounded to six attempts (0.1583ms)
+✔ retry shows actual queue counts without claiming geocoded (0.1835ms)
+✔ location editor rejects changed location/address/member identity while allowing unrelated phone changes (0.6135ms)
+✔ save refreshes ownership, sends location-only PUT, then authoritative member/map GET (47.0712ms)
+✔ stale or switched-account save cannot PUT (55.8063ms)
+✔ aborted editor save cannot PUT (23.0637ms)
+✔ map API rejects a failed or missing envelope (25.1921ms)
+✔ late account-local response is discarded after cancellation (11.0117ms)
+✔ VI/EN cover every backend status with distinct unavailable/pending meaning (5.871ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 31
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 637.6255
+
+✖ failing tests:
+
+test at tests\m4-map.test.cjs:9:1
+✖ authoritative grouped snapshot retains backend key, averages and counts (4.1253ms)
+  AssertionError [ERR_ASSERTION]: Values have same structure but are not reference-equal:
+  
+  ... Skipped lines
+  {
+    failedGeocodingMembers: 0,
+    locatedMembers: 2,
+    locations: [
+      {
+        displayName: 'Địa điểm mẫu',
+        key: 'backend-key',
+        latitude: 5e-7,
+        longitude: 0,
+        memberCount: 2,
+        members: [
+          {
+            fullName: 'Nguyễn Đặng 1',
+            generation: 1,
+            id: 1
+          },
+          {
+            fullName: 'Nguyễn Đặng 2',
+            generation: 1,
+            id: 2
+          }
+        ]
+      }
+    ],
+    members: [
+      {
+        address: 'Đường thử nghiệm',
+        fullName: 'Nguyễn Đặng 1',
+        generation: 1,
+        id: 1,
+        latitude: 0,
+        locationDisplayName: 'Địa điểm mẫu',
+        locationSource: 'MANUAL',
+        longitude: 0,
+        status: 'LOCATED'
+      },
+      {
+        address: 'Đường thử nghiệm',
+        fullName: 'Nguyễn Đặng 2',
+        generation: 1,
+        id: 2,
+        latitude: 0,
+        locationDisplayName: 'Địa điểm mẫu',
+        locationSource: 'MANUAL',
+        longitude: 0,
+        status: 'LOCATED'
+      },
+      {
+        address: null,
+        fullName: 'Nguyễn Đặng 3',
+  ...}
+  
+      at TestContext.<anonymous> (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\m4-map.test.cjs:9:144)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.start (node:internal/test_runner/test:1177:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { totalMembers: 3, locatedMembers: 2, unlocatedMembers: 1, pendingGeocodingMembers: 0, noAddressMembers: 1, failedGeocodingMembers: 0, members: [ [Object], [Object], [Object] ], locations: [ [Object] ] },
+    expected: { totalMembers: 3, locatedMembers: 2, unlocatedMembers: 1, pendingGeocodingMembers: 0, noAddressMembers: 1, failedGeocodingMembers: 0, locations: [ [Object] ], members: [ [Object], [Object], [Object] ] },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\m4-map.test.cjs:23:1
+✖ camera fit handles empty, one and multiple locations with lon/lat ordering (0.5922ms)
+  AssertionError [ERR_ASSERTION]: Values have same structure but are not reference-equal:
+  
+  {
+    center: [
+      106,
+      16
+    ],
+    zoom: 4
+  }
+  
+      at TestContext.<anonymous> (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\m4-map.test.cjs:23:95)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { center: [ 106, 16 ], zoom: 4 },
+    expected: { center: [ 106, 16 ], zoom: 4 },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

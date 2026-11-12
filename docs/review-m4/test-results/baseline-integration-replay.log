@@ -1,0 +1,8 @@
+Integration: isolated-initdb
+Integration: isolated-postgres-start
+Integration: isolated-createdb
+Integration: isolated-backend-build
+Integration: baseline-integration
+Integration: m2-integration
+Integration: isolated-dropdb
+Integration: isolated-postgres-stop

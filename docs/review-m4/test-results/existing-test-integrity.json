@@ -1,0 +1,66 @@
+[
+  {
+    "file": "scripts/audit-m2-contrast.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "scripts/run-isolated-m1.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "scripts/run-isolated-m2.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "scripts/run-isolated-m3.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/auth-foundation.test.mjs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/fixtures/avatar-host/AvatarContractHost.csproj",
+    "unchanged": true
+  },
+  {
+    "file": "tests/fixtures/avatar-host/ContractProvider.cs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/foundation-safety.test.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/helpers/load-foundation.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/helpers/load-m3.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/m2-foundation.test.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/m3-foundation.test.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/native-session.test.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/real-backend.m1.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/real-backend.m2.cjs",
+    "unchanged": true
+  },
+  {
+    "file": "tests/real-backend.m3.cjs",
+    "unchanged": true
+  }
+]

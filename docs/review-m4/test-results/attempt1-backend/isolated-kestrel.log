@@ -1,0 +1,1 @@
+[11:37:02] fail: Microsoft.EntityFrameworkCore.Database.Command[20102] Failed executing DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30'] SELECT "MigrationId", "ProductVersion" FROM "__EFMigrationsHistory" ORDER BY "MigrationId";

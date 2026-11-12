@@ -1,0 +1,21 @@
+{
+  "verdict": "PARTIAL PASS",
+  "releaseReadiness": "NOT READY",
+  "lint": 0,
+  "typecheck": 0,
+  "uniqueJavaScriptTests": 115,
+  "m4Tests": 39,
+  "backendDtoCases": 12,
+  "realApiScenarioGroups": 42,
+  "contrastChecks": 14,
+  "nativeApk": "PASS",
+  "actualDarkAndLightTiles": "PASS emulator only",
+  "npmModerateBefore": 14,
+  "npmModerateAfter": 14,
+  "npmHighCritical": 0,
+  "inheritedSourcesUnchanged": 16,
+  "databaseDropped": true,
+  "postgresStopped": true,
+  "remoteCI": "NOT RUN",
+  "publicKeyArtifactHits": 0
+}

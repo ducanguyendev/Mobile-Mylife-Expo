@@ -1,0 +1,56 @@
+Starting project at D:\DUAN\MYLIFE\Mobile-MyLife-Expo
+Using src/app as the root directory for Expo Router.
+React Compiler enabled
+Metro is running in CI mode, reloads are disabled. Remove CI=true to enable watch mode.
+Starting Metro Bundler
+
+Waiting on http://localhost:8088
+
+Logs for your project will appear below.
+Android Bundled 2559ms node_modules\expo-router\entry.js (1696 modules)
+Android Bundling failed 1639ms src\features\family\map\VietMapSurface.tsx (811 modules)
+ ERROR  Error: D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@vietmap\vietmap-gl-react-native\lib\module\specs\MLRNPointAnnotationNativeComponent.js: Could not find component config for native component
+    at throwIfConfigNotfound (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@react-native\codegen\lib\parsers\error-utils.js:139:11)
+    at findComponentConfig (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@react-native\codegen\lib\parsers\parsers-commons.js:485:3)
+    at buildComponentSchema (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@react-native\codegen\lib\parsers\flow\components\index.js:19:7)
+    at buildSchemaFromConfigType (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@react-native\codegen\lib\parsers\parsers-commons.js:219:36)
+    at buildSchema (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@react-native\codegen\lib\parsers\parsers-commons.js:249:10)
+    at FlowParser.parseString (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@react-native\codegen\lib\parsers\flow\parser.js:79:12)
+    at parseFile (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@react-native\babel-plugin-codegen\index.js:41:23)
+    at generateViewConfig (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@react-native\babel-plugin-codegen\index.js:54:18)
+    at PluginPass.exit (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@react-native\babel-plugin-codegen\index.js:227:32)
+    at newFn (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\traverse\lib\visitors.js:168:14)
+    at NodePath._call (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\traverse\lib\path\context.js:50:20)
+    at NodePath.call (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\traverse\lib\path\context.js:40:18)
+    at NodePath.visit (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\traverse\lib\path\context.js:95:8)
+    at TraversalContext.visitQueue (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\traverse\lib\context.js:96:16)
+    at TraversalContext.visitSingle (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\traverse\lib\context.js:72:19)
+    at TraversalContext.visit (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\traverse\lib\context.js:119:19)
+    at traverseNode (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\traverse\lib\traverse-node.js:130:17)
+    at traverse (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\traverse\lib\index.js:53:34)
+    at transformFile (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\core\lib\transformation\index.js:79:29)
+    at transformFile.next (<anonymous>)
+    at run (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\core\lib\transformation\index.js:25:12)
+    at run.next (<anonymous>)
+    at transform (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\core\lib\transform.js:22:33)
+    at transform.next (<anonymous>)
+    at evaluateSync (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\gensync\index.js:251:28)
+    at sync (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\gensync\index.js:89:14)
+    at stopHiding - secret - don't use this - v1 (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\core\lib\errors\rewrite-stack-trace.js:47:12)
+    at Object.transformSync (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@babel\core\lib\transform.js:40:76)
+    at parseWithBabel (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-config\build\transformSync.js:88:23)
+    at transformSync (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-config\build\transformSync.js:77:12)
+    at Object.transform (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-config\build\babel-transformer.js:259:57)
+    at transformJSWithBabelFallback (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-config\build\transform-worker\metro-transform-worker.js:767:47)
+    at transformJSWithBabel (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-config\build\transform-worker\metro-transform-worker.js:670:16)
+    at Object.transform (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-config\build\transform-worker\metro-transform-worker.js:886:12)
+    at transformImpl (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-config\build\transform-worker\transform-worker.js:216:34)
+    at Object.transform (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-config\build\transform-worker\transform-worker.js:104:30)
+    at transformFile (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\metro\src\DeltaBundler\Worker.flow.js:70:36)
+    at Object.transform (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\metro\src\DeltaBundler\Worker.flow.js:42:10)
+    at execFunction (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\jest-worker\build\workers\threadChild.js:167:17)
+    at execHelper (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\jest-worker\build\workers\threadChild.js:155:5)
+    at execMethod (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\jest-worker\build\workers\threadChild.js:158:5)
+    at MessagePort.messageListener (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\jest-worker\build\workers\threadChild.js:52:7)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:843:20)
+ WARN  [FamilyMap] native module unavailable node_modules\@vietmap\vietmap-gl-react-native\lib\module\specs\MLRNPointAnnotationNativeComponent.js: D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@vietmap\vietmap-gl-react-native\lib\module\specs\MLRNPointAnnotationNativeComponent.js: Could not fi

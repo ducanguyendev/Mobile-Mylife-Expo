@@ -1,0 +1,17 @@
+// Windows Ninja may hit MAX_PATH in Reanimated's deeply nested C++ sources.
+// Applied explicitly to a local build; no generated Android files are edited.
+gradle.beforeProject { p ->
+    p.afterEvaluate {
+        if (p.name in ['react-native-reanimated', 'react-native-worklets', 'app']) {
+            def android = p.extensions.findByName('android')
+            if (android != null) {
+                android.defaultConfig.externalNativeBuild.cmake.arguments.add('-DCMAKE_OBJECT_PATH_MAX=240')
+                if (p.name == 'app') {
+                    // The app's generated gesture-handler target name also consumes
+                    // MAX_PATH. Shorten its staging root so CMake can hash filenames.
+                    android.externalNativeBuild.cmake.buildStagingDirectory = new File(p.rootProject.projectDir.parentFile, '.tmp/cxx-app')
+                }
+            }
+        }
+    }
+}

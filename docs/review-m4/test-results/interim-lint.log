@@ -1,0 +1,52 @@
+
+> mobile-mylife-expo@1.0.0 lint
+> expo lint
+
+env: load .env.local
+env: export EXPO_PUBLIC_API_BASE_URL
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\src\features\family\map\FamilyMapScreen.tsx
+  44:37  error  Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\src\features\family\map\FamilyMapScreen.tsx:44:37
+  42 |   // Profile-to-map selection is applied once per explicit navigation parameter.
+  43 |   const requested = params.memberId && data?.members.find(m => String(m.id) === params.memberId);
+> 44 |   const effectiveKey = requested && lastParam.current !== params.memberId ? data?.locations.find(l => l.members.some(m => m.id === requested.id))?.key : selectedKey;
+     |                                     ^^^^^^^^^^^^^^^^^ Cannot access ref value during render
+  45 |   const visible = useMemo(() => data ? exploreMap(data, search, filter) : { locations: [], unlocated: [], visibleMembers: 0 }, [data, search, filter]);
+  46 |   const selected = data?.locations.find(l => l.key === effectiveKey);
+  47 |   const rows = useMemo(() => {                                                                                                                                                                                                                                                                                                                                                                                                                                                           react-hooks/refs
+  79:57  error  Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\src\features\family\map\FamilyMapScreen.tsx:79:57
+  77 |         {query.status === 'error' ? <AppText accessibilityRole="alert" tone="error">{copy.error}</AppText> : null}
+  78 |         {data ? <><FamilyNativeMap copy={copy} locations={visible.locations} selectedKey={effectiveKey} onSelect={select} />{!data.locations.length ? <AppText tone="secondary">{copy.noPins}</AppText> : null}<AppText tone="secondary">{copy.results}: {visible.visibleMembers}</AppText></> : null}
+> 79 |         {requested && requested.status !== 'LOCATED' && lastParam.current !== params.memberId ? <SecondaryButton title={`${copy.edit}: ${requested.fullName}`} disabled={working} onPress={() => void openEditor(requested.id)} /> : null}
+     |                                                         ^^^^^^^^^^^^^^^^^ Cannot access ref value during render
+  80 |         {data?.failedGeocodingMembers ? <SecondaryButton title={copy.retry} disabled={working} onPress={() => void retry()} /> : null}
+  81 |         {message ? <AppText accessibilityLiveRegion="polite">{message}</AppText> : null}
+  82 |         {data && !data.totalMembers ? <AppText>{copy.empty}</AppText> : data && !visible.visibleMembers ? <AppText>{copy.noResults}</AppText> : null}  react-hooks/refs
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\src\features\family\map\FamilyNativeMap.tsx
+  16:25  warning  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\src\features\family\map\VietMapSurface.tsx
+  15:39  error  Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\src\features\family\map\VietMapSurface.tsx:15:39
+  13 |   const { colors, resolvedMode, reducedMotion } = useAppTheme(); const camera = useRef<CameraRef>(null);
+  14 |   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading'); const initialFit = useRef(false); const zoom = useRef(4);
+> 15 |   const points = useRef<Point[]>([]); points.current = onPick ? [saved, pending].filter((p): p is Point => !!p) : locations;
+     |                                       ^^^^^^^^^^^^^^ Cannot update ref during render
+  16 |   const duration = reducedMotion ? 0 : 250;
+  17 |   const fit = useCallback(() => { const v = mapViewport(points.current); if ('center' in v) camera.current?.setCamera({ centerCoordinate: v.center, zoomLevel: v.zoom, animationDuration: duration }); else camera.current?.fitBounds(v.ne, v.sw, 40, duration); }, [duration]);
+  18 |   useEffect(() => { const timer = setTimeout(() => setStatus(s => s === 'loading' ? 'error' : s), 20000); return () => clearTimeout(timer); }, []);  react-hooks/refs
+
+✖ 4 problems (3 errors, 1 warning)
+

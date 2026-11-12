@@ -1,0 +1,26 @@
+Starting project at D:\DUAN\MYLIFE\Mobile-MyLife-Expo
+Using src/app as the root directory for Expo Router.
+React Compiler enabled
+Metro is running in CI mode, reloads are disabled. Remove CI=true to enable watch mode.
+Starting Metro Bundler
+
+Waiting on http://localhost:8088
+
+Logs for your project will appear below.
+npx.cmd : Error while reading cache, falling back to a full crawl:
+At line:2 char:867
++ ... lyContinue; npx.cmd expo start --dev-client --localhost --port 8088 - ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error while rea...o a full crawl::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Error: Unable to deserialize cloned data.
+    at deserialize (node:v8:469:14)
+    at DiskCacheManager.read 
+(D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-file-map\build\cache\DiskCacheManager.js:95:42)
+    at async FileMap.read (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-file-map\build\index.js:447:20)
+    at async D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-file-map\build\index.js:330:35
+    at async DependencyGraph.ready 
+(D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\metro\src\node-haste\DependencyGraph.js:95:5)
+Android Bundled 1758ms node_modules\expo-router\entry.js (1661 modules)
+Android Bundled 1427ms src\features\family\map\VietMapSurface.tsx (811 modules)

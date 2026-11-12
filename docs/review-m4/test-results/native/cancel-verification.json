@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "memberId": 131,
+  "latitude": null,
+  "longitude": null,
+  "locationSource": null,
+  "updatedAt": "2026-11-11T05:00:01.189285Z",
+  "method": "Actual native tap then Android Back; separate authoritative Backend GET"
+}

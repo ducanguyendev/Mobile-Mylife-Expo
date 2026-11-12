@@ -1,0 +1,66 @@
+
+> mobile-mylife-expo@1.0.0 test:m4
+> node --test tests/m4-map.test.cjs
+
+✔ authoritative grouped snapshot retains backend key, averages and counts (2.4911ms)
+✔ empty map is valid without synthetic pins (0.2549ms)
+✔ zero and inclusive coordinate boundaries are valid (0.1639ms)
+✔ reject nan coordinates before PUT (0.2866ms)
+✔ reject infinity coordinates before PUT (0.1128ms)
+✔ reject latitude coordinates before PUT (0.0789ms)
+✔ reject longitude coordinates before PUT (0.0946ms)
+✔ reject string coordinates before PUT (0.0934ms)
+✔ manual payload strips unrelated metadata and retains zero (0.1664ms)
+✔ manual display name limit (0.3025ms)
+✔ reject malformed map id 0 (0.1911ms)
+✔ reject malformed map id -1 (0.1165ms)
+✔ reject malformed map id 1.2 (0.0578ms)
+✔ reject malformed map id 1 (0.0571ms)
+✔ reject malformed map id NaN (0.0841ms)
+✔ reject malformed map id 2147483648 (0.0579ms)
+✔ invalid member coordinate never becomes a pin (0.1572ms)
+✔ unknown status is not inferred from coordinates (0.1069ms)
+✔ invalid grouping, duplicate membership and summary inconsistencies fail closed (0.5597ms)
+✔ nonlocated stale numeric metadata does not create a map pin (0.4194ms)
+✔ Vietnamese name/address/group search is accent insensitive (0.2381ms)
+✔ filters distinguish location groups and unlocated people (0.1202ms)
+✔ search does not truncate 150 members (0.9972ms)
+✔ camera fit handles empty, one and multiple locations with lon/lat ordering (0.2502ms)
+✔ polling stops without pending work and is bounded to six attempts (0.0987ms)
+✔ retry shows actual queue counts without claiming geocoded (0.1344ms)
+✔ location editor rejects changed location/address/member identity while allowing unrelated phone changes (0.3986ms)
+✔ save refreshes ownership, sends location-only PUT, then authoritative member/map GET (39.416ms)
+✔ stale or switched-account save cannot PUT (47.0598ms)
+✔ aborted editor save cannot PUT (18.9623ms)
+✔ map API rejects a failed or missing envelope (22.588ms)
+✔ late account-local response is discarded after cancellation (8.9058ms)
+✔ VI/EN cover every backend status with distinct unavailable/pending meaning (5.0071ms)
+✔ native picker tap is draft only; cancel/Android Back closes without any mutation (52.8304ms)
+✖ native editor submits only after explicit confirmation and validates empty numbers (25.6195ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 34
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 660.7093
+
+✖ failing tests:
+
+test at tests\m4-map.test.cjs:43:1
+✖ native editor submits only after explicit confirmation and validates empty numbers (25.6195ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\m4-map.test.cjs:43:562)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

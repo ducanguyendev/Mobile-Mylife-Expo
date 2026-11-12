@@ -1,0 +1,7 @@
+
+> mobile-mylife-expo@1.0.0 test:integration:m3
+> node scripts/run-isolated-m3.cjs --baseline
+
+Integration: isolated-initdb
+Integration: isolated-postgres-start
+isolated-postgres-start failed; see its log (exit 1)

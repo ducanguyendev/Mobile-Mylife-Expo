@@ -1,0 +1,28 @@
+name: Expo quality
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # Contrast/M2 regressions read the historical M1 palette.
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run test:auth
+      - run: npm run test:foundation
+      - run: npm run test:m2
+      - run: npm run test:m3
+      - run: npm run test:m4
+      - run: npm run audit:contrast:m2

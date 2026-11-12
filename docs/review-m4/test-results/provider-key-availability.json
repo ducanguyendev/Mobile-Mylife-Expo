@@ -1,0 +1,7 @@
+{
+  "expoTileVariablePresent": false,
+  "webTileVariablePresent": true,
+  "authorizedMobileTestKeyIdentified": true,
+  "note": "User explicitly approved existing Web public tile key for synthetic Android QA. Process memory only; no key value recorded. Release restrictions/quotas unverified.",
+  "initialAuthorizedMobileTestKeyIdentified": false
+}

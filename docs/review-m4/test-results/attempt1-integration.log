@@ -1,0 +1,10 @@
+
+> mobile-mylife-expo@1.0.0 test:integration:m4
+> node scripts/run-isolated-m4.cjs
+
+Integration: isolated-initdb
+Integration: isolated-postgres-start
+Integration: isolated-createdb
+Integration: isolated-backend-build
+Integration: avatar-contract-host-build
+Integration: final-integration

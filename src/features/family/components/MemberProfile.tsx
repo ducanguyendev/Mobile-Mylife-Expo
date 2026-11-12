@@ -7,7 +7,8 @@ import { useToast } from '@/components/feedback/toast-provider';
 import { AppText } from '@/design-system/components/app-text';
 import { AppCard, ActionRow } from '@/design-system/components/surfaces';
 import { Badge } from '@/design-system/components/controls';
-import { DestructiveButton, PrimaryButton } from '@/design-system/components/buttons';
+import { DestructiveButton, PrimaryButton, TextButton } from '@/design-system/components/buttons';
+import { mapStrings } from '../map/map-strings';
 import { spacing } from '@/design-system/tokens';
 import { useAppTheme } from '@/theme/theme-provider';
 import { formatDateOnly } from '@/features/home/home-data';
@@ -63,6 +64,7 @@ export function MemberProfile({ accountId, memberId }: { accountId: number; memb
   </View>;
   const gender = normalizeGender(member.gender);
   return <AppScreen padded={false}><FamilyHeader title={copy.profile} />
+    <TextButton title={mapStrings[language].title} onPress={() => router.push({ pathname: '/family/map', params: { memberId: String(member.id) } })} />
     <FlatList data={rows} keyExtractor={row => row.key} initialNumToRender={12} maxToRenderPerBatch={12} windowSize={5} contentContainerStyle={styles.page}
       refreshControl={<RefreshControl refreshing={query.status === 'loading'} onRefresh={() => void query.reload()} tintColor={colors.accentFamily} />}
       ListHeaderComponent={<View style={styles.header}>

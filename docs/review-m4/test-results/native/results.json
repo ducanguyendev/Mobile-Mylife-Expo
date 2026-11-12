@@ -1,0 +1,166 @@
+{
+  "verdict": "PARTIAL PASS",
+  "releaseReadiness": "NOT READY",
+  "device": "MyLife_M4 emulator-5584 Android15/API35 x86_64",
+  "expoGo": false,
+  "syntheticOnly": true,
+  "checks": [
+    {
+      "name": "Native development APK build / initialize",
+      "status": "PASS",
+      "evidence": [
+        "build.json",
+        "../android-build-recovered.log",
+        "21-native-provider-view.png"
+      ]
+    },
+    {
+      "name": "Actual authenticated dark / light VIETMAP tiles",
+      "status": "PASS",
+      "evidence": [
+        "74-authorized-map-settled.png",
+        "94-light-en-tiles.png",
+        "authorized-style-check.json"
+      ]
+    },
+    {
+      "name": "Marker group selection",
+      "status": "PASS",
+      "evidence": [
+        "77-native-marker-tap.json"
+      ]
+    },
+    {
+      "name": "Tile-backed picker pan / tap draft / cancel",
+      "status": "PASS",
+      "evidence": [
+        "79-native-picker-pan.png",
+        "80-native-tiled-draft.png",
+        "81-native-tiled-cancel.png"
+      ]
+    },
+    {
+      "name": "Android Back / reopen cleared draft",
+      "status": "PASS",
+      "evidence": [
+        "28-cancelled-draft.png",
+        "30-empty-reopened-fields.png",
+        "cancel-verification.json"
+      ]
+    },
+    {
+      "name": "Explicit native save / authoritative Web-compatible parity",
+      "status": "PASS",
+      "evidence": [
+        "34-native-save.png",
+        "save-web-parity.json"
+      ]
+    },
+    {
+      "name": "Profile/avatar UI and graph navigation / Fit / one-pointer pan",
+      "status": "PASS",
+      "evidence": [
+        "37-profile-from-map.png",
+        "38-map-return-state.png",
+        "41-graph-fit.png",
+        "42-graph-panned.png"
+      ]
+    },
+    {
+      "name": "API offline / restore / refresh",
+      "status": "PASS",
+      "evidence": [
+        "61-offline-refresh.json",
+        "62-online-refresh.json"
+      ]
+    },
+    {
+      "name": "Invalid provider failure / later authorized recovery",
+      "status": "PASS",
+      "evidence": [
+        "64-fit-and-provider-failure.json",
+        "74-authorized-map-settled.png"
+      ]
+    },
+    {
+      "name": "Explicit Reload tiles / settled recovery",
+      "status": "PASS",
+      "evidence": [
+        "95-light-en-tile-reload.json",
+        "96-native-tile-reload-recovered.png"
+      ]
+    },
+    {
+      "name": "Session expiry clears protected map",
+      "status": "PASS",
+      "evidence": [
+        "session-revocation.json",
+        "65-session-expired.json"
+      ]
+    },
+    {
+      "name": "Theme / language persistence and compact font130 / large viewport",
+      "status": "PASS for observed layouts",
+      "evidence": [
+        "50-compact-ready.png",
+        "57-large-cold-restore.png",
+        "74-authorized-map-settled.png",
+        "94-light-en-tiles.png",
+        "101-final-compact-controls.png"
+      ]
+    },
+    {
+      "name": "Retry real queue counters",
+      "status": "PASS",
+      "evidence": [
+        "56-native-retry-counts.json"
+      ]
+    },
+    {
+      "name": "TalkBack / keyboard-focus traversal / native reduced motion",
+      "status": "NOT TESTED"
+    },
+    {
+      "name": "Physical pinch / FPS / iOS / VoiceOver",
+      "status": "NOT TESTED"
+    },
+    {
+      "name": "Rapid mounted dev-client configuration recreation",
+      "status": "OPEN warning / cold start recovered",
+      "evidence": [
+        "48-compact-font130-dark-vi.png",
+        "50-compact-ready.png"
+      ]
+    }
+  ],
+  "excludedEvidence": [
+    {
+      "prefix": "49-compact-cold-restore",
+      "reason": "UiAutomator null root; old helper read stale hierarchy. Excluded as UI proof; helper now requires fresh dump."
+    }
+  ],
+  "datasetSessions": [
+    {
+      "name": "first",
+      "members": 112,
+      "initialLocated": 6,
+      "initialGroups": 3,
+      "afterExplicitSaveLocated": 7,
+      "afterExplicitSaveGroups": 4,
+      "lifecycle": "lifecycle-first-session.json"
+    },
+    {
+      "name": "resumed",
+      "members": 112,
+      "located": 6,
+      "groups": 3,
+      "lifecycle": "../final-backend/final-lifecycle.json"
+    }
+  ],
+  "limits": [
+    "QA authorization does not establish release key restrictions/quotas",
+    "HTTP cookie parity does not mean browser UI tested",
+    "Synthetic avatar/geocoder adapters do not verify real Drive or geocoding accuracy",
+    "No production data or personal address used"
+  ]
+}

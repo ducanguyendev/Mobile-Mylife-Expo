@@ -1,0 +1,59 @@
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>if "Windows_NT" == "Windows_NT" setlocal
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>set DIRNAME=D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android\ 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>if "D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android\" == "" set DIRNAME=. 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>set APP_BASE_NAME=gradlew 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>set APP_HOME=D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android\ 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>for %i in ("D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android\") do set APP_HOME=%~fi 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>set APP_HOME=D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android\ 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m" 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>if defined JAVA_HOME goto findJavaFromJavaHome 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>set JAVA_HOME=C:\jdk 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>set JAVA_EXE=C:\jdk/bin/java.exe 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>if exist "C:\jdk/bin/java.exe" goto execute 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>echo.  1>&2 
+.\gradlew.bat :  
+At line:2 char:76
++ ... env:CI='1'; .\gradlew.bat :app:assembleDebug -PreactNativeArchitectur ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>echo ERROR: JAVA_HOME is set to an invalid directory: C:\jdk  1>&2 
+ERROR: JAVA_HOME is set to an invalid directory: C:\jdk 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>echo.  1>&2 
+ 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>echo Please set the JAVA_HOME variable in your environment to match the  1>&2 
+Please set the JAVA_HOME variable in your environment to match the 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>echo location of your Java installation.  1>&2 
+location of your Java installation. 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>goto fail 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>rem the _cmd.exe /c_ return code! 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>set EXIT_CODE=0 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>if 0 EQU 0 set EXIT_CODE=1 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>if not "" == "" exit 1 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\android>exit /b 1 

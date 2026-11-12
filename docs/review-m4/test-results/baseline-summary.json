@@ -1,0 +1,42 @@
+[
+  {
+    "command": "lint",
+    "exitCode": 0,
+    "durationMs": 88076
+  },
+  {
+    "command": "typecheck",
+    "exitCode": 0,
+    "durationMs": 22231
+  },
+  {
+    "command": "test:auth",
+    "exitCode": 0,
+    "durationMs": 863
+  },
+  {
+    "command": "test:foundation",
+    "exitCode": 0,
+    "durationMs": 2152
+  },
+  {
+    "command": "test:m2",
+    "exitCode": 0,
+    "durationMs": 1690
+  },
+  {
+    "command": "test:m3",
+    "exitCode": 0,
+    "durationMs": 1660
+  },
+  {
+    "command": "audit:contrast:m2",
+    "exitCode": 0,
+    "durationMs": 1048
+  },
+  {
+    "command": "test:integration:m3",
+    "exitCode": 1,
+    "durationMs": 12870
+  }
+]

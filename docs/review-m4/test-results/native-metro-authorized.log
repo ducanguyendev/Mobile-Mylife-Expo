@@ -1,0 +1,18 @@
+Starting project at D:\DUAN\MYLIFE\Mobile-MyLife-Expo
+Using src/app as the root directory for Expo Router.
+React Compiler enabled
+Metro is running in CI mode, reloads are disabled. Remove CI=true to enable watch mode.
+Starting Metro Bundler
+
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+Waiting on http://localhost:8088
+
+Logs for your project will appear below.
+Android Bundled 26536ms node_modules\expo-router\entry.js (1696 modules)
+Android Bundled 161ms node_modules\expo-router\entry.js (1 module)
+Android Bundled 3188ms src\features\family\map\VietMapSurface.tsx (811 modules)
+Android Bundled 12404ms src\features\family\map\VietMapSurface.tsx (839 modules)
+Android Bundled 106ms node_modules\expo-router\entry.js (1 module)
+Android Bundled 90ms src\features\family\map\VietMapSurface.tsx (1 module)
+Android Bundled 78ms node_modules\expo-router\entry.js (1 module)
+Android Bundled 54ms src\features\family\map\VietMapSurface.tsx (1 module)

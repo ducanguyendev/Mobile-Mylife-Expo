@@ -1,0 +1,1933 @@
+{
+  "expo": [
+    {
+      "status": " M",
+      "file": ".env.example"
+    },
+    {
+      "status": " M",
+      "file": ".gitignore"
+    },
+    {
+      "status": " M",
+      "file": "app.json"
+    },
+    {
+      "status": " M",
+      "file": "package-lock.json"
+    },
+    {
+      "status": " M",
+      "file": "package.json"
+    },
+    {
+      "status": " M",
+      "file": "src/app/(tabs)/family.tsx"
+    },
+    {
+      "status": " M",
+      "file": "src/features/family/components/MemberProfile.tsx"
+    },
+    {
+      "status": "??",
+      "file": ".github/workflows/expo-quality.yml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/CARRY_FORWARD_RISKS.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/DEPENDENCY_AUDIT.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/DESIGN_UX_REVIEW.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/INITIAL_AUDIT.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/LOCATION_INTEGRITY.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/M5_HANDOFF.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/MAP_API_PARITY.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/MAP_PROVIDER_DECISION.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/NATIVE_SMOKE_RESULTS.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/REPORT.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/TEST_RESULTS.md"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/android-build-final.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/android-build-jbr.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/android-build-package.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/android-build-recovered.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/android-build-short-paths.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/android-build-staging.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/android-build.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/android-prebuild-permissions.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/android-prebuild.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/avatar-contract-host-build.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/avatar-provider-events.ndjson"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/final-integration.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/final-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/final-lifecycle.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/isolated-backend-build.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/isolated-createdb.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/isolated-dropdb.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/isolated-initdb.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/isolated-kestrel.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/isolated-postgres-start.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/isolated-postgres-stop.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/m2-home.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/m2-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/m3-integration.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/m3-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-backend/m4-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt1-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt2-kestrel.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt2-m4-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt3-kestrel.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/attempt3-m4-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/audit-after.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/audit-before.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/audit-runtime.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/avd-create.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/avd-temp-create.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/backend-location-validation-release.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/backend-location-validation.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/backend-unit/m4-location-validation.trx"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-audit-contrast-m2.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/baseline-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/baseline-lifecycle.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/final-integration.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/isolated-backend-build.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/isolated-createdb.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/isolated-dropdb.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/isolated-initdb.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/isolated-kestrel.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/isolated-postgres-start.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/isolated-postgres-stop.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/m2-home.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-backend/m2-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-integration-replay.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-lint.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-summary.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-test-auth.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-test-foundation.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-test-integration-m3.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-test-m2.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-test-m3.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/baseline-typecheck.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/changed-files.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/delivery-summary.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/emulator-2-error.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/emulator-2.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/emulator-error.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/emulator-temp-error.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/emulator-temp.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/emulator.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/existing-test-integrity.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/expo-install-check.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/avatar-contract-host-build.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/avatar-provider-events.ndjson"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/final-integration.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/final-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/final-lifecycle.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/isolated-backend-build.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/isolated-createdb.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/isolated-dropdb.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/isolated-initdb.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/isolated-kestrel.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/isolated-postgres-start.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/isolated-postgres-stop.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/m2-home.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/m2-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/m3-integration.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/m3-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/m4-final-map-synthetic.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/m4-integration.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-backend/m4-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-contrast.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-contrast.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-integration.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-lint.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-summary.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-test-auth.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-test-foundation.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-test-m2.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-test-m3.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-test-m4.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-typecheck.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/final-unit-summary.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/first-attempt-baseline-lifecycle.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/first-attempt-isolated-initdb.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/first-attempt-isolated-postgres-start.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/interim-lint-2.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/interim-lint.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/interim-m4-2.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/interim-m4-3.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/interim-m4-4.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/interim-m4-5.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/interim-m4-6.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/interim-m4.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/interim-typecheck-2.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/interim-typecheck.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/map-install.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native-metro-authorized.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native-metro-delivery.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native-metro-diagnostic.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native-metro-final.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native-metro.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native-runtime-resumed.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native-runtime.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native-seed.log"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/01-launch.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/01-launch.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/01-launch.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/02-login-ready.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/02-login-ready.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/02-login-ready.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/03-app-login.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/03-app-login.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/03-app-login.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/04-login.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/04-login.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/04-login.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/05-email.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/05-email.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/05-email.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/06-password.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/06-password.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/06-password.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/07-home.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/07-home.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/07-home.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/08-login-result.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/08-login-result.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/08-login-result.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/09-corrected-password.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/09-corrected-password.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/09-corrected-password.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/10-keyboard-hidden.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/10-keyboard-hidden.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/10-keyboard-hidden.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/100-final-compact-map.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/100-final-compact-map.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/100-final-compact-map.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/101-final-compact-controls.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/101-final-compact-controls.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/101-final-compact-controls.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/11-authenticated.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/11-authenticated.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/11-authenticated.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/12-login-network.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/12-login-network.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/12-login-network.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/13-family.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/13-family.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/13-family.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/14-map-native.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/14-map-native.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/14-map-native.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/15-map-provider-result.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/15-map-provider-result.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/15-map-provider-result.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/16-restored-session.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/16-restored-session.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/16-restored-session.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/17-family-restored.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/17-family-restored.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/17-family-restored.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/18-map-diagnostic.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/18-map-diagnostic.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/18-map-diagnostic.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/19-family-source-entry.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/19-family-source-entry.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/19-family-source-entry.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/20-map-source-entry.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/20-map-source-entry.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/20-map-source-entry.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/21-native-provider-view.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/21-native-provider-view.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/21-native-provider-view.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/22-accent-search.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/22-accent-search.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/22-accent-search.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/23-search-keyboard-hidden.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/23-search-keyboard-hidden.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/23-search-keyboard-hidden.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/24-search-result.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/24-search-result.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/24-search-result.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/25-editor-open.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/25-editor-open.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/25-editor-open.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/26-map-tap-draft.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/26-map-tap-draft.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/26-map-tap-draft.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/27-editor-draft-fields.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/27-editor-draft-fields.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/27-editor-draft-fields.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/28-cancelled-draft.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/28-cancelled-draft.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/28-cancelled-draft.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/29-editor-reopened.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/29-editor-reopened.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/29-editor-reopened.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/30-empty-reopened-fields.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/30-empty-reopened-fields.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/30-empty-reopened-fields.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/31-latitude.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/31-latitude.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/31-latitude.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/32-longitude.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/32-longitude.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/32-longitude.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/33-reviewed-point.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/33-reviewed-point.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/33-reviewed-point.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/34-native-save.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/34-native-save.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/34-native-save.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/35-selected-saved-location.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/35-selected-saved-location.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/35-selected-saved-location.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/36-selected-member.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/36-selected-member.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/36-selected-member.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/37-profile-from-map.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/37-profile-from-map.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/37-profile-from-map.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/38-map-return-state.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/38-map-return-state.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/38-map-return-state.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/39-family-return.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/39-family-return.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/39-family-return.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/40-graph-native-coexistence.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/40-graph-native-coexistence.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/40-graph-native-coexistence.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/41-graph-fit.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/41-graph-fit.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/41-graph-fit.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/42-graph-panned.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/42-graph-panned.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/42-graph-panned.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/43-preferences.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/43-preferences.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/43-preferences.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/44-dark-preference.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/44-dark-preference.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/44-dark-preference.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/45-vietnamese-preference.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/45-vietnamese-preference.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/45-vietnamese-preference.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/46-family-dark-vi.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/46-family-dark-vi.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/46-family-dark-vi.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/47-map-dark-vi.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/47-map-dark-vi.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/47-map-dark-vi.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/48-compact-font130-dark-vi.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/48-compact-font130-dark-vi.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/48-compact-font130-dark-vi.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/49-compact-cold-restore.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/49-compact-cold-restore.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/49-compact-cold-restore.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/50-compact-ready.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/50-compact-ready.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/50-compact-ready.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/51-compact-family.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/51-compact-family.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/51-compact-family.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/52-compact-map-font130.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/52-compact-map-font130.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/52-compact-map-font130.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/53-compact-located-filter.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/53-compact-located-filter.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/53-compact-located-filter.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/54-compact-location-list.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/54-compact-location-list.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/54-compact-location-list.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/55-compact-groups.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/55-compact-groups.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/55-compact-groups.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/56-native-retry-counts.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/56-native-retry-counts.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/56-native-retry-counts.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/57-large-cold-restore.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/57-large-cold-restore.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/57-large-cold-restore.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/58-large-family.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/58-large-family.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/58-large-family.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/59-large-map.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/59-large-map.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/59-large-map.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/60-large-map-settled.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/60-large-map-settled.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/60-large-map-settled.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/61-offline-refresh.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/61-offline-refresh.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/61-offline-refresh.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/62-online-refresh.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/62-online-refresh.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/62-online-refresh.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/63-zoom-control.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/63-zoom-control.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/63-zoom-control.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/64-fit-and-provider-failure.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/64-fit-and-provider-failure.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/64-fit-and-provider-failure.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/65-session-expired.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/65-session-expired.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/65-session-expired.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/66-authorized-login.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/66-authorized-login.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/66-authorized-login.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/67-authorized-email.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/67-authorized-email.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/67-authorized-email.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/68-authorized-password.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/68-authorized-password.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/68-authorized-password.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/69-authorized-hide-keyboard.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/69-authorized-hide-keyboard.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/69-authorized-hide-keyboard.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/70-authorized-home.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/70-authorized-home.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/70-authorized-home.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/71-authorized-family.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/71-authorized-family.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/71-authorized-family.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/72-authorized-map.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/72-authorized-map.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/72-authorized-map.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/73-authorized-dark-tiles.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/73-authorized-dark-tiles.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/73-authorized-dark-tiles.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/74-authorized-map-settled.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/74-authorized-map-settled.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/74-authorized-map-settled.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/75-native-group-selection.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/75-native-group-selection.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/75-native-group-selection.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/76-native-fit-tiles.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/76-native-fit-tiles.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/76-native-fit-tiles.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/77-native-marker-tap.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/77-native-marker-tap.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/77-native-marker-tap.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/78-native-tiled-picker.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/78-native-tiled-picker.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/78-native-tiled-picker.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/79-native-picker-pan.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/79-native-picker-pan.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/79-native-picker-pan.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/80-native-tiled-draft.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/80-native-tiled-draft.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/80-native-tiled-draft.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/81-native-tiled-cancel.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/81-native-tiled-cancel.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/81-native-tiled-cancel.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/82-native-tile-reload.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/82-native-tile-reload.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/82-native-tile-reload.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/83-resumed-email.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/83-resumed-email.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/83-resumed-email.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/84-resumed-password.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/84-resumed-password.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/84-resumed-password.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/85-resumed-keyboard.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/85-resumed-keyboard.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/85-resumed-keyboard.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/86-resumed-login.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/86-resumed-login.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/86-resumed-login.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/87-resumed-preferences.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/87-resumed-preferences.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/87-resumed-preferences.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/88-light-preference.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/88-light-preference.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/88-light-preference.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/89-english-preference.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/89-english-preference.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/89-english-preference.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/90-light-en-family.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/90-light-en-family.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/90-light-en-family.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/92-light-en-tiles-settled.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/92-light-en-tiles-settled.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/92-light-en-tiles-settled.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/93-light-en-map.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/93-light-en-map.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/93-light-en-map.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/94-light-en-tiles.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/94-light-en-tiles.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/94-light-en-tiles.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/95-light-en-tile-reload.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/95-light-en-tile-reload.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/95-light-en-tile-reload.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/96-native-tile-reload-recovered.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/96-native-tile-reload-recovered.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/96-native-tile-reload-recovered.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/97-compact-light-family.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/97-compact-light-family.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/97-compact-light-family.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/98-compact-light-map.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/98-compact-light-map.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/98-compact-light-map.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/99-final-compact-family.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/99-final-compact-family.png"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/99-final-compact-family.xml"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/apk-permissions.txt"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/authorized-style-check.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/build.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/cancel-verification.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/cleanup.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/device.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/lifecycle-first-session.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/provider-log-redacted.txt"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/results.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/save-web-parity.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/session-revocation.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/native/synthetic-data.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/provider-key-availability.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/provider-package.json"
+    },
+    {
+      "status": "??",
+      "file": "docs/review-m4/test-results/public-key-artifact-scan.json"
+    },
+    {
+      "status": "??",
+      "file": "metro.config.js"
+    },
+    {
+      "status": "??",
+      "file": "scripts/android-short-paths.gradle"
+    },
+    {
+      "status": "??",
+      "file": "scripts/m4-native-ui.cjs"
+    },
+    {
+      "status": "??",
+      "file": "scripts/revoke-isolated-m4-native.cjs"
+    },
+    {
+      "status": "??",
+      "file": "scripts/run-isolated-m4.cjs"
+    },
+    {
+      "status": "??",
+      "file": "scripts/seed-isolated-m4-native.cjs"
+    },
+    {
+      "status": "??",
+      "file": "src/app/family/map.tsx"
+    },
+    {
+      "status": "??",
+      "file": "src/features/family/map/FamilyMapScreen.tsx"
+    },
+    {
+      "status": "??",
+      "file": "src/features/family/map/FamilyNativeMap.tsx"
+    },
+    {
+      "status": "??",
+      "file": "src/features/family/map/LocationEditor.tsx"
+    },
+    {
+      "status": "??",
+      "file": "src/features/family/map/VietMapSurface.tsx"
+    },
+    {
+      "status": "??",
+      "file": "src/features/family/map/map-api.ts"
+    },
+    {
+      "status": "??",
+      "file": "src/features/family/map/map-data.ts"
+    },
+    {
+      "status": "??",
+      "file": "src/features/family/map/map-strings.ts"
+    },
+    {
+      "status": "??",
+      "file": "src/features/family/map/use-map-query.ts"
+    },
+    {
+      "status": "??",
+      "file": "tests/fixtures/map-host/MapContractHost.csproj"
+    },
+    {
+      "status": "??",
+      "file": "tests/fixtures/map-host/MapProvider.cs"
+    },
+    {
+      "status": "??",
+      "file": "tests/m4-map.test.cjs"
+    },
+    {
+      "status": "??",
+      "file": "tests/real-backend.m4.cjs"
+    }
+  ],
+  "backend": [
+    {
+      "status": " M",
+      "file": "Features/FamilyTree/DTOs/UpdateFamilyMemberLocationDto.cs"
+    },
+    {
+      "status": "??",
+      "file": "Tests/FamilyLocationInputValidationTests.cs"
+    }
+  ],
+  "web": [],
+  "flutter": [
+    {
+      "status": " M",
+      "file": ".gitignore"
+    },
+    {
+      "status": " M",
+      "file": "android/build/reports/problems/problems-report.html"
+    }
+  ]
+}

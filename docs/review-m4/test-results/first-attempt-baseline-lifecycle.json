@@ -1,0 +1,18 @@
+{
+  "database": "mylife_m1_cb83635dbd22",
+  "host": "127.0.0.1",
+  "pgPort": 52003,
+  "cluster": ".tmp\\m1-integration-oWKpVm",
+  "databaseDropped": false,
+  "postgresStopped": false,
+  "results": [
+    {
+      "name": "isolated-initdb",
+      "exitCode": 0
+    },
+    {
+      "name": "isolated-postgres-start",
+      "exitCode": 1
+    }
+  ]
+}

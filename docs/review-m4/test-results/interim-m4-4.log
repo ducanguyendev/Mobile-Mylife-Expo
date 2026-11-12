@@ -1,0 +1,47 @@
+
+> mobile-mylife-expo@1.0.0 test:m4
+> node --test tests/m4-map.test.cjs
+
+✔ authoritative grouped snapshot retains backend key, averages and counts (4.5978ms)
+✔ empty map is valid without synthetic pins (0.3553ms)
+✔ zero and inclusive coordinate boundaries are valid (0.2141ms)
+✔ reject nan coordinates before PUT (0.376ms)
+✔ reject infinity coordinates before PUT (0.1597ms)
+✔ reject latitude coordinates before PUT (0.099ms)
+✔ reject longitude coordinates before PUT (0.1074ms)
+✔ reject string coordinates before PUT (0.0998ms)
+✔ manual payload strips unrelated metadata and retains zero (0.22ms)
+✔ manual display name limit (0.3884ms)
+✔ reject malformed map id 0 (0.1716ms)
+✔ reject malformed map id -1 (0.1145ms)
+✔ reject malformed map id 1.2 (0.0696ms)
+✔ reject malformed map id 1 (0.0757ms)
+✔ reject malformed map id NaN (0.0822ms)
+✔ reject malformed map id 2147483648 (0.0684ms)
+✔ invalid member coordinate never becomes a pin (0.2078ms)
+✔ unknown status is not inferred from coordinates (0.1199ms)
+✔ invalid grouping, duplicate membership and summary inconsistencies fail closed (0.7276ms)
+✔ nonlocated stale numeric metadata does not create a map pin (1.4479ms)
+✔ Vietnamese name/address/group search is accent insensitive (0.7319ms)
+✔ filters distinguish location groups and unlocated people (0.2179ms)
+✔ search does not truncate 150 members (1.3941ms)
+✔ camera fit handles empty, one and multiple locations with lon/lat ordering (0.4192ms)
+✔ polling stops without pending work and is bounded to six attempts (0.1125ms)
+✔ retry shows actual queue counts without claiming geocoded (0.1718ms)
+✔ location editor rejects changed location/address/member identity while allowing unrelated phone changes (0.4877ms)
+✔ save refreshes ownership, sends location-only PUT, then authoritative member/map GET (48.9095ms)
+✔ stale or switched-account save cannot PUT (64.6061ms)
+✔ aborted editor save cannot PUT (29.1817ms)
+✔ map API rejects a failed or missing envelope (33.1859ms)
+✔ late account-local response is discarded after cancellation (10.8016ms)
+✔ VI/EN cover every backend status with distinct unavailable/pending meaning (6.9144ms)
+✔ native picker tap is draft only; cancel/Android Back closes without any mutation (81.46ms)
+✔ native editor submits only after explicit confirmation and validates empty numbers (64.9477ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 871.0971

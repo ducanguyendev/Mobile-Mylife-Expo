@@ -19,6 +19,7 @@ import { familyError } from '@/features/family/data/family-errors';
 import { useFamilyStrings } from '@/features/family/i18n/use-family-strings';
 import type { FamilyMember } from '@/features/family/types/family';
 import { useAppTheme } from '@/theme/theme-provider';
+import { mapStrings } from '@/features/family/map/map-strings';
 
 type Mode = 'cards' | 'list' | 'tree';
 export default function FamilyScreen() {
@@ -28,7 +29,7 @@ export default function FamilyScreen() {
   return <FamilyDirectory key={`${user.id}:${user.role}`} accountId={user.id} />;
 }
 function FamilyDirectory({ accountId }: { accountId: number }) {
-  const { copy } = useFamilyStrings(); const { colors } = useAppTheme();
+  const { copy } = useFamilyStrings(); const { colors, language } = useAppTheme();
   const query = useFamilyQuery(accountId, 'members', familyDataApi.list);
   const [mode, setMode] = useState<Mode>('cards'); const [filters, setFilters] = useState<MemberFilters>(emptyFilters); const [showFilters, setShowFilters] = useState(false);
   const members = useMemo(() => query.data ?? [], [query.data]);
@@ -41,7 +42,7 @@ function FamilyDirectory({ accountId }: { accountId: number }) {
   const modes = <SegmentedTabs<Mode> value={mode} onChange={setMode} options={[{ value: 'cards', label: copy.cards }, { value: 'list', label: copy.list }, { value: 'tree', label: copy.tree }]} />;
   const errorOrEmpty = query.status === 'loading' && !query.data ? <LoadingState /> : query.status === 'error' ? <ErrorState title={copy.loadError} message={familyError(query.error, copy)} retry={() => void query.reload()} /> : !members.length ? <EmptyState title={copy.noMembers} message={copy.noMembersMessage} action={{ label: copy.add, onPress: add }} /> : <EmptyState title={copy.noResults} message={copy.noResultsMessage} action={{ label: copy.clearFilters, onPress: () => setFilters(emptyFilters) }} />;
   if (mode === 'tree') return <AppScreen padded={false}>
-    <View style={styles.treeHeader}><AppText variant="sectionTitle" accessibilityRole="header">{copy.family}</AppText>{modes}<TextButton title={copy.retry} onPress={() => void query.reload()} /></View>
+    <View style={styles.treeHeader}><AppText variant="sectionTitle" accessibilityRole="header">{copy.family}</AppText>{modes}<TextButton title={mapStrings[language].title} onPress={() => router.push('/family/map')} /><TextButton title={copy.retry} onPress={() => void query.reload()} /></View>
     {members.length ? <FamilyGraph members={members} onOpen={openMember} /> : errorOrEmpty}
   </AppScreen>;
   return <AppScreen padded={false}>
@@ -52,6 +53,7 @@ function FamilyDirectory({ accountId }: { accountId: number }) {
         <LargeTitleHeader title={copy.family} eyebrow={copy.eyebrow} subtitle={copy.subtitle} />{modes}
         {query.data ? <AppText tone="secondary">{copy.members(members.length)} · {copy.generations(generations.length)}</AppText> : null}
         <PrimaryButton title={copy.add} onPress={add} />
+        <TextButton title={mapStrings[language].title} onPress={() => router.push('/family/map')} />
         <MyLifeSearchField accessibilityLabel={copy.search} placeholder={copy.search} value={filters.query} onChangeText={value => updateFilter('query', value)} />
         <View style={styles.filterActions}><TextButton style={styles.filterButton} title={copy.filters} onPress={() => setShowFilters(value => !value)} accessibilityState={{ expanded: showFilters }} /><TextButton style={styles.filterButton} title={copy.clearFilters} onPress={() => setFilters(emptyFilters)} disabled={!filtered} /></View>
         {showFilters ? <View style={styles.header}>

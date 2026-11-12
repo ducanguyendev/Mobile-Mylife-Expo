@@ -1,0 +1,7 @@
+PASS: Native registration/login, serialized SecureStore adapter and session restoration
+PASS: Unrelated Expo phone edit preserves existing horizontal relation in both directions
+PASS: USER/ADMIN Backend restrictions and foreign member IDs remain authoritative
+PASS: Six expired-access calls share one refresh; pair persists and rotation rejects an unexpired old sid
+PASS: Native logout clears local storage and immediately revokes copied access/refresh tokens
+PASS: Logout racing with a delayed real refresh cannot resurrect SecureStore
+PASS: Invalid native session is rejected and cleared; anonymous family access is denied

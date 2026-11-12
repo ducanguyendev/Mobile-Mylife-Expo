@@ -1,0 +1,45 @@
+
+> mobile-mylife-expo@1.0.0 test:m4
+> node --test tests/m4-map.test.cjs
+
+✔ authoritative grouped snapshot retains backend key, averages and counts (3.181ms)
+✔ empty map is valid without synthetic pins (0.4065ms)
+✔ zero and inclusive coordinate boundaries are valid (0.2689ms)
+✔ reject nan coordinates before PUT (0.405ms)
+✔ reject infinity coordinates before PUT (0.1534ms)
+✔ reject latitude coordinates before PUT (0.1086ms)
+✔ reject longitude coordinates before PUT (0.1593ms)
+✔ reject string coordinates before PUT (0.1047ms)
+✔ manual payload strips unrelated metadata and retains zero (0.2082ms)
+✔ manual display name limit (0.2656ms)
+✔ reject malformed map id 0 (0.2255ms)
+✔ reject malformed map id -1 (0.1007ms)
+✔ reject malformed map id 1.2 (0.0875ms)
+✔ reject malformed map id 1 (0.0557ms)
+✔ reject malformed map id NaN (0.0544ms)
+✔ reject malformed map id 2147483648 (0.1239ms)
+✔ invalid member coordinate never becomes a pin (0.2447ms)
+✔ unknown status is not inferred from coordinates (0.1634ms)
+✔ invalid grouping, duplicate membership and summary inconsistencies fail closed (0.7167ms)
+✔ nonlocated stale numeric metadata does not create a map pin (0.4901ms)
+✔ Vietnamese name/address/group search is accent insensitive (0.2642ms)
+✔ filters distinguish location groups and unlocated people (0.1784ms)
+✔ search does not truncate 150 members (1.232ms)
+✔ camera fit handles empty, one and multiple locations with lon/lat ordering (0.3059ms)
+✔ polling stops without pending work and is bounded to six attempts (0.1042ms)
+✔ retry shows actual queue counts without claiming geocoded (0.1837ms)
+✔ location editor rejects changed location/address/member identity while allowing unrelated phone changes (0.6865ms)
+✔ save refreshes ownership, sends location-only PUT, then authoritative member/map GET (48.3327ms)
+✔ stale or switched-account save cannot PUT (86.4817ms)
+✔ aborted editor save cannot PUT (39.4697ms)
+✔ map API rejects a failed or missing envelope (49.1759ms)
+✔ late account-local response is discarded after cancellation (17.117ms)
+✔ VI/EN cover every backend status with distinct unavailable/pending meaning (10.7907ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 924.7179

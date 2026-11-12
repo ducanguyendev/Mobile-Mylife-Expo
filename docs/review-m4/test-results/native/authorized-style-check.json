@@ -1,0 +1,20 @@
+{
+  "authorizedByUser": true,
+  "publicTileKeyOnly": true,
+  "styles": [
+    {
+      "style": "lm",
+      "status": 200,
+      "styleVersion": 8,
+      "sourceCount": 1,
+      "layerCount": 192
+    },
+    {
+      "style": "dm",
+      "status": 200,
+      "styleVersion": 8,
+      "sourceCount": 1,
+      "layerCount": 193
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+package: com.anonymous.mylifemobile
+uses-permission: name='android.permission.SYSTEM_ALERT_WINDOW'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='32'
+uses-permission: name='android.permission.VIBRATE'
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE' maxSdkVersion='32'
+uses-permission: name='android.permission.CHANGE_WIFI_MULTICAST_STATE'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.ACCESS_LOCAL_NETWORK'
+uses-permission: name='android.permission.USE_BIOMETRIC'
+uses-permission: name='android.permission.USE_FINGERPRINT'
+permission: com.anonymous.mylifemobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='com.anonymous.mylifemobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'

@@ -54,3 +54,5 @@ example
 # M3 test-only .NET hosting adapter intermediates
 tests/fixtures/avatar-host/bin/
 tests/fixtures/avatar-host/obj/
+tests/fixtures/map-host/bin/
+tests/fixtures/map-host/obj/

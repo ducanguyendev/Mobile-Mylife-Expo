@@ -1,0 +1,55 @@
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>if "Windows_NT" == "Windows_NT" setlocal
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set DIRNAME=C:\Users\admin\AppData\Local\Android\Sdk\cmdline-tools\latest\bin\ 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>if "C:\Users\admin\AppData\Local\Android\Sdk\cmdline-tools\latest\bin\" == "" set DIRNAME=. 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set APP_BASE_NAME=avdmanager 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set APP_HOME=C:\Users\admin\AppData\Local\Android\Sdk\cmdline-tools\latest\bin\.. 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set DEFAULT_JVM_OPTS="-Dcom.android.sdkmanager.toolsdir=C:\Users\admin\AppData\Local\Android\Sdk\cmdline-tools\latest\bin\\.." 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>if defined JAVA_HOME goto findJavaFromJavaHome 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set JAVA_HOME=E:\AndroidStudio\jbr 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set JAVA_EXE=E:\AndroidStudio\jbr/bin/java.exe 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>if exist "E:\AndroidStudio\jbr/bin/java.exe" goto init 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>if not "Windows_NT" == "Windows_NT" goto win9xME_args 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set CMD_LINE_ARGS= 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set _SKIP=2 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>if "xcreate" == "x" goto execute 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set CMD_LINE_ARGS=create avd --name MyLife_M4 --package system-images;android-35;google_apis_playstore;x86_64 --path D:\DUAN\MYLIFE\Mobile-MyLife-Expo\.tmp\m4-avds\MyLife_M4.avd 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>setlocal enabledelayedexpansion 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>for /F "tokens=3" %a in ('""E:\AndroidStudio\jbr/bin/java.exe" -version 2>&1 |findstr "version""') do (for /F "tokens=1,2 delims=." %b in ('echo %a') do (set versionWithQ=%b%c ) ) 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>(for /F "tokens=1,2 delims=." %b in ('echo "25.0.2"') do (set versionWithQ=%b%c ) ) 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>(set versionWithQ="250 ) 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set version=!versionWithQ:"=! 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>if !version! LSS 170 if "" == "" (
+echo Java version 17 or higher is required.  
+ echo To override this check set SKIP_JDK_VERSION_CHECK  
+ goto :eof 
+) 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>set CLASSPATH=C:\Users\admin\AppData\Local\Android\Sdk\cmdline-tools\latest\bin\..\lib\avdmanager-classpath.jar 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>"E:\AndroidStudio\jbr/bin/java.exe" "-Dcom.android.sdkmanager.toolsdir=C:\Users\admin\AppData\Local\Android\Sdk\cmdline-tools\latest\bin\\.."    -classpath "C:\Users\admin\AppData\Local\Android\Sdk\cmdline-tools\latest\bin\..\lib\avdmanager-classpath.jar" com.android.sdklib.tool.AvdManagerCli create avd --name MyLife_M4 --package system-images;android-35;google_apis_playstore;x86_64 --path D:\DUAN\MYLIFE\Mobile-MyLife-Expo\.tmp\m4-avds\MyLife_M4.avd 
+Auto-selecting single ABI x86_64
+Do you wish to create a custom hardware profile? [no] 
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>if "0" == "0" goto mainEnd 
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo>if "Windows_NT" == "Windows_NT" endlocal

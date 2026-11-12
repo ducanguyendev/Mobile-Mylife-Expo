@@ -1,0 +1,37 @@
+{
+  "serial": "emulator-5584",
+  "avd": "MyLife_M4",
+  "physicalDevice": false,
+  "model": "sdk_gphone64_x86_64",
+  "api": "35",
+  "android": "15",
+  "bootCompleted": "1",
+  "size": "Physical size: 1080x2340",
+  "density": "Physical density: 440",
+  "fontScale": "1.0",
+  "runtime": "Installed custom SDK58/Fabric development APK; native VIETMAP3 initialized",
+  "viewports": [
+    {
+      "width": 1080,
+      "height": 2340,
+      "density": 440,
+      "fontScale": 1,
+      "approxWidthDp": 393
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "density": 320,
+      "fontScale": 1.3,
+      "widthDp": 360
+    },
+    {
+      "width": 1200,
+      "height": 1920,
+      "density": 240,
+      "fontScale": 1,
+      "widthDp": 800
+    }
+  ],
+  "finalColdStart": "Light/EN preferences and session restored at compact viewport"
+}

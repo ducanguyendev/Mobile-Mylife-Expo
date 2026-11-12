@@ -1,0 +1,20 @@
+{
+  "name": "@vietmap/vietmap-gl-react-native",
+  "version": "3.0.0",
+  "license": "MIT",
+  "peerDependencies": {
+    "@expo/config-plugins": ">=7",
+    "react": ">=18.2.0",
+    "react-native": ">=0.74.0"
+  },
+  "codegenConfig": {
+    "name": "VietmapReactNativeSpec",
+    "type": "all",
+    "jsSrcsDir": "src/specs",
+    "android": {
+      "javaPackageName": "org.maplibre.reactnative"
+    }
+  },
+  "tarballSHA1": "2f3da4a849a95fa1c86f07519f4be80d9335ee59",
+  "maplibreAlternative": "11.5.1, evaluated only"
+}

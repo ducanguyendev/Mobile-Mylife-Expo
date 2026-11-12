@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="3dd8ea4a-8820-4f86-a142-b704c3bc87eb" name="admin@DESKTOP-I8PMC0O 2026-11-11 11:43:31" runUser="DESKTOP-I8PMC0O\admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-11T11:43:31.3898595+07:00" queuing="2026-11-11T11:43:31.3898599+07:00" start="2026-11-11T11:43:09.0419356+07:00" finish="2026-11-11T11:43:31.7096987+07:00" />
+  <TestSettings name="default" id="4f3c2471-0962-42da-aa09-3a3562874955">
+    <Deployment runDeploymentRoot="admin_DESKTOP-I8PMC0O_2026-11-11_11_43_31" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="237d7f5a-2ab6-4fd4-b063-2931fb5bcb59" testId="a795c603-b759-dee6-b129-76529cf0acc4" testName="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 0, longitude: 180.09999999999999)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0000928" startTime="2026-11-11T11:43:31.3013335+07:00" endTime="2026-11-11T11:43:31.3015685+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="237d7f5a-2ab6-4fd4-b063-2931fb5bcb59" />
+    <UnitTestResult executionId="3b9025a7-f412-4385-aea0-6dcb73b3c54b" testId="4ebd805a-13fe-d78d-eb5c-fe9051ee046d" testName="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 1.7976931348623157E+308, longitude: 0)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0000652" startTime="2026-11-11T11:43:31.2521049+07:00" endTime="2026-11-11T11:43:31.2522254+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b9025a7-f412-4385-aea0-6dcb73b3c54b" />
+    <UnitTestResult executionId="5c1db794-5616-465b-ae4b-a54def96215a" testId="db38b818-53c6-4002-05f5-362a7cf44fff" testName="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 0, longitude: -∞)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0000660" startTime="2026-11-11T11:43:31.2512571+07:00" endTime="2026-11-11T11:43:31.2514001+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c1db794-5616-465b-ae4b-a54def96215a" />
+    <UnitTestResult executionId="1cf42f61-d020-4a5a-8b4e-d4c0cf2a35d2" testId="78d859e6-a248-9eb5-8960-7f8833dbed52" testName="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 0, longitude: -180.09999999999999)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0000610" startTime="2026-11-11T11:43:31.3021235+07:00" endTime="2026-11-11T11:43:31.3030525+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1cf42f61-d020-4a5a-8b4e-d4c0cf2a35d2" />
+    <UnitTestResult executionId="8b587e81-d510-46d3-a593-bf3e521d0178" testId="cfa5c2f0-3b20-f864-edf7-92c3069b846d" testName="FamilyLocationInputValidationTests.Zero_and_boundary_coordinates_pass_validation(latitude: 90, longitude: 180)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.7241123" startTime="2026-11-11T11:43:30.4848840+07:00" endTime="2026-11-11T11:43:31.1051006+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b587e81-d510-46d3-a593-bf3e521d0178" />
+    <UnitTestResult executionId="fddc3fc9-a11e-40eb-8b3e-6b663572a901" testId="30866d8c-db0f-e495-dab2-04707b7b5666" testName="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 90.099999999999994, longitude: 0)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0000876" startTime="2026-11-11T11:43:31.2517173+07:00" endTime="2026-11-11T11:43:31.2518536+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fddc3fc9-a11e-40eb-8b3e-6b663572a901" />
+    <UnitTestResult executionId="c9580016-7477-4d06-8adb-2a9580f2aca6" testId="9194f0a3-2128-b308-4e29-78283eb421dd" testName="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 0, longitude: NaN)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0000563" startTime="2026-11-11T11:43:31.3035195+07:00" endTime="2026-11-11T11:43:31.3037061+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9580016-7477-4d06-8adb-2a9580f2aca6" />
+    <UnitTestResult executionId="0b1cabe9-250f-4734-8a48-a8a4b21d2adf" testId="6024ca26-b5c8-de3e-5f61-5cd3bc1a3579" testName="FamilyLocationInputValidationTests.Zero_and_boundary_coordinates_pass_validation(latitude: 0, longitude: 0)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0001332" startTime="2026-11-11T11:43:31.2347864+07:00" endTime="2026-11-11T11:43:31.2349798+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b1cabe9-250f-4734-8a48-a8a4b21d2adf" />
+    <UnitTestResult executionId="9b8ef76d-dae2-44e6-82ba-4f0ecaab74ab" testId="d7f8e05f-f300-3321-4308-8a5d56d2ef3e" testName="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: -90.099999999999994, longitude: 0)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0089741" startTime="2026-11-11T11:43:31.2466249+07:00" endTime="2026-11-11T11:43:31.2467660+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b8ef76d-dae2-44e6-82ba-4f0ecaab74ab" />
+    <UnitTestResult executionId="c57e7438-42ee-4874-bf2b-5ceb0b1b93ee" testId="e07bfb1a-8638-91c4-6786-16ecec3a2a08" testName="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: NaN, longitude: 0)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0062902" startTime="2026-11-11T11:43:31.2470557+07:00" endTime="2026-11-11T11:43:31.2472098+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c57e7438-42ee-4874-bf2b-5ceb0b1b93ee" />
+    <UnitTestResult executionId="d9ce0478-cb34-4ef8-8541-29bfcf64d863" testId="e42cb9c7-b4da-c117-439a-305788b995aa" testName="FamilyLocationInputValidationTests.Zero_and_boundary_coordinates_pass_validation(latitude: -90, longitude: -180)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0019136" startTime="2026-11-11T11:43:31.2207212+07:00" endTime="2026-11-11T11:43:31.2210277+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9ce0478-cb34-4ef8-8541-29bfcf64d863" />
+    <UnitTestResult executionId="78bcad45-137f-447a-84a1-2edbc846c785" testId="c2a39270-9dd2-b059-66f6-15fc82a010a1" testName="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: ∞, longitude: 0)" computerName="DESKTOP-I8PMC0O" duration="00:00:00.0001247" startTime="2026-11-11T11:43:31.2474358+07:00" endTime="2026-11-11T11:43:31.2475495+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="78bcad45-137f-447a-84a1-2edbc846c785" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: NaN, longitude: 0)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="e07bfb1a-8638-91c4-6786-16ecec3a2a08">
+      <Execution id="c57e7438-42ee-4874-bf2b-5ceb0b1b93ee" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Invalid_coordinates_fail_validation_without_throwing" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Zero_and_boundary_coordinates_pass_validation(latitude: 90, longitude: 180)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="cfa5c2f0-3b20-f864-edf7-92c3069b846d">
+      <Execution id="8b587e81-d510-46d3-a593-bf3e521d0178" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Zero_and_boundary_coordinates_pass_validation" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 0, longitude: 180.09999999999999)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="a795c603-b759-dee6-b129-76529cf0acc4">
+      <Execution id="237d7f5a-2ab6-4fd4-b063-2931fb5bcb59" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Invalid_coordinates_fail_validation_without_throwing" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 1.7976931348623157E+308, longitude: 0)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="4ebd805a-13fe-d78d-eb5c-fe9051ee046d">
+      <Execution id="3b9025a7-f412-4385-aea0-6dcb73b3c54b" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Invalid_coordinates_fail_validation_without_throwing" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: ∞, longitude: 0)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="c2a39270-9dd2-b059-66f6-15fc82a010a1">
+      <Execution id="78bcad45-137f-447a-84a1-2edbc846c785" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Invalid_coordinates_fail_validation_without_throwing" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Zero_and_boundary_coordinates_pass_validation(latitude: 0, longitude: 0)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="6024ca26-b5c8-de3e-5f61-5cd3bc1a3579">
+      <Execution id="0b1cabe9-250f-4734-8a48-a8a4b21d2adf" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Zero_and_boundary_coordinates_pass_validation" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 0, longitude: -180.09999999999999)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="78d859e6-a248-9eb5-8960-7f8833dbed52">
+      <Execution id="1cf42f61-d020-4a5a-8b4e-d4c0cf2a35d2" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Invalid_coordinates_fail_validation_without_throwing" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 0, longitude: NaN)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="9194f0a3-2128-b308-4e29-78283eb421dd">
+      <Execution id="c9580016-7477-4d06-8adb-2a9580f2aca6" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Invalid_coordinates_fail_validation_without_throwing" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 90.099999999999994, longitude: 0)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="30866d8c-db0f-e495-dab2-04707b7b5666">
+      <Execution id="fddc3fc9-a11e-40eb-8b3e-6b663572a901" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Invalid_coordinates_fail_validation_without_throwing" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Zero_and_boundary_coordinates_pass_validation(latitude: -90, longitude: -180)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="e42cb9c7-b4da-c117-439a-305788b995aa">
+      <Execution id="d9ce0478-cb34-4ef8-8541-29bfcf64d863" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Zero_and_boundary_coordinates_pass_validation" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: 0, longitude: -∞)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="db38b818-53c6-4002-05f5-362a7cf44fff">
+      <Execution id="5c1db794-5616-465b-ae4b-a54def96215a" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Invalid_coordinates_fail_validation_without_throwing" />
+    </UnitTest>
+    <UnitTest name="FamilyLocationInputValidationTests.Invalid_coordinates_fail_validation_without_throwing(latitude: -90.099999999999994, longitude: 0)" storage="d:\duan\mylife\backend-mylife\tests\bin\release\net10.0\backend-mylife.tests.dll" id="d7f8e05f-f300-3321-4308-8a5d56d2ef3e">
+      <Execution id="9b8ef76d-dae2-44e6-82ba-4f0ecaab74ab" />
+      <TestMethod codeBase="D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="FamilyLocationInputValidationTests" name="Invalid_coordinates_fail_validation_without_throwing" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="a795c603-b759-dee6-b129-76529cf0acc4" executionId="237d7f5a-2ab6-4fd4-b063-2931fb5bcb59" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ebd805a-13fe-d78d-eb5c-fe9051ee046d" executionId="3b9025a7-f412-4385-aea0-6dcb73b3c54b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db38b818-53c6-4002-05f5-362a7cf44fff" executionId="5c1db794-5616-465b-ae4b-a54def96215a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78d859e6-a248-9eb5-8960-7f8833dbed52" executionId="1cf42f61-d020-4a5a-8b4e-d4c0cf2a35d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cfa5c2f0-3b20-f864-edf7-92c3069b846d" executionId="8b587e81-d510-46d3-a593-bf3e521d0178" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30866d8c-db0f-e495-dab2-04707b7b5666" executionId="fddc3fc9-a11e-40eb-8b3e-6b663572a901" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9194f0a3-2128-b308-4e29-78283eb421dd" executionId="c9580016-7477-4d06-8adb-2a9580f2aca6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6024ca26-b5c8-de3e-5f61-5cd3bc1a3579" executionId="0b1cabe9-250f-4734-8a48-a8a4b21d2adf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d7f8e05f-f300-3321-4308-8a5d56d2ef3e" executionId="9b8ef76d-dae2-44e6-82ba-4f0ecaab74ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e07bfb1a-8638-91c4-6786-16ecec3a2a08" executionId="c57e7438-42ee-4874-bf2b-5ceb0b1b93ee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e42cb9c7-b4da-c117-439a-305788b995aa" executionId="d9ce0478-cb34-4ef8-8541-29bfcf64d863" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2a39270-9dd2-b059-66f6-15fc82a010a1" executionId="78bcad45-137f-447a-84a1-2edbc846c785" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="12" executed="12" passed="12" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.03] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.10)&#xD;
+[xUnit.net 00:00:07.25]   Discovering: Backend-MyLife.Tests&#xD;
+[xUnit.net 00:00:08.82]   Discovered:  Backend-MyLife.Tests&#xD;
+[xUnit.net 00:00:09.07]   Starting:    Backend-MyLife.Tests&#xD;
+[xUnit.net 00:00:10.19]   Finished:    Backend-MyLife.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

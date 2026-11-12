@@ -1,0 +1,13 @@
+ApiError: Họ và tên không được chứa số hoặc ký tự đặc biệt.
+    at normalizeApiError (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\src\api\apiError.ts:35:12)
+    at apiFailure (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\src\api\apiClient.ts:205:52)
+    at apiRequest (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\src\api\apiClient.ts:54:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async account (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\real-backend.m4.cjs:9:119)
+    at async main (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\real-backend.m4.cjs:14:28) {
+  kind: 'validation',
+  status: 400,
+  code: undefined,
+  fieldErrors: { FullName: [ 'Họ và tên không được chứa số hoặc ký tự đặc biệt.' ] },
+  retryAfterSeconds: undefined
+}

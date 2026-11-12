@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "memberId": 131,
+  "latitude": 10.5,
+  "longitude": 106.5,
+  "source": "MANUAL",
+  "statusFromApi": "LOCATED",
+  "totalMembers": 112,
+  "locatedMembers": 7,
+  "groups": 4,
+  "webReadMatches": true,
+  "browserUIClaim": false,
+  "method": "Actual Android editor save, independent Bearer member GET and protected cookie/Origin/X-Requested-With map GET"
+}
