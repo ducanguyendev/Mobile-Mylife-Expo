@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "One-pointer pan only; no physical pinch/FPS claim",
+  "fitUiNodes": 653,
+  "panUiNodes": 558,
+  "changedVisibleCardBounds": 106,
+  "examples": [
+    {
+      "label": "Mở hồ sơ Synthetic Timeline Member 001, Thế hệ 1",
+      "before": "[27,845][39,855]",
+      "after": "[177,845][189,855]"
+    },
+    {
+      "label": "Mở hồ sơ Synthetic Timeline Member 046, Thế hệ 2",
+      "before": "[27,861][39,871]",
+      "after": "[177,861][189,871]"
+    },
+    {
+      "label": "Mở hồ sơ Synthetic Timeline Member 002, Thế hệ 1",
+      "before": "[42,845][54,855]",
+      "after": "[191,845][203,855]"
+    }
+  ]
+}

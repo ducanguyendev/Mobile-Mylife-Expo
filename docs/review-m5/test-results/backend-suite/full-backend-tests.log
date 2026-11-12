@@ -1,0 +1,8 @@
+  MyLife -> D:\DUAN\MYLIFE\Backend-MyLife\bin\Release\net10.0\MyLife.dll
+  Backend-MyLife.Tests -> D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll
+Test run for D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+WARNING: Overwriting results file: D:\DUAN\MYLIFE\Mobile-MyLife-Expo\docs\review-m5\test-results\backend-unit\backend-full-isolated.trx
+Results File: D:\DUAN\MYLIFE\Mobile-MyLife-Expo\docs\review-m5\test-results\backend-unit\backend-full-isolated.trx
+
+Passed!  - Failed:     0, Passed:   194, Skipped:     0, Total:   194, Duration: 48 s - Backend-MyLife.Tests.dll (net10.0)

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "filesScanned": 475,
+  "authorizedPublicKeyAndSyntheticPasswordLiteralHits": 0,
+  "credentialValuesRecorded": false,
+  "binaryScreenshots": "Secure fields masked by UI; XML secure text redacted by native helper",
+  "encodingFilesNormalized": 0
+}

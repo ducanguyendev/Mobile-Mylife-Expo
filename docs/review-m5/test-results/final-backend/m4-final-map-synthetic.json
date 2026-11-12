@@ -1,0 +1,156 @@
+{
+  "totalMembers": 8,
+  "locatedMembers": 4,
+  "unlocatedMembers": 4,
+  "pendingGeocodingMembers": 0,
+  "noAddressMembers": 1,
+  "failedGeocodingMembers": 3,
+  "members": [
+    {
+      "id": 19,
+      "fullName": "Synthetic M4 automatic",
+      "generation": 1,
+      "status": "LOCATED",
+      "address": "M4 synthetic success address",
+      "latitude": 10,
+      "longitude": 106,
+      "locationDisplayName": "Synthetic automatic result",
+      "locationSource": "GEOCODED"
+    },
+    {
+      "id": 17,
+      "fullName": "Synthetic M4 delayed",
+      "generation": 1,
+      "status": "LOCATED",
+      "address": "M4 synthetic delayed address",
+      "latitude": 21,
+      "longitude": 105,
+      "locationDisplayName": "Synthetic newer manual pin",
+      "locationSource": "MANUAL"
+    },
+    {
+      "id": 18,
+      "fullName": "Synthetic M4 failed",
+      "generation": 1,
+      "status": "FAILED",
+      "address": "M4 synthetic fail address",
+      "latitude": null,
+      "longitude": null,
+      "locationDisplayName": null,
+      "locationSource": null
+    },
+    {
+      "id": 12,
+      "fullName": "Synthetic M4 parent",
+      "generation": 1,
+      "status": "FAILED",
+      "address": "M4 synthetic changed address",
+      "latitude": null,
+      "longitude": null,
+      "locationDisplayName": null,
+      "locationSource": null
+    },
+    {
+      "id": 15,
+      "fullName": "Synthetic M4 sibling",
+      "generation": 1,
+      "status": "LOCATED",
+      "address": null,
+      "latitude": 90,
+      "longitude": 180,
+      "locationDisplayName": "User confirmed location",
+      "locationSource": "MANUAL"
+    },
+    {
+      "id": 13,
+      "fullName": "Synthetic M4 spouse",
+      "generation": 1,
+      "status": "LOCATED",
+      "address": null,
+      "latitude": 1e-7,
+      "longitude": 1e-7,
+      "locationDisplayName": "Synthetic nearby",
+      "locationSource": "MANUAL"
+    },
+    {
+      "id": 16,
+      "fullName": "Synthetic M4 unlocated",
+      "generation": 1,
+      "status": "FAILED",
+      "address": "M4 synthetic unavailable address",
+      "latitude": null,
+      "longitude": null,
+      "locationDisplayName": null,
+      "locationSource": null
+    },
+    {
+      "id": 14,
+      "fullName": "Synthetic M4 child",
+      "generation": 2,
+      "status": "NO_ADDRESS",
+      "address": null,
+      "latitude": null,
+      "longitude": null,
+      "locationDisplayName": null,
+      "locationSource": null
+    }
+  ],
+  "locations": [
+    {
+      "key": "c613ae6f330bdaac",
+      "displayName": "Synthetic automatic result",
+      "latitude": 10,
+      "longitude": 106,
+      "memberCount": 1,
+      "members": [
+        {
+          "id": 19,
+          "fullName": "Synthetic M4 automatic",
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "key": "e740abec6273ed1e",
+      "displayName": "Synthetic nearby",
+      "latitude": 1e-7,
+      "longitude": 1e-7,
+      "memberCount": 1,
+      "members": [
+        {
+          "id": 13,
+          "fullName": "Synthetic M4 spouse",
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "key": "c28c4c48e6bd043d",
+      "displayName": "Synthetic newer manual pin",
+      "latitude": 21,
+      "longitude": 105,
+      "memberCount": 1,
+      "members": [
+        {
+          "id": 17,
+          "fullName": "Synthetic M4 delayed",
+          "generation": 1
+        }
+      ]
+    },
+    {
+      "key": "b08a8e33a3f27583",
+      "displayName": "User confirmed location",
+      "latitude": 90,
+      "longitude": 180,
+      "memberCount": 1,
+      "members": [
+        {
+          "id": 15,
+          "fullName": "Synthetic M4 sibling",
+          "generation": 1
+        }
+      ]
+    }
+  ]
+}

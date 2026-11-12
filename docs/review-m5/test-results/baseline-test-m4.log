@@ -1,0 +1,51 @@
+
+> mobile-mylife-expo@1.0.0 test:m4
+> node --test tests/m4-map.test.cjs
+
+✔ authoritative grouped snapshot retains backend key, averages and counts (2.7248ms)
+✔ empty map is valid without synthetic pins (0.2551ms)
+✔ zero and inclusive coordinate boundaries are valid (0.1612ms)
+✔ reject nan coordinates before PUT (0.304ms)
+✔ reject infinity coordinates before PUT (0.146ms)
+✔ reject latitude coordinates before PUT (0.087ms)
+✔ reject longitude coordinates before PUT (0.0964ms)
+✔ reject string coordinates before PUT (0.0678ms)
+✔ manual payload strips unrelated metadata and retains zero (0.2402ms)
+✔ manual display name limit (0.2152ms)
+✔ reject malformed map id 0 (0.1599ms)
+✔ reject malformed map id -1 (0.0737ms)
+✔ reject malformed map id 1.2 (0.0485ms)
+✔ reject malformed map id 1 (0.0711ms)
+✔ reject malformed map id NaN (0.0673ms)
+✔ reject malformed map id 2147483648 (0.0563ms)
+✔ invalid member coordinate never becomes a pin (0.134ms)
+✔ unknown status is not inferred from coordinates (0.1159ms)
+✔ invalid grouping, duplicate membership and summary inconsistencies fail closed (0.7108ms)
+✔ nonlocated stale numeric metadata does not create a map pin (0.5142ms)
+✔ Vietnamese name/address/group search is accent insensitive (0.2105ms)
+✔ filters distinguish location groups and unlocated people (0.1415ms)
+✔ search does not truncate 150 members (0.9851ms)
+✔ camera fit handles empty, one and multiple locations with lon/lat ordering (0.2658ms)
+✔ polling stops without pending work and is bounded to six attempts (0.0768ms)
+✔ retry shows actual queue counts without claiming geocoded (0.1175ms)
+✔ location editor rejects changed location/address/member identity while allowing unrelated phone changes (0.3777ms)
+✔ save refreshes ownership, sends location-only PUT, then authoritative member/map GET (33.6236ms)
+✔ stale or switched-account save cannot PUT (40.6847ms)
+✔ aborted editor save cannot PUT (18.1257ms)
+✔ map API rejects a failed or missing envelope (19.5939ms)
+✔ late account-local response is discarded after cancellation (8.0808ms)
+✔ VI/EN cover every backend status with distinct unavailable/pending meaning (5.1707ms)
+✔ native picker tap is draft only; cancel/Android Back closes without any mutation (49.1537ms)
+✔ native editor submits only after explicit confirmation and validates empty numbers (48.827ms)
+✔ native map camera fits once, focuses selection, and does not recenter on polling (25.0076ms)
+✔ native map tap only forwards valid coordinates to draft picker (19.0027ms)
+✔ focus/background polling pauses, caps requests and stops after blur (24.5707ms)
+✔ VIETMAP entry retains real Fabric codegen types and leaves other Expo resolution intact (7553.2902ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8248.868

@@ -1,0 +1,157 @@
+{
+  "verdict": "PARTIAL PASS",
+  "releaseReadiness": "NOT READY",
+  "syntheticOnly": true,
+  "checks": [
+    {
+      "name": "Login/Home and complete523-event Timeline",
+      "status": "PASS",
+      "evidence": [
+        "11-login-result",
+        "13-timeline-loaded"
+      ]
+    },
+    {
+      "name": "Derived details read-only, profile and member Timeline",
+      "status": "PASS",
+      "evidence": [
+        "14-derived-anniversary-details",
+        "16-member-timeline",
+        "20-derived-birth-details"
+      ]
+    },
+    {
+      "name": "125-member picker draft cancel and confirmed primary/related",
+      "status": "PASS",
+      "evidence": [
+        "28-large-member-picker",
+        "32-picker-reopen",
+        "40-reviewed-native-event"
+      ]
+    },
+    {
+      "name": "Native CRUD and independent Web HTTP parity",
+      "status": "PASS",
+      "evidence": [
+        "native-crud-created",
+        "native-crud-edited",
+        "native-crud-deleted",
+        "native-crud-discarded"
+      ]
+    },
+    {
+      "name": "Unsaved draft Back warning/discard",
+      "status": "PASS",
+      "evidence": [
+        "63-unsaved-warning",
+        "64-discard-native-draft"
+      ]
+    },
+    {
+      "name": "Future Calendar/Library scope",
+      "status": "PASS",
+      "evidence": [
+        "114-final-calendar-scope",
+        "115-final-library-scope"
+      ]
+    },
+    {
+      "name": "Normalized Vietnamese search/full long text",
+      "status": "PASS",
+      "evidence": [
+        "69-long-title-result",
+        "84-full-long-title",
+        "86-compact-long-description"
+      ]
+    },
+    {
+      "name": "Theme/language and compact360dp/font130% cold restore",
+      "status": "PASS",
+      "evidence": [
+        "74-dark-mode",
+        "75-vietnamese-mode",
+        "77-compact-cold-restore",
+        "80-compact-year-events"
+      ]
+    },
+    {
+      "name": "Offline localized error/recovery without logout",
+      "status": "PASS",
+      "evidence": [
+        "90-offline-error",
+        "92-online-recovered"
+      ]
+    },
+    {
+      "name": "Graph fit and one-pointer pan",
+      "status": "PASS",
+      "evidence": [
+        "96-graph-fit",
+        "97-graph-pan",
+        "graph-pan-verification"
+      ]
+    },
+    {
+      "name": "Actual VIETMAP tiles after cold recovery",
+      "status": "PASS",
+      "evidence": [
+        "106-cold-map-tiles",
+        "117-final-map-tiles"
+      ]
+    },
+    {
+      "name": "Corrected same-stack Map/Timeline Back and visible Close",
+      "status": "PASS",
+      "evidence": [
+        "111-family-stack-timeline",
+        "112-family-stack-back-map",
+        "116-visible-close-back-map"
+      ]
+    },
+    {
+      "name": "Revoked real refresh session returns native to login",
+      "status": "PASS",
+      "evidence": [
+        "session-revocation",
+        "121-expiry-result"
+      ]
+    },
+    {
+      "name": "Initial lazy Map ReactHost reload/navigation reset",
+      "status": "OPEN",
+      "evidence": [
+        "98-map-regression",
+        "99-map-initialized",
+        "map-initial-diagnostic-redacted.log"
+      ]
+    },
+    {
+      "name": "Physical pinch/FPS/memory/long-session profiling",
+      "status": "NOT TESTED",
+      "evidence": []
+    },
+    {
+      "name": "TalkBack/VoiceOver/hardware keyboard/native reduced-motion focus",
+      "status": "NOT TESTED",
+      "evidence": []
+    },
+    {
+      "name": "iOS and physical Android",
+      "status": "NOT TESTED",
+      "evidence": []
+    },
+    {
+      "name": "Real Google Drive avatar lifecycle",
+      "status": "BLOCKED",
+      "evidence": []
+    }
+  ],
+  "excludedAttempts": [
+    "Startup actions before bundle readiness",
+    "101 absent target after initial Map reset",
+    "102 Android launcher",
+    "107/108 pre-fix cross-tab Back defect",
+    "119 initial idle-state dump failure"
+  ],
+  "transientExpiryToast": "NOT CAPTURED; final login/no Timeline confirmed"
+}

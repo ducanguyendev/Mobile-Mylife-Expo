@@ -1,0 +1,16 @@
+{
+  "verifiedOn": "2026-11-12",
+  "repository": "ducanguyendev/Backend-MyLife",
+  "localHead": "c1b43b1f83e17f9546edc9bb314b8345b8d947ad",
+  "branch": "feature_minhduc",
+  "remoteFile": "Features/FamilyTree/DTOs/UpdateFamilyMemberLocationDto.cs",
+  "remoteBlobSha": "96e2217aa22d9e42910f3948a56b85d0a929cd27",
+  "remoteRangeBounds": "integer: original defect remains",
+  "localRangeBounds": "double: preexisting uncommitted M4 fix",
+  "localRegressionCases": 12,
+  "localTestFileStatus": "preexisting untracked",
+  "targetedCasesPassed": 12,
+  "fullIsolatedBackendCasesPassed": 194,
+  "m5BackendSourceEdits": 0,
+  "commitOrPushPerformed": false
+}

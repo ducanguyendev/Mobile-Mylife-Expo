@@ -1,0 +1,17 @@
+
+> mobile-mylife-expo@1.0.0 test:integration:m5
+> node scripts/run-isolated-m5.cjs
+
+Integration: isolated-initdb
+Integration: isolated-postgres-start
+Integration: isolated-createdb
+Integration: isolated-backend-build
+Integration: avatar-contract-host-build
+Integration: final-integration
+Integration: m2-integration
+Integration: m3-integration
+Integration: m4-integration
+Integration: m5-integration
+M3 disposable native runtime ready. Create .tmp/m3-native-done to stop.
+Integration: isolated-dropdb
+Integration: isolated-postgres-stop

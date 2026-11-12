@@ -1,0 +1,13 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');const {createM3Runtime}=require('../tests/helpers/load-m3.cjs');
+const runtime=JSON.parse(fs.readFileSync('.tmp/m3-runtime.json','utf8')),user=JSON.parse(fs.readFileSync('.tmp/m5-native-user.json','utf8')),phase=process.argv[2];
+if(!/^mylife_m1_[a-f0-9]{12}$/.test(runtime.database)||new URL(runtime.api).hostname!=='127.0.0.1'||user.api!==runtime.api||!/^m5\.native\.\d+@gmail\.com$/.test(user.email)||!['created','edited','deleted','discarded'].includes(phase))throw Error('Disposable native QA context required');
+async function main(){const one=createM3Runtime(runtime.api);await one.context().login(user.email,user.password,false);const {timelineApi}=one.load('src/features/timeline/timeline-api.ts'),{eventWrite}=one.load('src/features/timeline/timeline-data.ts');const rows=await timelineApi.list();const selected=rows.filter(e=>/^Native QA/.test(e.title));
+ const cookies=new Map();const headers=()=>({'Content-Type':'application/json',Origin:'http://localhost:7000','X-Requested-With':'MyLife',Cookie:[...cookies].map(([k,v])=>k+'='+v).join('; ')});
+ const login=await fetch(runtime.api+'/api/login',{method:'POST',headers:headers(),body:JSON.stringify({email:user.email,password:user.password,rememberMe:false})});assert.equal(login.status,200);for(const c of login.headers.getSetCookie()){const pair=c.split(';')[0],at=pair.indexOf('=');cookies.set(pair.slice(0,at),pair.slice(at+1));}
+ const web=await fetch(runtime.api+'/api/family-tree/timeline',{headers:headers()});assert.equal(web.status,200);const webRows=(await web.json()).data;
+ if(phase==='created'||phase==='edited'){assert.equal(selected.length,1);const e=selected[0];assert.equal(e.title,phase==='created'?'Native QA Year Event':'Native QA Edited Event');assert.equal(e.eventDate,phase==='created'?null:'1996-02-29');assert.equal(e.eventYear,phase==='created'?1899:1996);assert.equal(e.isApproximate,true);assert.equal(e.memberId,user.members[124]);assert.equal(e.relatedMemberId,user.members[0]);assert.deepEqual(eventWrite(e),eventWrite(webRows.find(x=>x.id===e.id)));}
+ else if(phase==='deleted')assert.equal(selected.length,0);
+ else assert.equal(rows.some(e=>e.title==='Discarded Native QA Event'),false);
+ assert.equal(rows.length,webRows.length);assert.equal(rows.filter(e=>e.isDerived).length,3);
+ fs.writeFileSync(`docs/review-m5/test-results/native/native-crud-${phase}.json`,JSON.stringify({phase,status:'PASS',syntheticOnly:true,totalEvents:rows.length,derivedEvents:3,webHttpParity:true,events:selected},null,2));console.log('Verified native '+phase+' state and independent Web-compatible HTTP parity.');}
+main().catch(e=>{console.error(e.message);process.exitCode=1;});

@@ -1,0 +1,120 @@
+11-12 17:07:03.215 10692 10692 D AndroidRuntime: Shutting down VM
+11-12 17:07:04.368 10709 10709 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+11-12 17:07:27.950  1071  1083 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:07:58.066  1071  1083 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:08:28.216  1071  1083 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:09:01.351  1071  1418 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:09:01.674 10731 10731 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 17:09:01.682 10731 10731 I AndroidRuntime: Using default boot image
+11-12 17:09:01.682 10731 10731 I AndroidRuntime: Leaving lock profiling enabled
+11-12 17:09:01.790 10731 10731 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-12 17:09:01.851 10731 10731 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 17:09:03.942 10731 10731 D AndroidRuntime: Shutting down VM
+11-12 17:09:05.040 10788 10788 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+11-12 17:09:05.748 10798 10798 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 17:09:05.755 10798 10798 I AndroidRuntime: Using default boot image
+11-12 17:09:05.756 10798 10798 I AndroidRuntime: Leaving lock profiling enabled
+11-12 17:09:05.944 10798 10798 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-12 17:09:06.029 10798 10798 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 17:09:08.356 10798 10798 D AndroidRuntime: Shutting down VM
+11-12 17:09:10.447  1071  1083 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:09:10.597 10830 10830 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 17:09:10.626 10830 10830 I AndroidRuntime: Using default boot image
+11-12 17:09:10.628 10830 10830 I AndroidRuntime: Leaving lock profiling enabled
+11-12 17:09:10.806 10830 10830 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-12 17:09:10.870 10830 10830 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 17:09:12.313 10830 10830 D AndroidRuntime: Shutting down VM
+11-12 17:09:12.338  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask()
+11-12 17:09:12.338  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting createReactInstance task ref
+11-12 17:09:12.338  9587  9587 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Starting React Native reload
+11-12 17:09:12.339  9587  9587 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Calling ReactContext.onHostPause()
+11-12 17:09:12.342  9587  9587 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(callWithExistingReactInstance(callFunctionOnModule("RCTDeviceEventEmitter", "emit"))): Execute: reactInstance is null. Dropping work.
+11-12 17:09:12.343  9587  9587 E unknown:ReactHost: Unhandled SoftException
+11-12 17:09:12.343  9587  9587 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(callWithExistingReactInstance(callFunctionOnModule("RCTDeviceEventEmitter", "emit"))): Execute: reactInstance is null. Dropping work.
+11-12 17:09:12.343  9587  9587 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-12 17:09:12.343  9587  9587 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-12 17:09:12.343  9587  9587 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReloadTask$lambda$52(ReactHostImpl.kt:1335)
+11-12 17:09:12.343  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Stopping all React Native surfaces
+11-12 17:09:12.416  9587  9587 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Removing memory pressure listener
+11-12 17:09:12.416  9587  9587 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting ReactContext ref
+11-12 17:09:12.416  9587  9587 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Destroying ReactContext
+11-12 17:09:12.416  9587  9587 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Calling DevSupportManager.onReactInstanceDestroyed(reactContext)
+11-12 17:09:12.501  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting ReactInstance ptr
+11-12 17:09:12.501  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Destroying ReactInstance
+11-12 17:09:12.519  9587  9628 I ExpoModulesCore: ✅ ModuleRegistry was destroyed
+11-12 17:09:12.523  9587  9628 I ExpoModulesCore: ✅ AppContext was destroyed
+11-12 17:09:12.524  9587  9628 I ExpoModulesCore: ✅ KotlinInteropModuleRegistry was destroyed
+11-12 17:09:12.753  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting start task ref
+11-12 17:09:13.207  9587  9591 I us.mylifemobile: Method exceeds compiler instruction limit: 25096 in expo.modules.kotlin.modules.ModuleDefinitionData expo.modules.filesystem.FileSystemModule.definition()
+11-12 17:09:13.216  9587  9628 I ExpoModulesCore: ✅ AppContext was initialized
+11-12 17:09:13.331  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Restarting previously running React Native Surfaces
+11-12 17:09:13.331  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting reload task ref
+11-12 17:09:13.345 10862 10862 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+11-12 17:09:13.762  9587 10855 I ExpoModulesCore: ✅ JSI interop was installed
+11-12 17:09:13.765  9587 10855 I ExpoModulesCore: ✅ Constants were exported
+11-12 17:09:13.880  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class expo.modules.kotlin.views.GroupViewManagerWrapper
+11-12 17:09:13.886  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNBackgroundLayerManager
+11-12 17:09:13.887  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNMarkerViewManager
+11-12 17:09:13.891  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNCircleLayerManager
+11-12 17:09:13.897  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNFillLayerManager
+11-12 17:09:13.901  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.light.MLRNLightManager
+11-12 17:09:13.901  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.images.MLRNImagesManager
+11-12 17:09:13.903  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNShapeSourceManager
+11-12 17:09:13.908  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNRasterLayerManager
+11-12 17:09:13.913  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.location.MLRNNativeUserLocationManager
+11-12 17:09:13.916  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNRasterSourceManager
+11-12 17:09:13.920  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNAndroidTextureMapViewManager
+11-12 17:09:13.921  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNMapViewManager$MapShadowNode
+11-12 17:09:13.923  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNImageSourceManager
+11-12 17:09:13.927  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNVectorSourceManager
+11-12 17:09:13.934  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNHeatmapLayerManager
+11-12 17:09:13.936  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNCalloutManager
+11-12 17:09:13.938  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.camera.MLRNCameraManager
+11-12 17:09:13.940  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNMapViewManager
+11-12 17:09:13.943  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNPointAnnotationManager
+11-12 17:09:13.948  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNSymbolLayerManager
+11-12 17:09:13.953  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNFillExtrusionLayerManager
+11-12 17:09:13.953  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNLineLayerManager
+11-12 17:09:14.661 10875 10875 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 17:09:14.665 10875 10875 I AndroidRuntime: Using default boot image
+11-12 17:09:14.665 10875 10875 I AndroidRuntime: Leaving lock profiling enabled
+11-12 17:09:14.756 10875 10875 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-12 17:09:14.800 10875 10875 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 17:09:15.197  9587 10855 I ReactNativeJS: Running "main" with {"rootTag":1,"initialProps":{},"fabric":true}
+11-12 17:09:15.443  9587  9587 I ExpoModulesCore: ✅ JSI interop was installed
+11-12 17:09:19.231 10875 10875 D AndroidRuntime: Shutting down VM
+11-12 17:09:20.241 10900 10900 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+11-12 17:09:37.547  1071  1080 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:10:07.693  1071  1418 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:10:37.810  1071  1080 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:10:45.431 10919 10919 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 17:10:45.436 10919 10919 I AndroidRuntime: Using default boot image
+11-12 17:10:45.436 10919 10919 I AndroidRuntime: Leaving lock profiling enabled
+11-12 17:10:45.523 10919 10919 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-12 17:10:45.592 10919 10919 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 17:10:46.666 10919 10919 D AndroidRuntime: Shutting down VM
+11-12 17:10:47.772 10938 10938 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+11-12 17:10:48.519 10948 10948 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 17:10:48.523 10948 10948 I AndroidRuntime: Using default boot image
+11-12 17:10:48.523 10948 10948 I AndroidRuntime: Leaving lock profiling enabled
+11-12 17:10:48.659 10948 10948 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-12 17:10:48.738 10948 10948 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 17:10:49.885 10948 10948 D AndroidRuntime: Shutting down VM
+11-12 17:10:51.019   859   994 V WindowManagerShell: Transition requested (#23): android.os.BinderProxy@ae1f726 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=19 displayId=0 isRunning=false baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} numActivities=0 lastActiveTime=1784107 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@8e7ff67} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 23 }
+11-12 17:10:51.042   464   464 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+11-12 17:10:51.200  1120  1570 D OneSearchSuggestProvider: java.util.concurrent.CompletionException: java.util.NoSuchElementException: No value present
+11-12 17:10:51.200  1120  1570 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2138)
+11-12 17:10:51.200  1120  1570 D OneSearchSuggestProvider: Caused by: java.util.NoSuchElementException: No value present
+11-12 17:10:51.279   602   623 V WindowManager: Sent Transition (#23) createdAt=11-12 17:10:51.018 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=19 displayId=0 isRunning=false baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} numActivities=0 lastActiveTime=1784107 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{a0d9236 Task{88fdba #19 type=standard A=10209:com.anonymous.mylifemobile}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 23 }
+11-12 17:10:52.245 10985 10985 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 17:10:52.253 10985 10985 I AndroidRuntime: Using default boot image
+11-12 17:10:52.253 10985 10985 I AndroidRuntime: Leaving lock profiling enabled
+11-12 17:10:52.337 10985 10985 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-12 17:10:52.382 10985 10985 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 17:10:53.488 10985 10985 D AndroidRuntime: Shutting down VM
+11-12 17:10:54.535 11007 11007 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+11-12 17:11:10.958  1071  1563 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:11:41.066  1071  1563 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:12:11.193  1071  1418 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:12:14.199  1071  2141 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+11-12 17:12:17.195  1071  1081 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0

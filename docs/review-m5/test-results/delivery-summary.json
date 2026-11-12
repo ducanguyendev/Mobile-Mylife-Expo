@@ -1,0 +1,34 @@
+{
+  "developmentVerdict": "PARTIAL PASS",
+  "applicationReleaseReadiness": "NOT READY",
+  "unitJsUnique": 175,
+  "m5Unit": 60,
+  "authIncludedInFoundation": 10,
+  "backendFull": 194,
+  "backendDtoIncluded": 12,
+  "realApiScenarioGroups": {
+    "M1": 7,
+    "M2": 6,
+    "M3": 12,
+    "M4": 17,
+    "M5": 21
+  },
+  "realApiScenarioGroupsTotal": 63,
+  "contrast": 14,
+  "audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 14,
+    "high": 0,
+    "critical": 0,
+    "total": 14
+  },
+  "m4Ci": "VERIFIED PASS:43173508106",
+  "m5Ci": "NOT RUN; workflow extended locally",
+  "native": "PARTIAL PASS; covered scenarios PASS; first lazy Map reload OPEN; physical/iOS/accessibility/performance gates retained",
+  "reports": 12,
+  "dependenciesAdded": 0,
+  "nativeBuild": "Existing verified M4 development APK reused",
+  "isolatedBackendTeardownVerified": true,
+  "noCommitPushPrDeploy": true
+}

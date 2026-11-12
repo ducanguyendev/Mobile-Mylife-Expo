@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "trackedInheritedTestsAndScriptsCompared": 26,
+  "changedInherited": [],
+  "comparison": "Content compared to starting unchanged HEAD; CRLF normalized",
+  "preservedHashes": {
+    "package-lock.json": "65618b345ea58c74de95598540dc9be999c8e961e0f9ac4b629300c0ab84a8e8",
+    "app.json": "80b850f6b57e075170f4900bfcd15fa2dc5b3cde807de040eb617c5a7b141f7a",
+    "metro.config.js": "9421dd0ce8c59502db0f92e76e53fc29399d7dbd3c7ac04507c10de180050c87"
+  }
+}

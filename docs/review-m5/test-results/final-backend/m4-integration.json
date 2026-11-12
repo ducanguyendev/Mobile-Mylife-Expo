@@ -1,0 +1,860 @@
+{
+  "checks": [
+    {
+      "name": "Empty map uses actual API counts and no synthetic production pins",
+      "status": "PASS"
+    },
+    {
+      "name": "Manual zero-coordinate PUT/refetch preserves spouse, children and horizontal relations",
+      "status": "PASS"
+    },
+    {
+      "name": "Backend five-decimal grouping, average coordinates, counts and unavailable status",
+      "status": "PASS"
+    },
+    {
+      "name": "Phone-only update preserves manual location",
+      "status": "PASS"
+    },
+    {
+      "name": "Relationship-only update preserves manual location and existing child/spouse",
+      "status": "PASS"
+    },
+    {
+      "name": "Avatar upload and replacement preserve manual coordinates (contract provider)",
+      "status": "PASS"
+    },
+    {
+      "name": "Expo manual locations, group keys, counts and sources read identically through Web cookie transport",
+      "status": "PASS"
+    },
+    {
+      "name": "Web-compatible location PUT appears through Expo reads",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale editor refuses to overwrite newer coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "Web address change invalidates old location; Expo detects stale address without erasing avatar/relations",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated map GET adds no client mutation and preserves manual member metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "Disabled geocoding returns actual zero queued/skipped counts and preserves manual pin",
+      "status": "PASS"
+    },
+    {
+      "name": "Foreign accounts, ADMIN and anonymous map/retry/location requests are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Backend rejects invalid coordinates/name length and accepts inclusive boundary coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "Real background queue cannot overwrite a newer manual pin after an in-flight synthetic geocoder returns",
+      "status": "PASS"
+    },
+    {
+      "name": "Enabled retry reports queued work separately from lookup success and skips manual pins",
+      "status": "PASS"
+    },
+    {
+      "name": "Real queue persists GEOCODED source through a synthetic test-only service",
+      "status": "PASS"
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/12/location",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/13/location",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/12/avatar",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/12/avatar",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/12/location",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/12",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/13",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/13",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/map/retry-geocoding",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/13",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/12/location",
+      "status": 404
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/map/retry-geocoding",
+      "status": 403
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/12/location",
+      "status": 403
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/13/location",
+      "status": 400
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/13/location",
+      "status": 400
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/13/location",
+      "status": 400
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/13/location",
+      "status": 400
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/15/location",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/15",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/17/location",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/17",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 401
+    },
+    {
+      "method": "POST",
+      "path": "/api/refresh-token",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/map",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/map/retry-geocoding",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 401
+    },
+    {
+      "method": "POST",
+      "path": "/api/refresh-token",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/19",
+      "status": 200
+    }
+  ],
+  "transport": "Real Kestrel/PostgreSQL. Native bridges adapted; browser-compatible HTTP, no browser UI claim. Synthetic contract geocoder/avatar only."
+}

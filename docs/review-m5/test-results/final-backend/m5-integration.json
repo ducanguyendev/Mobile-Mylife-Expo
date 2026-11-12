@@ -1,0 +1,541 @@
+{
+  "checks": [
+    {
+      "name": "Real derived birth/death events have correct negative identities and read-only sources",
+      "status": "PASS"
+    },
+    {
+      "name": "Web cookie login stays separate from native Bearer/omit credentials",
+      "status": "PASS"
+    },
+    {
+      "name": "Expo creates real year-only approximate event; Web reads identical date/source/member/zero coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "Web update round-trips into Expo; exact leap date controls stored year",
+      "status": "PASS"
+    },
+    {
+      "name": "Member Timeline includes both primary and related member matches without client derivation",
+      "status": "PASS"
+    },
+    {
+      "name": "Anniversary derivation uses original solar date and retains read-only source trace",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual Expo mutation layer emits no HTTP for derived edit/delete",
+      "status": "PASS"
+    },
+    {
+      "name": "Raw negative derived DELETE cannot remove source-derived events",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale edit rejected after fresh authoritative GET; newer Web event preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale delete blocked before destructive request",
+      "status": "PASS"
+    },
+    {
+      "name": "Editing exact date to approximate year0099 preserves null date and chronology",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical year0001 remains valid and sorts before year-only0099",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing writable legacy type survives edit without exposing it for normal creation",
+      "status": "PASS"
+    },
+    {
+      "name": "Real Backend rejects invalid type/year/date/title/text/paired/nonfinite coordinates with400",
+      "status": "PASS"
+    },
+    {
+      "name": "Foreign event writes, member assignments and member Timeline access fail; second account sees no old events",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN Timeline list/member/create/update/delete rejected with403",
+      "status": "PASS"
+    },
+    {
+      "name": "Anonymous Timeline list/member/create/update/delete all rejected401",
+      "status": "PASS"
+    },
+    {
+      "name": "Web cookie mutation without trusted Origin/CSRF-related header rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Unrelated Timeline mutation preserves member relationships/avatar/location and all derived sources",
+      "status": "PASS"
+    },
+    {
+      "name": "Real DELETE reconciles authoritative removal in Expo/Web; already deleted record is safe",
+      "status": "PASS"
+    },
+    {
+      "name": "Logout clears native token storage; stale account mutation blocked and other account remains isolated",
+      "status": "PASS"
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 201,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/timeline/530",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/152/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/151/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 201,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/timeline/-302",
+      "status": 404,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/timeline/530",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 201,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 201,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/timeline/532",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 404,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 404,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/151/timeline",
+      "status": 404,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/timeline/530",
+      "status": 404,
+      "transport": "Bearer"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/timeline/530",
+      "status": 404,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 403,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 403,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/151/timeline",
+      "status": 403,
+      "transport": "Bearer"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/timeline/530",
+      "status": 403,
+      "transport": "Bearer"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/timeline/530",
+      "status": 403,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/151",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/timeline",
+      "status": 201,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/151",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/timeline/530",
+      "status": 204,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/logout",
+      "status": 200,
+      "transport": "Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Bearer"
+    }
+  ],
+  "transport": "Real Kestrel/PostgreSQL; native bridge adapted; Web cookie/Origin/X-Requested-With HTTP, not browser UI."
+}

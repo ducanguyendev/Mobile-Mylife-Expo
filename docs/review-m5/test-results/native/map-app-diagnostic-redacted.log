@@ -1,0 +1,180 @@
+11-12 17:09:12.538  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.538  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.538  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.539  9587  9651 W ReactNativeJNI: UIManagerBinding::~UIManagerBinding() was called (address: 0x78bd1327a5a8).
+11-12 17:09:12.539  9587  9651 W ReactNativeJNI: UIManager::~UIManager() was called (address: 0x78bcd3276410).
+11-12 17:09:12.567  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.572  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.573  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.573  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.573  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.574  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.574  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.574  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.574  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.574  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.574  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.575  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.576  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.577  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.580  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.580  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.586  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.587  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.588  9587  9651 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+11-12 17:09:12.753  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting start task ref
+11-12 17:09:12.754  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-12 17:09:12.754  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+11-12 17:09:12.754  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+11-12 17:09:12.754  9587  9628 W unknown:BridgelessReact: ReactHost{0}.isMetroRunning()
+11-12 17:09:12.756  9587 10852 D TrafficStats: tagSocket(5) with statsTag=0xffffffff, statsUid=-1
+11-12 17:09:12.771  9587 10852 W unknown:BridgelessReact: ReactHost{0}.isMetroRunning(): Async result = true
+11-12 17:09:12.773  9587  9628 W unknown:BridgelessReact: ReactHost{0}.loadJSBundleFromMetro()
+11-12 17:09:12.779  9587 10853 D TrafficStats: tagSocket(115) with statsTag=0xffffffff, statsUid=-1
+11-12 17:09:13.139  9587 10853 W unknown:BridgelessReact: ReactHost{0}.loadJSBundleFromMetro(): Creating BundleLoader
+11-12 17:09:13.139  9587  9587 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@2aa03f3
+11-12 17:09:13.140  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating BridgelessReactContext
+11-12 17:09:13.140  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+11-12 17:09:13.207  9587  9591 I us.mylifemobile: Method exceeds compiler instruction limit: 25096 in expo.modules.kotlin.modules.ModuleDefinitionData expo.modules.filesystem.FileSystemModule.definition()
+11-12 17:09:13.216  9587  9628 I ExpoModulesCore: ✅ AppContext was initialized
+11-12 17:09:13.219  9587  9628 W ReactNativeJNI: Codegen component descriptors were not configured from JNI_OnLoad
+11-12 17:09:13.329  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+11-12 17:09:13.329  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): DevSupportManager.onNewReactContextCreated()
+11-12 17:09:13.330  9587 10855 W ReactNativeJNI: ReactInstance: evaluateJavaScript() with JS bundle
+11-12 17:09:13.331  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Restarting previously running React Native Surfaces
+11-12 17:09:13.331  9587  9587 W unknown:ReactNative: Packager connection already open, nooping.
+11-12 17:09:13.331  9587  9587 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-12 17:09:13.331  9587  9628 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting reload task ref
+11-12 17:09:13.333  9587  9587 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+11-12 17:09:13.761  9587 10855 W BridgelessReactContext: [WARNING] Bridgeless doesn't support CatalystInstance. Accessing an API that's not part of the new architecture is not encouraged usage.
+11-12 17:09:13.762  9587 10855 I ExpoModulesCore: ✅ JSI interop was installed
+11-12 17:09:13.765  9587 10855 I ExpoModulesCore: ✅ Constants were exported
+11-12 17:09:13.879  9587 10855 W [RNScreens]: InsetObserverProxy registers on new context while it has not been invalidated on the old one. Please report this as issue at [redacted URL]
+11-12 17:09:13.880  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class expo.modules.kotlin.views.GroupViewManagerWrapper
+11-12 17:09:13.883  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+11-12 17:09:13.886  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNBackgroundLayerManager
+11-12 17:09:13.887  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNMarkerViewManager
+11-12 17:09:13.889  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenContainerViewManager
+11-12 17:09:13.891  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNCircleLayerManager
+11-12 17:09:13.897  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNFillLayerManager
+11-12 17:09:13.898  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.reanimated.view.REASharedTransitionBoundaryManager
+11-12 17:09:13.901  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.light.MLRNLightManager
+11-12 17:09:13.901  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.images.MLRNImagesManager
+11-12 17:09:13.903  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.tabs.host.TabsHostViewManager
+11-12 17:09:13.903  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNShapeSourceManager
+11-12 17:09:13.905  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderConfigViewManager
+11-12 17:09:13.907  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderSubviewManager
+11-12 17:09:13.908  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNRasterLayerManager
+11-12 17:09:13.910  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.modals.formsheet.FormSheetHostViewManager
+11-12 17:09:13.913  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.location.MLRNNativeUserLocationManager
+11-12 17:09:13.916  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNRasterSourceManager
+11-12 17:09:13.917  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.scrollviewmarker.ScrollViewMarkerViewManager
+11-12 17:09:13.918  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.modals.formsheet.FormSheetContentWrapperViewManager
+11-12 17:09:13.919  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenContentWrapperManager
+11-12 17:09:13.920  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNAndroidTextureMapViewManager
+11-12 17:09:13.921  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNMapViewManager$MapShadowNode
+11-12 17:09:13.922  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.stack.screen.StackScreenViewManager
+11-12 17:09:13.923  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNImageSourceManager
+11-12 17:09:13.927  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNVectorSourceManager
+11-12 17:09:13.928  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaViewManager
+11-12 17:09:13.931  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaViewShadowNode
+11-12 17:09:13.932  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenViewManager
+11-12 17:09:13.934  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNHeatmapLayerManager
+11-12 17:09:13.935  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.stack.header.config.StackHeaderConfigViewManager
+11-12 17:09:13.936  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNCalloutManager
+11-12 17:09:13.937  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaProviderManager
+11-12 17:09:13.937  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.SearchBarManager
+11-12 17:09:13.938  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.camera.MLRNCameraManager
+11-12 17:09:13.940  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNMapViewManager
+11-12 17:09:13.941  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.stack.host.StackHostViewManager
+11-12 17:09:13.943  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNPointAnnotationManager
+11-12 17:09:13.944  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenFooterManager
+11-12 17:09:13.945  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ModalScreenViewManager
+11-12 17:09:13.946  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.safearea.SafeAreaViewManager
+11-12 17:09:13.947  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackViewManager
+11-12 17:09:13.948  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNSymbolLayerManager
+11-12 17:09:13.951  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.stack.header.subview.StackHeaderSubviewViewManager
+11-12 17:09:13.952  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.reactnative.maskedview.RNCMaskedViewManager
+11-12 17:09:13.953  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNFillExtrusionLayerManager
+11-12 17:09:13.953  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNLineLayerManager
+11-12 17:09:13.956  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.tabs.screen.TabsScreenViewManager
+11-12 17:09:14.532  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeMergeManager
+11-12 17:09:14.535  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.VirtualViewManager$RenderableShadowNode
+11-12 17:09:14.539  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.safeareaview.ReactSafeAreaViewManager
+11-12 17:09:14.543  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerDetectorViewManager
+11-12 17:09:14.548  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$LinearGradientManager
+11-12 17:09:14.552  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+11-12 17:09:14.556  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeColorMatrixManager
+11-12 17:09:14.560  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$SymbolManager
+11-12 17:09:14.567  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$PatternManager
+11-12 17:09:14.573  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.SvgViewManager
+11-12 17:09:14.581  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+11-12 17:09:14.585  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$UseViewManager
+11-12 17:09:14.590  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$TSpanViewManager
+11-12 17:09:14.597  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FilterManager
+11-12 17:09:14.601  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$MarkerManager
+11-12 17:09:14.606  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager
+11-12 17:09:14.614  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$ForeignObjectManager
+11-12 17:09:14.619  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$GroupViewManager
+11-12 17:09:14.625  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$TextViewManager
+11-12 17:09:14.630  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$ImageViewManager
+11-12 17:09:14.636  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeCompositeManager
+11-12 17:09:14.642  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$RadialGradientManager
+11-12 17:09:14.646  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+11-12 17:09:14.650  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeOffsetManager
+11-12 17:09:14.653  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$PathViewManager
+11-12 17:09:14.659  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+11-12 17:09:14.663  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+11-12 17:09:14.668  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$DefsViewManager
+11-12 17:09:14.675  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.debuggingoverlay.DebuggingOverlayManager
+11-12 17:09:14.679  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeGaussianBlurManager
+11-12 17:09:14.683  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+11-12 17:09:14.688  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+11-12 17:09:14.694  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+11-12 17:09:14.698  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$ClipPathViewManager
+11-12 17:09:14.705  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeBlendManager
+11-12 17:09:14.710  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+11-12 17:09:14.715  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$CircleViewManager
+11-12 17:09:14.728  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+11-12 17:09:14.736  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$EllipseViewManager
+11-12 17:09:14.742  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$LineViewManager
+11-12 17:09:14.750  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeFloodManager
+11-12 17:09:14.755  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+11-12 17:09:14.762  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$MaskManager
+11-12 17:09:14.783  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$RectViewManager
+11-12 17:09:14.789  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$TextPathViewManager
+11-12 17:09:14.799  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+11-12 17:09:14.811  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+11-12 17:09:14.820  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.SelectableTextViewManager
+11-12 17:09:14.826  9587  9594 W System  : A resource failed to call close. 
+11-12 17:09:14.842  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerRootViewManager
+11-12 17:09:14.855  9587 10855 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.virtual.view.ReactVirtualViewManager
+11-12 17:09:14.944  9587 10852 D TrafficStats: tagSocket(187) with statsTag=0xffffffff, statsUid=-1
+11-12 17:09:15.197  9587 10855 I ReactNativeJS: Running "main" with {"rootTag":1,"initialProps":{},"fabric":true}
+11-12 17:09:15.235  9587 10888 D TrafficStats: tagSocket(215) with statsTag=0xffffffff, statsUid=-1
+11-12 17:09:15.443  9587  9587 I ExpoModulesCore: ✅ JSI interop was installed
+11-12 17:09:15.736  9587  9616 D EGL_emulation: app_time_stats: avg=288.33ms min=4.35ms max=3224.02ms count=14
+11-12 17:09:16.324  9587  9594 W System  : A resource failed to call close. 
+11-12 17:09:16.609  9587 10890 D TrafficStats: tagSocket(116) with statsTag=0xffffffff, statsUid=-1
+11-12 17:09:16.763  9587  9616 D EGL_emulation: app_time_stats: avg=24.69ms min=2.62ms max=287.53ms count=30
+11-12 17:09:17.644  9587 10855 I ReactNativeJNI: instanceHandle is null, event of type topTransitionProgress will be dropped
+11-12 17:09:17.696  9587 10894 D TrafficStats: tagSocket(117) with statsTag=0xffffffff, statsUid=-1
+11-12 17:09:17.799  9587  9616 D EGL_emulation: app_time_stats: avg=34.57ms min=3.31ms max=629.68ms count=23
+11-12 17:09:19.482  9587  9616 D EGL_emulation: app_time_stats: avg=57.88ms min=5.86ms max=945.67ms count=26
+11-12 17:10:17.307  9587  9592 I us.mylifemobile: Background concurrent mark compact GC freed 11MB AllocSpace bytes, 46(1600KB) LOS objects, 49% free, 14MB/29MB, paused 578us,6.176ms total 125.014ms
+11-12 17:10:51.034  9587  9587 W unknown:BridgelessReact: ReactHost{0}.onHostPause(activity)
+11-12 17:10:51.036  9587  9587 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostPause()
+11-12 17:10:51.114  9587  9616 D EGL_emulation: app_time_stats: avg=5379.87ms min=4.47ms max=91324.70ms count=17
+11-12 17:10:51.935  9587  9587 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+11-12 17:10:52.011  9587  9628 I ReactNativeJNI: Memory warning (pressure level: TRIM_MEMORY_BACKGROUND) received by JS VM, running a GC
+11-12 17:10:52.082  9587  9587 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@8ba5a1e
+11-12 17:10:52.107  9587  9587 W unknown:BridgelessReact: ReactHost{0}.stopSurface(surfaceId = 1): Schedule
+11-12 17:10:52.107  9587  9587 W unknown:BridgelessReact: ReactHost{0}.detachSurface(surfaceId = 1)
+11-12 17:10:52.107  9587  9587 W unknown:BridgelessReact: ReactHost{0}.onHostDestroy(activity)
+11-12 17:10:52.108  9587  9587 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostDestroy()
+11-12 17:10:52.111  9587  9628 W unknown:BridgelessReact: ReactHost{0}.stopSurface(surfaceId = 1): Execute
+11-12 17:10:52.112  9587  9628 E unknown:SurfaceMountingManager: Stopping surface [1]
+11-12 17:10:52.188  9587  9587 E unknown:ReactNative: Tried to remove non-existent frame callback
+11-12 17:10:52.189  9587  9587 E unknown:SurfaceMountingManager: Surface [1] was stopped on SurfaceMountingManager.
+11-12 17:11:01.972   602   719 D ActivityManager: freezing 9587 com.anonymous.mylifemobile
+11-12 17:13:46.883   390   390 I Zygote  : Process 9587 exited due to signal 9 (Killed)

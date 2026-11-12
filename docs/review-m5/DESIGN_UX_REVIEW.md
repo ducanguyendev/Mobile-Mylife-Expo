@@ -1,0 +1,9 @@
+# Timeline design and accessibility
+
+Memories now uses a real vertical SectionList with ascending sticky year hierarchy, visible/total counts, wrapping Web-equivalent filter pills and normalized title/member/place search. Virtualized events and member selectors avoid nested unbounded ScrollViews or result slicing. Profile's existing five-item summary remains explicitly a preview; new full member Timeline action loads the correct endpoint.
+
+Ivory/sage theme and Timeline accent use existing semantic tokens. New copy covers VI/EN, derived/source hints, unknown/approximate/year-only dates, errors, uncertain outcomes, stale events and confirmation. Custom text remains exactly user-owned. Event cards show full wrapping titles and short descriptions; details show complete selectable text, related members, date precision, place and source reference. Calendar/Library clearly identify coming-soon scope with no invented content/photos or inert action buttons.
+
+Native forms use safe areas, scrolling/keyboard avoidance, full date/year labels, explicit year-only mode, approximate checkbox semantics,100+ member draft selection, optional coordinate explanation, serialized Save and unsaved-discard confirmation. Delete is a separate title-specific confirmation. Derived details expose only appropriate profile/member-Timeline navigation. Touch targets use existing48px controls; selected filters use both border and semantic selected state. Modal animations honor reduced motion.
+
+Shared contrast audit14 remains green; new Timeline accent is a decorative rail rather than the only control cue. Native screenshots/results provide actual viewport/font/keyboard/theme/language observations. Source/handler coverage does not certify TalkBack speech, hardware keyboard traversal, native reduced-motion focus or VoiceOver. Physical/iOS coverage remains explicitly NOT TESTED unless independently recorded.

@@ -1,0 +1,48 @@
+  MyLife -> D:\DUAN\MYLIFE\Backend-MyLife\bin\Release\net10.0\MyLife.dll
+  Backend-MyLife.Tests -> D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll
+Test run for D:\DUAN\MYLIFE\Backend-MyLife\Tests\bin\Release\net10.0\Backend-MyLife.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:01:04.71]     FamilyIsolationTests.New_address_is_not_lost_when_an_older_member_geocode_is_already_queued [FAIL]
+  Failed FamilyIsolationTests.New_address_is_not_lost_when_an_older_member_geocode_is_already_queued [35 s]
+  Error Message:
+   System.TimeoutException : Background family map geocoding did not finish.
+  Stack Trace:
+     at FamilyIsolationTests.WaitForGeocodeAsync(Int32 memberId) in D:\DUAN\MYLIFE\Backend-MyLife\Tests\FamilyIsolationTests.cs:line 699
+   at FamilyIsolationTests.New_address_is_not_lost_when_an_older_member_geocode_is_already_queued() in D:\DUAN\MYLIFE\Backend-MyLife\Tests\FamilyIsolationTests.cs:line 260
+--- End of stack trace from previous location ---
+[xUnit.net 00:01:40.06]     FamilyIsolationTests.Family_map_returns_without_waiting_for_geocoding_and_caches_success_and_failure [FAIL]
+  Failed FamilyIsolationTests.Family_map_returns_without_waiting_for_geocoding_and_caches_success_and_failure [35 s]
+  Error Message:
+   System.TimeoutException : Background family map geocoding did not finish.
+  Stack Trace:
+     at FamilyIsolationTests.WaitForGeocodeAsync(Int32 memberId) in D:\DUAN\MYLIFE\Backend-MyLife\Tests\FamilyIsolationTests.cs:line 699
+   at FamilyIsolationTests.Family_map_returns_without_waiting_for_geocoding_and_caches_success_and_failure() in D:\DUAN\MYLIFE\Backend-MyLife\Tests\FamilyIsolationTests.cs:line 116
+--- End of stack trace from previous location ---
+[xUnit.net 00:02:16.00]     FamilyIsolationTests.Manual_location_is_persisted_and_address_edits_return_to_background_geocoding [FAIL]
+  Failed FamilyIsolationTests.Manual_location_is_persisted_and_address_edits_return_to_background_geocoding [35 s]
+  Error Message:
+   System.TimeoutException : Background family map geocoding did not finish.
+  Stack Trace:
+     at FamilyIsolationTests.WaitForGeocodeAsync(Int32 memberId) in D:\DUAN\MYLIFE\Backend-MyLife\Tests\FamilyIsolationTests.cs:line 699
+   at FamilyIsolationTests.Manual_location_is_persisted_and_address_edits_return_to_background_geocoding() in D:\DUAN\MYLIFE\Backend-MyLife\Tests\FamilyIsolationTests.cs:line 207
+--- End of stack trace from previous location ---
+[xUnit.net 00:02:17.67]     FamilyIsolationTests.Retry_geocoding_resets_and_queues_only_unlocated_nonmanual_members_in_the_current_tree [FAIL]
+  Failed FamilyIsolationTests.Retry_geocoding_resets_and_queues_only_unlocated_nonmanual_members_in_the_current_tree [777 ms]
+  Error Message:
+   Assert.Equal() Failure: Values differ
+Expected: 1
+Actual:   0
+  Stack Trace:
+     at FamilyIsolationTests.Retry_geocoding_resets_and_queues_only_unlocated_nonmanual_members_in_the_current_tree() in D:\DUAN\MYLIFE\Backend-MyLife\Tests\FamilyIsolationTests.cs:line 178
+--- End of stack trace from previous location ---
+[xUnit.net 00:02:56.95]     FamilyIsolationTests.Family_map_is_role_protected_tree_scoped_and_uses_persistent_location_cache [FAIL]
+  Failed FamilyIsolationTests.Family_map_is_role_protected_tree_scoped_and_uses_persistent_location_cache [35 s]
+  Error Message:
+   System.TimeoutException : Background family map geocoding did not finish.
+  Stack Trace:
+     at FamilyIsolationTests.WaitForGeocodeAsync(Int32 memberId) in D:\DUAN\MYLIFE\Backend-MyLife\Tests\FamilyIsolationTests.cs:line 699
+   at FamilyIsolationTests.Family_map_is_role_protected_tree_scoped_and_uses_persistent_location_cache() in D:\DUAN\MYLIFE\Backend-MyLife\Tests\FamilyIsolationTests.cs:line 50
+--- End of stack trace from previous location ---
+Results File: D:\DUAN\MYLIFE\Mobile-MyLife-Expo\docs\review-m5\test-results\backend-unit\backend-full-isolated.trx
+
+Failed!  - Failed:     5, Passed:   189, Skipped:     0, Total:   194, Duration: 3 m 7 s - Backend-MyLife.Tests.dll (net10.0)

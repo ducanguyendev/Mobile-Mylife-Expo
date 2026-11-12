@@ -1,0 +1,28 @@
+{
+  "phase": "edited",
+  "status": "PASS",
+  "syntheticOnly": true,
+  "totalEvents": 524,
+  "derivedEvents": 3,
+  "webHttpParity": true,
+  "events": [
+    {
+      "id": 529,
+      "memberId": 147,
+      "memberName": "Nguyễn Đặng Gia Đình Thử Nghiệm Có Tên Rất Dài",
+      "eventType": "CUSTOM",
+      "title": "Native QA Edited Event",
+      "description": null,
+      "eventDate": "1996-02-29",
+      "eventYear": 1996,
+      "isApproximate": true,
+      "location": null,
+      "latitude": null,
+      "longitude": null,
+      "relatedMemberId": 23,
+      "sourceType": null,
+      "sourceId": null,
+      "isDerived": false
+    }
+  ]
+}

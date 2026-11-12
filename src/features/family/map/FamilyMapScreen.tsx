@@ -19,6 +19,7 @@ import { mapStrings } from './map-strings';
 import { useMapQuery } from './use-map-query';
 import { FamilyNativeMap } from './FamilyNativeMap';
 import { LocationEditor } from './LocationEditor';
+import { timelineStrings } from '@/features/timeline/timeline-strings';
 
 export function FamilyMapScreen() {
   const { user, isUser } = useAuth();
@@ -67,6 +68,7 @@ function MapExplorer({ accountId }: { accountId: number }) {
     finally { if (request.current === operation) { request.current = null; setWorking(false); } }
   };
   return <AppScreen padded={false}><FamilyHeader title={copy.title} />
+    <TextButton title={timelineStrings[language].title} onPress={() => router.push('/family/timeline')} />
     <FlatList data={rows} keyExtractor={row => row.key} initialNumToRender={12} maxToRenderPerBatch={12} windowSize={5} keyboardShouldPersistTaps="handled" contentContainerStyle={{ padding: 16, gap: 12, paddingBottom: 40, width: '100%', maxWidth: 760, alignSelf: 'center' }}
       ListHeaderComponent={<View style={{ gap: 12 }}>
         {data ? <AppText>{copy.located}: {data.locatedMembers}/{data.totalMembers} · {copy.groups}: {data.locations.length} · {copy.unlocated}: {data.unlocatedMembers}</AppText> : null}

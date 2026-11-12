@@ -1,0 +1,9 @@
+{
+  "phase": "discarded",
+  "status": "PASS",
+  "syntheticOnly": true,
+  "totalEvents": 523,
+  "derivedEvents": 3,
+  "webHttpParity": true,
+  "events": []
+}

@@ -9,6 +9,8 @@ import { AppCard, ActionRow } from '@/design-system/components/surfaces';
 import { Badge } from '@/design-system/components/controls';
 import { DestructiveButton, PrimaryButton, TextButton } from '@/design-system/components/buttons';
 import { mapStrings } from '../map/map-strings';
+import { timelineStrings, displayTitle, dateLabel } from '@/features/timeline/timeline-strings';
+import { requireEvents, eventKey } from '@/features/timeline/timeline-data';
 import { spacing } from '@/design-system/tokens';
 import { useAppTheme } from '@/theme/theme-provider';
 import { formatDateOnly } from '@/features/home/home-data';
@@ -31,6 +33,7 @@ export function MemberProfile({ accountId, memberId }: { accountId: number; memb
   const [deleting, setDeleting] = useState(false); const pendingDelete = useRef(false); const alive = useRef(true);
   useEffect(() => { alive.current = true; return () => { alive.current = false; }; }, []);
   const profile = query.data; const member = profile?.member;
+  const timeline = useMemo(() => { try { return profile ? requireEvents(profile.timeline) : []; } catch { return null; } }, [profile]);
   const rows = useMemo(() => {
     if (!profile) return [];
     const result: ProfileRow[] = []; const byId = new Map(profile.relatives.map(row => [row.id, row])); const current = profile.member;
@@ -65,6 +68,7 @@ export function MemberProfile({ accountId, memberId }: { accountId: number; memb
   const gender = normalizeGender(member.gender);
   return <AppScreen padded={false}><FamilyHeader title={copy.profile} />
     <TextButton title={mapStrings[language].title} onPress={() => router.push({ pathname: '/family/map', params: { memberId: String(member.id) } })} />
+    <TextButton title={timelineStrings[language].memberTimeline} onPress={() => router.push({ pathname: '/family/timeline', params: { memberId: String(member.id) } })} />
     <FlatList data={rows} keyExtractor={row => row.key} initialNumToRender={12} maxToRenderPerBatch={12} windowSize={5} contentContainerStyle={styles.page}
       refreshControl={<RefreshControl refreshing={query.status === 'loading'} onRefresh={() => void query.reload()} tintColor={colors.accentFamily} />}
       ListHeaderComponent={<View style={styles.header}>
@@ -83,7 +87,7 @@ export function MemberProfile({ accountId, memberId }: { accountId: number; memb
           : <AppText tone="secondary" style={styles.empty}>{item.title}</AppText>}
       ListFooterComponent={<View style={styles.footer}>
         <AppCard inset style={styles.card}><SectionHeader title={copy.timeline} />
-          {profile.timeline.length ? profile.timeline.slice(0, 5).map(event => <View key={event.id} style={styles.pair}><AppText variant="cardTitle">{event.title}</AppText><AppText tone="secondary">{event.eventDate ? formatDateOnly(event.eventDate, language) : event.eventYear ?? copy.unknown}{event.isApproximate ? ` · ${copy.approximate}` : ''}</AppText>{event.description ? <AppText>{event.description}</AppText> : null}{event.location ? <AppText tone="secondary">{event.location}</AppText> : null}{event.isDerived ? <AppText variant="caption" tone="secondary">{copy.derived}</AppText> : null}</View>) : <AppText tone="secondary">{copy.noTimeline}</AppText>}
+          {timeline === null ? <AppText tone="error">{copy.loadError}</AppText> : timeline.length ? timeline.slice(0, 5).map(event => <View key={eventKey(event)} style={styles.pair}><AppText variant="cardTitle">{displayTitle(event, timelineStrings[language])}</AppText><AppText tone="secondary">{dateLabel(event, timelineStrings[language])}</AppText>{event.description ? <AppText>{event.description}</AppText> : null}{event.location ? <AppText tone="secondary">{event.location}</AppText> : null}{event.isDerived ? <AppText variant="caption" tone="secondary">{copy.derived}</AppText> : null}</View>) : <AppText tone="secondary">{copy.noTimeline}</AppText>}
           {profile.timeline.length > 5 ? <AppText variant="caption" tone="secondary">{copy.summaryCount(5, profile.timeline.length)}</AppText> : null}
         </AppCard>
         <AppCard inset style={styles.card}><SectionHeader title={copy.anniversaries} />
