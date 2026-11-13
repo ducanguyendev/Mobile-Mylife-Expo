@@ -1,0 +1,9 @@
+{
+  "phase": "after-calendar-timeline-graph",
+  "pid": "4541",
+  "retainedLogcatLines": 3515,
+  "reactHostReloadLines": 15,
+  "fatalExceptionLines": 0,
+  "apkRebuilt": false,
+  "keyRedacted": true
+}

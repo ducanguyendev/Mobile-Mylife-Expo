@@ -1,0 +1,42 @@
+
+> mobile-mylife-expo@1.0.0 test:foundation
+> node --experimental-strip-types --test tests/auth-foundation.test.mjs tests/foundation-safety.test.cjs tests/native-session.test.cjs
+
+(node:27092) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/DUAN/MYLIFE/Mobile-MyLife-Expo/src/api/apiError.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\D:\DUAN\MYLIFE\Mobile-MyLife-Expo\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ email and name normalization are predictable (0.8512ms)
+✔ login validation checks email shape and required password bounds (0.7815ms)
+✔ registration validates Vietnam phone, gender, Gmail, and password confirmation (2.4287ms)
+✔ registration DOB is calendar-checked and formatted for the API (0.257ms)
+✔ password byte cap counts UTF-8 bytes rather than UTF-16 characters (0.2738ms)
+✔ registration password checks the existing web strength requirements (0.1753ms)
+✔ auth API codes map to app-owned localized errors (0.4878ms)
+✔ API errors classify network and rate-limit responses without leaking raw status text (0.1257ms)
+✔ role helpers preserve the backend primary role contract (0.1794ms)
+✔ concurrent refresh callers share exactly one rotating-token operation (0.3565ms)
+✔ unsupported horizontal relationships are omitted rather than cleared by an unrelated edit (0.7724ms)
+✔ editing roundtrips every supported scalar and relation field from a Web member (0.7673ms)
+✔ family dates and required deceased date retain existing validation (17.0685ms)
+✔ horizontal backend validation remains a form error (0.2691ms)
+✔ all family deep links belong to an authenticated USER protected group (21.7892ms)
+✔ native requests use bearer tokens, mobile header and omit browser cookies (157.7452ms)
+✔ actual API client coalesces six refreshes and persists the rotated pair (49.8461ms)
+✔ a late old-access rejection reuses the already rotated pair (42.5492ms)
+✔ revoked refresh clears storage and emits one expiry notice for concurrent callers (47.9665ms)
+✔ a rejected retry invalidates an unusable rotated session (33.4794ms)
+✔ logout retires a late rotated session without writing it back or emitting expiry (32.0797ms)
+✔ an older refresh and logout cannot erase a newer successful login (31.9873ms)
+✔ SecureStore clear failure still attempts server revocation and reports failure (33.6356ms)
+✔ a new login can log out while an older session logout is still pending (36.2041ms)
+✔ server logout failure still clears the native session and reports failure (26.0994ms)
+✔ SecureStore serializes one complete pair and treats malformed persisted data as absent (24.9691ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 792.4741

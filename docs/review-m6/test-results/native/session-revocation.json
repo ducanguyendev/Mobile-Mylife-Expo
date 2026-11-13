@@ -1,0 +1,6 @@
+{
+  "disposableOnly": true,
+  "action": "Revoked refresh sessions for the synthetic native QA user",
+  "updateApplied": true,
+  "accessTokenLifetimeSeconds": 5
+}

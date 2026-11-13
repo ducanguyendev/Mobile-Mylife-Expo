@@ -1,0 +1,9 @@
+{
+  "phase": "after-fast-rr",
+  "pid": "13537",
+  "retainedLogcatLines": 969,
+  "reactHostReloadLines": 15,
+  "fatalExceptionLines": 0,
+  "apkRebuilt": false,
+  "keyRedacted": true
+}

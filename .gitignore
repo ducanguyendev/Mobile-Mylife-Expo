@@ -56,3 +56,5 @@ tests/fixtures/avatar-host/bin/
 tests/fixtures/avatar-host/obj/
 tests/fixtures/map-host/bin/
 tests/fixtures/map-host/obj/
+tests/fixtures/anniversary-host/bin/
+tests/fixtures/anniversary-host/obj/

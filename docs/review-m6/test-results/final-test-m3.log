@@ -1,0 +1,40 @@
+
+> mobile-mylife-expo@1.0.0 test:m3
+> node --test tests/m3-foundation.test.cjs
+
+✔ Phone-only edit omits children/horizontal writes and excludes avatar/location/server fields (1.3916ms)
+✔ Spouse edit preserves unknown horizontal types and concurrent phone changes (0.2107ms)
+✔ Concurrent edits to the same scalar fail closed instead of overwriting (0.4725ms)
+✔ Intentional child additions and removals retain unseen concurrent children (1.1739ms)
+✔ Horizontal delta retains custom/concurrent rows; explicit clearing produces [] only intentionally (0.4026ms)
+✔ Concurrent horizontal type change is a conflict and create omits unchosen horizontal rows (0.402ms)
+✔ Localized validation rejects self, same parents, direct parent-child cycles and invalid dates (0.584ms)
+✔ Accent-insensitive search reaches the 150th member with combined generation/life/gender filters (0.8518ms)
+✔ Inferred siblings need a shared known parent; unrelated missing parents never match (0.2248ms)
+✔ Contact links reject executable schemes, URL credentials and USSD strings (0.4494ms)
+✔ Member/profile mapping accepts empty aggregates and rejects malformed collections/identity (0.6336ms)
+✔ Focus/refresh bursts coalesce and failed reload drops stale data before retry (0.5296ms)
+✔ Aborted old-account responses cannot populate a new account or replace a refocused query (0.3079ms)
+✔ Native picker virtualizes all 149 non-self candidates and searches beyond eight without losing selection (39.8612ms)
+✔ Picker cancel/Android Back discard draft; clearing requires separate destructive confirmation (20.5402ms)
+✔ Picker retains missing selected members and disables confirm during loading/error (20.6693ms)
+✔ Graph derives directed parents and distinct deduplicated spouse/horizontal edges, never null-parent cliques (1.3279ms)
+✔ Malformed cycles/missing/self links warn without recursion or fabricated links (0.1843ms)
+✔ Large-family graph culls offscreen nodes and fit/anchor zoom stay finite with recorded generation gaps (4.4775ms)
+✔ Native gesture controller supports pan, pinch anchor and finger-count transition without jumps (14.1711ms)
+✔ Authenticated avatar source stays on configured origin; cache identity contains no Bearer secret (18.8631ms)
+✔ Avatar validates local URIs, exact MIME and positive 5MiB bound; cancel/permission stay safe (12.8266ms)
+✔ Old photo-picker completion cannot clear a newer account target or recover its image (22.581ms)
+✔ Android pending-photo recovery accepts only same fresh target and rejects expired context (10.7903ms)
+✔ Multipart transport leaves boundary to native fetch while preserving Bearer/mobile/omit cookies (47.0417ms)
+✔ M3 dictionaries share all keys and provide separate English/Vietnamese safety copy (0.2343ms)
+✔ SDK58 avatar body uses a real file/blob part readable by expo/fetch, never a legacy URI object (3.3759ms)
+✔ Unknown picker file size is checked against the actual local file before native upload (3.0421ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 603.3893

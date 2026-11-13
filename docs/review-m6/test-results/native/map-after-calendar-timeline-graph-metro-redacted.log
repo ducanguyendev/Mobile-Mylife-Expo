@@ -1,0 +1,19 @@
+Starting project at D:\DUAN\MYLIFE\Mobile-MyLife-Expo
+Using src/app as the root directory for Expo Router.
+React Compiler enabled
+Metro is running in CI mode, reloads are disabled. Remove CI=true to enable watch mode.
+Starting Metro Bundler
+
+Waiting on [redacted URL]
+
+Logs for your project will appear below.
+| (node:40840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:40840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+Android Bundled 2113ms node_modules\expo-router\entry.js (1717 modules)
+Android Bundled 155ms node_modules\expo-router\entry.js (1 module)
+ WARN  [MyLife API] request rejected {"code": "FAMILY_ANNIVERSARY_INVALID_LUNAR_DATE", "method": "GET", "path": "/api/family-tree/anniversaries/lunar-to-solar?day=1&month=1&isLeapMonth=true&year=2024", "requestId": "1a7c4cbb44cd420f8d9fd2729753717c", "status": 400}
+ WARN  [MyLife API] request rejected {"code": "FAMILY_ANNIVERSARY_INVALID_LUNAR_DATE", "method": "GET", "path": "/api/family-tree/anniversaries/next-occurrence?day=1&month=1&isLeapMonth=true", "requestId": "6d6f583cee684deeb8cb010e03b76388", "status": 400}
+ WARN  [MyLife API] request rejected {"code": "FAMILY_ANNIVERSARY_INVALID_LUNAR_DATE", "method": "GET", "path": "/api/family-tree/anniversaries/lunar-to-solar?day=1&month=2&isLeapMonth=true&year=2024", "requestId": "f7d3f281b84843b0b9ad7c40c4f02fc4", "status": 400}
+Android Bundled 536ms src\features\family\map\VietMapSurface.tsx (716 modules)

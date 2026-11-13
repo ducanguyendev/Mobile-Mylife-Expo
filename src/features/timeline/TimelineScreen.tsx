@@ -19,12 +19,12 @@ import { TimelineDeleteDialog, TimelineEventDetails } from './TimelineEventDetai
 import type { FamilyMember } from '@/features/family/types/family';
 const emptyMembers: FamilyMember[] = [];
 const emptyEvents: TimelineEvent[] = [];
-export function TimelineScreen({ memberId, canGoBack = false }: { memberId?: number; canGoBack?: boolean }) {
+export function TimelineScreen({ memberId, canGoBack = false, onCalendar }: { memberId?: number; canGoBack?: boolean; onCalendar?: () => void }) {
   const { user, isUser } = useAuth(); const { language } = useAppTheme();
   if (!user || !isUser) return <AppScreen><AppText>{timelineStrings[language].denied}</AppText></AppScreen>;
-  return <TimelineExplorer key={`${user.id}:${user.role}:${memberId ?? 'all'}`} accountId={user.id} memberId={memberId} canGoBack={canGoBack} />;
+  return <TimelineExplorer key={`${user.id}:${user.role}:${memberId ?? 'all'}`} accountId={user.id} memberId={memberId} canGoBack={canGoBack} onCalendar={onCalendar} />;
 }
-function TimelineExplorer({ accountId, memberId, canGoBack }: { accountId: number; memberId?: number; canGoBack: boolean }) {
+function TimelineExplorer({ accountId, memberId, canGoBack, onCalendar }: { accountId: number; memberId?: number; canGoBack: boolean; onCalendar?: () => void }) {
   const { colors, language } = useAppTheme(); const copy = timelineStrings[language]; const query = useTimelineQuery(accountId, memberId);
   const active = useRef(false); const operation = useRef<AbortController | null>(null);
   const [mutations] = useState(() => createTimelineMutations()); const mutation = useSyncExternalStore(mutations.subscribe, mutations.getSnapshot, mutations.getSnapshot);
@@ -45,7 +45,12 @@ function TimelineExplorer({ accountId, memberId, canGoBack }: { accountId: numbe
   const header = <View style={{ gap: 16 }}>
     {memberId !== undefined || canGoBack ? <TextButton title={copy.close} onPress={() => router.back()} /> : null}
     <AppHeader eyebrow={copy.memories} title={memberId === undefined ? copy.title : copy.memberTimeline} subtitle={memberId === undefined ? copy.subtitle : names.get(memberId)} />
-    {memberId === undefined ? <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>{(['timeline', 'calendar', 'library'] as const).map(value => <SecondaryButton key={value} title={value === 'timeline' ? copy.title : `${copy[value]} · ${copy.future}`} accessibilityState={{ selected: tab === value }} style={{ flexBasis: 140, flexGrow: 1 }} onPress={() => setTab(value)} />)}</View> : null}
+    {memberId === undefined ? <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>{(['timeline', 'calendar', 'library'] as const).map(value => <SecondaryButton key={value} title={value === 'timeline' ? copy.title : value === 'calendar' ? copy.calendar : `${copy[value]} · ${copy.future}`} accessibilityState={{ selected: tab === value }} style={{ flexBasis: 140, flexGrow: 1 }} onPress={() => {
+      if (value === 'calendar') {
+        if (onCalendar) onCalendar();
+        else router.push('/family/anniversaries');
+      } else setTab(value);
+    }} />)}</View> : null}
     {tab !== 'timeline' ? <AppCard inset><AppText variant="sectionTitle">{copy[tab]} · {copy.future}</AppText><AppText>{copy.futureHint}</AppText></AppCard> : <>
       <AppText>{copy.count}: {visible.length}/{events.length}</AppText><AppText variant="caption" tone="secondary">{copy.order}</AppText>
       <MyLifeSearchField accessibilityLabel={copy.search} placeholder={copy.search} value={search} onChangeText={setSearch} />

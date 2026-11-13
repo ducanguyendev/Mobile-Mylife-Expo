@@ -1,0 +1,9 @@
+{
+  "phase": "second-open",
+  "pid": "3577",
+  "retainedLogcatLines": 203,
+  "reactHostReloadLines": 0,
+  "fatalExceptionLines": 0,
+  "apkRebuilt": false,
+  "keyRedacted": true
+}

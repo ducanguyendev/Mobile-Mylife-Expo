@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "filesScanned": 839,
+  "publicKeyAndSyntheticPasswordLiteralOrEncodedHits": 0,
+  "secretCredentialValuesRecorded": false,
+  "secureScreenshots": "Native password field masked and hierarchy secure text redacted",
+  "encodingFilesNormalized": 0
+}

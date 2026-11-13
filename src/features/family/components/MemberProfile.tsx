@@ -11,6 +11,7 @@ import { DestructiveButton, PrimaryButton, TextButton } from '@/design-system/co
 import { mapStrings } from '../map/map-strings';
 import { timelineStrings, displayTitle, dateLabel } from '@/features/timeline/timeline-strings';
 import { requireEvents, eventKey } from '@/features/timeline/timeline-data';
+import { anniversaryStrings } from '@/features/anniversaries/anniversary-strings';
 import { spacing } from '@/design-system/tokens';
 import { useAppTheme } from '@/theme/theme-provider';
 import { formatDateOnly } from '@/features/home/home-data';
@@ -69,6 +70,7 @@ export function MemberProfile({ accountId, memberId }: { accountId: number; memb
   return <AppScreen padded={false}><FamilyHeader title={copy.profile} />
     <TextButton title={mapStrings[language].title} onPress={() => router.push({ pathname: '/family/map', params: { memberId: String(member.id) } })} />
     <TextButton title={timelineStrings[language].memberTimeline} onPress={() => router.push({ pathname: '/family/timeline', params: { memberId: String(member.id) } })} />
+    <TextButton title={anniversaryStrings[language].memberCalendar} onPress={() => router.push({ pathname: '/family/anniversaries', params: { memberId: String(member.id) } })} />
     <FlatList data={rows} keyExtractor={row => row.key} initialNumToRender={12} maxToRenderPerBatch={12} windowSize={5} contentContainerStyle={styles.page}
       refreshControl={<RefreshControl refreshing={query.status === 'loading'} onRefresh={() => void query.reload()} tintColor={colors.accentFamily} />}
       ListHeaderComponent={<View style={styles.header}>

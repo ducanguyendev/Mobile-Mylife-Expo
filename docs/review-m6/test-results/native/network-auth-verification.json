@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "offlineMessage": true,
+  "restoredCount": 130,
+  "realSessionRevoked": true,
+  "expiredSessionLogin": true,
+  "protectedRowsRemoved": true,
+  "explicitLogoutLogin": true
+}

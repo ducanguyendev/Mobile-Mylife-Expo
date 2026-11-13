@@ -1,0 +1,94 @@
+{
+  "checks": [
+    {
+      "name": "New USER anniversary collection is empty and scoped",
+      "status": "PASS"
+    },
+    {
+      "name": "Web cookie login stays separate from native Bearer and returns no token JSON",
+      "status": "PASS"
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/23/location",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/23",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Web cookie"
+    }
+  ],
+  "frozenTime": true,
+  "transport": "Real Kestrel/PostgreSQL with native bridge adapters and Web cookie HTTP"
+}

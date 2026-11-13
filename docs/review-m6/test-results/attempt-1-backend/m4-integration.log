@@ -1,0 +1,17 @@
+PASS: Empty map uses actual API counts and no synthetic production pins
+PASS: Manual zero-coordinate PUT/refetch preserves spouse, children and horizontal relations
+PASS: Backend five-decimal grouping, average coordinates, counts and unavailable status
+PASS: Phone-only update preserves manual location
+PASS: Relationship-only update preserves manual location and existing child/spouse
+PASS: Avatar upload and replacement preserve manual coordinates (contract provider)
+PASS: Expo manual locations, group keys, counts and sources read identically through Web cookie transport
+PASS: Web-compatible location PUT appears through Expo reads
+PASS: Stale editor refuses to overwrite newer coordinates
+PASS: Web address change invalidates old location; Expo detects stale address without erasing avatar/relations
+PASS: Repeated map GET adds no client mutation and preserves manual member metadata
+PASS: Disabled geocoding returns actual zero queued/skipped counts and preserves manual pin
+PASS: Foreign accounts, ADMIN and anonymous map/retry/location requests are rejected
+PASS: Backend rejects invalid coordinates/name length and accepts inclusive boundary coordinates
+PASS: Real background queue cannot overwrite a newer manual pin after an in-flight synthetic geocoder returns
+PASS: Enabled retry reports queued work separately from lookup success and skips manual pins
+PASS: Real queue persists GEOCODED source through a synthetic test-only service

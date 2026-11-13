@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "metroPid": 37156,
+  "metroStopped": true,
+  "avd": "MyLife_M4",
+  "emulatorPort": 5584,
+  "qemuPid": 30792,
+  "emulatorPid": 34844,
+  "emulatorStopped": true,
+  "privateAdbPort": 5038,
+  "privateAdbStopped": true,
+  "sharedAdbPreserved": true,
+  "backendLifecycle": "final-backend/final-lifecycle.json",
+  "databaseDropped": true,
+  "postgresStopped": true,
+  "runtimeMetadataRemoved": true,
+  "apkPublished": false,
+  "temporaryQaCredentialsRemoved": true,
+  "testClockRemoved": true
+}

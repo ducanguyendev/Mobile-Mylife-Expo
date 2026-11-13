@@ -1,0 +1,34 @@
+{
+  "database": "mylife_m1_34d1c22b00f5",
+  "host": "127.0.0.1",
+  "pgPort": 61593,
+  "cluster": ".tmp\\m1-integration-bK7Gtf",
+  "databaseDropped": true,
+  "postgresStopped": true,
+  "results": [
+    {
+      "name": "isolated-initdb",
+      "exitCode": 0
+    },
+    {
+      "name": "isolated-postgres-start",
+      "exitCode": 0
+    },
+    {
+      "name": "isolated-createdb",
+      "exitCode": 0
+    },
+    {
+      "name": "full-backend-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "isolated-dropdb",
+      "exitCode": 0
+    },
+    {
+      "name": "isolated-postgres-stop",
+      "exitCode": 0
+    }
+  ]
+}

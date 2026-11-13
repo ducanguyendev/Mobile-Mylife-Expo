@@ -1,0 +1,175 @@
+{
+  "verdict": "PARTIAL PASS",
+  "applicationReleaseReadiness": "NOT READY",
+  "checks": [
+    {
+      "status": "PASS",
+      "scope": "Memories Timeline and Calendar collections",
+      "evidence": [
+        "20-memories",
+        "22-calendar-loaded"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Month navigation, Today and jump",
+      "evidence": [
+        "30-jump-applied",
+        "44-selected-multiple-day"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Member125 picker draft cancellation",
+      "evidence": [
+        "55-family-picker-reopened"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Native family create with full Web HTTP parity",
+      "evidence": [
+        "native-crud-family-created"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Eligible deceased picker and authoritative invalid/valid leap preview",
+      "evidence": [
+        "78-deceased-confirm",
+        "84-invalid-leap-result",
+        "92-leap-preview-scrolled"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Native death create and optional-field-preserving edits",
+      "evidence": [
+        "native-crud-death-created",
+        "native-crud-edited"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Home visibly reflects anniversary changed to today",
+      "evidence": [
+        "105-home-updated-today",
+        "native-crud-family-today"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Confirmed delete and unsaved discard preserve original130 records",
+      "evidence": [
+        "native-crud-death-deleted",
+        "native-crud-all-deleted",
+        "native-crud-discarded",
+        "133-unsaved-warning"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Derived Timeline detail and original source route",
+      "evidence": [
+        "139-derived-anniversary-details",
+        "141-original-source-loaded"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Graph Fit and one-pointer pan",
+      "evidence": [
+        "graph-pan-verification"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Map after Calendar/Timeline/Graph and Back navigation",
+      "evidence": [
+        "149-map-after-calendar-settled",
+        "150-map-timeline-current",
+        "152-map-back-verified"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Light/English and cold persisted preferences",
+      "evidence": [
+        "159-large-light-calendar",
+        "161-compact-restored-home",
+        "166-final-compact-home"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Compact360dp/font130 month and long content",
+      "evidence": [
+        "169-final-compact-grid",
+        "171-compact-selected-day-event",
+        "173-compact-long-notes"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Selected-date unmatched search empty state",
+      "evidence": [
+        "179-correct-filtered-empty-state"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Real API offline error and retry recovery",
+      "evidence": [
+        "191-offline-error-visible",
+        "193-offline-recovered"
+      ]
+    },
+    {
+      "status": "PASS",
+      "scope": "Real revoked session and explicit logout",
+      "evidence": [
+        "session-revocation",
+        "194-session-expired",
+        "202-explicit-signout"
+      ]
+    },
+    {
+      "status": "OPEN",
+      "scope": "Original M5 Map-first reload cause and release impact",
+      "evidence": [
+        "controlled-rr-verification",
+        "map-first-open-diagnostic",
+        "map-second-open-diagnostic",
+        "map-after-calendar-timeline-graph-diagnostic"
+      ]
+    },
+    {
+      "status": "NOT TESTED",
+      "scope": "Physical Android/iOS, TalkBack/VoiceOver, external keyboard, physical FPS and memory",
+      "evidence": []
+    },
+    {
+      "status": "BLOCKED",
+      "scope": "Actual Google Drive lifecycle inherited environment gate",
+      "evidence": []
+    }
+  ],
+  "syntheticFamily": {
+    "syntheticOnly": true,
+    "members": 125,
+    "eligibleDeceasedMembers": 105,
+    "anniversaries": 130,
+    "familyEvents": 120,
+    "deathAnniversaries": 10,
+    "timelineEvents": 247,
+    "today": "2026-11-12",
+    "todayEvents": 1
+  },
+  "parity": "Native Bearer versus Web-compatible cookie HTTP; all20 DTO fields",
+  "physicalAndIos": "NOT TESTED",
+  "newNativeBuild": false,
+  "sharedAdbStallRecovered": true,
+  "rrDeveloperShortcutReproduced": true,
+  "originalM5MapCause": "OPEN",
+  "sourcesFrozenBeforeFinalCompactNative": true
+}

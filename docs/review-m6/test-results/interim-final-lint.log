@@ -1,0 +1,12 @@
+
+> mobile-mylife-expo@1.0.0 lint
+> expo lint
+
+env: load .env.local
+env: export EXPO_PUBLIC_API_BASE_URL
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\src\features\anniversaries\use-anniversaries.ts
+  18:6  warning  React Hook useMemo has an unnecessary dependency: 'vietnamToday'. Either exclude it or remove the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+

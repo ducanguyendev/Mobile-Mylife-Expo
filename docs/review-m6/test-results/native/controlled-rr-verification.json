@@ -1,0 +1,28 @@
+{
+  "status": "REPRODUCED",
+  "before": {
+    "phase": "before-fast-rr",
+    "pid": "13537",
+    "retainedLogcatLines": 588,
+    "reactHostReloadLines": 0,
+    "fatalExceptionLines": 0,
+    "apkRebuilt": false,
+    "keyRedacted": true
+  },
+  "after": {
+    "phase": "after-fast-rr",
+    "pid": "13537",
+    "retainedLogcatLines": 969,
+    "reactHostReloadLines": 15,
+    "fatalExceptionLines": 0,
+    "apkRebuilt": false,
+    "keyRedacted": true
+  },
+  "focusedEditTextVerifiedBeforeInjection": true,
+  "unsavedSyntheticDraftOnly": true,
+  "rootReturnedToHome": true,
+  "newReloadLines": 15,
+  "mechanism": "RN0.88 ReactDelegate checks Activity.currentFocus with a200ms double-R dev reload recognizer; native Modal physical-key injection can reach it",
+  "qaCorrection": "Verify field focus and space injected R keys300ms apart",
+  "productionMapFixClaimed": false
+}

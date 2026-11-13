@@ -1,0 +1,12 @@
+{
+  "remoteCommit": "53e472513eec18bb26f0b33a866785c532bcdc85",
+  "remoteBranch": "feature_minhduc",
+  "dtoDoubleRangesVerified": true,
+  "regressionFileVerifiedAtRemoteCommit": true,
+  "existingDtoCases": 12,
+  "fullSuiteWithM6Passed": 203,
+  "realMalformedCoordinateStatus": 400,
+  "pushIssue": "CLOSED",
+  "deployment": "NOT VERIFIED",
+  "m6BackendChange": "Only new9-case AnniversaryDateIntegrityTests.cs; production source untouched"
+}

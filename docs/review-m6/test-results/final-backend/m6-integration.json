@@ -1,0 +1,650 @@
+{
+  "checks": [
+    {
+      "name": "New USER anniversary collection is empty and scoped",
+      "status": "PASS"
+    },
+    {
+      "name": "Web cookie login stays separate from native Bearer and returns no token JSON",
+      "status": "PASS"
+    },
+    {
+      "name": "Expo creates solar FAMILY_EVENT and Web reads identical20 fields with today countdown0 and nullable nextLunarYear",
+      "status": "PASS"
+    },
+    {
+      "name": "Web update refetches identically through Expo and preserves optional member/place/host fields",
+      "status": "PASS"
+    },
+    {
+      "name": "Frozen-time solar February29 policy clamps to February28 and crosses Gregorian year without changing original date",
+      "status": "PASS"
+    },
+    {
+      "name": "Real lunar conversion endpoints match all four established Backend fixtures and1800/2200 boundaries",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid day30 of29-day month, absent leap month and outside supported years return400",
+      "status": "PASS"
+    },
+    {
+      "name": "Frozen lunar today/next-year countdown and leap recurrence skip absent leap years using authoritative responses",
+      "status": "PASS"
+    },
+    {
+      "name": "Lunar next occurrence selects nearest solar date across Gregorian year boundary",
+      "status": "PASS"
+    },
+    {
+      "name": "Linked deceased member with matching recorded death date creates valid lunar anniversary",
+      "status": "PASS"
+    },
+    {
+      "name": "Original lunar/solar mismatch, living member and recorded death-date mismatch return distinct400 codes",
+      "status": "PASS"
+    },
+    {
+      "name": "Synthetic legacy deceased member without death date returns required-date400 and is restored",
+      "status": "PASS"
+    },
+    {
+      "name": "Authoritative Home/Profile include source while Timeline uses original date with negative source-qualified read-only identity",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual Expo stale edit/delete checks block writes after concurrent Web-compatible changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid anniversary types/title/original date/lunar range/text return400",
+      "status": "PASS"
+    },
+    {
+      "name": "Foreign record GET/PUT/DELETE and foreign related-member assignment return404 with empty other-account collection",
+      "status": "PASS"
+    },
+    {
+      "name": "All seven anniversary endpoints enforce ADMIN403 and anonymous401",
+      "status": "PASS"
+    },
+    {
+      "name": "Cookie mutation without trusted Origin/CSRF-related header rejected403",
+      "status": "PASS"
+    },
+    {
+      "name": "Anniversary writes preserve relationships/avatar/manual location and committed M4 nonfinite validation returns400",
+      "status": "PASS"
+    },
+    {
+      "name": "Expo delete removes source and derived Timeline/Home/Profile data, preserves other anniversary and tolerates already-deleted source",
+      "status": "PASS"
+    },
+    {
+      "name": "Logout clears native session and stale account mutations cannot expose or overwrite another account",
+      "status": "PASS"
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/23/location",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/23",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar?day=30&month=1&year=2024&isLeapMonth=false",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 400,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar?day=1&month=2&year=2024&isLeapMonth=true",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 400,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar?day=1&month=1&year=1799&isLeapMonth=false",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar?day=1&month=1&year=2201&isLeapMonth=false",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/next-occurrence",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/next-occurrence",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/next-occurrence",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/next-occurrence",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/23/profile",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/3",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 404,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 404,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 404,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 404,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 403,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 403,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/anniversaries",
+      "status": 403,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 403,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 403,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "status": 403,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/next-occurrence",
+      "status": 403,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/23",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/23/location",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 204,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 404,
+      "transport": "Web cookie"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/timeline",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/23/profile",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries/4",
+      "status": 404,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "POST",
+      "path": "/api/logout",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/anniversaries",
+      "status": 200,
+      "transport": "Native Bearer"
+    }
+  ],
+  "frozenTime": true,
+  "transport": "Real Kestrel/PostgreSQL with native bridge adapters and Web cookie HTTP"
+}

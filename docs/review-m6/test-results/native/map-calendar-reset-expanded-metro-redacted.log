@@ -1,0 +1,15 @@
+Starting project at D:\DUAN\MYLIFE\Mobile-MyLife-Expo
+Using src/app as the root directory for Expo Router.
+React Compiler enabled
+Metro is running in CI mode, reloads are disabled. Remove CI=true to enable watch mode.
+Starting Metro Bundler
+
+Waiting on [redacted URL]
+
+Logs for your project will appear below.
+| (node:40840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:40840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+Android Bundled 2113ms node_modules\expo-router\entry.js (1717 modules)
+Android Bundled 155ms node_modules\expo-router\entry.js (1 module)

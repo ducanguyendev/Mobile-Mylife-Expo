@@ -1,0 +1,73 @@
+{
+  "developmentVerdict": "PARTIAL PASS",
+  "applicationReleaseReadiness": "NOT READY",
+  "uniqueJsCases": 258,
+  "m6UnitCases": 83,
+  "authCasesIncludedInFoundation": 10,
+  "contrastCases": 14,
+  "fullBackendPassed": 203,
+  "newDeterministicBackendCases": 9,
+  "existingM4DtoIncluded": 12,
+  "realHttpScenarioGroups": {
+    "M1": 7,
+    "M2": 6,
+    "M3": 12,
+    "M4": 17,
+    "M5": 21,
+    "M6": 21
+  },
+  "realHttpScenarioGroupsTotal": 84,
+  "auditBefore": {
+    "info": 0,
+    "low": 0,
+    "moderate": 14,
+    "high": 0,
+    "critical": 0,
+    "total": 14
+  },
+  "auditAfter": {
+    "info": 0,
+    "low": 0,
+    "moderate": 14,
+    "high": 0,
+    "critical": 0,
+    "total": 14
+  },
+  "newDependencies": 0,
+  "nativeBuild": {
+    "artifactSha256": "e7a7d25991741489481c8546d091d0a2637ce28d563d04b0b7538918358d9540",
+    "installedSha256": "e7a7d25991741489481c8546d091d0a2637ce28d563d04b0b7538918358d9540",
+    "matches": true,
+    "build": "Existing M4 custom development APK reused"
+  },
+  "m5Ci": {
+    "repository": "ducanguyendev/Mobile-Mylife-Expo",
+    "headSha": "8d65018817363a26f2be3b7661aeefd1a0ea2315",
+    "branch": "feature_minhduc",
+    "runId": 43201911893,
+    "qualityJobId": 131127198646,
+    "status": "completed",
+    "conclusion": "success",
+    "steps": [
+      "npm ci",
+      "lint",
+      "typecheck",
+      "test:auth",
+      "test:foundation",
+      "test:m2",
+      "test:m3",
+      "test:m4",
+      "test:m5",
+      "audit:contrast:m2"
+    ],
+    "url": "https://github.com/ducanguyendev/Mobile-Mylife-Expo/actions/runs/43201911893",
+    "m6Ci": "NOT RUN; test:m6 added locally"
+  },
+  "m6Ci": "NOT RUN; workflow extended locally",
+  "native": "PARTIAL PASS",
+  "reports": 14,
+  "changedAppSourceFiles": 20,
+  "inheritedAssertionsPreserved": true,
+  "disposableBackendCleanupVerified": true,
+  "commitPushPrDeployPerformed": false
+}

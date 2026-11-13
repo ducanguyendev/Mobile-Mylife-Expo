@@ -1,0 +1,6 @@
+Integration: isolated-initdb
+Integration: isolated-postgres-start
+Integration: isolated-createdb
+Integration: full-backend-tests
+Integration: isolated-dropdb
+Integration: isolated-postgres-stop

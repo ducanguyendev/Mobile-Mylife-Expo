@@ -1,0 +1,826 @@
+11-12 20:14:24.790   591  2529 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+11-12 20:14:24.790   826  1008 V WindowManagerShell: Transition requested (#14): android.os.BinderProxy@f5466fc TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=24 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity } baseActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} topActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} numActivities=1 lastActiveTime=4535788 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@138d185} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{6e5ebda com.anonymous.mylifemobile.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1200 topActivityLetterboxHeight=1920 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 14 }
+11-12 20:14:24.813  1141  1141 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=24, baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity }
+11-12 20:14:24.827   591   629 I ActivityManager: Start proc 4541:com.anonymous.mylifemobile/u0a209 for next-top-activity {com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}
+11-12 20:14:24.924   591   616 V WindowManager: Sent Transition (#14) createdAt=11-12 20:14:24.779 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=24 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity } baseActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} topActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} numActivities=1 lastActiveTime=4535788 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{2ee03b3 Task{a5af941 #24 type=standard A=10209:com.anonymous.mylifemobile}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{3ea4d70 com.anonymous.mylifemobile.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1200 topActivityLetterboxHeight=1920 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 14 }
+11-12 20:14:25.991  4557  4557 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:14:25.999  4557  4557 I AndroidRuntime: Using default boot image
+11-12 20:14:25.999  4557  4557 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:14:26.136  4557  4557 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:14:26.250  4541  4541 W SoLoader: Initializing SoLoader: 0
+11-12 20:14:26.252  4541  4541 W SoLoader: Recording new base apk path: /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk
+11-12 20:14:26.252  4541  4541 W SoLoader: Previously recorded 0 base apk paths.
+11-12 20:14:26.254  4541  4541 I SoLoader: Preparing SO source: DirectorySoSource[root = /vendor/lib64 flags = 2]
+11-12 20:14:26.255  4541  4541 I SoLoader: Preparing SO source: DirectorySoSource[root = /system/lib64 flags = 2]
+11-12 20:14:26.255  4541  4541 I SoLoader: Preparing SO source: DirectApkSoSource[root = [/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64]]
+11-12 20:14:26.464  4541  4541 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/lib/x86_64 flags = 0]]
+11-12 20:14:26.464  4541  4541 I SoLoader: init finish: 4 SO sources prepared
+11-12 20:14:26.464  4541  4541 W SoLoader: SoLoader initialized: 8
+11-12 20:14:27.162  4557  4557 D AndroidRuntime: Shutting down VM
+11-12 20:14:27.617   591  2525 D CoreBackPreview: Window{af56d2c u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@40a558a, mPriority=0, mIsAnimationCallback=false}
+11-12 20:14:27.786   591   616 I ActivityTaskManager: Displayed com.anonymous.mylifemobile/.MainActivity for user 0: +3s13ms
+11-12 20:14:27.797   826  1008 V WindowManagerShell: Transition requested (#15): android.os.BinderProxy@6ccb751 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=24 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity } baseActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} topActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} numActivities=1 lastActiveTime=4538792 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@eaaebb6} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{75c00b7 com.anonymous.mylifemobile.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1200 topActivityLetterboxHeight=1920 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 15 }
+11-12 20:14:27.798   591  1734 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10018000 cmp=com.anonymous.mylifemobile/.MainActivity} with LAUNCH_SINGLE_TASK from uid 10209 (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+11-12 20:14:27.822   826  1008 V WindowManagerShell: onTransitionReady (#15) android.os.BinderProxy@6ccb751: {id=15 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=STARTING_WINDOW_TRANSFER|FILLS_TASK|IS_BEHIND_STARTING_WINDOW|NO_ANIMATION leash=Surface(name=ActivityRecord{1180be2 u0 com.anonymous.mylifemobile/.MainActivity)/@0x4f20d42 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1200, 1920) d=-1->0 r=-1->0:-1 bc=ff000000 component=com.anonymous.mylifemobile/.MainActivity},{null m=CLOSE f=FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{323a828 u0 com.anonymous.mylifemobile/.MainActivity)/@0xe25f153 sb=Rect(0, 0 - 1200, 1920) eb=Rect(0, 0 - 1200, 1920) d=0 bc=ff000000 component=com.anonymous.mylifemobile/.MainActivity}]}
+11-12 20:14:27.822   591   616 V WindowManager: Sent Transition (#15) createdAt=11-12 20:14:27.790 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=24 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity } baseActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} topActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} numActivities=1 lastActiveTime=4538792 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{2ee03b3 Task{a5af941 #24 type=standard A=10209:com.anonymous.mylifemobile}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{6493b1d com.anonymous.mylifemobile.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1200 topActivityLetterboxHeight=1920 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 15 }
+11-12 20:14:27.823   591   616 V WindowManager:         {null m=OPEN f=STARTING_WINDOW_TRANSFER|FILLS_TASK|IS_BEHIND_STARTING_WINDOW|NO_ANIMATION leash=Surface(name=ActivityRecord{1180be2 u0 com.anonymous.mylifemobile/.MainActivity)/@0xbe895c7 sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 1200, 1920) d=-1->0 r=-1->0:-1 bc=ff000000 component=com.anonymous.mylifemobile/.MainActivity},
+11-12 20:14:27.823   591   616 V WindowManager:         {null m=CLOSE f=FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{323a828 u0 com.anonymous.mylifemobile/.MainActivity)/@0xf876b06 sb=Rect(0, 0 - 1200, 1920) eb=Rect(0, 0 - 1200, 1920) d=0 bc=ff000000 component=com.anonymous.mylifemobile/.MainActivity}
+11-12 20:14:27.897  4541  4541 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Schedule
+11-12 20:14:27.898  4541  4541 W unknown:BridgelessReact: ReactHost{0}.attachSurface(surfaceId = 0)
+11-12 20:14:27.899  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-12 20:14:27.900  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+11-12 20:14:27.900  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+11-12 20:14:27.901  4541  4601 W unknown:BridgelessReact: ReactHost{0}.isMetroRunning()
+11-12 20:14:27.915  4541  4590 W unknown:BridgelessReact: ReactHost{0}.isMetroRunning(): Async result = true
+11-12 20:14:27.915  4541  4601 W unknown:BridgelessReact: ReactHost{0}.loadJSBundleFromMetro()
+11-12 20:14:27.933  4541  4541 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+11-12 20:14:27.975  4541  4541 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+11-12 20:14:28.395   591  1061 D CoreBackPreview: Window{7cec763 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@846f18c, mPriority=0, mIsAnimationCallback=false}
+11-12 20:14:29.309   591   616 I ActivityTaskManager: Displayed com.anonymous.mylifemobile/.MainActivity for user 0: +1s520ms
+11-12 20:14:29.419   591  2525 D CoreBackPreview: Window{af56d2c u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback null
+11-12 20:14:29.421   591  2525 W InputManager-JNI: Input channel object 'af56d2c com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity (client)' was disposed without first being removed with the input manager!
+11-12 20:14:29.428  4541  4541 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(onWindowFocusChange(hasFocus = "true")): Tried to access onWindowFocusChange while context is not ready
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: Unhandled SoftException
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(onWindowFocusChange(hasFocus = "true")): Tried to access onWindowFocusChange while context is not ready
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.onWindowFocusChange(ReactHostImpl.kt:679)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at com.facebook.react.ReactDelegate.onWindowFocusChanged(ReactDelegate.kt:226)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at com.facebook.react.ReactActivityDelegate.onWindowFocusChanged(ReactActivityDelegate.java:237)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$onWindowFocusChanged$1.invokeSuspend(ReactActivityDelegateWrapper.kt:322)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$onWindowFocusChanged$1.invoke(Unknown Source:8)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$onWindowFocusChanged$1.invoke(Unknown Source:4)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$launchLifecycleScopeWithLock$1.invokeSuspend(ReactActivityDelegateWrapper.kt:469)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.internal.DispatchedContinuationKt.resumeCancellableWith(DispatchedContinuation.kt:375)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.intrinsics.CancellableKt.startCoroutineCancellable(Cancellable.kt:26)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:358)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:134)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:53)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt.launch(Unknown Source:1)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:44)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source:1)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper.launchLifecycleScopeWithLock(ReactActivityDelegateWrapper.kt:467)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper.launchLifecycleScopeWithLock$default(ReactActivityDelegateWrapper.kt:463)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper.onWindowFocusChanged(ReactActivityDelegateWrapper.kt:320)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at com.facebook.react.ReactActivity.onWindowFocusChanged(ReactActivity.java:161)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at androidx.appcompat.view.WindowCallbackWrapper.onWindowFocusChanged(WindowCallbackWrapper.java:124)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at expo.modules.devmenu.detectors.InterceptingWindowCallback.onWindowFocusChanged(Unknown Source:2)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at com.android.internal.policy.DecorView.onWindowFocusChanged(DecorView.java:1772)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.view.View.dispatchWindowFocusChanged(View.java:16743)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1505)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl.dispatchFocusEvent(ViewRootImpl.java:4697)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:4601)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged(Unknown Source:0)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl(ViewRootImpl.java:6773)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:6683)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.os.Looper.loop(Looper.java:317)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+11-12 20:14:29.431  4541  4541 E unknown:ReactHost: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+11-12 20:14:30.655  4541  4602 W unknown:BridgelessReact: ReactHost{0}.loadJSBundleFromMetro(): Creating BundleLoader
+11-12 20:14:30.657  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating BridgelessReactContext
+11-12 20:14:30.659  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+11-12 20:14:31.217  4541  4601 I ExpoModulesCore: ✅ AppContext was initialized
+11-12 20:14:31.364  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+11-12 20:14:31.366  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): DevSupportManager.onNewReactContextCreated()
+11-12 20:14:31.382  4541  4601 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Execute
+11-12 20:14:31.384  4541  4541 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-12 20:14:31.409  4541  4541 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+11-12 20:14:31.904  4541  4609 W BridgelessReactContext: [WARNING] Bridgeless doesn't support CatalystInstance. Accessing an API that's not part of the new architecture is not encouraged usage.
+11-12 20:14:31.917  4541  4609 I ExpoModulesCore: ✅ JSI interop was installed
+11-12 20:14:31.952  4541  4609 I ExpoModulesCore: ✅ Constants were exported
+11-12 20:14:32.219  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNBackgroundLayerManager
+11-12 20:14:32.225  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNMarkerViewManager
+11-12 20:14:32.233  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNCircleLayerManager
+11-12 20:14:32.238  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNFillLayerManager
+11-12 20:14:32.247  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.light.MLRNLightManager
+11-12 20:14:32.249  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.images.MLRNImagesManager
+11-12 20:14:32.252  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNShapeSourceManager
+11-12 20:14:32.259  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNRasterLayerManager
+11-12 20:14:32.280  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.location.MLRNNativeUserLocationManager
+11-12 20:14:32.282  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNRasterSourceManager
+11-12 20:14:32.287  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNAndroidTextureMapViewManager
+11-12 20:14:32.289  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNMapViewManager$MapShadowNode
+11-12 20:14:32.291  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNImageSourceManager
+11-12 20:14:32.295  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNVectorSourceManager
+11-12 20:14:32.300  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNHeatmapLayerManager
+11-12 20:14:32.302  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNCalloutManager
+11-12 20:14:32.304  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.camera.MLRNCameraManager
+11-12 20:14:32.305  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNMapViewManager
+11-12 20:14:32.307  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNPointAnnotationManager
+11-12 20:14:32.315  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNSymbolLayerManager
+11-12 20:14:32.322  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNFillExtrusionLayerManager
+11-12 20:14:32.323  4541  4609 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNLineLayerManager
+11-12 20:14:33.969  4541  4609 I ReactNativeJS: Running "main" with {"rootTag":1,"initialProps":{},"fabric":true}
+11-12 20:14:34.245  4541  4541 I ExpoModulesCore: ✅ JSI interop was installed
+11-12 20:14:41.831  4638  4638 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:14:41.840  4638  4638 I AndroidRuntime: Using default boot image
+11-12 20:14:41.840  4638  4638 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:14:42.109  4638  4638 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:14:43.278  4638  4638 D AndroidRuntime: Shutting down VM
+11-12 20:14:45.278  4667  4667 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:14:45.289  4667  4667 I AndroidRuntime: Using default boot image
+11-12 20:14:45.289  4667  4667 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:14:45.507  4667  4667 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:14:46.660  4667  4667 D AndroidRuntime: Shutting down VM
+11-12 20:14:47.988  4687  4687 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:14:47.992  4687  4687 I AndroidRuntime: Using default boot image
+11-12 20:14:47.992  4687  4687 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:14:48.205  4687  4687 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:14:49.399  4687  4687 D AndroidRuntime: Shutting down VM
+11-12 20:15:09.210  4710  4710 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:09.214  4710  4710 I AndroidRuntime: Using default boot image
+11-12 20:15:09.214  4710  4710 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:09.484  4710  4710 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:10.638  4710  4710 D AndroidRuntime: Shutting down VM
+11-12 20:15:12.029   591  2525 D ImeInsetsSourceProvider: showImePostLayout cancelled, isScheduledAndReadyToShowIme: false, mImeRequester: Window{7cec763 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}, serverVisible: true, frozen: false, mWindowContainer is: non-null, windowState: Window{18688a8 u0 InputMethod}, isDrawn: false, mGivenInsetsPending: false, dcTarget: Window{7cec763 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}, controlTarget: Window{7cec763 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}
+11-12 20:15:15.019  4766  4766 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:15.028  4766  4766 I AndroidRuntime: Using default boot image
+11-12 20:15:15.028  4766  4766 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:15.149  4766  4766 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:16.215  4766  4766 D AndroidRuntime: Shutting down VM
+11-12 20:15:17.814  4794  4794 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:17.818  4794  4794 I AndroidRuntime: Using default boot image
+11-12 20:15:17.818  4794  4794 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:17.939  4794  4794 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:19.006  4794  4794 D AndroidRuntime: Shutting down VM
+11-12 20:15:23.187  4833  4833 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:23.196  4833  4833 I AndroidRuntime: Using default boot image
+11-12 20:15:23.197  4833  4833 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:23.439  4833  4833 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:24.625  4833  4833 D AndroidRuntime: Shutting down VM
+11-12 20:15:27.477  4866  4866 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:27.485  4866  4866 I AndroidRuntime: Using default boot image
+11-12 20:15:27.486  4866  4866 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:27.658  4866  4866 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:28.767  4866  4866 D AndroidRuntime: Shutting down VM
+11-12 20:15:30.636  4894  4894 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:30.658  4894  4894 I AndroidRuntime: Using default boot image
+11-12 20:15:30.659  4894  4894 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:30.837  4894  4894 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:31.951  4894  4894 D AndroidRuntime: Shutting down VM
+11-12 20:15:34.129  4920  4920 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:34.141  4920  4920 I AndroidRuntime: Using default boot image
+11-12 20:15:34.141  4920  4920 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:34.408  4920  4920 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:35.570  4920  4920 D AndroidRuntime: Shutting down VM
+11-12 20:15:38.305  4961  4961 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:38.317  4961  4961 I AndroidRuntime: Using default boot image
+11-12 20:15:38.320  4961  4961 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:38.518  4961  4961 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:39.630  4961  4961 D AndroidRuntime: Shutting down VM
+11-12 20:15:41.477  4989  4989 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:41.483  4989  4989 I AndroidRuntime: Using default boot image
+11-12 20:15:41.483  4989  4989 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:41.615  4989  4989 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:42.751  4989  4989 D AndroidRuntime: Shutting down VM
+11-12 20:15:44.883  5016  5016 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:44.889  5016  5016 I AndroidRuntime: Using default boot image
+11-12 20:15:44.889  5016  5016 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:45.090  5016  5016 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:46.711  5016  5016 D AndroidRuntime: Shutting down VM
+11-12 20:15:48.794  5044  5044 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:48.803  5044  5044 I AndroidRuntime: Using default boot image
+11-12 20:15:48.803  5044  5044 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:49.099  5044  5044 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:50.493  5044  5044 D AndroidRuntime: Shutting down VM
+11-12 20:15:52.648  5069  5069 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:15:52.653  5069  5069 I AndroidRuntime: Using default boot image
+11-12 20:15:52.654  5069  5069 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:15:52.842  5069  5069 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:15:55.038  5069  5069 D AndroidRuntime: Shutting down VM
+11-12 20:17:29.891  5110  5110 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:17:29.895  5110  5110 I AndroidRuntime: Using default boot image
+11-12 20:17:29.895  5110  5110 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:17:30.041  5110  5110 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:17:31.342  5110  5110 D AndroidRuntime: Shutting down VM
+11-12 20:17:32.989  5139  5139 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:17:32.998  5139  5139 I AndroidRuntime: Using default boot image
+11-12 20:17:32.998  5139  5139 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:17:33.139  5139  5139 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:17:34.386  5139  5139 D AndroidRuntime: Shutting down VM
+11-12 20:17:36.364  5171  5171 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:17:36.370  5171  5171 I AndroidRuntime: Using default boot image
+11-12 20:17:36.370  5171  5171 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:17:36.501  5171  5171 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:17:37.720  5171  5171 D AndroidRuntime: Shutting down VM
+11-12 20:17:39.317  5199  5199 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:17:39.322  5199  5199 I AndroidRuntime: Using default boot image
+11-12 20:17:39.322  5199  5199 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:17:39.463  5199  5199 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:17:40.726  5199  5199 D AndroidRuntime: Shutting down VM
+11-12 20:17:42.676  5223  5223 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:17:42.681  5223  5223 I AndroidRuntime: Using default boot image
+11-12 20:17:42.681  5223  5223 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:17:42.818  5223  5223 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:17:44.115  5223  5223 D AndroidRuntime: Shutting down VM
+11-12 20:17:45.841  5251  5251 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:17:45.850  5251  5251 I AndroidRuntime: Using default boot image
+11-12 20:17:45.850  5251  5251 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:17:46.008  5251  5251 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:17:47.277  5251  5251 D AndroidRuntime: Shutting down VM
+11-12 20:17:49.201  5276  5276 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:17:49.211  5276  5276 I AndroidRuntime: Using default boot image
+11-12 20:17:49.211  5276  5276 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:17:49.345  5276  5276 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:17:50.567  5276  5276 D AndroidRuntime: Shutting down VM
+11-12 20:18:08.161  5309  5309 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:18:08.171  5309  5309 I AndroidRuntime: Using default boot image
+11-12 20:18:08.172  5309  5309 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:18:08.424  5309  5309 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:18:09.751  5309  5309 D AndroidRuntime: Shutting down VM
+11-12 20:18:10.903   591  2525 D CoreBackPreview: Window{81df143 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@dac58f9, mPriority=0, mIsAnimationCallback=false}
+11-12 20:18:11.757  5336  5336 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:18:11.765  5336  5336 I AndroidRuntime: Using default boot image
+11-12 20:18:11.766  5336  5336 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:18:11.945  5336  5336 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:18:13.032  5336  5336 D AndroidRuntime: Shutting down VM
+11-12 20:18:14.760  5363  5363 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:18:14.764  5363  5363 I AndroidRuntime: Using default boot image
+11-12 20:18:14.764  5363  5363 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:18:14.927  5363  5363 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:18:16.015  5363  5363 D AndroidRuntime: Shutting down VM
+11-12 20:18:19.206  5408  5408 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:18:19.211  5408  5408 I AndroidRuntime: Using default boot image
+11-12 20:18:19.211  5408  5408 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:18:19.354  5408  5408 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:18:20.432  5408  5408 D AndroidRuntime: Shutting down VM
+11-12 20:18:22.273  5435  5435 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:18:22.282  5435  5435 I AndroidRuntime: Using default boot image
+11-12 20:18:22.282  5435  5435 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:18:22.490  5435  5435 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:18:23.581  5435  5435 D AndroidRuntime: Shutting down VM
+11-12 20:18:24.749   591  2350 D ImeInsetsSourceProvider: showImePostLayout cancelled, isScheduledAndReadyToShowIme: true, mImeRequester: Window{81df143 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}, serverVisible: true, frozen: false, mWindowContainer is: non-null, windowState: Window{18688a8 u0 InputMethod}, isDrawn: true, mGivenInsetsPending: false, dcTarget: Window{81df143 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}, controlTarget: Window{81df143 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}
+11-12 20:18:26.478  5475  5475 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:18:26.487  5475  5475 I AndroidRuntime: Using default boot image
+11-12 20:18:26.487  5475  5475 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:18:26.687  5475  5475 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:18:27.813  5475  5475 D AndroidRuntime: Shutting down VM
+11-12 20:18:30.680  5509  5509 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:18:30.686  5509  5509 I AndroidRuntime: Using default boot image
+11-12 20:18:30.686  5509  5509 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:18:30.828  5509  5509 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:18:31.908  5509  5509 D AndroidRuntime: Shutting down VM
+11-12 20:18:33.505  5538  5538 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:18:33.512  5538  5538 I AndroidRuntime: Using default boot image
+11-12 20:18:33.512  5538  5538 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:18:33.666  5538  5538 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:18:34.710  5538  5538 D AndroidRuntime: Shutting down VM
+11-12 20:18:36.633   591   940 D CoreBackPreview: Window{81df143 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback null
+11-12 20:18:36.637   591   940 W InputManager-JNI: Input channel object '81df143 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity (client)' was disposed without first being removed with the input manager!
+11-12 20:18:36.897  5564  5564 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:18:36.909  5564  5564 I AndroidRuntime: Using default boot image
+11-12 20:18:36.910  5564  5564 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:18:37.177  5564  5564 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:18:38.467  5564  5564 D AndroidRuntime: Shutting down VM
+11-12 20:19:09.551  5594  5594 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:19:09.556  5594  5594 I AndroidRuntime: Using default boot image
+11-12 20:19:09.556  5594  5594 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:19:09.783  5594  5594 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:19:11.062  5594  5594 D AndroidRuntime: Shutting down VM
+11-12 20:19:13.038  5621  5621 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:19:13.043  5621  5621 I AndroidRuntime: Using default boot image
+11-12 20:19:13.043  5621  5621 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:19:13.162  5621  5621 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:19:18.662  5621  5621 D AndroidRuntime: Shutting down VM
+11-12 20:19:20.476  5652  5652 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:19:20.485  5652  5652 I AndroidRuntime: Using default boot image
+11-12 20:19:20.485  5652  5652 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:19:20.604  5652  5652 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:19:21.767  5652  5652 D AndroidRuntime: Shutting down VM
+11-12 20:19:23.838  5677  5677 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:19:23.844  5677  5677 I AndroidRuntime: Using default boot image
+11-12 20:19:23.845  5677  5677 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:19:23.982  5677  5677 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:19:25.119  5677  5677 D AndroidRuntime: Shutting down VM
+11-12 20:19:26.896  5705  5705 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:19:26.900  5705  5705 I AndroidRuntime: Using default boot image
+11-12 20:19:26.900  5705  5705 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:19:27.029  5705  5705 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:19:28.232  5705  5705 D AndroidRuntime: Shutting down VM
+11-12 20:19:30.211  5731  5731 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:19:30.215  5731  5731 I AndroidRuntime: Using default boot image
+11-12 20:19:30.215  5731  5731 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:19:30.379  5731  5731 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:19:32.424  5731  5731 D AndroidRuntime: Shutting down VM
+11-12 20:19:33.992  5759  5759 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:19:33.999  5759  5759 I AndroidRuntime: Using default boot image
+11-12 20:19:33.999  5759  5759 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:19:34.140  5759  5759 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:19:36.125  5759  5759 D AndroidRuntime: Shutting down VM
+11-12 20:19:40.070  5800  5800 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:19:40.076  5800  5800 I AndroidRuntime: Using default boot image
+11-12 20:19:40.077  5800  5800 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:19:40.352  5800  5800 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:19:41.479  5800  5800 D AndroidRuntime: Shutting down VM
+11-12 20:19:44.042  5836  5836 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:19:44.047  5836  5836 I AndroidRuntime: Using default boot image
+11-12 20:19:44.047  5836  5836 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:19:44.216  5836  5836 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:19:45.391  5836  5836 D AndroidRuntime: Shutting down VM
+11-12 20:19:48.088  5865  5865 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:19:48.096  5865  5865 I AndroidRuntime: Using default boot image
+11-12 20:19:48.096  5865  5865 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:19:48.230  5865  5865 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:19:49.459  5865  5865 D AndroidRuntime: Shutting down VM
+11-12 20:20:37.697  5899  5899 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:20:37.710  5899  5899 I AndroidRuntime: Using default boot image
+11-12 20:20:37.710  5899  5899 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:20:37.870  5899  5899 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:20:39.069  5899  5899 D AndroidRuntime: Shutting down VM
+11-12 20:20:40.513   591  1061 D CoreBackPreview: Window{f5cdb6 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f98f224, mPriority=0, mIsAnimationCallback=false}
+11-12 20:20:41.081  5933  5933 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:20:41.088  5933  5933 I AndroidRuntime: Using default boot image
+11-12 20:20:41.088  5933  5933 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:20:41.241  5933  5933 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:20:42.409  5933  5933 D AndroidRuntime: Shutting down VM
+11-12 20:21:08.308  5961  5961 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:08.317  5961  5961 I AndroidRuntime: Using default boot image
+11-12 20:21:08.318  5961  5961 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:08.463  5961  5961 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:09.528  5961  5961 D AndroidRuntime: Shutting down VM
+11-12 20:21:10.577   591   933 D CoreBackPreview: Window{f5cdb6 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback null
+11-12 20:21:10.582   591   933 W InputManager-JNI: Input channel object 'f5cdb6 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity (client)' was disposed without first being removed with the input manager!
+11-12 20:21:11.665  5990  5990 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:11.670  5990  5990 I AndroidRuntime: Using default boot image
+11-12 20:21:11.670  5990  5990 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:11.893  5990  5990 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:14.203  5990  5990 D AndroidRuntime: Shutting down VM
+11-12 20:21:15.855  6035  6035 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:15.862  6035  6035 I AndroidRuntime: Using default boot image
+11-12 20:21:15.862  6035  6035 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:16.046  6035  6035 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:17.172  6035  6035 D AndroidRuntime: Shutting down VM
+11-12 20:21:19.216  6059  6059 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:19.222  6059  6059 I AndroidRuntime: Using default boot image
+11-12 20:21:19.222  6059  6059 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:19.386  6059  6059 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:22.155  6059  6059 D AndroidRuntime: Shutting down VM
+11-12 20:21:25.035  6096  6096 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:25.048  6096  6096 I AndroidRuntime: Using default boot image
+11-12 20:21:25.048  6096  6096 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:25.363  6096  6096 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:26.494  6096  6096 D AndroidRuntime: Shutting down VM
+11-12 20:21:29.754  6134  6134 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:29.775  6134  6134 I AndroidRuntime: Using default boot image
+11-12 20:21:29.780  6134  6134 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:30.033  6134  6134 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:31.203  6134  6134 D AndroidRuntime: Shutting down VM
+11-12 20:21:33.255  6164  6164 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:33.262  6164  6164 I AndroidRuntime: Using default boot image
+11-12 20:21:33.262  6164  6164 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:33.498  6164  6164 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:34.664  6164  6164 D AndroidRuntime: Shutting down VM
+11-12 20:21:36.790  6189  6189 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:36.799  6189  6189 I AndroidRuntime: Using default boot image
+11-12 20:21:36.799  6189  6189 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:36.986  6189  6189 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:40.470  6189  6189 D AndroidRuntime: Shutting down VM
+11-12 20:21:42.357  6217  6217 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:42.365  6217  6217 I AndroidRuntime: Using default boot image
+11-12 20:21:42.365  6217  6217 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:42.589  6217  6217 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:43.826  6217  6217 D AndroidRuntime: Shutting down VM
+11-12 20:21:46.020  6242  6242 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:46.030  6242  6242 I AndroidRuntime: Using default boot image
+11-12 20:21:46.030  6242  6242 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:46.334  6242  6242 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:47.849  6242  6242 D AndroidRuntime: Shutting down VM
+11-12 20:21:50.503  6270  6270 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:50.515  6270  6270 I AndroidRuntime: Using default boot image
+11-12 20:21:50.515  6270  6270 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:50.799  6270  6270 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:53.208  6270  6270 D AndroidRuntime: Shutting down VM
+11-12 20:21:55.491  6296  6296 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:21:55.500  6296  6296 I AndroidRuntime: Using default boot image
+11-12 20:21:55.500  6296  6296 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:21:55.723  6296  6296 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:21:57.232  6296  6296 D AndroidRuntime: Shutting down VM
+11-12 20:22:32.174  6345  6345 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:22:32.178  6345  6345 I AndroidRuntime: Using default boot image
+11-12 20:22:32.179  6345  6345 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:22:32.360  6345  6345 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:22:33.692  6345  6345 D AndroidRuntime: Shutting down VM
+11-12 20:22:36.775  6383  6383 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:22:36.782  6383  6383 I AndroidRuntime: Using default boot image
+11-12 20:22:36.782  6383  6383 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:22:36.975  6383  6383 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:22:38.317  6383  6383 D AndroidRuntime: Shutting down VM
+11-12 20:22:40.308  6409  6409 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:22:40.316  6409  6409 I AndroidRuntime: Using default boot image
+11-12 20:22:40.316  6409  6409 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:22:40.469  6409  6409 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:22:41.915  6409  6409 D AndroidRuntime: Shutting down VM
+11-12 20:22:43.750  6437  6437 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:22:43.759  6437  6437 I AndroidRuntime: Using default boot image
+11-12 20:22:43.759  6437  6437 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:22:43.904  6437  6437 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:22:45.115  6437  6437 D AndroidRuntime: Shutting down VM
+11-12 20:22:46.655   591   933 D CoreBackPreview: Window{83066a1 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@1550887, mPriority=0, mIsAnimationCallback=false}
+11-12 20:22:47.193  6463  6463 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:22:47.201  6463  6463 I AndroidRuntime: Using default boot image
+11-12 20:22:47.201  6463  6463 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:22:47.351  6463  6463 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:22:48.510  6463  6463 D AndroidRuntime: Shutting down VM
+11-12 20:22:50.144  6492  6492 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:22:50.164  6492  6492 I AndroidRuntime: Using default boot image
+11-12 20:22:50.164  6492  6492 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:22:50.300  6492  6492 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:22:51.372  6492  6492 D AndroidRuntime: Shutting down VM
+11-12 20:22:55.317  6531  6531 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:22:55.325  6531  6531 I AndroidRuntime: Using default boot image
+11-12 20:22:55.325  6531  6531 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:22:55.573  6531  6531 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:22:56.653  6531  6531 D AndroidRuntime: Shutting down VM
+11-12 20:22:58.670  6559  6559 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:22:58.677  6559  6559 I AndroidRuntime: Using default boot image
+11-12 20:22:58.678  6559  6559 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:22:58.940  6559  6559 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:23:00.009  6559  6559 D AndroidRuntime: Shutting down VM
+11-12 20:23:03.396  6600  6600 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:23:03.405  6600  6600 I AndroidRuntime: Using default boot image
+11-12 20:23:03.405  6600  6600 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:23:03.629  6600  6600 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:23:04.689  6600  6600 D AndroidRuntime: Shutting down VM
+11-12 20:23:07.475  6633  6633 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:23:07.482  6633  6633 I AndroidRuntime: Using default boot image
+11-12 20:23:07.483  6633  6633 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:23:07.776  6633  6633 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:23:08.841  6633  6633 D AndroidRuntime: Shutting down VM
+11-12 20:23:30.045  6664  6664 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:23:30.049  6664  6664 I AndroidRuntime: Using default boot image
+11-12 20:23:30.049  6664  6664 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:23:30.233  6664  6664 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:23:31.311  6664  6664 D AndroidRuntime: Shutting down VM
+11-12 20:23:32.721   591  2530 D CoreBackPreview: Window{7c3b46d u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4a4a933, mPriority=0, mIsAnimationCallback=false}
+11-12 20:23:33.388  6692  6692 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:23:33.394  6692  6692 I AndroidRuntime: Using default boot image
+11-12 20:23:33.394  6692  6692 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:23:33.625  6692  6692 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:23:34.702  6692  6692 D AndroidRuntime: Shutting down VM
+11-12 20:24:02.530  6721  6721 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:02.540  6721  6721 I AndroidRuntime: Using default boot image
+11-12 20:24:02.540  6721  6721 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:02.717  6721  6721 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:03.781  6721  6721 D AndroidRuntime: Shutting down VM
+11-12 20:24:07.184  6764  6764 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:07.189  6764  6764 I AndroidRuntime: Using default boot image
+11-12 20:24:07.189  6764  6764 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:07.365  6764  6764 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:08.451  6764  6764 D AndroidRuntime: Shutting down VM
+11-12 20:24:10.321  6793  6793 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:10.326  6793  6793 I AndroidRuntime: Using default boot image
+11-12 20:24:10.326  6793  6793 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:10.524  6793  6793 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:11.644  6793  6793 D AndroidRuntime: Shutting down VM
+11-12 20:24:13.626  6817  6817 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:13.630  6817  6817 I AndroidRuntime: Using default boot image
+11-12 20:24:13.630  6817  6817 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:13.769  6817  6817 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:14.860  6817  6817 D AndroidRuntime: Shutting down VM
+11-12 20:24:16.674   591   612 D CoreBackPreview: Window{7c3b46d u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback null
+11-12 20:24:16.676   591   612 W InputManager-JNI: Input channel object '7c3b46d com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity (client)' was disposed without first being removed with the input manager!
+11-12 20:24:17.660  6849  6849 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:17.668  6849  6849 I AndroidRuntime: Using default boot image
+11-12 20:24:17.669  6849  6849 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:17.831  6849  6849 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:18.900  6849  6849 D AndroidRuntime: Shutting down VM
+11-12 20:24:20.553  6877  6877 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:20.564  6877  6877 I AndroidRuntime: Using default boot image
+11-12 20:24:20.564  6877  6877 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:20.736  6877  6877 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:21.810  6877  6877 D AndroidRuntime: Shutting down VM
+11-12 20:24:23.190   591   933 D CoreBackPreview: Window{17e96c4 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@781d4e2, mPriority=0, mIsAnimationCallback=false}
+11-12 20:24:24.043  6905  6905 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:24.050  6905  6905 I AndroidRuntime: Using default boot image
+11-12 20:24:24.050  6905  6905 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:24.280  6905  6905 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:25.414  6905  6905 D AndroidRuntime: Shutting down VM
+11-12 20:24:27.152  6932  6932 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:27.159  6932  6932 I AndroidRuntime: Using default boot image
+11-12 20:24:27.159  6932  6932 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:27.344  6932  6932 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:28.401  6932  6932 D AndroidRuntime: Shutting down VM
+11-12 20:24:32.307  6972  6972 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:32.312  6972  6972 I AndroidRuntime: Using default boot image
+11-12 20:24:32.312  6972  6972 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:32.550  6972  6972 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:33.603  6972  6972 D AndroidRuntime: Shutting down VM
+11-12 20:24:35.465  7000  7000 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:35.470  7000  7000 I AndroidRuntime: Using default boot image
+11-12 20:24:35.470  7000  7000 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:35.660  7000  7000 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:36.753  7000  7000 D AndroidRuntime: Shutting down VM
+11-12 20:24:38.736  7024  7024 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:38.743  7024  7024 I AndroidRuntime: Using default boot image
+11-12 20:24:38.744  7024  7024 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:38.935  7024  7024 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:39.997  7024  7024 D AndroidRuntime: Shutting down VM
+11-12 20:24:41.763  7052  7052 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:24:41.768  7052  7052 I AndroidRuntime: Using default boot image
+11-12 20:24:41.768  7052  7052 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:24:42.033  7052  7052 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:24:43.116  7052  7052 D AndroidRuntime: Shutting down VM
+11-12 20:25:30.460  7077  7077 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:25:30.468  7077  7077 I AndroidRuntime: Using default boot image
+11-12 20:25:30.468  7077  7077 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:25:30.610  7077  7077 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:25:31.690  7077  7077 D AndroidRuntime: Shutting down VM
+11-12 20:25:32.946   591  4517 D CoreBackPreview: Window{17e96c4 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback null
+11-12 20:25:32.950   591  4517 W InputManager-JNI: Input channel object '17e96c4 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity (client)' was disposed without first being removed with the input manager!
+11-12 20:25:33.865  7104  7104 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:25:33.881  7104  7104 I AndroidRuntime: Using default boot image
+11-12 20:25:33.881  7104  7104 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:25:34.173  7104  7104 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:25:35.259  7104  7104 D AndroidRuntime: Shutting down VM
+11-12 20:25:37.356  7132  7132 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:25:37.364  7132  7132 I AndroidRuntime: Using default boot image
+11-12 20:25:37.364  7132  7132 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:25:37.532  7132  7132 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:25:38.669  7132  7132 D AndroidRuntime: Shutting down VM
+11-12 20:25:42.287  7167  7167 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:25:42.292  7167  7167 I AndroidRuntime: Using default boot image
+11-12 20:25:42.292  7167  7167 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:25:42.561  7167  7167 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:25:43.669  7167  7167 D AndroidRuntime: Shutting down VM
+11-12 20:25:45.525  7195  7195 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:25:45.540  7195  7195 I AndroidRuntime: Using default boot image
+11-12 20:25:45.540  7195  7195 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:25:45.722  7195  7195 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:25:46.835  7195  7195 D AndroidRuntime: Shutting down VM
+11-12 20:25:50.457  7228  7228 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:25:50.461  7228  7228 I AndroidRuntime: Using default boot image
+11-12 20:25:50.461  7228  7228 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:25:50.713  7228  7228 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:25:51.844  7228  7228 D AndroidRuntime: Shutting down VM
+11-12 20:25:53.966  7257  7257 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:25:53.971  7257  7257 I AndroidRuntime: Using default boot image
+11-12 20:25:53.971  7257  7257 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:25:54.138  7257  7257 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:25:55.203  7257  7257 D AndroidRuntime: Shutting down VM
+11-12 20:25:58.909  7294  7294 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:25:58.913  7294  7294 I AndroidRuntime: Using default boot image
+11-12 20:25:58.913  7294  7294 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:25:59.072  7294  7294 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:26:00.116  7294  7294 D AndroidRuntime: Shutting down VM
+11-12 20:26:02.743  7326  7326 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:26:02.747  7326  7326 I AndroidRuntime: Using default boot image
+11-12 20:26:02.747  7326  7326 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:26:02.912  7326  7326 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:26:04.036  7326  7326 D AndroidRuntime: Shutting down VM
+11-12 20:26:06.018  7355  7355 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:26:06.030  7355  7355 I AndroidRuntime: Using default boot image
+11-12 20:26:06.030  7355  7355 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:26:06.319  7355  7355 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:26:07.451  7355  7355 D AndroidRuntime: Shutting down VM
+11-12 20:26:09.688  7384  7384 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:26:09.708  7384  7384 I AndroidRuntime: Using default boot image
+11-12 20:26:09.708  7384  7384 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:26:10.001  7384  7384 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:26:11.162  7384  7384 D AndroidRuntime: Shutting down VM
+11-12 20:26:11.874   591  2527 D CoreBackPreview: Window{83066a1 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback null
+11-12 20:26:11.898   591  2529 W InputManager-JNI: Input channel object '83066a1 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity (client)' was disposed without first being removed with the input manager!
+11-12 20:26:32.963  7433  7433 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:26:32.969  7433  7433 I AndroidRuntime: Using default boot image
+11-12 20:26:32.969  7433  7433 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:26:33.096  7433  7433 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:26:34.390  7433  7433 D AndroidRuntime: Shutting down VM
+11-12 20:26:54.397  7462  7462 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:26:54.405  7462  7462 I AndroidRuntime: Using default boot image
+11-12 20:26:54.405  7462  7462 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:26:54.672  7462  7462 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:26:55.972  7462  7462 D AndroidRuntime: Shutting down VM
+11-12 20:26:57.882   591   933 D CoreBackPreview: Window{3776cb8 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3ae5df6, mPriority=0, mIsAnimationCallback=false}
+11-12 20:26:58.320  7490  7490 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:26:58.325  7490  7490 I AndroidRuntime: Using default boot image
+11-12 20:26:58.325  7490  7490 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:26:58.533  7490  7490 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:26:59.682  7490  7490 D AndroidRuntime: Shutting down VM
+11-12 20:27:01.579  7520  7520 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:27:01.591  7520  7520 I AndroidRuntime: Using default boot image
+11-12 20:27:01.592  7520  7520 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:27:01.871  7520  7520 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:27:02.939  7520  7520 D AndroidRuntime: Shutting down VM
+11-12 20:27:05.113  7543  7543 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:27:05.127  7543  7543 I AndroidRuntime: Using default boot image
+11-12 20:27:05.127  7543  7543 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:27:05.356  7543  7543 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:27:06.475  7543  7543 D AndroidRuntime: Shutting down VM
+11-12 20:27:08.478  7571  7571 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:27:08.483  7571  7571 I AndroidRuntime: Using default boot image
+11-12 20:27:08.483  7571  7571 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:27:08.634  7571  7571 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:27:09.723  7571  7571 D AndroidRuntime: Shutting down VM
+11-12 20:27:12.865  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask()
+11-12 20:27:12.865  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting createReactInstance task ref
+11-12 20:27:12.887  4541  4541 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Starting React Native reload
+11-12 20:27:12.888  4541  4541 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Calling ReactContext.onHostPause()
+11-12 20:27:12.891  4541  4541 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(callWithExistingReactInstance(callFunctionOnModule("RCTDeviceEventEmitter", "emit"))): Execute: reactInstance is null. Dropping work.
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: Unhandled SoftException
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(callWithExistingReactInstance(callFunctionOnModule("RCTDeviceEventEmitter", "emit"))): Execute: reactInstance is null. Dropping work.
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.callWithExistingReactInstance$lambda$32(ReactHostImpl.kt:922)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda37.then(D8$$SyntheticClass:0)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately$lambda$3(Task.kt:359)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Executors$ImmediateExecutor.execute(Executors.kt:41)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately(Task.kt:357)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.access$completeImmediately(Task.kt:253)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith(Task.kt:134)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith$default(Task.kt:118)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.onSuccess$lambda$12(Task.kt:176)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$$ExternalSyntheticLambda2.then(D8$$SyntheticClass:0)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Executors$ImmediateExecutor.execute(Executors.kt:41)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask(Task.kt:391)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.access$completeAfterTask(Task.kt:253)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.continueWithTask(Task.kt:159)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.onSuccess(Task.kt:171)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.callWithExistingReactInstance(ReactHostImpl.kt:918)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.callWithExistingReactInstance$default(ReactHostImpl.kt:911)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.callFunctionOnModule$ReactAndroid(ReactHostImpl.kt:809)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.BridgelessReactContext.emitDeviceEvent(BridgelessReactContext.kt:160)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.modules.appstate.AppStateModule.sendEvent(AppStateModule.kt:71)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.modules.appstate.AppStateModule.sendAppStateChangeEvent(AppStateModule.kt:75)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.modules.appstate.AppStateModule.onHostPause(AppStateModule.kt:48)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.bridge.ReactContext.onHostPause(ReactContext.java:328)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReloadTask$lambda$52(ReactHostImpl.kt:1335)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda15.then(D8$$SyntheticClass:0)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at android.os.Handler.handleCallback(Handler.java:959)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at android.os.Looper.loop(Looper.java:317)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+11-12 20:27:12.896  4541  4541 E unknown:ReactHost: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+11-12 20:27:12.899  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Stopping all React Native surfaces
+11-12 20:27:12.912   591   933 D CoreBackPreview: Window{3776cb8 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback null
+11-12 20:27:12.938   591  1734 W InputManager-JNI: Input channel object '3776cb8 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity (client)' was disposed without first being removed with the input manager!
+11-12 20:27:12.976  4541  4541 W VRI[MainActivity]: Dropping event due to root view being removed: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_Y, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=5302312027278, downTime=5302312027278, deviceId=-1, source=0x101, displayId=-1 }
+11-12 20:27:13.012  4541  4541 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(callWithExistingReactInstance(callFunctionOnModule("RCTDeviceEventEmitter", "emit"))): Execute: reactInstance is null. Dropping work.
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: Unhandled SoftException
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(callWithExistingReactInstance(callFunctionOnModule("RCTDeviceEventEmitter", "emit"))): Execute: reactInstance is null. Dropping work.
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.callWithExistingReactInstance$lambda$32(ReactHostImpl.kt:922)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda37.then(D8$$SyntheticClass:0)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately$lambda$3(Task.kt:359)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Executors$ImmediateExecutor.execute(Executors.kt:41)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately(Task.kt:357)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.access$completeImmediately(Task.kt:253)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith(Task.kt:134)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith$default(Task.kt:118)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.onSuccess$lambda$12(Task.kt:176)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$$ExternalSyntheticLambda2.then(D8$$SyntheticClass:0)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:393)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Executors$ImmediateExecutor.execute(Executors.kt:41)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask(Task.kt:391)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.access$completeAfterTask(Task.kt:253)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.continueWithTask(Task.kt:159)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.onSuccess(Task.kt:171)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.callWithExistingReactInstance(ReactHostImpl.kt:918)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.callWithExistingReactInstance$default(ReactHostImpl.kt:911)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.callFunctionOnModule$ReactAndroid(ReactHostImpl.kt:809)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.BridgelessReactContext.emitDeviceEvent(BridgelessReactContext.kt:160)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.ReactRootView.sendEvent(ReactRootView.java:887)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.ReactRootView$CustomGlobalLayoutListener.checkForKeyboardEvents(ReactRootView.java:975)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.facebook.react.ReactRootView$CustomGlobalLayoutListener.onGlobalLayout(ReactRootView.java:929)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.view.ViewTreeObserver.dispatchOnGlobalLayout(ViewTreeObserver.java:1142)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:4106)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2917)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:10324)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1406)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1415)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.view.Choreographer.doCallbacks(Choreographer.java:1015)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.view.Choreographer.doFrame(Choreographer.java:945)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1389)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.os.Handler.handleCallback(Handler.java:959)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.os.Looper.loop(Looper.java:317)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+11-12 20:27:13.016  4541  4541 E unknown:ReactHost: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+11-12 20:27:13.120  4541  4541 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Removing memory pressure listener
+11-12 20:27:13.120  4541  4541 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting ReactContext ref
+11-12 20:27:13.120  4541  4541 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Destroying ReactContext
+11-12 20:27:13.120  4541  4541 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Calling DevSupportManager.onReactInstanceDestroyed(reactContext)
+11-12 20:27:13.271  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting ReactInstance ptr
+11-12 20:27:13.271  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Destroying ReactInstance
+11-12 20:27:13.272  4541  4541 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(onWindowFocusChange(hasFocus = "true")): Tried to access onWindowFocusChange while context is not ready
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: Unhandled SoftException
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(onWindowFocusChange(hasFocus = "true")): Tried to access onWindowFocusChange while context is not ready
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.onWindowFocusChange(ReactHostImpl.kt:679)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at com.facebook.react.ReactDelegate.onWindowFocusChanged(ReactDelegate.kt:226)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at com.facebook.react.ReactActivityDelegate.onWindowFocusChanged(ReactActivityDelegate.java:237)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$onWindowFocusChanged$1.invokeSuspend(ReactActivityDelegateWrapper.kt:322)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$onWindowFocusChanged$1.invoke(Unknown Source:8)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$onWindowFocusChanged$1.invoke(Unknown Source:4)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$launchLifecycleScopeWithLock$1.invokeSuspend(ReactActivityDelegateWrapper.kt:469)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.internal.DispatchedContinuationKt.resumeCancellableWith(DispatchedContinuation.kt:375)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.intrinsics.CancellableKt.startCoroutineCancellable(Cancellable.kt:26)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:358)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:134)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:53)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt.launch(Unknown Source:1)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:44)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source:1)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper.launchLifecycleScopeWithLock(ReactActivityDelegateWrapper.kt:467)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper.launchLifecycleScopeWithLock$default(ReactActivityDelegateWrapper.kt:463)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper.onWindowFocusChanged(ReactActivityDelegateWrapper.kt:320)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at com.facebook.react.ReactActivity.onWindowFocusChanged(ReactActivity.java:161)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at androidx.appcompat.view.WindowCallbackWrapper.onWindowFocusChanged(WindowCallbackWrapper.java:124)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at expo.modules.devmenu.detectors.InterceptingWindowCallback.onWindowFocusChanged(Unknown Source:2)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at com.android.internal.policy.DecorView.onWindowFocusChanged(DecorView.java:1772)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.view.View.dispatchWindowFocusChanged(View.java:16743)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1505)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl.dispatchFocusEvent(ViewRootImpl.java:4697)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:4601)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged(Unknown Source:0)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl(ViewRootImpl.java:6773)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:6683)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.os.Looper.loop(Looper.java:317)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+11-12 20:27:13.274  4541  4541 E unknown:ReactHost: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+11-12 20:27:13.338  4541  4601 I ExpoModulesCore: ✅ ModuleRegistry was destroyed
+11-12 20:27:13.349  4541  4601 I ExpoModulesCore: ✅ AppContext was destroyed
+11-12 20:27:13.349  4541  4601 I ExpoModulesCore: ✅ KotlinInteropModuleRegistry was destroyed
+11-12 20:27:13.713  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting start task ref
+11-12 20:27:13.713  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-12 20:27:13.713  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+11-12 20:27:13.714  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+11-12 20:27:13.714  4541  4601 W unknown:BridgelessReact: ReactHost{0}.isMetroRunning()
+11-12 20:27:13.736  4541  4590 W unknown:BridgelessReact: ReactHost{0}.isMetroRunning(): Async result = true
+11-12 20:27:13.736  4541  4601 W unknown:BridgelessReact: ReactHost{0}.loadJSBundleFromMetro()
+11-12 20:27:14.044  7610  7610 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:27:14.050  7610  7610 I AndroidRuntime: Using default boot image
+11-12 20:27:14.050  7610  7610 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:27:14.184  4541  7606 W unknown:BridgelessReact: ReactHost{0}.loadJSBundleFromMetro(): Creating BundleLoader
+11-12 20:27:14.185  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating BridgelessReactContext
+11-12 20:27:14.185  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+11-12 20:27:14.261  4541  4601 I ExpoModulesCore: ✅ AppContext was initialized
+11-12 20:27:14.275  7610  7610 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:27:14.440  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+11-12 20:27:14.441  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): DevSupportManager.onNewReactContextCreated()
+11-12 20:27:14.442  4541  7612 W ReactNativeJNI: ReactInstance: evaluateJavaScript() with JS bundle
+11-12 20:27:14.442  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Restarting previously running React Native Surfaces
+11-12 20:27:14.442  4541  4541 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-12 20:27:14.443  4541  4601 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReloadTask(): Resetting reload task ref
+11-12 20:27:14.443  4541  4541 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+11-12 20:27:14.911  4541  7612 W BridgelessReactContext: [WARNING] Bridgeless doesn't support CatalystInstance. Accessing an API that's not part of the new architecture is not encouraged usage.
+11-12 20:27:14.912  4541  7612 I ExpoModulesCore: ✅ JSI interop was installed
+11-12 20:27:14.921  4541  7612 I ExpoModulesCore: ✅ Constants were exported
+11-12 20:27:15.031  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNBackgroundLayerManager
+11-12 20:27:15.033  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNMarkerViewManager
+11-12 20:27:15.035  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNCircleLayerManager
+11-12 20:27:15.039  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNFillLayerManager
+11-12 20:27:15.045  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.light.MLRNLightManager
+11-12 20:27:15.046  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.images.MLRNImagesManager
+11-12 20:27:15.048  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNShapeSourceManager
+11-12 20:27:15.054  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNRasterLayerManager
+11-12 20:27:15.061  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.location.MLRNNativeUserLocationManager
+11-12 20:27:15.064  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNRasterSourceManager
+11-12 20:27:15.070  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNAndroidTextureMapViewManager
+11-12 20:27:15.071  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNMapViewManager$MapShadowNode
+11-12 20:27:15.073  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNImageSourceManager
+11-12 20:27:15.077  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNVectorSourceManager
+11-12 20:27:15.086  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNHeatmapLayerManager
+11-12 20:27:15.088  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNCalloutManager
+11-12 20:27:15.090  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.camera.MLRNCameraManager
+11-12 20:27:15.091  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNMapViewManager
+11-12 20:27:15.093  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNPointAnnotationManager
+11-12 20:27:15.103  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNSymbolLayerManager
+11-12 20:27:15.107  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNFillExtrusionLayerManager
+11-12 20:27:15.112  4541  7612 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNLineLayerManager
+11-12 20:27:15.348  7610  7610 D AndroidRuntime: Shutting down VM
+11-12 20:27:16.420  4541  7612 I ReactNativeJS: Running "main" with {"rootTag":1,"initialProps":{},"fabric":true}
+11-12 20:27:16.653  4541  4541 I ExpoModulesCore: ✅ JSI interop was installed
+11-12 20:27:16.925  7659  7659 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:27:16.930  7659  7659 I AndroidRuntime: Using default boot image
+11-12 20:27:16.930  7659  7659 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:27:17.058  7659  7659 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:27:21.261  7659  7659 D AndroidRuntime: Shutting down VM
+11-12 20:29:45.526  7707  7707 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 20:29:45.534  7707  7707 I AndroidRuntime: Using default boot image
+11-12 20:29:45.535  7707  7707 I AndroidRuntime: Leaving lock profiling enabled
+11-12 20:29:45.685  7707  7707 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 20:29:46.819  7707  7707 D AndroidRuntime: Shutting down VM

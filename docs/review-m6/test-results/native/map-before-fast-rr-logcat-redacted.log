@@ -1,0 +1,588 @@
+11-12 21:13:40.636   826  1008 V WindowManagerShell: Transition requested (#24): android.os.BinderProxy@18964de TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=26 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity } baseActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} topActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} numActivities=1 lastActiveTime=8091635 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@5efc6bf} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{c60018c com.anonymous.mylifemobile.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=720 topActivityLetterboxHeight=1280 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 24 }
+11-12 21:13:40.636   591  4280 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+11-12 21:13:40.686  1141  1141 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=26, baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity }
+11-12 21:13:40.691   591   629 I ActivityManager: Start proc 13537:com.anonymous.mylifemobile/u0a209 for next-top-activity {com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}
+11-12 21:13:40.761 13537 13537 I us.mylifemobile: Late-enabling -Xcheck:jni
+11-12 21:13:40.796   591   616 V WindowManager: Sent Transition (#24) createdAt=11-12 21:13:40.624 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=26 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity } baseActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} topActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} numActivities=1 lastActiveTime=8091635 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{6fe9b8b Task{183f07f #26 type=standard A=10209:com.anonymous.mylifemobile}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{64ec468 com.anonymous.mylifemobile.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=720 topActivityLetterboxHeight=1280 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 24 }
+11-12 21:13:40.833 13537 13537 I us.mylifemobile: Using CollectorTypeCMC GC.
+11-12 21:13:40.835 13537 13537 W us.mylifemobile: Unexpected CPU variant for x86: x86_64.
+11-12 21:13:40.835 13537 13537 W us.mylifemobile: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+11-12 21:13:40.882 13537 13537 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-12 21:13:41.046 13537 13537 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-12 21:13:41.046 13537 13537 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+11-12 21:13:41.053 13537 13537 W ziparchive: Unable to open '/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.dm': No such file or directory
+11-12 21:13:41.053 13537 13537 W ziparchive: Unable to open '/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.dm': No such file or directory
+11-12 21:13:42.149 13537 13537 D nativeloader: Configuring clns-7 for other apk /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/lib/x86_64:/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.anonymous.mylifemobile
+11-12 21:13:42.224 13537 13537 V GraphicsEnvironment: Currently set values for:
+11-12 21:13:42.225 13537 13537 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+11-12 21:13:42.225 13537 13537 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+11-12 21:13:42.225 13537 13537 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+11-12 21:13:42.225 13537 13537 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-12 21:13:42.314 13537 13537 W SoLoader: Initializing SoLoader: 0
+11-12 21:13:42.316 13537 13537 W SoLoader: Recording new base apk path: /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk
+11-12 21:13:42.316 13537 13537 W SoLoader: Previously recorded 0 base apk paths.
+11-12 21:13:42.320 13537 13537 I SoLoader: Preparing SO source: DirectorySoSource[root = /vendor/lib64 flags = 2]
+11-12 21:13:42.321 13537 13537 I SoLoader: Preparing SO source: DirectorySoSource[root = /system/lib64 flags = 2]
+11-12 21:13:42.322 13537 13537 I SoLoader: Preparing SO source: DirectApkSoSource[root = [/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64]]
+11-12 21:13:42.539 13537 13537 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/lib/x86_64 flags = 0]]
+11-12 21:13:42.540 13537 13537 I SoLoader: init finish: 4 SO sources prepared
+11-12 21:13:42.541 13537 13537 W SoLoader: SoLoader initialized: 8
+11-12 21:13:42.595 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libc++_shared.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.611 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libjsi.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.620 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libfbjni.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.630 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libreactnative.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Entering merged library JNI_OnLoad.
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing 13 pre-merged libs (including stub)
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libfabricjni_so.  onload_func: 0x7c43445f67b0
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libreact_devsupportjni_so.  onload_func: 0x7c4344853b90
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libreact_featureflagsjni_so.  onload_func: 0x7c43448657f0
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libreact_newarchdefaults_so.  onload_func: 0x7c4344917f40
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libreact_tracingjni_so.  onload_func: 0x7c4344c2ad40
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libreactnativeblob_so.  onload_func: 0x7c4344c3dc80
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libreactnativejni_so.  onload_func: 0x7c4344c61440
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libreactnativejni_common_so.  onload_func: 0x7c4344c6cca0
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register librninstance_so.  onload_func: 0x7c4344ce9110
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libturbomodulejsijni_so.  onload_func: 0x7c4344e3e120
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libuimanagerjni_so.  onload_func: 0x7c4344e54670
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: Preparing to register libyoga_so.  onload_func: 0x7c4344e63b20
+11-12 21:13:42.630 13537 13537 D jni_lib_merge: About to register 12 actual methods.
+11-12 21:13:42.653 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libreact_codegen_rngesturehandler_codegen.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.665 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libreact_codegen_rnscreens.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Entering merged library JNI_OnLoad.
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing 13 pre-merged libs (including stub)
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libfabricjni_so.  onload_func: 0x7c43445f67b0
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libreact_devsupportjni_so.  onload_func: 0x7c4344853b90
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libreact_featureflagsjni_so.  onload_func: 0x7c43448657f0
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libreact_newarchdefaults_so.  onload_func: 0x7c4344917f40
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libreact_tracingjni_so.  onload_func: 0x7c4344c2ad40
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libreactnativeblob_so.  onload_func: 0x7c4344c3dc80
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libreactnativejni_so.  onload_func: 0x7c4344c61440
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libreactnativejni_common_so.  onload_func: 0x7c4344c6cca0
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register librninstance_so.  onload_func: 0x7c4344ce9110
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libturbomodulejsijni_so.  onload_func: 0x7c4344e3e120
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libuimanagerjni_so.  onload_func: 0x7c4344e54670
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: Preparing to register libyoga_so.  onload_func: 0x7c4344e63b20
+11-12 21:13:42.665 13537 13537 D jni_lib_merge: About to register 12 actual methods.
+11-12 21:13:42.679 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libreact_codegen_rnsvg.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Entering merged library JNI_OnLoad.
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing 13 pre-merged libs (including stub)
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libfabricjni_so.  onload_func: 0x7c43445f67b0
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libreact_devsupportjni_so.  onload_func: 0x7c4344853b90
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libreact_featureflagsjni_so.  onload_func: 0x7c43448657f0
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libreact_newarchdefaults_so.  onload_func: 0x7c4344917f40
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libreact_tracingjni_so.  onload_func: 0x7c4344c2ad40
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libreactnativeblob_so.  onload_func: 0x7c4344c3dc80
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libreactnativejni_so.  onload_func: 0x7c4344c61440
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libreactnativejni_common_so.  onload_func: 0x7c4344c6cca0
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register librninstance_so.  onload_func: 0x7c4344ce9110
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libturbomodulejsijni_so.  onload_func: 0x7c4344e3e120
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libuimanagerjni_so.  onload_func: 0x7c4344e54670
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: Preparing to register libyoga_so.  onload_func: 0x7c4344e63b20
+11-12 21:13:42.680 13537 13537 D jni_lib_merge: About to register 12 actual methods.
+11-12 21:13:42.692 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libreact_codegen_safeareacontext.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.697 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libappmodules.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.759 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libhermesvm.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.760 13537 13537 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libhermestooling.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:42.760 13537 13537 D jni_lib_merge: Entering merged library JNI_OnLoad.
+11-12 21:13:42.761 13537 13537 D jni_lib_merge: Preparing 4 pre-merged libs (including stub)
+11-12 21:13:42.761 13537 13537 D jni_lib_merge: Preparing to register libhermes_executor_so.  onload_func: 0x7c42ae8da310
+11-12 21:13:42.761 13537 13537 D jni_lib_merge: Preparing to register libhermesinstancejni_so.  onload_func: 0x7c42ae906df0
+11-12 21:13:42.761 13537 13537 D jni_lib_merge: Preparing to register libjsijniprofiler_so.  onload_func: 0x7c42ae908b90
+11-12 21:13:42.761 13537 13537 D jni_lib_merge: About to register 3 actual methods.
+11-12 21:13:42.943 13537 13537 W us.mylifemobile: Accessing hidden field Ljava/lang/reflect/Field;->accessFlags:I (unsupported, reflection, allowed)
+11-12 21:13:42.985 13537 13558 D TrafficStats: tagSocket(88) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:43.309 13537 13537 I Choreographer: Skipped 59 frames!  The application may be doing too much work on its main thread.
+11-12 21:13:43.400 13537 13537 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+11-12 21:13:43.451 13537 13537 W us.mylifemobile: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+11-12 21:13:43.495 13537 13568 D TrafficStats: tagSocket(103) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:43.520 13537 13537 W HWUI    : Unknown dataspace 0
+11-12 21:13:43.547   591  2529 D CoreBackPreview: Window{bd641b0 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3a0e7ae, mPriority=0, mIsAnimationCallback=false}
+11-12 21:13:43.580 13537 13565 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+11-12 21:13:43.586 13537 13565 I EGL_emulation: Opening libGLESv2_emulation.so
+11-12 21:13:43.608 13537 13565 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-12 21:13:43.645 13537 13565 I Gralloc4: mapper 4.x is not supported
+11-12 21:13:43.812   591   616 I ActivityTaskManager: Displayed com.anonymous.mylifemobile/.MainActivity for user 0: +3s195ms
+11-12 21:13:43.858   826  1008 V WindowManagerShell: Transition requested (#25): android.os.BinderProxy@4305bfd TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=26 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity } baseActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} topActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} numActivities=1 lastActiveTime=8094819 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@74c70f2} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{3220343 com.anonymous.mylifemobile.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=720 topActivityLetterboxHeight=1280 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 25 }
+11-12 21:13:43.859   591  2529 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10018000 cmp=com.anonymous.mylifemobile/.MainActivity} with LAUNCH_SINGLE_TASK from uid 10209 (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+11-12 21:13:43.891   591   616 V WindowManager: Sent Transition (#25) createdAt=11-12 21:13:43.816 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=26 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10000000 pkg=com.anonymous.mylifemobile cmp=com.anonymous.mylifemobile/.MainActivity } baseActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} topActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity} numActivities=1 lastActiveTime=8094819 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{6fe9b8b Task{183f07f #26 type=standard A=10209:com.anonymous.mylifemobile}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{aa8d6d1 com.anonymous.mylifemobile.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=720 topActivityLetterboxHeight=1280 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 25 }
+11-12 21:13:43.891   591   616 V WindowManager:         {null m=OPEN f=STARTING_WINDOW_TRANSFER|FILLS_TASK|IS_BEHIND_STARTING_WINDOW|NO_ANIMATION leash=Surface(name=ActivityRecord{1e23e86 u0 com.anonymous.mylifemobile/.MainActivity)/@0x683555b sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 720, 1280) d=-1->0 r=-1->0:-1 bc=ff000000 component=com.anonymous.mylifemobile/.MainActivity},
+11-12 21:13:43.891   591   616 V WindowManager:         {null m=CLOSE f=FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{1111d9e u0 com.anonymous.mylifemobile/.MainActivity)/@0x665dc6a sb=Rect(0, 0 - 720, 1280) eb=Rect(0, 0 - 720, 1280) d=0 bc=ff000000 component=com.anonymous.mylifemobile/.MainActivity}
+11-12 21:13:43.895   826  1008 V WindowManagerShell: onTransitionReady (#25) android.os.BinderProxy@4305bfd: {id=25 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=OPEN f=STARTING_WINDOW_TRANSFER|FILLS_TASK|IS_BEHIND_STARTING_WINDOW|NO_ANIMATION leash=Surface(name=ActivityRecord{1e23e86 u0 com.anonymous.mylifemobile/.MainActivity)/@0x2caa3e sb=Rect(0, 0 - 0, 0) eb=Rect(0, 0 - 720, 1280) d=-1->0 r=-1->0:-1 bc=ff000000 component=com.anonymous.mylifemobile/.MainActivity},{null m=CLOSE f=FILLS_TASK|IS_BEHIND_STARTING_WINDOW leash=Surface(name=ActivityRecord{1111d9e u0 com.anonymous.mylifemobile/.MainActivity)/@0x8d7909f sb=Rect(0, 0 - 720, 1280) eb=Rect(0, 0 - 720, 1280) d=0 bc=ff000000 component=com.anonymous.mylifemobile/.MainActivity}]}
+11-12 21:13:43.909 13537 13576 D TrafficStats: tagSocket(121) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:43.967 13537 13537 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Schedule
+11-12 21:13:43.968 13537 13537 W unknown:BridgelessReact: ReactHost{0}.attachSurface(surfaceId = 0)
+11-12 21:13:43.970 13537 13578 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+11-12 21:13:43.970 13537 13578 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+11-12 21:13:43.971 13537 13578 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+11-12 21:13:43.971 13537 13578 W unknown:BridgelessReact: ReactHost{0}.isMetroRunning()
+11-12 21:13:43.991 13537 13568 W unknown:BridgelessReact: ReactHost{0}.isMetroRunning(): Async result = true
+11-12 21:13:43.993 13537 13578 W unknown:BridgelessReact: ReactHost{0}.loadJSBundleFromMetro()
+11-12 21:13:44.012 13537 13580 D TrafficStats: tagSocket(123) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:44.023 13537 13537 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+11-12 21:13:44.031 13537 13582 D TrafficStats: tagSocket(125) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:44.041 13537 13537 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+11-12 21:13:44.099 13537 13537 E unknown:ReactNative: Unable to display loading message because react activity isn't active, message: Loading from 127.0.0.1:8088…
+11-12 21:13:44.120 13537 13537 E unknown:ReactNative: Unable to display loading message because react activity isn't active, message: Reloading...
+11-12 21:13:44.548   591   933 D CoreBackPreview: Window{697ec37 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@5e45810, mPriority=0, mIsAnimationCallback=false}
+11-12 21:13:44.601 13537 13542 I us.mylifemobile: Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+11-12 21:13:45.574   591   616 I ActivityTaskManager: Displayed com.anonymous.mylifemobile/.MainActivity for user 0: +1s757ms
+11-12 21:13:45.581 13537 13549 I HWUI    : Davey! duration=1535ms; Flags=1, FrameTimelineVsyncId=1584342, IntendedVsync=8095031553003, Vsync=8095114886333, InputEventId=0, HandleInputStart=8095121187042, AnimationStart=8095121187765, PerformTraversalsStart=8095121188242, DrawStart=8095900147806, FrameDeadline=8095048219669, FrameInterval=8095121166785, FrameStartTime=16666666, SyncQueued=8095935048284, SyncStart=8095936007943, IssueDrawCommandsStart=8095936178730, SwapBuffers=8096500401934, FrameCompleted=8096567658883, DequeueBufferDuration=2880, QueueBufferDuration=447222, GpuCompleted=8096567658883, SwapBuffersCompleted=8096562673725, DisplayPresentTime=0, CommandSubmissionCompleted=8096500401934, 
+11-12 21:13:45.598 13537 13537 W us.mylifemobile: Accessing hidden method Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V (unsupported, reflection, allowed)
+11-12 21:13:45.616 13537 13537 I Choreographer: Skipped 89 frames!  The application may be doing too much work on its main thread.
+11-12 21:13:45.669 13537 13542 I us.mylifemobile: Compiler allocated 4219KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+11-12 21:13:45.711 13537 13537 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@de5a19c
+11-12 21:13:45.711   591  4280 D CoreBackPreview: Window{bd641b0 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback null
+11-12 21:13:45.712   591  4280 W InputManager-JNI: Input channel object 'bd641b0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity (client)' was disposed without first being removed with the input manager!
+11-12 21:13:45.720 13537 13537 W unknown:BridgelessReact: ReactHost{0}.raiseSoftException(onWindowFocusChange(hasFocus = "true")): Tried to access onWindowFocusChange while context is not ready
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: Unhandled SoftException
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(onWindowFocusChange(hasFocus = "true")): Tried to access onWindowFocusChange while context is not ready
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:906)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:897)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.onWindowFocusChange(ReactHostImpl.kt:679)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at com.facebook.react.ReactDelegate.onWindowFocusChanged(ReactDelegate.kt:226)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at com.facebook.react.ReactActivityDelegate.onWindowFocusChanged(ReactActivityDelegate.java:237)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$onWindowFocusChanged$1.invokeSuspend(ReactActivityDelegateWrapper.kt:322)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$onWindowFocusChanged$1.invoke(Unknown Source:8)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$onWindowFocusChanged$1.invoke(Unknown Source:4)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper$launchLifecycleScopeWithLock$1.invokeSuspend(ReactActivityDelegateWrapper.kt:469)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at kotlinx.coroutines.internal.DispatchedContinuationKt.resumeCancellableWith(DispatchedContinuation.kt:375)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at kotlinx.coroutines.intrinsics.CancellableKt.startCoroutineCancellable(Cancellable.kt:26)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:358)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:134)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:53)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt.launch(Unknown Source:1)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:44)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source:1)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper.launchLifecycleScopeWithLock(ReactActivityDelegateWrapper.kt:467)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper.launchLifecycleScopeWithLock$default(ReactActivityDelegateWrapper.kt:463)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper.onWindowFocusChanged(ReactActivityDelegateWrapper.kt:320)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at com.facebook.react.ReactActivity.onWindowFocusChanged(ReactActivity.java:161)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at androidx.appcompat.view.WindowCallbackWrapper.onWindowFocusChanged(WindowCallbackWrapper.java:124)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at expo.modules.devmenu.detectors.InterceptingWindowCallback.onWindowFocusChanged(Unknown Source:2)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at com.android.internal.policy.DecorView.onWindowFocusChanged(DecorView.java:1772)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.view.View.dispatchWindowFocusChanged(View.java:16743)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1505)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.view.ViewRootImpl.dispatchFocusEvent(ViewRootImpl.java:4697)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:4601)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.view.ViewRootImpl.-$$Nest$mhandleWindowFocusChanged(Unknown Source:0)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl(ViewRootImpl.java:6773)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:6683)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.os.Looper.loopOnce(Looper.java:232)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.os.Looper.loop(Looper.java:317)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+11-12 21:13:45.722 13537 13537 E unknown:ReactHost: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+11-12 21:13:46.793 13537 13580 W unknown:BridgelessReact: ReactHost{0}.loadJSBundleFromMetro(): Creating BundleLoader
+11-12 21:13:46.794 13537 13578 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating BridgelessReactContext
+11-12 21:13:46.800 13537 13578 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+11-12 21:13:47.211 13537 13578 W us.mylifemobile: Verification of expo.modules.kotlin.modules.ModuleDefinitionData expo.modules.filesystem.FileSystemModule.definition() took 105.559ms (237742.38 bytecodes/s) (598400B approximate peak alloc)
+11-12 21:13:47.300 13537 13578 I ExpoModulesCore: ✅ AppContext was initialized
+11-12 21:13:47.379 13537 13578 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+11-12 21:13:47.385 13537 13578 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): DevSupportManager.onNewReactContextCreated()
+11-12 21:13:47.393 13537 13537 W unknown:ReactNative: Packager connection already open, nooping.
+11-12 21:13:47.395 13537 13578 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Execute
+11-12 21:13:47.409 13537 13537 W unknown:BridgelessReact: ReactHost{0}.ReactContext.onHostResume()
+11-12 21:13:47.415 13537 13537 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+11-12 21:13:47.468 13537 13580 D TrafficStats: tagSocket(155) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:47.561 13537 13589 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libworklets.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:48.119 13537 13588 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libexpo-modules-jsi.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:48.121 13537 13588 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libexpo-modules-core.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:48.122 13537 13588 W BridgelessReactContext: [WARNING] Bridgeless doesn't support CatalystInstance. Accessing an API that's not part of the new architecture is not encouraged usage.
+11-12 21:13:48.131 13537 13588 I ExpoModulesCore: ✅ JSI interop was installed
+11-12 21:13:48.147 13537 13588 I ExpoModulesCore: ✅ Constants were exported
+11-12 21:13:48.438 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class expo.modules.kotlin.views.GroupViewManagerWrapper
+11-12 21:13:48.443 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+11-12 21:13:48.447 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNBackgroundLayerManager
+11-12 21:13:48.448 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNMarkerViewManager
+11-12 21:13:48.449 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenContainerViewManager
+11-12 21:13:48.450 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNCircleLayerManager
+11-12 21:13:48.453 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNFillLayerManager
+11-12 21:13:48.457 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.reanimated.view.REASharedTransitionBoundaryManager
+11-12 21:13:48.460 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.light.MLRNLightManager
+11-12 21:13:48.462 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.images.MLRNImagesManager
+11-12 21:13:48.465 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.tabs.host.TabsHostViewManager
+11-12 21:13:48.465 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNShapeSourceManager
+11-12 21:13:48.468 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderConfigViewManager
+11-12 21:13:48.472 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderSubviewManager
+11-12 21:13:48.473 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNRasterLayerManager
+11-12 21:13:48.474 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.modals.formsheet.FormSheetHostViewManager
+11-12 21:13:48.479 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.location.MLRNNativeUserLocationManager
+11-12 21:13:48.485 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNRasterSourceManager
+11-12 21:13:48.486 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.scrollviewmarker.ScrollViewMarkerViewManager
+11-12 21:13:48.487 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.modals.formsheet.FormSheetContentWrapperViewManager
+11-12 21:13:48.488 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenContentWrapperManager
+11-12 21:13:48.488 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNAndroidTextureMapViewManager
+11-12 21:13:48.489 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNMapViewManager$MapShadowNode
+11-12 21:13:48.489 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.stack.screen.StackScreenViewManager
+11-12 21:13:48.490 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNImageSourceManager
+11-12 21:13:48.492 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.sources.MLRNVectorSourceManager
+11-12 21:13:48.493 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaViewManager
+11-12 21:13:48.495 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaViewShadowNode
+11-12 21:13:48.496 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenViewManager
+11-12 21:13:48.497 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNHeatmapLayerManager
+11-12 21:13:48.503 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.stack.header.config.StackHeaderConfigViewManager
+11-12 21:13:48.507 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNCalloutManager
+11-12 21:13:48.508 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaProviderManager
+11-12 21:13:48.510 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.SearchBarManager
+11-12 21:13:48.515 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.camera.MLRNCameraManager
+11-12 21:13:48.525 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.mapview.MLRNMapViewManager
+11-12 21:13:48.527 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.stack.host.StackHostViewManager
+11-12 21:13:48.532 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.annotation.MLRNPointAnnotationManager
+11-12 21:13:48.544 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenFooterManager
+11-12 21:13:48.551 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ModalScreenViewManager
+11-12 21:13:48.556 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.safearea.SafeAreaViewManager
+11-12 21:13:48.560 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackViewManager
+11-12 21:13:48.563 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNSymbolLayerManager
+11-12 21:13:48.569 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.stack.header.subview.StackHeaderSubviewViewManager
+11-12 21:13:48.577 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.reactnative.maskedview.RNCMaskedViewManager
+11-12 21:13:48.581 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNFillExtrusionLayerManager
+11-12 21:13:48.585 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class org.maplibre.reactnative.components.styles.layers.MLRNLineLayerManager
+11-12 21:13:48.595 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.tabs.screen.TabsScreenViewManager
+11-12 21:13:48.779 13537 13597 D ProfileInstaller: Installing profile for com.anonymous.mylifemobile
+11-12 21:13:49.538 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeMergeManager
+11-12 21:13:49.539 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.VirtualViewManager$RenderableShadowNode
+11-12 21:13:49.544 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.safeareaview.ReactSafeAreaViewManager
+11-12 21:13:49.549 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerDetectorViewManager
+11-12 21:13:49.553 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$LinearGradientManager
+11-12 21:13:49.560 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+11-12 21:13:49.567 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeColorMatrixManager
+11-12 21:13:49.576 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$SymbolManager
+11-12 21:13:49.586 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$PatternManager
+11-12 21:13:49.595 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.SvgViewManager
+11-12 21:13:49.610 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+11-12 21:13:49.620 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$UseViewManager
+11-12 21:13:49.634 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$TSpanViewManager
+11-12 21:13:49.651 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FilterManager
+11-12 21:13:49.663 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$MarkerManager
+11-12 21:13:49.683 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager
+11-12 21:13:49.706 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$ForeignObjectManager
+11-12 21:13:49.726 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$GroupViewManager
+11-12 21:13:49.737 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$TextViewManager
+11-12 21:13:49.746 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$ImageViewManager
+11-12 21:13:49.763 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeCompositeManager
+11-12 21:13:49.779 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$RadialGradientManager
+11-12 21:13:49.793 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+11-12 21:13:49.804 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeOffsetManager
+11-12 21:13:49.815 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$PathViewManager
+11-12 21:13:49.831 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+11-12 21:13:49.847 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+11-12 21:13:49.866 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$DefsViewManager
+11-12 21:13:49.881 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.debuggingoverlay.DebuggingOverlayManager
+11-12 21:13:49.895 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeGaussianBlurManager
+11-12 21:13:49.912 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+11-12 21:13:49.930 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+11-12 21:13:49.946 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+11-12 21:13:49.961 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$ClipPathViewManager
+11-12 21:13:49.983 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeBlendManager
+11-12 21:13:50.007 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+11-12 21:13:50.017 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$CircleViewManager
+11-12 21:13:50.026 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+11-12 21:13:50.032 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$EllipseViewManager
+11-12 21:13:50.046 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$LineViewManager
+11-12 21:13:50.058 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$FeFloodManager
+11-12 21:13:50.063 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+11-12 21:13:50.068 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$MaskManager
+11-12 21:13:50.078 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$RectViewManager
+11-12 21:13:50.085 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.horcrux.svg.RenderableViewManager$TextPathViewManager
+11-12 21:13:50.091 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+11-12 21:13:50.097 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+11-12 21:13:50.103 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.SelectableTextViewManager
+11-12 21:13:50.109 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerRootViewManager
+11-12 21:13:50.113 13537 13588 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.virtual.view.ReactVirtualViewManager
+11-12 21:13:50.212 13537 13589 I WebViewFactory: Loading com.google.android.webview version 124.0.6367.219 (code 636771938)
+11-12 21:13:50.217 13537 13589 V ResourcesManager: The following library key has been added: ResourcesKey{ mHash=b46ea4a2 mResDir=null mSplitDirs=[] mOverlayDirs=[/product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk,/data/resource-cache/com.android.systemui-neutral-P96G.frro,/data/resource-cache/com.android.systemui-accent-93q8.frro,/data/resource-cache/com.android.systemui-dynamic-hgnM.frro] mLibDirs=[/data/app/~~9f4bW6DRNFNq587PHdHCAQ==/com.google.android.webview--dmspCB1l4JKQHTUdZCVwA==/WebViewGoogle.apk,/data/app/~~ov-BkaCrBALQXvuKHHpzrg==/com.google.android.trichromelibrary_636771938-_B9liaq843FrC4MQj3FUCQ==/TrichromeLibrary.apk,/system_ext/framework/androidx.window.extensions.jar] mDisplayId=0 mOverrideConfig=v35 mCompatInfo={440dpi always-compat} mLoaders=[]}
+11-12 21:13:50.219 13537 13589 W ziparchive: Unable to open '/data/app/~~ov-BkaCrBALQXvuKHHpzrg==/com.google.android.trichromelibrary_636771938-_B9liaq843FrC4MQj3FUCQ==/TrichromeLibrary.dm': No such file or directory
+11-12 21:13:50.219 13537 13589 W ziparchive: Unable to open '/data/app/~~ov-BkaCrBALQXvuKHHpzrg==/com.google.android.trichromelibrary_636771938-_B9liaq843FrC4MQj3FUCQ==/TrichromeLibrary.dm': No such file or directory
+11-12 21:13:50.220 13537 13589 W us.mylifemobile: Entry not found
+11-12 21:13:50.224 13537 13589 D nativeloader: Configuring clns-8 for other apk /data/app/~~ov-BkaCrBALQXvuKHHpzrg==/com.google.android.trichromelibrary_636771938-_B9liaq843FrC4MQj3FUCQ==/TrichromeLibrary.apk. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~9f4bW6DRNFNq587PHdHCAQ==/com.google.android.webview--dmspCB1l4JKQHTUdZCVwA==/lib/x86_64:/data/app/~~9f4bW6DRNFNq587PHdHCAQ==/com.google.android.webview--dmspCB1l4JKQHTUdZCVwA==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~ov-BkaCrBALQXvuKHHpzrg==/com.google.android.trichromelibrary_636771938-_B9liaq843FrC4MQj3FUCQ==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+11-12 21:13:50.238 13537 13589 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+11-12 21:13:50.248 13537 13589 D nativeloader: Configuring clns-9 for other apk /data/app/~~9f4bW6DRNFNq587PHdHCAQ==/com.google.android.webview--dmspCB1l4JKQHTUdZCVwA==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~9f4bW6DRNFNq587PHdHCAQ==/com.google.android.webview--dmspCB1l4JKQHTUdZCVwA==/lib/x86_64:/data/app/~~9f4bW6DRNFNq587PHdHCAQ==/com.google.android.webview--dmspCB1l4JKQHTUdZCVwA==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~ov-BkaCrBALQXvuKHHpzrg==/com.google.android.trichromelibrary_636771938-_B9liaq843FrC4MQj3FUCQ==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+11-12 21:13:50.331 13537 13589 I cr_WVCFactoryProvider: Loaded version=124.0.6367.219 minSdkVersion=29 isBundle=false multiprocess=true packageId=2
+11-12 21:13:50.347 13537 13589 D nativeloader: Load /data/app/~~ov-BkaCrBALQXvuKHHpzrg==/com.google.android.trichromelibrary_636771938-_B9liaq843FrC4MQj3FUCQ==/TrichromeLibrary.apk!/lib/x86_64/libmonochrome_64.so using ns clns-9 from class loader (caller=/data/app/~~9f4bW6DRNFNq587PHdHCAQ==/com.google.android.webview--dmspCB1l4JKQHTUdZCVwA==/WebViewGoogle.apk): ok
+11-12 21:13:50.352 13537 13589 D nativeloader: Load /system/lib64/libwebviewchromium_plat_support.so using ns clns-9 from class loader (caller=/data/app/~~9f4bW6DRNFNq587PHdHCAQ==/com.google.android.webview--dmspCB1l4JKQHTUdZCVwA==/WebViewGoogle.apk): ok
+11-12 21:13:50.358 13537 13601 I chromium: [1112/211350.357642:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+11-12 21:13:50.403 13537 13589 I cr_LibraryLoader: Successfully loaded native library
+11-12 21:13:50.403 13537 13589 I cr_CachingUmaRecorder: Flushed 6 samples from 6 histograms, 0 samples were dropped.
+11-12 21:13:50.419 13537 13568 D TrafficStats: tagSocket(167) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:50.446 13537 13588 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/librnscreens.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes2.dex): ok
+11-12 21:13:50.526 13537 13588 I ReactNativeJS: Running "main" with {"rootTag":1,"initialProps":{},"fabric":true}
+11-12 21:13:50.568 13537 13605 D TrafficStats: tagSocket(156) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:50.780 13537 13565 D EGL_emulation: app_time_stats: avg=319.38ms min=4.66ms max=4569.30ms count=16
+11-12 21:13:50.864 13537 13588 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libexpo-modules-worklets.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:50.903 13537 13543 I us.mylifemobile: NativeAlloc concurrent mark compact GC freed 29MB AllocSpace bytes, 54(2824KB) LOS objects, 49% free, 11MB/23MB, paused 555us,10.160ms total 198.390ms
+11-12 21:13:50.932 13537 13545 W System  : A resource failed to call release. 
+11-12 21:13:50.932 13537 13545 W us.mylifemobile: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~9f4bW6DRNFNq587PHdHCAQ==/com.google.android.webview--dmspCB1l4JKQHTUdZCVwA==/WebViewGoogle.apk' with 2 weak references
+11-12 21:13:51.015 13537 13537 I ExpoModulesCore: ✅ JSI interop was installed
+11-12 21:13:52.154 13537 13565 D EGL_emulation: app_time_stats: avg=166.26ms min=6.45ms max=585.77ms count=8
+11-12 21:13:52.454 13537 13537 W us.mylifemobile: Accessing hidden field Landroid/widget/ScrollView;->mScroller:Landroid/widget/OverScroller; (unsupported, reflection, allowed)
+11-12 21:13:52.620 13537 13608 D TrafficStats: tagSocket(105) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:53.199 13537 13565 D EGL_emulation: app_time_stats: avg=20.46ms min=1.95ms max=157.83ms count=36
+11-12 21:13:54.432 13537 13543 W us.mylifemobile: Cleared Reference was only reachable from finalizer (only reported once)
+11-12 21:13:54.686 13537 13612 D TrafficStats: tagSocket(182) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:54.686 13537 13613 D TrafficStats: tagSocket(126) with statsTag=0xffffffff, statsUid=-1
+11-12 21:13:54.895 13537 13565 D EGL_emulation: app_time_stats: avg=326.74ms min=3.36ms max=1612.85ms count=5
+11-12 21:13:55.282 13537 13616 D nativeloader: Load /data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!/lib/x86_64/libimagepipeline.so using ns clns-7 from class loader (caller=/data/app/~~-wDsRS7ufTNfrJ6-W26FiA==/com.anonymous.mylifemobile-sXvNrTPXTyra1N8T0AFajw==/base.apk!classes8.dex): ok
+11-12 21:13:55.530 13537 13543 I us.mylifemobile: Background concurrent mark compact GC freed 9965KB AllocSpace bytes, 45(1844KB) LOS objects, 49% free, 15MB/30MB, paused 330us,5.069ms total 134.896ms
+11-12 21:13:55.910 13537 13565 D EGL_emulation: app_time_stats: avg=62.21ms min=7.81ms max=527.48ms count=15
+11-12 21:13:56.927 13537 13565 D EGL_emulation: app_time_stats: avg=30.81ms min=5.97ms max=521.38ms count=26
+11-12 21:14:54.501 13626 13626 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:14:54.510 13626 13626 I AndroidRuntime: Using default boot image
+11-12 21:14:54.510 13626 13626 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:14:54.742 13626 13626 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:14:55.853 13537 13565 D EGL_emulation: app_time_stats: avg=19627.12ms min=7.31ms max=58848.12ms count=3
+11-12 21:14:55.975 13626 13626 D AndroidRuntime: Shutting down VM
+11-12 21:14:57.960 13657 13657 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:14:57.964 13657 13657 I AndroidRuntime: Using default boot image
+11-12 21:14:57.964 13657 13657 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:14:58.085 13657 13657 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:14:59.219 13657 13657 D AndroidRuntime: Shutting down VM
+11-12 21:15:00.321 13537 13537 D AutofillManager: view not autofillable - not passing ime action check
+11-12 21:15:00.321 13537 13537 D AutofillManager: view not autofillable - not passing ime action check
+11-12 21:15:00.328 13537 13537 D AutofillManager: view not autofillable - not passing ime action check
+11-12 21:15:00.332 13537 13537 D AutofillManager: view not autofillable - not passing ime action check
+11-12 21:15:00.498 13537 13565 D EGL_emulation: app_time_stats: avg=4645.30ms min=4645.30ms max=4645.30ms count=1
+11-12 21:15:01.377 13695 13695 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:15:01.381 13695 13695 I AndroidRuntime: Using default boot image
+11-12 21:15:01.381 13695 13695 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:15:01.543 13537 13565 D EGL_emulation: app_time_stats: avg=15.05ms min=2.42ms max=163.35ms count=41
+11-12 21:15:01.554 13695 13695 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:15:02.578 13537 13565 D EGL_emulation: app_time_stats: avg=15.09ms min=2.14ms max=33.92ms count=42
+11-12 21:15:02.974 13695 13695 D AndroidRuntime: Shutting down VM
+11-12 21:15:03.599 13537 13565 D EGL_emulation: app_time_stats: avg=13.54ms min=2.86ms max=49.89ms count=41
+11-12 21:15:04.605 13537 13565 D EGL_emulation: app_time_stats: avg=10.93ms min=2.74ms max=32.07ms count=43
+11-12 21:15:05.043 13723 13723 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:15:05.050 13723 13723 I AndroidRuntime: Using default boot image
+11-12 21:15:05.050 13723 13723 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:15:05.265 13723 13723 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:15:05.611 13537 13565 D EGL_emulation: app_time_stats: avg=9.68ms min=2.31ms max=32.20ms count=47
+11-12 21:15:06.466 13723 13723 D AndroidRuntime: Shutting down VM
+11-12 21:15:06.617 13537 13565 D EGL_emulation: app_time_stats: avg=12.74ms min=2.28ms max=50.43ms count=41
+11-12 21:15:07.710 13537 13543 I us.mylifemobile: Background concurrent mark compact GC freed 14MB AllocSpace bytes, 43(1888KB) LOS objects, 49% free, 15MB/31MB, paused 288us,6.125ms total 80.117ms
+11-12 21:15:08.404 13537 13537 D AutofillManager: view not autofillable - not passing ime action check
+11-12 21:15:08.404 13537 13537 D AutofillManager: view not autofillable - not passing ime action check
+11-12 21:15:08.471 13537 13537 D AutofillManager: view not autofillable - not passing ime action check
+11-12 21:15:08.471 13537 13537 D AutofillManager: view not autofillable - not passing ime action check
+11-12 21:15:08.507 13537 13565 D EGL_emulation: app_time_stats: avg=48.18ms min=2.42ms max=1193.88ms count=33
+11-12 21:15:08.551 13747 13747 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:15:08.557 13747 13747 I AndroidRuntime: Using default boot image
+11-12 21:15:08.558 13747 13747 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:15:08.744 13537 13543 W us.mylifemobile: Suspending all threads took: 11.365ms
+11-12 21:15:08.762 13747 13747 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:15:08.860 13537 13543 I us.mylifemobile: Background concurrent mark compact GC freed 17MB AllocSpace bytes, 22(680KB) LOS objects, 49% free, 16MB/33MB, paused 12.215ms,11.878ms total 208.504ms
+11-12 21:15:09.513 13537 13565 D EGL_emulation: app_time_stats: avg=22.41ms min=4.15ms max=329.27ms count=32
+11-12 21:15:09.636 13537 13543 I us.mylifemobile: Background concurrent mark compact GC freed 18MB AllocSpace bytes, 18(1084KB) LOS objects, 49% free, 14MB/29MB, paused 3.675ms,2.624ms total 182.156ms
+11-12 21:15:10.878 13537 13565 D EGL_emulation: app_time_stats: avg=35.22ms min=4.61ms max=382.92ms count=31
+11-12 21:15:12.126 13537 13565 D EGL_emulation: app_time_stats: avg=414.39ms min=383.34ms max=455.18ms count=3
+11-12 21:15:12.466 13537 13543 I us.mylifemobile: Background concurrent mark compact GC freed 14MB AllocSpace bytes, 0(0B) LOS objects, 50% free, 17MB/34MB, paused 520us,2.116ms total 111.913ms
+11-12 21:15:13.211 13537 13565 D EGL_emulation: app_time_stats: avg=542.20ms min=530.32ms max=554.07ms count=2
+11-12 21:15:14.767 13537 13565 D EGL_emulation: app_time_stats: avg=518.74ms min=434.16ms max=623.83ms count=3
+11-12 21:15:16.034 13537 13565 D EGL_emulation: app_time_stats: avg=633.32ms min=486.48ms max=780.16ms count=2
+11-12 21:15:17.143 13747 13747 D AndroidRuntime: Shutting down VM
+11-12 21:15:18.717 13537 13565 D EGL_emulation: app_time_stats: avg=2682.15ms min=2682.15ms max=2682.15ms count=1
+11-12 21:15:19.725 13537 13565 D EGL_emulation: app_time_stats: avg=17.33ms min=4.62ms max=55.78ms count=38
+11-12 21:15:20.749 13537 13565 D EGL_emulation: app_time_stats: avg=13.81ms min=4.34ms max=36.05ms count=47
+11-12 21:15:21.757 13537 13565 D EGL_emulation: app_time_stats: avg=22.56ms min=4.72ms max=355.18ms count=32
+11-12 21:15:22.158 13793 13793 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:15:22.167 13793 13793 I AndroidRuntime: Using default boot image
+11-12 21:15:22.167 13793 13793 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:15:22.425 13793 13793 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:15:23.870 13793 13793 D AndroidRuntime: Shutting down VM
+11-12 21:15:25.699 13824 13824 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:15:25.707 13824 13824 I AndroidRuntime: Using default boot image
+11-12 21:15:25.707 13824 13824 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:15:25.838 13824 13824 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:15:27.252 13824 13824 D AndroidRuntime: Shutting down VM
+11-12 21:15:28.878 13537 13565 D EGL_emulation: app_time_stats: avg=468.38ms min=7.26ms max=6810.33ms count=15
+11-12 21:15:29.237 13849 13849 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:15:29.242 13849 13849 I AndroidRuntime: Using default boot image
+11-12 21:15:29.242 13849 13849 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:15:29.366 13849 13849 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:15:30.632 13849 13849 D AndroidRuntime: Shutting down VM
+11-12 21:15:32.168 13537 13565 D EGL_emulation: app_time_stats: avg=3290.26ms min=3290.26ms max=3290.26ms count=1
+11-12 21:15:33.170 13537 13565 D EGL_emulation: app_time_stats: avg=16.67ms min=4.88ms max=82.46ms count=40
+11-12 21:15:34.278 13537 13565 D EGL_emulation: app_time_stats: avg=27.03ms min=4.16ms max=354.12ms count=31
+11-12 21:15:34.687 13887 13887 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:15:34.691 13887 13887 I AndroidRuntime: Using default boot image
+11-12 21:15:34.691 13887 13887 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:15:34.806 13887 13887 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:15:35.916 13887 13887 D AndroidRuntime: Shutting down VM
+11-12 21:20:23.359 13930 13930 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:20:23.364 13930 13930 I AndroidRuntime: Using default boot image
+11-12 21:20:23.364 13930 13930 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:20:23.552 13930 13930 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:20:24.771 13930 13930 D AndroidRuntime: Shutting down VM
+11-12 21:20:25.899 13537 13956 D TrafficStats: tagSocket(103) with statsTag=0xffffffff, statsUid=-1
+11-12 21:20:25.915 13537 13565 D EGL_emulation: app_time_stats: avg=19431.89ms min=4.14ms max=291354.00ms count=15
+11-12 21:20:26.455 13537 13537 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+11-12 21:20:26.455 13537 13537 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-12 21:20:26.517   591  1734 D CoreBackPreview: Window{95200e8 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@dda05a6, mPriority=0, mIsAnimationCallback=false}
+11-12 21:20:26.942 13964 13964 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:20:26.946 13964 13964 I AndroidRuntime: Using default boot image
+11-12 21:20:26.946 13964 13964 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:20:27.104 13964 13964 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:20:28.041 13537 13565 D EGL_emulation: app_time_stats: avg=349.83ms min=16.09ms max=1285.87ms count=4
+11-12 21:20:28.220 13964 13964 D AndroidRuntime: Shutting down VM
+11-12 21:20:29.857 13537 13565 D EGL_emulation: app_time_stats: avg=99.04ms min=4.38ms max=1528.72ms count=17
+11-12 21:20:30.859 13537 13565 D EGL_emulation: app_time_stats: avg=15.37ms min=4.73ms max=58.55ms count=45
+11-12 21:20:32.011 13537 13565 D EGL_emulation: app_time_stats: avg=21.13ms min=4.63ms max=327.24ms count=38
+11-12 21:20:32.555 14001 14001 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:20:32.560 14001 14001 I AndroidRuntime: Using default boot image
+11-12 21:20:32.560 14001 14001 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:20:32.775 14001 14001 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:20:33.880 14001 14001 D AndroidRuntime: Shutting down VM
+11-12 21:20:35.605 13537 13537 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@4355649
+11-12 21:20:35.606   591  4424 D CoreBackPreview: Window{95200e8 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback null
+11-12 21:20:35.608   591  4424 W InputManager-JNI: Input channel object '95200e8 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity (client)' was disposed without first being removed with the input manager!
+11-12 21:20:35.638 13537 13565 D EGL_emulation: app_time_stats: avg=1212.84ms min=3.97ms max=8871.53ms count=8
+11-12 21:20:36.615 14036 14036 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:20:36.627 14036 14036 I AndroidRuntime: Using default boot image
+11-12 21:20:36.627 14036 14036 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:20:36.805 14036 14036 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:20:38.012 14036 14036 D AndroidRuntime: Shutting down VM
+11-12 21:20:39.577 13537 13565 D EGL_emulation: app_time_stats: avg=559.57ms min=6.98ms max=3798.59ms count=7
+11-12 21:20:40.583 13537 13565 D EGL_emulation: app_time_stats: avg=14.08ms min=4.31ms max=43.54ms count=41
+11-12 21:20:41.593 13537 13565 D EGL_emulation: app_time_stats: avg=19.04ms min=4.60ms max=53.13ms count=38
+11-12 21:20:42.596 13537 13565 D EGL_emulation: app_time_stats: avg=13.41ms min=4.25ms max=47.81ms count=45
+11-12 21:20:43.661 13537 13565 D EGL_emulation: app_time_stats: avg=33.88ms min=4.26ms max=370.51ms count=26
+11-12 21:20:43.754 14090 14090 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:20:43.767 14090 14090 I AndroidRuntime: Using default boot image
+11-12 21:20:43.767 14090 14090 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:20:43.963 14090 14090 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:20:45.112 14090 14090 D AndroidRuntime: Shutting down VM
+11-12 21:20:46.085 13537 13537 D AutofillManager: view not autofillable - not passing ime action check
+11-12 21:20:46.109 13537 13537 I ImeTracker: com.anonymous.mylifemobile:4307bfc6: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser true
+11-12 21:20:46.110 13537 13537 D InputMethodManager: showSoftInput() view=com.facebook.react.views.textinput.ReactEditText{9c3083c VFED..CL. .F.P..ID 96,744-622,845 #48a aid=1073741828} flags=0 reason=SHOW_SOFT_INPUT
+11-12 21:20:46.124 13537 13565 D EGL_emulation: app_time_stats: avg=165.81ms min=5.01ms max=2185.63ms count=14
+11-12 21:20:46.167 13537 13537 I ImeTracker: com.anonymous.mylifemobile:2cb5d5ec: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+11-12 21:20:46.167 13537 13537 D InputMethodManager: showSoftInput() view=com.facebook.react.views.textinput.ReactEditText{9c3083c VFED..CL. .F...... 96,744-622,845 #48a aid=1073741828} flags=0 reason=SHOW_SOFT_INPUT
+11-12 21:20:46.551 13537 13537 D InsetsController: show(ime(), fromIme=true)
+11-12 21:20:46.557 13537 13537 D InsetsController: show(ime(), fromIme=true)
+11-12 21:20:46.557 13537 13537 I ImeTracker: com.anonymous.mylifemobile:2cb5d5ec: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+11-12 21:20:46.579 13537 13537 W InteractionJankMonitor: Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.anonymous.mylifemobile
+11-12 21:20:46.710 14127 14127 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:20:46.717 14127 14127 I AndroidRuntime: Using default boot image
+11-12 21:20:46.717 14127 14127 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:20:46.887 14127 14127 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:20:46.922 13537 13537 I ImeTracker: com.anonymous.mylifemobile:4307bfc6: onShown
+11-12 21:20:47.633 13537 13565 D EGL_emulation: app_time_stats: avg=91.28ms min=5.07ms max=518.64ms count=16
+11-12 21:20:48.114 14127 14127 D AndroidRuntime: Shutting down VM
+11-12 21:20:48.636 13537 13565 D EGL_emulation: app_time_stats: avg=501.21ms min=490.60ms max=511.82ms count=2
+11-12 21:20:49.655 13537 13565 D EGL_emulation: app_time_stats: avg=169.79ms min=31.96ms max=516.69ms count=6
+11-12 21:20:50.976 13537 13565 D EGL_emulation: app_time_stats: avg=76.51ms min=17.63ms max=389.69ms count=17
+11-12 21:20:51.810 13537 13543 I us.mylifemobile: Background concurrent mark compact GC freed 16MB AllocSpace bytes, 0(0B) LOS objects, 49% free, 13MB/27MB, paused 578us,4.965ms total 167.124ms
+11-12 21:20:52.012 14175 14175 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:20:52.017 14175 14175 I AndroidRuntime: Using default boot image
+11-12 21:20:52.017 14175 14175 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:20:52.170 14175 14175 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:20:52.401 13537 13565 D EGL_emulation: app_time_stats: avg=277.38ms min=10.86ms max=519.31ms count=5
+11-12 21:20:53.345 14175 14175 D AndroidRuntime: Shutting down VM
+11-12 21:20:53.411 13537 13565 D EGL_emulation: app_time_stats: avg=504.60ms min=482.57ms max=526.62ms count=2
+11-12 21:20:54.427 13537 13565 D EGL_emulation: app_time_stats: avg=507.78ms min=507.50ms max=508.06ms count=2
+11-12 21:20:54.817 13537 13537 D InsetsController: hide(ime(), fromIme=true)
+11-12 21:20:55.164 13537 13537 I ImeTracker: com.anonymous.mylifemobile:710d467b: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_ON_ANIMATION_STATE_CHANGED fromUser false
+11-12 21:20:55.166 13537 13537 I ImeTracker: com.google.android.inputmethod.latin:8374ec9d: onHidden
+11-12 21:20:55.468 13537 13565 D EGL_emulation: app_time_stats: avg=54.28ms min=4.66ms max=451.47ms count=17
+11-12 21:20:55.841 14210 14210 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:20:55.850 14210 14210 I AndroidRuntime: Using default boot image
+11-12 21:20:55.850 14210 14210 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:20:56.092 14210 14210 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:20:56.485 13537 13565 D EGL_emulation: app_time_stats: avg=508.09ms min=505.44ms max=510.75ms count=2
+11-12 21:20:57.217 14210 14210 D AndroidRuntime: Shutting down VM
+11-12 21:20:57.994 13537 13565 D EGL_emulation: app_time_stats: avg=502.98ms min=491.74ms max=517.99ms count=3
+11-12 21:20:58.676 13537 13537 D AutofillManager: view not autofillable - not passing ime action check
+11-12 21:20:58.679 13537 13537 I ImeTracker: com.anonymous.mylifemobile:bccc9cdb: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+11-12 21:20:58.995 13537 13565 D EGL_emulation: app_time_stats: avg=61.29ms min=3.78ms max=492.25ms count=15
+11-12 21:21:00.024 13537 13565 D EGL_emulation: app_time_stats: avg=23.08ms min=4.37ms max=356.15ms count=33
+11-12 21:21:00.433 14243 14243 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:21:00.439 14243 14243 I AndroidRuntime: Using default boot image
+11-12 21:21:00.439 14243 14243 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:21:00.580 14243 14243 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:21:01.705 14243 14243 D AndroidRuntime: Shutting down VM
+11-12 21:22:30.671 14294 14294 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:22:30.678 14294 14294 I AndroidRuntime: Using default boot image
+11-12 21:22:30.679 14294 14294 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:22:30.909 14294 14294 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:22:32.309 14294 14294 D AndroidRuntime: Shutting down VM
+11-12 21:22:33.453 13537 13565 D EGL_emulation: app_time_stats: avg=5486.25ms min=4.07ms max=93146.32ms count=17
+11-12 21:22:34.320 14321 14321 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:22:34.325 14321 14321 I AndroidRuntime: Using default boot image
+11-12 21:22:34.325 14321 14321 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:22:34.592 14321 14321 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:22:35.815 14321 14321 D AndroidRuntime: Shutting down VM
+11-12 21:22:37.236 13537 13565 D EGL_emulation: app_time_stats: avg=1891.18ms min=79.78ms max=3702.58ms count=2
+11-12 21:22:38.246 13537 13565 D EGL_emulation: app_time_stats: avg=25.83ms min=2.93ms max=380.17ms count=28
+11-12 21:22:38.960 14354 14354 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:22:38.967 14354 14354 I AndroidRuntime: Using default boot image
+11-12 21:22:38.967 14354 14354 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:22:39.104 14354 14354 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:22:40.273 14354 14354 D AndroidRuntime: Shutting down VM
+11-12 21:22:54.161 13537 13543 I us.mylifemobile: Background concurrent mark compact GC freed 12MB AllocSpace bytes, 0(0B) LOS objects, 49% free, 15MB/31MB, paused 391us,2.636ms total 106.276ms
+11-12 21:25:14.996 14391 14391 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:25:15.004 14391 14391 I AndroidRuntime: Using default boot image
+11-12 21:25:15.005 14391 14391 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:25:15.137 14391 14391 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:25:16.210 14391 14391 D AndroidRuntime: Shutting down VM
+11-12 21:25:17.683 13537 13565 D EGL_emulation: app_time_stats: avg=11380.52ms min=3.72ms max=159177.44ms count=14
+11-12 21:25:18.160 14422 14422 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:25:18.164 14422 14422 I AndroidRuntime: Using default boot image
+11-12 21:25:18.164 14422 14422 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:25:18.323 14422 14422 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:25:19.421 14422 14422 D AndroidRuntime: Shutting down VM
+11-12 21:25:20.910 13537 13565 D EGL_emulation: app_time_stats: avg=1612.20ms min=49.18ms max=3175.22ms count=2
+11-12 21:25:21.677 13537 13543 I us.mylifemobile: Background concurrent mark compact GC freed 15MB AllocSpace bytes, 0(0B) LOS objects, 49% free, 15MB/31MB, paused 484us,5.775ms total 141.580ms
+11-12 21:25:21.933 13537 13565 D EGL_emulation: app_time_stats: avg=13.40ms min=3.61ms max=43.57ms count=46
+11-12 21:25:22.998 13537 13565 D EGL_emulation: app_time_stats: avg=18.96ms min=4.59ms max=140.05ms count=39
+11-12 21:25:23.185 13537 14462 D TrafficStats: tagSocket(137) with statsTag=0xffffffff, statsUid=-1
+11-12 21:25:23.190 13537 14463 D TrafficStats: tagSocket(5) with statsTag=0xffffffff, statsUid=-1
+11-12 21:25:24.005 13537 13565 D EGL_emulation: app_time_stats: avg=16.69ms min=7.66ms max=40.81ms count=44
+11-12 21:25:24.468 14478 14478 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:25:24.479 14478 14478 I AndroidRuntime: Using default boot image
+11-12 21:25:24.480 14478 14478 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:25:24.647 14478 14478 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:25:25.718 14478 14478 D AndroidRuntime: Shutting down VM
+11-12 21:25:26.712 13537 13565 D EGL_emulation: app_time_stats: avg=79.03ms min=4.27ms max=2105.68ms count=31
+11-12 21:25:27.168 13537 13537 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+11-12 21:25:27.168 13537 13537 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-12 21:25:27.207   591  2530 D CoreBackPreview: Window{b04882b u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3d7ce21, mPriority=0, mIsAnimationCallback=false}
+11-12 21:25:27.719 14506 14506 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:25:27.723 14506 14506 I AndroidRuntime: Using default boot image
+11-12 21:25:27.723 14506 14506 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:25:27.854 14506 14506 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:25:28.716 13537 13565 D EGL_emulation: app_time_stats: avg=358.36ms min=12.74ms max=1276.65ms count=4
+11-12 21:25:29.004 14506 14506 D AndroidRuntime: Shutting down VM
+11-12 21:25:30.604 14533 14533 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:25:30.614 14533 14533 I AndroidRuntime: Using default boot image
+11-12 21:25:30.615 14533 14533 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:25:30.771 14533 14533 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:25:31.839 14533 14533 D AndroidRuntime: Shutting down VM
+11-12 21:25:32.873 13537 13537 I ImeTracker: com.anonymous.mylifemobile:b08efc06: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser true
+11-12 21:25:32.873 13537 13537 D InputMethodManager: showSoftInput() view=com.facebook.react.views.textinput.ReactEditText{2b574ac VFED..CL. .F.P..ID 74,587-646,688 #1dc2 aid=1073741830} flags=0 reason=SHOW_SOFT_INPUT
+11-12 21:25:32.888 13537 13565 D EGL_emulation: app_time_stats: avg=341.55ms min=6.94ms max=3922.07ms count=12
+11-12 21:25:32.935 13537 13537 I ImeTracker: com.anonymous.mylifemobile:2f8f79b6: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+11-12 21:25:32.936 13537 13537 D InputMethodManager: showSoftInput() view=com.facebook.react.views.textinput.ReactEditText{2b574ac VFED..CL. .F.P.... 74,587-646,688 #1dc2 aid=1073741830} flags=0 reason=SHOW_SOFT_INPUT
+11-12 21:25:33.081 13537 13537 D InsetsController: show(ime(), fromIme=true)
+11-12 21:25:33.085 13537 13537 D InsetsController: show(ime(), fromIme=true)
+11-12 21:25:33.085 13537 13537 I ImeTracker: com.anonymous.mylifemobile:2f8f79b6: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+11-12 21:25:33.198 13537 13565 D EGL_emulation: app_time_stats: avg=923.33ms min=9.11ms max=5741.25ms count=7
+11-12 21:25:33.360 13537 13537 I ImeTracker: com.anonymous.mylifemobile:b08efc06: onShown
+11-12 21:25:33.536 14560 14560 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:25:33.542 14560 14560 I AndroidRuntime: Using default boot image
+11-12 21:25:33.543 14560 14560 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:25:33.700 14560 14560 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:25:33.893 13537 13565 D EGL_emulation: app_time_stats: avg=334.92ms min=76.86ms max=465.47ms count=3
+11-12 21:25:34.783 14560 14560 D AndroidRuntime: Shutting down VM
+11-12 21:25:34.903 13537 13565 D EGL_emulation: app_time_stats: avg=505.18ms min=491.58ms max=518.77ms count=2
+11-12 21:25:35.790 13537 13565 D EGL_emulation: app_time_stats: avg=2591.49ms min=2591.49ms max=2591.49ms count=1
+11-12 21:25:36.014 13537 13565 D EGL_emulation: app_time_stats: avg=555.18ms min=492.25ms max=618.11ms count=2
+11-12 21:25:37.343 13537 13565 D EGL_emulation: app_time_stats: avg=147.67ms min=35.33ms max=504.69ms count=9
+11-12 21:25:37.713 14594 14594 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 21:25:37.719 14594 14594 I AndroidRuntime: Using default boot image
+11-12 21:25:37.719 14594 14594 I AndroidRuntime: Leaving lock profiling enabled
+11-12 21:25:37.841 14594 14594 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 21:25:38.362 13537 13565 D EGL_emulation: app_time_stats: avg=507.58ms min=497.10ms max=518.06ms count=2
+11-12 21:25:38.953 14594 14594 D AndroidRuntime: Shutting down VM
+11-12 21:25:39.374 13537 13565 D EGL_emulation: app_time_stats: avg=505.84ms min=494.33ms max=517.36ms count=2
+11-12 21:25:40.384 13537 13565 D EGL_emulation: app_time_stats: avg=504.93ms min=503.63ms max=506.23ms count=2

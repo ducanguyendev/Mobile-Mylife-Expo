@@ -1,0 +1,11 @@
+{
+  "phase": "all-deleted",
+  "status": "PASS",
+  "syntheticOnly": true,
+  "totalAnniversaries": 130,
+  "webHttpParity": true,
+  "timelineHistoricalSourcesVerified": true,
+  "profileLinksVerified": true,
+  "homeCollectionCount": 130,
+  "events": []
+}

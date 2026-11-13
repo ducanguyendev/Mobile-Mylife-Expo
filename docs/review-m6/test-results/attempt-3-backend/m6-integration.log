@@ -1,0 +1,24 @@
+PASS New USER anniversary collection is empty and scoped
+PASS Web cookie login stays separate from native Bearer and returns no token JSON
+PASS Expo creates solar FAMILY_EVENT and Web reads identical20 fields with today countdown0 and nullable nextLunarYear
+PASS Web update refetches identically through Expo and preserves optional member/place/host fields
+PASS Frozen-time solar February29 policy clamps to February28 and crosses Gregorian year without changing original date
+PASS Real lunar conversion endpoints match all four established Backend fixtures and1800/2200 boundaries
+AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+
+Caught error:
+
+Error: FAMILY_ANNIVERSARY_INVALID_LUNAR_DATE
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async main (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\real-backend.m6.cjs:110:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: Error: FAMILY_ANNIVERSARY_INVALID_LUNAR_DATE
+      at lunarQuery (src/features/anniversaries/anniversary-api.ts:23:15)
+      at Object.convert (src/features/anniversaries/anniversary-api.ts:47:119)
+      at main (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\real-backend.m6.cjs:110:30)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5),
+  expected: [Function (anonymous)],
+  operator: 'rejects',
+  diff: 'simple'
+}

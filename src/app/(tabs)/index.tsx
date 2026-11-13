@@ -4,7 +4,8 @@ import { AppScrollScreen, LargeTitleHeader, SectionHeader } from '@/components/l
 import { EmptyState, ErrorState, LoadingState, SkeletonBlock } from '@/components/feedback/states';
 import { AppText } from '@/design-system/components/app-text';
 import { Avatar } from '@/design-system/components/avatar';
-import { PrimaryButton } from '@/design-system/components/buttons';
+import { PrimaryButton, TextButton } from '@/design-system/components/buttons';
+import { anniversaryStrings } from '@/features/anniversaries/anniversary-strings';
 import { ActionRow, AppCard } from '@/design-system/components/surfaces';
 import { spacing } from '@/design-system/tokens';
 import { useAuth } from '@/features/auth/context/auth-provider';
@@ -55,6 +56,7 @@ function UserHome({ accountId, title, date, now }: { accountId: number; title: s
           <AppText variant="cardTitle">{event.title?.trim() || copy.unnamed}</AppText><AppText tone="secondary">{formatDateOnly(event.nextSolarDate, language)}</AppText>
         </View>)}</AppCard> : <EmptyState title={copy.anniversaryEmpty} message={copy.anniversaryEmptyMessage} />}
         <AppText variant="caption" tone="tertiary">{copy.calendarNotice}</AppText>
+        <TextButton title={anniversaryStrings[language].calendar} onPress={() => router.push('/family/anniversaries')} />
       </DashboardSection>
       <SectionHeader title={copy.recentAlbums} />
       <DashboardSection state={state.albums} retry={() => void retry('albums')}>

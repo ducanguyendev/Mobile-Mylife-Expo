@@ -1,0 +1,34 @@
+
+> mobile-mylife-expo@1.0.0 test:m2
+> node --test tests/m2-foundation.test.cjs
+
+✔ Home counts actual records and distinct known generations without changing order (1.413ms)
+✔ Date-only display rejects invalid dates and never shifts with timezone (15.7991ms)
+✔ Anniversaries use authoritative next solar date and Vietnam day boundary, not lunar arithmetic (0.6224ms)
+✔ Greeting follows device local hour including noon and evening boundaries (0.1373ms)
+✔ Recent albums keep real zero photo counts and safely order missing timestamps (0.2338ms)
+✔ One focus/refresh burst sends exactly one request per section (0.5535ms)
+✔ Partial failure leaves independent sections ready and retry reloads only the failed section (0.3664ms)
+✔ Cancellation aborts all sections and ignores late success from obsolete requests (0.5574ms)
+✔ Separate accounts never share data and an old request cannot overwrite the new account (0.4156ms)
+✔ Cancel then refocus allows new requests while old ones are unresolved (0.361ms)
+✔ Preference parsing whitelists fields and tolerates absent or corrupt storage (0.3551ms)
+✔ Preferences restore theme/language across fresh instances and contain no session fields (0.6079ms)
+✔ Preference read/write failures leave usable defaults/current choice and retry can recover (0.3358ms)
+✔ Late hydration never overwrites user selection; queued writes preserve latest choice (0.3818ms)
+✔ Explicit language wins; System supports EN tags and safely falls back to Vietnamese (0.288ms)
+✔ A stalled preference read releases startup and a late read cannot repaint the app (6.1235ms)
+✔ Home loaders use real endpoint contracts with native auth headers and no photo fetch (72.4184ms)
+✔ Malformed Home responses become errors rather than fabricated empty data (50.0867ms)
+✔ API client propagates caller cancellation through its own timeout controller (45.8981ms)
+✔ Shared feedback announces busy/errors and offers localized actionable retry (23.3121ms)
+✔ Shared button and segmented controls preserve 48dp targets, disabled/busy state and wrapping (5.2475ms)
+✔ Avatar safely falls back after image error and retries only when its URI changes (9.0496ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 578.3409

@@ -1,0 +1,12 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\fixtures\anniversary-host\CalendarClock.cs(14,6): warning CA2255: The 'ModuleInitializer' attribute is only intended to be used in application code or advanced source generator scenarios (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2255) [D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\fixtures\anniversary-host\AnniversaryContractHost.csproj]
+  AnniversaryContractHost -> D:\DUAN\MYLIFE\Mobile-MyLife-Expo\.tmp\m3-avatar-host\M3AvatarContractHost.dll
+
+Build succeeded.
+
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\fixtures\anniversary-host\CalendarClock.cs(14,6): warning CA2255: The 'ModuleInitializer' attribute is only intended to be used in application code or advanced source generator scenarios (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2255) [D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\fixtures\anniversary-host\AnniversaryContractHost.csproj]
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.47

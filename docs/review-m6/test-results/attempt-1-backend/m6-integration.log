@@ -1,0 +1,15 @@
+D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\real-backend.m6.cjs:12
+  || path.resolve(clockFile || '') !== path.resolve('.tmp/m6-calendar-clock.json')) throw Error('Disposable M6 loopback runtime required');
+                                                                                    ^
+
+Error: Disposable M6 loopback runtime required
+    at Object.<anonymous> (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\tests\real-backend.m6.cjs:12:91)
+    at Module._compile (node:internal/modules/cjs/loader:1854:14)
+    at Object..js (node:internal/modules/cjs/loader:1985:10)
+    at Module.load (node:internal/modules/cjs/loader:1577:32)
+    at Module._load (node:internal/modules/cjs/loader:1379:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.17.0

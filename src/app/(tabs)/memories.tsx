@@ -1,1 +1,1 @@
-export { TimelineScreen as default } from '@/features/timeline/TimelineScreen';
+export { MemoriesScreen as default } from '@/features/anniversaries/MemoriesScreen';

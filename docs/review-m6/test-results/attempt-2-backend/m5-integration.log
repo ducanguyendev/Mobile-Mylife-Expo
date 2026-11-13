@@ -1,0 +1,21 @@
+PASS: Real derived birth/death events have correct negative identities and read-only sources
+PASS: Web cookie login stays separate from native Bearer/omit credentials
+PASS: Expo creates real year-only approximate event; Web reads identical date/source/member/zero coordinates
+PASS: Web update round-trips into Expo; exact leap date controls stored year
+PASS: Member Timeline includes both primary and related member matches without client derivation
+PASS: Anniversary derivation uses original solar date and retains read-only source trace
+PASS: Actual Expo mutation layer emits no HTTP for derived edit/delete
+PASS: Raw negative derived DELETE cannot remove source-derived events
+PASS: Stale edit rejected after fresh authoritative GET; newer Web event preserved
+PASS: Stale delete blocked before destructive request
+PASS: Editing exact date to approximate year0099 preserves null date and chronology
+PASS: Historical year0001 remains valid and sorts before year-only0099
+PASS: Existing writable legacy type survives edit without exposing it for normal creation
+PASS: Real Backend rejects invalid type/year/date/title/text/paired/nonfinite coordinates with400
+PASS: Foreign event writes, member assignments and member Timeline access fail; second account sees no old events
+PASS: ADMIN Timeline list/member/create/update/delete rejected with403
+PASS: Anonymous Timeline list/member/create/update/delete all rejected401
+PASS: Web cookie mutation without trusted Origin/CSRF-related header rejected
+PASS: Unrelated Timeline mutation preserves member relationships/avatar/location and all derived sources
+PASS: Real DELETE reconciles authoritative removal in Expo/Web; already deleted record is safe
+PASS: Logout clears native token storage; stale account mutation blocked and other account remains isolated

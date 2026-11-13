@@ -1,0 +1,23 @@
+{
+  "repository": "ducanguyendev/Mobile-Mylife-Expo",
+  "headSha": "8d65018817363a26f2be3b7661aeefd1a0ea2315",
+  "branch": "feature_minhduc",
+  "runId": 43201911893,
+  "qualityJobId": 131127198646,
+  "status": "completed",
+  "conclusion": "success",
+  "steps": [
+    "npm ci",
+    "lint",
+    "typecheck",
+    "test:auth",
+    "test:foundation",
+    "test:m2",
+    "test:m3",
+    "test:m4",
+    "test:m5",
+    "audit:contrast:m2"
+  ],
+  "url": "https://github.com/ducanguyendev/Mobile-Mylife-Expo/actions/runs/43201911893",
+  "m6Ci": "NOT RUN; test:m6 added locally"
+}

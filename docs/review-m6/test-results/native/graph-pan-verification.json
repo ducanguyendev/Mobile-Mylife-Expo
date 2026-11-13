@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Fit and one-pointer pan only",
+  "fitUiNodes": 660,
+  "panUiNodes": 610,
+  "movedVisibleCards": 113,
+  "examples": [
+    {
+      "label": "Mở hồ sơ Synthetic Calendar Member 001, Thế hệ 1",
+      "before": "[158,1150][174,1162]",
+      "after": "[342,1196][358,1208]"
+    },
+    {
+      "label": "Mở hồ sơ Synthetic Calendar Member 046, Thế hệ 2",
+      "before": "[158,1171][174,1183]",
+      "after": "[342,1217][358,1229]"
+    },
+    {
+      "label": "Mở hồ sơ Synthetic Calendar Member 002, Thế hệ 1",
+      "before": "[178,1150][194,1162]",
+      "after": "[362,1196][378,1208]"
+    }
+  ]
+}

@@ -26,4 +26,5 @@ jobs:
       - run: npm run test:m3
       - run: npm run test:m4
       - run: npm run test:m5
+      - run: npm run test:m6
       - run: npm run audit:contrast:m2

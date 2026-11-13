@@ -1,0 +1,494 @@
+{
+  "checks": [
+    {
+      "name": "Expo create/list and actual aggregate profile contract, including related members",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "Web cookie/origin/CSRF-compatible read/edit roundtrips into Expo with identical authoritative relationships",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "Spouse and phone changes preserve explicit siblings/custom horizontal types in both directions",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "Child assignment retains existing children and refetches reciprocal parent link",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "Self-links, cycles, foreign parents/spouse/horizontal IDs and foreign profile/avatar operations are rejected",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "Multipart upload and authenticated image bytes/private caching/ETag/304 use real Backend; provider boundary is a contract adapter",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "Avatar replacement keeps provider file identity and refreshes bytes/ETag revision",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "Avatar invalid MIME/empty/oversize and storage failures preserve DB metadata; retry remains possible",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "Unrelated scalar edit preserves managed avatar, manual coordinates, parents/spouse/children/horizontal links",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "Explicit confirmed horizontal clear removes both directions; avatar removal updates profile and image becomes 404",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "Graph uses real multi-generation relationships; member deletion synchronizes list/profile and reciprocal links",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    },
+    {
+      "name": "ADMIN remains excluded from member profile and USER-only Family API",
+      "status": "PASS",
+      "level": "Real Kestrel/PostgreSQL; native bridges adapted; avatar HTTP provider is test-only"
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5/profile",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/10",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/6",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/7",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/9",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 400,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 400,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 400,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 400,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 400,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5/profile",
+      "status": 404,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/5/avatar",
+      "status": 404,
+      "multipart": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/5/avatar",
+      "status": 404,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5/avatar/image",
+      "status": 404,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/5/avatar",
+      "status": 200,
+      "multipart": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/5/avatar",
+      "status": 200,
+      "multipart": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/5/avatar",
+      "status": 502,
+      "multipart": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/5/avatar",
+      "status": 400,
+      "multipart": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/5/avatar",
+      "status": 400,
+      "multipart": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree/5/avatar",
+      "status": 400,
+      "multipart": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/5/avatar",
+      "status": 502,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5/location",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/7",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/5/avatar",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5/avatar/image",
+      "status": 404,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/family-tree/5",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/5/profile",
+      "status": 404,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/9",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/10",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "multipart": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/9/profile",
+      "status": 403,
+      "multipart": false
+    }
+  ],
+  "provider": "Test-only named HTTP adapter in real Backend process. No Google Drive access or production data.",
+  "web": "Real W10-compatible cookie/origin/X-Requested-With HTTP flow; browser UI not claimed."
+}

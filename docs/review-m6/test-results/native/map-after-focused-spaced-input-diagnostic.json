@@ -1,0 +1,9 @@
+{
+  "phase": "after-focused-spaced-input",
+  "pid": "4541",
+  "retainedLogcatLines": 2319,
+  "reactHostReloadLines": 15,
+  "fatalExceptionLines": 0,
+  "apkRebuilt": false,
+  "keyRedacted": true
+}
