@@ -1,0 +1,313 @@
+{
+  "mode": "final",
+  "checks": [
+    {
+      "name": "Native registration/login, serialized SecureStore adapter and session restoration",
+      "status": "PASS"
+    },
+    {
+      "name": "Unrelated Expo phone edit preserves existing horizontal relation in both directions",
+      "status": "PASS"
+    },
+    {
+      "name": "USER/ADMIN Backend restrictions and foreign member IDs remain authoritative",
+      "status": "PASS"
+    },
+    {
+      "name": "Six expired-access calls share one refresh; pair persists and rotation rejects an unexpired old sid",
+      "status": "PASS"
+    },
+    {
+      "name": "Native logout clears local storage and immediately revokes copied access/refresh tokens",
+      "status": "PASS"
+    },
+    {
+      "name": "Logout racing with a delayed real refresh cannot resurrect SecureStore",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid native session is rejected and cleared; anonymous family access is denied",
+      "status": "PASS"
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201,
+      "bearer": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "bearer": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/family-tree",
+      "status": 201,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/generations",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/1",
+      "status": 401,
+      "bearer": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/1",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/1",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/family-tree/1",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/1",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/2",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/register",
+      "status": 201,
+      "bearer": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree/1",
+      "status": 404,
+      "bearer": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree",
+      "status": 403,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/stats",
+      "status": 403,
+      "bearer": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 401,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 401,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 401,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 401,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 401,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 401,
+      "bearer": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/refresh-token",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/refresh-token",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/logout",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/login",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 200,
+      "bearer": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/me",
+      "status": 401,
+      "bearer": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/refresh-token",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/logout",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/logout",
+      "status": 200,
+      "bearer": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/family-tree",
+      "status": 401,
+      "bearer": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/refresh-token",
+      "status": 401,
+      "bearer": false
+    }
+  ],
+  "boundary": "Actual Expo TS API/auth/family source + real HTTP/Kestrel/PostgreSQL. Platform and SecureStore native bridge adapted in Node; no fetched API response is fabricated.",
+  "nativeDeviceSecureStore": "NOT TESTED"
+}

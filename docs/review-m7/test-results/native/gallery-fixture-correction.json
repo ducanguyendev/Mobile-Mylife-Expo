@@ -1,0 +1,7 @@
+{
+  "initialFixture": "IDAT CRC mismatch; decoder correctly displayed image-unavailable states",
+  "correctedFixture": "tests/fixtures/library-sage.png; valid code-generated striped PNG",
+  "syntheticOnly": true,
+  "photos": 125,
+  "realDrive": false
+}

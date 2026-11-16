@@ -150,7 +150,7 @@ function AnniversaryExplorer({ accountId, memberId, anniversaryId, canGoBack, on
         else router.push({ pathname: '/family/timeline', params: memberId ? { memberId: String(memberId) } : {} });
       }} />
       <SecondaryButton title={copy.calendar} style={{ flexBasis: 140, flexGrow: 1 }} accessibilityState={{ selected: !library }} onPress={() => setLibrary(false)} />
-      <SecondaryButton title={copy.library} style={{ flexBasis: 140, flexGrow: 1 }} accessibilityState={{ selected: library }} onPress={() => setLibrary(true)} />
+      <SecondaryButton title={copy.library} style={{ flexBasis: 140, flexGrow: 1 }} accessibilityState={{ selected: library }} onPress={() => router.push('/library')} />
     </View>
     {library ? <AppCard inset><AppText>{copy.future}</AppText></AppCard> : <>
       <PrimaryButton title={copy.add} disabled={unavailable} onPress={() => {

@@ -1,0 +1,2634 @@
+[
+  {
+    "file": ".github/workflows/expo-quality.yml",
+    "bytes": 782
+  },
+  {
+    "file": ".gitignore",
+    "bytes": 944
+  },
+  {
+    "file": "docs/review-m7/ALBUM_CATEGORY_INTEGRITY.md",
+    "bytes": 2247
+  },
+  {
+    "file": "docs/review-m7/BACKEND_M6_TEST_SYNC.md",
+    "bytes": 2042
+  },
+  {
+    "file": "docs/review-m7/CARRY_FORWARD_RISKS.md",
+    "bytes": 10112
+  },
+  {
+    "file": "docs/review-m7/DEPENDENCY_AUDIT.md",
+    "bytes": 1527
+  },
+  {
+    "file": "docs/review-m7/DESIGN_UX_REVIEW.md",
+    "bytes": 1801
+  },
+  {
+    "file": "docs/review-m7/FEATURE_PARITY.md",
+    "bytes": 1749
+  },
+  {
+    "file": "docs/review-m7/FILES_CHANGED.md",
+    "bytes": 1754
+  },
+  {
+    "file": "docs/review-m7/GOOGLE_DRIVE_PROVIDER_QA.md",
+    "bytes": 2177
+  },
+  {
+    "file": "docs/review-m7/INITIAL_AUDIT.md",
+    "bytes": 2396
+  },
+  {
+    "file": "docs/review-m7/LIBRARY_API_CONTRACT.md",
+    "bytes": 2722
+  },
+  {
+    "file": "docs/review-m7/M8_HANDOFF.md",
+    "bytes": 3318
+  },
+  {
+    "file": "docs/review-m7/NATIVE_SMOKE_RESULTS.md",
+    "bytes": 9293
+  },
+  {
+    "file": "docs/review-m7/PRIVATE_IMAGE_SECURITY.md",
+    "bytes": 2728
+  },
+  {
+    "file": "docs/review-m7/REPORT.md",
+    "bytes": 8458
+  },
+  {
+    "file": "docs/review-m7/TEST_RESULTS.md",
+    "bytes": 4347
+  },
+  {
+    "file": "docs/review-m7/UPLOAD_AND_MEDIA_QA.md",
+    "bytes": 3457
+  },
+  {
+    "file": "docs/review-m7/WEB_EXPO_PARITY.md",
+    "bytes": 2152
+  },
+  {
+    "file": "docs/review-m7/test-results/anniversary-targeted/backend-suite/final-lifecycle.json",
+    "bytes": 617
+  },
+  {
+    "file": "docs/review-m7/test-results/anniversary-targeted/backend-suite/full-backend-tests.log",
+    "bytes": 624
+  },
+  {
+    "file": "docs/review-m7/test-results/anniversary-targeted/backend-suite/isolated-createdb.log",
+    "bytes": 0
+  },
+  {
+    "file": "docs/review-m7/test-results/anniversary-targeted/backend-suite/isolated-dropdb.log",
+    "bytes": 0
+  },
+  {
+    "file": "docs/review-m7/test-results/anniversary-targeted/backend-suite/isolated-initdb.log",
+    "bytes": 920
+  },
+  {
+    "file": "docs/review-m7/test-results/anniversary-targeted/backend-suite/isolated-postgres-start.log",
+    "bytes": 54
+  },
+  {
+    "file": "docs/review-m7/test-results/anniversary-targeted/backend-suite/isolated-postgres-stop.log",
+    "bytes": 58
+  },
+  {
+    "file": "docs/review-m7/test-results/anniversary-targeted/backend-unit/backend-full-isolated.trx",
+    "bytes": 115345
+  },
+  {
+    "file": "docs/review-m7/test-results/apps-script-library.log",
+    "bytes": 2452
+  },
+  {
+    "file": "docs/review-m7/test-results/backend-remote-check.json",
+    "bytes": 465
+  },
+  {
+    "file": "docs/review-m7/test-results/backend-suite/final-lifecycle.json",
+    "bytes": 617
+  },
+  {
+    "file": "docs/review-m7/test-results/backend-suite/full-backend-tests.log",
+    "bytes": 606
+  },
+  {
+    "file": "docs/review-m7/test-results/backend-suite/isolated-createdb.log",
+    "bytes": 0
+  },
+  {
+    "file": "docs/review-m7/test-results/backend-suite/isolated-dropdb.log",
+    "bytes": 0
+  },
+  {
+    "file": "docs/review-m7/test-results/backend-suite/isolated-initdb.log",
+    "bytes": 920
+  },
+  {
+    "file": "docs/review-m7/test-results/backend-suite/isolated-postgres-start.log",
+    "bytes": 54
+  },
+  {
+    "file": "docs/review-m7/test-results/backend-suite/isolated-postgres-stop.log",
+    "bytes": 58
+  },
+  {
+    "file": "docs/review-m7/test-results/backend-unit/backend-full-isolated.trx",
+    "bytes": 3485132
+  },
+  {
+    "file": "docs/review-m7/test-results/changed-files.json",
+    "bytes": 66082
+  },
+  {
+    "file": "docs/review-m7/test-results/cleanup.json",
+    "bytes": 593
+  },
+  {
+    "file": "docs/review-m7/test-results/excluded-empty-captures.json",
+    "bytes": 136
+  },
+  {
+    "file": "docs/review-m7/test-results/final-audit-contrast-m2.log",
+    "bytes": 2324
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/avatar-contract-host-build.log",
+    "bytes": 269
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/avatar-provider-events.ndjson",
+    "bytes": 1116
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/final-integration.json",
+    "bytes": 6243
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/final-integration.log",
+    "bytes": 625
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/final-lifecycle.json",
+    "bytes": 1156
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/isolated-backend-build.log",
+    "bytes": 156
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/isolated-createdb.log",
+    "bytes": 0
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/isolated-dropdb.log",
+    "bytes": 0
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/isolated-initdb.log",
+    "bytes": 920
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/isolated-kestrel.log",
+    "bytes": 2244
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/isolated-postgres-start.log",
+    "bytes": 54
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/isolated-postgres-stop.log",
+    "bytes": 58
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m2-home.json",
+    "bytes": 3754
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m2-integration.log",
+    "bytes": 537
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m3-integration.json",
+    "bytes": 11755
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m3-integration.log",
+    "bytes": 1261
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m4-final-map-synthetic.json",
+    "bytes": 3692
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m4-integration.json",
+    "bytes": 16996
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m4-integration.log",
+    "bytes": 1447
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m5-integration.json",
+    "bytes": 12529
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m5-integration.log",
+    "bytes": 1805
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m6-integration.log",
+    "bytes": 2106
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m7-integration.json",
+    "bytes": 11099
+  },
+  {
+    "file": "docs/review-m7/test-results/final-backend/m7-integration.log",
+    "bytes": 1491
+  },
+  {
+    "file": "docs/review-m7/test-results/final-lint.log",
+    "bytes": 104
+  },
+  {
+    "file": "docs/review-m7/test-results/final-summary.json",
+    "bytes": 4278
+  },
+  {
+    "file": "docs/review-m7/test-results/final-test-auth.log",
+    "bytes": 1474
+  },
+  {
+    "file": "docs/review-m7/test-results/final-test-foundation.log",
+    "bytes": 2954
+  },
+  {
+    "file": "docs/review-m7/test-results/final-test-m2.log",
+    "bytes": 2307
+  },
+  {
+    "file": "docs/review-m7/test-results/final-test-m3.log",
+    "bytes": 3117
+  },
+  {
+    "file": "docs/review-m7/test-results/final-test-m4.log",
+    "bytes": 2878
+  },
+  {
+    "file": "docs/review-m7/test-results/final-test-m5.log",
+    "bytes": 4375
+  },
+  {
+    "file": "docs/review-m7/test-results/final-test-m6.log",
+    "bytes": 6054
+  },
+  {
+    "file": "docs/review-m7/test-results/final-test-m7.log",
+    "bytes": 5725
+  },
+  {
+    "file": "docs/review-m7/test-results/final-typecheck.log",
+    "bytes": 54
+  },
+  {
+    "file": "docs/review-m7/test-results/inherited-integrity.json",
+    "bytes": 50
+  },
+  {
+    "file": "docs/review-m7/test-results/initial-execution-issues.json",
+    "bytes": 1647
+  },
+  {
+    "file": "docs/review-m7/test-results/lint-current.log",
+    "bytes": 222
+  },
+  {
+    "file": "docs/review-m7/test-results/m7-native-blob-fix.log",
+    "bytes": 10778
+  },
+  {
+    "file": "docs/review-m7/test-results/m7-unit-expanded.log",
+    "bytes": 10772
+  },
+  {
+    "file": "docs/review-m7/test-results/m7-unit-initial.log",
+    "bytes": 12922
+  },
+  {
+    "file": "docs/review-m7/test-results/m7-unit-pass.log",
+    "bytes": 10146
+  },
+  {
+    "file": "docs/review-m7/test-results/m7-unit-second.log",
+    "bytes": 11942
+  },
+  {
+    "file": "docs/review-m7/test-results/m7-unit-third.log",
+    "bytes": 10146
+  },
+  {
+    "file": "docs/review-m7/test-results/m7-valid-png.log",
+    "bytes": 10744
+  },
+  {
+    "file": "docs/review-m7/test-results/native/01-launch.json",
+    "bytes": 475
+  },
+  {
+    "file": "docs/review-m7/test-results/native/01-launch.png",
+    "bytes": 13692
+  },
+  {
+    "file": "docs/review-m7/test-results/native/01-launch.xml",
+    "bytes": 4840
+  },
+  {
+    "file": "docs/review-m7/test-results/native/02-ready.json",
+    "bytes": 3041
+  },
+  {
+    "file": "docs/review-m7/test-results/native/02-ready.png",
+    "bytes": 115907
+  },
+  {
+    "file": "docs/review-m7/test-results/native/02-ready.xml",
+    "bytes": 7968
+  },
+  {
+    "file": "docs/review-m7/test-results/native/03-dev-menu-continued.json",
+    "bytes": 5745
+  },
+  {
+    "file": "docs/review-m7/test-results/native/03-dev-menu-continued.png",
+    "bytes": 93376
+  },
+  {
+    "file": "docs/review-m7/test-results/native/03-dev-menu-continued.xml",
+    "bytes": 14475
+  },
+  {
+    "file": "docs/review-m7/test-results/native/04-login-screen.json",
+    "bytes": 8643
+  },
+  {
+    "file": "docs/review-m7/test-results/native/04-login-screen.png",
+    "bytes": 105059
+  },
+  {
+    "file": "docs/review-m7/test-results/native/04-login-screen.xml",
+    "bytes": 17353
+  },
+  {
+    "file": "docs/review-m7/test-results/native/05-email.json",
+    "bytes": 8661
+  },
+  {
+    "file": "docs/review-m7/test-results/native/05-email.png",
+    "bytes": 121319
+  },
+  {
+    "file": "docs/review-m7/test-results/native/05-email.xml",
+    "bytes": 17371
+  },
+  {
+    "file": "docs/review-m7/test-results/native/07-login-observe.json",
+    "bytes": 8661
+  },
+  {
+    "file": "docs/review-m7/test-results/native/07-login-observe.png",
+    "bytes": 121816
+  },
+  {
+    "file": "docs/review-m7/test-results/native/07-login-observe.xml",
+    "bytes": 17371
+  },
+  {
+    "file": "docs/review-m7/test-results/native/08-password-focus.json",
+    "bytes": 8661
+  },
+  {
+    "file": "docs/review-m7/test-results/native/08-password-focus.png",
+    "bytes": 121444
+  },
+  {
+    "file": "docs/review-m7/test-results/native/08-password-focus.xml",
+    "bytes": 17371
+  },
+  {
+    "file": "docs/review-m7/test-results/native/09-keyboard-dismissed.json",
+    "bytes": 8661
+  },
+  {
+    "file": "docs/review-m7/test-results/native/09-keyboard-dismissed.png",
+    "bytes": 108158
+  },
+  {
+    "file": "docs/review-m7/test-results/native/09-keyboard-dismissed.xml",
+    "bytes": 17371
+  },
+  {
+    "file": "docs/review-m7/test-results/native/10-password-entered.json",
+    "bytes": 8661
+  },
+  {
+    "file": "docs/review-m7/test-results/native/10-password-entered.png",
+    "bytes": 114828
+  },
+  {
+    "file": "docs/review-m7/test-results/native/10-password-entered.xml",
+    "bytes": 17371
+  },
+  {
+    "file": "docs/review-m7/test-results/native/100-album-deleted.json",
+    "bytes": 7812
+  },
+  {
+    "file": "docs/review-m7/test-results/native/100-album-deleted.png",
+    "bytes": 100904
+  },
+  {
+    "file": "docs/review-m7/test-results/native/100-album-deleted.xml",
+    "bytes": 17143
+  },
+  {
+    "file": "docs/review-m7/test-results/native/101-library-after-delete.json",
+    "bytes": 11124
+  },
+  {
+    "file": "docs/review-m7/test-results/native/101-library-after-delete.png",
+    "bytes": 95705
+  },
+  {
+    "file": "docs/review-m7/test-results/native/101-library-after-delete.xml",
+    "bytes": 19189
+  },
+  {
+    "file": "docs/review-m7/test-results/native/102-category-controls.json",
+    "bytes": 10361
+  },
+  {
+    "file": "docs/review-m7/test-results/native/102-category-controls.png",
+    "bytes": 99950
+  },
+  {
+    "file": "docs/review-m7/test-results/native/102-category-controls.xml",
+    "bytes": 18361
+  },
+  {
+    "file": "docs/review-m7/test-results/native/103-category-rename-editor.json",
+    "bytes": 3301
+  },
+  {
+    "file": "docs/review-m7/test-results/native/103-category-rename-editor.png",
+    "bytes": 39598
+  },
+  {
+    "file": "docs/review-m7/test-results/native/103-category-rename-editor.xml",
+    "bytes": 6787
+  },
+  {
+    "file": "docs/review-m7/test-results/native/104-category-renamed-value.json",
+    "bytes": 3302
+  },
+  {
+    "file": "docs/review-m7/test-results/native/104-category-renamed-value.png",
+    "bytes": 96480
+  },
+  {
+    "file": "docs/review-m7/test-results/native/104-category-renamed-value.xml",
+    "bytes": 6787
+  },
+  {
+    "file": "docs/review-m7/test-results/native/105-category-renamed-save.json",
+    "bytes": 10364
+  },
+  {
+    "file": "docs/review-m7/test-results/native/105-category-renamed-save.png",
+    "bytes": 100879
+  },
+  {
+    "file": "docs/review-m7/test-results/native/105-category-renamed-save.xml",
+    "bytes": 18364
+  },
+  {
+    "file": "docs/review-m7/test-results/native/106-unused-category-confirmation.json",
+    "bytes": 3346
+  },
+  {
+    "file": "docs/review-m7/test-results/native/106-unused-category-confirmation.png",
+    "bytes": 50198
+  },
+  {
+    "file": "docs/review-m7/test-results/native/106-unused-category-confirmation.xml",
+    "bytes": 6503
+  },
+  {
+    "file": "docs/review-m7/test-results/native/107-unused-category-deleted.json",
+    "bytes": 8917
+  },
+  {
+    "file": "docs/review-m7/test-results/native/107-unused-category-deleted.png",
+    "bytes": 106473
+  },
+  {
+    "file": "docs/review-m7/test-results/native/107-unused-category-deleted.xml",
+    "bytes": 17315
+  },
+  {
+    "file": "docs/review-m7/test-results/native/108-seed-gallery-card.json",
+    "bytes": 8913
+  },
+  {
+    "file": "docs/review-m7/test-results/native/108-seed-gallery-card.png",
+    "bytes": 103301
+  },
+  {
+    "file": "docs/review-m7/test-results/native/108-seed-gallery-card.xml",
+    "bytes": 17311
+  },
+  {
+    "file": "docs/review-m7/test-results/native/109-large-gallery-open.json",
+    "bytes": 10170
+  },
+  {
+    "file": "docs/review-m7/test-results/native/109-large-gallery-open.png",
+    "bytes": 108885
+  },
+  {
+    "file": "docs/review-m7/test-results/native/109-large-gallery-open.xml",
+    "bytes": 18502
+  },
+  {
+    "file": "docs/review-m7/test-results/native/11-login-ready.json",
+    "bytes": 8661
+  },
+  {
+    "file": "docs/review-m7/test-results/native/11-login-ready.png",
+    "bytes": 102482
+  },
+  {
+    "file": "docs/review-m7/test-results/native/11-login-ready.xml",
+    "bytes": 17371
+  },
+  {
+    "file": "docs/review-m7/test-results/native/110-large-gallery-grid.json",
+    "bytes": 12944
+  },
+  {
+    "file": "docs/review-m7/test-results/native/110-large-gallery-grid.png",
+    "bytes": 75840
+  },
+  {
+    "file": "docs/review-m7/test-results/native/110-large-gallery-grid.xml",
+    "bytes": 22157
+  },
+  {
+    "file": "docs/review-m7/test-results/native/111-large-gallery-scroll.json",
+    "bytes": 14931
+  },
+  {
+    "file": "docs/review-m7/test-results/native/111-large-gallery-scroll.png",
+    "bytes": 86370
+  },
+  {
+    "file": "docs/review-m7/test-results/native/111-large-gallery-scroll.xml",
+    "bytes": 24606
+  },
+  {
+    "file": "docs/review-m7/test-results/native/112-large-gallery-back.json",
+    "bytes": 11124
+  },
+  {
+    "file": "docs/review-m7/test-results/native/112-large-gallery-back.png",
+    "bytes": 95378
+  },
+  {
+    "file": "docs/review-m7/test-results/native/112-large-gallery-back.xml",
+    "bytes": 19189
+  },
+  {
+    "file": "docs/review-m7/test-results/native/113-memories-restored.json",
+    "bytes": 12730
+  },
+  {
+    "file": "docs/review-m7/test-results/native/113-memories-restored.png",
+    "bytes": 110496
+  },
+  {
+    "file": "docs/review-m7/test-results/native/113-memories-restored.xml",
+    "bytes": 29543
+  },
+  {
+    "file": "docs/review-m7/test-results/native/114-existing-preferences.json",
+    "bytes": 9330
+  },
+  {
+    "file": "docs/review-m7/test-results/native/114-existing-preferences.png",
+    "bytes": 91570
+  },
+  {
+    "file": "docs/review-m7/test-results/native/114-existing-preferences.xml",
+    "bytes": 26734
+  },
+  {
+    "file": "docs/review-m7/test-results/native/115-preferences-controls.json",
+    "bytes": 9330
+  },
+  {
+    "file": "docs/review-m7/test-results/native/115-preferences-controls.png",
+    "bytes": 92305
+  },
+  {
+    "file": "docs/review-m7/test-results/native/115-preferences-controls.xml",
+    "bytes": 26734
+  },
+  {
+    "file": "docs/review-m7/test-results/native/116-theme-language-controls.json",
+    "bytes": 13587
+  },
+  {
+    "file": "docs/review-m7/test-results/native/116-theme-language-controls.png",
+    "bytes": 100487
+  },
+  {
+    "file": "docs/review-m7/test-results/native/116-theme-language-controls.xml",
+    "bytes": 30122
+  },
+  {
+    "file": "docs/review-m7/test-results/native/117-dark-preference.json",
+    "bytes": 13586
+  },
+  {
+    "file": "docs/review-m7/test-results/native/117-dark-preference.png",
+    "bytes": 100864
+  },
+  {
+    "file": "docs/review-m7/test-results/native/117-dark-preference.xml",
+    "bytes": 30121
+  },
+  {
+    "file": "docs/review-m7/test-results/native/118-vietnamese-preference.json",
+    "bytes": 13726
+  },
+  {
+    "file": "docs/review-m7/test-results/native/118-vietnamese-preference.png",
+    "bytes": 102757
+  },
+  {
+    "file": "docs/review-m7/test-results/native/118-vietnamese-preference.xml",
+    "bytes": 30261
+  },
+  {
+    "file": "docs/review-m7/test-results/native/12-login-submit.json",
+    "bytes": 7291
+  },
+  {
+    "file": "docs/review-m7/test-results/native/12-login-submit.png",
+    "bytes": 113578
+  },
+  {
+    "file": "docs/review-m7/test-results/native/12-login-submit.xml",
+    "bytes": 16729
+  },
+  {
+    "file": "docs/review-m7/test-results/native/120-current-localized-state.json",
+    "bytes": 13726
+  },
+  {
+    "file": "docs/review-m7/test-results/native/120-current-localized-state.png",
+    "bytes": 103232
+  },
+  {
+    "file": "docs/review-m7/test-results/native/120-current-localized-state.xml",
+    "bytes": 30261
+  },
+  {
+    "file": "docs/review-m7/test-results/native/121-dark-vi-memories.json",
+    "bytes": 12908
+  },
+  {
+    "file": "docs/review-m7/test-results/native/121-dark-vi-memories.png",
+    "bytes": 119883
+  },
+  {
+    "file": "docs/review-m7/test-results/native/121-dark-vi-memories.xml",
+    "bytes": 29721
+  },
+  {
+    "file": "docs/review-m7/test-results/native/122-dark-vi-library.json",
+    "bytes": 11197
+  },
+  {
+    "file": "docs/review-m7/test-results/native/122-dark-vi-library.png",
+    "bytes": 93795
+  },
+  {
+    "file": "docs/review-m7/test-results/native/122-dark-vi-library.xml",
+    "bytes": 19262
+  },
+  {
+    "file": "docs/review-m7/test-results/native/123-dark-vi-albums.json",
+    "bytes": 9898
+  },
+  {
+    "file": "docs/review-m7/test-results/native/123-dark-vi-albums.png",
+    "bytes": 109359
+  },
+  {
+    "file": "docs/review-m7/test-results/native/123-dark-vi-albums.xml",
+    "bytes": 18029
+  },
+  {
+    "file": "docs/review-m7/test-results/native/124-valid-large-album.json",
+    "bytes": 10226
+  },
+  {
+    "file": "docs/review-m7/test-results/native/124-valid-large-album.png",
+    "bytes": 104878
+  },
+  {
+    "file": "docs/review-m7/test-results/native/124-valid-large-album.xml",
+    "bytes": 18558
+  },
+  {
+    "file": "docs/review-m7/test-results/native/125-valid-large-grid.json",
+    "bytes": 9122
+  },
+  {
+    "file": "docs/review-m7/test-results/native/125-valid-large-grid.png",
+    "bytes": 59866
+  },
+  {
+    "file": "docs/review-m7/test-results/native/125-valid-large-grid.xml",
+    "bytes": 22134
+  },
+  {
+    "file": "docs/review-m7/test-results/native/126-valid-large-scroll.json",
+    "bytes": 9164
+  },
+  {
+    "file": "docs/review-m7/test-results/native/126-valid-large-scroll.png",
+    "bytes": 62430
+  },
+  {
+    "file": "docs/review-m7/test-results/native/126-valid-large-scroll.xml",
+    "bytes": 24509
+  },
+  {
+    "file": "docs/review-m7/test-results/native/129-final-home.json",
+    "bytes": 10436
+  },
+  {
+    "file": "docs/review-m7/test-results/native/129-final-home.png",
+    "bytes": 112867
+  },
+  {
+    "file": "docs/review-m7/test-results/native/129-final-home.xml",
+    "bytes": 27917
+  },
+  {
+    "file": "docs/review-m7/test-results/native/13-login-scroll.json",
+    "bytes": 7291
+  },
+  {
+    "file": "docs/review-m7/test-results/native/13-login-scroll.png",
+    "bytes": 113674
+  },
+  {
+    "file": "docs/review-m7/test-results/native/13-login-scroll.xml",
+    "bytes": 16729
+  },
+  {
+    "file": "docs/review-m7/test-results/native/130-home-scroll-one.json",
+    "bytes": 12522
+  },
+  {
+    "file": "docs/review-m7/test-results/native/130-home-scroll-one.png",
+    "bytes": 127773
+  },
+  {
+    "file": "docs/review-m7/test-results/native/130-home-scroll-one.xml",
+    "bytes": 30469
+  },
+  {
+    "file": "docs/review-m7/test-results/native/131-home-scroll-two.json",
+    "bytes": 8690
+  },
+  {
+    "file": "docs/review-m7/test-results/native/131-home-scroll-two.png",
+    "bytes": 139613
+  },
+  {
+    "file": "docs/review-m7/test-results/native/131-home-scroll-two.xml",
+    "bytes": 26035
+  },
+  {
+    "file": "docs/review-m7/test-results/native/132-home-scroll-three.json",
+    "bytes": 9945
+  },
+  {
+    "file": "docs/review-m7/test-results/native/132-home-scroll-three.png",
+    "bytes": 85205
+  },
+  {
+    "file": "docs/review-m7/test-results/native/132-home-scroll-three.xml",
+    "bytes": 27887
+  },
+  {
+    "file": "docs/review-m7/test-results/native/133-home-library-summary.json",
+    "bytes": 10572
+  },
+  {
+    "file": "docs/review-m7/test-results/native/133-home-library-summary.png",
+    "bytes": 100443
+  },
+  {
+    "file": "docs/review-m7/test-results/native/133-home-library-summary.xml",
+    "bytes": 27717
+  },
+  {
+    "file": "docs/review-m7/test-results/native/134-home-album-link.json",
+    "bytes": 10226
+  },
+  {
+    "file": "docs/review-m7/test-results/native/134-home-album-link.png",
+    "bytes": 105100
+  },
+  {
+    "file": "docs/review-m7/test-results/native/134-home-album-link.xml",
+    "bytes": 18558
+  },
+  {
+    "file": "docs/review-m7/test-results/native/135-home-back-preserved.json",
+    "bytes": 10572
+  },
+  {
+    "file": "docs/review-m7/test-results/native/135-home-back-preserved.png",
+    "bytes": 101120
+  },
+  {
+    "file": "docs/review-m7/test-results/native/135-home-back-preserved.xml",
+    "bytes": 27717
+  },
+  {
+    "file": "docs/review-m7/test-results/native/136-memories-final.json",
+    "bytes": 12908
+  },
+  {
+    "file": "docs/review-m7/test-results/native/136-memories-final.png",
+    "bytes": 119706
+  },
+  {
+    "file": "docs/review-m7/test-results/native/136-memories-final.xml",
+    "bytes": 29721
+  },
+  {
+    "file": "docs/review-m7/test-results/native/137-calendar-preserved.json",
+    "bytes": 12874
+  },
+  {
+    "file": "docs/review-m7/test-results/native/137-calendar-preserved.png",
+    "bytes": 101581
+  },
+  {
+    "file": "docs/review-m7/test-results/native/137-calendar-preserved.xml",
+    "bytes": 30348
+  },
+  {
+    "file": "docs/review-m7/test-results/native/138-calendar-library.json",
+    "bytes": 12873
+  },
+  {
+    "file": "docs/review-m7/test-results/native/138-calendar-library.png",
+    "bytes": 101384
+  },
+  {
+    "file": "docs/review-m7/test-results/native/138-calendar-library.xml",
+    "bytes": 30016
+  },
+  {
+    "file": "docs/review-m7/test-results/native/139-back-to-calendar.json",
+    "bytes": 12873
+  },
+  {
+    "file": "docs/review-m7/test-results/native/139-back-to-calendar.png",
+    "bytes": 80712
+  },
+  {
+    "file": "docs/review-m7/test-results/native/139-back-to-calendar.xml",
+    "bytes": 30016
+  },
+  {
+    "file": "docs/review-m7/test-results/native/14-login-scroll-more.json",
+    "bytes": 7291
+  },
+  {
+    "file": "docs/review-m7/test-results/native/14-login-scroll-more.png",
+    "bytes": 114126
+  },
+  {
+    "file": "docs/review-m7/test-results/native/14-login-scroll-more.xml",
+    "bytes": 16729
+  },
+  {
+    "file": "docs/review-m7/test-results/native/140-family-after-library.json",
+    "bytes": 13712
+  },
+  {
+    "file": "docs/review-m7/test-results/native/140-family-after-library.png",
+    "bytes": 94248
+  },
+  {
+    "file": "docs/review-m7/test-results/native/140-family-after-library.xml",
+    "bytes": 31244
+  },
+  {
+    "file": "docs/review-m7/test-results/native/141-map-after-library.json",
+    "bytes": 7719
+  },
+  {
+    "file": "docs/review-m7/test-results/native/141-map-after-library.png",
+    "bytes": 137895
+  },
+  {
+    "file": "docs/review-m7/test-results/native/141-map-after-library.xml",
+    "bytes": 17045
+  },
+  {
+    "file": "docs/review-m7/test-results/native/142-map-settled.json",
+    "bytes": 9458
+  },
+  {
+    "file": "docs/review-m7/test-results/native/142-map-settled.png",
+    "bytes": 138484
+  },
+  {
+    "file": "docs/review-m7/test-results/native/142-map-settled.xml",
+    "bytes": 18043
+  },
+  {
+    "file": "docs/review-m7/test-results/native/143-map-back.json",
+    "bytes": 14214
+  },
+  {
+    "file": "docs/review-m7/test-results/native/143-map-back.png",
+    "bytes": 102364
+  },
+  {
+    "file": "docs/review-m7/test-results/native/143-map-back.xml",
+    "bytes": 31280
+  },
+  {
+    "file": "docs/review-m7/test-results/native/144-calendar-refocus.json",
+    "bytes": 12873
+  },
+  {
+    "file": "docs/review-m7/test-results/native/144-calendar-refocus.png",
+    "bytes": 101746
+  },
+  {
+    "file": "docs/review-m7/test-results/native/144-calendar-refocus.xml",
+    "bytes": 30016
+  },
+  {
+    "file": "docs/review-m7/test-results/native/145-library-final-security.json",
+    "bytes": 12873
+  },
+  {
+    "file": "docs/review-m7/test-results/native/145-library-final-security.png.failed-empty",
+    "bytes": 0
+  },
+  {
+    "file": "docs/review-m7/test-results/native/145-library-final-security.xml",
+    "bytes": 30347
+  },
+  {
+    "file": "docs/review-m7/test-results/native/146-current-native-state.json",
+    "bytes": 8361
+  },
+  {
+    "file": "docs/review-m7/test-results/native/146-current-native-state.png",
+    "bytes": 92684
+  },
+  {
+    "file": "docs/review-m7/test-results/native/146-current-native-state.xml",
+    "bytes": 17227
+  },
+  {
+    "file": "docs/review-m7/test-results/native/147-offline-request.json",
+    "bytes": 8361
+  },
+  {
+    "file": "docs/review-m7/test-results/native/147-offline-request.png",
+    "bytes": 91975
+  },
+  {
+    "file": "docs/review-m7/test-results/native/147-offline-request.xml",
+    "bytes": 17227
+  },
+  {
+    "file": "docs/review-m7/test-results/native/148-offline-error.json",
+    "bytes": 8361
+  },
+  {
+    "file": "docs/review-m7/test-results/native/148-offline-error.png",
+    "bytes": 92795
+  },
+  {
+    "file": "docs/review-m7/test-results/native/148-offline-error.xml",
+    "bytes": 17227
+  },
+  {
+    "file": "docs/review-m7/test-results/native/149-offline-retry.json",
+    "bytes": 11197
+  },
+  {
+    "file": "docs/review-m7/test-results/native/149-offline-retry.png",
+    "bytes": 93038
+  },
+  {
+    "file": "docs/review-m7/test-results/native/149-offline-retry.xml",
+    "bytes": 19262
+  },
+  {
+    "file": "docs/review-m7/test-results/native/15-login-edge-scroll.json",
+    "bytes": 7756
+  },
+  {
+    "file": "docs/review-m7/test-results/native/15-login-edge-scroll.png",
+    "bytes": 92709
+  },
+  {
+    "file": "docs/review-m7/test-results/native/15-login-edge-scroll.xml",
+    "bytes": 16733
+  },
+  {
+    "file": "docs/review-m7/test-results/native/150-offline-recovered.json",
+    "bytes": 11197
+  },
+  {
+    "file": "docs/review-m7/test-results/native/150-offline-recovered.png",
+    "bytes": 93038
+  },
+  {
+    "file": "docs/review-m7/test-results/native/150-offline-recovered.xml",
+    "bytes": 19262
+  },
+  {
+    "file": "docs/review-m7/test-results/native/151-settled-calendar-return.json",
+    "bytes": 11197
+  },
+  {
+    "file": "docs/review-m7/test-results/native/151-settled-calendar-return.png",
+    "bytes": 92458
+  },
+  {
+    "file": "docs/review-m7/test-results/native/151-settled-calendar-return.xml",
+    "bytes": 19262
+  },
+  {
+    "file": "docs/review-m7/test-results/native/152-settled-calendar-library.json",
+    "bytes": 12873
+  },
+  {
+    "file": "docs/review-m7/test-results/native/152-settled-calendar-library.png",
+    "bytes": 100157
+  },
+  {
+    "file": "docs/review-m7/test-results/native/152-settled-calendar-library.xml",
+    "bytes": 30016
+  },
+  {
+    "file": "docs/review-m7/test-results/native/153-settled-library-from-calendar.json",
+    "bytes": 12873
+  },
+  {
+    "file": "docs/review-m7/test-results/native/153-settled-library-from-calendar.png",
+    "bytes": 80662
+  },
+  {
+    "file": "docs/review-m7/test-results/native/153-settled-library-from-calendar.xml",
+    "bytes": 30016
+  },
+  {
+    "file": "docs/review-m7/test-results/native/154-owner-gallery-list.json",
+    "bytes": 9898
+  },
+  {
+    "file": "docs/review-m7/test-results/native/154-owner-gallery-list.png",
+    "bytes": 107601
+  },
+  {
+    "file": "docs/review-m7/test-results/native/154-owner-gallery-list.xml",
+    "bytes": 18029
+  },
+  {
+    "file": "docs/review-m7/test-results/native/155-owner-gallery-cards.json",
+    "bytes": 8940
+  },
+  {
+    "file": "docs/review-m7/test-results/native/155-owner-gallery-cards.png",
+    "bytes": 102425
+  },
+  {
+    "file": "docs/review-m7/test-results/native/155-owner-gallery-cards.xml",
+    "bytes": 17338
+  },
+  {
+    "file": "docs/review-m7/test-results/native/156-owner-gallery-security.json",
+    "bytes": 10226
+  },
+  {
+    "file": "docs/review-m7/test-results/native/156-owner-gallery-security.png",
+    "bytes": 104445
+  },
+  {
+    "file": "docs/review-m7/test-results/native/156-owner-gallery-security.xml",
+    "bytes": 18558
+  },
+  {
+    "file": "docs/review-m7/test-results/native/157-owner-private-images-before-expiry.json",
+    "bytes": 10640
+  },
+  {
+    "file": "docs/review-m7/test-results/native/157-owner-private-images-before-expiry.png",
+    "bytes": 70362
+  },
+  {
+    "file": "docs/review-m7/test-results/native/157-owner-private-images-before-expiry.xml",
+    "bytes": 22201
+  },
+  {
+    "file": "docs/review-m7/test-results/native/158-observed-before-security.json",
+    "bytes": 10640
+  },
+  {
+    "file": "docs/review-m7/test-results/native/158-observed-before-security.png",
+    "bytes": 70052
+  },
+  {
+    "file": "docs/review-m7/test-results/native/158-observed-before-security.xml",
+    "bytes": 22201
+  },
+  {
+    "file": "docs/review-m7/test-results/native/159-revoked-session-refresh.json",
+    "bytes": 8242
+  },
+  {
+    "file": "docs/review-m7/test-results/native/159-revoked-session-refresh.png",
+    "bytes": 101136
+  },
+  {
+    "file": "docs/review-m7/test-results/native/159-revoked-session-refresh.xml",
+    "bytes": 17083
+  },
+  {
+    "file": "docs/review-m7/test-results/native/16-login-settled.json",
+    "bytes": 7756
+  },
+  {
+    "file": "docs/review-m7/test-results/native/16-login-settled.png",
+    "bytes": 92174
+  },
+  {
+    "file": "docs/review-m7/test-results/native/16-login-settled.xml",
+    "bytes": 16733
+  },
+  {
+    "file": "docs/review-m7/test-results/native/160-other-email.json",
+    "bytes": 8260
+  },
+  {
+    "file": "docs/review-m7/test-results/native/160-other-email.png",
+    "bytes": 117561
+  },
+  {
+    "file": "docs/review-m7/test-results/native/160-other-email.xml",
+    "bytes": 17101
+  },
+  {
+    "file": "docs/review-m7/test-results/native/161-other-email-keyboard-dismissed.json",
+    "bytes": 8260
+  },
+  {
+    "file": "docs/review-m7/test-results/native/161-other-email-keyboard-dismissed.png",
+    "bytes": 104978
+  },
+  {
+    "file": "docs/review-m7/test-results/native/161-other-email-keyboard-dismissed.xml",
+    "bytes": 17101
+  },
+  {
+    "file": "docs/review-m7/test-results/native/162-other-password.json",
+    "bytes": 8260
+  },
+  {
+    "file": "docs/review-m7/test-results/native/162-other-password.png",
+    "bytes": 110389
+  },
+  {
+    "file": "docs/review-m7/test-results/native/162-other-password.xml",
+    "bytes": 17101
+  },
+  {
+    "file": "docs/review-m7/test-results/native/163-other-login-ready.json",
+    "bytes": 8260
+  },
+  {
+    "file": "docs/review-m7/test-results/native/163-other-login-ready.png",
+    "bytes": 101280
+  },
+  {
+    "file": "docs/review-m7/test-results/native/163-other-login-ready.xml",
+    "bytes": 17101
+  },
+  {
+    "file": "docs/review-m7/test-results/native/164-other-login.json",
+    "bytes": 8548
+  },
+  {
+    "file": "docs/review-m7/test-results/native/164-other-login.png",
+    "bytes": 113689
+  },
+  {
+    "file": "docs/review-m7/test-results/native/164-other-login.xml",
+    "bytes": 26231
+  },
+  {
+    "file": "docs/review-m7/test-results/native/165-other-account-home.json",
+    "bytes": 8548
+  },
+  {
+    "file": "docs/review-m7/test-results/native/165-other-account-home.png",
+    "bytes": 113689
+  },
+  {
+    "file": "docs/review-m7/test-results/native/165-other-account-home.xml",
+    "bytes": 26231
+  },
+  {
+    "file": "docs/review-m7/test-results/native/166-other-memories.json",
+    "bytes": 12904
+  },
+  {
+    "file": "docs/review-m7/test-results/native/166-other-memories.png",
+    "bytes": 117033
+  },
+  {
+    "file": "docs/review-m7/test-results/native/166-other-memories.xml",
+    "bytes": 29717
+  },
+  {
+    "file": "docs/review-m7/test-results/native/167-other-library.json",
+    "bytes": 8321
+  },
+  {
+    "file": "docs/review-m7/test-results/native/167-other-library.png",
+    "bytes": 91707
+  },
+  {
+    "file": "docs/review-m7/test-results/native/167-other-library.xml",
+    "bytes": 17523
+  },
+  {
+    "file": "docs/review-m7/test-results/native/168-other-empty-library.json",
+    "bytes": 8321
+  },
+  {
+    "file": "docs/review-m7/test-results/native/168-other-empty-library.png",
+    "bytes": 91707
+  },
+  {
+    "file": "docs/review-m7/test-results/native/168-other-empty-library.xml",
+    "bytes": 17523
+  },
+  {
+    "file": "docs/review-m7/test-results/native/169-other-library-back.json",
+    "bytes": 12904
+  },
+  {
+    "file": "docs/review-m7/test-results/native/169-other-library-back.png",
+    "bytes": 117071
+  },
+  {
+    "file": "docs/review-m7/test-results/native/169-other-library-back.xml",
+    "bytes": 29717
+  },
+  {
+    "file": "docs/review-m7/test-results/native/17-login-retry.json",
+    "bytes": 8653
+  },
+  {
+    "file": "docs/review-m7/test-results/native/17-login-retry.png",
+    "bytes": 104665
+  },
+  {
+    "file": "docs/review-m7/test-results/native/17-login-retry.xml",
+    "bytes": 18035
+  },
+  {
+    "file": "docs/review-m7/test-results/native/170-other-existing-profile.json",
+    "bytes": 9407
+  },
+  {
+    "file": "docs/review-m7/test-results/native/170-other-existing-profile.png",
+    "bytes": 94793
+  },
+  {
+    "file": "docs/review-m7/test-results/native/170-other-existing-profile.xml",
+    "bytes": 26811
+  },
+  {
+    "file": "docs/review-m7/test-results/native/171-other-preferences-scroll.json",
+    "bytes": 13729
+  },
+  {
+    "file": "docs/review-m7/test-results/native/171-other-preferences-scroll.png",
+    "bytes": 102276
+  },
+  {
+    "file": "docs/review-m7/test-results/native/171-other-preferences-scroll.xml",
+    "bytes": 30264
+  },
+  {
+    "file": "docs/review-m7/test-results/native/172-other-signout-action.json",
+    "bytes": 12977
+  },
+  {
+    "file": "docs/review-m7/test-results/native/172-other-signout-action.png",
+    "bytes": 110569
+  },
+  {
+    "file": "docs/review-m7/test-results/native/172-other-signout-action.xml",
+    "bytes": 29460
+  },
+  {
+    "file": "docs/review-m7/test-results/native/173-other-logout-visible.json",
+    "bytes": 10606
+  },
+  {
+    "file": "docs/review-m7/test-results/native/173-other-logout-visible.png",
+    "bytes": 98719
+  },
+  {
+    "file": "docs/review-m7/test-results/native/173-other-logout-visible.xml",
+    "bytes": 27430
+  },
+  {
+    "file": "docs/review-m7/test-results/native/174-explicit-logout.json",
+    "bytes": 8242
+  },
+  {
+    "file": "docs/review-m7/test-results/native/174-explicit-logout.png",
+    "bytes": 101515
+  },
+  {
+    "file": "docs/review-m7/test-results/native/174-explicit-logout.xml",
+    "bytes": 17083
+  },
+  {
+    "file": "docs/review-m7/test-results/native/18-after-login.json",
+    "bytes": 10886
+  },
+  {
+    "file": "docs/review-m7/test-results/native/18-after-login.png",
+    "bytes": 108619
+  },
+  {
+    "file": "docs/review-m7/test-results/native/18-after-login.xml",
+    "bytes": 28231
+  },
+  {
+    "file": "docs/review-m7/test-results/native/20-memories.json",
+    "bytes": 12726
+  },
+  {
+    "file": "docs/review-m7/test-results/native/20-memories.png",
+    "bytes": 109617
+  },
+  {
+    "file": "docs/review-m7/test-results/native/20-memories.xml",
+    "bytes": 29539
+  },
+  {
+    "file": "docs/review-m7/test-results/native/21-library-open.json",
+    "bytes": 8228
+  },
+  {
+    "file": "docs/review-m7/test-results/native/21-library-open.png",
+    "bytes": 88185
+  },
+  {
+    "file": "docs/review-m7/test-results/native/21-library-open.xml",
+    "bytes": 17425
+  },
+  {
+    "file": "docs/review-m7/test-results/native/22-library-settled.json",
+    "bytes": 11124
+  },
+  {
+    "file": "docs/review-m7/test-results/native/22-library-settled.png",
+    "bytes": 96272
+  },
+  {
+    "file": "docs/review-m7/test-results/native/22-library-settled.xml",
+    "bytes": 19189
+  },
+  {
+    "file": "docs/review-m7/test-results/native/23-create-album.json",
+    "bytes": 4230
+  },
+  {
+    "file": "docs/review-m7/test-results/native/23-create-album.png",
+    "bytes": 36613
+  },
+  {
+    "file": "docs/review-m7/test-results/native/23-create-album.xml",
+    "bytes": 7773
+  },
+  {
+    "file": "docs/review-m7/test-results/native/24-album-name.json",
+    "bytes": 4245
+  },
+  {
+    "file": "docs/review-m7/test-results/native/24-album-name.png",
+    "bytes": 81492
+  },
+  {
+    "file": "docs/review-m7/test-results/native/24-album-name.xml",
+    "bytes": 7787
+  },
+  {
+    "file": "docs/review-m7/test-results/native/25-album-description.json",
+    "bytes": 4279
+  },
+  {
+    "file": "docs/review-m7/test-results/native/25-album-description.png",
+    "bytes": 100789
+  },
+  {
+    "file": "docs/review-m7/test-results/native/25-album-description.xml",
+    "bytes": 7821
+  },
+  {
+    "file": "docs/review-m7/test-results/native/26-album-ready.json",
+    "bytes": 4279
+  },
+  {
+    "file": "docs/review-m7/test-results/native/26-album-ready.png",
+    "bytes": 54325
+  },
+  {
+    "file": "docs/review-m7/test-results/native/26-album-ready.xml",
+    "bytes": 7822
+  },
+  {
+    "file": "docs/review-m7/test-results/native/27-album-save.json",
+    "bytes": 4289
+  },
+  {
+    "file": "docs/review-m7/test-results/native/27-album-save.png",
+    "bytes": 54363
+  },
+  {
+    "file": "docs/review-m7/test-results/native/27-album-save.xml",
+    "bytes": 8513
+  },
+  {
+    "file": "docs/review-m7/test-results/native/28-album-created.json",
+    "bytes": 11124
+  },
+  {
+    "file": "docs/review-m7/test-results/native/28-album-created.png",
+    "bytes": 96663
+  },
+  {
+    "file": "docs/review-m7/test-results/native/28-album-created.xml",
+    "bytes": 19189
+  },
+  {
+    "file": "docs/review-m7/test-results/native/29-category-editor.json",
+    "bytes": 3283
+  },
+  {
+    "file": "docs/review-m7/test-results/native/29-category-editor.png",
+    "bytes": 33394
+  },
+  {
+    "file": "docs/review-m7/test-results/native/29-category-editor.xml",
+    "bytes": 6769
+  },
+  {
+    "file": "docs/review-m7/test-results/native/30-category-name.json",
+    "bytes": 3301
+  },
+  {
+    "file": "docs/review-m7/test-results/native/30-category-name.png",
+    "bytes": 90926
+  },
+  {
+    "file": "docs/review-m7/test-results/native/30-category-name.xml",
+    "bytes": 6786
+  },
+  {
+    "file": "docs/review-m7/test-results/native/31-category-save.json",
+    "bytes": 3308
+  },
+  {
+    "file": "docs/review-m7/test-results/native/31-category-save.png",
+    "bytes": 40060
+  },
+  {
+    "file": "docs/review-m7/test-results/native/31-category-save.xml",
+    "bytes": 7470
+  },
+  {
+    "file": "docs/review-m7/test-results/native/32-album-list-scrolled.json",
+    "bytes": 11124
+  },
+  {
+    "file": "docs/review-m7/test-results/native/32-album-list-scrolled.png",
+    "bytes": 95944
+  },
+  {
+    "file": "docs/review-m7/test-results/native/32-album-list-scrolled.xml",
+    "bytes": 19189
+  },
+  {
+    "file": "docs/review-m7/test-results/native/33-gallery-scroll.json",
+    "bytes": 12677
+  },
+  {
+    "file": "docs/review-m7/test-results/native/33-gallery-scroll.png",
+    "bytes": 68743
+  },
+  {
+    "file": "docs/review-m7/test-results/native/33-gallery-scroll.xml",
+    "bytes": 20347
+  },
+  {
+    "file": "docs/review-m7/test-results/native/34-gallery-cards.json",
+    "bytes": 6953
+  },
+  {
+    "file": "docs/review-m7/test-results/native/34-gallery-cards.png",
+    "bytes": 94540
+  },
+  {
+    "file": "docs/review-m7/test-results/native/34-gallery-cards.xml",
+    "bytes": 16213
+  },
+  {
+    "file": "docs/review-m7/test-results/native/35-empty-album.json",
+    "bytes": 6311
+  },
+  {
+    "file": "docs/review-m7/test-results/native/35-empty-album.png",
+    "bytes": 74988
+  },
+  {
+    "file": "docs/review-m7/test-results/native/35-empty-album.xml",
+    "bytes": 16040
+  },
+  {
+    "file": "docs/review-m7/test-results/native/36-empty-album-settled.json",
+    "bytes": 10124
+  },
+  {
+    "file": "docs/review-m7/test-results/native/36-empty-album-settled.png",
+    "bytes": 94467
+  },
+  {
+    "file": "docs/review-m7/test-results/native/36-empty-album-settled.xml",
+    "bytes": 18787
+  },
+  {
+    "file": "docs/review-m7/test-results/native/37-upload-editor.json",
+    "bytes": 5398
+  },
+  {
+    "file": "docs/review-m7/test-results/native/37-upload-editor.png",
+    "bytes": 100163
+  },
+  {
+    "file": "docs/review-m7/test-results/native/37-upload-editor.xml",
+    "bytes": 8998
+  },
+  {
+    "file": "docs/review-m7/test-results/native/38-system-picker.json",
+    "bytes": 5635
+  },
+  {
+    "file": "docs/review-m7/test-results/native/38-system-picker.png",
+    "bytes": 128992
+  },
+  {
+    "file": "docs/review-m7/test-results/native/38-system-picker.xml",
+    "bytes": 17992
+  },
+  {
+    "file": "docs/review-m7/test-results/native/39-picker-first-photo.json",
+    "bytes": 6733
+  },
+  {
+    "file": "docs/review-m7/test-results/native/39-picker-first-photo.png",
+    "bytes": 134691
+  },
+  {
+    "file": "docs/review-m7/test-results/native/39-picker-first-photo.xml",
+    "bytes": 19228
+  },
+  {
+    "file": "docs/review-m7/test-results/native/40-picker-two-photos.json",
+    "bytes": 6732
+  },
+  {
+    "file": "docs/review-m7/test-results/native/40-picker-two-photos.png",
+    "bytes": 134387
+  },
+  {
+    "file": "docs/review-m7/test-results/native/40-picker-two-photos.xml",
+    "bytes": 19222
+  },
+  {
+    "file": "docs/review-m7/test-results/native/41-picker-return.json",
+    "bytes": 6858
+  },
+  {
+    "file": "docs/review-m7/test-results/native/41-picker-return.png",
+    "bytes": 114589
+  },
+  {
+    "file": "docs/review-m7/test-results/native/41-picker-return.xml",
+    "bytes": 11427
+  },
+  {
+    "file": "docs/review-m7/test-results/native/42-upload-metadata.json",
+    "bytes": 9108
+  },
+  {
+    "file": "docs/review-m7/test-results/native/42-upload-metadata.png",
+    "bytes": 64792
+  },
+  {
+    "file": "docs/review-m7/test-results/native/42-upload-metadata.xml",
+    "bytes": 12639
+  },
+  {
+    "file": "docs/review-m7/test-results/native/43-upload-title.json",
+    "bytes": 9118
+  },
+  {
+    "file": "docs/review-m7/test-results/native/43-upload-title.png",
+    "bytes": 84414
+  },
+  {
+    "file": "docs/review-m7/test-results/native/43-upload-title.xml",
+    "bytes": 12647
+  },
+  {
+    "file": "docs/review-m7/test-results/native/44-upload-keyboard-dismissed.json",
+    "bytes": 9123
+  },
+  {
+    "file": "docs/review-m7/test-results/native/44-upload-keyboard-dismissed.png",
+    "bytes": 71098
+  },
+  {
+    "file": "docs/review-m7/test-results/native/44-upload-keyboard-dismissed.xml",
+    "bytes": 12654
+  },
+  {
+    "file": "docs/review-m7/test-results/native/45-upload-date.json",
+    "bytes": 7712
+  },
+  {
+    "file": "docs/review-m7/test-results/native/45-upload-date.png",
+    "bytes": 84462
+  },
+  {
+    "file": "docs/review-m7/test-results/native/45-upload-date.xml",
+    "bytes": 10970
+  },
+  {
+    "file": "docs/review-m7/test-results/native/46-upload-date-reviewed.json",
+    "bytes": 7718
+  },
+  {
+    "file": "docs/review-m7/test-results/native/46-upload-date-reviewed.png",
+    "bytes": 75746
+  },
+  {
+    "file": "docs/review-m7/test-results/native/46-upload-date-reviewed.xml",
+    "bytes": 10978
+  },
+  {
+    "file": "docs/review-m7/test-results/native/47-upload-actions.json",
+    "bytes": 7691
+  },
+  {
+    "file": "docs/review-m7/test-results/native/47-upload-actions.png",
+    "bytes": 80082
+  },
+  {
+    "file": "docs/review-m7/test-results/native/47-upload-actions.xml",
+    "bytes": 10628
+  },
+  {
+    "file": "docs/review-m7/test-results/native/48-upload-category.json",
+    "bytes": 7690
+  },
+  {
+    "file": "docs/review-m7/test-results/native/48-upload-category.png",
+    "bytes": 80165
+  },
+  {
+    "file": "docs/review-m7/test-results/native/48-upload-category.xml",
+    "bytes": 10627
+  },
+  {
+    "file": "docs/review-m7/test-results/native/49-upload-submit.json",
+    "bytes": 8206
+  },
+  {
+    "file": "docs/review-m7/test-results/native/49-upload-submit.png",
+    "bytes": 98757
+  },
+  {
+    "file": "docs/review-m7/test-results/native/49-upload-submit.xml",
+    "bytes": 11006
+  },
+  {
+    "file": "docs/review-m7/test-results/native/50-upload-outcome.json",
+    "bytes": 8206
+  },
+  {
+    "file": "docs/review-m7/test-results/native/50-upload-outcome.png",
+    "bytes": 98731
+  },
+  {
+    "file": "docs/review-m7/test-results/native/50-upload-outcome.xml",
+    "bytes": 11006
+  },
+  {
+    "file": "docs/review-m7/test-results/native/51-fixed-cold-launch.json",
+    "bytes": 1433
+  },
+  {
+    "file": "docs/review-m7/test-results/native/51-fixed-cold-launch.png",
+    "bytes": 44520
+  },
+  {
+    "file": "docs/review-m7/test-results/native/51-fixed-cold-launch.xml",
+    "bytes": 4113
+  },
+  {
+    "file": "docs/review-m7/test-results/native/52-cold-wait.json",
+    "bytes": 10886
+  },
+  {
+    "file": "docs/review-m7/test-results/native/52-cold-wait.png",
+    "bytes": 108455
+  },
+  {
+    "file": "docs/review-m7/test-results/native/52-cold-wait.xml",
+    "bytes": 28231
+  },
+  {
+    "file": "docs/review-m7/test-results/native/53-fixed-album.json",
+    "bytes": 1433
+  },
+  {
+    "file": "docs/review-m7/test-results/native/53-fixed-album.png",
+    "bytes": 87766
+  },
+  {
+    "file": "docs/review-m7/test-results/native/53-fixed-album.xml",
+    "bytes": 4113
+  },
+  {
+    "file": "docs/review-m7/test-results/native/54-album-loaded.json",
+    "bytes": 10120
+  },
+  {
+    "file": "docs/review-m7/test-results/native/54-album-loaded.png",
+    "bytes": 94774
+  },
+  {
+    "file": "docs/review-m7/test-results/native/54-album-loaded.xml",
+    "bytes": 18783
+  },
+  {
+    "file": "docs/review-m7/test-results/native/56-fixed-current.json",
+    "bytes": 1433
+  },
+  {
+    "file": "docs/review-m7/test-results/native/56-fixed-current.png",
+    "bytes": 87173
+  },
+  {
+    "file": "docs/review-m7/test-results/native/56-fixed-current.xml",
+    "bytes": 4113
+  },
+  {
+    "file": "docs/review-m7/test-results/native/58-cached-ready.json",
+    "bytes": 10886
+  },
+  {
+    "file": "docs/review-m7/test-results/native/58-cached-ready.png",
+    "bytes": 108196
+  },
+  {
+    "file": "docs/review-m7/test-results/native/58-cached-ready.xml",
+    "bytes": 28231
+  },
+  {
+    "file": "docs/review-m7/test-results/native/59-fixed-memories.json",
+    "bytes": 12730
+  },
+  {
+    "file": "docs/review-m7/test-results/native/59-fixed-memories.png",
+    "bytes": 110666
+  },
+  {
+    "file": "docs/review-m7/test-results/native/59-fixed-memories.xml",
+    "bytes": 29543
+  },
+  {
+    "file": "docs/review-m7/test-results/native/60-fixed-library.json",
+    "bytes": 11124
+  },
+  {
+    "file": "docs/review-m7/test-results/native/60-fixed-library.png",
+    "bytes": 95752
+  },
+  {
+    "file": "docs/review-m7/test-results/native/60-fixed-library.xml",
+    "bytes": 19189
+  },
+  {
+    "file": "docs/review-m7/test-results/native/61-fixed-list-scroll.json",
+    "bytes": 10775
+  },
+  {
+    "file": "docs/review-m7/test-results/native/61-fixed-list-scroll.png",
+    "bytes": 100534
+  },
+  {
+    "file": "docs/review-m7/test-results/native/61-fixed-list-scroll.xml",
+    "bytes": 18639
+  },
+  {
+    "file": "docs/review-m7/test-results/native/62-fixed-album-cards.json",
+    "bytes": 7015
+  },
+  {
+    "file": "docs/review-m7/test-results/native/62-fixed-album-cards.png",
+    "bytes": 112784
+  },
+  {
+    "file": "docs/review-m7/test-results/native/62-fixed-album-cards.xml",
+    "bytes": 15945
+  },
+  {
+    "file": "docs/review-m7/test-results/native/63-fixed-album-open.json",
+    "bytes": 10120
+  },
+  {
+    "file": "docs/review-m7/test-results/native/63-fixed-album-open.png",
+    "bytes": 94499
+  },
+  {
+    "file": "docs/review-m7/test-results/native/63-fixed-album-open.xml",
+    "bytes": 18783
+  },
+  {
+    "file": "docs/review-m7/test-results/native/64-fixed-album-ready.json",
+    "bytes": 10120
+  },
+  {
+    "file": "docs/review-m7/test-results/native/64-fixed-album-ready.png",
+    "bytes": 94499
+  },
+  {
+    "file": "docs/review-m7/test-results/native/64-fixed-album-ready.xml",
+    "bytes": 18783
+  },
+  {
+    "file": "docs/review-m7/test-results/native/65-fixed-upload-form.json",
+    "bytes": 5398
+  },
+  {
+    "file": "docs/review-m7/test-results/native/65-fixed-upload-form.png",
+    "bytes": 100706
+  },
+  {
+    "file": "docs/review-m7/test-results/native/65-fixed-upload-form.xml",
+    "bytes": 8998
+  },
+  {
+    "file": "docs/review-m7/test-results/native/66-fixed-picker.json",
+    "bytes": 7375
+  },
+  {
+    "file": "docs/review-m7/test-results/native/66-fixed-picker.png",
+    "bytes": 160362
+  },
+  {
+    "file": "docs/review-m7/test-results/native/66-fixed-picker.xml",
+    "bytes": 21459
+  },
+  {
+    "file": "docs/review-m7/test-results/native/67-picker-local-only.json",
+    "bytes": 5635
+  },
+  {
+    "file": "docs/review-m7/test-results/native/67-picker-local-only.png",
+    "bytes": 127451
+  },
+  {
+    "file": "docs/review-m7/test-results/native/67-picker-local-only.xml",
+    "bytes": 17992
+  },
+  {
+    "file": "docs/review-m7/test-results/native/68-fixed-pick-one.json",
+    "bytes": 6733
+  },
+  {
+    "file": "docs/review-m7/test-results/native/68-fixed-pick-one.png",
+    "bytes": 136147
+  },
+  {
+    "file": "docs/review-m7/test-results/native/68-fixed-pick-one.xml",
+    "bytes": 19228
+  },
+  {
+    "file": "docs/review-m7/test-results/native/69-fixed-pick-two.json",
+    "bytes": 6732
+  },
+  {
+    "file": "docs/review-m7/test-results/native/69-fixed-pick-two.png",
+    "bytes": 135880
+  },
+  {
+    "file": "docs/review-m7/test-results/native/69-fixed-pick-two.xml",
+    "bytes": 19222
+  },
+  {
+    "file": "docs/review-m7/test-results/native/70-fixed-picker-return.json",
+    "bytes": 7821
+  },
+  {
+    "file": "docs/review-m7/test-results/native/70-fixed-picker-return.png",
+    "bytes": 115331
+  },
+  {
+    "file": "docs/review-m7/test-results/native/70-fixed-picker-return.xml",
+    "bytes": 12128
+  },
+  {
+    "file": "docs/review-m7/test-results/native/71-fixed-metadata-scroll.json",
+    "bytes": 9111
+  },
+  {
+    "file": "docs/review-m7/test-results/native/71-fixed-metadata-scroll.png",
+    "bytes": 57786
+  },
+  {
+    "file": "docs/review-m7/test-results/native/71-fixed-metadata-scroll.xml",
+    "bytes": 12643
+  },
+  {
+    "file": "docs/review-m7/test-results/native/72-fixed-upload-actions.json",
+    "bytes": 7692
+  },
+  {
+    "file": "docs/review-m7/test-results/native/72-fixed-upload-actions.png",
+    "bytes": 79151
+  },
+  {
+    "file": "docs/review-m7/test-results/native/72-fixed-upload-actions.xml",
+    "bytes": 10629
+  },
+  {
+    "file": "docs/review-m7/test-results/native/73-fixed-batch-category.json",
+    "bytes": 7691
+  },
+  {
+    "file": "docs/review-m7/test-results/native/73-fixed-batch-category.png",
+    "bytes": 79572
+  },
+  {
+    "file": "docs/review-m7/test-results/native/73-fixed-batch-category.xml",
+    "bytes": 10628
+  },
+  {
+    "file": "docs/review-m7/test-results/native/74-fixed-upload-submit.json",
+    "bytes": 10120
+  },
+  {
+    "file": "docs/review-m7/test-results/native/74-fixed-upload-submit.png",
+    "bytes": 95234
+  },
+  {
+    "file": "docs/review-m7/test-results/native/74-fixed-upload-submit.xml",
+    "bytes": 19115
+  },
+  {
+    "file": "docs/review-m7/test-results/native/75-fixed-upload-outcome.json",
+    "bytes": 10120
+  },
+  {
+    "file": "docs/review-m7/test-results/native/75-fixed-upload-outcome.png",
+    "bytes": 95234
+  },
+  {
+    "file": "docs/review-m7/test-results/native/75-fixed-upload-outcome.xml",
+    "bytes": 19115
+  },
+  {
+    "file": "docs/review-m7/test-results/native/76-native-photo-grid.json",
+    "bytes": 10262
+  },
+  {
+    "file": "docs/review-m7/test-results/native/76-native-photo-grid.png",
+    "bytes": 77996
+  },
+  {
+    "file": "docs/review-m7/test-results/native/76-native-photo-grid.xml",
+    "bytes": 20963
+  },
+  {
+    "file": "docs/review-m7/test-results/native/77-private-lightbox.json",
+    "bytes": 3872
+  },
+  {
+    "file": "docs/review-m7/test-results/native/77-private-lightbox.png",
+    "bytes": 63680
+  },
+  {
+    "file": "docs/review-m7/test-results/native/77-private-lightbox.xml",
+    "bytes": 8584
+  },
+  {
+    "file": "docs/review-m7/test-results/native/78-lightbox-zoom.json",
+    "bytes": 1445
+  },
+  {
+    "file": "docs/review-m7/test-results/native/78-lightbox-zoom.png",
+    "bytes": 39574
+  },
+  {
+    "file": "docs/review-m7/test-results/native/78-lightbox-zoom.xml",
+    "bytes": 6837
+  },
+  {
+    "file": "docs/review-m7/test-results/native/79-lightbox-back.json",
+    "bytes": 10262
+  },
+  {
+    "file": "docs/review-m7/test-results/native/79-lightbox-back.png",
+    "bytes": 77043
+  },
+  {
+    "file": "docs/review-m7/test-results/native/79-lightbox-back.xml",
+    "bytes": 20963
+  },
+  {
+    "file": "docs/review-m7/test-results/native/80-viewer-reopen.json",
+    "bytes": 3872
+  },
+  {
+    "file": "docs/review-m7/test-results/native/80-viewer-reopen.png",
+    "bytes": 63680
+  },
+  {
+    "file": "docs/review-m7/test-results/native/80-viewer-reopen.xml",
+    "bytes": 8584
+  },
+  {
+    "file": "docs/review-m7/test-results/native/81-photo-details-actions.json",
+    "bytes": 7723
+  },
+  {
+    "file": "docs/review-m7/test-results/native/81-photo-details-actions.png",
+    "bytes": 99716
+  },
+  {
+    "file": "docs/review-m7/test-results/native/81-photo-details-actions.xml",
+    "bytes": 11357
+  },
+  {
+    "file": "docs/review-m7/test-results/native/82-viewer-next.json",
+    "bytes": 7723
+  },
+  {
+    "file": "docs/review-m7/test-results/native/82-viewer-next.png",
+    "bytes": 101685
+  },
+  {
+    "file": "docs/review-m7/test-results/native/82-viewer-next.xml",
+    "bytes": 11357
+  },
+  {
+    "file": "docs/review-m7/test-results/native/83-viewer-previous.json",
+    "bytes": 7723
+  },
+  {
+    "file": "docs/review-m7/test-results/native/83-viewer-previous.png",
+    "bytes": 99653
+  },
+  {
+    "file": "docs/review-m7/test-results/native/83-viewer-previous.xml",
+    "bytes": 11357
+  },
+  {
+    "file": "docs/review-m7/test-results/native/84-photo-editor.json",
+    "bytes": 6720
+  },
+  {
+    "file": "docs/review-m7/test-results/native/84-photo-editor.png",
+    "bytes": 66450
+  },
+  {
+    "file": "docs/review-m7/test-results/native/84-photo-editor.xml",
+    "bytes": 10244
+  },
+  {
+    "file": "docs/review-m7/test-results/native/85-photo-title.json",
+    "bytes": 6728
+  },
+  {
+    "file": "docs/review-m7/test-results/native/85-photo-title.png",
+    "bytes": 79681
+  },
+  {
+    "file": "docs/review-m7/test-results/native/85-photo-title.xml",
+    "bytes": 10249
+  },
+  {
+    "file": "docs/review-m7/test-results/native/86-photo-description.json",
+    "bytes": 6753
+  },
+  {
+    "file": "docs/review-m7/test-results/native/86-photo-description.png",
+    "bytes": 82260
+  },
+  {
+    "file": "docs/review-m7/test-results/native/86-photo-description.xml",
+    "bytes": 10274
+  },
+  {
+    "file": "docs/review-m7/test-results/native/87-photo-keyboard-dismissed.json",
+    "bytes": 6759
+  },
+  {
+    "file": "docs/review-m7/test-results/native/87-photo-keyboard-dismissed.png",
+    "bytes": 77047
+  },
+  {
+    "file": "docs/review-m7/test-results/native/87-photo-keyboard-dismissed.xml",
+    "bytes": 10283
+  },
+  {
+    "file": "docs/review-m7/test-results/native/88-photo-date.json",
+    "bytes": 7687
+  },
+  {
+    "file": "docs/review-m7/test-results/native/88-photo-date.png",
+    "bytes": 89387
+  },
+  {
+    "file": "docs/review-m7/test-results/native/88-photo-date.xml",
+    "bytes": 10944
+  },
+  {
+    "file": "docs/review-m7/test-results/native/89-photo-date-reviewed.json",
+    "bytes": 7693
+  },
+  {
+    "file": "docs/review-m7/test-results/native/89-photo-date-reviewed.png",
+    "bytes": 79423
+  },
+  {
+    "file": "docs/review-m7/test-results/native/89-photo-date-reviewed.xml",
+    "bytes": 10952
+  },
+  {
+    "file": "docs/review-m7/test-results/native/90-photo-save-actions.json",
+    "bytes": 7689
+  },
+  {
+    "file": "docs/review-m7/test-results/native/90-photo-save-actions.png",
+    "bytes": 78727
+  },
+  {
+    "file": "docs/review-m7/test-results/native/90-photo-save-actions.xml",
+    "bytes": 10946
+  },
+  {
+    "file": "docs/review-m7/test-results/native/91-photo-save.json",
+    "bytes": 10187
+  },
+  {
+    "file": "docs/review-m7/test-results/native/91-photo-save.png",
+    "bytes": 73409
+  },
+  {
+    "file": "docs/review-m7/test-results/native/91-photo-save.xml",
+    "bytes": 20888
+  },
+  {
+    "file": "docs/review-m7/test-results/native/92-edited-photo-view.json",
+    "bytes": 3843
+  },
+  {
+    "file": "docs/review-m7/test-results/native/92-edited-photo-view.png",
+    "bytes": 60697
+  },
+  {
+    "file": "docs/review-m7/test-results/native/92-edited-photo-view.xml",
+    "bytes": 8555
+  },
+  {
+    "file": "docs/review-m7/test-results/native/93-edited-photo-details.json",
+    "bytes": 8170
+  },
+  {
+    "file": "docs/review-m7/test-results/native/93-edited-photo-details.png",
+    "bytes": 99001
+  },
+  {
+    "file": "docs/review-m7/test-results/native/93-edited-photo-details.xml",
+    "bytes": 11663
+  },
+  {
+    "file": "docs/review-m7/test-results/native/94-photo-delete-visible.json",
+    "bytes": 8170
+  },
+  {
+    "file": "docs/review-m7/test-results/native/94-photo-delete-visible.png",
+    "bytes": 99124
+  },
+  {
+    "file": "docs/review-m7/test-results/native/94-photo-delete-visible.xml",
+    "bytes": 11663
+  },
+  {
+    "file": "docs/review-m7/test-results/native/95-photo-delete-confirmation.json",
+    "bytes": 3346
+  },
+  {
+    "file": "docs/review-m7/test-results/native/95-photo-delete-confirmation.png",
+    "bytes": 45813
+  },
+  {
+    "file": "docs/review-m7/test-results/native/95-photo-delete-confirmation.xml",
+    "bytes": 6503
+  },
+  {
+    "file": "docs/review-m7/test-results/native/96-photo-deleted.json",
+    "bytes": 8740
+  },
+  {
+    "file": "docs/review-m7/test-results/native/96-photo-deleted.png",
+    "bytes": 66739
+  },
+  {
+    "file": "docs/review-m7/test-results/native/96-photo-deleted.xml",
+    "bytes": 18491
+  },
+  {
+    "file": "docs/review-m7/test-results/native/97-category-filter-empty.json",
+    "bytes": 9672
+  },
+  {
+    "file": "docs/review-m7/test-results/native/97-category-filter-empty.png",
+    "bytes": 100970
+  },
+  {
+    "file": "docs/review-m7/test-results/native/97-category-filter-empty.xml",
+    "bytes": 18471
+  },
+  {
+    "file": "docs/review-m7/test-results/native/98-category-filter-clear.json",
+    "bytes": 10168
+  },
+  {
+    "file": "docs/review-m7/test-results/native/98-category-filter-clear.png",
+    "bytes": 87615
+  },
+  {
+    "file": "docs/review-m7/test-results/native/98-category-filter-clear.xml",
+    "bytes": 19853
+  },
+  {
+    "file": "docs/review-m7/test-results/native/99-album-delete-confirmation.json",
+    "bytes": 3393
+  },
+  {
+    "file": "docs/review-m7/test-results/native/99-album-delete-confirmation.png",
+    "bytes": 59922
+  },
+  {
+    "file": "docs/review-m7/test-results/native/99-album-delete-confirmation.xml",
+    "bytes": 6550
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-after-native-upload.json",
+    "bytes": 119512
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-album-created.json",
+    "bytes": 119387
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-album-deleted.json",
+    "bytes": 119350
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-before-fixed-retry.json",
+    "bytes": 119512
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-before-ui-crud.json",
+    "bytes": 119225
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-category-created.json",
+    "bytes": 119512
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-category-deleted.json",
+    "bytes": 119225
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-category-renamed.json",
+    "bytes": 119351
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-connectivity.json",
+    "bytes": 119225
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-fixed-upload-result.json",
+    "bytes": 120038
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-metadata-saved.json",
+    "bytes": 120082
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-photo-deleted.json",
+    "bytes": 119778
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-picker-not-uploaded.json",
+    "bytes": 119512
+  },
+  {
+    "file": "docs/review-m7/test-results/native/api-pre-expiry.json",
+    "bytes": 32576
+  },
+  {
+    "file": "docs/review-m7/test-results/native/backend-cleanup.json",
+    "bytes": 1156
+  },
+  {
+    "file": "docs/review-m7/test-results/native/device.json",
+    "bytes": 928
+  },
+  {
+    "file": "docs/review-m7/test-results/native/final-bundle-check.json",
+    "bytes": 153
+  },
+  {
+    "file": "docs/review-m7/test-results/native/gallery-fixture-correction.json",
+    "bytes": 252
+  },
+  {
+    "file": "docs/review-m7/test-results/native/last-anr-redacted.txt",
+    "bytes": 6024
+  },
+  {
+    "file": "docs/review-m7/test-results/native/library-seed.json",
+    "bytes": 83
+  },
+  {
+    "file": "docs/review-m7/test-results/native/metro-media-warning.txt",
+    "bytes": 261
+  },
+  {
+    "file": "docs/review-m7/test-results/native/runtime-redacted.log",
+    "bytes": 0
+  },
+  {
+    "file": "docs/review-m7/test-results/native/session-revocation.json",
+    "bytes": 97
+  },
+  {
+    "file": "docs/review-m7/test-results/native/switched-account-api.json",
+    "bytes": 280
+  },
+  {
+    "file": "docs/review-m7/test-results/native/synthetic-data.json",
+    "bytes": 224
+  },
+  {
+    "file": "docs/review-m7/test-results/npm-audit-baseline.json",
+    "bytes": 9704
+  },
+  {
+    "file": "docs/review-m7/test-results/npm-audit-command.json",
+    "bytes": 209
+  },
+  {
+    "file": "docs/review-m7/test-results/npm-audit.json",
+    "bytes": 9350
+  },
+  {
+    "file": "docs/review-m7/test-results/quality-summary.json",
+    "bytes": 1404
+  },
+  {
+    "file": "docs/review-m7/test-results/replayed-contrast.json",
+    "bytes": 3198
+  },
+  {
+    "file": "docs/review-m7/test-results/replayed-m6-integration.json",
+    "bytes": 16494
+  },
+  {
+    "file": "docs/review-m7/test-results/secret-scan.json",
+    "bytes": 80
+  },
+  {
+    "file": "docs/review-m7/test-results/source-hashes.json",
+    "bytes": 1942
+  },
+  {
+    "file": "docs/review-m7/test-results/token-pattern-scan.json",
+    "bytes": 64
+  },
+  {
+    "file": "package.json",
+    "bytes": 2722
+  },
+  {
+    "file": "scripts/check-isolated-m7-native.cjs",
+    "bytes": 1547
+  },
+  {
+    "file": "scripts/check-isolated-m7-switch.cjs",
+    "bytes": 1700
+  },
+  {
+    "file": "scripts/check-m7-cleanup.cjs",
+    "bytes": 2270
+  },
+  {
+    "file": "scripts/create-isolated-m7-switch-user.cjs",
+    "bytes": 1028
+  },
+  {
+    "file": "scripts/finalize-m7-review.cjs",
+    "bytes": 7036
+  },
+  {
+    "file": "scripts/m7-native-ui.cjs",
+    "bytes": 1347
+  },
+  {
+    "file": "scripts/m7-synthetic-images.cjs",
+    "bytes": 1236
+  },
+  {
+    "file": "scripts/reseed-isolated-m7-gallery.cjs",
+    "bytes": 2213
+  },
+  {
+    "file": "scripts/revoke-isolated-m7-native.cjs",
+    "bytes": 1141
+  },
+  {
+    "file": "scripts/run-backend-suite-m7.cjs",
+    "bytes": 678
+  },
+  {
+    "file": "scripts/run-isolated-m7.cjs",
+    "bytes": 1452
+  },
+  {
+    "file": "scripts/run-m7-quality.cjs",
+    "bytes": 1119
+  },
+  {
+    "file": "scripts/seed-isolated-m7-native.cjs",
+    "bytes": 2311
+  },
+  {
+    "file": "src/api/apiClient.ts",
+    "bytes": 8372
+  },
+  {
+    "file": "src/app/(tabs)/index.tsx",
+    "bytes": 7094
+  },
+  {
+    "file": "src/app/_layout.tsx",
+    "bytes": 3412
+  },
+  {
+    "file": "src/app/library/[albumId].tsx",
+    "bytes": 753
+  },
+  {
+    "file": "src/app/library/_layout.tsx",
+    "bytes": 284
+  },
+  {
+    "file": "src/app/library/index.tsx",
+    "bytes": 130
+  },
+  {
+    "file": "src/features/anniversaries/AnniversaryScreen.tsx",
+    "bytes": 14301
+  },
+  {
+    "file": "src/features/anniversaries/anniversary-strings.ts",
+    "bytes": 13380
+  },
+  {
+    "file": "src/features/library/LibraryDialogs.tsx",
+    "bytes": 7938
+  },
+  {
+    "file": "src/features/library/LibraryScreen.tsx",
+    "bytes": 16791
+  },
+  {
+    "file": "src/features/library/PrivatePhoto.tsx",
+    "bytes": 1842
+  },
+  {
+    "file": "src/features/library/library-api.ts",
+    "bytes": 5679
+  },
+  {
+    "file": "src/features/library/library-data.ts",
+    "bytes": 7406
+  },
+  {
+    "file": "src/features/library/library-media.ts",
+    "bytes": 3503
+  },
+  {
+    "file": "src/features/library/library-strings.ts",
+    "bytes": 6861
+  },
+  {
+    "file": "src/features/library/library-upload.ts",
+    "bytes": 3639
+  },
+  {
+    "file": "src/features/timeline/TimelineScreen.tsx",
+    "bytes": 11330
+  },
+  {
+    "file": "src/localization/strings.ts",
+    "bytes": 5760
+  },
+  {
+    "file": "tests/fixtures/library-host/LibraryContractHost.csproj",
+    "bytes": 829
+  },
+  {
+    "file": "tests/fixtures/library-host/LibraryProvider.cs",
+    "bytes": 4267
+  },
+  {
+    "file": "tests/fixtures/library-sage.png",
+    "bytes": 1020
+  },
+  {
+    "file": "tests/m7-library.test.cjs",
+    "bytes": 20812
+  },
+  {
+    "file": "tests/real-backend.m7.cjs",
+    "bytes": 12898
+  }
+]

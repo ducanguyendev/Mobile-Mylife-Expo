@@ -6,6 +6,7 @@ import { AppText } from '@/design-system/components/app-text';
 import { Avatar } from '@/design-system/components/avatar';
 import { PrimaryButton, TextButton } from '@/design-system/components/buttons';
 import { anniversaryStrings } from '@/features/anniversaries/anniversary-strings';
+import { libraryStrings } from '@/features/library/library-strings';
 import { ActionRow, AppCard } from '@/design-system/components/surfaces';
 import { spacing } from '@/design-system/tokens';
 import { useAuth } from '@/features/auth/context/auth-provider';
@@ -63,8 +64,10 @@ function UserHome({ accountId, title, date, now }: { accountId: number; title: s
         {albums.length ? <AppCard style={styles.card}>{albums.map((album) => <View key={album.id} style={styles.entry}>
           <View style={[styles.albumPlaceholder, { backgroundColor: colors.surfaceMuted }]} accessible={false}><AppText tone="secondary">▧</AppText></View>
           <AppText variant="cardTitle">{album.name.trim() || copy.unnamed}</AppText><AppText tone="secondary">{copy.photos(album.photoCount)}</AppText>
+          <TextButton title={libraryStrings[language].albums} accessibilityLabel={`${libraryStrings[language].albums}: ${album.name}`} onPress={() => router.push({ pathname: '/library/[albumId]', params: { albumId: album.id } })} />
         </View>)}</AppCard> : <EmptyState title={copy.libraryEmpty} message={copy.libraryEmptyMessage} />}
         <AppText variant="caption" tone="tertiary">{copy.libraryNotice}</AppText>
+        <TextButton title={libraryStrings[language].title} onPress={() => router.push('/library')} />
       </DashboardSection>
     </View>
   </AppScrollScreen>;

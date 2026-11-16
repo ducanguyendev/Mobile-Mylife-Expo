@@ -1,0 +1,9 @@
+# Design and accessibility review
+
+Source review PARTIAL PASS. Uses shared AppScreen, AppHeader, AppCard, AppText, fields and48dp buttons with semantic ivory/sage light/dark tokens. English/Vietnamese dictionaries have matching keys. No new animation; media transitions and modal animations are disabled, respecting reduced-motion behavior. Native theme/viewport coverage is listed only when actually executed in NATIVE_SMOKE_RESULTS.
+
+Album/photo grids use FlatList two-column rows, initial6, batch4, window3 and clipped subviews. Full-resolution bytes are downloaded only for mounted rows, bounded to3 active requests. Titles wrap, album descriptions truncate at3 lines and photo labels at2; full metadata remains scrollable in the lightbox/editor. Compact view uses wrapping controls, horizontal category filters and keyboard-avoiding scrollable dialogs.
+
+Image controls have title/filename text alternatives. Loading, errors and uncertainty use accessible feedback. Selected category state is exposed. Android Back dismisses lightbox and confirmation; dirty editor dismissal uses an explicit discard alert. Delete includes name/count/permanent consequence and disallows duplicate dispatch. Lightbox has labeled Close/previous/next and button-based zoom/pan; native pinch still requires validation.
+
+Remaining accessibility gates: actual TalkBack speech order, focus entry/restoration for Modal/filter selection, VoiceOver, external keyboard, reduced-motion traversal, long Vietnamese captions on physical devices and1000-photo memory/FPS. Unit/static checks and contrast14 are not substitutes for screen-reader testing. Root category management currently renders all category buttons in the list header; very large category registries need profiling/virtualization separately from the photo grid.

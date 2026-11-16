@@ -1,0 +1,1154 @@
+{
+  "provider": "HTTP ADAPTER; NOT GOOGLE DRIVE",
+  "albums": [
+    {
+      "id": 6,
+      "name": "Synthetic Library Gallery",
+      "description": "Valid generated PNG fixtures for private gallery virtualization QA.",
+      "photoCount": 125,
+      "photos": [
+        {
+          "id": 130,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-001.png"
+        },
+        {
+          "id": 131,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-002.png"
+        },
+        {
+          "id": 132,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-003.png"
+        },
+        {
+          "id": 133,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-004.png"
+        },
+        {
+          "id": 134,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-005.png"
+        },
+        {
+          "id": 135,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-006.png"
+        },
+        {
+          "id": 136,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-007.png"
+        },
+        {
+          "id": 137,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-008.png"
+        },
+        {
+          "id": 138,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-009.png"
+        },
+        {
+          "id": 139,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-010.png"
+        },
+        {
+          "id": 140,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-011.png"
+        },
+        {
+          "id": 141,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-012.png"
+        },
+        {
+          "id": 142,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-013.png"
+        },
+        {
+          "id": 143,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-014.png"
+        },
+        {
+          "id": 144,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-015.png"
+        },
+        {
+          "id": 145,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-016.png"
+        },
+        {
+          "id": 146,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-017.png"
+        },
+        {
+          "id": 147,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-018.png"
+        },
+        {
+          "id": 148,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-019.png"
+        },
+        {
+          "id": 149,
+          "title": "Synthetic photo 0",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-020.png"
+        },
+        {
+          "id": 150,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-021.png"
+        },
+        {
+          "id": 151,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-022.png"
+        },
+        {
+          "id": 152,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-023.png"
+        },
+        {
+          "id": 153,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-024.png"
+        },
+        {
+          "id": 154,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-025.png"
+        },
+        {
+          "id": 155,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-026.png"
+        },
+        {
+          "id": 156,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-027.png"
+        },
+        {
+          "id": 157,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-028.png"
+        },
+        {
+          "id": 158,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-029.png"
+        },
+        {
+          "id": 159,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-030.png"
+        },
+        {
+          "id": 160,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-031.png"
+        },
+        {
+          "id": 161,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-032.png"
+        },
+        {
+          "id": 162,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-033.png"
+        },
+        {
+          "id": 163,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-034.png"
+        },
+        {
+          "id": 164,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-035.png"
+        },
+        {
+          "id": 165,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-036.png"
+        },
+        {
+          "id": 166,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-037.png"
+        },
+        {
+          "id": 167,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-038.png"
+        },
+        {
+          "id": 168,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-039.png"
+        },
+        {
+          "id": 169,
+          "title": "Synthetic photo 20",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-040.png"
+        },
+        {
+          "id": 170,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-041.png"
+        },
+        {
+          "id": 171,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-042.png"
+        },
+        {
+          "id": 172,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-043.png"
+        },
+        {
+          "id": 173,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-044.png"
+        },
+        {
+          "id": 174,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-045.png"
+        },
+        {
+          "id": 175,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-046.png"
+        },
+        {
+          "id": 176,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-047.png"
+        },
+        {
+          "id": 177,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-048.png"
+        },
+        {
+          "id": 178,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-049.png"
+        },
+        {
+          "id": 179,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-050.png"
+        },
+        {
+          "id": 180,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-051.png"
+        },
+        {
+          "id": 181,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-052.png"
+        },
+        {
+          "id": 182,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-053.png"
+        },
+        {
+          "id": 183,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-054.png"
+        },
+        {
+          "id": 184,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-055.png"
+        },
+        {
+          "id": 185,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-056.png"
+        },
+        {
+          "id": 186,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-057.png"
+        },
+        {
+          "id": 187,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-058.png"
+        },
+        {
+          "id": 188,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-059.png"
+        },
+        {
+          "id": 189,
+          "title": "Synthetic photo 40",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-060.png"
+        },
+        {
+          "id": 190,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-061.png"
+        },
+        {
+          "id": 191,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-062.png"
+        },
+        {
+          "id": 192,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-063.png"
+        },
+        {
+          "id": 193,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-064.png"
+        },
+        {
+          "id": 194,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-065.png"
+        },
+        {
+          "id": 195,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-066.png"
+        },
+        {
+          "id": 196,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-067.png"
+        },
+        {
+          "id": 197,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-068.png"
+        },
+        {
+          "id": 198,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-069.png"
+        },
+        {
+          "id": 199,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-070.png"
+        },
+        {
+          "id": 200,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-071.png"
+        },
+        {
+          "id": 201,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-072.png"
+        },
+        {
+          "id": 202,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-073.png"
+        },
+        {
+          "id": 203,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-074.png"
+        },
+        {
+          "id": 204,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-075.png"
+        },
+        {
+          "id": 205,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-076.png"
+        },
+        {
+          "id": 206,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-077.png"
+        },
+        {
+          "id": 207,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-078.png"
+        },
+        {
+          "id": 208,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-079.png"
+        },
+        {
+          "id": 209,
+          "title": "Synthetic photo 60",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-080.png"
+        },
+        {
+          "id": 210,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-081.png"
+        },
+        {
+          "id": 211,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-082.png"
+        },
+        {
+          "id": 212,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-083.png"
+        },
+        {
+          "id": 213,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-084.png"
+        },
+        {
+          "id": 214,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-085.png"
+        },
+        {
+          "id": 215,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-086.png"
+        },
+        {
+          "id": 216,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-087.png"
+        },
+        {
+          "id": 217,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-088.png"
+        },
+        {
+          "id": 218,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-089.png"
+        },
+        {
+          "id": 219,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-090.png"
+        },
+        {
+          "id": 220,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-091.png"
+        },
+        {
+          "id": 221,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-092.png"
+        },
+        {
+          "id": 222,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-093.png"
+        },
+        {
+          "id": 223,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-094.png"
+        },
+        {
+          "id": 224,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-095.png"
+        },
+        {
+          "id": 225,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-096.png"
+        },
+        {
+          "id": 226,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-097.png"
+        },
+        {
+          "id": 227,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-098.png"
+        },
+        {
+          "id": 228,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-099.png"
+        },
+        {
+          "id": 229,
+          "title": "Synthetic photo 80",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-100.png"
+        },
+        {
+          "id": 230,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-101.png"
+        },
+        {
+          "id": 231,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-102.png"
+        },
+        {
+          "id": 232,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-103.png"
+        },
+        {
+          "id": 233,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-104.png"
+        },
+        {
+          "id": 234,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-105.png"
+        },
+        {
+          "id": 235,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-106.png"
+        },
+        {
+          "id": 236,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-107.png"
+        },
+        {
+          "id": 237,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-108.png"
+        },
+        {
+          "id": 238,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-109.png"
+        },
+        {
+          "id": 239,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-110.png"
+        },
+        {
+          "id": 240,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-111.png"
+        },
+        {
+          "id": 241,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-112.png"
+        },
+        {
+          "id": 242,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-113.png"
+        },
+        {
+          "id": 243,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-114.png"
+        },
+        {
+          "id": 244,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-115.png"
+        },
+        {
+          "id": 245,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-116.png"
+        },
+        {
+          "id": 246,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-117.png"
+        },
+        {
+          "id": 247,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-118.png"
+        },
+        {
+          "id": 248,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-119.png"
+        },
+        {
+          "id": 249,
+          "title": "Synthetic photo 100",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-120.png"
+        },
+        {
+          "id": 250,
+          "title": "Synthetic photo 120",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-121.png"
+        },
+        {
+          "id": 251,
+          "title": "Synthetic photo 120",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-122.png"
+        },
+        {
+          "id": 252,
+          "title": "Synthetic photo 120",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-123.png"
+        },
+        {
+          "id": 253,
+          "title": "Synthetic photo 120",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-124.png"
+        },
+        {
+          "id": 254,
+          "title": "Synthetic photo 120",
+          "caption": null,
+          "author": null,
+          "category": "synthetic-library-qa",
+          "displayDate": null,
+          "fileName": "synthetic-125.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Album thử nghiệm với tên tiếng Việt rất dài để kiểm tra màn hình nhỏ và chữ lớn",
+      "description": "Synthetic empty album.",
+      "photoCount": 0,
+      "photos": []
+    }
+  ],
+  "categories": [
+    {
+      "id": 2,
+      "name": "Synthetic Library QA",
+      "slug": "synthetic-library-qa",
+      "isDefault": false
+    }
+  ],
+  "totalPhotos": 125
+}

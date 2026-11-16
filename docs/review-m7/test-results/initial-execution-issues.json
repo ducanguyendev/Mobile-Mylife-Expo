@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-13",
+  "issues": [
+    {
+      "command": "npm run typecheck via npm.ps1",
+      "exitCode": 1,
+      "outcome": "PowerShell signature policy; used npm.cmd without changing system policy"
+    },
+    {
+      "command": "initial isolated PostgreSQL harness",
+      "exitCode": 1,
+      "outcome": "Windows restricted token87/3 prevented pg_ctl start; rerun outside sandbox with disposable loopback DB"
+    },
+    {
+      "command": "initial M7 unit suite",
+      "exitCode": 1,
+      "outcome": "80/82; wrong test storage method save; corrected to actual write"
+    },
+    {
+      "command": "second M7 unit suite",
+      "exitCode": 1,
+      "outcome": "81/82; fixture encoding error corrected; production UTF-8 data unchanged"
+    },
+    {
+      "command": "initial nested M7 integration wrapper",
+      "exitCode": 1,
+      "outcome": "Syntax error before infrastructure start; composition corrected"
+    },
+    {
+      "command": "native initial multipart submission",
+      "commandExitCode": 0,
+      "featureOutcome": "FAIL before persistence; File.slice/React Native Blob incompatibility; fixed FileHandle reader and proved corrected upload"
+    },
+    {
+      "command": "native initial125-photo seed",
+      "featureOutcome": "Invalid PNG IDAT CRC; decoder error states retained, valid generated fixture reseeded and rendered"
+    },
+    {
+      "command": "native cold source reload",
+      "featureOutcome": "FocusEvent ANR, OPEN; exact Android diagnostics retained"
+    },
+    {
+      "command": "native capture145",
+      "featureOutcome": "Interrupted zero-byte PNG; excluded from successful evidence"
+    }
+  ]
+}

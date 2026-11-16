@@ -4,7 +4,7 @@ import type { Anniversary, AnniversaryType } from './anniversary-data';
 
 const en = {
   memories: 'Memories', title: 'Family calendar', subtitle: 'Anniversaries and the next dates shared by your family.',
-  timeline: 'Family timeline', calendar: 'Calendar', library: 'Library · Coming soon', future: 'Photo and library management is coming later.',
+  timeline: 'Family timeline', calendar: 'Calendar', library: 'Library', future: 'Photo and library management is coming later.',
   upcoming: 'Upcoming anniversaries', list: 'Chronological list', grid: 'Month calendar',
   coverage: 'Each anniversary has one provided upcoming occurrence. Other months may have no dates yet. Refresh to update the available dates.',
   previous: 'Previous month', next: 'Next month', today: 'Today', jump: 'Go to month', month: 'Month', year: 'Year', apply: 'Apply',
@@ -46,7 +46,7 @@ const en = {
 export type AnniversaryCopy = typeof en;
 const vi: AnniversaryCopy = {
   memories: 'Ký ức', title: 'Lịch gia đình', subtitle: 'Ngày kỷ niệm và những dịp sắp tới của gia đình.',
-  timeline: 'Dòng thời gian gia đình', calendar: 'Lịch', library: 'Thư viện · Sắp có', future: 'Chức năng quản lý ảnh và thư viện sẽ có sau.',
+  timeline: 'Dòng thời gian gia đình', calendar: 'Lịch', library: 'Thư viện', future: 'Chức năng quản lý ảnh và thư viện sẽ có sau.',
   upcoming: 'Ngày kỷ niệm sắp tới', list: 'Danh sách theo thời gian', grid: 'Lịch tháng',
   coverage: 'Mỗi ngày kỷ niệm chỉ có một lần sắp tới được cung cấp. Những tháng khác có thể chưa có dữ liệu. Tải lại để cập nhật các ngày đã có.',
   previous: 'Tháng trước', next: 'Tháng sau', today: 'Hôm nay', jump: 'Đến tháng', month: 'Tháng', year: 'Năm', apply: 'Áp dụng',

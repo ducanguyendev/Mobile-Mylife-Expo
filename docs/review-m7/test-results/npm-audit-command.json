@@ -1,0 +1,13 @@
+{
+  "reviewDate": "2026-11-14",
+  "command": "npm audit --json",
+  "exitCode": 1,
+  "vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 14,
+    "high": 0,
+    "critical": 0,
+    "total": 14
+  }
+}

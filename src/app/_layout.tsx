@@ -43,6 +43,7 @@ function AppNavigation() {
             </Stack.Protected>
             <Stack.Protected guard={status === 'authenticated' && isUser} redirectTo={status === 'authenticated' ? '/(tabs)/family' : '/(auth)/login'}>
               <Stack.Screen name="family" />
+              <Stack.Screen name="library" />
             </Stack.Protected>
             <Stack.Protected guard={status !== 'authenticated'} redirectTo="/(tabs)">
               <Stack.Screen name="(auth)" />

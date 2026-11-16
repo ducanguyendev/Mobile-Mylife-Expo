@@ -1,0 +1,79 @@
+ACTIVITY MANAGER LAST ANR (dumpsys activity lastanr)
+  ANR time: Nov 13, 2026 3:19:25 PM
+  Reason: Input dispatching timed out (4450640 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity (server) is not responding. Waited 5073ms for FocusEvent(hasFocus=true)).
+
+  * Task{8826683 #9 type=standard A=10209:com.anonymous.mylifemobile U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+    mLastNonFullscreenBounds=Rect(142, 280 - 579, 1000)
+    isSleeping=false
+    topResumedActivity=ActivityRecord{b43756a u0 com.anonymous.mylifemobile/.MainActivity t9}
+
+  mLastHomeActivityStartResult=0
+  mLastStarter:
+    mCurrentUser=0
+    mLastStartReason=startActivityAsUser
+    mLastStartActivityTimeMs=Nov 13, 2026 3:18:49 PM
+    mLastStartActivityResult=0
+    mStartActivity:
+      packageName=com.anonymous.mylifemobile processName=com.anonymous.mylifemobile
+      launchedFromUid=10209 launchedFromPackage=com.anonymous.mylifemobile launchedFromFeature=null userId=0
+      app=ProcessRecord{1f3f3d7 10794:com.anonymous.mylifemobile/u0a209}
+      Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/?url=http%3A%2F%2F127.0.0.1%3A8089 flg=0x10018000 cmp=com.anonymous.mylifemobile/.MainActivity }
+      rootOfTask=true task=Task{8826683 #9 type=standard A=10209:com.anonymous.mylifemobile}
+      taskAffinity=10209:com.anonymous.mylifemobile
+      mActivityComponent=com.anonymous.mylifemobile/.MainActivity
+      baseDir=/data/app/~~qq7tv8pXLZ8sjdodwU7HJQ==/com.anonymous.mylifemobile-39H8KssRiRtWqqtqoq_7pQ==/base.apk
+      dataDir=/data/user/0/com.anonymous.mylifemobile
+      stateNotNeeded=false componentSpecified=true mActivityType=standard
+      compat={320dpi} theme=0x7f130268
+      mLastReportedConfigurations:
+        mGlobalConfig={1.3 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 320dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1280) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.176 fontWeightAdjustment=0}
+        mOverrideConfig={1.3 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 320dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1280) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.3 fontWeightAdjustment=0}
+      mLastReportedActivityWindowInfo=ActivityWindowInfo{isEmbedded=false, taskBounds=Rect(0, 0 - 720, 1280), taskFragmentBounds=Rect(0, 0 - 720, 1280)}
+      CurrentConfiguration={1.3 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 320dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 720, 1280) mAppBounds=Rect(0, 0 - 720, 1280) mMaxBounds=Rect(0, 0 - 720, 1280) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.3 fontWeightAdjustment=0}
+      RequestedOverrideConfiguration={0.0 ?mcc0mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?ldr ?wideColorGamut ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=null mMaxBounds=Rect(0, 0 - 0, 0) mDisplayRotation=undefined mWindowingMode=undefined mActivityType=undefined mAlwaysOnTop=undefined mRotation=undefined} ?fontWeightAdjustment}
+      taskDescription: label="null" icon=null iconResource=/0 iconFilename=null primaryColor=fff1f0f7
+        backgroundColor=fffafafa statusBarColor=fff1f0f7 navigationBarColor=808080
+       backgroundColorFloating=ffffffff
+      launchFailed=false launchCount=1 lastLaunchTime=-35s535ms
+      mHaveState=false mIcicle=null
+      state=RESUMED delayedResume=false finishing=false
+      keysPaused=false inHistory=true idle=true
+      occludesParent=true noDisplay=false immersive=false launchMode=2
+      mActivityType=standard
+      mImeInsetsFrozenUntilStartInput=false
+      windows=[Window{4450640 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}]
+      windowType=2
+      mOccludesParent=true
+      overrideOrientation=SCREEN_ORIENTATION_PORTRAIT
+      requestedOrientation=SCREEN_ORIENTATION_PORTRAIT
+      mVisibleRequested=true mVisible=true mClientVisible=true reportedDrawn=true reportedVisible=true
+      mNumInterestingWindows=1 mNumDrawnWindows=1 allDrawn=true lastAllDrawn=false)
+      startingData=null firstWindowDrawn=true mIsExiting=false
+      nowVisible=true lastVisibleTime=-6s437ms
+      resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+      mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+      supportsSizeChanges=SIZE_CHANGES_UNSUPPORTED_METADATA
+      configChanges=0x80002fb7
+      neverSandboxDisplayApis=false
+      alwaysSandboxDisplayApis=false
+      areBoundsLetterboxed=false
+      mCameraCompatControlState=hidden
+      mCameraCompatControlEnabled=true
+    mIntent=Intent { act=android.intent.action.VIEW dat=mobilemylifeexpo://expo-development-client/... flg=0x10018000 cmp=com.anonymous.mylifemobile/.MainActivity }
+    mLaunchMode=LAUNCH_SINGLE_TASK    mLaunchFlags=0x10018000 mDoResume=true mAddingToTask=true mInTaskFragment=null
+
+  ResumedActivity: ActivityRecord{b43756a u0 com.anonymous.mylifemobile/.MainActivity t9}
+  LockTaskController:
+    mLockTaskModeState=NONE
+    mLockTaskModeTasks=
+    mLockTaskPackages (userId:packages)=
+
+  KeyguardController:
+    mKeyguardShowing=false
+    mAodShowing=false
+    mKeyguardGoingAway=false
+   KeyguardShowing=false AodShowing=false KeyguardGoingAway=false DismissalRequested=false  Occluded=false DismissingKeyguardActivity=null TurnScreenOnActivity=null at display=0
+    mDismissalRequested=false
+
+-------------------------------------------------------------------------------
+

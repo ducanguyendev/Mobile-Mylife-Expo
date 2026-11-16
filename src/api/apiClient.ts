@@ -21,15 +21,16 @@ const refreshSingleFlight = createSingleFlight(() => {
 type ApiRequestOptions = RequestInit & {
   authenticated?: boolean;
   retryOnUnauthorized?: boolean;
+  responseType?: 'json' | 'blob';
 };
 
 export async function apiRequest<T>(path: string, options: ApiRequestOptions = {}): Promise<T> {
-  const { authenticated = true, retryOnUnauthorized = true, ...init } = options;
+  const { authenticated = true, retryOnUnauthorized = true, responseType = 'json', ...init } = options;
   const version = sessionVersion;
   const sentTokens = authenticated ? await authTokenStorage.read() : null;
   if (authenticated && (signingOut || version !== sessionVersion)) throw normalizeApiError({ status: 401 });
   const response = await sendRequest(path, init, sentTokens);
-  const payload = await parseResponse(response);
+  const payload = responseType === 'blob' && response.ok ? await response.blob() : await parseResponse(response);
   if (authenticated && (signingOut || version !== sessionVersion)) throw normalizeApiError({ status: 401 });
 
   if (response.status === 401 && authenticated && retryOnUnauthorized && path !== '/api/refresh-token') {
@@ -39,7 +40,7 @@ export async function apiRequest<T>(path: string, options: ApiRequestOptions = {
     const refreshedAccessToken = latest?.accessToken ?? await refreshSingleFlight();
     if (!refreshedAccessToken || signingOut || version !== sessionVersion) throw normalizeApiError({ status: 401, body: { message: 'Session has expired.' } });
     const retried = await sendRequest(path, init, latest ?? { ...tokens, accessToken: refreshedAccessToken });
-    const retryPayload = await parseResponse(retried);
+    const retryPayload = responseType === 'blob' && retried.ok ? await retried.blob() : await parseResponse(retried);
     if (signingOut || version !== sessionVersion) throw normalizeApiError({ status: 401 });
     if (!retried.ok) {
       if (retried.status === 401) await invalidateSession(version);
@@ -143,7 +144,7 @@ async function sendRequest(path: string, init: RequestInit, tokens: AuthTokens |
   else init.signal?.addEventListener('abort', abort, { once: true });
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   const headers = new Headers(init.headers);
-  headers.set('Accept', 'application/json');
+  if (!headers.has('Accept')) headers.set('Accept', 'application/json');
   headers.set('X-Client-Platform', 'mobile');
   // Native fetch owns the multipart boundary; forcing JSON corrupts file uploads.
   const multipart = typeof FormData !== 'undefined' && init.body instanceof FormData;

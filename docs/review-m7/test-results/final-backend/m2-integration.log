@@ -1,0 +1,6 @@
+PASS: Three real Home endpoints return authentic empty state for a new USER
+PASS: Real family counts/generations, server next occurrence and empty album metadata renderable without Drive/photo requests
+PASS: Second USER receives none of the first USER family, anniversary or album records
+PASS: Injected connection loss remains section-local and retry recovers through real HTTP
+PASS: All three Home endpoints enforce USER authorization against ADMIN
+PASS: Logout leaves no usable Home session; copied access token is revoked by Backend

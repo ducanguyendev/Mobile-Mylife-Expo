@@ -1,0 +1,34 @@
+{
+  "avd": "MyLife_M7",
+  "androidVersion": 15,
+  "apiLevel": 35,
+  "architecture": "x86_64",
+  "rendering": "SwiftShader/WHPX",
+  "serial": "127.0.0.1:5587",
+  "privateAdbServerPort": 5039,
+  "viewports": [
+    {
+      "pixels": "720x1280",
+      "density": 320,
+      "widthDp": 360,
+      "fontScale": 1.3,
+      "theme": "Light",
+      "language": "en"
+    },
+    {
+      "pixels": "720x1280",
+      "density": 320,
+      "widthDp": 360,
+      "fontScale": 1.3,
+      "theme": "Dark",
+      "language": "vi"
+    }
+  ],
+  "build": "Existing M4 development APK reused with M7 Metro source; not Expo Go",
+  "artifactSha256": "e7a7d25991741489481c8546d091d0a2637ce28d563d04b0b7538918358d9540",
+  "physical": false,
+  "ios": false,
+  "nativeFindings": [
+    "Repeated focus/input-dispatch ANR dialogs after initial fixed-source cold Metro reload; recovered, then force-stopped and relaunched with cached bundle; cause OPEN"
+  ]
+}

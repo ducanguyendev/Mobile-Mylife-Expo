@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "nativeDatabaseDropped": true,
+  "nativePostgresStopped": true,
+  "finalHttpDatabaseDropped": true,
+  "finalHttpPostgresStopped": true,
+  "checkedLoopbackPorts": [
+    60505,
+    60504,
+    8089,
+    5039,
+    5586,
+    5587,
+    61120
+  ],
+  "openPorts": [],
+  "remainingCredentials": [],
+  "taskAvdRootRemoved": true,
+  "storage": "In-memory test adapter exited with Kestrel; no real Drive storage used",
+  "note": "Initial graceful emulator shutdown left qemu alive; verified task-only PIDs were stopped, then the first snapshot-file delete lock cleared on retry."
+}

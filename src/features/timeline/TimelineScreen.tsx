@@ -45,11 +45,12 @@ function TimelineExplorer({ accountId, memberId, canGoBack, onCalendar }: { acco
   const header = <View style={{ gap: 16 }}>
     {memberId !== undefined || canGoBack ? <TextButton title={copy.close} onPress={() => router.back()} /> : null}
     <AppHeader eyebrow={copy.memories} title={memberId === undefined ? copy.title : copy.memberTimeline} subtitle={memberId === undefined ? copy.subtitle : names.get(memberId)} />
-    {memberId === undefined ? <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>{(['timeline', 'calendar', 'library'] as const).map(value => <SecondaryButton key={value} title={value === 'timeline' ? copy.title : value === 'calendar' ? copy.calendar : `${copy[value]} · ${copy.future}`} accessibilityState={{ selected: tab === value }} style={{ flexBasis: 140, flexGrow: 1 }} onPress={() => {
+    {memberId === undefined ? <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>{(['timeline', 'calendar', 'library'] as const).map(value => <SecondaryButton key={value} title={value === 'timeline' ? copy.title : value === 'calendar' ? copy.calendar : copy[value]} accessibilityState={{ selected: tab === value }} style={{ flexBasis: 140, flexGrow: 1 }} onPress={() => {
       if (value === 'calendar') {
         if (onCalendar) onCalendar();
         else router.push('/family/anniversaries');
-      } else setTab(value);
+      } else if (value === 'library') router.push('/library');
+      else setTab(value);
     }} />)}</View> : null}
     {tab !== 'timeline' ? <AppCard inset><AppText variant="sectionTitle">{copy[tab]} · {copy.future}</AppText><AppText>{copy.futureHint}</AppText></AppCard> : <>
       <AppText>{copy.count}: {visible.length}/{events.length}</AppText><AppText variant="caption" tone="secondary">{copy.order}</AppText>

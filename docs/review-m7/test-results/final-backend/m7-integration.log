@@ -1,0 +1,22 @@
+PASS Empty native account uses raw albums/overview
+PASS Expo creates category and Web cookie reads same generated slug
+PASS Web category rename refetch preserves slug
+PASS Expo creates album; Web reads identical metadata and no invented cover
+PASS Album edit authoritative reload
+PASS Native Bearer multipart two synthetic images with all metadata persists
+PASS Home authoritative photo count reflects upload
+PASS Private bytes match via native/Web; private cache, ETag304 and nosniff
+PASS Expo metadata edit reads identically through Web
+PASS Web metadata update refreshes identically in Expo preserving category/date
+PASS In-use category deletion is409
+PASS Foreign album/category/photo read/write404 and anonymous private image401
+PASS Backend rejects invalid, ISO and future display dates
+PASS Real Backend rejects21 files, HEIC, false signatures, mismatched extensions and >5MiB
+PASS Adapter checksum failure502 compensates and DB retains two existing photos
+PASS Adapter delete failures502 retain authoritative album/photo DB records
+PASS Photo delete204 reflected through Web and private image404
+PASS Album/category delete204 and Home/Web authoritative empty state
+PASS Shared overview/detail uncertainty gate blocks duplicate retry and reconciles a simulated lost acknowledgement after real POST
+PASS Account transition fences late real-HTTP preparation and even stale focus activation before any POST
+PASS Logged-out native session cannot retrieve private photo
+M7 HTTP groups: 21

@@ -1,0 +1,5 @@
+{
+  "disposableOnly": true,
+  "refreshSessionsRevoked": true,
+  "accessTokenLifetimeSeconds": 5
+}

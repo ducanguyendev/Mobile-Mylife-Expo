@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "storage": "ADAPTER ONLY",
+  "emptyOwnAlbums": true,
+  "ownerAlbumRead": 404,
+  "ownerAlbumDelete": 404,
+  "ownerPrivateImage": 404,
+  "transport": "Actual Expo API source under native bridge against real Kestrel/PostgreSQL; distinct from UI screenshots"
+}
