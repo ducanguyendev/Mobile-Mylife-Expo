@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "backendStatus": 201,
+    "acknowledgementDropped": true
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "backendStatus": 201,
+    "acknowledgementDropped": true
+  }
+]

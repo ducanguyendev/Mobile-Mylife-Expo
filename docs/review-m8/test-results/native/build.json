@@ -1,0 +1,7 @@
+{
+  "platform": "Android emulator API35",
+  "type": "debug development client",
+  "sha256": "ec9103b79ba1d1ee05e5bfcf8e9ccb97d8c0da4734026fe7e88ac33bc585e7b3",
+  "nativePlugin": "one-shot POST request bodies",
+  "releaseBuild": "NOT TESTED"
+}

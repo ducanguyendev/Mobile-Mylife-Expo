@@ -1,0 +1,8 @@
+{
+  "textFilesScanned": 369,
+  "redactedFiles": 5,
+  "knownTemporaryCredentialFindings": 0,
+  "jwtFindings": 0,
+  "screenshots": "Native helper excludes email/IP/typed fields. Task-switcher bitmap separately inspected; synthetic stripe only.",
+  "limitations": "Pattern scan is not device cache forensics or OCR of every image."
+}

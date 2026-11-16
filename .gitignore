@@ -60,3 +60,5 @@ tests/fixtures/anniversary-host/bin/
 tests/fixtures/anniversary-host/obj/
 tests/fixtures/library-host/bin/
 tests/fixtures/library-host/obj/
+tests/fixtures/account-host/bin/
+tests/fixtures/account-host/obj/

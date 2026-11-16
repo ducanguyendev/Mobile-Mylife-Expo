@@ -28,6 +28,17 @@ export async function createUploadBody(items: Selection[], input: Metadata, cate
   // Validate sequentially; at most one 5 MiB file is inspected at a time.
   for (const item of selections) {
     if (signal.aborted) throw Error('LIBRARY_UPLOAD_CANCELED');
+    const file = await validatedImageFile(item, signal);
+    // File bytes and display name are verified independently of picker hints.
+    body.append('files', file, item.fileName);
+  }
+  if (signal.aborted) throw Error('LIBRARY_UPLOAD_CANCELED');
+  for (const [key, value] of Object.entries(values)) body.append(key, value ?? '');
+  return body;
+}
+export async function validatedImageFile(selection: Selection, signal: AbortSignal) {
+    const item = validateSelection(selection);
+    if (signal.aborted) throw Error('LIBRARY_UPLOAD_CANCELED');
     const file = Platform.OS === 'web' && item.file ? item.file : new File(item.uri);
     if (file.size <= 0 || file.size > maxPhotoBytes) throw Error('LIBRARY_INVALID_IMAGE');
     let bytes: Uint8Array;
@@ -38,10 +49,6 @@ export async function createUploadBody(items: Selection[], input: Metadata, cate
       try { bytes = await handle.readBytes(12); } finally { handle.close(); }
     } else bytes = new Uint8Array(await file.slice(0, 12).arrayBuffer());
     if (!matchesSignature(bytes, item.mimeType)) throw Error('LIBRARY_INVALID_IMAGE');
-    // File bytes and display name are verified independently of picker hints.
-    body.append('files', file, item.fileName);
-  }
-  if (signal.aborted) throw Error('LIBRARY_UPLOAD_CANCELED');
-  for (const [key, value] of Object.entries(values)) body.append(key, value ?? '');
-  return body;
+    if (signal.aborted) throw Error('LIBRARY_UPLOAD_CANCELED');
+    return file;
 }

@@ -1,0 +1,30 @@
+PASS USER reads own authoritative profile
+PASS Profile edits allowed fields, preserves original fullName and updates shared AuthProvider
+PASS Web-cookie HTTP reads Expo edits with body tokens excluded
+PASS Backend rejects invalid name, phone, gender, impossible and future DOB
+PASS Profile overposting cannot change identity, role, fullName or activation
+PASS Expo detects stale profile before PUT
+PASS Wrong current password, confirmation mismatch and UTF8 overflow rejected
+PASS Password change succeeds and existing access/refresh sessions remain usable
+PASS Old password fails and new password signs in
+PASS Google-only Backend rejects local password and Expo preflight blocks dispatch
+PASS Account avatar upload and authoritative profile read use test HTTP storage adapter
+PASS Anonymous email avatar lookup is a public provider redirect
+PASS Avatar failed delete retains DB state, confirmed delete clears account avatar
+PASS Admin statistics match disposable PostgreSQL counts
+PASS Admin user list and real server email search
+PASS Promotion is authoritative and revokes old access and refresh session
+PASS Demotion removes stale Admin access and returns USER on fresh login
+PASS Administrator lock blocks existing access and login
+PASS Unlock requires new login and authoritative status becomes active
+PASS Delete rejects USER_HAS_FAMILY_MEMBERS with409
+PASS Permitted user delete is persisted and access is revoked
+PASS Backend administrator delete and lock protections
+PASS Admin limited recent authentication logs with actual SUCCESS/FAILED values
+PASS USER Admin403, ADMIN family403 and anonymous401 across real routes
+PASS Native cookie mixing and Web unsafe request without CSRF remain rejected
+PASS Concurrent status actions serialize and retain one authoritative account
+PASS Concurrent promotion and deletion preserve administrator protection under shared transaction lock
+PASS Two concurrent administrators cannot demote the last active administrator
+PASS Logout clears native credentials and revoked refresh cannot rotate
+M8 HTTP groups 29

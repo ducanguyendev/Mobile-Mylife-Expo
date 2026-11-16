@@ -1,0 +1,11 @@
+{
+  "operation": "role-user",
+  "status": "PASS",
+  "authoritativeReadBack": true,
+  "targetPresent": true,
+  "role": "USER",
+  "isActive": true,
+  "totalUsers": 22,
+  "totalActive": 22,
+  "totalLocked": 0
+}

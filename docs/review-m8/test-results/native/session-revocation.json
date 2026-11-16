@@ -1,0 +1,6 @@
+{
+  "syntheticOwnerOnly": true,
+  "refreshSessionsRevoked": true,
+  "accessLifetimeSeconds": 5,
+  "foregroundIdentityPollSeconds": 30
+}

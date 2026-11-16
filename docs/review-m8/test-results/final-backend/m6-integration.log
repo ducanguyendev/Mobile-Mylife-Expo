@@ -1,0 +1,21 @@
+PASS New USER anniversary collection is empty and scoped
+PASS Web cookie login stays separate from native Bearer and returns no token JSON
+PASS Expo creates solar FAMILY_EVENT and Web reads identical20 fields with today countdown0 and nullable nextLunarYear
+PASS Web update refetches identically through Expo and preserves optional member/place/host fields
+PASS Frozen-time solar February29 policy clamps to February28 and crosses Gregorian year without changing original date
+PASS Real lunar conversion endpoints match all four established Backend fixtures and1800/2200 boundaries
+PASS Invalid day30 of29-day month, absent leap month and outside supported years return400
+PASS Frozen lunar today/next-year countdown and leap recurrence skip absent leap years using authoritative responses
+PASS Lunar next occurrence selects nearest solar date across Gregorian year boundary
+PASS Linked deceased member with matching recorded death date creates valid lunar anniversary
+PASS Original lunar/solar mismatch, living member and recorded death-date mismatch return distinct400 codes
+PASS Synthetic legacy deceased member without death date returns required-date400 and is restored
+PASS Authoritative Home/Profile include source while Timeline uses original date with negative source-qualified read-only identity
+PASS Actual Expo stale edit/delete checks block writes after concurrent Web-compatible changes
+PASS Invalid anniversary types/title/original date/lunar range/text return400
+PASS Foreign record GET/PUT/DELETE and foreign related-member assignment return404 with empty other-account collection
+PASS All seven anniversary endpoints enforce ADMIN403 and anonymous401
+PASS Cookie mutation without trusted Origin/CSRF-related header rejected403
+PASS Anniversary writes preserve relationships/avatar/manual location and committed M4 nonfinite validation returns400
+PASS Expo delete removes source and derived Timeline/Home/Profile data, preserves other anniversary and tolerates already-deleted source
+PASS Logout clears native session and stale account mutations cannot expose or overwrite another account

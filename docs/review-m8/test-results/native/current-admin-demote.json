@@ -1,0 +1,8 @@
+{
+  "action": "demote",
+  "status": "PASS",
+  "syntheticAccountsOnly": true,
+  "usedSupportedRoleEndpoint": true,
+  "resultingRole": "USER",
+  "currentNativeAccountSessionsRevoked": true
+}

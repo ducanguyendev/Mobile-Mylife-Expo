@@ -1,0 +1,7 @@
+{
+  "status": "OPEN",
+  "syntheticDataOnly": true,
+  "privateImageVisibleInRecentTaskSnapshot": true,
+  "backgroundRequestCancellationDoesNotHideOperatingSystemSnapshot": true,
+  "physicalDevices": "NOT TESTED"
+}

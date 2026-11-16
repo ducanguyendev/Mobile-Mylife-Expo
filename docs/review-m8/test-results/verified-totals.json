@@ -1,0 +1,46 @@
+{
+  "jsUnique": 407,
+  "m8Js": 61,
+  "contrast": 14,
+  "backendFull": 208,
+  "anniversarySubset": 9,
+  "http": 134,
+  "httpSuites": [
+    {
+      "file": "final-integration.json",
+      "passed": 7
+    },
+    {
+      "file": "m2-home.json",
+      "passed": 6
+    },
+    {
+      "file": "m3-integration.json",
+      "passed": 12
+    },
+    {
+      "file": "m4-integration.json",
+      "passed": 17
+    },
+    {
+      "file": "m5-integration.json",
+      "passed": 21
+    },
+    {
+      "file": "m6-integration.json",
+      "passed": 21
+    },
+    {
+      "file": "m7-integration.json",
+      "passed": 21
+    },
+    {
+      "file": "m8-integration.json",
+      "passed": 29
+    }
+  ],
+  "httpStatus": "PASS",
+  "disposableDatabaseDropped": true,
+  "postgresStopped": true,
+  "m8Ci": "NOT RUN"
+}

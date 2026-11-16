@@ -1,5 +1,6 @@
 import { apiRequest } from '@/api/apiClient';
 import type { AuthenticatedUser, LoginResponse, RegistrationInput } from '@/features/auth/types/auth';
+import { account } from '@/features/profile/profile-data';
 
 export function loginRequest(email: string, password: string, rememberMe: boolean) {
   return apiRequest<LoginResponse>('/api/login', {
@@ -16,8 +17,10 @@ export function registerRequest(input: RegistrationInput) {
   });
 }
 
-export function getCurrentUser() {
-  return apiRequest<AuthenticatedUser>('/api/me');
+export async function getCurrentUser() {
+  const user = account(await apiRequest<AuthenticatedUser>('/api/me'));
+  if (!user.isActive) throw Error('Inactive account');
+  return user;
 }
 
 export function logoutRequest(refreshToken: string) {

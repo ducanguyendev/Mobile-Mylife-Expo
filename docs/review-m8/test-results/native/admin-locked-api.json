@@ -1,0 +1,11 @@
+{
+  "operation": "locked",
+  "status": "PASS",
+  "authoritativeReadBack": true,
+  "targetPresent": true,
+  "role": "USER",
+  "isActive": false,
+  "totalUsers": 22,
+  "totalActive": 21,
+  "totalLocked": 1
+}

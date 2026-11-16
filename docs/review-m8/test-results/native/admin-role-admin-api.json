@@ -1,0 +1,11 @@
+{
+  "operation": "role-admin",
+  "status": "PASS",
+  "authoritativeReadBack": true,
+  "targetPresent": true,
+  "role": "ADMIN",
+  "isActive": true,
+  "totalUsers": 22,
+  "totalActive": 22,
+  "totalLocked": 0
+}

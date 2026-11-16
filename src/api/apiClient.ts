@@ -59,6 +59,8 @@ export function clearSessionExpiredNotice() {
   expiredNoticeSent = false;
 }
 
+export function getSessionVersion() { return sessionVersion; }
+
 export function logoutNativeSession(): Promise<boolean> {
   if (activeLogout && signingOut) return activeLogout;
   signingOut = true;

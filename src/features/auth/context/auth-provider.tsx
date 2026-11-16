@@ -1,13 +1,14 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type PropsWithChildren } from 'react';
 
-import { apiRequest, clearSessionExpiredNotice, logoutNativeSession } from '@/api/apiClient';
+import { clearSessionExpiredNotice, getSessionVersion, logoutNativeSession } from '@/api/apiClient';
 import { ApiError } from '@/api/apiError';
-import { getCurrentUser, loginRequest, registerRequest } from '@/features/auth/api/authApi';
+import { getCurrentUser, loginRequest, logoutRequest, registerRequest } from '@/features/auth/api/authApi';
 import { onSessionExpired } from '@/features/auth/context/authEvents';
 import { rememberedEmailStorage } from '@/features/auth/storage/rememberedEmailStorage';
 import { authTokenStorage } from '@/features/auth/storage/authTokenStorage';
 import type { AuthenticatedUser, AuthStatus, RegistrationInput } from '@/features/auth/types/auth';
 import { hasRole } from '@/features/auth/validation/authRoles';
+import { AppState } from 'react-native';
 
 type AuthContextValue = {
   status: AuthStatus;
@@ -31,19 +32,33 @@ export function AuthProvider({ children }: PropsWithChildren) {
   const [user, setUser] = useState<AuthenticatedUser | null>(null);
   const [rememberedEmail, setRememberedEmail] = useState<string | null>(null);
   const [rememberMe, setRememberMe] = useState(false);
+  const [operations] = useState(createAuthOperations);
 
   useEffect(() => onSessionExpired(() => {
+    operations.begin();
     setUser(null);
     setStatus('unauthenticated');
-  }), []);
+  }), [operations]);
 
   const refreshSession = useCallback(async () => {
+    const version = getSessionVersion();
+    const generation = operations.generation();
+    const request = operations.read();
     const currentUser = await getCurrentUser();
+    if (version !== getSessionVersion() || !operations.current(generation, request)) return;
     setUser(currentUser);
     setStatus('authenticated');
-  }, []);
+  }, [operations]);
+
+  useEffect(() => {
+    if (status !== 'authenticated') return;
+    const subscription = AppState.addEventListener('change', next => { if (next === 'active') void refreshSession().catch(() => undefined); });
+    const timer = setInterval(() => { if (AppState.currentState === 'active') void refreshSession().catch(() => undefined); }, 30_000);
+    return () => { subscription.remove(); clearInterval(timer); };
+  }, [refreshSession, status]);
 
   const restoreSession = useCallback(async () => {
+    const generation = operations.begin();
     let restoredUser: AuthenticatedUser | null = null;
     try {
       const [tokens, savedEmail] = await Promise.all([
@@ -55,12 +70,13 @@ export function AuthProvider({ children }: PropsWithChildren) {
       setRememberMe(savedEmail.rememberMe);
       if (tokens) restoredUser = await withTimeout(getCurrentUser(), 32_000);
     } catch {
-      await authTokenStorage.clear().catch(() => undefined);
+      if (operations.current(generation)) await authTokenStorage.clear().catch(() => undefined);
     } finally {
+      if (!operations.current(generation)) return;
       setUser(restoredUser);
       setStatus(restoredUser ? 'authenticated' : 'unauthenticated');
     }
-  }, []);
+  }, [operations]);
 
   useEffect(() => {
     const timer = setTimeout(() => { void restoreSession(); }, 0);
@@ -68,6 +84,7 @@ export function AuthProvider({ children }: PropsWithChildren) {
   }, [restoreSession]);
 
   const login = useCallback(async (email: string, password: string, remember: boolean) => {
+    const generation = operations.begin();
     const normalizedEmail = email.trim().toLowerCase();
     if (remember && normalizedEmail) {
       await rememberedEmailStorage.write(normalizedEmail).catch(() => undefined);
@@ -78,6 +95,10 @@ export function AuthProvider({ children }: PropsWithChildren) {
     }
     setRememberMe(remember);
     const response = await loginRequest(normalizedEmail, password, remember);
+    if (!operations.current(generation)) {
+      if (hasNativeTokenPair(response)) await logoutRequest(response.refreshToken).catch(() => undefined);
+      throw new ApiError('Session changed.', 'unauthorized', 401);
+    }
     if (!hasNativeTokenPair(response)) {
       throw new ApiError(
         'The server did not return native session tokens. Check the X-Client-Platform: mobile request header.',
@@ -86,27 +107,32 @@ export function AuthProvider({ children }: PropsWithChildren) {
         'AUTH_NATIVE_TOKENS_MISSING',
       );
     }
-    await authTokenStorage.write({
+    const stored = await authTokenStorage.writeIfCurrent({
       accessToken: response.accessToken,
       refreshToken: response.refreshToken,
       accessTokenExpiresIn: response.accessTokenExpiresIn,
       refreshTokenExpiresIn: response.refreshTokenExpiresIn,
-    });
+    }, () => operations.current(generation));
+    if (!stored || !operations.current(generation)) {
+      await logoutRequest(response.refreshToken).catch(() => undefined);
+      throw new ApiError('Session changed.', 'unauthorized', 401);
+    }
     clearSessionExpiredNotice();
     let currentUser: AuthenticatedUser;
     try {
-      currentUser = await apiRequest<AuthenticatedUser>('/api/me');
+      currentUser = await getCurrentUser();
     } catch (error) {
-      await authTokenStorage.clear().catch(() => undefined);
+      if (operations.current(generation)) await authTokenStorage.clear().catch(() => undefined);
       throw error;
     }
+    if (!operations.current(generation)) throw new ApiError('Session changed.', 'unauthorized', 401);
     if (remember && currentUser.email !== normalizedEmail) {
       await rememberedEmailStorage.write(currentUser.email).catch(() => undefined);
       setRememberedEmail(currentUser.email);
     }
     setUser(currentUser);
     setStatus('authenticated');
-  }, []);
+  }, [operations]);
 
   const setRememberEmailPreference = useCallback(async (remember: boolean, email?: string) => {
     setRememberMe(remember);
@@ -126,8 +152,11 @@ export function AuthProvider({ children }: PropsWithChildren) {
   }, []);
 
   const logout = useCallback(async () => {
+    operations.begin();
     const serverLogout = logoutNativeSession().catch(() => false);
-    const savedEmail = await rememberedEmailStorage.read();
+    setUser(null);
+    setStatus('unauthenticated');
+    const savedEmail = await rememberedEmailStorage.read().catch(() => ({ rememberMe: false, email: null }));
     if (!savedEmail.rememberMe) {
       await rememberedEmailStorage.clear().catch(() => undefined);
       setRememberedEmail(null);
@@ -136,7 +165,7 @@ export function AuthProvider({ children }: PropsWithChildren) {
     setUser(null);
     setStatus('unauthenticated');
     return raceWithTimeout(serverLogout, 2500);
-  }, []);
+  }, [operations]);
 
   const value = useMemo<AuthContextValue>(() => ({
     status, user, rememberedEmail, rememberMe, setRememberEmailPreference, login, register, logout, restoreSession, refreshSession,
@@ -157,6 +186,17 @@ function raceWithTimeout(operation: Promise<boolean>, milliseconds: number) {
     const timer = setTimeout(() => resolve(false), milliseconds);
     operation.then((value) => { clearTimeout(timer); resolve(value); });
   });
+}
+
+function createAuthOperations() {
+  let generation = 0;
+  let profileRequest = 0;
+  return {
+    begin: () => ++generation,
+    generation: () => generation,
+    read: () => ++profileRequest,
+    current: (version: number, request = profileRequest) => version === generation && request === profileRequest,
+  };
 }
 
 function withTimeout<T>(operation: Promise<T>, milliseconds: number): Promise<T> {

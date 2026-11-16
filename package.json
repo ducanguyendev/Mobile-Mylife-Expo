@@ -64,7 +64,9 @@
     "test:m6": "node --test tests/m6-anniversaries.test.cjs",
     "test:integration:m6": "node scripts/run-isolated-m6.cjs",
     "test:m7": "node --test tests/m7-library.test.cjs",
-    "test:integration:m7": "node scripts/run-isolated-m7.cjs"
+    "test:integration:m7": "node scripts/run-isolated-m7.cjs",
+    "test:m8": "node --test tests/m8-account-admin.test.cjs",
+    "test:integration:m8": "node scripts/run-isolated-m8.cjs"
   },
   "private": true
 }

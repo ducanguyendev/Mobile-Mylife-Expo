@@ -26,13 +26,13 @@ export function AppScreen({ children, padded = true, centered = false, style, ..
   );
 }
 
-type AppScrollScreenProps = ScrollViewProps & { children: React.ReactNode; padded?: boolean };
+type AppScrollScreenProps = ScrollViewProps & { children: React.ReactNode; padded?: boolean; avoidAndroidKeyboard?: boolean };
 
-export function AppScrollScreen({ children, contentContainerStyle, padded = true, ...props }: AppScrollScreenProps) {
+export function AppScrollScreen({ children, contentContainerStyle, padded = true, avoidAndroidKeyboard = false, ...props }: AppScrollScreenProps) {
   const { colors } = useAppTheme();
   return (
     <SafeAreaView edges={['top', 'left', 'right']} style={[styles.safe, { backgroundColor: colors.background }]}>
-      <KeyboardAvoidingView style={styles.safe} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+      <KeyboardAvoidingView style={styles.safe} behavior={Platform.OS === 'ios' ? 'padding' : avoidAndroidKeyboard ? 'height' : undefined}>
         <ScrollView
           keyboardShouldPersistTaps="handled"
           keyboardDismissMode={Platform.OS === 'ios' ? 'interactive' : 'on-drag'}

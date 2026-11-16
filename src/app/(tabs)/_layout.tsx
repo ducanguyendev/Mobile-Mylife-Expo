@@ -1,11 +1,15 @@
 import { useLocalization } from '@/localization/use-localization';
 import { NativeTabs } from 'expo-router/native-tabs';
+import { Redirect } from 'expo-router';
+import { useAuth } from '@/features/auth/context/auth-provider';
 
 import { useAppTheme } from '@/theme/theme-provider';
 
 export default function MainTabsLayout() {
   const { colors } = useAppTheme();
   const { copy } = useLocalization();
+  const { isAdmin } = useAuth();
+  if (isAdmin) return <Redirect href="/admin" />;
   return (
     <NativeTabs
       backBehavior="initialRoute"

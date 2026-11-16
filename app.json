@@ -47,7 +47,8 @@
           "microphonePermission": false
         }
       ],
-      "@vietmap/vietmap-gl-react-native"
+      "@vietmap/vietmap-gl-react-native",
+      "./plugins/with-network-retry-policy.cjs"
     ],
     "experiments": {
       "typedRoutes": true,

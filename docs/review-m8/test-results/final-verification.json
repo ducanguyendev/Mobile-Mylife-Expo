@@ -1,0 +1,125 @@
+{
+  "reports": [
+    "ADMIN_API_PARITY.md",
+    "ADMIN_DESTRUCTIVE_ACTIONS.md",
+    "ADMIN_RBAC_AUDIT.md",
+    "ANDROID_ANR_INVESTIGATION.md",
+    "AUTH_SESSION_REVIEW.md",
+    "CARRY_FORWARD_RISKS.md",
+    "DEPENDENCY_AUDIT.md",
+    "DESIGN_UX_REVIEW.md",
+    "INITIAL_AUDIT.md",
+    "M9_HANDOFF.md",
+    "NATIVE_SMOKE_RESULTS.md",
+    "PASSWORD_SECURITY_AUDIT.md",
+    "PROFILE_API_CONTRACT.md",
+    "PROFILE_AVATAR_QA.md",
+    "REPORT.md",
+    "TEST_RESULTS.md",
+    "WEB_EXPO_PARITY.md"
+  ],
+  "jsSuites": [
+    {
+      "file": "final-test-foundation.log",
+      "tests": 26
+    },
+    {
+      "file": "final-test-m2.log",
+      "tests": 22
+    },
+    {
+      "file": "final-test-m3.log",
+      "tests": 28
+    },
+    {
+      "file": "final-test-m4.log",
+      "tests": 39
+    },
+    {
+      "file": "final-test-m5.log",
+      "tests": 60
+    },
+    {
+      "file": "final-test-m6.log",
+      "tests": 83
+    },
+    {
+      "file": "final-test-m7.log",
+      "tests": 88
+    },
+    {
+      "file": "final-test-m8.log",
+      "tests": 61
+    }
+  ],
+  "repositories": [
+    {
+      "name": "Expo",
+      "head": "c55a476f01c14cb0cd24428deb17e4d1af9d85c9",
+      "branch": "feature_minhduc",
+      "changes": [
+        "M .github/workflows/expo-quality.yml",
+        " M .gitignore",
+        " M app.json",
+        " M docs/review-m7/CARRY_FORWARD_RISKS.md",
+        " M docs/review-m7/M8_HANDOFF.md",
+        " M docs/review-m7/REPORT.md",
+        " M docs/review-m7/TEST_RESULTS.md",
+        " M package.json",
+        " M src/api/apiClient.ts",
+        " M src/app/(tabs)/_layout.tsx",
+        " M src/app/(tabs)/index.tsx",
+        " M src/app/(tabs)/profile.tsx",
+        " M src/app/_layout.tsx",
+        " M src/components/layout/app-screen.tsx",
+        " M src/design-system/components/avatar.tsx",
+        " M src/features/auth/api/authApi.ts",
+        " M src/features/auth/context/auth-provider.tsx",
+        " M src/features/auth/storage/authTokenStorage.ts",
+        " M src/features/auth/validation/authValidation.ts",
+        " M src/features/library/library-upload.ts",
+        "?? docs/review-m8/",
+        "?? plugins/",
+        "?? scripts/capture-m8-native-diagnostics.cjs",
+        "?? scripts/check-isolated-m8-admin.cjs",
+        "?? scripts/finalize-m8-evidence.cjs",
+        "?? scripts/m8-native-login.cjs",
+        "?? scripts/m8-native-proxy.cjs",
+        "?? scripts/m8-native-ui.cjs",
+        "?? scripts/revoke-isolated-m8-native.cjs",
+        "?? scripts/run-backend-suite-m8.cjs",
+        "?? scripts/run-isolated-m8.cjs",
+        "?? scripts/run-m8-quality.cjs",
+        "?? scripts/seed-isolated-m8-native.cjs",
+        "?? scripts/transition-isolated-m8-admin.cjs",
+        "?? scripts/verify-m8-native-uncertainty.cjs",
+        "?? src/app/account/",
+        "?? src/app/admin/",
+        "?? src/features/admin/",
+        "?? src/features/profile/",
+        "?? tests/fixtures/account-host/",
+        "?? tests/m8-account-admin.test.cjs",
+        "?? tests/real-backend.m8.cjs"
+      ]
+    },
+    {
+      "name": "Backend",
+      "head": "ca20ba52635a026b32449f919e60410ff880c829",
+      "branch": "feature_minhduc",
+      "changes": [
+        "M Features/Auth/Controllers/AccountController.cs",
+        " M Features/User/Models/UpdateProfileViewModel.cs",
+        " M Tests/ProfileUpdateContractTests.cs"
+      ]
+    },
+    {
+      "name": "Web",
+      "head": "144fc506c0ec7957d40a137351aeda296b8937b5",
+      "branch": "feature_minhduc",
+      "changes": []
+    }
+  ],
+  "release": "NOT READY",
+  "development": "PARTIAL PASS",
+  "m8Ci": "NOT RUN"
+}

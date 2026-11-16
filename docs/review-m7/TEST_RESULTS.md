@@ -1,5 +1,8 @@
 # M7 test results
 
+> Current verification, 16 November 2026. GitHub Expo quality run 43792501120 succeeded on c55a476f01c14cb0cd24428deb17e4d1af9d85c9. Backend Tests/AnniversaryDateIntegrityTests.cs resolves remotely at ca20ba52635a026b32449f919e60410ff880c829, and M8 independently reruns all nine cases successfully. Historical pending-CI and remote-sync statements below are superseded. Production deployment remains unverified. See ../review-m8/test-results/github-evidence.json.
+
+
 Automated local quality PASS. `test-results/quality-summary.json` records every requested lint/typecheck/auth/foundation/M2/M3/M4/M5/M6/M7/contrast command and exit code. The initial M7 suite passed82 cases; the first expansion reached86. Final delivery has88 M7 cases, adding the shared account/route uncertainty gate and stale-account activation barrier, for346 unique Expo cases with the258 inherited cases. Auth10 is already inside foundation26. Contrast14 is additional.
 
 Full Backend PASS203/203,0 failed/skipped. Targeted preserved M6 anniversary file PASS9/9,0 failed/skipped. Both run in independent disposable PostgreSQL clusters and record databaseDropped/postgresStopped true. Backend production source unchanged. The existing M4 location validation fix remains intact.
@@ -8,7 +11,7 @@ Real Kestrel/PostgreSQL HTTP PASS105 scenario groups: M1 7, M2 6, M3 12, M4 17, 
 
 M7 tests cover DTO required fields/nullability/duplicate IDs and slugs/count/cover constraints, raw-versus-envelope, exact dates and metadata, every Library JSON route, multipart path/body/boundary policy, invalid IDs before dispatch, statuses401/403/404/409/429/502/503, preservation/rename/filtering, stale/serial/uncertain mutations, canceled upload, MIME/size/extension/signatures/21 files, private URL trust, native Bearer refresh, logout during binary reads, bounded/coalesced media queue, account-local pools,1000-photo selection and lightbox bounds. Some gallery/navigation/accessibility assertions inspect source wiring, not real layout/performance; native results are separate.
 
-Native results and exact device/build are in NATIVE_SMOKE_RESULTS. Physical/iOS/TalkBack/VoiceOver are NOT TESTED. Real Google Drive BLOCKED. GitHub M7 CI NOT RUN: workflow is locally ready but no commit/push was authorized. A supplied prior CI success is not a new M7 Actions run.
+Native results and exact device/build are in NATIVE_SMOKE_RESULTS. Physical/iOS/TalkBack/VoiceOver are NOT TESTED. Real Google Drive BLOCKED. GitHub M7 CI subsequently verified PASS on16 November2026, exact SHA c55a476f and run43792501120. This M8 task performed no commit/push.
 
 Known unsuccessful attempts retained: initial restricted-token PostgreSQL start, initial generated route type errors and FlatList nullability, initial effect lint error, two incorrect test storage-method calls, a fixture encoding error and first nested-harness composition syntax error. They were fixed without changing inherited tests. npm audit exits1 due14 Moderate advisories; it is a security finding, not a passed clean audit.
 

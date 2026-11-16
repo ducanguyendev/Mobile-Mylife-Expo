@@ -1,0 +1,329 @@
+Networking has been disabled
+Starting project at D:\DUAN\MYLIFE\Mobile-MyLife-Expo
+Using src/app as the root directory for Expo Router.
+React Compiler enabled
+Starting Metro Bundler
+
+Waiting on http://localhost:8092
+
+Logs for your project will appear below.
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:39168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+Android Bundled 29967ms node_modules\expo-router\entry.js (1747 modules)
+Android  ERROR  addViewAt: failed to insert view [3116] into parent [3070] at index 7
+
+The specified child already has a parent. You must call removeView() on the child's parent first.
+java.lang.IllegalStateException: addViewAt: failed to insert view [3116] into parent [3070] at index 7
+  com.facebook.react.fabric.mounting.SurfaceMountingManager.addViewAt(SurfaceMountingManager.kt:372)
+  com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.execute(IntBufferBatchMountItem.kt:122)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.executeOrEnqueue(MountItemDispatcher.kt:379)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems$lambda$7$lambda$6(MountItemDispatcher.kt:269)
+  com.facebook.react.fabric.mounting.MountItemDispatcher$$ExternalSyntheticLambda4.invoke(D8$$SyntheticClass:0)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:46)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:35)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems(MountItemDispatcher.kt:250)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.tryDispatchMountItems(MountItemDispatcher.kt:94)
+  com.facebook.react.fabric.FabricUIManager$DispatchUIFrameCallback.doFrameGuarded(FabricUIManager.java:1660)
+  com.facebook.react.uimanager.GuardedFrameCallback.doFrame(GuardedFrameCallback.kt:42)
+  com.facebook.react.modules.core.ReactChoreographer.frameCallback$lambda$1(ReactChoreographer.kt:58)
+  com.facebook.react.modules.core.ReactChoreographer$$ExternalSyntheticLambda0.doFrame(D8$$SyntheticClass:0)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1404)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1415)
+  android.view.Choreographer.doCallbacks(Choreographer.java:1015)
+  android.view.Choreographer.doFrame(Choreographer.java:941)
+  android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1389)
+  android.os.Handler.handleCallback(Handler.java:959)
+  android.os.Handler.dispatchMessage(Handler.java:100)
+  android.os.Looper.loopOnce(Looper.java:232)
+  android.os.Looper.loop(Looper.java:317)
+  android.app.ActivityThread.main(ActivityThread.java:8705)
+  java.lang.reflect.Method.invoke(Native Method)
+  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+Caused by java.lang.IllegalStateException: The specified child already has a parent. You must call removeView() on the child's parent first.
+  android.view.ViewGroup.addViewInner(ViewGroup.java:5256)
+  android.view.ViewGroup.addView(ViewGroup.java:5085)
+  android.view.ViewGroup.addView(ViewGroup.java:5025)
+  com.facebook.react.views.view.ReactClippingViewManager.addView(ReactClippingViewManager.kt:36)
+  com.facebook.react.views.view.ReactClippingViewManager.addView(ReactClippingViewManager.kt:20)
+  com.facebook.react.fabric.mounting.SurfaceMountingManager.addViewAt(SurfaceMountingManager.kt:369)
+  com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.execute(IntBufferBatchMountItem.kt:122)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.executeOrEnqueue(MountItemDispatcher.kt:379)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems$lambda$7$lambda$6(MountItemDispatcher.kt:269)
+  com.facebook.react.fabric.mounting.MountItemDispatcher$$ExternalSyntheticLambda4.invoke(D8$$SyntheticClass:0)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:46)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:35)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems(MountItemDispatcher.kt:250)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.tryDispatchMountItems(MountItemDispatcher.kt:94)
+  com.facebook.react.fabric.FabricUIManager$DispatchUIFrameCallback.doFrameGuarded(FabricUIManager.java:1660)
+  com.facebook.react.uimanager.GuardedFrameCallback.doFrame(GuardedFrameCallback.kt:42)
+  com.facebook.react.modules.core.ReactChoreographer.frameCallback$lambda$1(ReactChoreographer.kt:58)
+  com.facebook.react.modules.core.ReactChoreographer$$ExternalSyntheticLambda0.doFrame(D8$$SyntheticClass:0)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1404)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1415)
+  android.view.Choreographer.doCallbacks(Choreographer.java:1015)
+  android.view.Choreographer.doFrame(Choreographer.java:941)
+  android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1389)
+  android.os.Handler.handleCallback(Handler.java:959)
+  android.os.Handler.dispatchMessage(Handler.java:100)
+  android.os.Looper.loopOnce(Looper.java:232)
+  android.os.Looper.loop(Looper.java:317)
+  android.app.ActivityThread.main(ActivityThread.java:8705)
+  java.lang.reflect.Method.invoke(Native Method)
+  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+Android Bundled 104ms node_modules\expo-router\entry.js (1 module)
+Android  ERROR  addViewAt: failed to insert view [954] into parent [922] at index 7
+
+The specified child already has a parent. You must call removeView() on the child's parent first.
+java.lang.IllegalStateException: addViewAt: failed to insert view [954] into parent [922] at index 7
+  com.facebook.react.fabric.mounting.SurfaceMountingManager.addViewAt(SurfaceMountingManager.kt:372)
+  com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.execute(IntBufferBatchMountItem.kt:122)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.executeOrEnqueue(MountItemDispatcher.kt:379)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems$lambda$7$lambda$6(MountItemDispatcher.kt:269)
+  com.facebook.react.fabric.mounting.MountItemDispatcher$$ExternalSyntheticLambda4.invoke(D8$$SyntheticClass:0)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:46)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:35)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems(MountItemDispatcher.kt:250)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.tryDispatchMountItems(MountItemDispatcher.kt:94)
+  com.facebook.react.fabric.FabricUIManager$DispatchUIFrameCallback.doFrameGuarded(FabricUIManager.java:1660)
+  com.facebook.react.uimanager.GuardedFrameCallback.doFrame(GuardedFrameCallback.kt:42)
+  com.facebook.react.modules.core.ReactChoreographer.frameCallback$lambda$1(ReactChoreographer.kt:58)
+  com.facebook.react.modules.core.ReactChoreographer$$ExternalSyntheticLambda0.doFrame(D8$$SyntheticClass:0)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1404)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1415)
+  android.view.Choreographer.doCallbacks(Choreographer.java:1015)
+  android.view.Choreographer.doFrame(Choreographer.java:941)
+  android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1389)
+  android.os.Handler.handleCallback(Handler.java:959)
+  android.os.Handler.dispatchMessage(Handler.java:100)
+  android.os.Looper.loopOnce(Looper.java:232)
+  android.os.Looper.loop(Looper.java:317)
+  android.app.ActivityThread.main(ActivityThread.java:8705)
+  java.lang.reflect.Method.invoke(Native Method)
+  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+Caused by java.lang.IllegalStateException: The specified child already has a parent. You must call removeView() on the child's parent first.
+  android.view.ViewGroup.addViewInner(ViewGroup.java:5256)
+  android.view.ViewGroup.addView(ViewGroup.java:5085)
+  android.view.ViewGroup.addView(ViewGroup.java:5025)
+  com.facebook.react.views.view.ReactClippingViewManager.addView(ReactClippingViewManager.kt:36)
+  com.facebook.react.views.view.ReactClippingViewManager.addView(ReactClippingViewManager.kt:20)
+  com.facebook.react.fabric.mounting.SurfaceMountingManager.addViewAt(SurfaceMountingManager.kt:369)
+  com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.execute(IntBufferBatchMountItem.kt:122)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.executeOrEnqueue(MountItemDispatcher.kt:379)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems$lambda$7$lambda$6(MountItemDispatcher.kt:269)
+  com.facebook.react.fabric.mounting.MountItemDispatcher$$ExternalSyntheticLambda4.invoke(D8$$SyntheticClass:0)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:46)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:35)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems(MountItemDispatcher.kt:250)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.tryDispatchMountItems(MountItemDispatcher.kt:94)
+  com.facebook.react.fabric.FabricUIManager$DispatchUIFrameCallback.doFrameGuarded(FabricUIManager.java:1660)
+  com.facebook.react.uimanager.GuardedFrameCallback.doFrame(GuardedFrameCallback.kt:42)
+  com.facebook.react.modules.core.ReactChoreographer.frameCallback$lambda$1(ReactChoreographer.kt:58)
+  com.facebook.react.modules.core.ReactChoreographer$$ExternalSyntheticLambda0.doFrame(D8$$SyntheticClass:0)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1404)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1415)
+  android.view.Choreographer.doCallbacks(Choreographer.java:1015)
+  android.view.Choreographer.doFrame(Choreographer.java:941)
+  android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1389)
+  android.os.Handler.handleCallback(Handler.java:959)
+  android.os.Handler.dispatchMessage(Handler.java:100)
+  android.os.Looper.loopOnce(Looper.java:232)
+  android.os.Looper.loop(Looper.java:317)
+  android.app.ActivityThread.main(ActivityThread.java:8705)
+  java.lang.reflect.Method.invoke(Native Method)
+  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+Android Bundled 328ms node_modules\expo-router\entry.js (1 module)
+Android  ERROR  addViewAt: failed to insert view [958] into parent [926] at index 6
+
+The specified child already has a parent. You must call removeView() on the child's parent first.
+java.lang.IllegalStateException: addViewAt: failed to insert view [958] into parent [926] at index 6
+  com.facebook.react.fabric.mounting.SurfaceMountingManager.addViewAt(SurfaceMountingManager.kt:372)
+  com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.execute(IntBufferBatchMountItem.kt:122)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.executeOrEnqueue(MountItemDispatcher.kt:379)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems$lambda$7$lambda$6(MountItemDispatcher.kt:269)
+  com.facebook.react.fabric.mounting.MountItemDispatcher$$ExternalSyntheticLambda4.invoke(D8$$SyntheticClass:0)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:46)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:35)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems(MountItemDispatcher.kt:250)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.tryDispatchMountItems(MountItemDispatcher.kt:94)
+  com.facebook.react.fabric.FabricUIManager$DispatchUIFrameCallback.doFrameGuarded(FabricUIManager.java:1660)
+  com.facebook.react.uimanager.GuardedFrameCallback.doFrame(GuardedFrameCallback.kt:42)
+  com.facebook.react.modules.core.ReactChoreographer.frameCallback$lambda$1(ReactChoreographer.kt:58)
+  com.facebook.react.modules.core.ReactChoreographer$$ExternalSyntheticLambda0.doFrame(D8$$SyntheticClass:0)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1404)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1415)
+  android.view.Choreographer.doCallbacks(Choreographer.java:1015)
+  android.view.Choreographer.doFrame(Choreographer.java:941)
+  android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1389)
+  android.os.Handler.handleCallback(Handler.java:959)
+  android.os.Handler.dispatchMessage(Handler.java:100)
+  android.os.Looper.loopOnce(Looper.java:232)
+  android.os.Looper.loop(Looper.java:317)
+  android.app.ActivityThread.main(ActivityThread.java:8705)
+  java.lang.reflect.Method.invoke(Native Method)
+  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+Caused by java.lang.IllegalStateException: The specified child already has a parent. You must call removeView() on the child's parent first.
+  android.view.ViewGroup.addViewInner(ViewGroup.java:5256)
+  android.view.ViewGroup.addView(ViewGroup.java:5085)
+  android.view.ViewGroup.addView(ViewGroup.java:5025)
+  com.facebook.react.views.view.ReactClippingViewManager.addView(ReactClippingViewManager.kt:36)
+  com.facebook.react.views.view.ReactClippingViewManager.addView(ReactClippingViewManager.kt:20)
+  com.facebook.react.fabric.mounting.SurfaceMountingManager.addViewAt(SurfaceMountingManager.kt:369)
+  com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem.execute(IntBufferBatchMountItem.kt:122)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.executeOrEnqueue(MountItemDispatcher.kt:379)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems$lambda$7$lambda$6(MountItemDispatcher.kt:269)
+  com.facebook.react.fabric.mounting.MountItemDispatcher$$ExternalSyntheticLambda4.invoke(D8$$SyntheticClass:0)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:46)
+  com.facebook.react.internal.tracing.PerformanceTracer.trace(PerformanceTracer.kt:35)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.dispatchMountItems(MountItemDispatcher.kt:250)
+  com.facebook.react.fabric.mounting.MountItemDispatcher.tryDispatchMountItems(MountItemDispatcher.kt:94)
+  com.facebook.react.fabric.FabricUIManager$DispatchUIFrameCallback.doFrameGuarded(FabricUIManager.java:1660)
+  com.facebook.react.uimanager.GuardedFrameCallback.doFrame(GuardedFrameCallback.kt:42)
+  com.facebook.react.modules.core.ReactChoreographer.frameCallback$lambda$1(ReactChoreographer.kt:58)
+  com.facebook.react.modules.core.ReactChoreographer$$ExternalSyntheticLambda0.doFrame(D8$$SyntheticClass:0)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1404)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1415)
+  android.view.Choreographer.doCallbacks(Choreographer.java:1015)
+  android.view.Choreographer.doFrame(Choreographer.java:941)
+  android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1389)
+  android.os.Handler.handleCallback(Handler.java:959)
+  android.os.Handler.dispatchMessage(Handler.java:100)
+  android.os.Looper.loopOnce(Looper.java:232)
+  android.os.Looper.loop(Looper.java:317)
+  android.app.ActivityThread.main(ActivityThread.java:8705)
+  java.lang.reflect.Method.invoke(Native Method)
+  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+Android Bundled 183ms node_modules\expo-router\entry.js (1 module)
+ WARN  Response.blob() is using React Native's Blob, which copies the response into the native blob store and reads it back through base64 encoding. This may be slow for large responses. Add the `expo-blob` package to your app to avoid the performance overhead.
+Android Bundled 161ms node_modules\expo-router\entry.js (1 module)
+
+Networking has been disabled
+Starting project at D:\DUAN\MYLIFE\Mobile-MyLife-Expo
+Using src/app as the root directory for Expo Router.
+React Compiler enabled
+Starting Metro Bundler
+
+node : Error while reading cache, falling back to a full crawl:
+At line:2 char:112
++ ... .0.1:5088'; node node_modules/expo/bin/cli start --port 8092 --offlin ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error while rea...o a full crawl::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Error: Unable to deserialize cloned data.
+    at deserialize (node:v8:469:14)
+    at DiskCacheManager.read 
+(D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-file-map\build\cache\DiskCacheManager.js:95:42)
+    at async FileMap.read (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-file-map\build\index.js:447:20)
+    at async D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\@expo\metro-file-map\build\index.js:330:35
+    at async DependencyGraph.ready 
+(D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\metro\src\node-haste\DependencyGraph.js:95:5)
+    at async Bundler.ready (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\metro\src\Bundler.js:62:5)
+    at async IncrementalBundler.ready 
+(D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\metro\src\IncrementalBundler.js:310:5)
+    at async Server.ready (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\metro\src\Server.js:1465:5)
+    at async runMetro (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\metro\src\index.flow.js:150:5)
+    at async createConnectMiddleware (D:\DUAN\MYLIFE\Mobile-MyLife-Expo\node_modules\metro\src\index.flow.js:155:23)
+Waiting on http://localhost:8092
+
+Logs for your project will appear below.
+Android  ERROR  Failed to load app from http://[IP redacted]:8092.
+java.io.IOException: unexpected end of stream on http://[IP redacted]:8092/...
+  okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:202)
+  okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)
+  okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  expo.modules.kotlin.devtools.ExpoNetworkInspectOkHttpNetworkInterceptor.intercept(ExpoNetworkInspectOkHttpInterceptors.kt:27)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  expo.modules.kotlin.devtools.ExpoNetworkInspectOkHttpAppInterceptor.intercept(ExpoNetworkInspectOkHttpInterceptors.kt:64)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+  okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+  java.lang.Thread.run(Thread.java:1012)
+Caused by java.io.EOFException: \n not found: limit=0 content=…
+  okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:362)
+  okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+  okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:178)
+  okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)
+  okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  expo.modules.kotlin.devtools.ExpoNetworkInspectOkHttpNetworkInterceptor.intercept(ExpoNetworkInspectOkHttpInterceptors.kt:27)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  expo.modules.kotlin.devtools.ExpoNetworkInspectOkHttpAppInterceptor.intercept(ExpoNetworkInspectOkHttpInterceptors.kt:64)
+  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+  okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+  okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+  java.lang.Thread.run(Thread.java:1012)
+| (node:40792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:40792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+Android Bundled 27263ms node_modules\expo-router\entry.js (1777 modules)
+Android Bundled 3971ms node_modules\expo-router\entry.js (1747 modules)
+ WARN  [MyLife API] request rejected {"code": undefined, "method": "POST", "path": "/api/login", "requestId": "de678cec75654614b2c2a3b85b14ef7f", "status": 401}
+
+Networking has been disabled
+Starting project at D:\DUAN\MYLIFE\Mobile-MyLife-Expo
+Using src/app as the root directory for Expo Router.
+React Compiler enabled
+Starting Metro Bundler
+
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+Waiting on http://localhost:8092
+
+Logs for your project will appear below.
+| (node:10276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:10276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+Android Bundled 51881ms node_modules\expo-router\entry.js (1777 modules)
+Android Bundled 35283ms node_modules\expo-router\entry.js (1747 modules)
+ WARN  Response.blob() is using React Native's Blob, which copies the response into the native blob store and reads it back through base64 encoding. This may be slow for large responses. Add the `expo-blob` package to your app to avoid the performance overhead.
+ WARN  [MyLife API] request rejected {"code": "USER_HAS_FAMILY_MEMBERS", "method": "DELETE", "path": "/api/admin/users/22", "requestId": "e0a0fca4625547e79c3a838040de57c0", "status": 409}

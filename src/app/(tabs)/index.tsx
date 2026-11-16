@@ -15,6 +15,7 @@ import { familySummary, formatDateOnly, greetingPeriod, recentAlbums, upcomingAn
 import type { SectionState } from '@/features/home/home-resource';
 import { useLocalization } from '@/localization/use-localization';
 import { useAppTheme } from '@/theme/theme-provider';
+import { accountAvatarUri } from '@/features/profile/profile-data';
 
 export default function HomeScreen() {
   const { user, isUser } = useAuth();
@@ -23,14 +24,14 @@ export default function HomeScreen() {
   const name = user?.displayName?.trim() || user?.fullName?.trim() || user?.name?.trim();
   const title = `${copy[greetingPeriod(now)]}${name ? `, ${name}` : ''}`;
   return <HomeContent key={`${user?.id}:${user?.role}`} accountId={isUser ? user?.id : undefined} title={title}
-    date={new Intl.DateTimeFormat(locale, { weekday: 'long', day: 'numeric', month: 'long' }).format(now)} now={now} />;
+    date={new Intl.DateTimeFormat(locale, { weekday: 'long', day: 'numeric', month: 'long' }).format(now)} now={now} identity={<Avatar key={`${user?.id}:${user?.updatedAt}`} uri={accountAvatarUri(user)} name={name || copy.unnamed} size={56} />} />;
 }
-function HomeContent({ accountId, title, date, now }: { accountId?: number; title: string; date: string; now: Date }) {
+function HomeContent({ accountId, title, date, now, identity }: { accountId?: number; title: string; date: string; now: Date; identity: React.ReactNode }) {
   const { copy } = useLocalization();
   if (!accountId) return <AppScrollScreen><LargeTitleHeader title={title} eyebrow={date} /><EmptyState title={copy.adminHome} message={copy.adminMessage} /></AppScrollScreen>;
-  return <UserHome accountId={accountId} title={title} date={date} now={now} />;
+  return <UserHome accountId={accountId} title={title} date={date} now={now} identity={identity} />;
 }
-function UserHome({ accountId, title, date, now }: { accountId: number; title: string; date: string; now: Date }) {
+function UserHome({ accountId, title, date, now, identity }: { accountId: number; title: string; date: string; now: Date; identity: React.ReactNode }) {
   const { state, refresh, retry } = useHome(accountId);
   const { colors } = useAppTheme();
   const { copy, language } = useLocalization();
@@ -39,6 +40,7 @@ function UserHome({ accountId, title, date, now }: { accountId: number; title: s
   const albums = recentAlbums(state.albums.data ?? []);
   const refreshing = Object.values(state).some((section) => section.status === 'loading');
   return <AppScrollScreen refreshControl={<RefreshControl refreshing={refreshing} onRefresh={() => void refresh()} tintColor={colors.accentFamily} colors={[colors.accentFamily]} />}>
+    {identity}
     <LargeTitleHeader title={title} eyebrow={date} subtitle={copy.homeSubtitle} />
     <View style={styles.page}>
       <SectionHeader title={copy.familySummary} />

@@ -14,7 +14,7 @@ import { AppThemeProvider, useAppTheme } from '@/theme/theme-provider';
 
 function AppNavigation() {
   const { resolvedMode, colors, language, reducedMotion } = useAppTheme();
-  const { status, isUser } = useAuth();
+  const { status, isUser, isAdmin, user } = useAuth();
   const navigationTheme = useMemo(() => {
     const base = resolvedMode === 'dark' ? DarkTheme : DefaultTheme;
     return {
@@ -37,15 +37,19 @@ function AppNavigation() {
       <ToastProvider>
         <SessionExpiryFeedback />
         <View style={styles.navigator}>
-          <Stack screenOptions={{ animation: reducedMotion ? 'none' : 'default', headerShown: false, contentStyle: { backgroundColor: colors.background } }}>
+          <Stack key={`${user?.id ?? 'anonymous'}:${user?.role ?? ''}`} screenOptions={{ animation: reducedMotion ? 'none' : 'default', headerShown: false, contentStyle: { backgroundColor: colors.background } }}>
             <Stack.Protected guard={status === 'authenticated'} redirectTo="/(auth)/login">
               <Stack.Screen name="(tabs)" />
+              <Stack.Screen name="account" />
             </Stack.Protected>
-            <Stack.Protected guard={status === 'authenticated' && isUser} redirectTo={status === 'authenticated' ? '/(tabs)/family' : '/(auth)/login'}>
+            <Stack.Protected guard={status === 'authenticated' && isUser} redirectTo={status === 'authenticated' ? '/admin' : '/(auth)/login'}>
               <Stack.Screen name="family" />
               <Stack.Screen name="library" />
             </Stack.Protected>
-            <Stack.Protected guard={status !== 'authenticated'} redirectTo="/(tabs)">
+            <Stack.Protected guard={status === 'authenticated' && isAdmin} redirectTo={status === 'authenticated' ? '/(tabs)/profile' : '/(auth)/login'}>
+              <Stack.Screen name="admin" />
+            </Stack.Protected>
+            <Stack.Protected guard={status !== 'authenticated'} redirectTo={isAdmin ? '/admin' : '/(tabs)'}>
               <Stack.Screen name="(auth)" />
             </Stack.Protected>
             <Stack.Protected guard={__DEV__}>

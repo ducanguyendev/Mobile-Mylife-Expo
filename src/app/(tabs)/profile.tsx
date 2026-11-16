@@ -14,6 +14,8 @@ import { useAuth } from '@/features/auth/context/auth-provider';
 import { getAuthStrings } from '@/features/auth/i18n/authStrings';
 import { useToast } from '@/components/feedback/toast-provider';
 import { useLocalization } from '@/localization/use-localization';
+import { ProfileDetails } from '@/features/profile/ProfileDetails';
+import { accountAvatarUri } from '@/features/profile/profile-data';
 
 export default function ProfileScreen() {
   const { mode, setMode, languageMode, setLanguageMode, storageError, retryPreferences } = useAppTheme();
@@ -36,10 +38,11 @@ export default function ProfileScreen() {
     <LargeTitleHeader eyebrow={copy.yourSpace} title={copy.profile} />
     <View style={styles.page}>
       <AppCard style={styles.card}>
-        <Avatar uri={user?.avatarUrl ?? undefined} name={name} size={64} />
+        <Avatar key={`${user?.id}:${user?.updatedAt}`} uri={accountAvatarUri(user)} name={name} size={64} />
         <AppText variant="sectionTitle">{name}</AppText><AppText tone="secondary" selectable>{user?.email}</AppText>
         <Badge label={roleLabel} tone="accent" /><AppText variant="caption" tone="tertiary">{providerLabel}</AppText>
       </AppCard>
+      <ProfileDetails />
       <SectionHeader title={copy.appearance} />
       <AppText tone="secondary">{copy.appearanceHint}</AppText>
       <SegmentedTabs<ThemeMode> value={mode} onChange={setMode} options={[{ value: 'system', label: copy.system }, { value: 'light', label: copy.light }, { value: 'dark', label: copy.dark }]} />
@@ -48,10 +51,6 @@ export default function ProfileScreen() {
       <SegmentedTabs<LanguageMode> value={languageMode} onChange={setLanguageMode} options={[{ value: 'system', label: copy.system }, { value: 'vi', label: copy.vietnamese }, { value: 'en', label: copy.english }]} />
       {storageError ? <AppCard style={styles.card}><AppText accessibilityRole="alert" accessibilityLiveRegion="polite" tone="error">{copy.preferenceError}</AppText><PrimaryButton title={copy.retry} onPress={retryPreferences} /></AppCard> : null}
       <SectionHeader title={copy.account} />
-      <AppCard style={styles.card}>
-        <ActionRow title={copy.editProfile} detail={copy.comingSoon} disabled accessibilityState={{ disabled: true }} />
-        <ActionRow title={copy.security} detail={copy.comingSoon} disabled accessibilityState={{ disabled: true }} />
-      </AppCard>
       {__DEV__ ? <AppCard style={styles.card}><ActionRow title={copy.designSystem} detail={copy.designSystemHint} onPress={() => router.push('/dev/design-system')} /></AppCard> : null}
       <AppText tone="secondary">{copy.logoutHint}</AppText>
       <PrimaryButton title={auth.logout} loading={busy} onPress={() => void handleLogout()} />

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "build": "Rebuilt development APK with explicit OkHttp retry policy",
+  "backendPostStatus": 201,
+  "acknowledgementDropped": true,
+  "matchingAlbums": 1,
+  "reopenedRouteRetainsBarrier": true,
+  "createDisabledBeforeReconcile": true,
+  "explicitReconciliation": true,
+  "evidenceThrough": 212
+}

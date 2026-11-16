@@ -1,5 +1,8 @@
 # M7 continuous risk register
 
+> Current verification, 16 November 2026. GitHub Expo quality run 43792501120 succeeded on c55a476f01c14cb0cd24428deb17e4d1af9d85c9. Backend Tests/AnniversaryDateIntegrityTests.cs resolves remotely at ca20ba52635a026b32449f919e60410ff880c829, and M8 independently reruns all nine cases successfully. Historical pending-CI and remote-sync statements below are superseded. Production deployment remains unverified. See ../review-m8/test-results/github-evidence.json.
+
+
 | ID | Severity | Status | Evidence and action | Unresolved blocker and next phase |
 | --- | --- | --- | --- | --- |
 | RISK-01 | High | BLOCKED | Existing avatar adapter replay passes | Actual disposable Google Drive lifecycle remains unverified before release |
@@ -38,13 +41,13 @@ M7 updates follow below. Historical entries remain open unless explicit new evid
 | RISK-04 dependency advisories | Medium | OPEN, fresh14 Moderate,0 High/Critical, unchanged lockfile | Expo58-compatible coordinated remediation |
 | RISK-05 accessibility | Medium | PARTIAL, labels/selected state/scrollable forms/contrast14 | Actual TalkBack/VoiceOver/focus/keyboard |
 | RISK-06 physical/iOS | High | NOT TESTED, Android emulator only if reported separately | Physical Android/iOS release matrix |
-| RISK-07 GitHub CI | Medium | M6 success supplied by task context; M7 NOT RUN | Local workflow adds test:m7; verify exact future pushed SHA |
+| RISK-07 GitHub CI | Medium | M7 PASS16 November, exact c55a476f run43792501120 | Local workflow adds test:m7; verify exact future pushed SHA |
 | M4-01 production VIETMAP | High | OPEN, no Map native/config change | Key restrictions/quotas/signing/release-build validation |
 | M4-02 dev-client recreation | Medium | OPEN | Cold-start device testing and release behavior |
 | M5-07 first lazy Map reload | Medium | OPEN, RR automation spacing preserved; original cause unproven | Revalidate Map after Library and release behavior |
 | M5/M6 historical/next dates | High | MITIGATED / MONITORED, inherited Timeline/lunar/Calendar tests and84 HTTP groups pass | Keep originalSolarDate distinct from nextSolarDate and photo displayDate |
 | M6 synchronization | High | MONITORED, existing Home/Profile/Calendar focus behavior preserved | Cross-device updates still require refetch |
-| BACKEND-M6 tests | Medium | LOCAL PASS9 targeted/203 full; remote file404 on requested branch | Authorized commit/push and independent GitHub file check |
+| BACKEND-M6 tests | Medium | CLOSED16 November, remote file at ca20ba52 and M8 targeted9 PASS | Remote synchronization complete. Production deployment remains unverified |
 | M7-01 private photo exposure | Critical | MITIGATED / OPEN, owner endpoint only, foreign404/anonymous401, redirect error | Native platform/network/cache forensics |
 | M7-02 token URL/log leakage | Critical | MITIGATED, no URL/query token, existing SecureStore and redacted evidence | Preserve scans and session guards |
 | M7-03 wrong-account media reuse | Critical | MITIGATED / OPEN, per-account pool, generation clear, background removal, body-after-logout test | Real native account-switch/long-session gate |

@@ -1,0 +1,20 @@
+﻿{
+    "taskOwnedQaPortsClosed":  true,
+    "remainingQaPorts":  [
+
+                         ],
+    "dedicatedEmulatorStopped":  true,
+    "temporaryAvdRemoved":  true,
+    "temporaryCredentialFilesRemoved":  true,
+    "runtimeCredentialFileRemoved":  true,
+    "nativeDatabaseDropped":  true,
+    "nativePostgresStopped":  true,
+    "finalHttpDatabaseDropped":  true,
+    "finalHttpPostgresStopped":  true,
+    "temporaryClusterDirectoriesRemoved":  [
+                                               ".tmp\\m1-integration-UEoCyl",
+                                               ".tmp\\m1-integration-g8irbk",
+                                               ".tmp\\m1-integration-wwGtCS",
+                                               ".tmp\\m1-integration-cqQvIu"
+                                           ]
+}

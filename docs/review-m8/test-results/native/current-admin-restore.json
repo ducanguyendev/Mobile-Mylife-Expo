@@ -1,0 +1,8 @@
+{
+  "action": "restore",
+  "status": "PASS",
+  "syntheticAccountsOnly": true,
+  "usedSupportedRoleEndpoint": true,
+  "resultingRole": "ADMIN",
+  "currentNativeAccountSessionsRevoked": true
+}

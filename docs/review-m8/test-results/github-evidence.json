@@ -1,0 +1,25 @@
+{
+  "ci": [
+    {
+      "id": 43792501120,
+      "name": "Expo quality",
+      "head_sha": "c55a476f01c14cb0cd24428deb17e4d1af9d85c9",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ducanguyendev/Mobile-Mylife-Expo/actions/runs/43792501120",
+      "updated_at": "2026-11-16T02:30:18Z"
+    }
+  ],
+  "backendM6": {
+    "repository": "ducanguyendev/Backend-MyLife",
+    "ref": "ca20ba52635a026b32449f919e60410ff880c829",
+    "path": "Tests/AnniversaryDateIntegrityTests.cs",
+    "remoteReadSucceeded": true,
+    "sha256": "19d53fad4f6b018d8f2bf1f28942b645ab9bbddae1282bcd182f1fac002d69ff",
+    "factAttributes": 1,
+    "inlineDataCases": 8,
+    "testMethods": [
+      "Solar_recurrence_uses_frozen_vietnam_day_and_preserves_historical_timeline_date"
+    ]
+  }
+}

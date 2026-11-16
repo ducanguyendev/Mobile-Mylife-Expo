@@ -1,0 +1,9 @@
+{
+  "operation": "deleted",
+  "status": "PASS",
+  "authoritativeReadBack": true,
+  "targetPresent": false,
+  "totalUsers": 21,
+  "totalActive": 21,
+  "totalLocked": 0
+}

@@ -1,0 +1,57 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 5140067 Realtime: 5140067
+
+** MEMINFO in pid 9757 [com.anonymous.mylifemobile] **
+                   Pss  Private  Private  SwapPss      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap   179873   179840        4       76   180792   200260   186621     9170
+  Dalvik Heap    22394    22120       40      160    23536    29333    14667    14666
+ Dalvik Other    20758     9528        4        4    32320                           
+        Stack     4072     4072        0        0     4080                           
+       Ashmem       18        0        0        0      596                           
+    Other dev       13        4        8        0      316                           
+     .so mmap     4146      160     1136       27    35576                           
+    .jar mmap     3768        0      640        0    44428                           
+    .apk mmap    61038     1584    57624        0    65296                           
+    .ttf mmap     1207        0      956        0     1992                           
+    .dex mmap       88        4        0        0      964                           
+    .oat mmap      275        0      168        0     2148                           
+    .art mmap    10219     8212     1128      146    24368                           
+   Other mmap     6970        4      956        0    14520                           
+      Unknown    87162    87144        8        0    87564                           
+        TOTAL   402414   312672    62672      413   518496   229593   201288    23836
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:    31460                          47904
+         Native Heap:   179840                         180792
+                Code:    62560                         173128
+               Stack:     4072                           4080
+            Graphics:        0                              0
+       Private Other:    97412
+              System:    27070
+             Unknown:                                  112592
+ 
+           TOTAL PSS:   402414            TOTAL RSS:   518496       TOTAL SWAP PSS:      413
+ 
+ Objects
+               Views:      334         ViewRootImpl:        2
+         AppContexts:        5           Activities:        1
+              Assets:       23        AssetManagers:        0
+       Local Binders:       60        Proxy Binders:       70
+       Parcel memory:       10         Parcel count:       40
+    Death Recipients:        0             WebViews:        0
+ 
+ SQL
+         MEMORY_USED:       80
+  PAGECACHE_OVERFLOW:       21          MALLOC_SIZE:       46
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b) cache hits cache misses cache size  Dbname
+PER CONNECTION STATS
+         4       20             27     3    20     2  /data/user/0/com.anonymous.mylifemobile/databases/RKStorage
+POOL STATS
+     cache hits  cache misses    cache size  Dbname
+              3            21            24  /data/user/0/com.anonymous.mylifemobile/databases/RKStorage

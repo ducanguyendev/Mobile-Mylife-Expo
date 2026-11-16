@@ -1,5 +1,8 @@
 # MyLife Expo M7 review
 
+> Current verification, 16 November 2026. GitHub Expo quality run 43792501120 succeeded on c55a476f01c14cb0cd24428deb17e4d1af9d85c9. Backend Tests/AnniversaryDateIntegrityTests.cs resolves remotely at ca20ba52635a026b32449f919e60410ff880c829, and M8 independently reruns all nine cases successfully. Historical pending-CI and remote-sync statements below are superseded. Production deployment remains unverified. See ../review-m8/test-results/github-evidence.json.
+
+
 **Development verdict: PARTIAL PASS. Application release: NOT READY. M8 development continuation is feasible with the explicit carry-forward gates.**
 
 Final review date:14 November2026 (Asia/Saigon). Initial audit/native evidence was recorded13 November; the final account-wide mutation hardening,88-case quality run and105-group integration replay are recorded separately.
@@ -14,7 +17,7 @@ Private images are fetched only by numeric ID through the trusted Backend `/imag
 
 Photo viewer supports full-screen, previous/next, accessible button zoom/pan, metadata and edit/delete. Editing initializes all existing values, uses exact DD/MM/YYYY and real category slugs, and refetches authoritative state. Backend category-null semantics preserve an assigned category; clearing such an assignment is not offered. Album deletion confirmation reads the actual photo count and warns that photos/folder are removed. Native QA verified a1-photo consequence. Serial mutation gates, fresh comparisons, acknowledged read-back, Retry-After enforcement and uncertainty locks prevent duplicate local dispatch; no atomic conditional-write contract exists, so cross-client GET/write races remain open.
 
-Local quality passes lint/typecheck/auth/foundation/M2/M3/M4/M5/M6/M7/contrast. Unique Expo JS cases are346 (258 inherited +88 M7); auth10 is included within foundation26. Contrast14 and Apps Script Library12 are separate. Full Backend203 and targeted preserved M6 anniversary9 pass with0 failures/skips in disposable PostgreSQL. Real Kestrel/PostgreSQL HTTP passes105 scenario groups:84 inherited +21 Library. Standard CI adds `test:m7` without real-provider secrets; actual M7 GitHub CI is NOT RUN until a later authorized push. Exact commands, exit codes and scope are in TEST_RESULTS and test-results.
+Local quality passes lint/typecheck/auth/foundation/M2/M3/M4/M5/M6/M7/contrast. Unique Expo JS cases are346 (258 inherited +88 M7); auth10 is included within foundation26. Contrast14 and Apps Script Library12 are separate. Full Backend203 and targeted preserved M6 anniversary9 pass with0 failures/skips in disposable PostgreSQL. Real Kestrel/PostgreSQL HTTP passes105 scenario groups:84 inherited +21 Library. Standard CI adds `test:m7` without real-provider secrets; M7 GitHub CI was subsequently verified PASS on16 November2026, exact run43792501120. Exact commands, exit codes and scope are in TEST_RESULTS and test-results.
 
 Storage evidence is explicitly MOCK/ADAPTER. Production GoogleDriveLibraryStorageService runs against a test-only in-process Apps Script HTTP adapter for folder/upload/checksum/type/size/read/cache/delete/failure/compensation cases. Actual Google Drive remains **BLOCKED**: no authorized dedicated nonproduction folder/provider configuration was supplied. Real IDs/checksums/removal/quotas/DB consistency cannot be inferred from adapter tests or Android screenshots. Provider-success/DB-failure, incomplete rollback/deletion and orphan recovery remain release risks; the M3 avatar real-provider gate remains open too.
 
@@ -26,7 +29,7 @@ Final concurrency review moves mutation flags into a shared per-account coordina
 
 Dependency audit remains14 Moderate,0 High/Critical, matching M6, with no dependency/lock/native/Metro config change. npm's suggested Expo52 downgrade is incompatible; follow-up candidates require Expo58 compatibility and native verification. M4 key restrictions/quotas/release setup, recreation warning, original M5 Map-first cause, physical graph performance, conditional writes, accessibility and provider operational availability remain in CARRY_FORWARD_RISKS.
 
-Backend M6 sync: the nine-case `Tests/AnniversaryDateIntegrityTests.cs` existed locally untracked and was preserved. Targeted9/full203 pass. GitHub branch lookup succeeded but file fetch on `feature_minhduc` returned404. Remote synchronization is **NOT COMPLETE** and no push is claimed. The M4 validation fix remains preserved and its regression suite passes.
+Backend M6 sync: the nine-case `Tests/AnniversaryDateIntegrityTests.cs` existed locally untracked and was preserved. Targeted9/full203 pass. GitHub branch lookup succeeded but file fetch on `feature_minhduc` returned404. Remote synchronization is now **CLOSED** following the independent16 November read of ca20ba52. This task performed no push. The M4 validation fix remains preserved and its regression suite passes.
 
 Exact changed files are inventoried in FILES_CHANGED.md and test-results/changed-files.json. Primary source paths are:
 
