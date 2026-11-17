@@ -8,11 +8,11 @@ import type { Viewport } from './family-graph';
 export function useGraphViewport(initial: Viewport) {
   const x = useSharedValue(initial.x), y = useSharedValue(initial.y), scale = useSharedValue(initial.scale);
   const pinching = useSharedValue(false), previousPinch = useSharedValue(1), panPointers = useSharedValue(0);
-  const [viewport, setViewport] = useState(initial);
+  const [viewport, setViewportState] = useState(initial);
   const alive = useRef(true);
   useEffect(() => { alive.current = true; return () => { alive.current = false; }; }, []);
   const publish = useCallback((nextX: number, nextY: number, nextScale: number) => {
-    if (alive.current) setViewport(previous => previous.x === nextX && previous.y === nextY && previous.scale === nextScale ? previous : { x: nextX, y: nextY, scale: nextScale });
+    if (alive.current) setViewportState(previous => previous.x === nextX && previous.y === nextY && previous.scale === nextScale ? previous : { x: nextX, y: nextY, scale: nextScale });
   }, []);
   useAnimatedReaction(
     () => ({ column: Math.floor(x.value / 128), row: Math.floor(y.value / 128), zoom: Math.floor(Math.log2(scale.value) * 8) }),
