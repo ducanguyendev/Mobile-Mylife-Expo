@@ -1,0 +1,11 @@
+{"action":"account_upload","id":"m8_account_5d7f37bafdb8491a86ad33e67a1c54be","memberId":0,"bytes":1020,"provider":"in-process HTTP contract adapter; NOT Google Drive"}
+{"action":"account_delete","id":"m8_account_5d7f37bafdb8491a86ad33e67a1c54be","memberId":0,"bytes":0,"provider":"in-process HTTP contract adapter; NOT Google Drive"}
+{"action":"library_create_album_folder","id":null,"memberId":0,"bytes":0,"provider":"in-process HTTP contract adapter; NOT Google Drive"}
+{"action":"library_upload_photo","id":null,"memberId":0,"bytes":0,"provider":"in-process HTTP contract adapter; NOT Google Drive"}
+{"action":"library_read_photo","id":null,"memberId":0,"bytes":1,"provider":"in-process HTTP contract adapter; NOT Google Drive"}
+{"action":"library_create_album_folder","id":null,"memberId":0,"bytes":1,"provider":"in-process HTTP contract adapter; NOT Google Drive"}
+{"action":"library_create_album_folder","id":null,"memberId":0,"bytes":1,"provider":"in-process HTTP contract adapter; NOT Google Drive"}
+{"action":"library_delete_album","id":null,"memberId":0,"bytes":1,"provider":"in-process HTTP contract adapter; NOT Google Drive"}
+{"action":"library_delete_album","id":null,"memberId":0,"bytes":1,"provider":"in-process HTTP contract adapter; NOT Google Drive"}
+{"action":"library_delete_photo","id":null,"memberId":0,"bytes":1,"provider":"in-process HTTP contract adapter; NOT Google Drive"}
+{"action":"library_delete_album","id":null,"memberId":0,"bytes":0,"provider":"in-process HTTP contract adapter; NOT Google Drive"}

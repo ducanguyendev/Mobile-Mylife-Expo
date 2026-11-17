@@ -27,7 +27,8 @@ type AuthContextValue = {
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
-export function AuthProvider({ children }: PropsWithChildren) {
+const noPreparation = async () => undefined;
+export function AuthProvider({ children, beforeAuthenticated = noPreparation }: PropsWithChildren<{ beforeAuthenticated?: () => Promise<void> }>) {
   const [status, setStatus] = useState<AuthStatus>('checking');
   const [user, setUser] = useState<AuthenticatedUser | null>(null);
   const [rememberedEmail, setRememberedEmail] = useState<string | null>(null);
@@ -46,9 +47,11 @@ export function AuthProvider({ children }: PropsWithChildren) {
     const request = operations.read();
     const currentUser = await getCurrentUser();
     if (version !== getSessionVersion() || !operations.current(generation, request)) return;
+    await beforeAuthenticated();
+    if (version !== getSessionVersion() || !operations.current(generation, request)) return;
     setUser(currentUser);
     setStatus('authenticated');
-  }, [operations]);
+  }, [beforeAuthenticated, operations]);
 
   useEffect(() => {
     if (status !== 'authenticated') return;
@@ -68,15 +71,19 @@ export function AuthProvider({ children }: PropsWithChildren) {
       ]);
       setRememberedEmail(savedEmail.email);
       setRememberMe(savedEmail.rememberMe);
-      if (tokens) restoredUser = await withTimeout(getCurrentUser(), 32_000);
+      if (tokens) {
+        restoredUser = await withTimeout(getCurrentUser(), 32_000);
+        if (operations.current(generation)) await beforeAuthenticated();
+      }
     } catch {
+      restoredUser = null;
       if (operations.current(generation)) await authTokenStorage.clear().catch(() => undefined);
     } finally {
       if (!operations.current(generation)) return;
       setUser(restoredUser);
       setStatus(restoredUser ? 'authenticated' : 'unauthenticated');
     }
-  }, [operations]);
+  }, [beforeAuthenticated, operations]);
 
   useEffect(() => {
     const timer = setTimeout(() => { void restoreSession(); }, 0);
@@ -121,8 +128,12 @@ export function AuthProvider({ children }: PropsWithChildren) {
     let currentUser: AuthenticatedUser;
     try {
       currentUser = await getCurrentUser();
+      if (operations.current(generation)) await beforeAuthenticated();
     } catch (error) {
-      if (operations.current(generation)) await authTokenStorage.clear().catch(() => undefined);
+      if (operations.current(generation)) {
+        await authTokenStorage.clear().catch(() => undefined);
+        await logoutRequest(response.refreshToken).catch(() => undefined);
+      }
       throw error;
     }
     if (!operations.current(generation)) throw new ApiError('Session changed.', 'unauthorized', 401);
@@ -130,9 +141,10 @@ export function AuthProvider({ children }: PropsWithChildren) {
       await rememberedEmailStorage.write(currentUser.email).catch(() => undefined);
       setRememberedEmail(currentUser.email);
     }
+    if (!operations.current(generation)) throw new ApiError('Session changed.', 'unauthorized', 401);
     setUser(currentUser);
     setStatus('authenticated');
-  }, [operations]);
+  }, [beforeAuthenticated, operations]);
 
   const setRememberEmailPreference = useCallback(async (remember: boolean, email?: string) => {
     setRememberMe(remember);

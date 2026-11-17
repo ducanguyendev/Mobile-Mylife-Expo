@@ -1,0 +1,910 @@
+{
+  "checks": [
+    {
+      "name": "USER reads own authoritative profile",
+      "status": "PASS"
+    },
+    {
+      "name": "Profile edits allowed fields, preserves original fullName and updates shared AuthProvider",
+      "status": "PASS"
+    },
+    {
+      "name": "Web-cookie HTTP reads Expo edits with body tokens excluded",
+      "status": "PASS"
+    },
+    {
+      "name": "Backend rejects invalid name, phone, gender, impossible and future DOB",
+      "status": "PASS"
+    },
+    {
+      "name": "Profile overposting cannot change identity, role, fullName or activation",
+      "status": "PASS"
+    },
+    {
+      "name": "Expo detects stale profile before PUT",
+      "status": "PASS"
+    },
+    {
+      "name": "Wrong current password, confirmation mismatch and UTF8 overflow rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Password change succeeds and existing access/refresh sessions remain usable",
+      "status": "PASS"
+    },
+    {
+      "name": "Old password fails and new password signs in",
+      "status": "PASS"
+    },
+    {
+      "name": "Google-only Backend rejects local password and Expo preflight blocks dispatch",
+      "status": "PASS"
+    },
+    {
+      "name": "Account avatar upload and authoritative profile read use test HTTP storage adapter",
+      "status": "PASS"
+    },
+    {
+      "name": "Anonymous email avatar lookup is a public provider redirect",
+      "status": "PASS"
+    },
+    {
+      "name": "Avatar failed delete retains DB state, confirmed delete clears account avatar",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin statistics match disposable PostgreSQL counts",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin user list and real server email search",
+      "status": "PASS"
+    },
+    {
+      "name": "Promotion is authoritative and revokes old access and refresh session",
+      "status": "PASS"
+    },
+    {
+      "name": "Demotion removes stale Admin access and returns USER on fresh login",
+      "status": "PASS"
+    },
+    {
+      "name": "Administrator lock blocks existing access and login",
+      "status": "PASS"
+    },
+    {
+      "name": "Unlock requires new login and authoritative status becomes active",
+      "status": "PASS"
+    },
+    {
+      "name": "Delete rejects USER_HAS_FAMILY_MEMBERS with409",
+      "status": "PASS"
+    },
+    {
+      "name": "Permitted user delete is persisted and access is revoked",
+      "status": "PASS"
+    },
+    {
+      "name": "Backend administrator delete and lock protections",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin limited recent authentication logs with actual SUCCESS/FAILED values",
+      "status": "PASS"
+    },
+    {
+      "name": "USER Admin403, ADMIN family403 and anonymous401 across real routes",
+      "status": "PASS"
+    },
+    {
+      "name": "Native cookie mixing and Web unsafe request without CSRF remain rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent status actions serialize and retain one authoritative account",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent promotion and deletion preserve administrator protection under shared transaction lock",
+      "status": "PASS"
+    },
+    {
+      "name": "Two concurrent administrators cannot demote the last active administrator",
+      "status": "PASS"
+    },
+    {
+      "name": "Logout clears native credentials and revoked refresh cannot rotate",
+      "status": "PASS"
+    }
+  ],
+  "requests": [
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 400
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 400
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 400
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 400
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 400
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 400
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/change-password",
+      "method": "POST",
+      "status": 400
+    },
+    {
+      "path": "/api/auth/change-password",
+      "method": "POST",
+      "status": 400
+    },
+    {
+      "path": "/api/auth/change-password",
+      "method": "POST",
+      "status": 400
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/change-password",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 401
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/change-password",
+      "method": "POST",
+      "status": 400
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/avatar/[redacted]",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/avatar",
+      "method": "DELETE",
+      "status": 503
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/avatar",
+      "method": "DELETE",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/stats",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/21/role",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/21/role",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/logs",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/21/status",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 401
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/21/status",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/20",
+      "method": "DELETE",
+      "status": 409
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/21",
+      "method": "DELETE",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/admin/users/1",
+      "method": "DELETE",
+      "status": 400
+    },
+    {
+      "path": "/api/admin/users/1/status",
+      "method": "PUT",
+      "status": 400
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/logs",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/stats",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/logs",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/timeline",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/anniversaries",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/overview",
+      "method": "GET",
+      "status": 403
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/23/role",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/24/status",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/24/status",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/24/role",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/24",
+      "method": "DELETE",
+      "status": 400
+    },
+    {
+      "path": "/api/admin/users/1/role",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/23/role",
+      "method": "PUT",
+      "status": 401
+    },
+    {
+      "path": "/api/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    }
+  ],
+  "storage": "IN-PROCESS ACCOUNT/MEMBER/LIBRARY HTTP ADAPTER. Real Google Drive BLOCKED.",
+  "database": "Disposable PostgreSQL",
+  "transport": "Real Kestrel HTTP, adapted native bridge"
+}

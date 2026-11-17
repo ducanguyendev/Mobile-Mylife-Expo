@@ -1,0 +1,17 @@
+  Window #8 Window{e2fb059 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}:
+    mOwnerUid=10209 showForAllUsers=false package=com.anonymous.mylifemobile appop=NONE
+      fl=DIM_BEHIND LAYOUT_IN_SCREEN SECURE LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+    mBaseLayer=21000 mSubLayer=0    mToken=ActivityRecord{b8f60c2 u0 com.anonymous.mylifemobile/.MainActivity t21}
+    mActivityRecord=ActivityRecord{b8f60c2 u0 com.anonymous.mylifemobile/.MainActivity t21}
+    WindowStateAnimator{d446872 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}:
+      mSurface=Surface(name=com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity)/@0x81f64c3
+  Window #9 Window{2f47691 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}:
+    mOwnerUid=10209 showForAllUsers=false package=com.anonymous.mylifemobile appop=NONE
+      fl=LAYOUT_IN_SCREEN SECURE LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+    mBaseLayer=21000 mSubLayer=0    mToken=ActivityRecord{b8f60c2 u0 com.anonymous.mylifemobile/.MainActivity t21}
+    mActivityRecord=ActivityRecord{b8f60c2 u0 com.anonymous.mylifemobile/.MainActivity t21}
+    WindowStateAnimator{7e38140 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}:
+      mSurface=Surface(name=com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity)/@0x4bfb879
+  imeLayeringTarget in display# 0 Window{e2fb059 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}
+  imeInputTarget in display# 0 Window{e2fb059 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}
+  imeControlTarget in display# 0 Window{e2fb059 u0 com.anonymous.mylifemobile/com.anonymous.mylifemobile.MainActivity}

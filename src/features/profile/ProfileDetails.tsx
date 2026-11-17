@@ -38,5 +38,6 @@ export function ProfileDetails() {
     <SecondaryButton title={copy.edit} onPress={() => router.push('/account/edit')} />
     <SecondaryButton title={copy.avatar} onPress={() => router.push('/account/avatar')} />
     <SecondaryButton title={copy.security} onPress={() => router.push('/account/security')} />
+    <AppText variant="caption" tone="secondary">{language === 'vi' ? 'Ảnh chụp và ghi màn hình bị chặn khi hiển thị dữ liệu tài khoản, gia đình hoặc quản trị. Sau khi đăng xuất, màn hình đăng nhập có thể được chụp.' : 'Screenshots and recordings are blocked while account, family or administrator data is displayed. After sign-out, the sign-in screen can be captured.'}</AppText>
   </View>;
 }

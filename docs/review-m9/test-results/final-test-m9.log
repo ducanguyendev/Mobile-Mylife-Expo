@@ -1,0 +1,32 @@
+
+> mobile-mylife-expo@1.0.0 test:m9
+> node --test tests/m9-release-safety.test.cjs
+
+✔ private preparation waits for native protection acknowledgment (0.8955ms)
+✔ a delayed old logout cannot clear a new login protection (3.2366ms)
+✔ window reassertion installs a fresh tag before removing the old tag (0.7422ms)
+✔ native failure rejects preparation and allows a later controlled retry (0.5268ms)
+✔ iOS overlay is enabled before private readiness and disabled before public capture (0.2481ms)
+✔ overlay failure keeps capture protection and rejects private readiness (0.1811ms)
+✔ public bootstrap releases native startup protection without an existing JS tag (0.1367ms)
+✔ clean MainActivity receives exactly one startup FLAG_SECURE call (44.4941ms)
+✔ one-shot POST plugin preserves GET recovery and installs only once (0.5595ms)
+✔ release manifest rejects cleartext and backup without a QA exception (0.5044ms)
+✔ QA cleartext policy scopes its exception to numeric loopback only and can be removed (0.185ms)
+✔ API configuration rejects credentials, queries, fragments and nested origins (6.8603ms)
+✔ AuthProvider never publishes authenticated identity before native privacy is ready (41.3124ms)
+✔ failed native privacy preparation clears and revokes the newly minted session (22.9037ms)
+✔ privacy failure during restore cannot publish the previously read user (21.1791ms)
+✔ logout while native privacy is pending cannot resurrect a stale login (17.1211ms)
+✔ web Map surface renders a truthful fallback without importing native codegen (3.6732ms)
+✔ database conflict409 is displayed as a localized member conflict (39.3493ms)
+✔ button keeps a meaningful accessible name through loading and failed-request recovery (27.1343ms)
+✔ explicit contextual action labels override the default button title (8.814ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 533.3981

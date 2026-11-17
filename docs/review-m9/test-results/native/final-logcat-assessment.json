@@ -1,0 +1,7 @@
+{
+  "scope": "Available ring-buffer log only; no absence claim for events overwritten before capture",
+  "myLifeAnrLines": [],
+  "myLifeFatalProcessLines": [],
+  "fabricMountFailureLines": [],
+  "historicalDefects": "OPEN: lack of reproduction in covered final release flows is not closure"
+}

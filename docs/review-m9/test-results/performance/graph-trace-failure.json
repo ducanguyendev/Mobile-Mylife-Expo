@@ -1,0 +1,6 @@
+{
+  "message": "Expected values to be strictly equal:\n\n1 !== 0\n",
+  "status": "NOT PROVEN",
+  "classification": "First attempt failed permission for /data/local/tmp output; retry to /data/misc/perfetto-traces succeeds.",
+  "supersededBy": "graph-trace.json"
+}

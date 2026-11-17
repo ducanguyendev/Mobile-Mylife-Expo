@@ -1,7 +1,7 @@
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useMemo } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { AppState, StyleSheet, View } from 'react-native';
 
 import { onSessionExpired } from '@/features/auth/context/authEvents';
 import { AuthProvider, useAuth } from '@/features/auth/context/auth-provider';
@@ -11,10 +11,19 @@ import { AppScreen } from '@/components/layout/app-screen';
 import { AppText } from '@/design-system/components/app-text';
 import { getAuthStrings } from '@/features/auth/i18n/authStrings';
 import { AppThemeProvider, useAppTheme } from '@/theme/theme-provider';
+import { preparePrivateScreen, releasePrivateScreen } from '@/features/privacy/native-screen-privacy';
 
 function AppNavigation() {
   const { resolvedMode, colors, language, reducedMotion } = useAppTheme();
-  const { status, isUser, isAdmin, user } = useAuth();
+  const { status, isUser, isAdmin, user, logout } = useAuth();
+  useEffect(() => {
+    if (status === 'unauthenticated') void releasePrivateScreen().catch(() => undefined);
+    if (status !== 'authenticated') return;
+    const subscription = AppState.addEventListener('change', next => {
+      if (next === 'active') void preparePrivateScreen().catch(() => { void logout(); });
+    });
+    return () => subscription.remove();
+  }, [status, logout]);
   const navigationTheme = useMemo(() => {
     const base = resolvedMode === 'dark' ? DarkTheme : DefaultTheme;
     return {
@@ -66,7 +75,7 @@ function AppNavigation() {
 }
 
 export default function RootLayout() {
-  return <AppThemeProvider><AuthProvider><AppNavigation /></AuthProvider></AppThemeProvider>;
+  return <AppThemeProvider><AuthProvider beforeAuthenticated={preparePrivateScreen}><AppNavigation /></AuthProvider></AppThemeProvider>;
 }
 
 function SessionExpiryFeedback() {

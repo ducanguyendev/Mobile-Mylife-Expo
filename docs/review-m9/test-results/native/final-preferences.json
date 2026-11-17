@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-17",
+  "status": "PASS for sampled native states",
+  "darkLightSelectedStatesVerified": true,
+  "vietnameseEnglishLabelsChanged": true,
+  "font160and130Preserve100MemberAccount": true,
+  "configurationRecreationReturnsHome": true,
+  "routePositionPreserved": false,
+  "settingsRestored": "English/Light/font1.3",
+  "scope": "Selected state and hierarchy; no full screen-reader or pixel-compliance claim",
+  "evidence": [
+    "1500-pref-dark.xml",
+    "1501-pref-vi.xml",
+    "1502-pref-en.xml",
+    "1503-pref-light.xml",
+    "1504-font160.xml",
+    "1505-font130.xml"
+  ]
+}

@@ -1,0 +1,42 @@
+PASS USER01 registration through real native contract
+PASS USER02 native login and authoritative USER identity
+PASS USER03 session restoration retains validated identity
+PASS USER04 profile edit and authoritative read-back
+PASS USER05 account avatar adapter upload and removal
+PASS USER06 family members created through supported endpoints
+PASS USER07 parent/child relationship edit persists
+PASS USER08 authoritative Family Tree builds recorded relationship graph
+PASS USER09 manual map coordinates persist without device location
+PASS USER10 Family Map endpoint reflects manual location
+PASS USER11 custom Timeline event creation
+PASS USER12 derived birth events preserve exact original dates
+PASS USER13 anniversary source date creation and read-back
+PASS USER14 actual Backend Vietnamese lunar conversion
+PASS USER15 Home loaders reflect same family and recurring event
+PASS USER16 Library category creation
+PASS USER17 Library album creation
+PASS USER18 native Bearer multipart photo upload through adapter
+PASS USER19 authenticated Backend photo bytes equal selected synthetic fixture
+PASS USER20 photo metadata read-back
+PASS AUDIT concurrent-client and repeated-intent characterization recorded without exactly-once claim
+PASS SECURITY foreign private photo and member return404
+PASS SECURITY account switch rejects late private image body and removes owner Library
+PASS USER21 photo and album deletion confirmed from actual Backend
+PASS USER22 logout revokes copied access session
+PASS USER23 another-account native login
+PASS USER24 no previous family/Timeline/Library data under switched identity
+PASS ADMIN01 native Admin login
+PASS ADMIN02 authoritative dashboard counts
+PASS ADMIN03 user list and email identity lookup
+PASS ADMIN04 actual limited login logs
+PASS ADMIN05 promotion persists and revokes previous USER session
+PASS ADMIN10 demotion requires fresh USER login
+PASS ADMIN06 lock rejects access and unlock allows fresh sign-in
+PASS ADMIN07 administrator deletion protection
+PASS ADMIN08 family-member deletion409 protection
+PASS ADMIN09 permitted empty-account deletion read-back
+PASS SECURITY forged unsigned ADMIN JWT rejected
+PASS SECURITY expired access rejects raw token; concurrent native requests recover through refresh
+PASS SECURITY anonymous protected endpoints reject401
+PASS SECURITY malformed profile DTO validation remains authoritative
+M9 HTTP groups 41

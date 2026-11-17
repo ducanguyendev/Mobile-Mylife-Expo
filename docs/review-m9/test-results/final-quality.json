@@ -1,0 +1,67 @@
+[
+  {
+    "command": "npm run lint",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-lint.log"
+  },
+  {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-typecheck.log"
+  },
+  {
+    "command": "npm run test:auth",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-test-auth.log"
+  },
+  {
+    "command": "npm run test:foundation",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-test-foundation.log"
+  },
+  {
+    "command": "npm run test:m2",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-test-m2.log"
+  },
+  {
+    "command": "npm run test:m3",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-test-m3.log"
+  },
+  {
+    "command": "npm run test:m4",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-test-m4.log"
+  },
+  {
+    "command": "npm run test:m5",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-test-m5.log"
+  },
+  {
+    "command": "npm run test:m6",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-test-m6.log"
+  },
+  {
+    "command": "npm run test:m7",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-test-m7.log"
+  },
+  {
+    "command": "npm run test:m8",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-test-m8.log"
+  },
+  {
+    "command": "npm run test:m9",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-test-m9.log"
+  },
+  {
+    "command": "npm run audit:contrast:m2",
+    "exitCode": 0,
+    "log": "docs\\review-m9\\test-results\\final-audit-contrast-m2.log"
+  }
+]

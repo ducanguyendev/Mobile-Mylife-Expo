@@ -1,0 +1,145 @@
+{
+  "limitations": [
+    {
+      "operation": "Profile PUT",
+      "observed": "Both overlapping stale clients receive success; one displayName wins",
+      "serverPrecondition": "Absent",
+      "status": "OPEN",
+      "severity": "HIGH"
+    },
+    {
+      "operation": "Member PUT",
+      "observed": "Overlapping transaction rejected409; sequential stale writes still lack version preconditions",
+      "serverPrecondition": "Absent",
+      "status": "OPEN",
+      "severity": "HIGH",
+      "statuses": [
+        200,
+        409
+      ]
+    },
+    {
+      "operation": "Relationship PUT",
+      "observed": "Overlapping transaction rejected409; sequential stale writes still lack version preconditions",
+      "serverPrecondition": "Absent",
+      "status": "OPEN",
+      "severity": "HIGH",
+      "statuses": [
+        200,
+        409
+      ]
+    },
+    {
+      "operation": "Manual location PUT",
+      "observed": "Both stale writes accepted; no server version precondition",
+      "serverPrecondition": "Absent",
+      "status": "OPEN",
+      "severity": "HIGH",
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    {
+      "operation": "Timeline PUT",
+      "observed": "Both stale writes accepted; no server version precondition",
+      "serverPrecondition": "Absent",
+      "status": "OPEN",
+      "severity": "HIGH",
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    {
+      "operation": "Anniversary PUT",
+      "observed": "Both stale writes accepted; no server version precondition",
+      "serverPrecondition": "Absent",
+      "status": "OPEN",
+      "severity": "HIGH",
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    {
+      "operation": "Album PUT",
+      "observed": "Both stale writes accepted; no server version precondition",
+      "serverPrecondition": "Absent",
+      "status": "OPEN",
+      "severity": "HIGH",
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    {
+      "operation": "Photo metadata PUT",
+      "observed": "Both stale writes accepted; no server version precondition",
+      "serverPrecondition": "Absent",
+      "status": "OPEN",
+      "severity": "HIGH",
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    {
+      "operation": "Album POST across clients/process restarts",
+      "observed": "Independent repeated intent creates distinct rows; no idempotency key protocol",
+      "status": "OPEN",
+      "severity": "HIGH"
+    }
+  ],
+  "concurrentResults": [
+    {
+      "operation": "Member PUT",
+      "statuses": [
+        200,
+        409
+      ]
+    },
+    {
+      "operation": "Relationship PUT",
+      "statuses": [
+        200,
+        409
+      ]
+    },
+    {
+      "operation": "Location PUT",
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    {
+      "operation": "Timeline PUT",
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    {
+      "operation": "Anniversary PUT",
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    {
+      "operation": "Album PUT",
+      "statuses": [
+        200,
+        200
+      ]
+    },
+    {
+      "operation": "Photo PUT",
+      "statuses": [
+        200,
+        200
+      ]
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "checks": [
+    {
+      "name": "Empty native account uses raw albums/overview",
+      "status": "PASS"
+    },
+    {
+      "name": "Expo creates category and Web cookie reads same generated slug",
+      "status": "PASS"
+    },
+    {
+      "name": "Web category rename refetch preserves slug",
+      "status": "PASS"
+    },
+    {
+      "name": "Expo creates album; Web reads identical metadata and no invented cover",
+      "status": "PASS"
+    },
+    {
+      "name": "Album edit authoritative reload",
+      "status": "PASS"
+    },
+    {
+      "name": "Native Bearer multipart two synthetic images with all metadata persists",
+      "status": "PASS"
+    },
+    {
+      "name": "Home authoritative photo count reflects upload",
+      "status": "PASS"
+    },
+    {
+      "name": "Private bytes match via native/Web; private cache, ETag304 and nosniff",
+      "status": "PASS"
+    },
+    {
+      "name": "Expo metadata edit reads identically through Web",
+      "status": "PASS"
+    },
+    {
+      "name": "Web metadata update refreshes identically in Expo preserving category/date",
+      "status": "PASS"
+    },
+    {
+      "name": "In-use category deletion is409",
+      "status": "PASS"
+    },
+    {
+      "name": "Foreign album/category/photo read/write404 and anonymous private image401",
+      "status": "PASS"
+    },
+    {
+      "name": "Backend rejects invalid, ISO and future display dates",
+      "status": "PASS"
+    },
+    {
+      "name": "Real Backend rejects21 files, HEIC, false signatures, mismatched extensions and >5MiB",
+      "status": "PASS"
+    },
+    {
+      "name": "Adapter checksum failure502 compensates and DB retains two existing photos",
+      "status": "PASS"
+    },
+    {
+      "name": "Adapter delete failures502 retain authoritative album/photo DB records",
+      "status": "PASS"
+    },
+    {
+      "name": "Photo delete204 reflected through Web and private image404",
+      "status": "PASS"
+    },
+    {
+      "name": "Album/category delete204 and Home/Web authoritative empty state",
+      "status": "PASS"
+    },
+    {
+      "name": "Shared overview/detail uncertainty gate blocks duplicate retry and reconciles a simulated lost acknowledgement after real POST",
+      "status": "PASS"
+    },
+    {
+      "name": "Account transition fences late real-HTTP preparation and even stale focus activation before any POST",
+      "status": "PASS"
+    },
+    {
+      "name": "Logged-out native session cannot retrieve private photo",
+      "status": "PASS"
+    }
+  ],
+  "requests": [
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/overview",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/categories",
+      "method": "POST",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/categories",
+      "method": "GET",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/categories/1",
+      "method": "PUT",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/categories",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "POST",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "GET",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "PUT",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2/photos",
+      "method": "POST",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/photos/1/image",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/photos/1/image",
+      "method": "GET",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/photos/1/image",
+      "method": "GET",
+      "status": 304,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/categories",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/photos/1",
+      "method": "PUT",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "GET",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/photos/1",
+      "method": "PUT",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/categories/1",
+      "method": "DELETE",
+      "status": 409,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "GET",
+      "status": 404,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "PUT",
+      "status": 404,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/photos/1",
+      "method": "DELETE",
+      "status": 404,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/categories/1",
+      "method": "DELETE",
+      "status": 404,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/photos/1/image",
+      "method": "GET",
+      "status": 404,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/photos/1",
+      "method": "PUT",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/photos/1",
+      "method": "PUT",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/photos/1",
+      "method": "PUT",
+      "status": 400,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/albums/2/photos",
+      "method": "POST",
+      "status": 400,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2/photos",
+      "method": "POST",
+      "status": 400,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2/photos",
+      "method": "POST",
+      "status": 400,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2/photos",
+      "method": "POST",
+      "status": 400,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2/photos",
+      "method": "POST",
+      "status": 400,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2/photos",
+      "method": "POST",
+      "status": 502,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/photos/1",
+      "method": "DELETE",
+      "status": 502,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "DELETE",
+      "status": 502,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/photos/1",
+      "method": "DELETE",
+      "status": 204,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "GET",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/photos/1/image",
+      "method": "GET",
+      "status": 404,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "DELETE",
+      "status": 204,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200,
+      "transport": "Web cookie"
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/categories/1",
+      "method": "DELETE",
+      "status": 204,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/categories",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "POST",
+      "status": 201,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/overview",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums/3",
+      "method": "DELETE",
+      "status": 204,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/overview",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/overview",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200,
+      "transport": "Native Bearer"
+    },
+    {
+      "path": "/api/logout",
+      "method": "POST",
+      "status": 200,
+      "transport": "Native Bearer"
+    }
+  ],
+  "storage": "IN-PROCESS HTTP ADAPTER; NOT REAL GOOGLE DRIVE",
+  "database": "Disposable PostgreSQL",
+  "transport": "Real Kestrel native Bearer and Web cookie HTTP; no browser UI"
+}

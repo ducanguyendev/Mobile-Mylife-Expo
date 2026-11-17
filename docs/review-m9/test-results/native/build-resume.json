@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-17",
+  "sha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "bytes": 49972158,
+  "type": "Release variant; embedded Hermes/R8; internal debug signing",
+  "package": "com.anonymous.mylifemobile",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "abi": "x86_64",
+  "qaLoopbackNetworkException": true,
+  "explicitIdleBusyFalse": true,
+  "storeReady": false,
+  "command": "android/gradlew.bat -p android -I ../scripts/android-windows-paths.gradle app:assembleRelease -PreactNativeArchitectures=x86_64 --no-daemon --max-workers=2",
+  "exitCode": 0,
+  "buildDuration": "2m10s"
+}

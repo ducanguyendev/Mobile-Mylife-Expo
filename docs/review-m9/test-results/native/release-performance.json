@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-17",
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "checks": [
+    {
+      "name": "Large-data home loaded and profiled",
+      "status": "COLLECTED",
+      "screen": "home",
+      "totalPssMiB": 138.72,
+      "evidence": "1200-release-performance",
+      "frames": {
+        "measured": 119,
+        "within32msPercent": 96.64,
+        "budgetPercent": 90,
+        "passes": true
+      }
+    },
+    {
+      "name": "Large-data graph loaded and profiled",
+      "status": "COLLECTED",
+      "screen": "graph",
+      "totalPssMiB": 152.3,
+      "evidence": "1201-release-performance",
+      "frames": {
+        "measured": 120,
+        "within32msPercent": 14.17,
+        "budgetPercent": 90,
+        "passes": false
+      }
+    },
+    {
+      "name": "Large-data map-fallback loaded and profiled",
+      "status": "COLLECTED",
+      "screen": "map-fallback",
+      "totalPssMiB": 245.27,
+      "evidence": "1204-release-performance",
+      "frames": {
+        "measured": 119,
+        "within32msPercent": 78.15,
+        "budgetPercent": 90,
+        "passes": false
+      }
+    },
+    {
+      "name": "Large-data timeline loaded and profiled",
+      "status": "COLLECTED",
+      "screen": "timeline",
+      "totalPssMiB": 253.06,
+      "evidence": "1205-release-performance",
+      "frames": {
+        "measured": 119,
+        "within32msPercent": 86.55,
+        "budgetPercent": 90,
+        "passes": false
+      }
+    },
+    {
+      "name": "Large-data calendar loaded and profiled",
+      "status": "COLLECTED",
+      "screen": "calendar",
+      "totalPssMiB": 276.69,
+      "evidence": "1206-release-performance",
+      "frames": {
+        "measured": 119,
+        "within32msPercent": 82.35,
+        "budgetPercent": 90,
+        "passes": false
+      }
+    },
+    {
+      "name": "Large-data gallery loaded and profiled",
+      "status": "COLLECTED",
+      "screen": "gallery",
+      "totalPssMiB": 384.17,
+      "evidence": "1207-release-performance",
+      "frames": {
+        "measured": 119,
+        "within32msPercent": 77.31,
+        "budgetPercent": 90,
+        "passes": false
+      }
+    },
+    {
+      "name": "Large-data private lightbox memory observation",
+      "status": "COLLECTED",
+      "screen": "lightbox",
+      "totalPssMiB": 357.93,
+      "decodedImageObserved": true,
+      "evidence": "1210-release-performance"
+    }
+  ],
+  "evidenceThrough": 1210,
+  "verdictScope": "Measurement collected; evaluate explicit budgets separately, not an all-budget PASS"
+}

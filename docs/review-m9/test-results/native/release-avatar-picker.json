@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "status": "PARTIAL",
+  "systemPickerOpens": true,
+  "pickerCancelReturnsToAvatar": true,
+  "selectionUploadRemoval": "NOT TESTED on final APK: dedicated emulator reports no media; shell external storage denied and MediaStore insertion did not produce a row. No broader permission granted.",
+  "evidence": [
+    "950-avatar-picker.xml",
+    "951-avatar-picker-state.xml",
+    "952-picker-cancel.xml"
+  ],
+  "realDrive": "BLOCKED",
+  "priorEvidence": "M8 native adapter upload/remove is historical, not final-APK proof"
+}

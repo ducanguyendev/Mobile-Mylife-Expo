@@ -1,0 +1,23 @@
+{
+  "error": "Expected QA screen absent: Password changed.",
+  "evidenceThrough": 584,
+  "checks": [
+    {
+      "name": "Profile save/Back cycle 1",
+      "status": "PASS",
+      "authoritativeReadBack": true
+    },
+    {
+      "name": "Profile save/Back cycle 2",
+      "status": "PASS",
+      "authoritativeReadBack": true
+    },
+    {
+      "name": "Profile save/Back cycle 3",
+      "status": "PASS",
+      "authoritativeReadBack": true
+    }
+  ],
+  "classification": "Harness observation failure: success text was above viewport. Native password change actually succeeded, confirmed by fresh new-password login and empty fields.",
+  "supersededBy": "release-profile.json;591-593-password-*.xml"
+}

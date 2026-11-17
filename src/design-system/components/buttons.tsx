@@ -21,7 +21,8 @@ function AppButton({ title, icon, fullWidth, compact, loading, style, disabled, 
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityState={{ disabled: disabled || loading, busy: loading }}
+      accessibilityLabel={title}
+      accessibilityState={{ disabled: Boolean(disabled || loading), busy: Boolean(loading) }}
       disabled={disabled || loading}
       style={(state) => [
         styles.button,

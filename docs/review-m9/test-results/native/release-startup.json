@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-17",
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "checks": [
+    {
+      "name": "cold meaningful Home observation",
+      "status": "COLLECTED",
+      "kind": "cold",
+      "measuredMs": 4503,
+      "budgetMs": 10000,
+      "evidence": "1300-release-startup",
+      "includesHierarchyObservationOverhead": true
+    },
+    {
+      "name": "cold meaningful Home observation",
+      "status": "COLLECTED",
+      "kind": "cold",
+      "measuredMs": 4289,
+      "budgetMs": 10000,
+      "evidence": "1301-release-startup",
+      "includesHierarchyObservationOverhead": true
+    },
+    {
+      "name": "cold meaningful Home observation",
+      "status": "COLLECTED",
+      "kind": "cold",
+      "measuredMs": 4757,
+      "budgetMs": 10000,
+      "evidence": "1302-release-startup",
+      "includesHierarchyObservationOverhead": true
+    },
+    {
+      "name": "warm meaningful Home observation",
+      "status": "COLLECTED",
+      "kind": "warm",
+      "measuredMs": 3377,
+      "budgetMs": 3000,
+      "evidence": "1303-release-startup",
+      "includesHierarchyObservationOverhead": true
+    },
+    {
+      "name": "warm meaningful Home observation",
+      "status": "COLLECTED",
+      "kind": "warm",
+      "measuredMs": 3332,
+      "budgetMs": 3000,
+      "evidence": "1304-release-startup",
+      "includesHierarchyObservationOverhead": true
+    },
+    {
+      "name": "warm meaningful Home observation",
+      "status": "COLLECTED",
+      "kind": "warm",
+      "measuredMs": 3377,
+      "budgetMs": 3000,
+      "evidence": "1305-release-startup",
+      "includesHierarchyObservationOverhead": true
+    }
+  ],
+  "evidenceThrough": 1305,
+  "verdictScope": "Measurement collected; evaluate explicit budgets separately, not an all-budget PASS"
+}

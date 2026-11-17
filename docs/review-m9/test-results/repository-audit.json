@@ -1,0 +1,52 @@
+{
+  "repositories": [
+    {
+      "name": "Expo",
+      "head": "1e64130e898cdeb5f30b0ac6dd07a28d7ab9a8c1",
+      "branch": "feature_minhduc",
+      "changes": [
+        "M app.json",
+        " M package-lock.json",
+        " M package.json",
+        " M src/app/_layout.tsx",
+        " M src/config/env.ts",
+        " M src/features/auth/context/auth-provider.tsx",
+        " M src/features/profile/ProfileDetails.tsx",
+        "?? docs/review-m9/",
+        "?? plugins/with-private-window.cjs",
+        "?? plugins/with-release-network-policy.cjs",
+        "?? scripts/android-windows-paths.gradle",
+        "?? scripts/run-isolated-m9.cjs",
+        "?? scripts/run-m9-backend.cjs",
+        "?? scripts/run-m9-baseline-http.cjs",
+        "?? scripts/run-m9-quality.cjs",
+        "?? src/features/privacy/",
+        "?? tests/m9-release-safety.test.cjs",
+        "?? tests/real-backend.m9.cjs"
+      ]
+    },
+    {
+      "name": "Backend",
+      "head": "ca20ba52635a026b32449f919e60410ff880c829",
+      "branch": "feature_minhduc",
+      "changes": [
+        "M Features/Auth/Controllers/AccountController.cs",
+        " M Features/User/Models/UpdateProfileViewModel.cs",
+        " M Tests/ProfileUpdateContractTests.cs"
+      ]
+    },
+    {
+      "name": "Web",
+      "head": "144fc506c0ec7957d40a137351aeda296b8937b5",
+      "branch": "feature_minhduc",
+      "changes": []
+    }
+  ],
+  "backendPatchWasPresentAtStart": true,
+  "expoInitiallyClean": true,
+  "webInitiallyClean": true,
+  "userAcceptedPolicies": {
+    "accountAvatar": "Intentionally public email lookup/provider redirect",
+    "passwordChange": "Retain existing active sessions"
+  }
+}

@@ -1,0 +1,14 @@
+// Keep CMake staging paths short enough for Windows Ninja/mkdir path limits.
+// Apply only to local Windows builds; no dependency/native source is patched.
+gradle.beforeProject { target ->
+    ["com.android.library", "com.android.application"].each { pluginName ->
+        target.pluginManager.withPlugin(pluginName) {
+            if (System.getProperty("os.name").toLowerCase().contains("windows")) {
+                def android = target.extensions.getByName("android")
+                def workspace = target.rootProject.projectDir.parentFile.parentFile
+                android.externalNativeBuild.cmake.buildStagingDirectory = new File(workspace, ".tmp/m9-cxx/${target.name}")
+                android.defaultConfig.externalNativeBuild.cmake.arguments.add("-DCMAKE_OBJECT_PATH_MAX=240")
+            }
+        }
+    }
+}

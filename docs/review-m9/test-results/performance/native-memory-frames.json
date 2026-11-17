@@ -1,0 +1,107 @@
+{
+  "build": {
+    "date": "2026-11-17",
+    "sha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+    "bytes": 49972158,
+    "type": "Release variant; embedded Hermes/R8; internal debug signing",
+    "package": "com.anonymous.mylifemobile",
+    "version": "1.0.0",
+    "versionCode": 1,
+    "abi": "x86_64",
+    "qaLoopbackNetworkException": true,
+    "explicitIdleBusyFalse": true,
+    "storeReady": false,
+    "command": "android/gradlew.bat -p android -I ../scripts/android-windows-paths.gradle app:assembleRelease -PreactNativeArchitectures=x86_64 --no-daemon --max-workers=2",
+    "exitCode": 0,
+    "buildDuration": "2m10s"
+  },
+  "device": "API35 x86_64 emulator/WHPX/SwiftShader/360dp/font1.3; not physical FPS",
+  "measurements": [
+    {
+      "screen": "home",
+      "totalPssMiB": 138.72,
+      "evidence": "1200-release-performance",
+      "frames": {
+        "measured": 119,
+        "within32msPercent": 96.64,
+        "budgetPercent": 90,
+        "passes": true
+      }
+    },
+    {
+      "screen": "graph",
+      "totalPssMiB": 152.3,
+      "evidence": "1201-release-performance",
+      "frames": {
+        "measured": 120,
+        "within32msPercent": 14.17,
+        "budgetPercent": 90,
+        "passes": false
+      }
+    },
+    {
+      "screen": "map-fallback",
+      "totalPssMiB": 245.27,
+      "evidence": "1204-release-performance",
+      "frames": {
+        "measured": 119,
+        "within32msPercent": 78.15,
+        "budgetPercent": 90,
+        "passes": false
+      }
+    },
+    {
+      "screen": "timeline",
+      "totalPssMiB": 253.06,
+      "evidence": "1205-release-performance",
+      "frames": {
+        "measured": 119,
+        "within32msPercent": 86.55,
+        "budgetPercent": 90,
+        "passes": false
+      }
+    },
+    {
+      "screen": "calendar",
+      "totalPssMiB": 276.69,
+      "evidence": "1206-release-performance",
+      "frames": {
+        "measured": 119,
+        "within32msPercent": 82.35,
+        "budgetPercent": 90,
+        "passes": false
+      }
+    },
+    {
+      "screen": "gallery",
+      "totalPssMiB": 384.17,
+      "evidence": "1207-release-performance",
+      "frames": {
+        "measured": 119,
+        "within32msPercent": 77.31,
+        "budgetPercent": 90,
+        "passes": false
+      }
+    },
+    {
+      "screen": "lightbox",
+      "totalPssMiB": 357.93,
+      "decodedImageObserved": true,
+      "evidence": "1210-release-performance"
+    }
+  ],
+  "budgetsMiB": {
+    "normal": 400,
+    "large": 600,
+    "growth": 150
+  },
+  "gesturesPerScreen": 10,
+  "graphicsScope": "Android HWUI framestats; does not measure every GL/map or JS frame",
+  "budgetVerdicts": {
+    "frameGate": "FAIL on graph/map fallback/Timeline/calendar/gallery; Home sample PASS",
+    "absolutePss": "PASS for measured point samples only",
+    "sameProcessGrowthMiB": 245.45,
+    "growthGate": "FAIL versus150MiB; not proof of memory leak",
+    "physicalDevice": "NOT TESTED"
+  }
+}

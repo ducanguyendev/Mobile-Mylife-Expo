@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-17",
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "checks": [
+    {
+      "name": "Current native account changed to ADMIN; old session expires on resume",
+      "status": "PASS"
+    },
+    {
+      "name": "Fresh ADMIN login has the correct native tabs",
+      "status": "PASS",
+      "familyTab": false
+    },
+    {
+      "name": "Current native account changed to USER; old session expires on resume",
+      "status": "PASS"
+    },
+    {
+      "name": "Fresh USER login has the correct native tabs",
+      "status": "PASS",
+      "familyTab": true
+    }
+  ],
+  "evidenceThrough": 913
+}

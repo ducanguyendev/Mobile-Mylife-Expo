@@ -1,0 +1,28 @@
+{
+  "heads": {
+    "Expo": {
+      "sha": "1e64130e898cdeb5f30b0ac6dd07a28d7ab9a8c1",
+      "url": "https://github.com/ducanguyendev/Mobile-Mylife-Expo/tree/feature_minhduc"
+    },
+    "Backend": {
+      "sha": "ca20ba52635a026b32449f919e60410ff880c829",
+      "url": "https://github.com/ducanguyendev/Backend-MyLife/tree/feature_minhduc"
+    },
+    "Web": {
+      "sha": "144fc506c0ec7957d40a137351aeda296b8937b5",
+      "url": "https://github.com/ducanguyendev/Frontend-MyLife/tree/feature_minhduc"
+    }
+  },
+  "m8Ci": [
+    {
+      "id": 43824725574,
+      "name": "Expo quality",
+      "head_sha": "1e64130e898cdeb5f30b0ac6dd07a28d7ab9a8c1",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ducanguyendev/Mobile-Mylife-Expo/actions/runs/43824725574",
+      "updated_at": "2026-11-16T07:34:30Z"
+    }
+  ],
+  "backendProfileValidationAbsentRemotely": true
+}

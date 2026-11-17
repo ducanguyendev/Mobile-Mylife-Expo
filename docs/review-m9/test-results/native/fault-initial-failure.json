@@ -1,0 +1,52 @@
+{
+  "error": "Command failed: E:\\Nodejs\\node.exe scripts/m9-native.cjs ui tap Cancel  694-release-faults\nM9 native action failed. Inspect the current device state before retrying.\n",
+  "evidenceThrough": 694,
+  "checks": [
+    {
+      "name": "Native album before-backend: explicit failure, no Backend row",
+      "status": "PASS",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "before-backend",
+        "forwarded": false
+      },
+      "evidence": "657-release-faults"
+    },
+    {
+      "name": "Native album body-disconnect: explicit failure, no Backend row",
+      "status": "NOT PROVEN",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "before-backend",
+        "forwarded": false
+      },
+      "evidence": "669-release-faults"
+    },
+    {
+      "name": "Native album rate-limit: explicit failure, no Backend row",
+      "status": "NOT PROVEN",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "before-backend",
+        "forwarded": false
+      },
+      "evidence": "681-release-faults"
+    },
+    {
+      "name": "Native album bad-gateway: explicit failure, no Backend row",
+      "status": "PASS",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "injected-status",
+        "status": 502,
+        "forwarded": false
+      },
+      "evidence": "693-release-faults"
+    }
+  ],
+  "validationStatus": "Initial event validation was insufficient; body-disconnect and rate-limit are NOT PROVEN by this attempt."
+}

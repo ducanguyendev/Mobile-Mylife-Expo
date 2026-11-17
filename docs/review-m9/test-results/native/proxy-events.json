@@ -1,0 +1,131 @@
+[
+  {
+    "path": "/api/me/profile",
+    "method": "PUT",
+    "backendStatus": 200
+  },
+  {
+    "path": "/api/me/profile",
+    "method": "PUT",
+    "backendStatus": 200
+  },
+  {
+    "path": "/api/me/profile",
+    "method": "PUT",
+    "backendStatus": 200
+  },
+  {
+    "path": "/api/me/profile",
+    "method": "PUT",
+    "backendStatus": 200
+  },
+  {
+    "path": "/api/auth/change-password",
+    "method": "POST",
+    "backendStatus": 200
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "backendStatus": 401
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "backendStatus": 201,
+    "acknowledgementDropped": true
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "fault": "before-backend",
+    "forwarded": false
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "fault": "injected-status",
+    "status": 502,
+    "forwarded": false
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "fault": "before-backend",
+    "forwarded": false
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "fault": "body-disconnect",
+    "receivedBodyBytes": 46,
+    "forwarded": false
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "fault": "injected-status",
+    "status": 429,
+    "forwarded": false
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "fault": "injected-status",
+    "status": 502,
+    "forwarded": false
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "fault": "injected-status",
+    "status": 503,
+    "forwarded": false
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "backendStatus": 401
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "backendStatus": 201,
+    "acknowledgementHeldMs": 15000
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "backendStatus": 401
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "backendStatus": 201,
+    "acknowledgementHeldMs": 15000
+  },
+  {
+    "path": "/api/library/albums",
+    "method": "POST",
+    "backendStatus": 201,
+    "acknowledgementHeldMs": 5000
+  },
+  {
+    "path": "/api/admin/stats",
+    "method": "GET",
+    "fault": "injected-status",
+    "status": 503,
+    "forwarded": false
+  },
+  {
+    "path": "/api/admin/users/3/status",
+    "method": "PUT",
+    "backendStatus": 200,
+    "acknowledgementDropped": true
+  },
+  {
+    "path": "/api/admin/users/3/status",
+    "method": "PUT",
+    "backendStatus": 200
+  }
+]

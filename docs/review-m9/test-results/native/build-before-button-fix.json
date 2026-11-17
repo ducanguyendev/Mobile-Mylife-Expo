@@ -1,0 +1,11 @@
+{
+  "type": "Android release variant, embedded Hermes JS, R8 enabled, existing debug certificate for internal QA",
+  "sha256": "a4d4d6738f28f952ae5036b5f8bfdb1aff9975c780f14d22073a14cb7c298d6a",
+  "bytes": 49972118,
+  "package": "com.anonymous.mylifemobile",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "abi": "x86_64",
+  "qaLoopbackNetworkException": true,
+  "storeReady": false
+}

@@ -19,9 +19,14 @@
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.anonymous.mylifemobile",
+      "versionCode": 1,
       "blockedPermissions": [
         "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION"
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
       ]
     },
     "web": {
@@ -48,7 +53,9 @@
         }
       ],
       "@vietmap/vietmap-gl-react-native",
-      "./plugins/with-network-retry-policy.cjs"
+      "./plugins/with-network-retry-policy.cjs",
+      "./plugins/with-private-window.cjs",
+      "./plugins/with-release-network-policy.cjs"
     ],
     "experiments": {
       "typedRoutes": true,

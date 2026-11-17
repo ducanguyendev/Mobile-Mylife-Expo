@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-17",
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "checks": [
+    {
+      "name": "Release ADMIN Overview and authoritative stats",
+      "status": "PASS"
+    },
+    {
+      "name": "Release ADMIN users screen",
+      "status": "PASS"
+    },
+    {
+      "name": "Release ADMIN login logs screen",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN family deep link denied",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin failed read hides counts; explicit retry restores authoritative stats",
+      "status": "PASS",
+      "outageEvidence": "1007-release-admin"
+    },
+    {
+      "name": "Native confirmed Admin lock survives dropped acknowledgment",
+      "status": "PASS",
+      "lockedOnServer": true,
+      "nativePutEvents": [
+        {
+          "path": "/api/admin/users/3/status",
+          "method": "PUT",
+          "backendStatus": 200,
+          "acknowledgementDropped": true
+        },
+        {
+          "path": "/api/admin/users/3/status",
+          "method": "PUT",
+          "backendStatus": 200
+        }
+      ],
+      "semantics": "Fixed target-state PUT; no exactly-once claim"
+    },
+    {
+      "name": "Synthetic lock target restored through supported Admin API",
+      "status": "PASS"
+    }
+  ],
+  "evidenceThrough": 1015
+}

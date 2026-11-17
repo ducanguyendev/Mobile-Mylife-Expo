@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-17",
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "checks": [
+    {
+      "name": "Profile save/Back cycle 1",
+      "status": "PASS",
+      "authoritativeReadBack": true
+    },
+    {
+      "name": "Profile save/Back cycle 2",
+      "status": "PASS",
+      "authoritativeReadBack": true
+    },
+    {
+      "name": "Profile save/Back cycle 3",
+      "status": "PASS",
+      "authoritativeReadBack": true
+    },
+    {
+      "name": "Native password change; fresh new-password authentication confirms actual Backend state",
+      "status": "PASS",
+      "successFeedbackWasAboveViewport": true,
+      "existingSessionsIntentionallyRetained": true
+    },
+    {
+      "name": "All three native password fields cleared after success",
+      "status": "PASS",
+      "fieldCount": 3,
+      "evidence": "593-password-cleared.xml"
+    },
+    {
+      "name": "Native sign-out and fresh USER login with changed password",
+      "status": "PASS",
+      "evidence": "594-native-logout.xml;600-606-user-login.xml"
+    },
+    {
+      "name": "Idle Save changes no longer announces busy after all3 saves",
+      "status": "PASS",
+      "evidence": [
+        "554-release-profile.xml",
+        "560-release-profile.xml",
+        "566-release-profile.xml"
+      ]
+    }
+  ],
+  "evidenceThrough": 606
+}

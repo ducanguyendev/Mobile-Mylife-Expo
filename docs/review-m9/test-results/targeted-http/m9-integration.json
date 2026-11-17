@@ -1,0 +1,942 @@
+{
+  "checks": [
+    {
+      "name": "USER01 registration through real native contract",
+      "status": "PASS"
+    },
+    {
+      "name": "USER02 native login and authoritative USER identity",
+      "status": "PASS"
+    },
+    {
+      "name": "USER03 session restoration retains validated identity",
+      "status": "PASS"
+    },
+    {
+      "name": "USER04 profile edit and authoritative read-back",
+      "status": "PASS"
+    },
+    {
+      "name": "USER05 account avatar adapter upload and removal",
+      "status": "PASS"
+    },
+    {
+      "name": "USER06 family members created through supported endpoints",
+      "status": "PASS"
+    },
+    {
+      "name": "USER07 parent/child relationship edit persists",
+      "status": "PASS"
+    },
+    {
+      "name": "USER08 authoritative Family Tree builds recorded relationship graph",
+      "status": "PASS"
+    },
+    {
+      "name": "USER09 manual map coordinates persist without device location",
+      "status": "PASS"
+    },
+    {
+      "name": "USER10 Family Map endpoint reflects manual location",
+      "status": "PASS"
+    },
+    {
+      "name": "USER11 custom Timeline event creation",
+      "status": "PASS"
+    },
+    {
+      "name": "USER12 derived birth events preserve exact original dates",
+      "status": "PASS"
+    },
+    {
+      "name": "USER13 anniversary source date creation and read-back",
+      "status": "PASS"
+    },
+    {
+      "name": "USER14 actual Backend Vietnamese lunar conversion",
+      "status": "PASS"
+    },
+    {
+      "name": "USER15 Home loaders reflect same family and recurring event",
+      "status": "PASS"
+    },
+    {
+      "name": "USER16 Library category creation",
+      "status": "PASS"
+    },
+    {
+      "name": "USER17 Library album creation",
+      "status": "PASS"
+    },
+    {
+      "name": "USER18 native Bearer multipart photo upload through adapter",
+      "status": "PASS"
+    },
+    {
+      "name": "USER19 authenticated Backend photo bytes equal selected synthetic fixture",
+      "status": "PASS"
+    },
+    {
+      "name": "USER20 photo metadata read-back",
+      "status": "PASS"
+    },
+    {
+      "name": "AUDIT concurrent-client and repeated-intent characterization recorded without exactly-once claim",
+      "status": "PASS"
+    },
+    {
+      "name": "SECURITY foreign private photo and member return404",
+      "status": "PASS"
+    },
+    {
+      "name": "SECURITY account switch rejects late private image body and removes owner Library",
+      "status": "PASS"
+    },
+    {
+      "name": "USER21 photo and album deletion confirmed from actual Backend",
+      "status": "PASS"
+    },
+    {
+      "name": "USER22 logout revokes copied access session",
+      "status": "PASS"
+    },
+    {
+      "name": "USER23 another-account native login",
+      "status": "PASS"
+    },
+    {
+      "name": "USER24 no previous family/Timeline/Library data under switched identity",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN01 native Admin login",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN02 authoritative dashboard counts",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN03 user list and email identity lookup",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN04 actual limited login logs",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN05 promotion persists and revokes previous USER session",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN10 demotion requires fresh USER login",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN06 lock rejects access and unlock allows fresh sign-in",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN07 administrator deletion protection",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN08 family-member deletion409 protection",
+      "status": "PASS"
+    },
+    {
+      "name": "ADMIN09 permitted empty-account deletion read-back",
+      "status": "PASS"
+    },
+    {
+      "name": "SECURITY forged unsigned ADMIN JWT rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "SECURITY expired access rejects raw token; concurrent native requests recover through refresh",
+      "status": "PASS"
+    },
+    {
+      "name": "SECURITY anonymous protected endpoints reject401",
+      "status": "PASS"
+    },
+    {
+      "name": "SECURITY malformed profile DTO validation remains authoritative",
+      "status": "PASS"
+    }
+  ],
+  "requests": [
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/avatar/upload",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/avatar",
+      "method": "DELETE",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/family-tree/2",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/2",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/1/location",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/1",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/map",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/timeline",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/family-tree/timeline",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/anniversaries",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/family-tree/anniversaries/1",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/anniversaries/lunar-to-solar",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/anniversaries",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/categories",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/library/albums/1/photos",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/library/albums/1",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/photos/1/image",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/categories",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/photos/1",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/library/albums/1",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/refresh-token",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/albums/1",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/library/albums/1",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/library/albums/1",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/library/albums/3",
+      "method": "DELETE",
+      "status": 204
+    },
+    {
+      "path": "/api/library/albums/2",
+      "method": "DELETE",
+      "status": 204
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/photos/1/image",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "path": "/api/family-tree/1/profile",
+      "method": "GET",
+      "status": 404
+    },
+    {
+      "path": "/api/library/photos/1/image",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/overview",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/photos/1",
+      "method": "DELETE",
+      "status": 204
+    },
+    {
+      "path": "/api/library/albums/1",
+      "method": "DELETE",
+      "status": 204
+    },
+    {
+      "path": "/api/library/albums",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/family-tree/timeline",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/library/overview",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/stats",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/logs",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/4/role",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/4/role",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/4/status",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 401
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/4/status",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "path": "/api/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/1",
+      "method": "DELETE",
+      "status": 400
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/2",
+      "method": "DELETE",
+      "status": 409
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users/4",
+      "method": "DELETE",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/users",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/admin/stats",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/refresh-token",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/me",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/admin/stats",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/library/overview",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/family-tree",
+      "method": "GET",
+      "status": 401
+    },
+    {
+      "path": "/api/me/profile",
+      "method": "PUT",
+      "status": 400
+    }
+  ],
+  "storage": "HTTP ADAPTER ONLY",
+  "transport": "Real Kestrel/PostgreSQL; adapted native bridge; Web-compatible HTTP, not browser UI"
+}

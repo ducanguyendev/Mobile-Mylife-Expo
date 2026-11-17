@@ -16,6 +16,7 @@ export function familyError(error: unknown, copy: FamilyStrings): string {
   if (value?.status === 401) return copy.sessionExpired;
   if (value?.status === 403) return copy.forbidden;
   if (value?.status === 404) return copy.notFound;
+  if (value?.status === 409) return copy.conflict;
   if (value?.kind === 'network') return copy.network;
   if ((value?.status ?? 0) >= 500) return copy.serverError;
   return copy.error;

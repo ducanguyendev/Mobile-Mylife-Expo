@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-17",
+  "privateAdbPort": 5042,
+  "serial": "emulator-5592",
+  "avd": "MyLife_M9",
+  "default5037PhysicalDevices": [],
+  "physicalDeviceTested": false,
+  "iOS": "No authorized macOS/Xcode environment",
+  "defaultAdbServer": "Started for read-only inventory; do not stop later user connections"
+}

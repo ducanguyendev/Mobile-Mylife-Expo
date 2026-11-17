@@ -1,10 +1,11 @@
 const rawApiBaseUrl = process.env.EXPO_PUBLIC_API_BASE_URL?.trim();
 
-function normalizeBaseUrl(value: string | undefined) {
+export function normalizeBaseUrl(value: string | undefined) {
   if (!value) return null;
   try {
     const parsed = new URL(value);
     if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return null;
+    if (parsed.username || parsed.password || parsed.search || parsed.hash || parsed.pathname !== '/') return null;
     return parsed.toString().replace(/\/+$/, '');
   } catch {
     return null;

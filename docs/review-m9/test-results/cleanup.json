@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-17",
+  "command": "node scripts/finish-m9-native.cjs",
+  "exitCode": 0,
+  "database": "mylife_m1_ab01b8dc074c",
+  "databaseDropped": true,
+  "postgresStopped": true,
+  "apiPort": 61627,
+  "pgPort": 61626,
+  "apiPortClosed": true,
+  "pgPortClosed": true,
+  "qaAppDataCleared": true,
+  "credentialFilesRemoved": [
+    "m9-native-user.json",
+    "m9-performance-user.json"
+  ],
+  "runtimeCredentialsRemovedByHarness": true,
+  "evidenceCredentialScanFindings": 0,
+  "remainingHostStep": null,
+  "noCommitPushPrDeployPublish": true,
+  "hostPortChecks": [
+    {
+      "port": 5091,
+      "closed": true
+    },
+    {
+      "port": 5592,
+      "closed": true
+    },
+    {
+      "port": 5593,
+      "closed": true
+    },
+    {
+      "port": 5042,
+      "closed": true
+    },
+    {
+      "port": 61627,
+      "closed": true
+    },
+    {
+      "port": 61626,
+      "closed": true
+    }
+  ],
+  "proxyStopped": true,
+  "emulatorStopped": true,
+  "privateAdbStopped": true,
+  "default5037": "Left alone after read-only inventory; no physical device tested",
+  "cleanupComplete": true,
+  "retained": "Internal QA APKs, task-owned generated build outputs/junctions, stopped synthetic AVD and diagnostic evidence. QA app data cleared; no temporary credential JSON retained."
+}

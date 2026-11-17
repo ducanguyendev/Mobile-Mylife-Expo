@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-17",
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "checks": [
+    {
+      "name": "Native album before-backend: explicit failure, no Backend row",
+      "status": "PASS",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "before-backend",
+        "forwarded": false
+      },
+      "evidence": "728-release-faults"
+    },
+    {
+      "name": "Native album body-disconnect: explicit failure, no Backend row",
+      "status": "PASS",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "body-disconnect",
+        "receivedBodyBytes": 46,
+        "forwarded": false
+      },
+      "evidence": "737-release-faults"
+    },
+    {
+      "name": "Native album rate-limit: explicit failure, no Backend row",
+      "status": "PASS",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "injected-status",
+        "status": 429,
+        "forwarded": false
+      },
+      "evidence": "746-release-faults"
+    },
+    {
+      "name": "Native album bad-gateway: explicit failure, no Backend row",
+      "status": "PASS",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "injected-status",
+        "status": 502,
+        "forwarded": false
+      },
+      "evidence": "755-release-faults"
+    },
+    {
+      "name": "Native album unavailable: explicit failure, no Backend row",
+      "status": "PASS",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "injected-status",
+        "status": 503,
+        "forwarded": false
+      },
+      "evidence": "764-release-faults"
+    }
+  ],
+  "evidenceThrough": 764
+}

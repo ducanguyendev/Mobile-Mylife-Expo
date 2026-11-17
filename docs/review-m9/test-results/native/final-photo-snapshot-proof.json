@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-17",
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "status": "PASS for covered final Android emulator",
+  "activityAndLightboxHaveSecureFlag": true,
+  "privatePhotoImageObserved": true,
+  "source": "1536x2048 synthetic-pattern-0.png; actual ImageView and decoded-memory observation",
+  "recentAppsBlackCardVisuallyInspected": true,
+  "privatePhotoVisibleInRecentApps": false,
+  "backgroundReturnsToGallery": true,
+  "evidence": [
+    "1400-final-private-lightbox.xml",
+    "final-window-flags.txt",
+    "final-recent-apps.png",
+    "1401-final-recents-state.xml",
+    "1402-final-privacy-resume.xml"
+  ],
+  "physicalAndroid": "NOT TESTED",
+  "iOS": "NOT TESTED"
+}

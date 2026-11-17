@@ -34,6 +34,7 @@ test('all family deep links belong to an authenticated USER protected group', ()
     react: h.hooks, 'react/jsx-runtime': { jsx: h.jsx, jsxs: h.jsx },
     'expo-router': { Stack: { Screen: 'Screen', Protected: 'Protected' }, DarkTheme: { colors: {} }, DefaultTheme: { colors: {} }, ThemeProvider: 'ThemeProvider' },
     'expo-status-bar': { StatusBar: 'StatusBar' },
+    '@/features/privacy/native-screen-privacy': { preparePrivateScreen: async () => {}, releasePrivateScreen: async () => {} },
     'react-native': { View: 'View', StyleSheet: { create: styles => styles } },
     '@/features/auth/context/auth-provider': { AuthProvider: 'AuthProvider', useAuth: () => ({ status, isUser }) },
     '@/features/auth/context/authEvents': { onSessionExpired: () => () => {} },

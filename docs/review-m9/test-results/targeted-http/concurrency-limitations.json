@@ -1,0 +1,22 @@
+[
+  {
+    "operation": "Profile PUT",
+    "observed": "Both overlapping stale clients receive success; one displayName wins",
+    "serverPrecondition": "Absent",
+    "status": "OPEN",
+    "severity": "HIGH"
+  },
+  {
+    "operation": "Album PUT",
+    "observed": "Both stale updates accepted; last writer wins",
+    "serverPrecondition": "Absent",
+    "status": "OPEN",
+    "severity": "HIGH"
+  },
+  {
+    "operation": "Album POST across clients/process restarts",
+    "observed": "Independent repeated intent creates distinct rows; no idempotency key protocol",
+    "status": "OPEN",
+    "severity": "HIGH"
+  }
+]

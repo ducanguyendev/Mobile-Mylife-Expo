@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-17",
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "checks": [
+    {
+      "name": "Album background while committed acknowledgement held",
+      "status": "PASS",
+      "matchingAlbums": 1,
+      "committedRequests": 1,
+      "holdMs": 15000,
+      "processBarrierDurability": "In-memory only; no exactly-once protocol"
+    },
+    {
+      "name": "Album process-death while committed acknowledgement held",
+      "status": "PASS",
+      "matchingAlbums": 1,
+      "committedRequests": 1,
+      "holdMs": 15000,
+      "processBarrierDurability": "In-memory only; no exactly-once protocol"
+    },
+    {
+      "name": "Album double-tap while committed acknowledgement held",
+      "status": "PASS",
+      "matchingAlbums": 1,
+      "committedRequests": 1,
+      "holdMs": 5000,
+      "processBarrierDurability": "In-memory only; no exactly-once protocol"
+    }
+  ],
+  "evidenceThrough": 803
+}

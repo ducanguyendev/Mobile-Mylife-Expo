@@ -1,0 +1,15 @@
+{
+  "syntheticOnly": true,
+  "seededThroughRealEndpoints": true,
+  "members": 100,
+  "generations": 5,
+  "manuallyLocated": 20,
+  "customTimeline": 500,
+  "anniversaries": 100,
+  "photos": 120,
+  "photoWidth": 1536,
+  "photoHeight": 2048,
+  "photoBytes": 552521,
+  "storage": "HTTP ADAPTER ONLY",
+  "nativeApiBuild": "Kestrel Release .NET10"
+}

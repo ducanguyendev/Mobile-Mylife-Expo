@@ -1,0 +1,54 @@
+name: M9 disposable Backend integration
+on:
+  workflow_dispatch:
+    inputs:
+      backend_ref:
+        description: Reviewed Backend commit/ref containing the M8 patch and M9 fixes
+        required: true
+        default: feature_minhduc
+permissions:
+  contents: read
+jobs:
+  integration:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: Mobile-MyLife-Expo
+          persist-credentials: false
+      - uses: actions/checkout@v7
+        with:
+          repository: ducanguyendev/Backend-MyLife
+          ref: ${{ inputs.backend_ref }}
+          path: Backend-MyLife
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: Mobile-MyLife-Expo/package-lock.json
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '10.0.x'
+      - name: Verify Backend patch and PostgreSQL tools
+        shell: pwsh
+        run: |
+          $model = Get-Content Backend-MyLife/Features/User/Models/UpdateProfileViewModel.cs -Raw
+          $admin = Get-Content Backend-MyLife/Features/Auth/Controllers/AccountController.cs -Raw
+          if ($model -notmatch 'IValidatableObject' -or $admin -notmatch 'CurrentAdminSessionActiveAsync' -or !(Test-Path Backend-MyLife/Shared/Data/DatabaseConflict.cs)) {
+            throw 'Backend ref lacks the required reviewed M8/M9 patch. Remote synchronization is still open.'
+          }
+          $install = Get-ChildItem 'C:/Program Files/PostgreSQL' -Directory | Sort-Object Name -Descending | Select-Object -First 1
+          if (!$install -or !(Test-Path (Join-Path $install.FullName 'bin/initdb.exe'))) { throw 'PostgreSQL tools unavailable on this runner.' }
+          "PG_BIN=$(Join-Path $install.FullName 'bin')" | Out-File $env:GITHUB_ENV -Append -Encoding utf8
+      - run: npm ci
+        working-directory: Mobile-MyLife-Expo
+      - run: dotnet restore Tests/Backend-MyLife.Tests.csproj
+        working-directory: Backend-MyLife
+      - run: node scripts/run-m9-backend.cjs
+        working-directory: Mobile-MyLife-Expo
+      - run: npm run test:integration:m9
+        working-directory: Mobile-MyLife-Expo
+      # Raw test logs are intentionally not uploaded: redact and inspect evidence
+      # before any future artifact publication. No provider secret is required.

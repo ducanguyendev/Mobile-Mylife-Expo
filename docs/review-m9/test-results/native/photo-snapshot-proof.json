@@ -1,0 +1,10 @@
+{
+  "status": "PASS for covered final-APK Android emulator path",
+  "nativeActivityAndLightboxSecureFlagsObserved": true,
+  "foregroundPrivatePhotoPresentInHierarchy": true,
+  "recentAppsShowsBlankCard": true,
+  "privatePhotoVisibleInRecentApps": false,
+  "physicalAndroid": "NOT TESTED",
+  "iOS": "NOT TESTED",
+  "finalApkSha256": "f61c3ad175b615e22ca2513aa3a67d36577b3def130d4d1377980a1f35c0fc85"
+}

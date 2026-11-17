@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-17",
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "checks": [
+    {
+      "name": "Native album before-backend: explicit failure, no Backend row",
+      "status": "PASS",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "before-backend",
+        "forwarded": false
+      },
+      "evidence": "657-release-faults"
+    },
+    {
+      "name": "Native album body-disconnect: explicit failure, no Backend row",
+      "status": "NOT PROVEN",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "before-backend",
+        "forwarded": false
+      },
+      "evidence": "669-release-faults"
+    },
+    {
+      "name": "Native album rate-limit: explicit failure, no Backend row",
+      "status": "NOT PROVEN",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "before-backend",
+        "forwarded": false
+      },
+      "evidence": "681-release-faults"
+    },
+    {
+      "name": "Native album bad-gateway: explicit failure, no Backend row",
+      "status": "PASS",
+      "event": {
+        "path": "/api/library/albums",
+        "method": "POST",
+        "fault": "injected-status",
+        "status": 502,
+        "forwarded": false
+      },
+      "evidence": "693-release-faults"
+    }
+  ],
+  "evidenceThrough": 693,
+  "validationStatus": "PARTIALLY INVALIDATED: the initial runner reused an older event for two cases. Only before-backend and502 have matching proxy events. Fresh-event validation is now required."
+}

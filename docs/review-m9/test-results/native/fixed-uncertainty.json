@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "build": "Release-variant internal QA APK with one-shot POST policy",
+  "backendPostStatus": 201,
+  "acknowledgementDropped": true,
+  "matchingAlbums": 1,
+  "reopenedRouteRetainsBarrier": true,
+  "createDisabledBeforeReconcile": true,
+  "explicitReconciliation": true,
+  "evidenceThrough": 212,
+  "buildSha256": "eda698362b3e082c4215e252239338002d2484dcade3792b122f5337ae91f957",
+  "date": "2026-11-17"
+}
