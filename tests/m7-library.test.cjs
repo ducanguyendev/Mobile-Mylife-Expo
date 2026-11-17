@@ -1,4 +1,4 @@
-﻿const test = require('node:test'), assert = require('node:assert/strict'), fs = require('node:fs');
+const test = require('node:test'), assert = require('node:assert/strict'), fs = require('node:fs');
 const { createLoader } = require('./helpers/load-foundation.cjs');
 const { createM3Runtime } = require('./helpers/load-m3.cjs');
 const plain = x => JSON.parse(JSON.stringify(x)); const signal = () => new AbortController().signal;
@@ -36,8 +36,14 @@ test('background invalidates stale preparation even after foreground', async () 
 const media = createLoader({ '@/api/apiClient': { apiRequest: async () => { throw Error('unexpected'); } }, '@/config/env': { appEnv: { apiBaseUrl: 'https://api.example.test' } } }, { URL })('src/features/library/library-media.ts');
 test('private URL only uses trusted API origin and numeric ID; never metadata', () => { assert.equal(media.trustedImageUrl('https://api.example.test', 12), 'https://api.example.test/api/library/photos/12/image'); for (const base of ['https://x.test/?token=secret', 'https://user:password@x.test', 'https://x.test/subpath', 'file:///private', null]) assert.throws(() => media.trustedImageUrl(base, 12)); assert.throws(() => media.privateImagePath('https://drive.google.com')); });
 test('media pool bounds concurrent requests, coalesces and clears account jobs', async () => {
-  let inFlight = 0, maximum = 0; const releases = []; const pool = media.createMediaPool(async (id, s) => { inFlight++; maximum = Math.max(maximum, inFlight); await new Promise(r => releases.push(r)); inFlight--; if (s.aborted) throw Error('aborted'); return `data:image/png;base64,${id}`; }, 2);
-  const a = pool.read(1), b = pool.read(2), c = pool.read(3); assert.equal(pool.read(1), a); assert.equal(releases.length, 2); releases.shift()(); await a; await new Promise(setImmediate); assert.equal(releases.length, 2); pool.clear(); releases.splice(0).forEach(r => r()); await assert.rejects(b); await assert.rejects(c); assert.equal(maximum, 2);
+  let inFlight = 0, maximum = 0; const releases = [], loads = []; const pool = media.createMediaPool(async (id, s) => { loads.push(id); inFlight++; maximum = Math.max(maximum, inFlight); await new Promise(r => releases.push(r)); inFlight--; if (s.aborted) throw Error('aborted'); return `data:image/png;base64,${id}`; }, 2);
+  // Each read owns a lease while duplicate IDs share one underlying loader job.
+  const a = pool.read(1), b = pool.read(2), c = pool.read(3), duplicate = pool.read(1);
+  assert.deepEqual(loads, [1, 2]); assert.equal(releases.length, 2);
+  releases.shift()(); const values = await Promise.all([a, duplicate]);
+  assert.deepEqual(values, ['data:image/png;base64,1', 'data:image/png;base64,1']);
+  await new Promise(setImmediate); assert.deepEqual(loads, [1, 2, 3]); assert.equal(releases.length, 2);
+  pool.clear(); releases.splice(0).forEach(r => r()); await assert.rejects(b); await assert.rejects(c); assert.equal(maximum, 2);
 });
 const png = fs.readFileSync('tests/fixtures/library-sage.png');
 const picked = (patch = {}) => ({ uri: 'file:///synthetic.png', fileName: 'synthetic.png', mimeType: 'image/png', fileSize: png.length, ...patch });
@@ -58,13 +64,26 @@ test('binary transport refreshes native Bearer without parsing bytes as JSON', a
   await rt.storage.write(tokens('old')); const blob = await rt.api.apiRequest('/api/library/photos/1/image', { responseType: 'blob', redirect: 'error', headers: { Accept: 'image/png' } }); assert.equal(blob.size, png.length); assert.equal(images, 2); assert.equal(refreshes, 1);
 });
 test('logout during binary body consumption rejects previous-account response', async () => { let release; const rt = createM3Runtime('https://api.example.test', async (url) => url.endsWith('/api/logout') ? new Response(null, { status: 204 }) : { ok: true, status: 200, blob: () => new Promise(r => release = () => r(new Blob([png], { type: 'image/png' }))) }); await rt.storage.write(tokens('old')); const request = rt.api.apiRequest('/api/library/photos/1/image', { responseType: 'blob' }); while (!release) await new Promise(setImmediate); await rt.api.logoutNativeSession(); release(); await assert.rejects(request, e => e.status === 401); });
-test('gallery virtualization, protected routes and existing modules stay wired', () => { const source = fs.readFileSync('src/features/library/LibraryScreen.tsx', 'utf8'); assert.match(source, /FlatList/); assert.match(source, /maxToRenderPerBatch=\{4\}/); assert.match(source, /windowSize=\{3\}/); assert.match(source, /currentPool.clear\(\)/); const root = fs.readFileSync('src/app/_layout.tsx', 'utf8'); assert.match(root, /name="library"/); assert.match(root, /status === 'authenticated' && isUser/); for (const f of ['timeline/TimelineScreen', 'anniversaries/AnniversaryScreen']) assert.match(fs.readFileSync(`src/features/${f}.tsx`, 'utf8'), /router.push\('\/library'\)/); assert.match(fs.readFileSync('src/features/home/use-home.ts', 'utf8'), /useFocusEffect/); });
+test('gallery virtualization, protected routes and existing modules stay wired', () => { const source = fs.readFileSync('src/features/library/LibraryScreen.tsx', 'utf8'); assert.match(source, /FlatList/); assert.match(source, /maxToRenderPerBatch=\{4\}/); assert.match(source, /windowSize=\{3\}/); assert.match(source, /mediaPoolForAccount\(accountId\)/); assert.match(source, /pool\.clear\(\)/); const root = fs.readFileSync('src/app/_layout.tsx', 'utf8'); assert.match(root, /name="library"/); assert.match(root, /status === 'authenticated' && isUser/); for (const f of ['timeline/TimelineScreen', 'anniversaries/AnniversaryScreen']) assert.match(fs.readFileSync(`src/features/${f}.tsx`, 'utf8'), /router.push\('\/library'\)/); assert.match(fs.readFileSync('src/features/home/use-home.ts', 'utf8'), /useFocusEffect/); });
 test('image view disables disk caches, tokens and remote sources', () => { const source = fs.readFileSync('src/features/library/PrivatePhoto.tsx', 'utf8'); assert.match(source, /cachePolicy="none"/); assert.doesNotMatch(source, /Authorization|driveFileId|\.url\b/); });
 test('VI/EN copy covers same keys and destructive album consequence', () => { const { libraryStrings } = createLoader()('src/features/library/library-strings.ts'); assert.deepEqual(Object.keys(libraryStrings.vi).sort(), Object.keys(libraryStrings.en).sort()); assert.match(libraryStrings.en.deleteAlbum, /every stored photo/); });
 test('impossible ISO calendar dates rejected instead of normalizing', () => { assert.throws(() => data.photo(photo({ createdAt: '2026-02-30T00:00:00Z' }))); assert.throws(() => data.album(album({ updatedAt: '2026-04-31T00:00:00Z' }))); });
 test('Retry-After prevents immediate mutation redispatch', async () => { const { createLibraryMutations } = apiRuntime(async () => overview()); const m = createLibraryMutations(); m.setActive(true); let writes = 0; await assert.rejects(m.run(async () => async () => { writes++; throw Object.assign(Error('slow down'), { status: 429, retryAfterSeconds: 60 }); }, signal())); await assert.rejects(m.run(async () => async () => { writes++; }, signal()), e => e.status === 429 && e.retryAfterSeconds > 0); assert.equal(writes, 1); });
 test('separate account pools do not share bytes even for the same photo ID', async () => { const a = media.createMediaPool(async () => 'account-a'); const b = media.createMediaPool(async () => 'account-b'); assert.equal(await a.read(1), 'account-a'); a.clear(); assert.equal(await b.read(1), 'account-b'); });
-test('background preserves picker editor while private media is removed', () => { const source = fs.readFileSync('src/features/library/LibraryScreen.tsx', 'utf8'); const background = source.match(/else \{ query.cancel\(\);[^\n]+/)[0]; assert.doesNotMatch(background, /setEditor/); assert.match(background, /currentPool.clear/); assert.match(background, /setViewing\(undefined\)/); assert.match(source, /setEditor\(undefined\); setVisible\(false\)/); });
+test('background preserves picker editor while private media is removed', () => {
+  const source = fs.readFileSync('src/features/library/LibraryScreen.tsx', 'utf8');
+  // clear() aborts the pending query and releases its DTOs; the shared pool is
+  // cleared on background, while blur releases image leases through unmount.
+  const background = source.match(/else \{ query\.clear\(\);[^\n]+/);
+  assert.ok(background, 'background clears the query');
+  assert.doesNotMatch(background[0], /setEditor/);
+  assert.match(background[0], /operation\.current\?\.abort\(\)/);
+  assert.match(background[0], /pool\.clear\(\)/);
+  assert.match(background[0], /setViewing\(undefined\)/);
+  const blur = source.match(/return \(\) => \{ active\.current = false;[^\n]+/);
+  assert.ok(blur, 'focus effect supplies cleanup');
+  for (const pattern of [/actions\.setActive\(false\)/, /query\.clear\(\)/, /operation\.current\?\.abort\(\)/, /subscription\.remove\(\)/, /setEditor\(undefined\)/, /setViewing\(undefined\)/, /setVisible\(false\)/]) assert.match(blur[0], pattern);
+});
 test('overview and detail share an account write gate across route unmounts', async () => { const { libraryMutationsForAccount: get } = apiRuntime(async () => overview()); const a = get(1); a.setActive(true); await assert.rejects(a.run(async () => async () => { throw Error('lost POST'); }, signal())); a.setActive(false); const reopened = get(1); assert.equal(reopened, a); reopened.setActive(true); assert.equal(reopened.getSnapshot().needsReconcile, true); await assert.rejects(reopened.run(async () => async () => 1, signal())); await reopened.reconcile(signal()); assert.equal(reopened.getSnapshot().needsReconcile, false); });
 test('switching accounts isolates flags and invalidates previous preparation', async () => { const { libraryMutationsForAccount: get } = apiRuntime(async () => overview()); const a = get(1); a.setActive(true); let release, writes = 0; const running = a.run(async () => { await new Promise(r => release = r); return async () => writes++; }, signal()); const b = get(2); b.setActive(true); assert.notEqual(a, b); assert.equal(b.getSnapshot().needsReconcile, false); release(); await assert.rejects(running); a.setActive(true); await assert.rejects(a.run(async () => async () => writes++, signal())); assert.equal(writes, 0); assert.throws(() => get(0)); });
 

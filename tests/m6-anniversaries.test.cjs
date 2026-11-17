@@ -277,7 +277,7 @@ function componentRuntime(extra = {}) {
     } },
     'react/jsx-runtime': { jsx: hooks.jsx, jsxs: hooks.jsx },
     'react-native': { View: 'View', Modal: 'Modal', ScrollView: 'Scroll', KeyboardAvoidingView: 'KeyboardView',
-      FlatList: 'List', Pressable: 'Pressable', Platform: { OS: 'android' }, Keyboard: { dismiss() {} },
+      FlatList: 'List', Pressable: 'Pressable', StyleSheet: { create: styles => styles }, Platform: { OS: 'android' }, Keyboard: { dismiss() {} },
       Alert: { alert(...args) { mocks.alert = args; } },
       AppState: { currentState: 'active', addEventListener: () => ({ remove() {} }) }, RefreshControl: 'Refresh' },
     'react-native-safe-area-context': { SafeAreaView: 'Safe' },
