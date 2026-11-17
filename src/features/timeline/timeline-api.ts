@@ -1,6 +1,6 @@
 import { apiRequest } from '@/api/apiClient';
 import { assertUnchanged, eventKey, eventWrite, memberIdValid, positiveId, requireEvent, requireEvents, requireWrite, writable, type TimelineEvent, type TimelineWrite } from './timeline-data';
-async function data(path: string, options: RequestInit = {}) { const result = await apiRequest<{ success: boolean; data: unknown }>(path, options); if (!result || result.success !== true || !Object.hasOwn(result, 'data')) throw new Error('TIMELINE_INVALID_RESPONSE'); return result.data; }
+async function data(path: string, options: RequestInit = {}) { const result = await apiRequest<{ success: boolean; data: unknown }>(path, { coalesce: true, ...options }); if (!result || result.success !== true || !Object.hasOwn(result, 'data')) throw new Error('TIMELINE_INVALID_RESPONSE'); return result.data; }
 export const timelineApi = {
   list: async (memberId?: number, signal?: AbortSignal) => { if (memberId !== undefined && !memberIdValid(memberId)) throw new Error('TIMELINE_INVALID_MEMBER'); return requireEvents(await data(memberId === undefined ? '/api/family-tree/timeline' : `/api/family-tree/${memberId}/timeline`, { signal })); },
   create: async (input: TimelineWrite, signal?: AbortSignal) => requireEvent(await data('/api/family-tree/timeline', { method: 'POST', body: JSON.stringify(requireWrite(input)), signal })),

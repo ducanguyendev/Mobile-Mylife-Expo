@@ -8,7 +8,7 @@ import {
 
 const route = '/api/family-tree/anniversaries';
 async function data(path: string, options: RequestInit = {}): Promise<unknown> {
-  const envelope = await apiRequest<{ success: boolean; data: unknown }>(path, options);
+  const envelope = await apiRequest<{ success: boolean; data: unknown }>(path, { coalesce: true, ...options });
   if (!envelope || envelope.success !== true || !Object.hasOwn(envelope, 'data')) throw new Error('ANNIVERSARY_INVALID_DATA');
   return envelope.data;
 }

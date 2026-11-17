@@ -1,11 +1,10 @@
 import { useCallback, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import { AppState, FlatList, RefreshControl, View } from 'react-native';
+import { AppState, FlatList, RefreshControl, StyleSheet, View } from 'react-native';
 import { router, useFocusEffect } from 'expo-router';
 import { AppHeader, AppScreen } from '@/components/layout/app-screen';
 import { LoadingState } from '@/components/feedback/states';
 import { AppText } from '@/design-system/components/app-text';
 import { AppCard } from '@/design-system/components/surfaces';
-import { Badge } from '@/design-system/components/controls';
 import { MyLifeSearchField } from '@/design-system/components/fields';
 import { PrimaryButton, SecondaryButton, TextButton } from '@/design-system/components/buttons';
 import { useAuth } from '@/features/auth/context/auth-provider';
@@ -16,7 +15,8 @@ import { useAppTheme } from '@/theme/theme-provider';
 import { anniversaryApi, createAnniversaryMutations } from './anniversary-api';
 import { blankAnniversary, selectAnniversaries, type Anniversary, type AnniversaryFilter, type AnniversaryWrite } from './anniversary-data';
 import { calendarMonthValid, dateMonth, type CalendarMonth } from './calendar-data';
-import { anniversaryError, anniversaryStrings, anniversaryTypeLabel, countdownLabel, solarDateLabel } from './anniversary-strings';
+import { anniversaryError, anniversaryStrings, anniversaryTypeLabel, solarDateLabel } from './anniversary-strings';
+import { AnniversaryCard } from './AnniversaryCard';
 import { useAnniversaries } from './use-anniversaries';
 import { AnniversaryCalendar } from './AnniversaryCalendar';
 import { AnniversaryEditor } from './AnniversaryEditor';
@@ -24,6 +24,7 @@ import { AnniversaryDeleteDialog, AnniversaryDetails } from './AnniversaryDetail
 
 type Props = { memberId?: number; anniversaryId?: number; canGoBack?: boolean; onTimeline?: () => void };
 const emptyItems: Anniversary[] = [];
+const itemKey = (item: Anniversary) => String(item.id);
 export function AnniversaryScreen(props: Props) {
   const { user, isUser } = useAuth();
   const { language } = useAppTheme();
@@ -136,6 +137,8 @@ function AnniversaryExplorer({ accountId, memberId, anniversaryId, canGoBack, on
     finally { if (operation.current === controller) operation.current = null; }
   };
   const members = query.data?.members ?? [];
+  const changeMonth = useCallback((value: CalendarMonth) => { setMonth(value); setDate(null); }, []);
+  const renderEvent = useCallback(({ item }: { item: Anniversary }) => <AnniversaryCard item={item} copy={copy} onDetails={openDetails} />, [copy, openDetails]);
   const unavailable = mutation.busy || mutation.needsReconcile || !query.data;
   const feedback = requestError ? anniversaryError(requestError, copy) : '';
   const emptyTitle = !scoped.length ? copy.empty
@@ -170,7 +173,7 @@ function AnniversaryExplorer({ accountId, memberId, anniversaryId, canGoBack, on
         <SecondaryButton title={copy.list} accessibilityState={{ selected: view === 'list' }} onPress={() => setView('list')} />
       </View>
       {view === 'grid' ? <AnniversaryCalendar items={calendarItems} month={month} today={today} selected={date} copy={copy}
-        onMonth={value => { setMonth(value); setDate(null); }} onSelect={setDate} /> : date ? <AppText>{copy.selectedDate} {solarDateLabel(date, language, copy)}</AppText> : null}
+        onMonth={changeMonth} onSelect={setDate} /> : date ? <AppText>{copy.selectedDate} {solarDateLabel(date, language, copy)}</AppText> : null}
       <SecondaryButton title={copy.refresh} disabled={mutation.busy || query.status === 'loading'} onPress={() => void refresh()} />
       <AppText variant="sectionTitle" accessibilityRole="header">{copy.upcoming}</AppText>
       <AppText>{copy.count} {visible.length}/{scoped.length}</AppText>
@@ -182,25 +185,15 @@ function AnniversaryExplorer({ accountId, memberId, anniversaryId, canGoBack, on
     </>}
   </View>;
   return <AppScreen padded={false}>
-    <FlatList data={library ? emptyItems : visible} keyExtractor={item => String(item.id)} initialNumToRender={10}
-      maxToRenderPerBatch={10} windowSize={5} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag"
-      contentContainerStyle={{ padding: 16, gap: 16, paddingBottom: 48, width: '100%', maxWidth: 760, alignSelf: 'center' }}
+    <FlatList data={library ? emptyItems : visible} keyExtractor={itemKey} initialNumToRender={10}
+      maxToRenderPerBatch={6} windowSize={5} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag"
+      contentContainerStyle={styles.list}
       refreshControl={<RefreshControl refreshing={query.status === 'loading'} onRefresh={() => void refresh()} tintColor={colors.accentFamily} />}
       ListHeaderComponent={header} ListEmptyComponent={!library && query.status === 'ready' ? <AppCard inset>
         <AppText variant="cardTitle">{emptyTitle}</AppText>
         {!scoped.length ? <AppText>{copy.emptyHint}</AppText> : null}
       </AppCard> : undefined}
-      renderItem={({ item }) => <AppCard inset style={{ gap: 10, borderLeftWidth: 3, borderLeftColor: item.eventType === 'DEATH_ANNIVERSARY' ? colors.accentAnniversary : colors.accentFamily }}>
-        <Badge label={anniversaryTypeLabel(item.eventType, copy)} />
-        <AppText variant="cardTitle">{item.title}</AppText>
-        {item.relatedMemberName ? <AppText>{item.relatedMemberName}</AppText> : null}
-        <AppText>{solarDateLabel(item.nextSolarDate, language, copy)}</AppText>
-        <AppText variant="label">{countdownLabel(item, language, copy)}</AppText>
-        {item.eventType === 'DEATH_ANNIVERSARY' ? <AppText>{copy.day} {item.lunarDay}/{item.lunarMonth}{item.isLeapMonth ? ` · ${copy.leap}` : ''}</AppText> : null}
-        {item.place ? <AppText>{item.place}</AppText> : null}
-        {item.host ? <AppText>{item.host}</AppText> : null}
-        <TextButton title={copy.details} accessibilityLabel={`${copy.details} ${item.title}`} onPress={() => void openDetails(item.id)} />
-      </AppCard>} />
+      renderItem={renderEvent} />
     {details ? <AnniversaryDetails item={details} copy={copy} disabled={unavailable} onClose={() => setDetails(undefined)}
       onEdit={() => { setEditor({ original: details, initial: blankAnniversary() }); setDetails(undefined); }}
       onDelete={() => { setDeleting(details); setDetails(undefined); setRequestError(undefined); }} /> : null}
@@ -210,3 +203,4 @@ function AnniversaryExplorer({ accountId, memberId, anniversaryId, canGoBack, on
       error={mutation.needsReconcile ? copy.uncertain : feedback} onCancel={() => setDeleting(undefined)} onConfirm={() => void remove()} /> : null}
   </AppScreen>;
 }
+const styles = StyleSheet.create({ list: { padding: 16, gap: 16, paddingBottom: 48, width: '100%', maxWidth: 760, alignSelf: 'center' } });

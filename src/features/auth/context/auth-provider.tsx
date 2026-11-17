@@ -49,7 +49,7 @@ export function AuthProvider({ children, beforeAuthenticated = noPreparation }: 
     if (version !== getSessionVersion() || !operations.current(generation, request)) return;
     await beforeAuthenticated();
     if (version !== getSessionVersion() || !operations.current(generation, request)) return;
-    setUser(currentUser);
+    setUser(previous => previous && JSON.stringify(previous) === JSON.stringify(currentUser) ? previous : currentUser);
     setStatus('authenticated');
   }, [beforeAuthenticated, operations]);
 

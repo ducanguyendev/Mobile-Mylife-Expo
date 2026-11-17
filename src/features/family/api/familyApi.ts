@@ -5,7 +5,7 @@ import type { FamilyMemberProfile } from '../types/profile';
 type Envelope<T> = { success: boolean; data: T };
 
 async function getData<T>(path: string, options?: RequestInit): Promise<T> {
-  const response = await apiRequest<Envelope<T>>(path, options);
+  const response = await apiRequest<Envelope<T>>(path, { coalesce: true, ...options });
   if (!response || response.success !== true || !('data' in response)) throw new Error('FAMILY_INVALID_RESPONSE');
   return response.data;
 }

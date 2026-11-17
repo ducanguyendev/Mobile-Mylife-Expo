@@ -15,10 +15,16 @@ export function parseDateOnly(value: unknown): Date | null {
 export function formatDateOnly(value: string, language: Language): string | null {
   const date = parseDateOnly(value);
   // Calendar date, never an instant in the device timezone.
-  return date ? new Intl.DateTimeFormat(language === 'en' ? 'en-US' : 'vi-VN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(date) : null;
+  if (!date) return null;
+  let formatter = dateFormatters.get(language);
+  if (!formatter) { formatter = new Intl.DateTimeFormat(language === 'en' ? 'en-US' : 'vi-VN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); dateFormatters.set(language, formatter); }
+  return formatter.format(date);
 }
+const dateFormatters = new Map<Language, Intl.DateTimeFormat>();
+let vietnamFormatter: Intl.DateTimeFormat | undefined;
 export function vietnamDateKey(now: Date): string {
-  const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Ho_Chi_Minh', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(now);
+  vietnamFormatter ??= new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Ho_Chi_Minh', year: 'numeric', month: '2-digit', day: '2-digit' });
+  const parts = vietnamFormatter.formatToParts(now);
   const part = (type: string) => parts.find((entry) => entry.type === type)?.value;
   return `${part('year')}-${part('month')}-${part('day')}`;
 }

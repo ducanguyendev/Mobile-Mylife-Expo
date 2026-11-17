@@ -68,7 +68,7 @@ export function selectEvents(events: TimelineEvent[], filter: TimelineFilter, se
 }
 export function groupEvents(events: TimelineEvent[]): { year: number | null; data: TimelineEvent[] }[] {
   const value = (e: TimelineEvent) => e.eventDate ? Number(e.eventDate.replaceAll('-', '')) : e.eventYear ? e.eventYear * 10000 : Infinity;
-  const sorted = events.map((event, index) => ({ event, index })).sort((a, b) => value(a.event) - value(b.event) || a.index - b.index);
+  const sorted = events.map((event, index) => ({ event, index, order: value(event) })).sort((a, b) => a.order - b.order || a.index - b.index);
   const groups = new Map<number | null, TimelineEvent[]>();
   for (const { event } of sorted) { const year = event.eventDate ? dateParts(event.eventDate)!.year : event.eventYear; const rows = groups.get(year) ?? []; rows.push(event); groups.set(year, rows); }
   return [...groups].map(([year, data]) => ({ year, data }));

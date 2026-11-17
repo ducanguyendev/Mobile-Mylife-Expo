@@ -1,10 +1,9 @@
 import { useCallback, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import { AppState, SectionList, View } from 'react-native';
+import { AppState, SectionList, StyleSheet, View } from 'react-native';
 import { router, useFocusEffect } from 'expo-router';
 import { AppScreen, AppHeader } from '@/components/layout/app-screen';
 import { AppText } from '@/design-system/components/app-text';
 import { AppCard } from '@/design-system/components/surfaces';
-import { Badge } from '@/design-system/components/controls';
 import { PrimaryButton, SecondaryButton, TextButton } from '@/design-system/components/buttons';
 import { MyLifeSearchField } from '@/design-system/components/fields';
 import { LoadingState } from '@/components/feedback/states';
@@ -12,7 +11,8 @@ import { useAuth } from '@/features/auth/context/auth-provider';
 import { useAppTheme } from '@/theme/theme-provider';
 import { createTimelineMutations } from './timeline-api';
 import { blankWrite, defaultType, eventKey, filterTypes, groupEvents, selectEvents, writable, type TimelineEvent, type TimelineFilter, type TimelineWrite } from './timeline-data';
-import { actionError, dateLabel, displayTitle, timelineStrings } from './timeline-strings';
+import { actionError, displayTitle, timelineStrings } from './timeline-strings';
+import { TimelineCard } from './TimelineCard';
 import { useTimelineQuery } from './use-timeline-query';
 import { TimelineEventEditor } from './TimelineEventEditor';
 import { TimelineDeleteDialog, TimelineEventDetails } from './TimelineEventDetails';
@@ -41,7 +41,10 @@ function TimelineExplorer({ accountId, memberId, canGoBack, onCalendar }: { acco
   const refresh = async () => { if (operation.current || !active.current || mutation.busy) return; const controller = new AbortController(); operation.current = controller; setMessage(''); try { await mutations.reconcile(controller.signal); if (active.current && !controller.signal.aborted) await query.reload(); } catch { if (active.current && !controller.signal.aborted) setMessage(mutations.getSnapshot().needsReconcile ? copy.uncertain : copy.error); } finally { if (operation.current === controller) operation.current = null; } };
   const save = async (values: TimelineWrite) => { if (!editor || operation.current || !active.current) throw new Error('TIMELINE_RECONCILE'); const controller = new AbortController(); operation.current = controller; try { await mutations.save(editor.original, values, controller.signal); if (active.current && !controller.signal.aborted) { setEditor(undefined); setMessage(copy.saved); await query.reload(); } } finally { if (operation.current === controller) operation.current = null; } };
   const remove = async () => { if (!deleting || !writable(deleting) || operation.current || !active.current) return; const controller = new AbortController(); operation.current = controller; setMessage(''); try { await mutations.remove(deleting, controller.signal); if (active.current && !controller.signal.aborted) { setDeleting(undefined); setMessage(copy.removed); await query.reload(); } } catch (e) { if (active.current && !controller.signal.aborted) setMessage(actionError(e, copy, mutations.getSnapshot().needsReconcile)); } finally { if (operation.current === controller) operation.current = null; } };
-  const title = (event: TimelineEvent) => displayTitle(event, copy, event.memberId ? names.get(event.memberId) : undefined);
+  const title = useCallback((event: TimelineEvent) => displayTitle(event, copy, event.memberId ? names.get(event.memberId) : undefined), [copy, names]);
+  const showDetails = useCallback((event: TimelineEvent) => { setMessage(''); setDetails(event); }, []);
+  const renderEvent = useCallback(({ item }: { item: TimelineEvent }) => <TimelineCard item={item} copy={copy} memberName={item.memberId ? names.get(item.memberId) : undefined} relatedName={item.relatedMemberId ? names.get(item.relatedMemberId) : undefined} onDetails={showDetails} />, [copy, names, showDetails]);
+  const renderYear = useCallback(({ section }: { section: { year: number | null } }) => <View style={[styles.year, { backgroundColor: colors.background }]}><AppText variant="sectionTitle" accessibilityRole="header">{section.year ?? copy.unknownDate}</AppText></View>, [colors.background, copy.unknownDate]);
   const header = <View style={{ gap: 16 }}>
     {memberId !== undefined || canGoBack ? <TextButton title={copy.close} onPress={() => router.back()} /> : null}
     <AppHeader eyebrow={copy.memories} title={memberId === undefined ? copy.title : copy.memberTimeline} subtitle={memberId === undefined ? copy.subtitle : names.get(memberId)} />
@@ -63,16 +66,11 @@ function TimelineExplorer({ accountId, memberId, canGoBack, onCalendar }: { acco
       {query.status === 'ready' && !visible.length ? <AppCard inset><AppText variant="cardTitle">{events.length ? copy.noResults : copy.empty}</AppText><AppText>{copy.emptyHint}</AppText></AppCard> : null}
     </>}
   </View>;
-  return <AppScreen padded={false}><SectionList sections={tab === 'timeline' ? sections : []} keyExtractor={eventKey} initialNumToRender={10} maxToRenderPerBatch={10} windowSize={5} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" stickySectionHeadersEnabled contentContainerStyle={{ padding: 16, gap: 12, paddingBottom: 48, width: '100%', maxWidth: 760, alignSelf: 'center' }} ListHeaderComponent={header}
-    renderSectionHeader={({ section }) => <View style={{ paddingVertical: 12, backgroundColor: colors.background }}><AppText variant="sectionTitle" accessibilityRole="header">{section.year ?? copy.unknownDate}</AppText></View>}
-    renderItem={({ item }) => <AppCard inset style={{ gap: 10, borderLeftWidth: 3, borderLeftColor: colors.accentTimeline }}>
-      <AppText variant="caption" tone="secondary">{dateLabel(item, copy)}</AppText><Badge label={copy.types[item.eventType]} /><AppText variant="cardTitle">{title(item)}</AppText>
-      {item.memberId || item.relatedMemberId ? <AppText>{[item.memberId ? names.get(item.memberId) ?? item.memberName ?? copy.unknownMember : null, item.relatedMemberId ? names.get(item.relatedMemberId) ?? copy.unknownMember : null].filter(Boolean).join(' · ')}</AppText> : null}
-      {item.description ? <AppText tone="secondary" numberOfLines={3}>{item.description}</AppText> : null}{item.location ? <AppText tone="secondary">{item.location}</AppText> : null}
-      {item.isDerived ? <AppText variant="caption">{copy.automatic}</AppText> : !writable(item) ? <AppText variant="caption">{copy.legacy}</AppText> : null}<TextButton title={copy.details} accessibilityLabel={`${copy.details}: ${title(item)}`} onPress={() => { setMessage(''); setDetails(item); }} />
-    </AppCard>} />
+  return <AppScreen padded={false}><SectionList sections={tab === 'timeline' ? sections : []} keyExtractor={eventKey} initialNumToRender={10} maxToRenderPerBatch={6} windowSize={5} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" stickySectionHeadersEnabled contentContainerStyle={styles.list} ListHeaderComponent={header}
+    renderSectionHeader={renderYear} renderItem={renderEvent} />
     {details ? <TimelineEventDetails event={details} names={names} copy={copy} onClose={() => setDetails(undefined)} onEdit={() => { if (writable(details)) { setEditor({ original: details, initial: blankWrite() }); setDetails(undefined); } }} onDelete={() => { if (writable(details)) { setDeleting(details); setDetails(undefined); } }} /> : null}
     {editor ? <TimelineEventEditor original={editor.original} initial={editor.initial} members={members} copy={copy} busy={mutation.busy} needsReconcile={mutation.needsReconcile} onCancel={() => setEditor(undefined)} onSave={save} /> : null}
     {deleting ? <TimelineDeleteDialog event={deleting} title={title(deleting)} copy={copy} busy={mutation.busy} needsReconcile={mutation.needsReconcile} error={message || (mutation.needsReconcile ? copy.uncertain : '')} onCancel={() => setDeleting(undefined)} onConfirm={() => void remove()} /> : null}
   </AppScreen>;
 }
+const styles = StyleSheet.create({ list: { padding: 16, gap: 12, paddingBottom: 48, width: '100%', maxWidth: 760, alignSelf: 'center' }, year: { paddingVertical: 12 } });

@@ -20,5 +20,7 @@ export function createFamilyQuery<T>(loader: (signal: AbortSignal) => Promise<T>
       return operation.promise;
     },
     cancel: () => { active?.controller.abort(); active = undefined; publish(state.data !== undefined ? { status: 'ready', data: state.data } : { status: 'idle' }); },
+    replace: (data: T) => { active?.controller.abort(); active = undefined; publish({ status: 'ready', data }); },
+    clear: () => { active?.controller.abort(); active = undefined; publish({ status: 'idle' }); },
   };
 }

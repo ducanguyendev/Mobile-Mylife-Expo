@@ -1,6 +1,6 @@
 import type { FamilyMember } from '../types/family';
 export type GraphNode = { id: number; member: FamilyMember; x: number; y: number; width: number; height: number };
-export type GraphEdge = { key: string; from: number; to: number; kind: 'parent' | 'spouse' | 'horizontal'; relationType: string; path: string; reciprocal: boolean };
+export type GraphEdge = { key: string; from: number; to: number; kind: 'parent' | 'spouse' | 'horizontal'; relationType: string; path: string; reciprocal: boolean; bounds?: { left: number; top: number; right: number; bottom: number } };
 export type FamilyGraph = { nodes: GraphNode[]; edges: GraphEdge[]; generations: { generation: number; y: number }[]; width: number; height: number; warnings: number };
 export type Viewport = { scale: number; x: number; y: number };
 
@@ -54,7 +54,11 @@ export function buildFamilyGraph(members: readonly FamilyMember[], fontScale = 1
       const y = Math.min(a.y, b.y) - 24 - (edges.size % 4) * 9;
       path = `M ${a.x + a.width / 2} ${a.y} C ${a.x + a.width / 2} ${y} ${b.x + b.width / 2} ${y} ${b.x + b.width / 2} ${b.y}`;
     }
-    edges.set(key, { key, from, to, kind, relationType, reciprocal, path });
+    // A cubic curve remains inside its control-point hull. Cache it at layout
+    // time so viewport updates never parse/rebuild path strings.
+    const points = path.match(/-?\d+(?:\.\d+)?/g)!.map(Number);
+    const xs = points.filter((_, index) => index % 2 === 0), ys = points.filter((_, index) => index % 2 === 1);
+    edges.set(key, { key, from, to, kind, relationType, reciprocal, path, bounds: { left: Math.min(...xs), top: Math.min(...ys), right: Math.max(...xs), bottom: Math.max(...ys) } });
   };
   for (const member of members) {
     if (member.fatherId != null) add(member.fatherId, member.id, 'parent', 'father');
@@ -78,8 +82,29 @@ export function zoomViewport(view: Viewport, factor: number, x: number, y: numbe
   const scale = Math.max(.001, Math.min(3, view.scale * factor));
   return { scale, x: x - (x - view.x) / view.scale * scale, y: y - (y - view.y) / view.scale * scale };
 }
-export function visibleGraphNodes(graph: FamilyGraph, view: Viewport, width: number, height: number) {
-  return graph.nodes.filter(node => view.x + (node.x + node.width) * view.scale >= -32 && view.x + node.x * view.scale <= width + 32
-    && view.y + (node.y + node.height) * view.scale >= -32 && view.y + node.y * view.scale <= height + 32);
+function viewportBounds(view: Viewport, width: number, height: number, overscan: number) {
+  return { left: (-overscan - view.x) / view.scale, right: (width + overscan - view.x) / view.scale,
+    top: (-overscan - view.y) / view.scale, bottom: (height + overscan - view.y) / view.scale };
+}
+export function visibleGraphNodes(graph: FamilyGraph, view: Viewport, width: number, height: number, overscan = 32) {
+  const bounds = viewportBounds(view, width, height, overscan);
+  return graph.nodes.filter(node => node.x + node.width >= bounds.left && node.x <= bounds.right && node.y + node.height >= bounds.top && node.y <= bounds.bottom);
+}
+export function visibleGraphEdges(graph: FamilyGraph, view: Viewport, width: number, height: number, overscan = 32) {
+  const bounds = viewportBounds(view, width, height, overscan);
+  return graph.edges.filter(({ bounds: edge }) => !edge || edge.right >= bounds.left && edge.left <= bounds.right && edge.bottom >= bounds.top && edge.top <= bounds.bottom);
+}
+// Weak keys release account DTOs with their collection. Bound font variants.
+const layouts = new WeakMap<readonly FamilyMember[], Map<number, FamilyGraph>>();
+export function cachedFamilyGraph(members: readonly FamilyMember[], fontScale: number) {
+  const factor = Math.max(1, Math.min(fontScale, 3));
+  let cache = layouts.get(members);
+  if (!cache) { cache = new Map(); layouts.set(members, cache); }
+  const existing = cache.get(factor);
+  if (existing) return existing;
+  const graph = buildFamilyGraph(members, factor);
+  if (cache.size >= 2) cache.delete(cache.keys().next().value!);
+  cache.set(factor, graph);
+  return graph;
 }
 export const touchDistance = (a: { pageX: number; pageY: number }, b: { pageX: number; pageY: number }) => Math.hypot(a.pageX - b.pageX, a.pageY - b.pageY);

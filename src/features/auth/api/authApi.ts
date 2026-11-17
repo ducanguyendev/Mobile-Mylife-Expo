@@ -18,7 +18,7 @@ export function registerRequest(input: RegistrationInput) {
 }
 
 export async function getCurrentUser() {
-  const user = account(await apiRequest<AuthenticatedUser>('/api/me'));
+  const user = account(await apiRequest<AuthenticatedUser>('/api/me', { coalesce: true }));
   if (!user.isActive) throw Error('Inactive account');
   return user;
 }

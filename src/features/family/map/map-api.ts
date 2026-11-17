@@ -4,7 +4,7 @@ import type { FamilyMember } from '../types/family';
 import { assertLocationUnchanged, requireFamilyMap, requireLocationInput, requireMapId, requireRetry, type LocationInput } from './map-data';
 
 async function data(path: string, options: RequestInit) {
-  const response = await apiRequest<{ success: boolean; data: unknown }>(path, options);
+  const response = await apiRequest<{ success: boolean; data: unknown }>(path, { coalesce: true, ...options });
   if (!response || response.success !== true || !Object.hasOwn(response, 'data')) throw new Error('FAMILY_MAP_INVALID_RESPONSE');
   return response.data;
 }

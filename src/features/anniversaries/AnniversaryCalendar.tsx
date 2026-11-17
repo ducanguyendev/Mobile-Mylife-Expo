@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react';
-import { Modal, Pressable, ScrollView, View } from 'react-native';
+import { memo, useCallback, useMemo, useState } from 'react';
+import { Modal, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { AppText } from '@/design-system/components/app-text';
 import { MyLifeTextField } from '@/design-system/components/fields';
@@ -7,7 +7,7 @@ import { PrimaryButton, SecondaryButton } from '@/design-system/components/butto
 import { AppCard } from '@/design-system/components/surfaces';
 import { useAppTheme } from '@/theme/theme-provider';
 import type { Anniversary } from './anniversary-data';
-import { calendarGrid, calendarMonthValid, dateMonth, eventsByNextDate, moveCalendarMonth, type CalendarMonth } from './calendar-data';
+import { calendarGrid, calendarMonthValid, dateMonth, eventsByNextDate, moveCalendarMonth, type CalendarDay, type CalendarMonth } from './calendar-data';
 import { solarDateLabel, type AnniversaryCopy } from './anniversary-strings';
 
 type Props = {
@@ -19,15 +19,23 @@ type Props = {
   onMonth: (month: CalendarMonth) => void;
   onSelect: (date: string | null) => void;
 };
-export function AnniversaryCalendar({ items, month, today, selected, copy, onMonth, onSelect }: Props) {
-  const { colors, language } = useAppTheme();
+export const AnniversaryCalendar = memo(function AnniversaryCalendar({ items, month, today, selected, copy, onMonth, onSelect }: Props) {
+  const { language } = useAppTheme();
   const [jumpOpen, setJumpOpen] = useState(false);
-  const cells = useMemo(() => calendarGrid(month), [month]);
+  const cells = useMemo(() => calendarGrid({ year: month.year, month: month.month }), [month.year, month.month]);
   const grouped = useMemo(() => eventsByNextDate(items), [items]);
-  const previous = moveCalendarMonth(month, -1);
-  const next = moveCalendarMonth(month, 1);
-  const monthLabel = new Intl.DateTimeFormat(language === 'vi' ? 'vi-VN' : 'en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
-    .format(new Date(`${month.year}-${String(month.month).padStart(2, '0')}-01T12:00:00Z`));
+  const previous = useMemo(() => moveCalendarMonth(month, -1), [month]);
+  const next = useMemo(() => moveCalendarMonth(month, 1), [month]);
+  const monthFormatter = useMemo(() => new Intl.DateTimeFormat(language === 'vi' ? 'vi-VN' : 'en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' }), [language]);
+  const monthLabel = useMemo(() => monthFormatter.format(new Date(`${month.year}-${String(month.month).padStart(2, '0')}-01T12:00:00Z`)), [monthFormatter, month.year, month.month]);
+  const summaries = useMemo(() => cells.map(cell => {
+    const events = grouped.get(cell.date);
+    const count = events?.length ?? 0;
+    const death = events?.filter(item => item.eventType === 'DEATH_ANNIVERSARY').length ?? 0;
+    const family = count - death;
+    const label = [solarDateLabel(cell.date, language, copy), `${count} ${copy.events}`, death ? `${copy.death} ${death}` : '', family ? `${copy.family} ${family}` : '', cell.date === today ? copy.today : ''].filter(Boolean).join(', ');
+    return { cell, count, death, family, label };
+  }), [cells, grouped, language, copy, today]);
   return <AppCard inset style={{ gap: 16 }}>
     <AppText variant="sectionTitle" accessibilityRole="header">{monthLabel}</AppText>
     <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
@@ -40,33 +48,27 @@ export function AnniversaryCalendar({ items, month, today, selected, copy, onMon
       {copy.weekdays.map(day => <View key={day} style={{ width: '14.285714%', alignItems: 'center' }}><AppText variant="caption">{day}</AppText></View>)}
     </View>
     <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
-      {cells.map(cell => {
-        const events = grouped.get(cell.date) ?? [];
-        const death = events.filter(item => item.eventType === 'DEATH_ANNIVERSARY').length;
-        const family = events.length - death;
-        const isSelected = cell.date === selected;
-        const isToday = cell.date === today;
-        const label = [solarDateLabel(cell.date, language, copy), `${events.length} ${copy.events}`,
-          death ? `${copy.death} ${death}` : '', family ? `${copy.family} ${family}` : '', isToday ? copy.today : ''].filter(Boolean).join(', ');
-        return <Pressable key={cell.date} accessibilityRole="button" accessibilityLabel={label}
-          accessibilityState={{ selected: isSelected }} onPress={() => onSelect(isSelected ? null : cell.date)}
-          style={{ width: '14.285714%', minHeight: 70, paddingVertical: 8, alignItems: 'center', gap: 4,
-            backgroundColor: isSelected ? colors.surfaceMuted : colors.surface,
-            borderRadius: 12, borderWidth: isSelected ? 3 : isToday ? 2 : 0,
-            borderColor: colors.controlBorder }}>
-          <AppText tone={cell.inMonth ? 'primary' : 'secondary'}>{cell.day}</AppText>
-          {events.length ? <View style={{ alignItems: 'center', maxWidth: '100%', borderBottomWidth: 3, borderBottomColor: death ? colors.accentAnniversary : colors.accentFamily }}>
-            <AppText variant="caption" style={{ textAlign: 'center' }}>{death ? language === 'vi' ? 'G' : 'D' : ''}{family ? language === 'vi' ? 'S' : 'F' : ''}{events.length}</AppText>
-          </View> : null}
-        </Pressable>;
-      })}
+      {summaries.map(summary => <CalendarCell key={summary.cell.date} summary={summary} selected={summary.cell.date === selected} today={summary.cell.date === today} onSelect={onSelect} />)}
     </View>
     <AppText variant="caption" tone="secondary">{copy.deathMarker} · {copy.familyMarker}</AppText>
     <AppText tone="secondary">{copy.coverage}</AppText>
     <AppText>{selected ? `${copy.selectedDate} ${solarDateLabel(selected, language, copy)}` : copy.chooseDate}</AppText>
     {jumpOpen ? <MonthJump month={month} copy={copy} onCancel={() => setJumpOpen(false)} onConfirm={value => { onMonth(value); setJumpOpen(false); }} /> : null}
   </AppCard>;
-}
+});
+type CellSummary = { cell: CalendarDay; count: number; death: number; family: number; label: string };
+const CalendarCell = memo(function CalendarCell({ summary, selected, today, onSelect }: { summary: CellSummary; selected: boolean; today: boolean; onSelect: Props['onSelect'] }) {
+  const { colors, language } = useAppTheme();
+  const choose = useCallback(() => onSelect(selected ? null : summary.cell.date), [onSelect, selected, summary.cell.date]);
+  return <Pressable accessibilityRole="button" accessibilityLabel={summary.label} accessibilityState={{ selected }} onPress={choose}
+    style={[styles.cell, { backgroundColor: selected ? colors.surfaceMuted : colors.surface, borderWidth: selected ? 3 : today ? 2 : 0, borderColor: colors.controlBorder }]}>
+    <AppText tone={summary.cell.inMonth ? 'primary' : 'secondary'}>{summary.cell.day}</AppText>
+    {summary.count ? <View style={[styles.marker, { borderBottomColor: summary.death ? colors.accentAnniversary : colors.accentFamily }]}>
+      <AppText variant="caption" style={styles.center}>{summary.death ? language === 'vi' ? 'G' : 'D' : ''}{summary.family ? language === 'vi' ? 'S' : 'F' : ''}{summary.count}</AppText>
+    </View> : null}
+  </Pressable>;
+});
+const styles = StyleSheet.create({ cell: { width: '14.285714%', minHeight: 70, paddingVertical: 8, alignItems: 'center', gap: 4, borderRadius: 12 }, marker: { alignItems: 'center', maxWidth: '100%', borderBottomWidth: 3 }, center: { textAlign: 'center' } });
 function MonthJump({ month, copy, onCancel, onConfirm }: { month: CalendarMonth; copy: AnniversaryCopy; onCancel: () => void; onConfirm: (value: CalendarMonth) => void }) {
   const { colors, reducedMotion } = useAppTheme();
   const [year, setYear] = useState(String(month.year));

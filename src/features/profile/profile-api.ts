@@ -3,7 +3,7 @@ import { account, assertProfileUnchanged, validatePassword, validateProfile, typ
 import type { AuthenticatedUser } from '@/features/auth/types/auth';
 
 export const profileApi = {
-  me: async (signal?: AbortSignal) => account(await apiRequest('/api/me', { signal })),
+  me: async (signal?: AbortSignal) => account(await apiRequest('/api/me', { signal, coalesce: true })),
   async save(original: AuthenticatedUser, input: ProfileInput, signal: AbortSignal) {
     const { errors, values } = validateProfile(input);
     if (Object.keys(errors).length) throw Error('INVALID_FORM');

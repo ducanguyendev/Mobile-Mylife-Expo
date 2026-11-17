@@ -3,13 +3,13 @@ import { album, albumWrite, array, category, categoryName, detail, id, metadata,
 const root = '/api/library';
 const json = (method: string, value: unknown, signal?: AbortSignal) => ({ method, body: JSON.stringify(value), signal });
 export const libraryApi = {
-  categories: async (signal?: AbortSignal) => array(await apiRequest(`${root}/categories`, { signal }), category),
+  categories: async (signal?: AbortSignal) => array(await apiRequest(`${root}/categories`, { signal, coalesce: true }), category),
   createCategory: async (name: string, signal?: AbortSignal) => category(await apiRequest(`${root}/categories`, json('POST', { name: categoryName(name) }, signal))),
   renameCategory: async (categoryId: number, name: string, signal?: AbortSignal) => category(await apiRequest(`${root}/categories/${id(categoryId)}`, json('PUT', { name: categoryName(name) }, signal))),
   deleteCategory: async (categoryId: number, signal?: AbortSignal) => { await apiRequest(`${root}/categories/${id(categoryId)}`, { method: 'DELETE', signal }); },
-  albums: async (signal?: AbortSignal) => array(await apiRequest(`${root}/albums`, { signal }), album),
-  overview: async (signal?: AbortSignal) => overview(await apiRequest(`${root}/overview`, { signal })),
-  album: async (albumId: number, signal?: AbortSignal) => detail(await apiRequest(`${root}/albums/${id(albumId)}`, { signal })),
+  albums: async (signal?: AbortSignal) => array(await apiRequest(`${root}/albums`, { signal, coalesce: true }), album),
+  overview: async (signal?: AbortSignal) => overview(await apiRequest(`${root}/overview`, { signal, coalesce: true })),
+  album: async (albumId: number, signal?: AbortSignal) => detail(await apiRequest(`${root}/albums/${id(albumId)}`, { signal, coalesce: true })),
   createAlbum: async (name: string, description: string | null, signal?: AbortSignal) => album(await apiRequest(`${root}/albums`, json('POST', albumWrite(name, description), signal))),
   updateAlbum: async (albumId: number, name: string, description: string | null, signal?: AbortSignal) => album(await apiRequest(`${root}/albums/${id(albumId)}`, json('PUT', albumWrite(name, description), signal))),
   deleteAlbum: async (albumId: number, signal?: AbortSignal) => { await apiRequest(`${root}/albums/${id(albumId)}`, { method: 'DELETE', signal }); },

@@ -35,5 +35,15 @@ export function metadata(input: Metadata, categories: Category[]): Metadata {
 export function photoMetadata(p: Photo): Metadata { return { title: p.title, description: p.caption, author: p.author, displayDate: p.displayDate, category: p.category === '__album__' ? null : p.category }; }
 export const blankMetadata = (): Metadata => ({ title: null, description: null, author: null, displayDate: null, category: null });
 export const normalizeSearch = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
-export function selectPhotos(photos: Photo[], search: string, slug: string | null) { const q = normalizeSearch(search.trim()); return photos.filter(p => (!slug || p.category === slug) && normalizeSearch([p.title, p.caption, p.author, p.fileName, p.displayDate].join(' ')).includes(q)); }
+const photoSearchText = new WeakMap<Photo, string>();
+export function selectPhotos(photos: Photo[], search: string, slug: string | null) {
+  const q = normalizeSearch(search.trim());
+  return photos.filter(p => {
+    if (slug && p.category !== slug) return false;
+    if (!q) return true;
+    let text = photoSearchText.get(p);
+    if (text === undefined) { text = normalizeSearch([p.title, p.caption, p.author, p.fileName, p.displayDate].join(' ')); photoSearchText.set(p, text); }
+    return text.includes(q);
+  });
+}
 export function nextPhoto(photos: Photo[], current: number, delta: number) { if (!photos.length) return null; const index = photos.findIndex(p => p.id === current); return photos[Math.max(0, Math.min(photos.length - 1, index + delta))] ?? null; }

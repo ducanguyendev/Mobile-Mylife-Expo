@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import { AppState, FlatList, Modal, Pressable, RefreshControl, ScrollView, View } from 'react-native';
+import { AppState, FlatList, Modal, RefreshControl, ScrollView, StyleSheet, View, type ListRenderItem } from 'react-native';
 import { router, useFocusEffect } from 'expo-router';
 import { AppHeader, AppScreen } from '@/components/layout/app-screen';
 import { AppText } from '@/design-system/components/app-text';
@@ -11,14 +11,16 @@ import { createFamilyQuery } from '@/features/family/data/family-query';
 import { useAppTheme } from '@/theme/theme-provider';
 import { assertUnchanged, libraryApi, libraryMutationsForAccount } from './library-api';
 import { albumWrite, categoryName, metadata, nextPhoto, normalizeSearch, selectPhotos, type AlbumDetail, type Category, type Photo } from './library-data';
-import { createMediaPool } from './library-media';
+import { mediaPoolForAccount } from './library-media';
+import { LibraryRow, libraryRowKey, type LibraryRowData } from './LibraryRow';
 import { createUploadBody } from './library-upload';
 import { PrivatePhoto } from './PrivatePhoto';
 import { LibraryDeleteDialog, LibraryEditor, type Editor, type EditorValues } from './LibraryDialogs';
 import { libraryError, libraryStrings } from './library-strings';
 
 type Deleting = { kind: 'album'; item: AlbumDetail } | { kind: 'photo'; item: Photo; albumId: number } | { kind: 'category'; item: Category };
-type Row = { kind: 'album'; album: AlbumDetail } | { kind: 'photo'; photo: Photo };
+const emptyCategories: Category[] = [], emptyAlbums: AlbumDetail[] = [], emptyPhotos: Photo[] = [];
+const viewabilityConfig = { itemVisiblePercentThreshold: 1 };
 export function LibraryScreen({ albumId }: { albumId?: number }) {
   const { user, isUser } = useAuth(); const { language } = useAppTheme();
   if (!user || !isUser) return <AppScreen><AppText>{libraryStrings[language].forbidden}</AppText></AppScreen>;
@@ -29,39 +31,49 @@ function LibraryExplorer({ accountId, albumId }: { accountId: number; albumId?: 
   const query = useMemo(() => createFamilyQuery(libraryApi.overview), []);
   const state = useSyncExternalStore(query.subscribe, query.getSnapshot, query.getSnapshot);
   const [actions] = useState(() => libraryMutationsForAccount(accountId)); const mutation = useSyncExternalStore(actions.subscribe, actions.getSnapshot, actions.getSnapshot);
-  const [pool, setPool] = useState(createMediaPool); const [visible, setVisible] = useState(false);
+  const pool = useMemo(() => mediaPoolForAccount(accountId), [accountId]); const [visible, setVisible] = useState(false);
+  const [visibleKeys, setVisibleKeys] = useState<Set<string>>(() => new Set());
+  const onViewableItemsChanged = useCallback(({ viewableItems }: { viewableItems: { key: string; isViewable: boolean }[] }) => {
+    const next = new Set(viewableItems.filter(item => item.isViewable).map(item => item.key));
+    setVisibleKeys(previous => previous.size === next.size && [...next].every(key => previous.has(key)) ? previous : next);
+  }, []);
   const active = useRef(false); const operation = useRef<AbortController | null>(null);
   const [search, setSearch] = useState(''); const [slug, setSlug] = useState<string | null>(null);
   const [editor, setEditor] = useState<Editor>(); const [deleting, setDeleting] = useState<Deleting>(); const [viewing, setViewing] = useState<number>(); const [zoom, setZoom] = useState(false); const [message, setMessage] = useState('');
   useFocusEffect(useCallback(() => {
-    let currentPool = createMediaPool(); setPool(currentPool);
     const change = (value: boolean) => {
+      if (active.current === value) return;
       active.current = value; actions.setActive(value); setVisible(value);
-      if (value) { currentPool = createMediaPool(); setPool(currentPool); void query.load(); }
-      else { query.cancel(); operation.current?.abort(); currentPool.clear(); setViewing(undefined); setDeleting(undefined); }
+      if (value) void query.load();
+      else { query.clear(); operation.current?.abort(); pool.clear(); setViewing(undefined); setDeleting(undefined); }
     };
     change(AppState.currentState === 'active');
     const subscription = AppState.addEventListener('change', next => change(next === 'active'));
-    return () => { active.current = false; actions.setActive(false); query.cancel(); operation.current?.abort(); currentPool.clear(); subscription.remove(); setEditor(undefined); setVisible(false); };
-  }, [query, actions]));
-  const data = state.data; const categories = data?.categories ?? []; const selectedAlbum = data?.albums.find(a => a.id === albumId);
-  const photos = useMemo(() => selectPhotos(albumId === undefined ? state.data?.albums.flatMap(a => a.photos) ?? [] : state.data?.albums.find(a => a.id === albumId)?.photos ?? [], search, slug), [state.data, albumId, search, slug]);
+    return () => { active.current = false; actions.setActive(false); query.clear(); operation.current?.abort(); subscription.remove(); setEditor(undefined); setViewing(undefined); setVisible(false); };
+  }, [query, actions, pool]));
+  const data = state.data; const categories = data?.categories ?? emptyCategories; const albums = data?.albums ?? emptyAlbums;
+  const selectedAlbum = useMemo(() => albums.find(a => a.id === albumId), [albums, albumId]);
   const showPhotos = albumId !== undefined || !!search.trim() || slug !== null;
-  const albumRows: Row[] = (data?.albums ?? []).filter(a => normalizeSearch(`${a.name} ${a.description ?? ''}`).includes(normalizeSearch(search))).map(album => ({ kind: 'album', album }));
-  const rows: Row[] = showPhotos ? [...(albumId === undefined && slug === null ? albumRows : []), ...photos.map(photo => ({ kind: 'photo' as const, photo }))] : albumRows;
+  const sourcePhotos = useMemo(() => !showPhotos ? emptyPhotos : albumId === undefined ? albums.flatMap(a => a.photos) : selectedAlbum?.photos ?? emptyPhotos, [showPhotos, albumId, albums, selectedAlbum]);
+  const photos = useMemo(() => selectPhotos(sourcePhotos, search, slug), [sourcePhotos, search, slug]);
+  const albumRows = useMemo<LibraryRowData[]>(() => { const text = normalizeSearch(search); return albums.filter(a => normalizeSearch(`${a.name} ${a.description ?? ''}`).includes(text)).map(album => ({ kind: 'album', album })); }, [albums, search]);
+  const rows = useMemo<LibraryRowData[]>(() => showPhotos ? [...(albumId === undefined && slug === null ? albumRows : []), ...photos.map(photo => ({ kind: 'photo' as const, photo }))] : albumRows, [showPhotos, albumId, slug, albumRows, photos]);
   const currentPhoto = photos.find(p => p.id === viewing);
   const label = (p: Photo) => p.title || p.fileName;
+  const openPhoto = useCallback((photoId: number) => { setZoom(false); setViewing(photoId); }, []);
+  const openAlbum = useCallback((id: number) => router.push({ pathname: '/library/[albumId]', params: { albumId: id } }), []);
+  const renderRow = useCallback<ListRenderItem<LibraryRowData>>(({ item }) => <LibraryRow row={item} pool={pool} copy={copy} mediaVisible={viewing === undefined && visibleKeys.has(libraryRowKey(item))} onPhoto={openPhoto} onAlbum={openAlbum} />, [pool, copy, viewing, visibleKeys, openPhoto, openAlbum]);
   const refresh = async () => {
     if (!active.current || mutation.busy || operation.current) return;
     const controller = new AbortController(); operation.current = controller; setMessage('');
-    try { if (mutation.needsReconcile) await actions.reconcile(controller.signal); if (active.current && !controller.signal.aborted) await query.load(); }
+    try { if (mutation.needsReconcile) { const fresh = await actions.reconcile(controller.signal); if (active.current && !controller.signal.aborted) query.replace(fresh); } else if (active.current && !controller.signal.aborted) await query.load(); }
     catch (e) { if (active.current) setMessage(libraryError(e, copy)); }
     finally { if (operation.current === controller) operation.current = null; }
   };
   const perform = async (prepare: (signal: AbortSignal) => Promise<() => Promise<unknown>>) => {
     if (operation.current || !active.current) throw Error('LIBRARY_RECONCILE');
     const controller = new AbortController(); operation.current = controller; setMessage('');
-    try { await actions.run(prepare, controller.signal); if (active.current && !controller.signal.aborted) { setEditor(undefined); setDeleting(undefined); setViewing(undefined); await query.load(); } }
+    try { const { data: fresh } = await actions.run(prepare, controller.signal); if (active.current && !controller.signal.aborted) { pool.clear(); setEditor(undefined); setDeleting(undefined); setViewing(undefined); query.replace(fresh); } }
     catch (e) { if (active.current) { setMessage(libraryError(e, copy)); await query.load(); } throw e; }
     finally { if (operation.current === controller) operation.current = null; }
   };
@@ -125,16 +137,12 @@ function LibraryExplorer({ accountId, albumId }: { accountId: number; albumId?: 
       {categories.map(c => <View key={c.id} style={{ gap: 4 }}><AppText>{c.name}{c.isDefault ? ` · ${copy.defaultCategory}` : ''}</AppText>{!c.isDefault ? <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}><TextButton title={copy.edit} accessibilityLabel={`${copy.edit}: ${c.name}`} disabled={locked} onPress={() => setEditor({ kind: 'category', original: c })} /><TextButton title={copy.remove} accessibilityLabel={`${copy.remove}: ${c.name}`} disabled={locked} onPress={() => void requestDelete({ kind: 'category', item: c })} /></View> : null}</View>)}
     </> : null}
   </View>;
-  return <AppScreen>{visible ? <FlatList key={showPhotos ? 'photos' : 'albums'} data={rows} numColumns={2} keyExtractor={row => row.kind === 'album' ? `a:${row.album.id}` : `p:${row.photo.id}`} initialNumToRender={6} maxToRenderPerBatch={4} windowSize={3} removeClippedSubviews
-    columnWrapperStyle={{ gap: 10 }} contentContainerStyle={{ paddingBottom: 24 }} ListHeaderComponent={header}
+  return <AppScreen>{visible ? <FlatList key={showPhotos ? 'photos' : 'albums'} data={rows} numColumns={2} keyExtractor={libraryRowKey} initialNumToRender={6} maxToRenderPerBatch={4} windowSize={3} removeClippedSubviews
+    onViewableItemsChanged={onViewableItemsChanged} viewabilityConfig={viewabilityConfig} renderItem={renderRow}
+    columnWrapperStyle={styles.columns} contentContainerStyle={styles.list} ListHeaderComponent={header}
     refreshControl={<RefreshControl refreshing={state.status === 'loading'} onRefresh={() => void refresh()} tintColor={colors.accentFamily} />}
     ListEmptyComponent={state.status === 'ready' ? <AppCard inset><AppText>{showPhotos ? copy.noPhotos : copy.empty}</AppText></AppCard> : undefined}
-    renderItem={({ item }) => <View style={{ flex: 1, maxWidth: '50%', marginBottom: 12 }}><AppCard inset>
-      {item.kind === 'album' ? <Pressable accessibilityRole="button" accessibilityLabel={`${item.album.name}, ${copy.count}: ${item.album.photoCount}`} onPress={() => router.push({ pathname: '/library/[albumId]', params: { albumId: item.album.id } })}>
-        {item.album.coverPhotoId !== null ? <PrivatePhoto photoId={item.album.coverPhotoId} pool={pool} label={item.album.name} failure={copy.imageFailed} retry={copy.refresh} /> : <View style={{ height: 100, justifyContent: 'center' }}><AppText>{copy.albums}</AppText></View>}
-        <AppText variant="label">{item.album.name}</AppText><AppText>{copy.count}: {item.album.photoCount}</AppText>{item.album.description ? <AppText numberOfLines={3}>{item.album.description}</AppText> : null}
-      </Pressable> : <Pressable accessibilityRole="button" accessibilityLabel={label(item.photo)} onPress={() => { setZoom(false); setViewing(item.photo.id); }}>{privatePhoto(item.photo)}<AppText numberOfLines={2}>{label(item.photo)}</AppText></Pressable>}
-    </AppCard></View>} /> : <AppText>{copy.title}</AppText>}
+    /> : <AppText>{copy.title}</AppText>}
     {editor ? <LibraryEditor editor={editor} categories={categories} copy={copy} busy={mutation.busy} locked={mutation.needsReconcile} onSave={save} onCancel={() => setEditor(undefined)} /> : null}
     {deleting ? <LibraryDeleteDialog title={deleting.kind === 'photo' ? label(deleting.item) : deleting.item.name} consequence={deleting.kind === 'album' ? `${copy.count}: ${deleting.item.photoCount}. ${copy.deleteAlbum}` : deleting.kind === 'photo' ? copy.deletePhoto : copy.deleteCategory} copy={copy} busy={mutation.busy} locked={mutation.needsReconcile} error={message} onCancel={() => setDeleting(undefined)} onConfirm={() => void remove()} /> : null}
     {currentPhoto ? <Modal visible animationType="none" onRequestClose={() => setViewing(undefined)}><AppScreen><ScrollView contentContainerStyle={{ gap: 12, paddingVertical: 16 }}>
@@ -148,3 +156,4 @@ function LibraryExplorer({ accountId, albumId }: { accountId: number; albumId?: 
     </ScrollView></AppScreen></Modal> : null}
   </AppScreen>;
 }
+const styles = StyleSheet.create({ columns: { gap: 10 }, list: { paddingBottom: 24 } });
