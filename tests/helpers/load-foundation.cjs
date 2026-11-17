@@ -38,6 +38,7 @@ function hookRuntime() {
   const states = []; let cursor = 0;
   const hooks = {
     createContext: () => ({ Provider: 'Provider' }),
+    memo: component => component,
     useState(initial) { const at = cursor++; if (!(at in states)) states[at] = typeof initial === 'function' ? initial() : initial; return [states[at], next => { states[at] = typeof next === 'function' ? next(states[at]) : next; }]; },
     useCallback: callback => callback, useMemo: callback => callback(), useEffect() {},
   };
