@@ -61,6 +61,19 @@ export function validateRegistration(input: RegistrationInput, copy: {
   return errors;
 }
 
+// Password strength score (0-4) mirroring the web register meter:
+// +1 each for length >= 8, lowercase, uppercase, digit, special character.
+export function scorePasswordStrength(password: string): number {
+  if (!password) return 0;
+  let score = 0;
+  if (password.length >= 8) score++;
+  if (/[a-z]/.test(password)) score++;
+  if (/[A-Z]/.test(password)) score++;
+  if (/[0-9]/.test(password)) score++;
+  if (/[^A-Za-z0-9]/.test(password)) score++;
+  return Math.min(4, Math.floor((score / 5) * 4) + (score >= 3 ? 1 : 0));
+}
+
 export function normalizeFullName(value: string) {
   return value.trim().replace(/\s+/g, ' ');
 }

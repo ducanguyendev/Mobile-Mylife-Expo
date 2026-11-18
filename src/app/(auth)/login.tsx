@@ -5,11 +5,14 @@ import { Keyboard, Pressable, StyleSheet, View, type TextInputInstance } from 'r
 import { AppText } from '@/design-system/components/app-text';
 import { MyLifePasswordField, MyLifeTextField } from '@/design-system/components/fields';
 import { PrimaryButton, SecondaryButton } from '@/design-system/components/buttons';
+import { SegmentedTabs } from '@/design-system/components/controls';
 import { AppCard } from '@/design-system/components/surfaces';
 import { AppScrollScreen } from '@/components/layout/app-screen';
 import { useToast } from '@/components/feedback/toast-provider';
 import { spacing } from '@/design-system/tokens';
 import { useAppTheme } from '@/theme/theme-provider';
+import type { LanguageMode } from '@/preferences/preferences';
+import { useLocalization } from '@/localization/use-localization';
 import { useAuth } from '@/features/auth/context/auth-provider';
 import { getAuthStrings } from '@/features/auth/i18n/authStrings';
 import { mapAuthApiError } from '@/features/auth/validation/authErrorMessages';
@@ -18,7 +21,8 @@ import { normalizeEmail, validateLogin, type AuthFieldErrors } from '@/features/
 export default function LoginScreen() {
   const params = useLocalSearchParams<{ registeredEmail?: string }>();
   const registeredEmail = typeof params.registeredEmail === 'string' ? params.registeredEmail : '';
-  const { colors, language } = useAppTheme();
+  const { colors, language, languageMode, setLanguageMode } = useAppTheme();
+  const { copy: commonCopy } = useLocalization();
   const { login, rememberedEmail, rememberMe, setRememberEmailPreference } = useAuth();
   const { showToast } = useToast();
   const copy = getAuthStrings(language);
@@ -52,6 +56,7 @@ export default function LoginScreen() {
 
   return (
     <AppScrollScreen contentContainerStyle={styles.page}>
+      <SegmentedTabs<LanguageMode> value={languageMode} onChange={setLanguageMode} options={[{ value: 'system', label: commonCopy.system }, { value: 'vi', label: commonCopy.vietnamese }, { value: 'en', label: commonCopy.english }]} />
       <View style={[styles.mark, { backgroundColor: colors.accentFamily }]}><AppText variant="sectionTitle" style={{ color: colors.onAccent }}>M</AppText></View>
       <AppText variant="caption" tone="accent" style={styles.eyebrow}>{copy.mark}</AppText>
       <View style={styles.heading}>

@@ -4,6 +4,7 @@ const vi = {
   home: 'Trang chủ', family: 'Gia đình', memories: 'Ký ức', profile: 'Tôi',
   loading: 'Đang tải…', retry: 'Thử lại', errorTitle: 'Chưa thể tải dữ liệu',
   errorMessage: 'Kiểm tra kết nối rồi thử lại.', offline: 'Không có kết nối. Kết nối mạng để tải dữ liệu mới.',
+  notFoundTitle: 'Không tìm thấy trang', notFoundMessage: 'Trang bạn đang tìm không tồn tại hoặc đã được di chuyển.', backHome: 'Về trang chủ',
   search: 'Tìm kiếm', clear: 'Xóa nội dung', select: 'Chọn một mục', selectDate: 'Chọn ngày',
   showPassword: 'Hiện mật khẩu', hidePassword: 'Ẩn mật khẩu',
   avatar: (name: string) => `Ảnh đại diện ${name}`, unnamed: 'Chưa có tên',
@@ -31,6 +32,7 @@ type Copy = typeof vi;
 const en: Copy = {
   home: 'Home', family: 'Family', memories: 'Memories', profile: 'Me',
   loading: 'Loading…', retry: 'Try again', errorTitle: 'Unable to load data', errorMessage: 'Check your connection and try again.',
+  notFoundTitle: 'Page not found', notFoundMessage: 'The page you are looking for does not exist or has been moved.', backHome: 'Back to home',
   offline: 'No connection. Connect to load new data.', search: 'Search', clear: 'Clear text', select: 'Select an item', selectDate: 'Select a date',
   showPassword: 'Show password', hidePassword: 'Hide password', avatar: (name) => `Avatar for ${name}`, unnamed: 'Unnamed',
   morning: 'Good morning', afternoon: 'Good afternoon', evening: 'Good evening', welcome: 'Welcome',
