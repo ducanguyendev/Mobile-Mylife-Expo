@@ -15,6 +15,7 @@ import type { LanguageMode } from '@/preferences/preferences';
 import { useLocalization } from '@/localization/use-localization';
 import { useAuth } from '@/features/auth/context/auth-provider';
 import { getAuthStrings } from '@/features/auth/i18n/authStrings';
+import { extractGoogleIdToken, isGoogleSignInConfigured, useGoogleIdTokenRequest } from '@/features/auth/google/googleSignIn';
 import { mapAuthApiError } from '@/features/auth/validation/authErrorMessages';
 import { normalizeEmail, validateLogin, type AuthFieldErrors } from '@/features/auth/validation/authValidation';
 
@@ -23,13 +24,15 @@ export default function LoginScreen() {
   const registeredEmail = typeof params.registeredEmail === 'string' ? params.registeredEmail : '';
   const { colors, language, languageMode, setLanguageMode } = useAppTheme();
   const { copy: commonCopy } = useLocalization();
-  const { login, rememberedEmail, rememberMe, setRememberEmailPreference } = useAuth();
+  const { login, loginWithGoogle, rememberedEmail, rememberMe, setRememberEmailPreference } = useAuth();
   const { showToast } = useToast();
   const copy = getAuthStrings(language);
+  const [, , promptGoogle] = useGoogleIdTokenRequest(language);
   const [email, setEmail] = useState(registeredEmail || rememberedEmail || '');
   const [password, setPassword] = useState('');
   const [remember, setRemember] = useState(Boolean(registeredEmail) || rememberMe);
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<AuthFieldErrors>({});
   const passwordRef = useRef<TextInputInstance>(null);
@@ -51,6 +54,38 @@ export default function LoginScreen() {
       setMessage(mapped.message);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const submitGoogle = async () => {
+    Keyboard.dismiss();
+    setMessage(null);
+    if (!isGoogleSignInConfigured) {
+      setMessage(copy.googleMissing);
+      return;
+    }
+    setGoogleLoading(true);
+    try {
+      const result = await promptGoogle();
+      if (result.type === 'error') {
+        setMessage(copy.googleFailed);
+        return;
+      }
+      if (result.type !== 'success') return; // dismissed or cancelled
+      const idToken = extractGoogleIdToken(result);
+      if (!idToken) {
+        setMessage(copy.googleFailed);
+        return;
+      }
+      await loginWithGoogle(idToken, remember);
+      showToast(copy.loginSuccess, 'success');
+      router.replace('/(tabs)');
+    } catch (error) {
+      const mapped = mapAuthApiError(error, copy);
+      setFieldErrors((current) => ({ ...current, ...mapped.fieldErrors }));
+      setMessage(mapped.message);
+    } finally {
+      setGoogleLoading(false);
     }
   };
 
@@ -103,7 +138,13 @@ export default function LoginScreen() {
             <AppText variant="label" tone="secondary">{copy.remember}</AppText>
           </Pressable>
         </View>
-        <PrimaryButton title={copy.login} onPress={() => void submit()} loading={loading} disabled={loading} fullWidth />
+        <PrimaryButton title={copy.login} onPress={() => void submit()} loading={loading} disabled={loading || googleLoading} fullWidth />
+        <View style={styles.dividerRow}>
+          <View style={[styles.dividerLine, { backgroundColor: colors.divider }]} />
+          <AppText variant="caption" tone="secondary">{copy.orDivider}</AppText>
+          <View style={[styles.dividerLine, { backgroundColor: colors.divider }]} />
+        </View>
+        <SecondaryButton title={copy.googleSignIn} onPress={() => void submitGoogle()} loading={googleLoading} disabled={loading || googleLoading} fullWidth />
       </AppCard>
 
       <View style={styles.registerPrompt}>
@@ -130,4 +171,6 @@ const styles = StyleSheet.create({
   checkbox: { width: 22, height: 22, borderRadius: 7, borderWidth: 1, alignItems: 'center', justifyContent: 'center' },
   registerPrompt: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.xs, flexWrap: 'wrap' },
   errorBanner: { borderWidth: 1, borderRadius: 14, padding: spacing.md },
+  dividerRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  dividerLine: { flex: 1, height: 1 },
 });

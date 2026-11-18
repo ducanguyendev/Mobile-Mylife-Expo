@@ -2,11 +2,11 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 
 import { clearSessionExpiredNotice, getSessionVersion, logoutNativeSession } from '@/api/apiClient';
 import { ApiError } from '@/api/apiError';
-import { getCurrentUser, loginRequest, logoutRequest, registerRequest } from '@/features/auth/api/authApi';
+import { getCurrentUser, googleLoginRequest, loginRequest, logoutRequest, registerRequest } from '@/features/auth/api/authApi';
 import { onSessionExpired } from '@/features/auth/context/authEvents';
 import { rememberedEmailStorage } from '@/features/auth/storage/rememberedEmailStorage';
 import { authTokenStorage } from '@/features/auth/storage/authTokenStorage';
-import type { AuthenticatedUser, AuthStatus, RegistrationInput } from '@/features/auth/types/auth';
+import type { AuthenticatedUser, AuthStatus, LoginResponse, RegistrationInput } from '@/features/auth/types/auth';
 import { hasRole } from '@/features/auth/validation/authRoles';
 import { AppState } from 'react-native';
 
@@ -17,6 +17,7 @@ type AuthContextValue = {
   rememberMe: boolean;
   setRememberEmailPreference: (remember: boolean, email?: string) => Promise<void>;
   login: (email: string, password: string, remember: boolean) => Promise<void>;
+  loginWithGoogle: (idToken: string, remember: boolean) => Promise<void>;
   register: (input: RegistrationInput) => Promise<string>;
   logout: () => Promise<boolean>;
   restoreSession: () => Promise<void>;
@@ -90,18 +91,10 @@ export function AuthProvider({ children, beforeAuthenticated = noPreparation }: 
     return () => clearTimeout(timer);
   }, [restoreSession]);
 
-  const login = useCallback(async (email: string, password: string, remember: boolean) => {
-    const generation = operations.begin();
-    const normalizedEmail = email.trim().toLowerCase();
-    if (remember && normalizedEmail) {
-      await rememberedEmailStorage.write(normalizedEmail).catch(() => undefined);
-      setRememberedEmail(normalizedEmail);
-    } else {
-      await rememberedEmailStorage.clear().catch(() => undefined);
-      setRememberedEmail(null);
-    }
-    setRememberMe(remember);
-    const response = await loginRequest(normalizedEmail, password, remember);
+  // Shared tail of every native sign-in (password and Google): validate the
+  // token pair, store it only if this operation is still current, then load
+  // the profile. Throws and cleans up the server session on any mismatch.
+  const completeNativeLogin = useCallback(async (response: LoginResponse, generation: number): Promise<AuthenticatedUser> => {
     if (!operations.current(generation)) {
       if (hasNativeTokenPair(response)) await logoutRequest(response.refreshToken).catch(() => undefined);
       throw new ApiError('Session changed.', 'unauthorized', 401);
@@ -137,6 +130,22 @@ export function AuthProvider({ children, beforeAuthenticated = noPreparation }: 
       throw error;
     }
     if (!operations.current(generation)) throw new ApiError('Session changed.', 'unauthorized', 401);
+    return currentUser;
+  }, [beforeAuthenticated, operations]);
+
+  const login = useCallback(async (email: string, password: string, remember: boolean) => {
+    const generation = operations.begin();
+    const normalizedEmail = email.trim().toLowerCase();
+    if (remember && normalizedEmail) {
+      await rememberedEmailStorage.write(normalizedEmail).catch(() => undefined);
+      setRememberedEmail(normalizedEmail);
+    } else {
+      await rememberedEmailStorage.clear().catch(() => undefined);
+      setRememberedEmail(null);
+    }
+    setRememberMe(remember);
+    const response = await loginRequest(normalizedEmail, password, remember);
+    const currentUser = await completeNativeLogin(response, generation);
     if (remember && currentUser.email !== normalizedEmail) {
       await rememberedEmailStorage.write(currentUser.email).catch(() => undefined);
       setRememberedEmail(currentUser.email);
@@ -144,7 +153,25 @@ export function AuthProvider({ children, beforeAuthenticated = noPreparation }: 
     if (!operations.current(generation)) throw new ApiError('Session changed.', 'unauthorized', 401);
     setUser(currentUser);
     setStatus('authenticated');
-  }, [beforeAuthenticated, operations]);
+  }, [operations, completeNativeLogin]);
+
+  const loginWithGoogle = useCallback(async (idToken: string, remember: boolean) => {
+    const generation = operations.begin();
+    setRememberMe(remember);
+    if (!remember) {
+      await rememberedEmailStorage.clear().catch(() => undefined);
+      setRememberedEmail(null);
+    }
+    const response = await googleLoginRequest(idToken);
+    const currentUser = await completeNativeLogin(response, generation);
+    if (remember) {
+      await rememberedEmailStorage.write(currentUser.email).catch(() => undefined);
+      setRememberedEmail(currentUser.email);
+    }
+    if (!operations.current(generation)) throw new ApiError('Session changed.', 'unauthorized', 401);
+    setUser(currentUser);
+    setStatus('authenticated');
+  }, [operations, completeNativeLogin]);
 
   const setRememberEmailPreference = useCallback(async (remember: boolean, email?: string) => {
     setRememberMe(remember);
@@ -180,9 +207,9 @@ export function AuthProvider({ children, beforeAuthenticated = noPreparation }: 
   }, [operations]);
 
   const value = useMemo<AuthContextValue>(() => ({
-    status, user, rememberedEmail, rememberMe, setRememberEmailPreference, login, register, logout, restoreSession, refreshSession,
+    status, user, rememberedEmail, rememberMe, setRememberEmailPreference, login, loginWithGoogle, register, logout, restoreSession, refreshSession,
     isAdmin: hasRole(user, 'ADMIN'), isUser: hasRole(user, 'USER'),
-  }), [status, user, rememberedEmail, rememberMe, setRememberEmailPreference, login, register, logout, restoreSession, refreshSession]);
+  }), [status, user, rememberedEmail, rememberMe, setRememberEmailPreference, login, loginWithGoogle, register, logout, restoreSession, refreshSession]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

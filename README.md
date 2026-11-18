@@ -24,7 +24,22 @@ dotnet run
 
 The backend development profile is expected at `http://localhost:5274` on the host machine. Expo sends `X-Client-Platform: mobile` on API requests, uses Bearer access tokens, and keeps the access/rotating refresh token pair together in SecureStore. The Remember email option stores only the email in AsyncStorage; passwords are never persisted.
 
-Google login is not enabled because no public Google client IDs are configured for this Expo app. The backend accepts an ID token from native clients; Google client secrets must remain server-side. Configure platform-appropriate public client IDs and an Expo OAuth redirect flow before exposing a Google button.
+Google sign-in is available on the login screen. It uses `expo-auth-session` to obtain a Google ID token and posts it to the backend (`POST /api/auth/google`), which verifies the token and returns the same native token pair as password login. No client secret is used on the device.
+
+### Google sign-in setup
+
+1. In [Google Cloud Console](https://console.cloud.google.com/apis/credentials), create an OAuth 2.0 client ID for each platform:
+   - **Android**: package name `com.anonymous.mylifemobile` (from `app.json`), plus the SHA-1 of the signing key.
+   - **iOS**: first set `ios.bundleIdentifier` in `app.json` (none is configured yet), then create the client for that bundle ID.
+   - **Web**: needed for Expo web.
+2. Copy the three client IDs into `.env.local` (see `.env.example`):
+   - `EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID`
+   - `EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID`
+   - `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID`
+3. In the backend config, add the Android and iOS client IDs to `Authentication:Google:AllowedClientIds` (the backend also needs `Authentication:Google:ClientId` set). Without this the backend rejects the ID token (audience mismatch).
+4. The OAuth redirect uses the app scheme from `app.json` (`mobilemylifeexpo`). No redirect URI registration is needed for the Android/iOS clients.
+
+Until the client IDs are configured, tapping the Google button shows a "not configured" message instead of opening the browser. Note: the `expo-auth-session` Google provider is deprecated upstream in favour of `@react-native-google-signin/google-signin` (native); it still works on the pinned SDK 58, revisit when upgrading the SDK.
 
 ## Validation
 
