@@ -55,7 +55,9 @@
       "@vietmap/vietmap-gl-react-native",
       "./plugins/with-network-retry-policy.cjs",
       "./plugins/with-private-window.cjs",
-      "./plugins/with-release-network-policy.cjs"
+      "./plugins/with-release-network-policy.cjs",
+      "expo-status-bar",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
