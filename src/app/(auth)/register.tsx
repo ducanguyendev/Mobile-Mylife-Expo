@@ -6,18 +6,21 @@ import { AppScrollScreen } from '@/components/layout/app-screen';
 import { useToast } from '@/components/feedback/toast-provider';
 import { AppText } from '@/design-system/components/app-text';
 import { PrimaryButton } from '@/design-system/components/buttons';
-import { ChoiceChip, ChipRow } from '@/design-system/components/controls';
+import { ChoiceChip, ChipRow, SegmentedTabs } from '@/design-system/components/controls';
 import { MyLifePasswordField, MyLifeTextField } from '@/design-system/components/fields';
 import { AppCard } from '@/design-system/components/surfaces';
 import { spacing } from '@/design-system/tokens';
 import { useAppTheme } from '@/theme/theme-provider';
+import type { LanguageMode } from '@/preferences/preferences';
+import { useLocalization } from '@/localization/use-localization';
 import { useAuth } from '@/features/auth/context/auth-provider';
 import { getAuthStrings } from '@/features/auth/i18n/authStrings';
 import { mapAuthApiError } from '@/features/auth/validation/authErrorMessages';
-import { formatBirthDateForApi, normalizeEmail, normalizeFullName, validateRegistration, type AuthFieldErrors } from '@/features/auth/validation/authValidation';
+import { formatBirthDateForApi, normalizeEmail, normalizeFullName, scorePasswordStrength, validateRegistration, type AuthFieldErrors } from '@/features/auth/validation/authValidation';
 
 export default function RegisterScreen() {
-  const { colors, language } = useAppTheme();
+  const { colors, language, languageMode, setLanguageMode } = useAppTheme();
+  const { copy: commonCopy } = useLocalization();
   const { register } = useAuth();
   const { showToast } = useToast();
   const copy = getAuthStrings(language);
@@ -37,6 +40,10 @@ export default function RegisterScreen() {
   const emailRef = useRef<TextInputInstance>(null);
   const passwordRef = useRef<TextInputInstance>(null);
   const confirmRef = useRef<TextInputInstance>(null);
+
+  const strength = scorePasswordStrength(password);
+  const strengthLabel = ['', copy.strengthWeak, copy.strengthMedium, copy.strengthGood, copy.strengthStrong][strength] ?? '';
+  const strengthColor = strength <= 1 ? colors.error : strength === 2 ? colors.warning : strength === 3 ? colors.info : colors.success;
 
   const updateField = (field: keyof AuthFieldErrors, update: () => void) => {
     update();
@@ -75,6 +82,7 @@ export default function RegisterScreen() {
 
   return (
     <AppScrollScreen contentContainerStyle={styles.page}>
+      <SegmentedTabs<LanguageMode> value={languageMode} onChange={setLanguageMode} options={[{ value: 'system', label: commonCopy.system }, { value: 'vi', label: commonCopy.vietnamese }, { value: 'en', label: commonCopy.english }]} />
       <View style={[styles.mark, { backgroundColor: colors.accentFamily }]}><AppText variant="sectionTitle" style={{ color: colors.onAccent }}>M</AppText></View>
       <View style={styles.heading}>
         <AppText variant="screenTitle" accessibilityRole="header">{copy.registerTitle}</AppText>
@@ -97,6 +105,16 @@ export default function RegisterScreen() {
         <MyLifeTextField inputRef={dobRef} label={copy.birthDate} value={dateOfBirth} onChangeText={(value) => updateField('dateOfBirth', () => setDateOfBirth(formatDateInput(value)))} error={fieldErrors.dateOfBirth} helperText={copy.birthPlaceholder} placeholder={copy.birthPlaceholder} keyboardType="number-pad" returnKeyType="next" onSubmitEditing={() => emailRef.current?.focus()} maxLength={10} />
         <MyLifeTextField inputRef={emailRef} label={copy.email} value={email} onChangeText={(value) => updateField('email', () => setEmail(value))} error={fieldErrors.email} helperText={copy.gmail} placeholder={copy.emailPlaceholder} keyboardType="email-address" autoCapitalize="none" autoCorrect={false} autoComplete="email" textContentType="emailAddress" returnKeyType="next" onSubmitEditing={() => passwordRef.current?.focus()} maxLength={254} />
         <MyLifePasswordField inputRef={passwordRef} label={copy.password} value={password} onChangeText={(value) => updateField('password', () => setPassword(value))} error={fieldErrors.password} helperText={copy.passwordGuidance} placeholder={copy.passwordPlaceholder} autoComplete="new-password" textContentType="newPassword" returnKeyType="next" onSubmitEditing={() => confirmRef.current?.focus()} showPasswordLabel={copy.showPassword} hidePasswordLabel={copy.hidePassword} />
+        {password.length > 0 ? (
+          <View style={styles.strength}>
+            <View style={styles.strengthBars}>
+              {[1, 2, 3, 4].map((bar) => (
+                <View key={bar} style={[styles.strengthBar, { backgroundColor: strength >= bar ? strengthColor : colors.controlBorder }]} />
+              ))}
+            </View>
+            {strengthLabel ? <AppText variant="caption" tone="secondary">{copy.strengthLabel}: <AppText variant="caption" style={{ color: strengthColor }}>{strengthLabel}</AppText></AppText> : null}
+          </View>
+        ) : null}
         <MyLifePasswordField inputRef={confirmRef} label={copy.confirmPassword} value={confirmPassword} onChangeText={(value) => updateField('confirmPassword', () => setConfirmPassword(value))} error={fieldErrors.confirmPassword} placeholder={copy.confirmPassword} autoComplete="new-password" textContentType="newPassword" returnKeyType="done" onSubmitEditing={() => void submit()} showPasswordLabel={copy.showPassword} hidePasswordLabel={copy.hidePassword} />
         <PrimaryButton title={copy.createAccount} onPress={() => void submit()} loading={loading} disabled={loading} fullWidth />
       </AppCard>
@@ -118,6 +136,9 @@ const styles = StyleSheet.create({
   heading: { gap: spacing.xs, marginBottom: spacing.xs },
   form: { gap: spacing.md, padding: spacing.lg },
   fieldGroup: { gap: spacing.xs },
+  strength: { gap: spacing.xs },
+  strengthBars: { flexDirection: 'row', gap: 4 },
+  strengthBar: { flex: 1, height: 4, borderRadius: 2 },
   errorBanner: { borderWidth: 1, borderRadius: 14, padding: spacing.md },
   loginPrompt: { flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: spacing.sm },
 });
