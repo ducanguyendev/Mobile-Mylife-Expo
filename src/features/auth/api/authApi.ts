@@ -23,6 +23,14 @@ export function googleLoginRequest(idToken: string) {
   });
 }
 
+// Always returns a generic success, even for unknown emails (anti-enumeration).
+// The reset link in the email opens the web reset page.
+export function requestPasswordReset(email: string) {
+  return apiRequest<{ success: true; message: string }>('/api/auth/forgot-password', {
+    method: 'POST', authenticated: false, retryOnUnauthorized: false, body: JSON.stringify({ email }),
+  });
+}
+
 export function registerRequest(input: RegistrationInput) {
   return apiRequest<{ success: true; message: string; email: string }>('/api/auth/register', {
     method: 'POST', authenticated: false, retryOnUnauthorized: false, body: JSON.stringify(input),

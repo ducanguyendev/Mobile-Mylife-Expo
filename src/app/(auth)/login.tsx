@@ -4,7 +4,7 @@ import { Keyboard, Pressable, StyleSheet, View, type TextInputInstance } from 'r
 
 import { AppText } from '@/design-system/components/app-text';
 import { MyLifePasswordField, MyLifeTextField } from '@/design-system/components/fields';
-import { PrimaryButton, SecondaryButton } from '@/design-system/components/buttons';
+import { PrimaryButton, SecondaryButton, TextButton } from '@/design-system/components/buttons';
 import { SegmentedTabs } from '@/design-system/components/controls';
 import { AppCard } from '@/design-system/components/surfaces';
 import { AppScrollScreen } from '@/components/layout/app-screen';
@@ -137,6 +137,7 @@ export default function LoginScreen() {
             </View>
             <AppText variant="label" tone="secondary">{copy.remember}</AppText>
           </Pressable>
+          <TextButton title={copy.forgot} onPress={() => router.push('/(auth)/forgot-password')} compact />
         </View>
         <PrimaryButton title={copy.login} onPress={() => void submit()} loading={loading} disabled={loading || googleLoading} fullWidth />
         <View style={styles.dividerRow}>
