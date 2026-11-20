@@ -6,20 +6,22 @@ import { useAppTheme } from '@/theme/theme-provider';
 
 export type SegmentedOption<T extends string> = { value: T; label: string };
 
-export function SegmentedTabs<T extends string>({ options, value, onChange }: {
+export function SegmentedTabs<T extends string>({ options, value, onChange, accessibilityLabel }: {
   options: SegmentedOption<T>[];
   value: T;
   onChange: (value: T) => void;
+  accessibilityLabel?: string;
 }) {
   const { colors } = useAppTheme();
   return (
-    <View accessibilityRole="tablist" style={[styles.segmented, { backgroundColor: colors.surfaceMuted }]}>
+    <View accessibilityRole="tablist" accessibilityLabel={accessibilityLabel} style={[styles.segmented, { backgroundColor: colors.surfaceMuted }]}>
       {options.map((option) => {
         const selected = option.value === value;
         return (
           <Pressable
             key={option.value}
             accessibilityRole="tab"
+            accessibilityLabel={accessibilityLabel ? `${accessibilityLabel}: ${option.label}` : option.label}
             accessibilityState={{ selected }}
             onPress={() => onChange(option.value)}
             style={({ pressed }) => [styles.segment, { borderColor: selected ? colors.controlBorder : 'transparent' }, selected && { backgroundColor: colors.surfaceElevated }, { opacity: pressed ? 0.75 : 1 }]}>
