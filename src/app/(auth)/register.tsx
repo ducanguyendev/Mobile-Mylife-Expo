@@ -14,6 +14,7 @@ import { useAppTheme } from '@/theme/theme-provider';
 import type { LanguageMode } from '@/preferences/preferences';
 import { useLocalization } from '@/localization/use-localization';
 import { useAuth } from '@/features/auth/context/auth-provider';
+import { AuthThemeSelector } from '@/features/auth/components/auth-theme-selector';
 import { getAuthStrings } from '@/features/auth/i18n/authStrings';
 import { mapAuthApiError } from '@/features/auth/validation/authErrorMessages';
 import { formatBirthDateForApi, normalizeEmail, normalizeFullName, scorePasswordStrength, validateRegistration, type AuthFieldErrors } from '@/features/auth/validation/authValidation';
@@ -83,6 +84,7 @@ export default function RegisterScreen() {
   return (
     <AppScrollScreen contentContainerStyle={styles.page}>
       <SegmentedTabs<LanguageMode> value={languageMode} onChange={setLanguageMode} options={[{ value: 'system', label: commonCopy.system }, { value: 'vi', label: commonCopy.vietnamese }, { value: 'en', label: commonCopy.english }]} />
+      <AuthThemeSelector />
       <View style={[styles.mark, { backgroundColor: colors.accentFamily }]}><AppText variant="sectionTitle" style={{ color: colors.onAccent }}>M</AppText></View>
       <View style={styles.heading}>
         <AppText variant="screenTitle" accessibilityRole="header">{copy.registerTitle}</AppText>

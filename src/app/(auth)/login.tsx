@@ -14,6 +14,7 @@ import { useAppTheme } from '@/theme/theme-provider';
 import type { LanguageMode } from '@/preferences/preferences';
 import { useLocalization } from '@/localization/use-localization';
 import { useAuth } from '@/features/auth/context/auth-provider';
+import { AuthThemeSelector } from '@/features/auth/components/auth-theme-selector';
 import { getAuthStrings } from '@/features/auth/i18n/authStrings';
 import { extractGoogleIdToken, isGoogleSignInConfigured, useGoogleIdTokenRequest } from '@/features/auth/google/googleSignIn';
 import { mapAuthApiError } from '@/features/auth/validation/authErrorMessages';
@@ -92,6 +93,7 @@ export default function LoginScreen() {
   return (
     <AppScrollScreen contentContainerStyle={styles.page}>
       <SegmentedTabs<LanguageMode> value={languageMode} onChange={setLanguageMode} options={[{ value: 'system', label: commonCopy.system }, { value: 'vi', label: commonCopy.vietnamese }, { value: 'en', label: commonCopy.english }]} />
+      <AuthThemeSelector />
       <View style={[styles.mark, { backgroundColor: colors.accentFamily }]}><AppText variant="sectionTitle" style={{ color: colors.onAccent }}>M</AppText></View>
       <AppText variant="caption" tone="accent" style={styles.eyebrow}>{copy.mark}</AppText>
       <View style={styles.heading}>
